@@ -390,7 +390,15 @@ $(document).ready(function () {
     
     // Date picker
     $('#datepicker').datepicker({
-        format: "dd/mm/yyyy"
+        format: "dd/mm/yyyy",
+        weekStart: 1,
+        todayHighlight: true,
+        autoclose: true
+    });
+    $('.datepicker').hide();
+    $('#datepicker .input-group-addon').on('click', function(){
+        $('.datepicker').slideToggle( 300, function() {
+        });
     });
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
