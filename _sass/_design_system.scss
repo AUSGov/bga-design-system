@@ -1083,7 +1083,11 @@
                             &:hover {
                                 background-color: $grey-lighter;
                             }
-                        }                
+                        }
+                        .dow {
+                            color: $blue-primary;
+                            @include font-format($font-family, $font-semibold, normal);
+                        }
                         .day  {
                             padding: 8px;
                             height: 44px;

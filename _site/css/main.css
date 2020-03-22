@@ -5482,6 +5482,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container #datepicker .datepicker .table-condensed .next:hover { background-color: #EBEBEB; }
 
+.design-system-card .form-elements .form-example-container #datepicker .datepicker .table-condensed .dow { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
 .design-system-card .form-elements .form-example-container #datepicker .datepicker .table-condensed .day { padding: 8px; height: 44px; width: 44px; text-align: center; }
 
 .design-system-card .form-elements .form-example-container #datepicker .datepicker .table-condensed .day.active { background: #4569A0; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
