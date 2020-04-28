@@ -6275,7 +6275,7 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 .design-system-card .mobile-example .page-headers .label, .design-system-card .mobile-media-query .page-headers .label { line-height: 16px; }
 
-.design-system-card .call-to-action h2, .design-system-card .callout h2, .design-system-card .advisor-profile h2 { padding: 0 0 8px 0; }
+.design-system-card .call-to-action h2, .design-system-card .callout h2, .design-system-card .advisor-profile h2 { padding: 0 0 32px 0; }
 
 .design-system-card .call-to-action h3, .design-system-card .callout h3, .design-system-card .advisor-profile h3 { line-height: 28px; }
 
