@@ -333,6 +333,7 @@
                 letter-spacing: 0;
                 line-height: 24px;
             }
+            
             li {
                 @include font-format($font-family, $font-regular, normal);
                 font-size: 16px;
@@ -3021,6 +3022,11 @@
                 transform: translateY(-.1875rem);
             }
         }
+        .link-wrapper {
+            margin-top: 8px;
+            width: auto;
+            display: inline-block;
+        }
 
         .button-container {
             height: auto;
@@ -3167,26 +3173,64 @@
         
         .link {
             .link-text{
-                @include font-format($font-family, $font-semibold, normal);color: $blue-primary;
+                @include font-format($font-family, $font-semibold, normal);
+                color: $blue-primary;
+                background-color: transparent;
+                border: none;
+                border-bottom: $blue-hyperlink solid 2px;
+                box-shadow: none;
+                cursor: pointer;
+                display: inline;
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                height: auto;
+                letter-spacing: 0.2px;
+                line-height: 28.48px;
+                text-decoration: none;
+                transition-delay: 0s, 0s;
+                transition-duration: 0.25s, 0.25s;
+                transition-property: box-shadow, -webkit-box-shadow;
+                transition-timing-function: ease, ease;
                 
+                &:visited {
+                    //color: $purple-dark;
+                    //border-color: $purple-light;
+                }
+                &:focus {
+                    border: .0625rem dotted #748fb8;
+                    border-bottom: rgb(116, 143, 184) solid 2px;
+                    outline: none;
+                }
+                &:hover {
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: rgb(221, 238, 255) 0px -20px 0px 0px inset;
+                    text-decoration: none;
+                }
                 &:active {
                     color: $black;
+                    border-bottom: rgb(116, 143, 184) solid 2px;
+                    box-shadow: none;
                 }
-            }
+            }    
         }
         
         .link-dark {
             .link-text{
                 @include font-format($font-family, $font-semibold, normal);
                 color: $white; 
-                box-shadow: inset 0 -2.8px 0 $white;
+                border-bottom: $white solid 2px;
+                box-shadow: none;
                 
                 &:hover {
                     box-shadow: inset 0 -20px 0 $blue-light;
+                    border: none;
                     color: $blue-primary;
                 }
                 &:active {
                     box-shadow: inset 0 -20px 0 $blue-light;
+                    border: none;
                     color: $blue-secondary;
                 }
             }

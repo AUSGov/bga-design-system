@@ -6633,6 +6633,8 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 .design-system-card .buttons-links .button-wrapper:hover { transform: translateY(-0.1875rem); }
 
+.design-system-card .buttons-links .link-wrapper { margin-top: 8px; width: auto; display: inline-block; }
+
 .design-system-card .buttons-links .button-container { height: auto; border-top: none; background: none; margin: 0; }
 
 .design-system-card .buttons-links .cta-button { box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; }
@@ -6673,15 +6675,19 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 .design-system-card .buttons-links .tertiary-dark-button .cta-button:hover { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
 
-.design-system-card .buttons-links .link .link-text { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
+.design-system-card .buttons-links .link .link-text { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; background-color: transparent; border: none; border-bottom: #748FB8 solid 2px; box-shadow: none; cursor: pointer; display: inline; font-family: "Open Sans", sans-serif; font-size: 16px; font-weight: 600; height: auto; letter-spacing: 0.2px; line-height: 28.48px; text-decoration: none; transition-delay: 0s, 0s; transition-duration: 0.25s, 0.25s; transition-property: box-shadow, -webkit-box-shadow; transition-timing-function: ease, ease; }
 
-.design-system-card .buttons-links .link .link-text:active { color: #000000; }
+.design-system-card .buttons-links .link .link-text:focus { border: .0625rem dotted #748fb8; border-bottom: #748fb8 solid 2px; outline: none; }
 
-.design-system-card .buttons-links .link-dark .link-text { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #ffffff; box-shadow: inset 0 -2.8px 0 #ffffff; }
+.design-system-card .buttons-links .link .link-text:hover { background-color: transparent; border: none; box-shadow: #ddeeff 0px -20px 0px 0px inset; text-decoration: none; }
 
-.design-system-card .buttons-links .link-dark .link-text:hover { box-shadow: inset 0 -20px 0 #96B7DF; color: #254F90; }
+.design-system-card .buttons-links .link .link-text:active { color: #000000; border-bottom: #748fb8 solid 2px; box-shadow: none; }
 
-.design-system-card .buttons-links .link-dark .link-text:active { box-shadow: inset 0 -20px 0 #96B7DF; color: #212A4C; }
+.design-system-card .buttons-links .link-dark .link-text { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #ffffff; border-bottom: #ffffff solid 2px; box-shadow: none; }
+
+.design-system-card .buttons-links .link-dark .link-text:hover { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
+
+.design-system-card .buttons-links .link-dark .link-text:active { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #212A4C; }
 
 .design-system-card .buttons-links .pagination .pagination-container { padding-top: 8px; }
 
