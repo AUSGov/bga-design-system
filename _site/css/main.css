@@ -6085,6 +6085,12 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 .design-system-card .form-elements .form-example-container .checkbox-item[data-state="disabled-state"] { border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
 
+.design-system-card .hero-illustration .hero-illustration-container img { margin: 0 auto; display: block; }
+
+.design-system-card .mobile-example .hero-illustration .hero-illustration-container { background: url(../assets/hero-example-small-blue.svg) no-repeat; background-position: center center; min-height: 250px; }
+
+.design-system-card .mobile-example .hero-illustration .hero-illustration-container img { display: none; }
+
 .design-system-card .hero-pathway .hero-pathway-list { padding-bottom: 32px; }
 
 .design-system-card .hero-pathway .hero-pathway-list h3 { padding-bottom: 0; }
@@ -7145,6 +7151,10 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 .responsive-toggle-container .switch .slider:before { position: absolute; height: 24px; width: 90px; padding: 0 16px; border-radius: 20px; content: "Desktop"; color: #ffffff; left: 4px; bottom: 3px; background-color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 14px; text-align: center; -webkit-transition: .4s; transition: .4s; z-index: 2000; }
 
+.responsive-toggle-container .switch.illustration .slider:before { content: "Large"; }
+
+.responsive-toggle-container .switch.illustration input:checked + .slider:before { content: "Small"; }
+
 .responsive-toggle-container .switch .switch-text-mobile { color: #666666; position: absolute; right: 4px; bottom: 3px; width: 90px; text-align: center; }
 
 .responsive-toggle-container .switch .switch-text-mobile:before { content: "Mobile"; }
@@ -7152,6 +7162,14 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 .responsive-toggle-container .switch .switch-text-desktop { color: #666666; position: absolute; left: 4px; bottom: 3px; width: 90px; text-align: center; }
 
 .responsive-toggle-container .switch .switch-text-desktop:before { content: "Desktop"; }
+
+.responsive-toggle-container .switch .switch-text-small { color: #666666; position: absolute; right: 4px; bottom: 3px; width: 90px; text-align: center; }
+
+.responsive-toggle-container .switch .switch-text-small:before { content: "Small"; }
+
+.responsive-toggle-container .switch .switch-text-large { color: #666666; position: absolute; left: 4px; bottom: 3px; width: 90px; text-align: center; }
+
+.responsive-toggle-container .switch .switch-text-large:before { content: "Large"; }
 
 .mobile-example .example { max-width: 320px !important; padding: 0; margin: 0; }
 

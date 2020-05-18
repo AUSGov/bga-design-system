@@ -1307,6 +1307,25 @@
         }
     }
     
+    .hero-illustration {
+        .hero-illustration-container {
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+    .mobile-example .hero-illustration {
+        .hero-illustration-container {
+            img {
+                display: none;
+            }
+            background: url(../assets/hero-example-small-blue.svg) no-repeat;
+            background-position: center center;
+            min-height: 250px;
+        }
+    }
+    
     .hero-pathway {
         
         .hero-pathway-list {
@@ -4398,10 +4417,25 @@
                 transition: .4s;
                 z-index: 2000;
             }
+            
+        }
+        
+        &.illustration {
+            .slider {
+                &:before {
+                    content: "Large";
+                }
+            }
+
+            input:checked + .slider {
+                &:before {
+                    content: "Small";
+                }
+            }
         }
 
         /* Text within slider background */
-        .switch-text-mobile {
+        .switch-text-mobile  {
             color: $grey-darker;
             position: absolute;
             right: 4px;
@@ -4413,7 +4447,6 @@
                 content: "Mobile";
             }
         }
-
         .switch-text-desktop {
             color: $grey-darker;
             position: absolute;
@@ -4426,6 +4459,32 @@
                 content: "Desktop";
             }
         }
+        
+        .switch-text-small  {
+            color: $grey-darker;
+            position: absolute;
+            right: 4px;
+            bottom: 3px;
+            width: 90px;
+            text-align: center;
+
+            &:before {
+                content: "Small";
+            }
+        }
+        .switch-text-large {
+            color: $grey-darker;
+            position: absolute;
+            left: 4px;
+            bottom: 3px;
+            width: 90px;
+            text-align: center;
+
+            &:before {
+                content: "Large";
+            }
+        }
+
 
     }
 }
