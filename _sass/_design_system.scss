@@ -96,6 +96,14 @@
                 background: $white;
                 border-bottom: 1px solid $grey-light;
             }
+            &.header-blue-back {
+                padding: 40px 0px;
+                background: $blue-primary-mid;
+            }
+            &.header-yellow-back {
+                padding: 40px 0px;
+                background: #FFF4D0;
+            }
             &.modal-grey {
                 background-color: #ADADAD;
             }
@@ -1312,6 +1320,25 @@
             img {
                 margin: 0 auto;
                 display: block;
+                max-width: 100%;
+            }
+        }
+    }
+    .guide-illustration {
+        .guide-illustration-container {
+            img {
+                margin: 0 auto;
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+    .header-illustration {
+        .header-illustration-container {
+            img {
+                margin: 0 auto;
+                display: block;
+                max-width: 100%;
             }
         }
     }
@@ -1320,9 +1347,26 @@
             img {
                 display: none;
             }
-            background: url(../assets/hero-example-small-blue.svg) no-repeat;
-            background-position: center center;
-            min-height: 250px;
+            &.blue {
+                background: url(../assets/hero-example-small-blue.svg) no-repeat;
+                background-position: center center;
+                min-height: 250px;
+            }
+            &.greyyellow {
+                background: url(../assets/hero-example-small-greyyellow.svg) no-repeat;
+                background-position: center center;
+                min-height: 250px;
+            }
+            &.purple {
+                background: url(../assets/hero-example-small-purple.svg) no-repeat;
+                background-position: center center;
+                min-height: 250px;
+            }
+            &.lightblue {
+                background: url(../assets/hero-example-small-lightblue.svg) no-repeat;
+                background-position: center center;
+                min-height: 250px;
+            }
         }
     }
     
@@ -3936,6 +3980,11 @@
     max-width:100%;
     width:100%; 
 }
+.responsive-img-border {
+    max-width:100%;
+    padding: 32px;
+    border: $grey-light solid 1px;
+}
 
 .layouts {
     border-top: solid $grey 4px;
@@ -4328,6 +4377,7 @@
     padding: 24px;
     border-bottom: 1px solid $grey-light;
     position: relative;
+    display: block;
     
     @media (max-width: 650px) {
         padding: 16px 24px;
@@ -4335,7 +4385,7 @@
     
     p.toggle-name {
         font-size: 14px;
-        text-align: right;
+        text-align: right !important;
         padding-bottom: 0;
         position: relative;
         padding-right: 190px;
@@ -4356,6 +4406,11 @@
      
         @media (min-width: 651px) {
             display: none !important;   
+        }
+    }
+    &.hide-mobile {
+         @media (max-width: 651px) {
+            display: none;   
         }
     }
     

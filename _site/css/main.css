@@ -5681,6 +5681,10 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 .design-system-card.component .example-wrapper.white-back { background: #ffffff; border-bottom: 1px solid #D8D8D8; }
 
+.design-system-card.component .example-wrapper.header-blue-back { padding: 40px 0px; background: #4569A0; }
+
+.design-system-card.component .example-wrapper.header-yellow-back { padding: 40px 0px; background: #FFF4D0; }
+
 .design-system-card.component .example-wrapper.modal-grey { background-color: #ADADAD; }
 
 .design-system-card.component .example-wrapper h3 { padding-top: 0; }
@@ -6085,11 +6089,21 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 .design-system-card .form-elements .form-example-container .checkbox-item[data-state="disabled-state"] { border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
 
-.design-system-card .hero-illustration .hero-illustration-container img { margin: 0 auto; display: block; }
+.design-system-card .hero-illustration .hero-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
 
-.design-system-card .mobile-example .hero-illustration .hero-illustration-container { background: url(../assets/hero-example-small-blue.svg) no-repeat; background-position: center center; min-height: 250px; }
+.design-system-card .guide-illustration .guide-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
+
+.design-system-card .header-illustration .header-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
 
 .design-system-card .mobile-example .hero-illustration .hero-illustration-container img { display: none; }
+
+.design-system-card .mobile-example .hero-illustration .hero-illustration-container.blue { background: url(../assets/hero-example-small-blue.svg) no-repeat; background-position: center center; min-height: 250px; }
+
+.design-system-card .mobile-example .hero-illustration .hero-illustration-container.greyyellow { background: url(../assets/hero-example-small-greyyellow.svg) no-repeat; background-position: center center; min-height: 250px; }
+
+.design-system-card .mobile-example .hero-illustration .hero-illustration-container.purple { background: url(../assets/hero-example-small-purple.svg) no-repeat; background-position: center center; min-height: 250px; }
+
+.design-system-card .mobile-example .hero-illustration .hero-illustration-container.lightblue { background: url(../assets/hero-example-small-lightblue.svg) no-repeat; background-position: center center; min-height: 250px; }
 
 .design-system-card .hero-pathway .hero-pathway-list { padding-bottom: 32px; }
 
@@ -6989,6 +7003,8 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
 
 .responsive-img-no-margin { max-width: 100%; width: 100%; }
 
+.responsive-img-border { max-width: 100%; padding: 32px; border: #D8D8D8 solid 1px; }
+
 .layouts { border-top: solid #C7C7C7 4px; padding: 32px; background: #EBEBEB; margin-bottom: 32px; }
 
 .layouts p { padding: 16px 0; }
@@ -7129,17 +7145,19 @@ ul.gj-list-md li.disabled > [data-role="wrapper"] > [data-role="expander"] { col
   .body-copy .table .generic-table td:last-of-type { padding-bottom: 10px; } }
 
 /* Toggle responsive examples on component pages */
-.responsive-toggle-container { margin: 0; padding: 24px; border-bottom: 1px solid #D8D8D8; position: relative; }
+.responsive-toggle-container { margin: 0; padding: 24px; border-bottom: 1px solid #D8D8D8; position: relative; display: block; }
 
 @media (max-width: 650px) { .responsive-toggle-container { padding: 16px 24px; } }
 
-.responsive-toggle-container p.toggle-name { font-size: 14px; text-align: right; padding-bottom: 0; position: relative; padding-right: 190px; padding-top: 4px; padding: 4px 190px 0 0; }
+.responsive-toggle-container p.toggle-name { font-size: 14px; text-align: right !important; padding-bottom: 0; position: relative; padding-right: 190px; padding-top: 4px; padding: 4px 190px 0 0; }
 
 @media (max-width: 650px) { .responsive-toggle-container p.toggle-name { display: none !important; } }
 
 .responsive-toggle-container .mobile-only p { font-size: 14px; padding: 0 24px 0 0; position: relative; display: inline; }
 
 @media (min-width: 651px) { .responsive-toggle-container .mobile-only { display: none !important; } }
+
+@media (max-width: 651px) { .responsive-toggle-container.hide-mobile { display: none; } }
 
 .responsive-toggle-container .switch { position: absolute; display: inline-block; width: auto; min-width: 180px; height: 32px; margin: 0; top: 0; right: 0; /* The slider background */ /* Text within slider background */ }
 
