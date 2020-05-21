@@ -1037,6 +1037,7 @@
                     border: 3px solid $blue-primary;
                     border-top: none;
                     border-radius: 0;
+                    box-shadow: none;
                     width: auto;
                     display: block;
                     left: 0;
@@ -1244,6 +1245,11 @@
                 .error-message {
                     display: none;
                 }
+                 #datepicker {
+                    .datepicker {
+                        display: none !important;
+                    }
+                }
             }
             &[data-state="focus-state"] {
                 input, 
@@ -1287,6 +1293,15 @@
                 }
                 .error-message {
                     display: none;
+                }
+                #datepicker {
+                    .input-group {
+                        box-shadow: none !important;
+                        .input-group-addon {
+                            border: solid 3px $blue-primary;
+                            border-left: none;
+                        }
+                    }
                 }
                 
             }
@@ -1349,6 +1364,18 @@
                         padding-top: 8px;
                     }
                 }
+                #datepicker {
+                    .input-group {
+                        .input-group-addon {
+                            border: solid 3px $red-negative-dark;
+                            border-left: none;
+                        }
+                    }
+                    .datepicker {
+                        border: solid 3px $red-negative-dark;
+                        border-top: none;
+                    }
+                }
             }
             &[data-state="disabled-state"] {
                 input, 
@@ -1383,6 +1410,18 @@
                 }
                 .excess-count {
                     display: none;
+                }
+                #datepicker {
+                    .input-group {
+                        .input-group-addon {
+                            border: solid 1px $grey-headers !important;
+                            border-left: none;
+                            background:  $grey-lightest url(../assets/BGAIcon-calendar-grey.svg) no-repeat center center;
+                        }
+                    }
+                    .datepicker {
+                        display: none !important;
+                    }
                 }
             }
             

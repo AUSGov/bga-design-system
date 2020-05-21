@@ -5222,7 +5222,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container #datepicker .datepicker-wrapper { display: none; }
 
-.design-system-card .form-elements .form-example-container #datepicker .datepicker { width: 340px !important; padding: 16px; border: 3px solid #254F90; border-top: none; border-radius: 0; width: auto; display: block; left: 0; z-index: 1999; }
+.design-system-card .form-elements .form-example-container #datepicker .datepicker { width: 340px !important; padding: 16px; border: 3px solid #254F90; border-top: none; border-radius: 0; box-shadow: none; width: auto; display: block; left: 0; z-index: 1999; }
 
 .design-system-card .form-elements .form-example-container #datepicker .datepicker .table-condensed { font-size: 15px; padding: 16px; width: 100%; }
 
@@ -5300,6 +5300,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="default-state"] .error-message { display: none; }
 
+.design-system-card .form-elements .form-example-container[data-state="default-state"] #datepicker .datepicker { display: none !important; }
+
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] input, .design-system-card .form-elements .form-example-container[data-state="focus-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="focus-state"] select, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item input[data-state="focus-state"] + label:before, .design-system-card .form-elements .form-example-container[data-state="focus-state"] .combo-button { outline: none; border: solid 3px #254F90; }
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units input { border-right: 0 !important; border-left: 0 !important; }
@@ -5313,6 +5315,10 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item[data-state="focus-state"] input + label:before { background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] .error-message { display: none; }
+
+.design-system-card .form-elements .form-example-container[data-state="focus-state"] #datepicker .input-group { box-shadow: none !important; }
+
+.design-system-card .form-elements .form-example-container[data-state="focus-state"] #datepicker .input-group .input-group-addon { border: solid 3px #254F90; border-left: none; }
 
 .design-system-card .form-elements .form-example-container[data-state="active-state"] input, .design-system-card .form-elements .form-example-container[data-state="active-state"] .combo-button { outline: none; border: solid 3px #254F90; }
 
@@ -5334,6 +5340,10 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message.textarea-error-message { padding-top: 8px; }
 
+.design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .input-group .input-group-addon { border: solid 3px #D2201E; border-left: none; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .datepicker { border: solid 3px #D2201E; border-top: none; }
+
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] input, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] select, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .combo-button { outline: none; border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
 
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .checkbox-item label { color: #8E8E8E; }
@@ -5347,6 +5357,10 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .error-message { display: none; }
 
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .excess-count { display: none; }
+
+.design-system-card .form-elements .form-example-container[data-state="disabled-state"] #datepicker .input-group .input-group-addon { border: solid 1px #E2E2E2 !important; border-left: none; background: #F5F5F5 url(../assets/BGAIcon-calendar-grey.svg) no-repeat center center; }
+
+.design-system-card .form-elements .form-example-container[data-state="disabled-state"] #datepicker .datepicker { display: none !important; }
 
 .design-system-card .form-elements .form-example-container .radio-item[data-state="default-state"] { border: solid 1px #495C74; }
 

@@ -324,6 +324,16 @@ $(document).ready(function () {
             common_ancestor.find(".button-wrapper").attr('data-state', "active-state");
     });
     
+    // Datepicker in focus
+    $('#datepicker input').focus(function(){
+        var common_ancestor = $(this).closest('.design-system-card');
+        
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.focus-label input').attr('checked','checked');
+        $(this).closest(".example").attr('data-state', 'focus-state');
+
+    });
+    
     // Textarea character count
     var max_length = 100;
     $('#form-text-area').highlightWithinTextarea({
@@ -388,7 +398,8 @@ $(document).ready(function () {
         });
     });
     
-    // Date picker
+    
+     /*----------- COMPONENT EXAMPLE: Datepicker ----------- */
     $('#datepicker').datepicker({
         format: "dd/mm/yyyy",
         weekStart: 1,
@@ -399,7 +410,23 @@ $(document).ready(function () {
     $('#datepicker .input-group-addon').on('click', function(){
         $('.datepicker').slideToggle( 300, function() {
         });
+        var common_ancestor = $(this).closest('.design-system-card');
+        
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.focus-label input').attr('checked','checked');
+        $(this).closest(".example").attr('data-state', 'focus-state');
     });
+    $('#datepicker').on('changeDate', function(ev){
+        $('.datepicker').hide();
+        
+        var common_ancestor = $(this).closest('.design-system-card');
+        
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.default-label input').attr('checked','checked');
+        $(this).closest(".example").attr('data-state', 'default-state');
+        
+    });
+    
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
     $('tr td:first-of-type').on('click', function(){
