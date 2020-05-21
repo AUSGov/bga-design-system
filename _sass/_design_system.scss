@@ -701,7 +701,6 @@
                     display: none !important;
                 }
             }
-
             
             .text-box-with-units {
                 span {
@@ -1005,6 +1004,149 @@
                 }
             }
             
+            #datepicker {
+                .input-group {
+                    position: relative;
+                    display: block;
+                    width: 340px;
+                    height: 52px;
+                    z-index: 2000;
+                    
+                    input {
+                        border-radius: 0;
+                        width: 288px;
+                        display: inline-block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .input-group-addon {
+                        height: 52px;
+                        width: 52px;
+                        border: solid 1px $darkblue-mid;
+                        border-left: none;
+                        display: inline-block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background: url(../assets/BGAIcon-calendar-blue-mid.svg) no-repeat center center;
+                        
+                        &:hover {
+                            background: url(../assets/BGAIcon-calendar-blue.svg) no-repeat center center;
+                            border: solid 3px $blue-primary;
+                        }
+                    }
+                }
+                .datepicker-wrapper {
+                    display: none;
+                }
+                .datepicker {
+                    width: 340px !important;
+                    padding: 16px;
+                    border: 3px solid $blue-primary;
+                    border-top: none;
+                    border-radius: 0;
+                    box-shadow: none;
+                    width: auto;
+                    display: block;
+                    left: 0;
+                    z-index: 1999;
+
+                    .table-condensed {
+                        font-size: 15px;
+                        padding: 16px;
+                        width: 100%;
+                        
+                        td, th {
+                            border-radius: 0;
+                        }
+                        .datepicker-switch {
+                            padding: 8px;
+                            height: 44px;
+                            font-size: 16px;
+                            text-align: center;
+                            @include font-format($font-family, $font-semibold, normal);
+                            color: $blue-primary;  
+                            cursor: pointer;
+                            
+                            &:hover {
+                                background: $grey-lighter;
+                            }
+                        }
+                        .prev {
+                            text-indent: -9999px;
+                            background: url(../assets/BGAIcon-chevron-left-blue.svg) no-repeat;
+                            background-position: center center;
+                            background-size: 10px 16px;
+                            cursor: pointer;
+                            
+                            &:hover {
+                                background-color: $grey-lighter;
+                            }
+                        }
+                        .next {
+                            text-indent: -9999px;
+                            background: url(../assets/BGAIcon-chevron-right-blue.svg) no-repeat;
+                            background-position: center center;
+                            background-size: 10px 16px;
+                            
+                            &:hover {
+                                background-color: $grey-lighter;
+                            }
+                        }
+                        .dow {
+                            color: $blue-primary;
+                            @include font-format($font-family, $font-semibold, normal);
+                        }
+                        .day  {
+                            padding: 8px;
+                            height: 44px;
+                            width: 44px;
+                            text-align: center;
+                            
+                            &.active {
+                                background: $blue-primary-mid;
+                                color: $white;
+                                @include font-format($font-family, $font-semibold, normal);
+                            }
+                            &.today {
+                                background: $grey-lighter;
+                                opacity: 1;
+                            }
+                            &.old,
+                            &.new {
+                                color: $grey;
+                            }
+
+                            &:hover {
+                                background: $blue-primary;
+                                color: $white;
+                                @include font-format($font-family, $font-semibold, normal);
+                            }
+                        }
+                        span {
+                            border-radius: 0;
+                            margin: 0;
+                            padding: 8px 0;
+                            line-height: 34px;
+                            width: 25%;
+                            
+                            &.focused, &.active {
+                                background: $blue-primary-mid;
+                                color: $white;
+                                @include font-format($font-family, $font-semibold, normal);
+                            }
+                            
+                             &:hover {
+                                background: $blue-primary;
+                                color: $white;
+                                @include font-format($font-family, $font-semibold, normal);
+                            }
+                        }  
+                    }
+                }
+            }
+            
             &.text-box-button-combo-example {
                 position: relative;
                 -webkit-transform: none;
@@ -1112,6 +1254,11 @@
                 .error-message {
                     display: none;
                 }
+                 #datepicker {
+                    .datepicker {
+                        display: none !important;
+                    }
+                }
             }
             &[data-state="focus-state"] {
                 input, 
@@ -1155,6 +1302,15 @@
                 }
                 .error-message {
                     display: none;
+                }
+                #datepicker {
+                    .input-group {
+                        box-shadow: none !important;
+                        .input-group-addon {
+                            border: solid 3px $blue-primary;
+                            border-left: none;
+                        }
+                    }
                 }
                 
             }
@@ -1217,6 +1373,18 @@
                         padding-top: 8px;
                     }
                 }
+                #datepicker {
+                    .input-group {
+                        .input-group-addon {
+                            border: solid 3px $red-negative-dark;
+                            border-left: none;
+                        }
+                    }
+                    .datepicker {
+                        border: solid 3px $red-negative-dark;
+                        border-top: none;
+                    }
+                }
             }
             &[data-state="disabled-state"] {
                 input, 
@@ -1251,6 +1419,18 @@
                 }
                 .excess-count {
                     display: none;
+                }
+                #datepicker {
+                    .input-group {
+                        .input-group-addon {
+                            border: solid 1px $grey-headers !important;
+                            border-left: none;
+                            background:  $grey-lightest url(../assets/BGAIcon-calendar-grey.svg) no-repeat center center;
+                        }
+                    }
+                    .datepicker {
+                        display: none !important;
+                    }
                 }
             }
             
