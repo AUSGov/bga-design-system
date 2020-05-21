@@ -11,7 +11,7 @@ longdesc: Display a stylised quote or important content.
 <div class="main-section">
         <div class="c-wrapper c-wrapper-bg-transparent container-fluid" >   
             <div class="row">
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
+                <div class="anchor-col col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
                     <div>
                         <div>
                             <div class="anchor-menu" >
@@ -30,7 +30,7 @@ longdesc: Display a stylised quote or important content.
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-8 col-md-9 col-lg-10 col-xl-9">
+                <div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-8">
 
 
 <!-- Visual design -->
@@ -104,46 +104,68 @@ longdesc: Display a stylised quote or important content.
                             
 <div class="element-code">
 
-<h4>Desktop &amp; mobile</h4>
-<h5>Grant status icon and text</h5>
+<h4>Desktop</h4>
+<h5>Quotation mark</h5>
 <code>
 <pre>
-p.status {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 32px;
-}
-
-</pre>
-</code>
-    
-<code>
-<pre>
-.icon-closed {
-    color: #E75755;
+.quotation-mark {    
+    color: #F3DEA7;
+    width: 40px;
     height: 24px;
-    width: 24px;
+    margin-bottom: 20px;
 }
 
 </pre>
 </code>
-    
-<h5>Grant information</h5>    
+<h5>Quote</h5>
 <code>
 <pre>
-p.details {
+p.quote {
     color: #333333;
     font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 21px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 40px;
 }
-p.details strong {
-    font-family: OpenSans-Semibold;
+
+</pre>
+</code>
+<h5>Source</h5>
+<code>
+<pre>
+p.source {
+    color: #666666;
+    font-family: OpenSans-Italic;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+}
+
+</pre>
+</code>
+<h5>Divider</h5>
+<code>
+<pre>
+hr {
+    color: #EDCA72;
+    height: 2px;
+    width: 42px;
 }
 </pre>
 </code>
     
+<h4>Mobile</h4>
+<h5>Quote</h5>
+<code>
+<pre>
+p.quote {
+    font-size: 18px;
+    line-height: 24px;
+}
+</pre>
+</code>   
 
 </div>
 
