@@ -5224,6 +5224,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container #datepicker .input-group .input-group-addon:hover { background: url(../assets/BGAIcon-calendar-blue.svg) no-repeat center center; border: solid 3px #254F90; }
 
+@media (max-width: 650px) { .design-system-card .form-elements .form-example-container #datepicker .input-group { width: 250px; }
+  .design-system-card .form-elements .form-example-container #datepicker .input-group input { width: 200px; } }
+
 .design-system-card .form-elements .form-example-container .datepicker { width: 340px !important; padding: 16px; border: 3px solid #254F90; border-top: none; border-radius: 0; box-shadow: none; width: auto; display: block; left: 40px !important; top: 134px !important; z-index: 1999; }
 
 .design-system-card .form-elements .form-example-container .datepicker:before { display: none; }
@@ -5261,6 +5264,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container .datepicker .table-condensed span.focused, .design-system-card .form-elements .form-example-container .datepicker .table-condensed span.active { background: #4569A0; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
 .design-system-card .form-elements .form-example-container .datepicker .table-condensed span:hover { background: #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
+@media (max-width: 650px) { .design-system-card .form-elements .form-example-container .datepicker { width: 250px !important; top: 116px !important; left: 24px !important; padding: 8px; }
+  .design-system-card .form-elements .form-example-container .datepicker .table-condensed .day { padding: 6px; height: 36px; width: 36px; } }
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example { position: relative; -webkit-transform: none; transform: none; }
 
