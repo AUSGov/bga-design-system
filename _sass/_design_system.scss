@@ -1039,6 +1039,16 @@
                         }
                     }
                 }
+                
+                @media (max-width: 650px) {
+                    .input-group {
+                        width: 250px;
+                        
+                        input {
+                            width: 200px;
+                        }
+                    }
+                }
   
             }
             
@@ -1058,7 +1068,6 @@
                 &:before {
                     display: none;
                 }
-
 
                 .table-condensed {
                     font-size: 15px;
@@ -1159,6 +1168,21 @@
                             background: $blue-primary;
                             color: $white;
                             @include font-format($font-family, $font-semibold, normal);
+                        }
+                    }
+                }
+                
+                @media(max-width: 650px) {
+                    width: 250px !important;
+                    top: 116px !important;
+                    left: 24px !important;
+                    padding: 8px;
+                    
+                    .table-condensed {
+                        .day {
+                            padding: 6px;
+                            height: 36px;
+                            width: 36px;
                         }
                     }
                 }
