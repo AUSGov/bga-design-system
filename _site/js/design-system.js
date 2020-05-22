@@ -400,6 +400,40 @@ $(document).ready(function () {
     
     
      /*----------- COMPONENT EXAMPLE: Datepicker ----------- */
+    
+    $('#datepicker .input-group.date').datepicker({
+        format: "dd/mm/yyyy",
+        autoclose: true,
+        todayHighlight: true,
+        weekStart: 1,
+        container: '#datepicker-container',
+        orientation: "bottom left"
+    });
+    $('.close-button').unbind();
+
+    $('.close-button').click(function () {
+        var common_ancestor = $(this).closest('.design-system-card');
+        
+        if ($('.datepicker').is(":visible")) {
+            $('.date').datepicker('hide');
+        
+            common_ancestor.find('.state-selector label input').removeAttr('checked');
+            common_ancestor.find('.default-label input').attr('checked','checked');
+            $(this).closest(".example").attr('data-state', 'default-state');
+            
+        } else {
+            $('.date').datepicker('show');
+            
+            common_ancestor.find('.state-selector label input').removeAttr('checked');
+            common_ancestor.find('.focus-label input').attr('checked','checked');
+            $(this).closest(".example").attr('data-state', 'focus-state');
+            
+        }
+    });
+    
+    
+    
+    /*
     $('#datepicker').datepicker({
         format: "dd/mm/yyyy",
         weekStart: 1,
@@ -425,7 +459,7 @@ $(document).ready(function () {
         common_ancestor.find('.default-label input').attr('checked','checked');
         $(this).closest(".example").attr('data-state', 'default-state');
         
-    });
+    });*/
     
     
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
