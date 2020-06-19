@@ -77,7 +77,6 @@ $(document).ready(function () {
         
         var win = $(window),
             stickyWidth = $('.anchor-col').width();
-            console.log(stickyWidth);
         
         // Set side-menu initial horizontal position 
         if(win.width() < 575) {
@@ -400,6 +399,48 @@ $(document).ready(function () {
         });
     });
     
+    // Infographic select option
+    $('#colour-set').change(function(){
+        
+        var expr = $(this).val();
+        
+        switch (expr) {
+            case 'blue':
+                $('.example').addClass('hide-infographic');
+                $('.example.blue').removeClass('hide-infographic');
+                break;
+            case 'green':
+                $('.example').addClass('hide-infographic');
+                $('.example.green').removeClass('hide-infographic');
+                break;
+             case 'teal':
+                $('.example').addClass('hide-infographic');
+                $('.example.teal').removeClass('hide-infographic');
+                break;
+             case 'blue grey':
+                $('.example').addClass('hide-infographic');
+                $('.example.blue-grey').removeClass('hide-infographic');
+                break;
+             case 'dark purple':
+                $('.example').addClass('hide-infographic');
+                $('.example.dark-purple').removeClass('hide-infographic');
+                break;
+            case 'purple':
+                $('.example').addClass('hide-infographic');
+                $('.example.purple').removeClass('hide-infographic');
+                break;
+            case 'extended':
+                $('.example').addClass('hide-infographic');
+                $('.example.extended').removeClass('hide-infographic');
+                break;
+            default:
+                $('.example').addClass('hide-infographic');
+                $('.example.blue').removeClass('hide-infographic');
+                break;  
+            
+        }
+    });
+    
     
      /*----------- COMPONENT EXAMPLE: Datepicker ----------- */
     
@@ -539,7 +580,6 @@ $(document).ready(function () {
             if($(this).hasClass('current')) {
                 current_pos = i;
                 $(this).removeClass('current');
-                console.log(current_pos);
             }
         }); 
         var new_pos = $('.pagination-container a.page').get(current_pos - 1);
@@ -556,7 +596,6 @@ $(document).ready(function () {
             if($(this).hasClass('current')) {
                 current_pos = i;
                 $(this).removeClass('current');
-                console.log(current_pos);
             }
         }); 
         var new_pos = $('.pagination-container a.page').get(current_pos + 1);
@@ -570,7 +609,6 @@ $(document).ready(function () {
 
      /*----------- COMPONENT EXAMPLE: Anchor menu ----------- */
     $('.anchor-menu-example a').on('click', function(){
-        console.log('clicked');
         $('.anchor-menu-example a').removeClass('active-sticky');
         $(this).addClass('active-sticky');
     });
