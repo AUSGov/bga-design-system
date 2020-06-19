@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="892" height="338.946" viewBox="0 0 892 338.946">
+  <g id="Group_4853" data-name="Group 4853" transform="translate(-357 -1248.506)">
+    <rect id="Rectangle_809" data-name="Rectangle 809" width="892" height="338" transform="translate(357 1249)" fill="none"/>
+    <g id="Group_4850" data-name="Group 4850" transform="translate(78.732)">
+      <line id="Line_518" data-name="Line 518" x1="180.872" transform="translate(810.433 1358.631)" fill="none" stroke="#404041" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_519" data-name="Line 519" x1="164.805" y1="2.183" transform="translate(826.5 1460.684)" fill="none" stroke="#404041" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_520" data-name="Line 520" x1="139.071" transform="translate(852.234 1409.721)" fill="none" stroke="#404041" stroke-miterlimit="10" stroke-width="1"/>
+      <text id="_86_Easy" data-name="86% Easy" transform="translate(883.584 1461.527)" fill="#333" font-size="21.727" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="13.066" y="23">86% </tspan><tspan y="23" font-family="OpenSans, Open Sans" font-weight="400">Easy</tspan></text>
+      <text id="Hard" transform="translate(903.58 1413.026)" fill="#333" font-size="21.727" font-family="OpenSans, Open Sans"><tspan x="37.862" y="23">Hard</tspan></text>
+      <text id="_8_Neither_" data-name="8% Neither " transform="translate(862.684 1326.453)" fill="#404041" font-size="21.727" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="15.719" y="23">8% </tspan><tspan y="23" fill="#333" font-family="OpenSans, Open Sans" font-weight="400">Neither </tspan></text>
+      <text id="_6_" data-name="6%" transform="translate(892.874 1409.077)" fill="#404041" font-size="24.394" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="4.493" y="26">6%</tspan></text>
+      <line id="Line_521" data-name="Line 521" x1="180.872" transform="translate(465.433 1358.631)" fill="none" stroke="#404041" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_522" data-name="Line 522" x1="206.067" transform="translate(465.433 1535.721)" fill="none" stroke="#404041" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Group_4717" data-name="Group 4717" transform="translate(-118 379.184)">
+        <line id="Line_523" data-name="Line 523" x1="206.417" transform="translate(902.888 1157.683)" fill="none" stroke="#404041" stroke-miterlimit="10" stroke-width="1"/>
+        <text id="_86_Easy-2" data-name="86% Easy" transform="translate(1001.584 1156.343)" fill="#333" font-size="21.727" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="13.066" y="23">86% </tspan><tspan y="23" font-family="OpenSans, Open Sans" font-weight="400">Easy</tspan></text>
+      </g>
+      <text id="_48_Apples" data-name="48% Apples" transform="translate(465.433 1327.452)" fill="#404041" font-size="21.727" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="0" y="23">48% </tspan><tspan y="23" fill="#333" font-family="OpenSans, Open Sans" font-weight="400">Apples</tspan></text>
+      <text id="_16_Bananas" data-name="16% Bananas" transform="translate(465.433 1533.452)" fill="#404041" font-size="21.727" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="0" y="23">16% </tspan><tspan y="23" fill="#333" font-family="OpenSans, Open Sans" font-weight="400">Bananas</tspan></text>
+      <text id="Fruit_consumption_in_1908" data-name="Fruit consumption in 1908" transform="translate(456.268 1248.506)" fill="#333" font-size="21.727" font-family="OpenSans-Italic, Open Sans" font-style="italic"><tspan x="0" y="23">Fruit consumption in 1908</tspan></text>
+      <path id="Path_4498" data-name="Path 4498" d="M891.373,990.872l-17.97,22.191h0Z" transform="translate(-118 379.184)" fill="none"/>
+      <path id="Path_4499" data-name="Path 4499" d="M802.906,1091.094l-55.862,55.862,55.862-55.862Z" transform="translate(-118 379.184)" fill="none"/>
+      <path id="Path_4500" data-name="Path 4500" d="M892.924,1053.723c0,.088-.005.176-.005.264h79a127.6,127.6,0,0,0-9.587-49.319l-73.243,29.592A52.478,52.478,0,0,1,892.924,1053.723Z" transform="translate(-118 379.184)" fill="#239546"/>
+      <path id="Path_4501" data-name="Path 4501" d="M873.4,1013.063a52.773,52.773,0,0,1,15.687,21.2l73.243-29.592a126.536,126.536,0,0,0-39.215-53l-31.744,39.2Z" transform="translate(-118 379.184)" fill="#b74d94"/>
+      <path id="Path_4502" data-name="Path 4502" d="M840.527,1106.649a52.493,52.493,0,0,1-37.621-15.555l-55.862,55.862a131.246,131.246,0,0,0,93.219,38.687,133.025,133.025,0,0,0,13.594-.695l-8.314-78.568C843.892,1106.544,842.22,1106.641,840.527,1106.649Z" transform="translate(-118 379.184)" fill="#84b2f9"/>
+      <path id="Path_4503" data-name="Path 4503" d="M971.919,1053.987h-79a52.413,52.413,0,0,1-8.88,29.281l65.034,44.852a131.037,131.037,0,0,0,22.846-74.133Z" transform="translate(-118 379.184)" fill="#59a09f"/>
+      <path id="Path_4504" data-name="Path 4504" d="M787.6,1054.252a52.659,52.659,0,0,1,85.8-41.189l17.971-22.191,31.744-39.2h0c-24.864-20.134-50.861-29.34-82.854-29.34a131.655,131.655,0,0,0-93.219,224.625l55.862-55.862A52.482,52.482,0,0,1,787.6,1054.252Z" transform="translate(-118 379.184)" fill="#4569a0"/>
+      <path id="Path_4505" data-name="Path 4505" d="M845.543,1106.38l8.314,78.568a131.586,131.586,0,0,0,95.216-56.828l-65.034-44.852A52.627,52.627,0,0,1,845.543,1106.38Z" transform="translate(-118 379.184)" fill="#ffd964"/>
+      <path id="Path_4506" data-name="Path 4506" d="M845.543,1106.38l8.314,78.569-8.314-78.569Z" transform="translate(-118 379.184)" fill="#f5c44f"/>
+      <path id="Path_4507" data-name="Path 4507" d="M884.039,1083.268l65.034,44.851-65.034-44.851Z" transform="translate(-118 379.184)" fill="#f5c44f"/>
+    </g>
+  </g>
+</svg>

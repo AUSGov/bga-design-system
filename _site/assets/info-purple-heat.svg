@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="554.631" height="255.748" viewBox="0 0 554.631 255.748">
+  <g id="Group_4831" data-name="Group 4831" transform="translate(-289.369 -2330.619)">
+    <g id="Group_4681" data-name="Group 4681" transform="translate(-166 376.184)">
+      <rect id="Rectangle_753" data-name="Rectangle 753" width="277.321" height="255.731" transform="translate(455.369 1954.453)" fill="#a4237a"/>
+      <rect id="Rectangle_754" data-name="Rectangle 754" width="138.663" height="255.731" transform="translate(732.702 1954.453)" fill="#cd86b6"/>
+      <rect id="Rectangle_755" data-name="Rectangle 755" width="138.66" height="63.934" transform="translate(871.34 1954.436)" fill="#e8c8de"/>
+      <rect id="Rectangle_756" data-name="Rectangle 756" width="138.66" height="63.934" transform="translate(871.34 2018.841)" fill="#fbe8b9"/>
+      <rect id="Rectangle_757" data-name="Rectangle 757" width="138.66" height="127.867" transform="translate(871.34 2082.316)" fill="#f5c44f"/>
+      <text id="NSW" transform="translate(465.46 1963.801)" fill="#fff" font-size="26" font-family="OpenSans, Open Sans"><tspan x="0" y="28">NSW</tspan></text>
+      <text id="_59_" data-name="59%" transform="translate(714.082 2186.142)" fill="#fff" font-size="73" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="-146.25" y="0">59%</tspan></text>
+      <text id="_21_" data-name="21%" transform="translate(859.846 2188.441)" fill="#333" font-size="48" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="-96.164" y="0">21%</tspan></text>
+      <text id="_10_" data-name="10%" transform="translate(995.072 2188.441)" fill="#333" font-size="28" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="-56.096" y="0">10%</tspan></text>
+      <text id="_5_" data-name="5%" transform="translate(995.072 2061.082)" fill="#333" font-size="28" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="-40.113" y="0">5%</tspan></text>
+      <text id="_5_2" data-name="5%" transform="translate(995.072 1997.527)" fill="#333" font-size="28" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="-40.113" y="0">5%</tspan></text>
+      <text id="VIC" transform="translate(744.694 1963.801)" fill="#333" font-size="26" font-family="OpenSans, Open Sans"><tspan x="0" y="28">VIC</tspan></text>
+      <text id="ACT" transform="translate(881.677 1967.801)" fill="#333" font-size="26" font-family="OpenSans, Open Sans"><tspan x="0" y="28">ACT</tspan></text>
+      <text id="QLD" transform="translate(881.677 2031.355)" fill="#333" font-size="26" font-family="OpenSans, Open Sans"><tspan x="0" y="28">QLD</tspan></text>
+      <text id="WA" transform="translate(881.677 2092.61)" fill="#333" font-size="26" font-family="OpenSans, Open Sans"><tspan x="0" y="28">WA</tspan></text>
+    </g>
+  </g>
+</svg>
