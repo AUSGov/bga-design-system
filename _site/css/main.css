@@ -6452,7 +6452,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .infographic-examples-wrapper .colours-wrapper .info-colours p span.accessible { background: url(../assets/Icon-tick-circle-blue.svg) no-repeat; background-size: 18px; background-position-y: 4px; }
 
-.infographic-examples-wrapper .colours-wrapper .info-colours p span.not-accessible { background: url(../assets/Icon-cross-circle-grey.svg) no-repeat; background-size: 18px; background-position-y: 4px; color: #ffffff; }
+.infographic-examples-wrapper .colours-wrapper .info-colours p span.not-accessible { background: url(../assets/Icon-cross-circle-grey.svg) no-repeat; background-size: 18px; background-position-y: 4px; text-indent: -9999px; }
 
 @media (max-width: 991px) { .infographic-examples-wrapper .colours-wrapper .colours-header p { font-size: 12px; }
   .infographic-examples-wrapper .colours-wrapper .info-colours p span { background: none !important; padding-left: 0; color: #333333 !important; } }
@@ -6485,6 +6485,16 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
   .infographic-examples-wrapper .examples-wrapper .infographic.width-38 { width: 100%; }
   .infographic-examples-wrapper .examples-wrapper .infographic.width-50 { width: 100%; }
   .infographic-examples-wrapper .examples-wrapper .infographic.width-62 { width: 100%; } }
+
+#infographics-explanation-accordion .card-header { padding: 8px 48px; text-align: right; background: #EBEBEB; }
+
+#infographics-explanation-accordion .card-header button { color: #333333; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #EBEBEB url(../assets/Icon-chevron-down-333333.svg) no-repeat; background-position: right center; background-size: 16px 12px; padding: 0 24px 4px 0; }
+
+#infographics-explanation-accordion .card-header button:hover { text-decoration: underline; }
+
+#infographics-explanation-accordion .card-header button[aria-expanded="true"] { background: #EBEBEB url(../assets/Icon-chevron-up-333333.svg) no-repeat; background-position: right center; background-size: 16px 12px; }
+
+#infographics-explanation-accordion .card-body { background: #EBEBEB; padding: 16px 32px; }
 
 .responsive-img { max-width: 100%; width: 100%; margin-bottom: 24px; }
 
