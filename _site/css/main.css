@@ -5130,6 +5130,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container select[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
+.design-system-card .form-elements .form-example-container select::-ms-expand { display: none !important; }
+
 .design-system-card .form-elements .form-example-container .radio-item { border: solid 1px #495C74; min-height: 52px; width: 100%; max-width: 350px; padding: 10px 15px; line-height: 0; display: block; margin-bottom: 16px; }
 
 .design-system-card .form-elements .form-example-container .radio-item:last-of-type { margin-bottom: 0; }
@@ -6309,6 +6311,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .infographic-select-wrapper select#colour-set:focus { outline: none; border: solid 1px #254F90 !important; }
 
 .infographic-select-wrapper select#colour-set[type=text] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
+
+.infographic-select-wrapper select::-ms-expand { display: none !important; }
 
 .infographic-examples-wrapper { border: 1px solid #D8D8D8; background: #ffffff; padding: 24px; margin-bottom: 32px; width: auto; }
 
