@@ -4524,7 +4524,7 @@
                         background: url(../assets/Icon-cross-circle-grey.svg) no-repeat;
                         background-size: 18px;
                         background-position-y: 4px;
-                        color: $white;
+                        text-indent: -9999px;                        
                     }
                 }
             }
@@ -4618,6 +4618,36 @@
                 }
             }
         }
+    }
+}
+#infographics-explanation-accordion {
+    .card-header {
+        padding: 8px 48px;
+        text-align: right;
+        background: $grey-lighter;
+
+        button {
+            color: $black-light;
+            @include font-format($font-family, $font-semibold, normal);
+            background: $grey-lighter url(../assets/Icon-chevron-down-333333.svg) no-repeat;
+            background-position: right center;
+            background-size: 16px 12px;
+            padding: 0 24px 4px 0;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+            &[aria-expanded="true"] {
+                background: $grey-lighter url(../assets/Icon-chevron-up-333333.svg) no-repeat;
+                background-position: right center;
+                background-size: 16px 12px;
+            }
+        }
+       
+    }
+    .card-body {
+        background: $grey-lighter;
+        padding: 16px 32px;
     }
 }
 
