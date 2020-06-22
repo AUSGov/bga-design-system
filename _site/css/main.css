@@ -6486,7 +6486,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
   .infographic-examples-wrapper .examples-wrapper .infographic.width-50 { width: 100%; }
   .infographic-examples-wrapper .examples-wrapper .infographic.width-62 { width: 100%; } }
 
-#infographics-explanation-accordion .card-header { padding: 8px 48px; text-align: right; background: #EBEBEB; }
+#infographics-explanation-accordion { margin-bottom: 32px; }
+
+#infographics-explanation-accordion .card-header { padding: 8px 32px; text-align: right; background: #EBEBEB; }
 
 #infographics-explanation-accordion .card-header button { color: #333333; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #EBEBEB url(../assets/Icon-chevron-down-333333.svg) no-repeat; background-position: right center; background-size: 16px 12px; padding: 0 24px 4px 0; }
 
@@ -6494,13 +6496,20 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 #infographics-explanation-accordion .card-header button[aria-expanded="true"] { background: #EBEBEB url(../assets/Icon-chevron-up-333333.svg) no-repeat; background-position: right center; background-size: 16px 12px; }
 
-#infographics-explanation-accordion .card-body { background: #EBEBEB; padding: 16px 32px; }
+#infographics-explanation-accordion .card-body { background: #EBEBEB; padding: 16px 32px 32px 32px; }
+
+#infographics-explanation-accordion .card-body p:last-of-type { margin-bottom: 0; padding-bottom: 0; }
+
+@media (max-width: 767px) { #infographics-explanation-accordion .card-header { padding: 8px 24px; }
+  #infographics-explanation-accordion .card-body { padding: 16px 24px 24px 24px; } }
 
 .responsive-img { max-width: 100%; width: 100%; margin-bottom: 24px; }
 
 .responsive-img-no-margin { max-width: 100%; width: 100%; }
 
 .responsive-img-border { max-width: 100%; padding: 32px; border: #D8D8D8 solid 1px; }
+
+@media (max-width: 767px) { .responsive-img-border { padding: 24px; } }
 
 .layouts { border-top: solid #C7C7C7 4px; padding: 32px; background: #EBEBEB; margin-bottom: 32px; }
 
