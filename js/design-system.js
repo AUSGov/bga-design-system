@@ -475,6 +475,7 @@ $(document).ready(function () {
     });
     
 
+    
     /*----------- COMPONENT EXAMPLE: Tables ----------- */
     $('tr td:first-of-type').on('click', function(){
         
@@ -486,6 +487,7 @@ $(document).ready(function () {
         $(parent).toggleClass('groupParent');
         
     });
+    
     
     
     /*----------- COMPONENT EXAMPLE: Accordions ----------- */
@@ -613,6 +615,30 @@ $(document).ready(function () {
         $(this).addClass('active-sticky');
     });
     
+    
+    /*----------- COMPONENT EXAMPLE: Dynamic forms ----------- */
+    $('input#postcode').on('change', function(){
+        var postcode = Number($(this).val()),
+            parent_question = $(this).parents('.question-wrapper');
+        
+        if (isNaN(postcode)) {
+            parent_question.addClass('error');
+        } else {
+            parent_question.next('.question-wrapper').removeClass('dynamic-hide');
+            parent_question.removeClass('error');
+        }
+    });
+    $('select#industry').on('change', function(){
+        var parent_question = $(this).parents('.question-wrapper');
+        parent_question.next('.question-wrapper').removeClass('dynamic-hide');
+    });
+    $('.multi-select-group button').on('click', function(){
+        var parent_question = $(this).parents('.question-wrapper');
+        parent_question.next('.question-wrapper').removeClass('dynamic-hide');
+        $(this).toggleClass('not-selected');
+        $(this).toggleClass('selected');
+    });
+    $()
     
     
     

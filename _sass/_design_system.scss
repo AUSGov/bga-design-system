@@ -106,6 +106,9 @@
             &.modal-grey {
                 background-color: #ADADAD;
             }
+            &.form-blue-back {
+                background: $blue-primary;
+            }
             
             h3 {
                 padding-top: 0;
@@ -1536,6 +1539,86 @@
                 }
             }
             
+        }
+    }
+    .dynamic-form-elements {
+        h1, h2, h3, h4, p, label, a {
+            color: $white;
+        }
+        .dynamic-hide {
+            display: none;
+        }
+        p {
+            font-size: 18px;
+            
+            &.contextual-help {
+                font-size: 12px;
+                padding: 0;
+                line-height: 1rem;
+            }
+        }
+        label {
+            font-size: 32px;
+            @include font-format($font-family, $font-semibold, normal);
+            margin: 0 16px 0 0;
+        }
+        input {
+            margin: 0 0 16px 0;
+            color: $white;
+        }
+        select {
+            margin: 0;
+            @include font-format($font-family, $font-semibold, normal);
+            font-size: 20px;
+        }
+        .multi-select-group {
+            margin-top: 16px;
+            
+            button {
+                padding: 6px 16px 6px 40px;
+                
+                &.not-selected {
+                    background: $blue-primary-mid url(../assets/Icon-DF-plus-lightblue.svg) no-repeat;
+                    background-position: center left 16px;
+                
+                    &:hover {
+                        background: $blue-primary url(../assets/Icon-DF-plus-white.svg) no-repeat;
+                        background-position: center left 16px;
+                    }
+                    &:active {
+                        background: $blue-active url(../assets/Icon-DF-plus-white.svg) no-repeat;
+                        background-position: center left 16px;
+                    }
+                }
+                &.selected {
+                    background: $white url(../assets/Icon-DF-tick-blue.svg) no-repeat;
+                    background-position: center left 16px;
+                }
+            }
+        }
+        .question-wrapper {
+            .validation-message {
+                display: none;
+            }
+            &.error {
+                margin-bottom: 32px;
+                padding: 24px;
+                background: $red-negative-lightest;
+                border-left: solid $red-negative-dark 3px;
+
+                label, p, p.contextual-help {
+                    color: $blue-primary;
+                }
+                input {
+                    color: #7983aa;
+                    border-bottom: solid $red-negative-dark 2px;
+                }
+                .validation-message {
+                    display: block;
+                    color: $red-negative-dark;
+                    margin-top: 8px;
+                }
+            }
         }
     }
     

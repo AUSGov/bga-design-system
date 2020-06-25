@@ -4924,6 +4924,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .example-wrapper.modal-grey { background-color: #ADADAD; }
 
+.design-system-card.component .example-wrapper.form-blue-back { background: #254F90; }
+
 .design-system-card.component .example-wrapper h3 { padding-top: 0; }
 
 .design-system-card.component .example { margin: 0 auto; }
@@ -5393,6 +5395,42 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container .checkbox-item[data-state="error-state"] input + label:before { border: solid 3px #D2201E; background: #ffffff; }
 
 .design-system-card .form-elements .form-example-container .checkbox-item[data-state="disabled-state"] { border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
+
+.design-system-card .dynamic-form-elements h1, .design-system-card .dynamic-form-elements h2, .design-system-card .dynamic-form-elements h3, .design-system-card .dynamic-form-elements h4, .design-system-card .dynamic-form-elements p, .design-system-card .dynamic-form-elements label, .design-system-card .dynamic-form-elements a { color: #ffffff; }
+
+.design-system-card .dynamic-form-elements .dynamic-hide { display: none; }
+
+.design-system-card .dynamic-form-elements p { font-size: 18px; }
+
+.design-system-card .dynamic-form-elements p.contextual-help { font-size: 12px; padding: 0; line-height: 1rem; }
+
+.design-system-card .dynamic-form-elements label { font-size: 32px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; margin: 0 16px 0 0; }
+
+.design-system-card .dynamic-form-elements input { margin: 0 0 16px 0; color: #ffffff; }
+
+.design-system-card .dynamic-form-elements select { margin: 0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 20px; }
+
+.design-system-card .dynamic-form-elements .multi-select-group { margin-top: 16px; }
+
+.design-system-card .dynamic-form-elements .multi-select-group button { padding: 6px 16px 6px 40px; }
+
+.design-system-card .dynamic-form-elements .multi-select-group button.not-selected { background: #4569A0 url(../assets/Icon-DF-plus-lightblue.svg) no-repeat; background-position: center left 16px; }
+
+.design-system-card .dynamic-form-elements .multi-select-group button.not-selected:hover { background: #254F90 url(../assets/Icon-DF-plus-white.svg) no-repeat; background-position: center left 16px; }
+
+.design-system-card .dynamic-form-elements .multi-select-group button.not-selected:active { background: #18335C url(../assets/Icon-DF-plus-white.svg) no-repeat; background-position: center left 16px; }
+
+.design-system-card .dynamic-form-elements .multi-select-group button.selected { background: #ffffff url(../assets/Icon-DF-tick-blue.svg) no-repeat; background-position: center left 16px; }
+
+.design-system-card .dynamic-form-elements .question-wrapper .validation-message { display: none; }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error { margin-bottom: 32px; padding: 24px; background: #FCE9E9; border-left: solid #D2201E 3px; }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error label, .design-system-card .dynamic-form-elements .question-wrapper.error p, .design-system-card .dynamic-form-elements .question-wrapper.error p.contextual-help { color: #254F90; }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error input { color: #7983aa; border-bottom: solid #D2201E 2px; }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error .validation-message { display: block; color: #D2201E; margin-top: 8px; }
 
 .design-system-card .hero-illustration .hero-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
 
