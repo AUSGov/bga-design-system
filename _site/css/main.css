@@ -5408,7 +5408,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .dynamic-form-elements input { margin: 0 0 16px 0; color: #ffffff; }
 
-.design-system-card .dynamic-form-elements select { margin: 0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 20px; }
+.design-system-card .dynamic-form-elements input:focus { border: solid 2px #ffffff; }
+
+.design-system-card .dynamic-form-elements input:focus::placeholder { color: transparent !important; }
+
+.design-system-card .dynamic-form-elements select { margin: 0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 20px; color: #ffffff; background-position: center right 8px; background-size: 16px 16px; }
+
+.design-system-card .dynamic-form-elements button#supportPathwaySearchButton { border: solid 0.125rem #254F90; }
+
+.design-system-card .dynamic-form-elements button#supportPathwaySearchButton:focus, .design-system-card .dynamic-form-elements button#supportPathwaySearchButton:hover { border: solid 0.125rem #ffffff !important; }
 
 .design-system-card .dynamic-form-elements .multi-select-group { margin-top: 16px; }
 
@@ -5428,9 +5436,55 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .dynamic-form-elements .question-wrapper.error label, .design-system-card .dynamic-form-elements .question-wrapper.error p, .design-system-card .dynamic-form-elements .question-wrapper.error p.contextual-help { color: #254F90; }
 
-.design-system-card .dynamic-form-elements .question-wrapper.error input { color: #7983aa; border-bottom: solid #D2201E 2px; }
+.design-system-card .dynamic-form-elements .question-wrapper.error input { color: #254F90; border-bottom: solid #D2201E 2px; }
 
-.design-system-card .dynamic-form-elements .question-wrapper.error .validation-message { display: block; color: #D2201E; margin-top: 8px; }
+.design-system-card .dynamic-form-elements .question-wrapper.error input::placeholder { color: #7983aa; }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error input:focus { border: solid #D2201E 2px; }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error input:active { background-color: #18335C; color: #ffffff; border-color: #ffffff; transform: translateY(-0.125rem); box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2); }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error select { color: #254F90; border-bottom: solid #D2201E 2px; background: url(../assets/Icon-chevron-down-blue.png) no-repeat center right 8px; background-size: 16px 16px; }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error select:focus { border: solid #D2201E 2px; }
+
+.design-system-card .dynamic-form-elements .question-wrapper.error .validation-message { display: block; color: #D2201E; margin-top: 8px; padding: 0; font-size: 16px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
+
+.design-system-card .dynamic-form-elements .dynamic-example input, .design-system-card .dynamic-form-elements .dynamic-example select { width: 250px; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="focus-state"] input { border: solid 2px #ffffff; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="focus-state"] input::placeholder { color: transparent !important; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="focus-state"] select { border: solid #ffffff 2px; background-position: center right 8px; background-size: 16px 16px; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="focus-state"] button#supportPathwaySearchButton { border: solid 0.125rem #ffffff !important; background-color: #254F90; border: .125rem solid #18335c !important; box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important; color: #ffffff; border: solid 0.125rem #ffffff !important; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper { margin-bottom: 32px; padding: 24px; background: #FCE9E9; border-left: solid #D2201E 3px; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper label, .design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper p, .design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper p.contextual-help { color: #254F90; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper input { color: #254F90; border-bottom: solid #D2201E 2px; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper input::placeholder { color: #7983aa; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper input:focus { border: solid #D2201E 2px; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper select { color: #254F90; border-bottom: solid #D2201E 2px; background: url(../assets/Icon-chevron-down-blue.png) no-repeat center right 8px; background-size: 16px 10px; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper select:focus { border: solid #D2201E 2px; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper .validation-message { display: block; color: #D2201E; margin-top: 8px; padding: 0; font-size: 16px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="hover-state"] .multi-select-group button { background: #254F90 url(../assets/Icon-DF-plus-white.svg) no-repeat; background-position: center left 16px; box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important; transform: translateY(-0.25rem); border-color: #ffffff; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="hover-state"] button#supportPathwaySearchButton { border: solid 0.125rem #ffffff !important; background-color: #254F90; border: .125rem solid #18335c !important; box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important; transform: translateY(-0.25rem); color: #ffffff; border: solid 0.125rem #ffffff !important; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="active-state"] .multi-select-group button { background: #18335C url(../assets/Icon-DF-plus-white.svg) no-repeat; background-position: center left 16px; box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2); transform: translateY(-0.125rem); border-color: #ffffff; }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="active-state"] button#supportPathwaySearchButton { background-color: #18335C !important; color: #ffffff; border-color: #ffffff; transform: translateY(-0.125rem); box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2); }
+
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="selected-state"] .multi-select-group button { background: #ffffff url(../assets/Icon-DF-tick-blue.svg) no-repeat; background-position: center left 16px; color: #000000; border-color: #ffffff; }
 
 .design-system-card .hero-illustration .hero-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
 

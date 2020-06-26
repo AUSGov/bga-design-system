@@ -238,8 +238,10 @@ $(document).ready(function () {
         else if (example_element.hasClass('button-example')) {
             example_element.attr('data-state', element_state);
             example_element.find(".button-wrapper").attr('data-state', element_state);
-        } else if (example_element.hasClass('textarea-example')) {
-                   
+        } 
+        else if (example_element.hasClass('dynamic-example')) {
+            example_element.attr('data-state', element_state);
+            example_element.find('.multi-select-question button').removeClass('selected').addClass('not-selected');
         }
     });
     
@@ -253,7 +255,7 @@ $(document).ready(function () {
         common_ancestor.find('.focus-label input').attr('checked','checked');
         $(this).closest(".example").attr('data-state', 'focus-state');
     });
-    
+
     // Radio buttons
     $('.radio-example .example-form-element').on('click', function(){
         var common_ancestor = $(this).closest('.design-system-card');
@@ -324,6 +326,21 @@ $(document).ready(function () {
             common_ancestor.find('.active-label input').attr('checked','checked');
             common_ancestor.find(".button-wrapper").attr('data-state', "active-state");
     });
+    
+    // Dynamic forms fields
+    $('.dynamic-example input').focus(function(){
+        var common_ancestor = $(this).closest('.design-system-card');
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.focus-label input').attr('checked','checked');
+        $(this).closest(".dynamic-example").attr('data-state', 'focus-state');
+    });
+    $('.dynamic-example select').focus(function(){
+        var common_ancestor = $(this).closest('.design-system-card');
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.focus-label input').attr('checked','checked');
+        $(this).closest(".dynamic-example").attr('data-state', 'focus-state');
+    });
+
     
     // Datepicker in focus
     $('#datepicker input').focus(function(){
@@ -637,8 +654,14 @@ $(document).ready(function () {
         parent_question.next('.question-wrapper').removeClass('dynamic-hide');
         $(this).toggleClass('not-selected');
         $(this).toggleClass('selected');
+        
+        parent_question.parent('.dynamic-example').attr('data-state', 'default-state');
+        var common_ancestor = $(this).closest('.design-system-card');
+        common_ancestor.find('.state-selector label input').removeAttr('checked');
+        common_ancestor.find('.default-label input').attr('checked','checked');
+        $(this).closest(".dynamic-example").attr('data-state', 'default-state');
     });
-    $()
+
     
     
     
