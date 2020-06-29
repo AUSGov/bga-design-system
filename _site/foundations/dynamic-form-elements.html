@@ -375,7 +375,7 @@
                     </div>
                     <button role="none" tabindex="-1" class="float-button">
                         <div tabindex="-1" class="float-button-content">
-                            <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                            <div class="BgaIcon iconAnimateWrapper"><svg width="16" height="16">
                                     <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
                                 </svg></div><span class="sr-only">Button toggle current accordion</span>
                         </div>
@@ -389,7 +389,10 @@
 <code>
 <pre>
 label {
-
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    line-height: 28px; 
 }
 
 </pre>
@@ -399,13 +402,27 @@ label {
 <code>
 <pre>
 input {
-
+   color: #FFFFFF;
+   font-family: OpenSans;
+   height: 42px;
+   border: none;
+   border-bottom: solid 2px #FFFFFF;
+   padding: 0;
+   font-size: 32px; 
+}
+input::placeholder {
+    color: #DDDDDD;
 }
 input:focus {
-
+    border: solid 2px #FFFFFF;
 }
 input.error {
-
+    color: #254F90;
+    border: none;
+    border-bottom: solid #D2201E 2px;
+}
+input.error::placeholder {
+    color: #7983AA;
 }
 
 </pre>
@@ -415,7 +432,11 @@ input.error {
 <code>
 <pre>
 p.help-message {
-
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 12px;
+    padding: 0;
+    line-height: 16px;
 }
 
 </pre>
@@ -425,7 +446,24 @@ p.help-message {
 <code>
 <pre>
 p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
 
+</pre>
+</code>
+
+<h5>Containers</h5>
+<code>
+<pre>
+div.container {
+    background: #254F90;
+}
+div.error-container {
+    background: #FCE9E9;
+    border-left: solid #D2201E 3px;
+    padding: 24px;
 }
 </pre>
 </code>
@@ -506,23 +544,33 @@ p.error-message {
 <code>
 <pre>
 label {
-
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    line-height: 28px; 
 }
 
 </pre>
 </code>
 
-<h5>Select input</h5>
+<h5>Select</h5>
 <code>
 <pre>
 select {
-
+    color: #FFFFFF;
+    font-family: OpenSans;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 2px #FFFFFF;
+    padding: 0px 8px 0px 8px;
 }
 select:focus {
-
+    border: solid 2px #FFFFFF;
 }
 select.error {
-
+    color: #254F90;
+    border: none;
+    border-bottom: solid #D2201E 2px;
 }
 
 </pre>
@@ -532,7 +580,9 @@ select.error {
 <code>
 <pre>
 p.help-message {
-
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
 }
 
 </pre>
@@ -542,7 +592,24 @@ p.help-message {
 <code>
 <pre>
 p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
 
+</pre>
+</code>
+
+<h5>Containers</h5>
+<code>
+<pre>
+div.container {
+    background: #254F90;
+}
+div.error-container {
+    background: #FCE9E9;
+    border-left: solid #D2201E 3px;
+    padding: 24px;
 }
 </pre>
 </code>
@@ -646,18 +713,107 @@ p.error-message {
 <h5>Label</h5>
 <code>
 <pre>
-.multiple-select-group-label {
-
+label {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    line-height: 28px; 
 }
+
+</pre>
+</code>
+
+<h5>Select Items</h5>
+<code>
+<pre>
 .select-item {
-
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 12px;
+    text-align: center;
+    border: 2px solid #748FB8;
+    border-radius: 28px;
+    background: #4569A0;
+    height: 48px;
+    padding: 6px 16px 6px 16px;
+}
+.select-item .icon {
+    color: #B3C2DB;
+    height: 14px;
+    width: 14px;
+}
+.select-item:hover {
+    border: 2px solid #FFFFFF;
+    background: #254f90;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.25rem);
+}
+.select-item:hover .icon {
+    color: #FFFFFF;
+}
+.select-item:active {
+    border: 2px solid #FFFFFF;
+    background: #18335C;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.25rem);
+}
+.select-item:active .icon {
+    color: #FFFFFF;
+}
+.select-item:selected {
+    color: #000000;
+    border: 2px solid #FFFFFF;
+    background: #FFFFFF;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+}
+.select-item:selected .icon {
+    color: #4569A0;
+    width: 16px;
+    height: 12px;
 }
 
-p.error-message {
+</pre>
+</code>
 
+<h5>Contextual help</h5>
+<code>
+<pre>
+p.help-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+</pre>
+</code>
+    
+<h5>Error message</h5>
+<code>
+<pre>
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+</pre>
+</code>
+
+<h5>Containers</h5>
+<code>
+<pre>
+div.container {
+    background: #254F90;
+}
+div.error-container {
+    background: #FCE9E9;
+    border-left: solid #D2201E 3px;
+    padding: 24px;
 }
 </pre>
 </code>
+    
+
 
 </div>
 
@@ -730,49 +886,39 @@ p.error-message {
 
 <div class="element-code">
 
-<h5>Button container</h5>
+<h5>Button</h5>
 <code>
 <pre>
-.secondary-button {
+.button {
+    color: #254F90;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
     background: #FFFFFF;
-    border: 2px solid #4569A0;
-    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    border: 2px solid #254F90;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-    padding: 8px 32px;
+    padding: 6px 32px;
     text-align: center;
-    letter-spacing: 0;
-    transition-property: transform, -webkit-transform;
-    transition-duration: 0.4s, 0.4s;
-    transition-timing-function: ease, ease;
-    transition-delay: 0s, 0s;  
 }
-.secondary-button:hover {
+.button:focus {
+    color: #FFFFFF;
     background: #254F90;
-    border: 2px solid #18335C;
+    border: 2px solid #FFFFFF;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.button:hover {
+    color: #FFFFFF;
+    background: #254F90;
+    border: 2px solid #FFFFFF;
     transform: translateY(-.1875rem);
     box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 }
-.secondary-button:active {
+.button:active {
+    color: #FFFFFF;
     background: #18335C;
-    border: 2px solid #18335C;
-}
-
-</pre>
-</code>
-<h5>Button text</h5>
-<code>
-<pre>
-a {
-    color: #4569A0;
-    font-family: OpenSans-Semibold;
-    font-size: 16px
-    line-height: 28px;
-}
-a:hover {
-    color: #FFFFFF;
-}
-a:active {
-    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    transform: translateY(-0.125rem);
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 }
 </pre>
 </code>
