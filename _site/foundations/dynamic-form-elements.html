@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dynamic forms</title>
+    <meta name="description" content="">
+ 
+    <meta name="robots" content="noarchive, nofollow, noindex, nosnippet, notranslate, noydir">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap" rel="stylesheet">
+    
+
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href=/bga-design-system/css/bootstrap.min.css>
+
+    <!-- Prototype specific CSS -->
+    <link rel="stylesheet" href=/bga-design-system/css/main.css>
+
+    
+    <!-- Optional JavaScript -->
+   
+    <script src=/bga-design-system/js/jquery-3.4.1.js></script>
+
+    <script src=/bga-design-system/js/bootstrap.bundle.min.js></script>
+    
+    <script src=/bga-design-system/js/bootstrap-dropdownhover.min.js></script>
+    
+    <script src=/bga-design-system/js/jquery.highlight-within-textarea.js></script>
+    
+    <script src=/bga-design-system/js/bootstrap-datepicker.js></script>
+    
+    <script src=/bga-design-system/js/design-system.js></script>
+   
+    
+
+</head>
+
+
+<body class="au-grid guide_content_page">
+
+    <!-- HEADER -->
+    <div class="header-wrapper">
+        <div class="header">
+            <header>
+
+
+        <div class="c-wrapper c-wrapper-bg-transparent search-bar-wrapper container-fluid d-none d-sm-block mobile-hide">
+            <div class="row">
+                <div class="search-bar-container">
+                    <div class="search-bar-inner-wrapper"><a href=/bga-design-system/index.html class="search-bar-desktop-logo">
+                        
+                         <img src=/bga-design-system/assets/bga_design_system_crest.svg alt="business.gov.au design system"></a>   
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="c-wrapper c-wrapper-bg-transparent search-bar-wrapper container-fluid">
+            <div class="row">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light row">
+                            <a class="navbar-brand d-sm-none" href=/bga-design-system/index.html>business.gov.au design system</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="navbar-nav mr-auto">
+                                    <div class="navbar-menu" id="foundations-link">
+                                            <a href=/bga-design-system/topic-foundations.html class="btn btn-default navigation-item-button" aria-label="Foundations">Foundations</a>
+                                            
+                                        </div>
+                                        <div class="navbar-menu" id="components-link">
+                                                <a href=/bga-design-system/topic-components.html class="btn btn-default navigation-item-button" aria-label="Components">Components</a>
+                                                
+                                            </div>
+                                            
+                                            
+                                            <div  class="navbar-menu"id="accessibility-link">
+                                                <a href=/bga-design-system/accessibility.html class="btn btn-default navigation-item-button" aria-label="Accessibility">Accessibility</a>
+                                                
+                                            </div>
+                                        </div>
+                            </div>
+                            </nav>
+            </div>
+        </div>
+    
+    
+    </header>
+        </div>
+    </div>
+    
+    
+    <!-- BREADCRUMB -->
+        <div>
+        <div class="c-wrapper c-wrapper-bg-transparent breadcrumbs-wrapper container-fluid">
+            <div class="row">
+                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden ">
+                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
+                    </svg><a href=/bga-design-system/index.html class="breadcrumb-link ">Home</a>
+                    <p class="right-arrow">›</p>
+                </div>
+                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden ">
+                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
+                    </svg><a href=/bga-design-system/topic-foundations.html class="breadcrumb-link " aria-label=Foundations>Foundations</a>
+                    <p class="right-arrow">›</p>
+                </div>
+                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden arrow">
+                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
+                    </svg><a href=/bga-design-system/ class="breadcrumb-link last" aria-label=></a>
+                    <p class="right-arrow">›</p>
+                </div>
+                <p class="breadcrumb-location">Dynamic forms</p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!-- PAGE HEADER -->
+    <div>
+        <div class="c-wrapper c-wrapper-bg-transparent  page-header-theme-grey container-fluid" >
+            <div class="row">
+                <div class="page-header" id="page-header">
+                    <div class="col-12 col-sm-12 col-md-8">
+                        <h1 class="page-header-title">
+                            Dynamic forms
+                        </h1>
+                       
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8">
+                        <div class="page-header-intro">
+                            <p>
+                                Guidelines on dynamic form function and styles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    <!-- CONTENT -->
+    
+    <div class="main-section">
+        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+            <div class="row">
+                <div class="anchor-col col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
+                     <div class="anchor-menu" >    
+                    <div class="sticky-container">
+                                <div>
+                                    <h5 class="sticky-list-head">On this page</h5>
+                                    <ul>
+                                        <li><a href="" aria-label="Form behaviour">Form Behaviour</a></li>
+                                        <li><a href="" aria-label="Form field styles">Form field styles</a></li>
+                                        <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
+
+                                    </ul>
+                                </div>
+                                </div>
+                    </div>
+                </div>
+                
+<div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-8">
+                 
+<!-- FORM BEHAVIOUR -->
+<div class="anchor-section" name="form-behaviour"><a href="" id="form-behaviour" aria-label="form-behaviour"></a>
+    <div class="c-padding-top anchor-section-full-width  ">
+        <div class="body-copy">
+            <div>
+                <div class="body-copy-headline col-12">
+                    <h2>Form behaviour</h2>
+                </div>
+                <hr />
+            </div>
+            <div class="body-copy-content">
+                
+                <p>Business.gov.au dynamic forms use progressive disclosure to display form fields one at a time. Users are presented with one initial question. When they have answered that question the next one appears. The submit button appears when all the form fields have been filled in.</p>
+                
+                <p>Error states are provided for form fields below.  These will not always be needed as the progressive disclosure method minimises user error. It is not possible to progress to the next field without successfully filling in the field before it. </p>
+                
+                <h3>Dynamic form example</h3>
+                <p>Fill in the form fields below to see dynamic form behaviour.</p>
+                
+                <div class="design-system-card component">
+                  
+                    <div class="design-system-card-content">
+            
+                        <div class="dynamic-form-elements">
+        
+                        <div class="example-wrapper form-blue-back">
+                        
+                            <div class="example dynamic-form-example-container" data-state="default-state">
+
+                                <!-- Component content -->
+
+                                
+                                <div class="support-pathway">
+                                    <div>
+                                        <div>
+
+                                        </div><span class="sr-only">Enter your postcode into the postcode field and then additional options will appear below</span>
+                                        
+                                        <div class="text-question question-wrapper"><label for="postcode">My business is located in  postcode</label>
+                                            <div class="textbox"><input type="text" value="" maxlength="4" placeholder="0000" minlength="4" id="postcode" aria-label="postcode"></div>
+                                            <p class="contextual-help">Postcode must be 4 digits, eg 2000.</p>
+                                            <div id="postcodeValidationMessage" class="validation-message">Oops, we can’t find your postcode!</div>
+                                        </div>
+                                        
+                                        <div class="qa-dropdown question-wrapper dynamic-hide"><label for="industry">My business is in the industry of</label><select id="industry" style="width: 25em;">
+                                                <option value="select industry" class="select-option" disabled="">select industry</option>
+                                                <option value="Accommodation and Food Services" class="select-option">Accommodation and Food Services</option>
+                                                <option value="Administrative and Support Services" class="select-option">Administrative and Support Services</option>
+                                                <option value="Agriculture, Forestry and Fishing" class="select-option">Agriculture, Forestry and Fishing</option>
+                                                <option value="Arts and Recreation Services" class="select-option">Arts and Recreation Services</option>
+                                                <option value="Construction" class="select-option">Construction</option>
+                                                <option value="Education and Training" class="select-option">Education and Training</option>
+                                                <option value="Electricity, Gas, Water and Waste Services" class="select-option">Electricity, Gas, Water and Waste Services</option>
+                                                <option value="Financial and Insurance Services" class="select-option">Financial and Insurance Services</option>
+                                                <option value="Health Care and Social Assistance" class="select-option">Health Care and Social Assistance</option>
+                                                <option value="Information Media and Telecommunications" class="select-option">Information Media and Telecommunications</option>
+                                                <option value="Manufacturing" class="select-option">Manufacturing</option>
+                                                <option value="Mining" class="select-option">Mining</option>
+                                                <option value="Professional, Scientific and Technical Services" class="select-option">Professional, Scientific and Technical Services</option>
+                                                <option value="Public Administration and Safety" class="select-option">Public Administration and Safety</option>
+                                                <option value="Rental, Hiring and Real Estate Services" class="select-option">Rental, Hiring and Real Estate Services</option>
+                                                <option value="Retail Trade" class="select-option">Retail Trade</option>
+                                                <option value="Transport, Postal and Warehousing" class="select-option">Transport, Postal and Warehousing</option>
+                                                <option value="Wholesale Trade" class="select-option">Wholesale Trade</option>
+                                                <option value="Other Services" class="select-option">Other Services</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="multi-select-question question-wrapper dynamic-hide"><label>I am looking for assistance to</label>
+                                            <p class="contextual-help">Select as many objectives as you need</p>
+                                            <div class="multi-select-group col">
+                                                <div role="list" class="justify-content-center row">
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small not-selected btn btn-secondary">
+                                                        build or improve infrastructure for a community
+                                                    </button>
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small  not-selected btn btn-secondary">
+                                                        employ people
+                                                    </button>
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small  not-selected btn btn-secondary">
+                                                        get funding for training and skills development
+                                                    </button>
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small  not-selected btn btn-secondary">
+                                                        import or export products or services
+                                                    </button>
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small  not-selected btn btn-secondary">
+                                                        improve or grow my business
+                                                    </button>
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small  not-selected btn btn-secondary">
+                                                        invest money in other businesses
+                                                    </button>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="support-pathway-submit-wrapper question-wrapper dynamic-hide">
+                                            <div><button type="button" id="supportPathwaySearchButton" class="theme-button theme-button-small  support-pathway-search-button btn btn-secondary">Search Now</button></div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+
+                            </div>
+
+
+                        </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+              
+                
+                
+            </div>
+           
+
+        </div>
+    </div>
+
+</div>
+                   
+                                                    
+<!-- FORM FIELD STYLES -->                               
+<div class="anchor-section" name="form-field-styles"><a href="" id="form-field-styles" aria-label="form-field-styles"></a>
+<div class="c-padding-top anchor-section-full-width ">
+        <div class="body-copy">
+            <div>
+
+                    <h2>Form field styles</h2>
+
+                <hr />
+            </div>
+            <div class="body-copy-content">
+
+
+        <h3>Dynamic form Text box</h3>    
+        <div class="design-system-card component">
+               <div class="state-selector">
+                            <p class="state-selector-intro">View state: </p>
+                            <label class="default-label" data-state="default-state">
+                                <input type="radio" checked="checked">
+                                <span>Default</span>
+                            </label>
+
+                            <label class="focus-label" data-state="focus-state">
+                                <input type="radio" >
+                                <span>Focus</span>
+                            </label>
+
+                            <label class="error-label" data-state="error-state">
+                                <input type="radio" >
+                                <span>Error</span>
+                            </label>
+
+                        </div>
+                <div class="design-system-card-content">
+
+                <div class="dynamic-form-elements">
+
+                <div class="example-wrapper form-blue-back">
+
+                    <div class="dynamic-example form-example-container" data-state="default-state">
+
+                        <!-- Component content -->
+
+                        <div class="support-pathway">
+                            <div>
+
+                                <div class="text-question question-wrapper"><label for="">Text box label</label>
+                                    <div class="textbox"><input type="text" value="" placeholder="placeholder text"></div>
+                                    <p class="contextual-help">Contextual help message.</p>
+                                    <div id="ValidationMessage" class="validation-message">Descriptive error message.</div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                </div>
+
+                <div class="element-design component closed">
+                    <div class="content-wrapper">
+                        <p>CSS styles</p>
+                    </div>
+                    <button role="none" tabindex="-1" class="float-button">
+                        <div tabindex="-1" class="float-button-content">
+                            <div class="BgaIcon iconAnimateWrapper"><svg width="16" height="16">
+                                    <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                </svg></div><span class="sr-only">Button toggle current accordion</span>
+                        </div>
+                    </button>
+
+                </div>
+
+<div class="element-code">
+
+<h5>Label</h5>
+<code>
+<pre>
+label {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    line-height: 28px; 
+}
+
+</pre>
+</code>
+
+<h5>Input</h5>
+<code>
+<pre>
+input {
+   color: #FFFFFF;
+   font-family: OpenSans;
+   height: 42px;
+   border: none;
+   border-bottom: solid 2px #FFFFFF;
+   padding: 0;
+   font-size: 32px; 
+}
+input::placeholder {
+    color: #DDDDDD;
+}
+input:focus {
+    border: solid 2px #FFFFFF;
+}
+input.error {
+    color: #254F90;
+    border: none;
+    border-bottom: solid #D2201E 2px;
+}
+input.error::placeholder {
+    color: #7983AA;
+}
+
+</pre>
+</code>
+
+<h5>Contextual help</h5>
+<code>
+<pre>
+p.help-message {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 12px;
+    padding: 0;
+    line-height: 16px;
+}
+
+</pre>
+</code>
+
+<h5>Error message</h5>
+<code>
+<pre>
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+</pre>
+</code>
+
+<h5>Containers</h5>
+<code>
+<pre>
+div.container {
+    background: #254F90;
+}
+div.error-container {
+    background: #FCE9E9;
+    border-left: solid #D2201E 3px;
+    padding: 24px;
+}
+</pre>
+</code>
+
+</div>
+
+                </div>
+
+            </div>
+
+
+        <h3>Dynamic form select box</h3>
+                <div class="design-system-card component">
+                   <div class="state-selector">
+                                <p class="state-selector-intro">View state: </p>
+                                <label class="default-label" data-state="default-state">
+                                    <input type="radio" checked="checked">
+                                    <span>Default</span>
+                                </label>
+                                
+                                <label class="focus-label" data-state="focus-state">
+                                    <input type="radio" >
+                                    <span>Focus</span>
+                                </label>
+
+                                <label class="error-label" data-state="error-state">
+                                    <input type="radio" >
+                                    <span>Error</span>
+                                </label>
+
+                            </div>
+                    <div class="design-system-card-content">
+            
+                        <div class="dynamic-form-elements">
+        
+                        <div class="example-wrapper form-blue-back">
+                        
+                            <div class="dynamic-example form-example-container" data-state="default-state">
+
+                                <!-- Component content -->
+
+                               <div class="qa-dropdown question-wrapper">
+                                <label for="form-select-box" class="form-select-box-label">Select box label</label>
+
+                                <select id="dynamic-form-select-box" name="form-select-box" type="text" value=""  placeholder="" class="">
+                                    <option value="">Please select</option>
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                    <option value="option 4">Option 4</option>
+                                </select>
+                                <p class="contextual-help">Contextual help message.</p>
+                                <p class="error-message validation-message">Descriptive error message.</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        </div>
+
+                        <div class="element-design component closed">
+                            <div class="content-wrapper">
+                                <p>CSS styles</p>
+                            </div>
+                            <button role="none" tabindex="-1" class="float-button">
+                                <div tabindex="-1" class="float-button-content">
+                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                </div>
+                            </button>
+
+                        </div>
+                            
+<div class="element-code">
+<h5>Label</h5>
+<code>
+<pre>
+label {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    line-height: 28px; 
+}
+
+</pre>
+</code>
+
+<h5>Select</h5>
+<code>
+<pre>
+select {
+    color: #FFFFFF;
+    font-family: OpenSans;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 2px #FFFFFF;
+    padding: 0px 8px 0px 8px;
+}
+select:focus {
+    border: solid 2px #FFFFFF;
+}
+select.error {
+    color: #254F90;
+    border: none;
+    border-bottom: solid #D2201E 2px;
+}
+
+</pre>
+</code>
+    
+<h5>Contextual help</h5>
+<code>
+<pre>
+p.help-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+</pre>
+</code>
+    
+<h5>Error message</h5>
+<code>
+<pre>
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+</pre>
+</code>
+
+<h5>Containers</h5>
+<code>
+<pre>
+div.container {
+    background: #254F90;
+}
+div.error-container {
+    background: #FCE9E9;
+    border-left: solid #D2201E 3px;
+    padding: 24px;
+}
+</pre>
+</code>
+
+</div>
+
+                    </div>
+
+                </div>
+
+        
+        <h3>Dynamic form multiple select list</h3>
+                <div class="design-system-card component">
+                   <div class="state-selector">
+                       <p class="state-selector-intro">View state: </p>
+                       <label class="default-label" data-state="default-state">
+                           <input type="radio" checked="checked">
+                           <span>Default</span>
+                       </label>
+
+                       <label class="hover-label" data-state="hover-state">
+                           <input type="radio">
+                           <span>Hover</span>
+                       </label>
+
+                       <label class="active-label" data-state="active-state">
+                           <input type="radio">
+                           <span>Active</span>
+                       </label>
+
+                       <label class="selected-label" data-state="selected-state">
+                           <input type="radio">
+                           <span>Selected</span>
+                       </label>
+                       
+                       <label class="error-label" data-state="error-state">
+                           <input type="radio">
+                           <span>Error</span>
+                       </label>
+
+
+                   </div>
+                    <div class="design-system-card-content">
+            
+                        <div class="dynamic-form-elements">
+        
+                        <div class="example-wrapper form-blue-back">
+                        
+                            <div class="dynamic-example form-example-container" data-state="default-state">
+
+                                <!-- Component content -->
+
+                                <div class="multi-select-question question-wrapper"><label>Multiple select label</label>
+                                            <p class="contextual-help">Contextual help message.</p>
+                                            <div class="multi-select-group col">
+                                                <div role="list" class="justify-content-center row">
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small not-selected btn btn-secondary">
+                                                        build or improve infrastructure for a community
+                                                    </button>
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small  not-selected btn btn-secondary">
+                                                        employ people
+                                                    </button>
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small  not-selected btn btn-secondary">
+                                                        get funding for training and skills development
+                                                    </button>
+                                                    <button type="button" aria-pressed="false" role="listitem" class="theme-button theme-button-small  not-selected btn btn-secondary">
+                                                        import or export products or services
+                                                    </button>
+                                                    
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                        
+                                         <p class="error-message validation-message">Descriptive error message.</p>
+                                        </div>
+                                
+                               
+
+                            </div>
+
+
+                        </div>
+                        </div>
+
+                        <div class="element-design component closed">
+                            <div class="content-wrapper">
+                                <p>CSS styles</p>
+                            </div>
+                            <button role="none" tabindex="-1" class="float-button">
+                                <div tabindex="-1" class="float-button-content">
+                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                </div>
+                            </button>
+
+                        </div>
+                            
+<div class="element-code">
+<h5>Label</h5>
+<code>
+<pre>
+label {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 32px;
+    line-height: 28px; 
+}
+
+</pre>
+</code>
+
+<h5>Select Items</h5>
+<code>
+<pre>
+.select-item {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 12px;
+    text-align: center;
+    border: 2px solid #748FB8;
+    border-radius: 28px;
+    background: #4569A0;
+    height: 48px;
+    padding: 6px 16px 6px 16px;
+}
+.select-item .icon {
+    color: #B3C2DB;
+    height: 14px;
+    width: 14px;
+}
+.select-item:hover {
+    border: 2px solid #FFFFFF;
+    background: #254f90;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.25rem);
+}
+.select-item:hover .icon {
+    color: #FFFFFF;
+}
+.select-item:active {
+    border: 2px solid #FFFFFF;
+    background: #18335C;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.25rem);
+}
+.select-item:active .icon {
+    color: #FFFFFF;
+}
+.select-item:selected {
+    color: #000000;
+    border: 2px solid #FFFFFF;
+    background: #FFFFFF;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+}
+.select-item:selected .icon {
+    color: #4569A0;
+    width: 16px;
+    height: 12px;
+}
+
+</pre>
+</code>
+
+<h5>Contextual help</h5>
+<code>
+<pre>
+p.help-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+</pre>
+</code>
+    
+<h5>Error message</h5>
+<code>
+<pre>
+p.error-message {
+    color: #D2201E;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+</pre>
+</code>
+
+<h5>Containers</h5>
+<code>
+<pre>
+div.container {
+    background: #254F90;
+}
+div.error-container {
+    background: #FCE9E9;
+    border-left: solid #D2201E 3px;
+    padding: 24px;
+}
+</pre>
+</code>
+    
+
+
+</div>
+
+                    </div>
+
+                </div>
+
+               
+        
+              
+
+        <h3>Dynamic form button</h3>
+        <div class="design-system-card component">
+           <div class="state-selector">
+                        <p class="state-selector-intro">View state: </p>
+                        <label class="default-label" data-state="default-state">
+                            <input type="radio" checked="checked">
+                            <span>Default</span>
+                        </label>
+
+                        
+                        <label class="focus-label" data-state="focus-state">
+                            <input type="radio" >
+                            <span>Focus</span>
+                        </label>         
+                        
+                        <label class="hover-label" data-state="hover-state">
+                            <input type="radio" >
+                            <span>Hover</span>
+                        </label>
+
+                        <label class="active-label" data-state="active-state">
+                            <input type="radio" >
+                            <span>Active</span>
+                        </label>
+
+
+                    </div>
+            <div class="design-system-card-content">
+
+                <div class="dynamic-form-elements form-elements">
+
+                <div class="example-wrapper form-blue-back">
+
+                    <div class="dynamic-example form-example-container" data-state="default-state">
+
+                        <!-- Component content -->
+
+                                   <div class="support-pathway-submit-wrapper question-wrapper">
+                                            <div><button type="button" id="supportPathwaySearchButton" class="theme-button theme-button-small support-pathway-search-button btn btn-secondary">Search Now</button></div>
+                                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+                <div class="element-design component closed">
+                    <div class="content-wrapper">
+                        <p>CSS styles</p>
+                    </div>
+                    <button role="none" tabindex="-1" class="float-button">
+                        <div tabindex="-1" class="float-button-content">
+                            <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                    <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                </svg></div><span class="sr-only">Button toggle current accordion</span>
+                        </div>
+                    </button>
+
+                </div>
+
+<div class="element-code">
+
+<h5>Button</h5>
+<code>
+<pre>
+.button {
+    color: #254F90;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    background: #FFFFFF;
+    border: 2px solid #254F90;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 6px 32px;
+    text-align: center;
+}
+.button:focus {
+    color: #FFFFFF;
+    background: #254F90;
+    border: 2px solid #FFFFFF;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.button:hover {
+    color: #FFFFFF;
+    background: #254F90;
+    border: 2px solid #FFFFFF;
+    transform: translateY(-.1875rem);
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.button:active {
+    color: #FFFFFF;
+    background: #18335C;
+    border: 2px solid #FFFFFF;
+    transform: translateY(-0.125rem);
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+</pre>
+</code>
+
+
+</div>
+
+            </div>
+
+        </div>
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>   
+</div>
+
+                                            
+<!-- EXAMPLES & ASSETS -->                               
+<div class="anchor-section" name="examples-and-assets"><a href="" id="examples-and-assets"  aria-label="examples-and-assets"></a>
+
+                <div class="body-copy">
+                    <div>
+                        
+                            <h2>Examples and assets</h2>
+                   
+                        <hr />
+                    </div>
+                    <div class="body-copy-content">
+ 
+                         
+            <div class="adobe-link vertical-list ">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/059d8097-c3a8-42b5-8a52-e4ada3983e0f/Dynamic-form-elements">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View dynamic form examples in Adobe XD.</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>ADOBE XD</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+                        
+            <div class="example-link vertical-list ">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="https://business.gov.au/Grants-and-Programs">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View a dynamic form on business.gov.au</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+
+ 
+
+
+
+                    </div>
+
+
+                </div>
+
+</div>
+
+   
+
+    
+    
+            </div>
+    </div>
+
+</div>
+</div>
+
+
+    
+    
+
+    <!-- FOOTER -->
+    <div class="footer-wrapper">
+        <div class="footer">
+            <footer>
+    <div class="footer">
+        <div class="footer-bottom">
+            <div class="container-fluid">
+                <div class="c-wrapper row">
+                    <div class="col-12 col-md-10 col-lg-8"><a href="https://business.gov.au/"><img src=/bga-design-system/assets/footer-logo-white.svg alt="business.gov.au design system"></a>
+
+                        <p>We acknowledge the traditional owners of the country throughout Australia and their continuing connection to land, sea and community. We pay our respect to them and their cultures and to the elders past and present.</p>
+                        <p>© Commonwealth of Australia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
