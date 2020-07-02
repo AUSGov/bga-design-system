@@ -305,27 +305,58 @@ $(document).ready(function () {
         }
     });
     
-    // Form buttons 
+    // Buttons & links
     $('.button-example .button-wrapper').hover(     
         function(){
             var common_ancestor = $(this).closest('.design-system-card');
             common_ancestor.find('.state-selector label input').removeAttr('checked');
             common_ancestor.find('.hover-label input').attr('checked','checked');
             common_ancestor.find(".button-wrapper").attr('data-state', "hover-state");
+            common_ancestor.find(".form-example-container").attr('data-state', "hover-state");
         }, 
         function(){
             var common_ancestor = $(this).closest('.design-system-card');
             common_ancestor.find('.state-selector label input').removeAttr('checked');
             common_ancestor.find('.default-label input').attr('checked','checked');
             common_ancestor.find(".button-wrapper").attr('data-state', "default-state");
+            common_ancestor.find(".form-example-container").attr('data-state', "default-state");
+            
     });
     
     $('.button-example .button-wrapper').mousedown(function(){
         var common_ancestor = $(this).closest('.design-system-card');
             common_ancestor.find('.state-selector label input').removeAttr('checked');
             common_ancestor.find('.active-label input').attr('checked','checked');
+            common_ancestor.find(".form-example-container").attr('data-state', "active-state");
             common_ancestor.find(".button-wrapper").attr('data-state', "active-state");
     });
+    
+    $('.button-example .button-wrapper').hover(     
+        function(){
+            var common_ancestor = $(this).closest('.design-system-card');
+            common_ancestor.find('.state-selector label input').removeAttr('checked');
+            common_ancestor.find('.hover-label input').attr('checked','checked');
+            common_ancestor.find(".button-wrapper").attr('data-state', "hover-state");
+            common_ancestor.find(".form-example-container").attr('data-state', "hover-state");
+        }, 
+        function(){
+            var common_ancestor = $(this).closest('.design-system-card');
+            common_ancestor.find('.state-selector label input').removeAttr('checked');
+            common_ancestor.find('.default-label input').attr('checked','checked');
+            common_ancestor.find(".button-wrapper").attr('data-state', "default-state");
+            common_ancestor.find(".form-example-container").attr('data-state', "default-state");
+            
+    });
+    
+    $('.button-example .button-wrapper').mousedown(function(){
+        var common_ancestor = $(this).closest('.design-system-card');
+            common_ancestor.find('.state-selector label input').removeAttr('checked');
+            common_ancestor.find('.active-label input').attr('checked','checked');
+            common_ancestor.find(".form-example-container").attr('data-state', "active-state");
+            common_ancestor.find(".button-wrapper").attr('data-state', "active-state");
+    });
+    
+    
 
     
     // Dynamic forms fields
