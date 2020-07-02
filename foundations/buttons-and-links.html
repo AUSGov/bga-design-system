@@ -45,12 +45,41 @@ longdesc: Global styles for internal and external links.
                         </div>
                         <div class="body-copy-content">
 
+                            <h3>Primary button</h3>
+                            
                             <div class="design-system-card foundation">
-                                <div class="design-system-card-header">
-                                    <h3>Primary button</h3>
-                                </div>
+                                
+                                <div class="state-selector">
+                                <p class="state-selector-intro">View state: </p>
+                                <label class="default-label" data-state="default-state">
+                                    <input type="radio" checked="checked">
+                                    <span>Default</span>
+                                </label>
+                                    
+                                <label class="focus-label" data-state="focus-state">
+                                    <input type="radio" >
+                                    <span>Focus</span>
+                                </label>
+
+                                <label class="hover-label" data-state="hover-state">
+                                    <input type="radio" >
+                                    <span>Hover</span>
+                                </label>
+                                    
+                                <label class="active-label" data-state="active-state">
+                                    <input type="radio" >
+                                    <span>Active</span>
+                                </label>
+
+                                 </div>
+
+                                
 
                                 <div class="design-system-card-content buttons-links">
+                                    
+                                    
+                                    <div class="button-example button-links form-example-container">
+                                    
                                     <div class="desktop-sample">
                                         <h4>Light background</h4>
                                         <div class="element-design primary-button desktop closed">
@@ -74,51 +103,52 @@ longdesc: Global styles for internal and external links.
 
 
 
-    <div class="element-code">
-    <h5>Button container</h5>
-    <code>
-    <pre>
-    .primary-button {
-        border: 2px solid #254F90;
-        border-radius: 6px;
-        padding: 8px 32px;
-        text-align: center;
-        background: #4569A0 0% 0% no-repeat padding-box;
-        box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-        transition-property: transform, -webkit-transform;
-        transition-duration: 0.4s, 0.4s;
-        transition-timing-function: ease, ease;
-        transition-delay: 0s, 0s; 
-    }
-    .primary-button:hover {
-        background: #254F90 0% 0% no-repeat padding-box;
-        box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-        transform: translateY(-.1875rem);
-    }
-    .primary-button:active {
-        background: #18335C 0% 0% no-repeat padding-box;
-        box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-        transform: translateY(-.1875rem);
-    }
+<div class="element-code">
+<h5>Button container</h5>
+<code>
+<pre>
+.primary-button {
+    border: 2px solid #254F90;
+    border-radius: 6px;
+    padding: 8px 32px;
+    text-align: center;
+    background: #4569A0 0% 0% no-repeat padding-box;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+.primary-button:focus {
+    border: 3px solid #254F90;
+    background: #254F90 0% 0% no-repeat padding-box;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.primary-button:hover {
+    background: #254F90 0% 0% no-repeat padding-box;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+    transform: translateY(-.1875rem);
+}
+.primary-button:active {
+    background: #18335C 0% 0% no-repeat padding-box;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+    transform: translateY(-.1875rem);
+}
 
-    </pre>
-    </code>
+</pre>
+</code>
 
-    <h5>Button text</h5>
-    <code>
-    <pre>
-    a {
-        color: #FFFFFF;
-        font-family: OpenSans-Semibold;
-        font-size: 16px
-        line-height: 28px;
-    }
-    </pre>
-    </code>
-    </div>
-    </div>
+<h5>Button text</h5>
+<code>
+<pre>
+a {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 16px
+    line-height: 28px;
+}
+</pre>
+</code>
+</div>
+</div>
 
-                                 <div class="desktop-sample">
+                                    <div class="desktop-sample">
                                         <h4>Dark background</h4>
                                         <div class="element-design blue-back primary-dark-button desktop closed">
 
@@ -141,53 +171,56 @@ longdesc: Global styles for internal and external links.
 
                                         </div>
 
-    <div class="element-code">
-    <h5>Button container</h5>
-    <code>
-    <pre>
-    .primary-button {
-        border: 2px solid #254F90;
-        border-radius: 6px;
-        padding: 8px 32px;
-        text-align: center;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-        transition-property: transform, -webkit-transform;
-        transition-duration: 0.4s, 0.4s;
-        transition-timing-function: ease, ease;
-        transition-delay: 0s, 0s; 
-    }
-    .primary-button:hover {
-        background: #254F90 0% 0% no-repeat padding-box;
-        border: 2px solid #FFFFFF;
-        transform: translateY(-.1875rem);
-        box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-    }
-    .primary-button:active {
-        background: #18335C 0% 0% no-repeat padding-box;
-        border-color: #18335C;
-    }
-    </pre>
-    </code>
+<div class="element-code">
+<h5>Button container</h5>
+<code>
+<pre>
+.primary-button {
+    border: 2px solid #254F90;
+    border-radius: 6px;
+    padding: 8px 32px;
+    text-align: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+.primary-button:focus {
+    background: #254F90 0% 0% no-repeat padding-box;
+    border: 3px solid #FFFFFF;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.primary-button:hover {
+    background: #254F90 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    transform: translateY(-.1875rem);
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.primary-button:active {
+    background: #18335C 0% 0% no-repeat padding-box;
+    border-color: #18335C;
+}
+</pre>
+</code>
 
-    <h5>Button text</h5>
-    <code>
-    <pre>
-    a {
-        color: #FFFFFF;
-        font-family: OpenSans-Semibold;
-        font-size: 16px
-        line-height: 28px;
-    }
-    a:hover {
-        color: #FFFFFF;
-    }
-    </pre>
-    </code>
+<h5>Button text</h5>
+<code>
+<pre>
+a {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 16px
+    line-height: 28px;
+}
+a:hover {
+    color: #FFFFFF;
+}
+</pre>
+</code>
+</div>
+
+
     </div>
-
-
-    </div>
+                                    
+                                    </div>
 
 
                                 </div>
@@ -195,13 +228,41 @@ longdesc: Global styles for internal and external links.
 
                             </div>
 
+                            
+                            <h3>Secondary button</h3>
+                            
                             <div class="design-system-card foundation">
-                                <div class="design-system-card-header">
-                                    <h3>Secondary button</h3>
-                                </div>
+                                <div class="state-selector">
+                                <p class="state-selector-intro">View state: </p>
+                                <label class="default-label" data-state="default-state">
+                                    <input type="radio" checked="checked">
+                                    <span>Default</span>
+                                </label>
+                                    
+                                <label class="focus-label" data-state="focus-state">
+                                    <input type="radio" >
+                                    <span>Focus</span>
+                                </label>
+
+                                <label class="hover-label" data-state="hover-state">
+                                    <input type="radio" >
+                                    <span>Hover</span>
+                                </label>
+                                    
+                                <label class="active-label" data-state="active-state">
+                                    <input type="radio" >
+                                    <span>Active</span>
+                                </label>
+
+                                 </div>
+                                
 
                                 <div class="design-system-card-content buttons-links">
-                                    <div class="desktop-sample">
+                                
+                                    
+                                <div class="button-example form-example-container">
+                                    
+                                <div class="desktop-sample">
                                         <h4>Light background</h4>
                                         <div class="element-design secondary-button desktop closed">
 
@@ -223,56 +284,57 @@ longdesc: Global styles for internal and external links.
 
                                         </div>
 
-    <div class="element-code">
-    <h5>Button container</h5>
-    <code>
-    <pre>
-    .secondary-button {
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        border: 2px solid #4569A0;
-        color: #4569A0;
-        box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-        border-radius: 6px;
-        padding: 8px 32px;
-        text-align: center;
-        letter-spacing: 0;
-        transition-property: transform, -webkit-transform;
-        transition-duration: 0.4s, 0.4s;
-        transition-timing-function: ease, ease;
-        transition-delay: 0s, 0s;  
-    }
-    .secondary-button:hover {
-       background: #254F90 0% 0% no-repeat padding-box;
-       border: 2px solid #18335C;
-       transform: translateY(-.1875rem);
-       box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-    }
-    .secondary-button:active {
-       background: #18335C 0% 0% no-repeat padding-box;
-       border: 2px solid #18335C;
-    }
+<div class="element-code">
+<h5>Button container</h5>
+<code>
+<pre>
+.secondary-button {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #4569A0;
+    color: #4569A0;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+    border-radius: 6px;
+    padding: 8px 32px;
+    text-align: center;
+    letter-spacing: 0;
+}
+.secondary-button:focus {
+   background: #254F90 0% 0% no-repeat padding-box;
+   border: 3px solid #18335C;
+   box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.secondary-button:hover {
+   background: #254F90 0% 0% no-repeat padding-box;
+   border: 2px solid #18335C;
+   transform: translateY(-.1875rem);
+   box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.secondary-button:active {
+   background: #18335C 0% 0% no-repeat padding-box;
+   border: 2px solid #18335C;
+}
 
-    </pre>
-    </code>
+</pre>
+</code>
 
-    <h5>Button text</h5>
-    <code>
-    <pre>
-    a {
-        color: #4569A0;
-        font-family: OpenSans-Semibold;
-        font-size: 16px
-        line-height: 28px;
-    }
-    a:hover {
-        color: #FFFFFF;
-    }
-    </pre>
-    </code>
-    </div>
-    </div>
+<h5>Button text</h5>
+<code>
+<pre>
+a {
+    color: #4569A0;
+    font-family: OpenSans-Semibold;
+    font-size: 16px
+    line-height: 28px;
+}
+a:hover {
+    color: #FFFFFF;
+}
+</pre>
+</code>
+</div>
+</div>
 
-                                 <div class="desktop-sample">
+                                <div class="desktop-sample">
                                         <h4>Dark background</h4>
                                         <div class="element-design blue-back secondary-dark-button desktop closed">
 
@@ -295,64 +357,90 @@ longdesc: Global styles for internal and external links.
 
                                         </div>
 
-    <div class="element-code">
-    <h5>Button container</h5>
-    <code>
-    <pre>
-    .secondary-button {
-        border: 2px solid #FFFFFF;
-        border-radius: 6px;
-        padding: 8px 32px;
-        text-align: center;
-        background: #4569A0 0% 0% no-repeat padding-box;
-        box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-        transition-property: transform, -webkit-transform;
-        transition-duration: 0.4s, 0.4s;
-        transition-timing-function: ease, ease;
-        transition-delay: 0s, 0s;
+<div class="element-code">
+<h5>Button container</h5>
+<code>
+<pre>
+.secondary-button {
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 8px 32px;
+    text-align: center;
+    background: #4569A0 0% 0% no-repeat padding-box;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+}
+.secondary-button:focus {
+    background: #254F90 0% 0% no-repeat padding-box;
+    border: 3px solid #FFFFFF;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.secondary-button:hover {
+    background: #254F90 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    transform: translateY(-.1875rem);
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+}
+.secondary-button:active {
+    background: #18335C 0% 0% no-repeat padding-box;
+    border-color: #18335C;
+}
 
-    }
-    .secondary-button:hover {
-        background: #254F90 0% 0% no-repeat padding-box;
-        border: 2px solid #FFFFFF;
-        transform: translateY(-.1875rem);
-        box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-    }
-    .secondary-button:active {
-        background: #18335C 0% 0% no-repeat padding-box;
-        border-color: #18335C;
-    }
+</pre>
+</code>
 
-    </pre>
-    </code>
-
-    <h5>Button text</h5>
-    <code>
-    <pre>
-    a {
-        color: #FFFFFF;
-        font-family: OpenSans-Semibold;
-        font-size: 16px
-        line-height: 28px;
-    }
-    </pre>
-    </code>
-    </div>
-    </div>
-
+<h5>Button text</h5>
+<code>
+<pre>
+a {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 16px
+    line-height: 28px;
+}
+</pre>
+</code>
+</div>
+</div>
+                                     
+                                </div>
 
                                 </div>
 
 
                             </div>
 
+                            <h3>Tertiary button</h3>
                             <div class="design-system-card foundation">
-                                <div class="design-system-card-header">
-                                    <h3>Tertiary button</h3>
-                                </div>
+                                
+                                <div class="state-selector">
+                                <p class="state-selector-intro">View state: </p>
+                                <label class="default-label" data-state="default-state">
+                                    <input type="radio" checked="checked">
+                                    <span>Default</span>
+                                </label>
+                                    
+                                <label class="focus-label" data-state="focus-state">
+                                    <input type="radio" >
+                                    <span>Focus</span>
+                                </label>
 
+                                <label class="hover-label" data-state="hover-state">
+                                    <input type="radio" >
+                                    <span>Hover</span>
+                                </label>
+                                    
+                                <label class="active-label" data-state="active-state">
+                                    <input type="radio" >
+                                    <span>Active</span>
+                                </label>
+
+                                 </div>
+                                
                                 <div class="design-system-card-content buttons-links">
-                                    <div class="desktop-sample">
+                                
+                                <div class="button-example form-example-container">
+                                    
+                                <div class="desktop-sample">
                                         <h4>Light background</h4>
                                         <div class="element-design tertiary-button desktop closed">
 
@@ -374,39 +462,51 @@ longdesc: Global styles for internal and external links.
 
                                         </div>
 
-    <div class="element-code">
-    <code>
-    <pre>
-    a {
-        color: #4569A0;
-        font-family: OpenSans-Semibold;
-        font-size: 16px;
-        line-height: 28px;
-        text-decoration: none;
-        transition-property: transform, -webkit-transform;
-        transition-duration: 0.4s, 0.4s;
-        transition-timing-function: ease, ease;
-        transition-delay: 0s, 0s;
-    }
-    a:hover {
-        transform: translateY(-.1875rem);
-    }
-    .icon {    
-        color: #4569A0;
-        height: 16px;
-        width: 16px;
-    }
-    .icon:hover {
-        color: #4569A0;
-        height: 32px;
-        width: 32px;
-    }
-    </pre>
-    </code>
-    </div>
-    </div>
+<div class="element-code">
+<code>
+<pre>
+a {
+    color: #4569A0;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: none;
+}
+a:focus {
+    transform: translateY(-.1875rem);
+}
+a:hover {
+    transform: translateY(-.1875rem);
+}
+a:active {
+    color: #18335C;
+}
+.icon {    
+    color: #4569A0;
+    height: 16px;
+    width: 16px;
+}
+.icon:focus {
+    color: #4569A0;
+    height: 32px;
+    width: 32px;
+}
+.icon:hover {
+    color: #4569A0;
+    height: 32px;
+    width: 32px;
+}
+.icon:active {
+    color: #18335C;
+    height: 32px;
+    width: 32px;
+}
+</pre>
+</code>
+</div>
+</div>
 
-                                 <div class="desktop-sample">
+                                <div class="desktop-sample">
                                         <h4>Dark background</h4>
                                         <div class="element-design blue-back tertiary-dark-button desktop closed">
 
@@ -429,38 +529,48 @@ longdesc: Global styles for internal and external links.
 
                                         </div>
 
-    <div class="element-code">
-    <code>
-    <pre>
-    a {
-        color: #FFFFFF;
-        font-family: OpenSans-Semibold;
-        font-size:16px;
-        line-height: 28px;
-        text-decoration: none;
-        transition-property: transform, -webkit-transform;
-        transition-duration: 0.4s, 0.4s;
-        transition-timing-function: ease, ease;
-        transition-delay: 0s, 0s;
-    }
-    a:hover {
-        transform: translateY(-.1875rem);
-    }
-    .icon {    
-        color: #FFFFFF;
-        height: 16px;
-        width: 16px;
-    }
-    .icon:hover {
-        color: #FFFFFF;
-        height: 32px;
-        width: 32px;
-    }
-    </pre>
-    </code>
-    </div>
-    </div>
-
+<div class="element-code">
+<code>
+<pre>
+a {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size:16px;
+    line-height: 28px;
+    text-decoration: none;
+}
+a:focus {
+    transform: translateY(-.1875rem);
+}
+a:hover {
+    transform: translateY(-.1875rem);
+}
+.icon {    
+    color: #FFFFFF;
+    height: 16px;
+    width: 16px;
+}
+.icon:focus {
+    color: #FFFFFF;
+    height: 32px;
+    width: 32px;
+}
+.icon:hover {
+    color: #FFFFFF;
+    height: 32px;
+    width: 32px;
+}
+.icon:active {
+    color: #FFFFFF;
+    height: 32px;
+    width: 32px;
+}
+</pre>
+</code>
+</div>
+</div>
+                                    
+                                </div>
 
                                 </div>
 
@@ -490,12 +600,42 @@ longdesc: Global styles for internal and external links.
 
 
                             <div class="design-system-card foundation">
-                                <div class="design-system-card-header">
-                                    <h3>Primary links</h3>
-                                </div>
+                                <div class="state-selector">
+                                <p class="state-selector-intro">View state: </p>
+                                <label class="default-label" data-state="default-state">
+                                    <input type="radio" checked="checked">
+                                    <span>Default</span>
+                                </label>
+                                    
+                                <label class="visited-label" data-state="visited-state">
+                                    <input type="radio" >
+                                    <span>Visited</span>
+                                </label>
+                                    
+                                <label class="focus-label" data-state="focus-state">
+                                    <input type="radio" >
+                                    <span>Focus</span>
+                                </label>
+
+                                <label class="hover-label" data-state="hover-state">
+                                    <input type="radio" >
+                                    <span>Hover</span>
+                                </label>
+                                    
+                                <label class="active-label" data-state="active-state">
+                                    <input type="radio" >
+                                    <span>Active</span>
+                                </label>
+
+                                 </div>
+                                
+                                
 
                                 <div class="design-system-card-content buttons-links">
-                                    <div class="desktop-sample">
+                                
+                                <div class="button-example form-example-container">
+                                
+                                <div class="desktop-sample">
                                         <h4>Light background</h4>
                                         <div class="element-design link desktop closed">
 
@@ -517,47 +657,47 @@ longdesc: Global styles for internal and external links.
 
                                         </div>
 
-    <div class="element-code">
-    <code>
-    <pre>
-    a {
-        color: #254F90;
-        font-family: OpenSans-Semibold;
-        font-size: 16px;
-        line-height: 28px;
-        text-decoration: none;
-        box-shadow: none;
-        border-bottom: solid 2px #748FB8;
-    }
-    a:visited {
-        color: #A42079;
-        box-shadow: none;
-        border-bottom: solid 2px #DFB1D0;
-    }
-    a:focus {
-        box-shadow: none;
-        border: 0.0625rem dotted #748fb8;
-        border-bottom: solid 2px #748FB8;
-        outline: none;
-    }
-    a:hover {
-        color: #254F90;
-        box-shadow: inset 0 -20px 0 #DDEEFF;
-        border-bottom: none;
-        text-decoration: none;
-    }
-    a:active {
-        color: #000000;
-        box-shadow: none;
-        border-bottom: solid 2px #748FB8;
-    }
-    </pre>
-    </code>
-    </div>
-                                        <p>Note: The visited link state is purple. Refer to the CSS above for text and underline colours.</p>
+<div class="element-code">
+<code>
+<pre>
+a {
+    color: #254F90;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: none;
+    box-shadow: none;
+    border-bottom: solid 2px #748FB8;
+}
+a:visited {
+    color: #A42079;
+    box-shadow: none;
+    border-bottom: solid 2px #DFB1D0;
+}
+a:focus {
+    box-shadow: none;
+    border: 0.0625rem dotted #748fb8;
+    border-bottom: solid 2px #748FB8;
+    outline: none;
+}
+a:hover {
+    color: #254F90;
+    box-shadow: inset 0 -20px 0 #DDEEFF;
+    border-bottom: none;
+    text-decoration: none;
+}
+a:active {
+    color: #000000;
+    box-shadow: none;
+    border-bottom: solid 2px #748FB8;
+}
+</pre>
+</code>
+</div>
+
     </div>
 
-                                 <div class="desktop-sample">
+                                <div class="desktop-sample">
                                         <h4>Dark background</h4>
                                         <div class="element-design blue-back link-dark desktop closed">
 
@@ -580,33 +720,40 @@ longdesc: Global styles for internal and external links.
 
                                         </div>
 
-    <div class="element-code">
-    <code>
-    <pre>
-    a {
-        color: #FFFFFF;
-        font-family: OpenSans-Semibold;
-        font-size: 16px;
-        line-height: 28px;
-        text-decoration: none;
-        box-shadow: none;
-        border-bottom: solid 2px #FFFFFF 
-    }
-    a:hover {
-        color: #254F90;
-        box-shadow: inset 0 -20px 0 #96B7DF;
-        border-bottom: none;
-    }
-    a:active {
-        color: #212A4C;
-        box-shadow: inset 0 -20px 0 #96B7DF;
-        border-bottom: none;
-    }
-    </pre>
-    </code>
-    </div>
+<div class="element-code">
+<code>
+<pre>
+a {
+    color: #FFFFFF;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: none;
+    box-shadow: none;
+    border-bottom: solid 2px #FFFFFF 
+}
+a:focus {
+    color: #254F90;
+    box-shadow: inset 0 -20px 0 #96B7DF;
+    border-bottom: none;
+}
+a:hover {
+    color: #254F90;
+    box-shadow: inset 0 -20px 0 #96B7DF;
+    border-bottom: none;
+}
+a:active {
+    color: #000000;
+    box-shadow: inset 0 -20px 0 #96B7DF;
+    border-bottom: none;
+}
+</pre>
+</code>
+</div>
 
     </div>
+                                    
+                                </div>
 
 
                                 </div>
@@ -636,11 +783,32 @@ longdesc: Global styles for internal and external links.
                     <div class="body-copy-content">
 
     <div class="design-system-card foundation">
-                                <div class="design-system-card-header">
-                                    <h3>Search results pagination links</h3>
-                                </div>
+                 <div class="state-selector pagination-state-selector">
+                                <p class="state-selector-intro">View state: </p>
+                                <label class="default-label" data-state="default-state">
+                                    <input type="radio" checked="checked">
+                                    <span>Default</span>
+                                </label>   
+
+                                <label class="hover-label" data-state="hover-state">
+                                    <input type="radio" >
+                                    <span>Hover</span>
+                                </label>
+                                    
+                                <label class="active-label" data-state="active-state">
+                                    <input type="radio" >
+                                    <span>Active</span>
+                                </label>
+                     
+                                
+                                 </div>
+        
+        
 
                                 <div class="design-system-card-content buttons-links">
+                                    
+                                    <div class="button-example form-example-container">
+                                    
                                     <div class="desktop-sample">
 
                                         <div class="element-design pagination desktop closed">
@@ -651,7 +819,7 @@ longdesc: Global styles for internal and external links.
                                                 <div class="pagination-wrapper">
                                                     <a href="" class="first" aria-label="First">First</a>
                                                     <a href="" class="previous" aria-label="Previous">Previous</a>
-                                                    <a href="" class="page" aria-label="1">1</a>
+                                                    <a href="" class="page current selected-example" aria-label="1">1</a>
                                                     <a href="" class="page" aria-label="2">2</a>
                                                     <a href="" class="page" aria-label="3">3</a>
                                                     <a href="" class="next" aria-label="Next">Next</a>
@@ -671,37 +839,37 @@ longdesc: Global styles for internal and external links.
 
                                         </div>
 
-    <div class="element-code">
-    <code>
-    <pre>
-    a {
-        color: #254F90;
-        padding: 0 6px;
-        margin: 0 10px;  
-        box-shadow: none;
-        text-decoration: none;
-    }               
-    a:hover {
-        color: #254F90;
-        background: #E0EAF6;
-        border-radius: 2px;
-    }
-    a:active {
-        color: #333333;
-        background: #B3C2D8;
-        border-radius: 2px;
-    }
-    a.current {
-        color: #333333;
-        background: #E0EAF6;
-        border-radius: 2px;
-    }
-    </pre>
-    </code>
-    </div>
-    </div>
+<div class="element-code">
+<code>
+<pre>
+a {
+    color: #254F90;
+    padding: 0 6px;
+    margin: 0 10px;  
+    box-shadow: none;
+    text-decoration: none;
+}               
+a:hover {
+    color: #254F90;
+    background: #E0EAF6;
+    border-radius: 2px;
+}
+a:active {
+    color: #333333;
+    background: #B3C2D8;
+    border-radius: 2px;
+}
+a.current {
+    color: #333333;
+    background: #E0EAF6;
+    border-radius: 2px;
+}
+</pre>
+</code>
+</div>
+</div>
 
-
+                                    </div>
 
                                 </div>
 
