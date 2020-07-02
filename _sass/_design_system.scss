@@ -3553,6 +3553,9 @@
     }
     
     .buttons-links {
+        h4 {
+            padding-bottom: 16px;
+        }
         .button-wrapper {
             width: auto;
             display: inline-block;
@@ -3566,6 +3569,7 @@
                 transform: translateY(-.1875rem);
             }
         }
+        
         .link-wrapper {
             margin-top: 8px;
             width: auto;
@@ -3578,6 +3582,7 @@
             background: none;
             margin: 0;
         }
+        
         .cta-button {
             box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
             border-radius: 6px;
@@ -3585,13 +3590,8 @@
             padding: 8px 32px;
             text-align: center;
             letter-spacing: 0;
-            
-            &:hover, &:active {
-                box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-                border-radius: 6px;
-                opacity: 1;
-            }
         }
+        
         .primary-button {
             .cta-button {
                 background: $blue-primary-mid 0% 0% no-repeat padding-box;
@@ -3599,14 +3599,21 @@
                 color: $white;
                 @include font-format($font-family, $font-semibold, normal);
 
+                &:focus {
+                    background: $blue-primary-mid 0% 0% no-repeat padding-box;
+                    border: solid 3px $blue-active;
+                    
+                }
                 &:hover {
                     background: $blue-primary 0% 0% no-repeat padding-box;
                     box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                    border: 2px solid $blue-active;
                 }
 
                 &:active {
                     background: $blue-active 0% 0% no-repeat padding-box;
                     box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                    border: 2px solid $blue-active;
                 }
             }
         }
@@ -3618,11 +3625,15 @@
                 border: 2px solid $blue-primary;
                 color: $blue-primary;
 
+                &:focus {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 3px solid $white;
+                    color: $white;    
+                }
                 &:hover {
                     background: $blue-primary 0% 0% no-repeat padding-box;
                     border: 2px solid $white;
                     color: $white;
-
                 }
                 &:active {
                     background: $blue-active 0% 0% no-repeat padding-box;
@@ -3638,6 +3649,11 @@
                 border: 2px solid $blue-primary-mid;
                 color: $blue-primary-mid;
 
+                &:focus {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 3px solid $blue-active;
+                    color: $white;
+                }
                 &:hover {
                     background: $blue-primary 0% 0% no-repeat padding-box;
                     border: 2px solid $blue-active;
@@ -3647,6 +3663,7 @@
                 &:active {
                     background: $blue-active 0% 0% no-repeat padding-box;
                     color: $white;
+                    border-color: $blue-active;
                 }
             }
         }
@@ -3658,6 +3675,11 @@
                 border: 2px solid $white;
                 color: $white;
 
+                &:focus {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 3px solid $white;
+                    color: $white;
+                }
                 &:hover {
                     background: $blue-primary 0% 0% no-repeat padding-box;
                     border: 2px solid $white;
@@ -3680,6 +3702,12 @@
                 color: $blue-primary-mid;
                 text-align: left;
 
+                &:focus {
+                    background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
+                    height: 32px;
+                    padding-left: 40px;
+                }
+                
                 &:hover {
                     background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
                     height: 32px;
@@ -3688,7 +3716,9 @@
 
                 &:active {
                     color: $blue-active;
-                     background: url(../assets/Icon-arrow-circle-right-drk-blue.svg) no-repeat left 0px center;
+                    background: url(../assets/Icon-arrow-circle-right-blue-active.svg) no-repeat left 0px center;
+                    height: 32px;
+                    padding-left: 40px;
                     
                 }
             }
@@ -3704,13 +3734,15 @@
                 color: $white;
                 text-align: left;
 
-                &:hover {
+                &:hover, &:focus {
                     background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center;
                     height: 32px;
                     padding-left: 40px;
                 }
 
                 &:active {
+                    background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center;
+                    color: $white;
                 }
             }
         }
@@ -3742,7 +3774,7 @@
                     //border-color: $purple-light;
                 }
                 &:focus {
-                    border: .0625rem dotted #748fb8;
+                    border: .0625rem dotted $blue-primary;
                     border-bottom: rgb(116, 143, 184) solid 2px;
                     outline: none;
                 }
@@ -3767,6 +3799,11 @@
                 border-bottom: $white solid 2px;
                 box-shadow: none;
                 
+                &:focus {
+                    box-shadow: inset 0 -20px 0 $blue-light;
+                    border: none;
+                    color: $blue-primary;
+                }
                 &:hover {
                     box-shadow: inset 0 -20px 0 $blue-light;
                     border: none;
@@ -3775,84 +3812,254 @@
                 &:active {
                     box-shadow: inset 0 -20px 0 $blue-light;
                     border: none;
-                    color: $blue-secondary;
+                    color: $black;
                 }
             }
         }
         
-    .pagination {
-            .pagination-container {
-                padding-top: 8px;
-            }
-            a {
-                @include font-format($font-family, $font-semibold, normal);
-                color: $blue-primary;
-                box-shadow: none;
-                padding: 0 6px;
-                margin: 0 10px;                
-                
-                &.current {
-                    color: $black;
-                    background: $blue-lightest;
-                    border-radius: 2px;
+        .pagination {
+                .pagination-container {
+                    padding-top: 8px;
                 }
-                &:hover {
-                    background: $blue-lightest;
-                    border-radius: 2px;
-                }
-                &:active {
-                    color: $black;
-                    background: $blue-primary-light;
-                    border-radius: 2px;
-                }
-                
-                &.first {
-                    background-image: url(../assets/BGAIcon-chevrondouble-left.svg);
-                    background-repeat: no-repeat;
-                    background-size: 12px 12px;
-                    background-position: left 6px center;
-                    padding: 0 6px 0 24px;
-                    
+                a {
+                    @include font-format($font-family, $font-semibold, normal);
+                    color: $blue-primary;
+                    box-shadow: none;
+                    padding: 0 6px;
+                    margin: 0 10px;                
+
+                    &.current {
+                        color: $black;
+                        background: $blue-lightest;
+                        border-radius: 2px;
+                    }
+                    &:hover {
+                        background-color: $blue-lightest;
+                        border-radius: 2px;
+                    }
                     &:active {
+                        color: $black;
+                        background: $blue-primary-light;
+                        border-radius: 2px;
+                    }
+
+                    &.first {
+                        background-image: url(../assets/BGAIcon-chevrondouble-left.svg);
+                        background-repeat: no-repeat;
+                        background-size: 12px 12px;
+                        background-position: left 6px center;
+                        padding: 0 6px 0 24px;
+
+                        &:active {
+                            background-image: url(../assets/BGAIcon-chevrondouble-left-black.svg);
+                        }
+                    }
+                     &.previous {
+                        background-image: url(../assets/BGAIcon-chevron-left.svg);
+                        background-repeat: no-repeat;
+                        background-size: 8px 12px;
+                        background-position: left 6px center;
+                        padding: 0 6px 0 20px;
+
+                        &:active {
+                            background-image: url(../assets/BGAIcon-chevron-left-black.svg); 
+                        }
+                    }
+                    &.next {
+                        background-image: url(../assets/BGAIcon-chevron-right.svg);
+                        background-repeat: no-repeat;
+                        background-size: 8px 12px;
+                        background-position: right 6px center;
+                        padding: 0 20px 0 6px;
+
+                        &:active {
+                            background-image: url(../assets/BGAIcon-chevron-right-black.svg); 
+                        }
+                    }
+                     &.last {
+                        background-image: url(../assets/BGAIcon-chevrondouble-right.svg);
+                        background-repeat: no-repeat;
+                        background-size: 12px 12px;
+                        background-position: right 6px center;
+                        padding: 0 24px 0 6px;
+
+                        &:active {
+                             background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg);
+                        }
+                    }
+                }
+  
+        }
+    
+        // Styles for data-states added with the view state selector.
+        .button-example {
+
+            &[data-state="visited-state"] {
+                .link .link-text {
+                    color: $purple-dark;
+                    border-color: $purple-light;
+                }
+            }
+            
+            &[data-state="focus-state"] {
+                .primary-button .cta-button {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: solid 3px $blue-active;
+                }
+                .primary-dark-button .cta-button {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 3px solid $white;
+                    color: $white;    
+                }
+                .secondary-button .cta-button {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 3px solid $blue-active;
+                    color: $white;
+                }
+                .secondary-dark-button .cta-button {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 3px solid $white;
+                    color: $white;
+                }
+                .tertiary-button .cta-button {
+                    background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
+                    height: 32px;
+                    padding-left: 40px;
+                }
+                .tertiary-dark-button .cta-button {
+                    background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center;
+                    height: 32px;
+                    padding-left: 40px;
+                }
+                .link .link-text {
+                    border: .0625rem dotted $blue-primary;
+                    outline: none;
+                }
+                .link-dark .link-text {
+                    box-shadow: inset 0 -20px 0 $blue-light;
+                    border: none;
+                    color: $blue-primary;
+                }
+            }
+            
+            &[data-state="hover-state"] {
+                .button-wrapper {
+                    transform: translateY(-.1875rem);
+                }
+                .primary-button .cta-button {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; 
+                    border: solid 2px $blue-active;
+                }
+                .primary-dark-button .cta-button {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 2px solid $white;
+                    color: $white;    
+                }
+                .secondary-button .cta-button {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 2px solid $blue-active;
+                    color: $white;
+                }
+                .secondary-dark-button .cta-button {
+                    background: $blue-primary 0% 0% no-repeat padding-box;
+                    border: 2px solid $white;
+                    color: $white;
+                }
+                .tertiary-button .cta-button {
+                    background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center;
+                    height: 32px;
+                    padding-left: 40px;
+                }
+                .tertiary-dark-button .cta-button {
+                    background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center;
+                    height: 32px;
+                    padding-left: 40px;
+                }
+                .link .link-text {
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: rgb(221, 238, 255) 0px -20px 0px 0px inset;
+                    text-decoration: none;
+                }
+                .link-dark .link-text {
+                    box-shadow: inset 0 -20px 0 $blue-light;
+                    border: none;
+                    color: $blue-primary;
+                }
+                .pagination a {
+                    background-color: $blue-lightest;
+                    border-radius: 2px;
+                }
+            }
+            
+            &[data-state="active-state"] {
+                .button-wrapper {
+                    transform: translateY(-.1875rem);
+                }
+                .primary-button .cta-button {
+                    background: $blue-active 0% 0% no-repeat padding-box;
+                    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                    border-color: $blue-active;
+                }
+                .primary-dark-button .cta-button {
+                    background: $blue-active 0% 0% no-repeat padding-box;
+                    border-color: $blue-active;
+                    color: $white;
+                }
+                .secondary-button .cta-button {
+                    background: $blue-active 0% 0% no-repeat padding-box;
+                    color: $white; 
+                    border-color: $blue-active;
+                }
+                .secondary-dark-button .cta-button {
+                    background: $blue-active 0% 0% no-repeat padding-box;
+                    border-color: $blue-active;
+                }
+                .tertiary-button .cta-button {
+                    color: $blue-active;
+                    background: url(../assets/Icon-arrow-circle-right-blue-active.svg) no-repeat left 0px center;
+                    height: 32px;
+                    padding-left: 40px;
+                }
+                .tertiary-dark-button .cta-button {
+                    background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center;
+                    height: 32px;
+                    padding-left: 40px;
+                }
+                .link .link-text {
+                    color: $black;
+                    border-bottom: rgb(116, 143, 184) solid 2px;
+                    box-shadow: none;
+                }
+                .link-dark .link-text {
+                    box-shadow: inset 0 -20px 0 $blue-light;
+                    border: none;
+                    color: $black;
+                }
+                .pagination a {
+                    color: $black;
+                    background-color: $blue-primary-light;
+                    border-radius: 2px;
+                    
+                    &.first {
                         background-image: url(../assets/BGAIcon-chevrondouble-left-black.svg);
                     }
-                }
-                 &.previous {
-                    background-image: url(../assets/BGAIcon-chevron-left.svg);
-                    background-repeat: no-repeat;
-                    background-size: 8px 12px;
-                    background-position: left 6px center;
-                    padding: 0 6px 0 20px;
-                     
-                    &:active {
+                    &.previous {
                         background-image: url(../assets/BGAIcon-chevron-left-black.svg); 
                     }
-                }
-                &.next {
-                    background-image: url(../assets/BGAIcon-chevron-right.svg);
-                    background-repeat: no-repeat;
-                    background-size: 8px 12px;
-                    background-position: right 6px center;
-                    padding: 0 20px 0 6px;
-                    
-                    &:active {
+                    &.next {
                         background-image: url(../assets/BGAIcon-chevron-right-black.svg); 
                     }
-                }
-                 &.last {
-                    background-image: url(../assets/BGAIcon-chevrondouble-right.svg);
-                    background-repeat: no-repeat;
-                    background-size: 12px 12px;
-                    background-position: right 6px center;
-                    padding: 0 24px 0 6px;
-                    
-                    &:active {
-                         background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg);
+                    &.last {
+                        background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg);
                     }
                 }
+                
             }
         }
-    }  
+
+}  
     
     .progress-indicator {
         .progress-percentage {
@@ -5167,7 +5374,6 @@
 .example-link {
     padding: 0;
     margin-bottom: 0;
-    //max-width: 620px;
     p {
         @include font-format($font-family, $font-regular, normal);
         padding-bottom: 0;

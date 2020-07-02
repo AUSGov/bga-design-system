@@ -305,7 +305,7 @@ $(document).ready(function () {
         }
     });
     
-    // Buttons 
+    // Form buttons 
     $('.button-example .button-wrapper').hover(     
         function(){
             var common_ancestor = $(this).closest('.design-system-card');
@@ -326,6 +326,7 @@ $(document).ready(function () {
             common_ancestor.find('.active-label input').attr('checked','checked');
             common_ancestor.find(".button-wrapper").attr('data-state', "active-state");
     });
+
     
     // Dynamic forms fields
     $('.dynamic-example input').focus(function(){
@@ -624,6 +625,7 @@ $(document).ready(function () {
             $('.pagination-container a.page').last().addClass('current');
         }
     });
+
     
 
      /*----------- COMPONENT EXAMPLE: Anchor menu ----------- */

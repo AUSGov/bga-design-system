@@ -6046,6 +6046,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .stepped-navigation li a:after, .design-system-card .mobile-media-query .stepped-navigation li a:after { width: calc(50% + 16px); }
 
+.design-system-card .buttons-links h4 { padding-bottom: 16px; }
+
 .design-system-card .buttons-links .button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; margin-top: 8px; }
 
 .design-system-card .buttons-links .button-wrapper:hover { transform: translateY(-0.1875rem); }
@@ -6056,15 +6058,17 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .cta-button { box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; }
 
-.design-system-card .buttons-links .cta-button:hover, .design-system-card .buttons-links .cta-button:active { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; }
-
 .design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .buttons-links .primary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; }
+.design-system-card .buttons-links .primary-button .cta-button:focus { background: #4569A0 0% 0% no-repeat padding-box; border: solid 3px #18335C; }
 
-.design-system-card .buttons-links .primary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; }
+.design-system-card .buttons-links .primary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
+
+.design-system-card .buttons-links .primary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
 
 .design-system-card .buttons-links .primary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #254F90; }
+
+.design-system-card .buttons-links .primary-dark-button .cta-button:focus { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #ffffff; color: #ffffff; }
 
 .design-system-card .buttons-links .primary-dark-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
 
@@ -6072,11 +6076,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .secondary-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; }
 
+.design-system-card .buttons-links .secondary-button .cta-button:focus { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #18335C; color: #ffffff; }
+
 .design-system-card .buttons-links .secondary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #18335C; color: #ffffff; }
 
-.design-system-card .buttons-links .secondary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; color: #ffffff; }
+.design-system-card .buttons-links .secondary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; color: #ffffff; border-color: #18335C; }
 
 .design-system-card .buttons-links .secondary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
+
+.design-system-card .buttons-links .secondary-dark-button .cta-button:focus { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #ffffff; color: #ffffff; }
 
 .design-system-card .buttons-links .secondary-dark-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
 
@@ -6084,17 +6092,21 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .tertiary-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; height: 32px; border: none; box-shadow: none; color: #4569A0; text-align: left; }
 
+.design-system-card .buttons-links .tertiary-button .cta-button:focus { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
 .design-system-card .buttons-links .tertiary-button .cta-button:hover { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
 
-.design-system-card .buttons-links .tertiary-button .cta-button:active { color: #18335C; background: url(../assets/Icon-arrow-circle-right-drk-blue.svg) no-repeat left 0px center; }
+.design-system-card .buttons-links .tertiary-button .cta-button:active { color: #18335C; background: url(../assets/Icon-arrow-circle-right-blue-active.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
 
 .design-system-card .buttons-links .tertiary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: url(../assets/Icon-arrow-right-white.svg) no-repeat left 8px center; height: 32px; border: none; box-shadow: none; color: #ffffff; text-align: left; }
 
-.design-system-card .buttons-links .tertiary-dark-button .cta-button:hover { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+.design-system-card .buttons-links .tertiary-dark-button .cta-button:hover, .design-system-card .buttons-links .tertiary-dark-button .cta-button:focus { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .tertiary-dark-button .cta-button:active { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; color: #ffffff; }
 
 .design-system-card .buttons-links .link .link-text { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; background-color: transparent; border: none; border-bottom: #748FB8 solid 2px; box-shadow: none; cursor: pointer; display: inline; font-family: "Open Sans", sans-serif; font-size: 16px; font-weight: 600; height: auto; letter-spacing: 0.2px; line-height: 28.48px; text-decoration: none; transition-delay: 0s, 0s; transition-duration: 0.25s, 0.25s; transition-property: box-shadow, -webkit-box-shadow; transition-timing-function: ease, ease; }
 
-.design-system-card .buttons-links .link .link-text:focus { border: .0625rem dotted #748fb8; border-bottom: #748fb8 solid 2px; outline: none; }
+.design-system-card .buttons-links .link .link-text:focus { border: 0.0625rem dotted #254F90; border-bottom: #748fb8 solid 2px; outline: none; }
 
 .design-system-card .buttons-links .link .link-text:hover { background-color: transparent; border: none; box-shadow: #ddeeff 0px -20px 0px 0px inset; text-decoration: none; }
 
@@ -6102,9 +6114,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .link-dark .link-text { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #ffffff; border-bottom: #ffffff solid 2px; box-shadow: none; }
 
+.design-system-card .buttons-links .link-dark .link-text:focus { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
+
 .design-system-card .buttons-links .link-dark .link-text:hover { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
 
-.design-system-card .buttons-links .link-dark .link-text:active { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #212A4C; }
+.design-system-card .buttons-links .link-dark .link-text:active { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #000000; }
 
 .design-system-card .buttons-links .pagination .pagination-container { padding-top: 8px; }
 
@@ -6112,7 +6126,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .pagination a.current { color: #000000; background: #E0EAF6; border-radius: 2px; }
 
-.design-system-card .buttons-links .pagination a:hover { background: #E0EAF6; border-radius: 2px; }
+.design-system-card .buttons-links .pagination a:hover { background-color: #E0EAF6; border-radius: 2px; }
 
 .design-system-card .buttons-links .pagination a:active { color: #000000; background: #B3C2D8; border-radius: 2px; }
 
@@ -6131,6 +6145,72 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .buttons-links .pagination a.last { background-image: url(../assets/BGAIcon-chevrondouble-right.svg); background-repeat: no-repeat; background-size: 12px 12px; background-position: right 6px center; padding: 0 24px 0 6px; }
 
 .design-system-card .buttons-links .pagination a.last:active { background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg); }
+
+.design-system-card .buttons-links .button-example[data-state="visited-state"] .link .link-text { color: #A42079; border-color: #DFB1D0; }
+
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: solid 3px #18335C; }
+
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #ffffff; color: #ffffff; }
+
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .secondary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #18335C; color: #ffffff; }
+
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .secondary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #ffffff; color: #ffffff; }
+
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .tertiary-button .cta-button { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .tertiary-dark-button .cta-button { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .link .link-text { border: 0.0625rem dotted #254F90; outline: none; }
+
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .link-dark .link-text { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .button-wrapper { transform: translateY(-0.1875rem); }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .primary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: solid 2px #18335C; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .primary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .secondary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #18335C; color: #ffffff; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .secondary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .tertiary-button .cta-button { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .tertiary-dark-button .cta-button { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .link .link-text { background-color: transparent; border: none; box-shadow: #ddeeff 0px -20px 0px 0px inset; text-decoration: none; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .link-dark .link-text { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
+
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .pagination a { background-color: #E0EAF6; border-radius: 2px; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .button-wrapper { transform: translateY(-0.1875rem); }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .primary-button .cta-button { background: #18335C 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-color: #18335C; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .primary-dark-button .cta-button { background: #18335C 0% 0% no-repeat padding-box; border-color: #18335C; color: #ffffff; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .secondary-button .cta-button { background: #18335C 0% 0% no-repeat padding-box; color: #ffffff; border-color: #18335C; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .secondary-dark-button .cta-button { background: #18335C 0% 0% no-repeat padding-box; border-color: #18335C; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .tertiary-button .cta-button { color: #18335C; background: url(../assets/Icon-arrow-circle-right-blue-active.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .tertiary-dark-button .cta-button { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .link .link-text { color: #000000; border-bottom: #748fb8 solid 2px; box-shadow: none; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .link-dark .link-text { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #000000; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .pagination a { color: #000000; background-color: #B3C2D8; border-radius: 2px; }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .pagination a.first { background-image: url(../assets/BGAIcon-chevrondouble-left-black.svg); }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .pagination a.previous { background-image: url(../assets/BGAIcon-chevron-left-black.svg); }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .pagination a.next { background-image: url(../assets/BGAIcon-chevron-right-black.svg); }
+
+.design-system-card .buttons-links .button-example[data-state="active-state"] .pagination a.last { background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg); }
 
 .design-system-card .progress-indicator .progress-percentage { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; line-height: normal; color: #666666; margin-bottom: 16px; }
 
