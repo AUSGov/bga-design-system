@@ -694,7 +694,78 @@ $(document).ready(function () {
         common_ancestor.find('.default-label input').attr('checked','checked');
         $(this).closest(".dynamic-example").attr('data-state', 'default-state');
     });
+    
+    
+    /*----------- COMPONENT EXAMPLE: Checklist ----------- */
+    /*------------------- Open & close checklist items -------------------*/
+    $(".checklist-item-title").on("click", function () {
+        $(this).next('.checklist-sub-item-wrapper').slideToggle(400);
 
+        if ($(this).closest('.checklist-item').hasClass('open')) {
+            
+            $(this).closest('.checklist-item').removeClass('open');
+            
+            
+            // Close sub-items when close step
+            if ( $(this).closest('.checklist-item').find('.checklist-sub-item').hasClass('open') ) {
+               
+                $(this).closest('.checklist-item').find('.checklist-sub-item.open').find('.content-wrapper').slideToggle(400);
+                $(this).closest('.checklist-item').find('.checklist-sub-item').removeClass('open');
+            }
+            
+        } else {
+            $(this).closest('.checklist-item').addClass('open');
+        }
+         
+     });
+    
+    /*------------------- Close checklist step button -------------------*/
+    $(' .checklist-close-step').on('click', function(){
+        $(this).parents('.checklist-sub-item-wrapper').hide();
+        $(this).parents('.checklist-item').removeClass('open');
+    });
+    
+    
+    /*------------------- Open & close sub-checklist items -------------------*/
+     $(".checklist-sub-item-title").on("click", function () {
+
+        $(this).next('.content-wrapper').slideToggle(400);
+         
+        if ($(this).closest('.checklist-sub-item').hasClass('open')) {
+            $(this).closest('.checklist-sub-item').removeClass('open');
+        } else {
+            $(this).closest('.checklist-sub-item').addClass('open');
+        }
+         
+     });
+    
+    
+    /*------------------- Checkbox functionality -------------------*/
+    $('.checklist-item-checkbox').on('click', function(){
+        if ($(this).parents('.checklist-sub-item.must-do').hasClass('done')) {
+            $(this).parents('.checklist-sub-item.must-do').removeClass('done');
+        } else {
+            $(this).parents('.checklist-sub-item.must-do').addClass('done');
+        }
+        
+        $(this).parents('.checklist-item').find('.checklist-sub-item.must-do').each(function(){
+            
+            var item_completion = false;
+            if ($(this).hasClass('done')) {
+                item_completion = true;
+            } else {
+                item_completion = false;
+                $(this).parents('.checklist-item').removeClass('item-done');
+                return false;
+            }
+            if (item_completion === true) {
+                $(this).parents('.checklist-item').addClass('item-done');
+            }
+            
+        });
+    });
+    
+    
     
     
     
