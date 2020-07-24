@@ -5,7 +5,7 @@ breadcrumb1: Components
 url1: topic-components.html
 breadcrumb2:
 url2:
-longdesc: 
+longdesc: A checklist pattern for presenting an end to end journey in logical steps.
 
 ---
 <div class="main-section">
@@ -22,7 +22,7 @@ longdesc:
                                         <ul>
                                             <li><a href="" aria-label="Visual design">Visual design</a></li>
                                             <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
-                                            <li><a href="" aria-label="Layouts">Layouts</a></li>
+                                            <!--<li><a href="" aria-label="Layouts">Layouts</a></li>-->
                                             <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
 
                                         </ul>
@@ -47,8 +47,27 @@ longdesc:
             </div>
             <div class="body-copy-content">
                 
-
+                <h3>Checklist page layout</h3>
+                <p>The checklist design pattern consists of a list of numbered items and a 'save progress' feature. The items open to reveal sub-items with checkboxes allowing users to track their progress through the list.</p>
+                
+                
                 <div class="design-system-card component extra-wide">
+                    
+                     <div class="responsive-toggle-container">
+                                <p class="toggle-name">Design view: <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        <span class="switch-text-mobile"></span>
+                                        <span class="switch-text-desktop"></span>
+                                    </label></p>
+
+                                <div class="mobile-only">
+                                    <h5>Mobile design</h5>
+                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                                </div>
+
+                            </div>
+                    
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper white-back">
@@ -57,21 +76,55 @@ longdesc:
                                    
                                 <div id="checklist-example" class="checklist-wrapper new">
                          
-                        <div id="email-btn-wrapper" class="not-email-box">
-                            <btn class="email-btn"><span>Email checklist</span></btn>
-                        </div>
-                        <!-- 
-                        <div class="email-box-container">
-                            <div class="email-intro">
-                                <h3>Save your progress.</h3>
-                                <p>Save your checklist and get a link to it – you’ll be able to continue on from where you were.</p>
+                       
+                                   <img class="responsive-img-no-margin desktop-example" src={{ "assets/checklist_layout.png" | relative_url }} />
+
+                                   <img class="responsive-img-no-margin mobile-example" src={{ "assets/checklist_layout_mobile.png" | relative_url }} />
+
+                                    
+                         
+                                </div>
+                                    
+                                </div>
                             </div>
 
-                            <div id="email-btn-wrapper" class="email-btn-wrapper-2">
-                                <btn class="email-btn"><span>Save progress</span></btn>
-                            </div>
                         </div>
-                        -->
+
+
+
+                    </div>
+
+                </div>
+
+
+                
+                
+                <h3>Checklist items</h3>
+                <div class="design-system-card component extra-wide">
+                    
+                     <div class="responsive-toggle-container">
+                                <p class="toggle-name">Design view: <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        <span class="switch-text-mobile"></span>
+                                        <span class="switch-text-desktop"></span>
+                                    </label></p>
+
+                                <div class="mobile-only">
+                                    <h5>Mobile design</h5>
+                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                                </div>
+
+                            </div>
+                    
+                    <div class="design-system-card-content">
+
+                        <div class="example-wrapper white-back">
+                            <div class="checklist">
+                                <div class="example checklist-container">   
+                                   
+                                <div id="checklist-example" class="checklist-wrapper new">
+                        
                          
                         <div class="checklist-line"></div>
                          
@@ -133,7 +186,6 @@ longdesc:
                             <hr class="checklist-item-divider"/> 
                         </div>
 
-                        
                         
                          <!-- ITEM 2 -->
                          <div class="checklist-item">
@@ -197,17 +249,87 @@ longdesc:
                              
                             <hr class="checklist-item-divider"/> 
                         </div>
-                        
-
-                     
-                        <!--
-                        <div id="email-btn-wrapper-mobile-chat" class="email-btn-wrapper">
-                                <btn class="email-btn"><span>Save progress</span></btn>
-                        </div>
                          
-                         <div id="chat-button"><p>Chat now</p></div>
-                         <div id="button-background"></div>
-                        -->
+                    </div>
+              
+                                    
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="element-design component closed">
+                            <div class="content-wrapper">
+                                <p>CSS styles</p>
+                            </div>
+                            <button role="none" tabindex="-1" class="float-button">
+                                <div tabindex="-1" class="float-button-content">
+                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                </div>
+                            </button>
+
+                        </div>
+                            
+<div class="element-code">
+
+<code>
+<pre>
+
+</pre>
+</code>
+
+</div>
+
+                    </div>
+
+                </div>
+                
+                 <h3>Save progress feature</h3>
+                <div class="design-system-card component extra-wide">
+                    
+                     <div class="responsive-toggle-container">
+                                <p class="toggle-name">Design view: <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        <span class="switch-text-mobile"></span>
+                                        <span class="switch-text-desktop"></span>
+                                    </label></p>
+
+                                <div class="mobile-only">
+                                    <h5>Mobile design</h5>
+                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                                </div>
+
+                            </div>
+                    
+                    <div class="design-system-card-content">
+
+                        <div class="example-wrapper white-back">
+                            <div class="checklist">
+                                <div class="example checklist-container">   
+                                   
+                                <div id="checklist-example" class="checklist-wrapper new">
+                         
+
+                        
+                        <div class="email-box-container">
+                            <div class="email-intro">
+                                <h3>Save your progress</h3>
+                                <p>Save your checklist and get a link to it – you’ll be able to continue on from where you were.</p>
+                            </div>
+
+                            <div id="email-btn-wrapper" class="email-btn-wrapper-2">
+                                <btn class="email-btn"><span>Save progress</span></btn>
+                            </div>
+                        </div>
+                        
+                        <div id="clear-progress">
+                             <p><a>Clear checklist progress<span></span></a></p>
+                         </div>
+
                          
                     </div>
                       
@@ -252,6 +374,7 @@ longdesc:
 
                 </div>
 
+
             </div>
            
 
@@ -282,28 +405,23 @@ longdesc:
                     <p>The checklist pattern presents the user with an end to end journey in logical steps and provides links to content on other websites to help them complete each step.</p>
                     
                    
-                    <h3>When to use this pattern</h3>
-                    
-                    <p>Use the checklist pattern:</p>
+                    <h3>When to use this pattern:</h3>
                     <ul>
-                        <li>end to end journeys that have a specific start and end point</li> 
-                        <li>when the user needs to interact with multiple pieces of content or tools on other government websites</li>  
-                        <li>where it’s helpful for someone to complete tasks in a specific order or when some steps can be completed concurrently</li>
-                        <li>when it’s helpful for someone to have a sense at a high level what’s ahead in a journey.</li> 
+                        <li>For end to end journeys that have a specific start and end point.</li> 
+                        <li>When the user needs to interact with multiple pieces of content or tools on other government websites.</li>  
+                        <li>Where it’s helpful for someone to complete tasks in a specific order or when some steps can be completed concurrently.</li>
+                        <li>When it’s helpful for someone to have a sense at a high level what’s ahead in a journey.</li> 
                         </ul>
 
                     
-                    <h3>When not to use this pattern</h3>
-
-  
-                    <p>Do not use the checklist pattern:</p>
+                    <h3>When not to use this pattern:</h3>
                     
                     <ul>
-                        <li>when the user only needs to read guidance and not take an action (use Guide pattern instead)</li>
+                        <li>when the user only needs to read guidance and not take an action (use Guide pattern instead).</li>
 
-                        <li>when there’s no logical or helpful order to complete the tasks, for example, when you’re presenting the user with a series of options</li>
+                        <li>when there’s no logical or helpful order to complete the tasks, for example, when you’re presenting the user with a series of options.</li>
                         
-                        <li>When you are educating the user about a specific stage in an end to end journey (use the tutorial pattern)</li>
+                        <li>When you are educating the user about a specific stage in an end to end journey (use the tutorial pattern).</li>
                     </ul>
 
 
@@ -316,7 +434,8 @@ longdesc:
 </div>
 
                             
-<!-- LAYOUTS -->                               
+<!-- LAYOUTS --> 
+<!--
 <div class="anchor-section" name="layouts"><a href="" id="layouts"></a>
 
                 <div class="body-copy">
@@ -350,7 +469,7 @@ longdesc:
                 </div>
 
 </div>
-
+-->
 
                         
 <!-- EXAMPLES & ASSETS -->                               
@@ -369,10 +488,10 @@ longdesc:
             <div class="adobe-link vertical-list ">
 
                 <div>
-                    <a class="action-card-anchor" target="blank" href="">
+                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/515568e1-a93a-498a-ab73-7832034abc81/specs/">
                             <div class="action-card-button">
                                 <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
+                                    <p class="vertical-list-fileName">View checklist design and assets in Adobe XD.</p>
                                     <div class="action-card-info">
                                         <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
                                         <div class="site-name"><span>ADOBE XD</span></div>
@@ -386,10 +505,10 @@ longdesc:
             <div class="example-link vertical-list ">
 
                 <div>
-                    <a class="action-card-anchor" target="blank" href="">
+                    <a class="action-card-anchor" target="blank" href="https://ausgov.github.io/bga-checklist-handover/checklist-demo-chat">
                             <div class="action-card-button">
                                 <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View the standard pathway component on business.gov.au</p>
+                                    <p class="vertical-list-fileName">View a demo of the checklist design pattern.</p>
                                     <div class="action-card-info">
                                         <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
                                         <div class="site-name"><span>BUSINESS.GOV.AU</span></div>

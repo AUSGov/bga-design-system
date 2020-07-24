@@ -95,6 +95,9 @@
                 background: $white;
                 border-bottom: 1px solid $grey-light;
             }
+            &.no-padding {
+                padding: 0;
+            }
             &.header-blue-back {
                 padding: 40px 0px;
                 background: $blue-primary-mid;
