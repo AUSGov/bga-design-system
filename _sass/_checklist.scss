@@ -492,7 +492,7 @@
                                 }
                             }
                             
-                             &:hover {
+                            &:hover {
                                  h3 {
                                      text-decoration: underline;
                                  }
@@ -659,8 +659,7 @@
                             background-position: right 24px center;
                             
                             h3 {
-                                font-size: 18px;
-                                line-height: 1.4rem;
+                                font-size: 18px; 
                             }
 
                             .checklist-item-tag {
@@ -716,7 +715,7 @@
                 
                  &.open {
                     .checklist-item-title {
-                        background-position: right 24px center;
+                        background-position: right 15px center;
                         padding: 24px 56px 24px 16px;    
                     }
                 }
@@ -791,6 +790,10 @@
                         line-height: 1.9rem;
                     }
                 }
+                &:hover, 
+                &:active {
+                    background-position: right 15px center !important;
+                }
             }
 
             &:last-of-type {
@@ -811,6 +814,11 @@
                     .checklist-sub-item-title {
                         padding: 16px 64px 16px 24px;
                         background-position: right 24px center;
+                        
+                        &:hover, 
+                        &:active {
+                            background-position: right 15px center !important;
+                        }
 
                         h3 {
                             font-size: 18px;
@@ -852,6 +860,12 @@
 
                     &.tip {
                         .checklist-sub-item-title {
+                            
+                            &:hover, 
+                            &:active {
+                                background-position: right 15px center !important;
+                            }
+                            
                             h3 {
                                 padding-left: 24px;
 
@@ -862,6 +876,11 @@
                                     left: 24px;
                                     top: 18px;
                                 }
+                            }
+                        }
+                        &.open {
+                            .checklist-sub-item-title {
+                                background-position: right 24px center;
                             }
                         }
 
@@ -992,6 +1011,11 @@
                 background-position: right 24px center;
                 padding: 24px 56px 24px 16px;
                 margin-left: 40px;
+                
+                &:hover, 
+                &:active {
+                    background-position: right 15px center !important;
+                }
 
                 h2 {
                     font-size: 20px;
@@ -1022,9 +1046,14 @@
                     &:before {
                         top: 18px;
                     }
+        
                     .checklist-sub-item-title {
                         padding: 16px 64px 16px 24px;
                         background-position: right 24px center;
+                        &:hover, 
+                        &:active {
+                            background-position: right 15px center !important;
+                        }                   
 
                         h3 {
                             font-size: 18px;
@@ -1061,11 +1090,20 @@
                             .checklist-item-tag {
                                 opacity: 1;
                             }
+                            &:hover, 
+                            &:active {
+                                background-position: right 15px center !important;
+                            }  
                         }
                     }
 
                     &.tip {
                         .checklist-sub-item-title {
+                            &:hover, 
+                            &:active {
+                                background-position: right 15px center !important;
+                            }
+                            
                             h3 {
                                 padding-left: 24px;
 
@@ -1079,8 +1117,14 @@
                             }
                         }
 
+
                         .checklist-item-content {
                             padding: 8px 24px 24px 24px;
+                        }
+                    }
+                    &.open {
+                        .checklist-sub-item-title {
+                            background-position: right 24px center !important;
                         }
                     }
                 }

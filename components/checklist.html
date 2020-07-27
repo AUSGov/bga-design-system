@@ -274,12 +274,219 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                         </div>
                             
 <div class="element-code">
-
+<h4>Desktop</h4>
+<h5>Item title</h5>
 <code>
 <pre>
+h2{
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 26px;
+    line-height: 32px;
+    text-decoration: none;
+}
+h2:hover {
+    text-decoration: underline;
+}
 
 </pre>
 </code>
+    
+<h5>Sub-item title</h5>
+<code>
+<pre>
+h3{
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 21px;
+    line-height: 26px;
+    text-decoration: none;
+}
+h3:hover {
+    text-decoration: underline;
+}
+
+</pre>
+</code>
+    
+<h5>Item number</h5>
+<code>
+<pre>
+h2.number{
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 26px;
+    line-height: 25px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 3px solid #C7C7C7;
+    height: 48px;
+    width: 48px;
+}
+h2.number.open {
+    color: #FFFFFF;
+    background-color: #254F90;
+    border: 3px solid #254F90;
+}
+h2.number.ticked {
+    color: #FFFFFF;
+    background-color: #297E28;
+    border: 3px solid #297E28;
+}
+.tick-icon {
+    color: #FFFFFF;
+    background-position: center center;
+    background-size: 20px 16px;
+}
+
+</pre>
+</code>
+
+<h5>Item button (chevron)</h5>
+<code>
+<pre>
+.icon {
+    color: #254F90;
+    height: 12px;
+    width: 20px;
+}
+.icon:hover {
+    background-color: #EBEBEB;
+    background-size: 38px 38px;
+}
+.icon:active {
+    background-color: #EBEBEB;
+    background-size: 38px 38px;
+}
+
+</pre>
+</code>
+    
+<h5>Sub-item button (chevron)</h5>
+<code>
+<pre>
+.icon {
+    color: #254F90;
+    height: 12px;
+    width: 20px;
+}
+.icon:hover {
+    background-color: #FFFFFF;
+    background-size: 38px 38px;
+}
+.icon:active {
+    background-color: #FFFFFF;
+    background-size: 38px 38px;
+}
+
+</pre>
+</code>
+    
+<h5>Tips container</h5>
+<code>
+<pre>
+tips.container{
+    background-color: #EBEBEB;
+}
+
+</pre>
+</code>
+    
+<h5>Must Do container</h5>
+<code>
+<pre>
+must-do.container{
+    background-color: #E5EDF7;
+}
+
+</pre>
+</code>
+    
+<h5>Must Do tag</h5>
+<code>
+<pre>
+.must-do{
+    color: #FFFFFF;
+    background: #254F90;
+    font-family: OpenSans;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+</pre>
+</code>
+    
+<h5>Checkbox container</h5>
+<code>
+<pre>
+checkbox.container{
+    background-color: #BAC8DB;
+}
+checkbox.container.checked {
+    background-color: #B7DDB7;
+}
+
+</pre>
+</code>
+    
+<h5>Checkbox</h5>
+<code>
+<pre>
+label {
+    color: #333333;
+    font-family: OpenSans;
+    font-size:16px;
+}
+checkbox {
+    background-color: #FFFFFF;
+    border: 2px solid #254F90;
+}
+checkbox.checked {
+    background-color: #FFFFFF;
+    border: 2px solid #297E28;
+}
+
+</pre>
+</code>
+ 
+    
+<h4>Mobile</h4>
+<h5>Item title</h5>
+<code>
+<pre>
+h2{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+</pre>
+</code>
+    
+<h5>Sub-item title</h5>
+<code>
+<pre>
+h3{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+</pre>
+</code>
+    
+<h5>Item number</h5>
+<code>
+<pre>
+h2.number{
+    font-size: 26px;
+}
+
+</pre>
+</code>
+    
+<h5>Item content</h5>
+<p>Text inside the items is styled with the <a href={{"foundations/typography.html" | relative_url}} aria-label="typography guidelines">design system standard typography styles.</a></p> 
 
 </div>
 
@@ -326,19 +533,14 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                             </div>
                         </div>
                         
-                        <div id="clear-progress">
+                        <!--<div id="clear-progress">
                              <p><a>Clear checklist progress<span></span></a></p>
-                         </div>
+                         </div>-->
 
                          
                     </div>
                       
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
+                                 
                                     
                                     
                                 </div>
@@ -361,13 +563,97 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                         </div>
                             
 <div class="element-code">
+<h4>Desktop</h4>
 
+<h5>Title</h5>
 <code>
 <pre>
+h3{
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+</pre>
+</code>
+    
+<h5>Text</h5>
+<code>
+<pre>
+h3{
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+</pre>
+</code>
+ 
+<h5>Button</h5>
+<code>
+<pre>
+.button {
+    color: #333333;
+    font-family: OpenSans-Semibold;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #FFD964;
+    border-radius: 6px;
+    border: 2px solid #F5C550;
+    padding: 16px;
+}
+.button:hover {
+    background: #FFD00A;
+    border: 2px solid #E1AA21;
+}
+.button:active {
+    background: #EDC000;
+    border: 2px solid #C18100;
+}
+.icon {
+    color: #333333;
+    height: 13px;
+    width: 26px;
+}
+
+</pre>
+</code>
+    
+<h5>Container</h5>
+<code>
+<pre>
+.container {
+    background: #EBEBEB;
+    padding: 24px;
+    border-top: 4px solid #D8D8D8;
+}
+
+</pre>
+</code>  
+    
+<h4>Mobile</h4>
+<h5>Button</h5>
+<code>
+<pre>
+.icon {
+    display: none;
+}
 
 </pre>
 </code>
 
+<h5>Container</h5>
+<code>
+<pre>
+.container {
+    padding: 5px;
+    border-top: none;
+}
+
+</pre>
+</code>  
 </div>
 
                     </div>
