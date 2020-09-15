@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! Bootstrap v4.0.0-beta.2 (https://getbootstrap.com) Copyright 2011-2017 The Bootstrap Authors Copyright 2011-2017 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 :root { --blue: #007bff; --breakpoint-lg: 1200px; --breakpoint-md: 900px; --breakpoint-sm: 480px; --breakpoint-xs: 0; --cyan: #17a2b8; --danger: #dc3545; --dark: #343a40; --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; --font-family-sans-serif: "Open Sans", sans-serif; --gray: #6c757d; --gray-dark: #343a40; --green: #28a745; --indigo: #6610f2; --info: #17a2b8; --light: #f8f9fa; --orange: #ffd964; --pink: #e83e8c; --primary: #254f90; --purple: #6f42c1; --red: #dc3545; --secondary: #4569a0; --success: #28a745; --teal: #20c997; --warning: #ffc107; --white: #fff; --yellow: #ffc107
 ; }
@@ -5014,9 +5015,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .desktop-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0; line-height: 24px; }
 
-.design-system-card .desktop-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; line-height: 28px; }
+.design-system-card .desktop-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; line-height: 28px; padding-left: 1rem; }
 
 .design-system-card .desktop-sample li:last-of-type { padding-bottom: 16px !important; }
+
+.design-system-card .desktop-sample ul ul li:before { content: "¯" !important; height: 100%; margin-top: 7px; font-weight: 600; color: #666; }
 
 .design-system-card .desktop-sample p.blockquote { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 21px; letter-spacing: 0.2px; text-align: center; line-height: 40px; }
 
@@ -5052,9 +5055,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-sample p.body-mini { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; letter-spacing: 0; line-height: 24px; }
 
-.design-system-card .mobile-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 24px; }
+.design-system-card .mobile-sample li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 24px; padding-left: 1rem; }
 
 .design-system-card .mobile-sample li:last-of-type { padding-bottom: 16px !important; }
+
+.design-system-card .mobile-sample ul ul li:before { content: "¯" !important; height: 100%; margin-top: 7px; font-weight: 600; color: #666; }
 
 .design-system-card .mobile-sample p.blockquote { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 18px; letter-spacing: 0.2px; text-align: center; line-height: 24px; }
 

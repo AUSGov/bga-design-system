@@ -570,6 +570,9 @@ p.mini {
                                     <ul class="">
                                     <li>List style on desktop</li>
                                     <li>Lorem ipsum dolor sit amet, consectet adipiscing elit.</li>
+                                        <ul>
+                                            <li>Nested list style on desktop</li>
+                                            <li>Lorem ipsum dolor sit elit.</li></ul>
                                     </ul>
                                     </div>
                                     <button role="none" tabindex="-1" class="float-button">
@@ -581,7 +584,10 @@ p.mini {
                                         </button>
                                 </div>
                                 <div class="element-code">
-<h5>List text styles</h5>
+
+
+<h4>Primary list</h4>
+<h5>List text </h5>
 <code>
 <pre>
 li  {
@@ -597,11 +603,40 @@ li  {
 <h5>Bullet</h5>
 <code>
 <pre>
-    color: #c18100;
+ li:before {
+    color: #C18100;
     height: 8px;
     width: 8px;
+}
+
 </pre>
 </code>
+                                    
+                                    
+<h4>Nested list</h4>
+<h5>List text </h5>
+<code>
+<pre>
+li  {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+</pre>
+</code>
+<h5>Bullet</h5>
+<code>
+<pre>
+li:before {
+    color: #666666;
+    content: "¯";
+}
+</pre>
+</code>
+         
                                 </div>
 
                             </div>
@@ -613,6 +648,9 @@ li  {
                                     <ul class="">
                                     <li>List style on mobile</li>
                                     <li>Lorem ipsum dolor sit amet, consectet adipiscing elit.</li>
+                                        <ul>
+                                            <li>Nested list style on desktop</li>
+                                            <li>Lorem ipsum dolor sit elit.</li></ul>
                                     </ul>
                                     </div>
                                     <button role="none" tabindex="-1" class="float-button">
@@ -624,7 +662,8 @@ li  {
                                         </button>
                                 </div>
                                 <div class="element-code">
-<h5>List text styles</h5>
+<h4>Primary list</h4>
+<h5>List text</h5>
 <code>
 <pre>
 li {
@@ -640,9 +679,37 @@ li {
 <h5>Bullet</h5>
 <code>
 <pre>
-    color: #c18100;
+li:before {
+    color: #C18100;
     height: 8px;
     width: 8px;
+}
+
+</pre>
+</code>
+                                    
+                            
+<h4>Nested list</h4>
+<h5>List text </h5>
+<code>
+<pre>
+li  {
+    color: #333333;
+    font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+
+</pre>
+</code>
+<h5>Bullet</h5>
+<code>
+<pre>
+li:before {
+    color: #666666;
+    content: "¯";
+}
 </pre>
 </code>
                                 </div>
@@ -671,7 +738,7 @@ li {
                                         <div class="pull-quote-text text-center"><p class="blockquote">Block quotes are centered in the middle of the page like this.</p></div>
                                         <div class="source pull-quote-quote-subText text-center">
                                             <div>
-                                                <hr> <em>Chloe Richardson, Product Owner</em> </div>
+                                                <hr> <em>Steph Grant, Product Owner</em> </div>
                                         </div>
                                         <hr class="pull-quote-hr hr-bottom">
                                     </div>
@@ -750,7 +817,7 @@ hr {
                                         <div class="pull-quote-text text-center"><p class="blockquote">Block quotes are centered in the middle of the page like this.</p></div>
                                         <div class="source pull-quote-quote-subText text-center">
                                             <div>
-                                                <hr> <em>Chloe Richardson, Product Owner</em> </div>
+                                                <hr> <em>Steph Grant, Product Owner</em> </div>
                                         </div>
                                         <hr class="pull-quote-hr hr-bottom">
                                     </div>
