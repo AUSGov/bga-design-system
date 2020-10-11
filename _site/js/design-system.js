@@ -453,7 +453,7 @@ $(document).ready(function () {
     });
 
     // Infographic select option
-    $('.infographic-colour-selector .select-wrapper .colour-set').change(function () {
+    $('.infographic-colour-selector .infographic-select-wrapper #colour-set').change(function () {
 
         var expr = $(this).val();
 
@@ -874,7 +874,8 @@ $(document).ready(function () {
     //Hero pathway checkbox
     var hideSvgImage = false;
 
-    $('.hero-pathway .code-example-select-box .form-select-box').change(function () {
+    // Hero pathway colour dropdown
+    $('.hero-pathway .code-example-select-box #hero-pathway-colour-set').change(function () {
 
         //Code example changes
         var expr = $(this).val();
