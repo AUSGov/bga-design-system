@@ -453,7 +453,7 @@ $(document).ready(function () {
     });
 
     // Infographic select option
-    $('.infographic-colour-selector .infographic-select-wrapper #colour-set').change(function () {
+    $('.infographic-colour-selector .infographic-select-wrapper #infographic-colour-set').change(function () {
 
         var expr = $(this).val();
 

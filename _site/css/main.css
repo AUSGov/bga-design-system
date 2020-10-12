@@ -5574,11 +5574,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .infographic-select-wrapper { border: 1px solid #D8D8D8; border-bottom: none; background: #ffffff; padding: 16px 24px; text-align: left; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0; }
 
-.infographic-select-wrapper select#colour-set { border: solid 1px #495c74; background: pink; padding: 8px 12px; margin-left: 8px; width: 300px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; border-radius: 0px; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
+.infographic-select-wrapper select#infographic-colour-set { border: solid 1px #495c74; background: pink; padding: 8px 12px; margin-left: 8px; width: 300px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; border-radius: 0px; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
 
-.infographic-select-wrapper select#colour-set:focus { outline: none; border: solid 1px #254F90 !important; }
+.infographic-select-wrapper select#infographic-colour-set:focus { outline: none; border: solid 1px #254F90 !important; }
 
-.infographic-select-wrapper select#colour-set[type="text"] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
+.infographic-select-wrapper select#infographic-colour-set[type="text"] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
 .infographic-select-wrapper select::-ms-expand { display: none !important; }
 
