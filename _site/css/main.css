@@ -4652,7 +4652,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 900px) { .design-system-card .hero-pathway .hero-pathway-list, .design-system-card .hero-pathway .hero-pathway-list-hero, .design-system-card .hero-pathway .half-width .hero-pathway-list, .design-system-card .hero-pathway .half-width .hero-pathway-list-hero { padding-bottom: 0; margin-bottom: 0; } .design-system-card .hero-pathway .hero-pathway-list-card, .design-system-card .hero-pathway .half-width .hero-pathway-list-card { flex: 1; flex-basis: 100%; margin-bottom: 32px; height: auto; } .design-system-card .hero-pathway .thirds-width .two-thirds { flex: 0 100%; } .design-system-card .hero-pathway .thirds-width .one-third { flex: 0 100%; } }
 
-.design-system-card .hero-pathway .hero-pathway-anchor:hover { box-shadow: none; }
+.design-system-card .hero-pathway .hero-pathway-anchor { box-shadow: none; border: none; }
 
 .design-system-card .hero-pathway .hero-pathway-list-secondary-description { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
 
@@ -6045,7 +6045,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .tab-content-container .tab-section .css-code h4 { padding-top: 0; }
 
-.copy-code-button { background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569a0; color: #4569a0; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; padding: 0.5rem 1rem; text-align: center; letter-spacing: 0; width: 150px; align-self: flex-end; margin-bottom: 1rem; }
+.copy-code-button { background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569a0; color: #4569a0; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; padding: 0.5rem 1rem; text-align: center; letter-spacing: 0; width: 150px; align-self: flex-end; margin-bottom: 1rem; font-weight: 600; }
 
 .copy-code-button:focus { background: #254f90 0% 0% no-repeat padding-box; border: 3px solid #18335c; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; }
 

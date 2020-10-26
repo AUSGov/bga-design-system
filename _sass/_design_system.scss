@@ -1977,8 +1977,9 @@
         }
       }
     }
-    .hero-pathway-anchor:hover {
+    .hero-pathway-anchor {
       box-shadow: none;
+      border: none;
     }
     .hero-pathway-list-secondary-description {
       @include font-format($font-family, $font-regular, normal);
@@ -6037,6 +6038,7 @@
   width: 150px;
   align-self: flex-end;
   margin-bottom: 1rem;
+  font-weight: 600;
 
   &:focus {
     background: #254f90 0% 0% no-repeat padding-box;

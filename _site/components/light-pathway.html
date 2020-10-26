@@ -37,7 +37,7 @@
     
     <script src=/bga-design-system/js/design-system.js></script>
    
-    
+    <script src=/bga-design-system/js/code-examples.js></script>
 
 </head>
 
@@ -227,7 +227,7 @@
 
                          <div class="element-design component closed">
                             <div class="content-wrapper">
-                                <p>CSS styles</p>
+                                <p>HTML/CSS Styles</p>
                             </div>
                             <button role="none" tabindex="-1" class="float-button">
                                 <div tabindex="-1" class="float-button-content">
@@ -239,68 +239,65 @@
 
                         </div>
                             
-<div class="element-code">
-<h4>Desktop &amp; mobile</h4>
-<h5>Title</h5>
-<code>
-<pre>
-h3 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    line-height: 28px;
-}
-h3:hover {
-    color: #254F90;
-    text-decoration: underline;
-}
+                        <div class="element-code light-pathway-code">
 
-</pre>
-</code>
-    
-<h5>Link description</h5>
+                            <div class="col-sm-12 tabs-component">
+    <!-- Tabs -->
+    <div class="row">
+        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+            <div class="body-copy col-sm-12 col-md-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="html-section">HTML</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="css-section">CSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Tab Content -->
+    <div class="tab-content-container">
+        <!-- HTML -->
+        <div id="html-section" class="tab-section">
+                        <button class="copy-code-button">
+                            Copy html
+                            <span class="copy-code-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 89.458 103.583">
+                                    <path
+                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
+                                        transform="translate(-2 -1)" fill="#ffffff"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="html-code">
+                            <code>
+                                <pre>
 
-<code>
-<pre>
-p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
-}
-
-</pre>
-</code>
-    
-<h5>Link icon</h5>
-
-<code>
-<pre>
-.icon {    
-    color: #254F90;
-    height: 16px;
-    width: 16px;
-}
-
-</pre>
-</code>
-    
-<h5>Component container</h5>
-
-<code>
-<pre>
-.container {
-    background: #FFFFFF;
-    padding: 16px 24px 24px 0;
-    border-top: 4px solid #B3C2D8;
-}
-.container:hover {
-    background: #EFF4FB;
-}
-</pre>
-</code>
-
+                                </pre>
+                            </code>
+                        </div>
+        </div>
+        <!-- CSS -->
+        <div id="css-section" class="tab-section" style="display: none;">
+                        <button class="copy-code-button">
+                            Copy css
+                            <span class="copy-code-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 89.458 103.583">
+                                    <path
+                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
+                                        transform="translate(-2 -1)" fill="#ffffff"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="css-code">
+                        </div>
+        </div>
+    </div>
 </div>
+
+                        </div>
 
                     </div>
 
