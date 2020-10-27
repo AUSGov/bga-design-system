@@ -63,7 +63,7 @@ $(document).ready(function () {
                                             transform="translate(-2 -1)" fill="#ffffff"></path>
                                     </svg>
                                 </span>`);
-
+                                $('#html-section').find('button').removeClass('copied');
                                 //css button
                 $('#css-section').find('button').html(`Copy CSS
                 <span class="copy-code-svg">
@@ -74,6 +74,7 @@ $(document).ready(function () {
                                             transform="translate(-2 -1)" fill="#ffffff"></path>
                                     </svg>
                                 </span>`);
+                                $('#css-section').find('button').removeClass('copied');
         }
     });
 
@@ -855,6 +856,7 @@ $(document).ready(function () {
                                         transform="translate(-2 -1)" fill="#ffffff"></path>
                                 </svg>
                             </span>`);
+                            $('#html-section').find('button').removeClass('copied');
         } else if (active_section === '#css-section') {
             $('#css-section').find('button').html(`Copy CSS
             <span class="copy-code-svg">
@@ -865,6 +867,7 @@ $(document).ready(function () {
                                         transform="translate(-2 -1)" fill="#ffffff"></path>
                                 </svg>
                             </span>`);
+                            $('#css-section').find('button').removeClass('copied');
         } else {
             console.log("There was an error")
         }
@@ -908,21 +911,23 @@ $(document).ready(function () {
             <span class="code-copied-svg">
                 <svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 89.458 103.583">
                     <g transform="translate(2801.694 4748.224)">
-                        <path d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z" transform="translate(-2803.694 -4749.224)" fill="#297e28"></path>
-                        <path d="M0,20.386l5.218-5.309,9.2,9.225L38.737,0,44,5.23,14.422,34.808Z" transform="translate(-2770.08 -4703)" fill="#297e28"></path>
+                        <path d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z" transform="translate(-2803.694 -4749.224)" fill="$white"></path>
+                        <path d="M0,20.386l5.218-5.309,9.2,9.225L38.737,0,44,5.23,14.422,34.808Z" transform="translate(-2770.08 -4703)" fill="#ffffff"></path>
                     </g>
                 </svg>
         </span>`);
+        $(this).addClass('copied');
         } else if ($(this).parent().is('#html-section')) {
             $(this).html(`HTML copied 
             <span class="code-copied-svg">
                 <svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 89.458 103.583">
                     <g transform="translate(2801.694 4748.224)">
-                        <path d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z" transform="translate(-2803.694 -4749.224)" fill="#297e28"></path>
-                        <path d="M0,20.386l5.218-5.309,9.2,9.225L38.737,0,44,5.23,14.422,34.808Z" transform="translate(-2770.08 -4703)" fill="#297e28"></path>
+                        <path d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z" transform="translate(-2803.694 -4749.224)" fill="$white"></path>
+                        <path d="M0,20.386l5.218-5.309,9.2,9.225L38.737,0,44,5.23,14.422,34.808Z" transform="translate(-2770.08 -4703)" fill="#ffffff"></path>
                     </g>
                 </svg>
         </span>`);
+        $(this).addClass('copied');
         } else {
             console.log("There was an error")
         }

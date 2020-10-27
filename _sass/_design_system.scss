@@ -6043,6 +6043,26 @@
   justify-content: center;
   align-content: center;
 
+  &.copied {
+    color: #297e28;
+    span {
+      svg {
+        path {
+          fill: #297e28;
+        }
+      }
+    }
+    &:hover {
+      span {
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+
   &:focus {
     background: #254f90 0% 0% no-repeat padding-box;
     border: 3px solid #18335c;
@@ -6055,9 +6075,11 @@
     transform: translateY(-0.1875rem);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
     color: $white;
-    svg {
-      path {
-        fill: $white;
+    span {
+      svg {
+        path {
+          fill: $white;
+        }
       }
     }
   }

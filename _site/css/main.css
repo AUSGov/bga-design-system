@@ -6047,11 +6047,17 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .copy-code-button { background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569a0; color: #4569a0; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; padding: 0.5rem 1rem; text-align: center; letter-spacing: 0; width: 180px; align-self: flex-end; margin-bottom: 1rem; font-weight: 600; display: flex; justify-content: center; align-content: center; }
 
+.copy-code-button.copied { color: #297e28; }
+
+.copy-code-button.copied span svg path { fill: #297e28; }
+
+.copy-code-button.copied:hover span svg path { fill: #ffffff; }
+
 .copy-code-button:focus { background: #254f90 0% 0% no-repeat padding-box; border: 3px solid #18335c; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; }
 
 .copy-code-button:hover { background: #254f90 0% 0% no-repeat padding-box; border: 2px solid #18335c; transform: translateY(-0.1875rem); box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; color: #ffffff; }
 
-.copy-code-button:hover svg path { fill: #ffffff; }
+.copy-code-button:hover span svg path { fill: #ffffff; }
 
 .copy-code-button svg { margin-left: 0.8rem; }
 
