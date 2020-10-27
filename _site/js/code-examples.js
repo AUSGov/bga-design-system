@@ -701,9 +701,7 @@ const standardPathwayCss =
 .standard-pathway-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   justify-content: flex-start;
-  margin: 0 auto;
   align-content: center;
 }
 .standard-pathway-card {
@@ -863,9 +861,7 @@ const lightPathwayCss =
 .light-pathway-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   justify-content: flex-start;
-  margin: 0 auto;
   align-content: center;
 }
 .light-pathway-card {
@@ -945,7 +941,6 @@ const lightPathwayCss =
   position: relative;
   right: 0;
 }
-
 .light-pathway-card .action-card-info .circleIcon-inner svg {
   fill: #254f90;
 }
@@ -963,4 +958,162 @@ const lightPathwayCss =
 </code>
 `
 $(".light-pathway-code .css-code").html(lightPathwayCss);
+
+//Inline PATHWAY
+
+//html
+const inlinePathwayHtml =
+`<div class="inline-pathway-list">
+  <a class="inline-pathway-anchor" href="www.google.com">
+    <div class="inline-pathway-card">
+      <div class="inline-pathway-card-content">
+        <p class="description">The inline pathway is an in-page link to another page on the site.</p>
+        <div class="action-card-info">
+          <div class="circleIcon-inner">
+              <svg viewBox="0 0 16 16">
+                <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+              </svg>
+          </div>
+          <p class="link-text">Linked page title (internal link)</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a class="inline-pathway-anchor" href="www.google.com">
+      <div class="inline-pathway-card">
+        <div class="inline-pathway-card-content">
+          <p class="description">The inline pathway can also link to external sites.</p>
+          <div class="action-card-info">
+            <div class="circleIcon-inner">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                  <defs>
+                    <clipPath id="clip-path">
+                      <path id="Path_1491" data-name="Path 1491" d="M38-40.586l-6.293,6.293-1.414-1.414L36.586-42H34v-2h6v6H38ZM38-30v-5h2v7H24V-44h7v2H26v12Z" fill="#254f90" clip-rule="evenodd"/>
+                    </clipPath>
+                    <clipPath id="clip-path-2">
+                      <path id="Path_1490" data-name="Path 1490" d="M24-28H40V-44H24Z" fill="#254f90"/>
+                    </clipPath>
+                  </defs>
+                  <g id="Group_1533" data-name="Group 1533" transform="translate(-24 44)" clip-path="url(#clip-path)">
+                    <g id="Group_1532" data-name="Group 1532" clip-path="url(#clip-path-2)">
+                      <path id="Path_1489" data-name="Path 1489" d="M19-49H45v26H19Z" fill="#254f90"/>
+                    </g>
+                  </g>
+                </svg>
+            </div>
+            <p class="link-text">Website name (external link)</p>
+          </div>
+        </div>
+      </div>
+    </a>
+</div>`
+
+$(".inline-pathway-code .html-code code pre").text(inlinePathwayHtml);
+
+//css
+const inlinePathwayCss =
+`
+<h4>Desktop &amp; mobile</h4>
+<h5>Containers</h5>
+<code>
+<pre>
+/* Containers */
+.inline-pathway-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+.inline-pathway-card {
+  height: auto;
+  background: none;
+  max-width: 620px;
+  background: #ffffff;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  background: #eff4fb;
+  padding: 24px;
+  border-top: 4px solid #b3c2d8;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  width: 100%;
+}
+.inline-pathway-anchor {
+  text-decoration: none;
+  background-color: transparent;
+  text-decoration: none;
+  transition: box-shadow 0.25s;
+  color: #333333;
+}
+.inline-pathway-card:hover .inline-pathway-card-content {
+  transform: translateX(1rem);
+}
+</pre>
+</code>
+
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.inline-pathway-card .description {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  line-height: 28px;
+}
+.inline-pathway-card:hover .description {
+  text-decoration: underline;
+}
+.inline-pathway-card .link-text {
+  letter-spacing: 0;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 0 8px;
+}
+</pre>
+</code>
+
+<h5>svg icon</h5>
+<code>
+<pre>
+/* svg arrow */
+.action-card-info {
+  height: auto;
+  margin-top: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.inline-pathway-card .action-card-info .circleIcon-inner {
+  top: 0;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+.inline-pathway-card .action-card-info .circleIcon-inner svg {
+  fill: #254f90;
+}
+</pre>
+</code>
+
+<h5>Media queries</h5><code><pre>
+/* Media queries */
+@media (max-width: 575px) {
+  .inline-pathway-anchor {
+    max-width: 320px;
+  }
+}
+</pre>
+</code>
+`
+$(".inline-pathway-code .css-code").html(inlinePathwayCss);
 });
