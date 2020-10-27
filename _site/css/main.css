@@ -6045,7 +6045,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .tab-content-container .tab-section .css-code h4 { padding-top: 0; }
 
-.copy-code-button { background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569a0; color: #4569a0; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; padding: 0.5rem 1rem; text-align: center; letter-spacing: 0; width: 150px; align-self: flex-end; margin-bottom: 1rem; font-weight: 600; }
+.copy-code-button { background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569a0; color: #4569a0; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; padding: 0.5rem 1rem; text-align: center; letter-spacing: 0; width: 180px; align-self: flex-end; margin-bottom: 1rem; font-weight: 600; display: flex; justify-content: center; align-content: center; }
 
 .copy-code-button:focus { background: #254f90 0% 0% no-repeat padding-box; border: 3px solid #18335c; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; }
 
@@ -6053,7 +6053,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .copy-code-button:hover svg path { fill: #ffffff; }
 
-.copy-code-button svg { margin-left: 0.5rem; }
+.copy-code-button svg { margin-left: 0.8rem; }
 
 .copy-code-button svg path { fill: #4569a0; }
 

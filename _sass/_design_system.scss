@@ -6035,10 +6035,13 @@
   padding: 0.5rem 1rem;
   text-align: center;
   letter-spacing: 0;
-  width: 150px;
+  width: 180px;
   align-self: flex-end;
   margin-bottom: 1rem;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 
   &:focus {
     background: #254f90 0% 0% no-repeat padding-box;
@@ -6060,7 +6063,7 @@
   }
 
   svg {
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
     path {
       fill: #4569a0;
     }
