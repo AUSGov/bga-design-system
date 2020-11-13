@@ -14,7 +14,12 @@ $(document).ready(function () {
     });
 
     /*----------- Coming soon ----------- */
-    $('.coming-soon').append("<div class='coming-soon-label'><p>Coming soon</p></div>");
+    //Standard pathway cards
+    $('.standard-pathway-list .coming-soon').append("<div class='coming-soon-label'><p>Coming soon</p></div>");
+    //Html and Css tabs
+    $('.nav-tabs.coming-soon .html-tab').append("<div class='coming-soon-label'><p>HTML coming soon</p></div>");
+    $('.nav-tabs.coming-soon .html-tab a').removeClass("active");
+    $('.nav-tabs.coming-soon .css-tab a').addClass("active");
     $('.coming-soon a').on('click', function (e) {
         e.preventDefault();
     });
@@ -54,7 +59,7 @@ $(document).ready(function () {
 
             //Reset copy-code button text
             //html button
-                $('#html-section').find('button').html(`Copy HTML
+                $('.html-section').find('button').html(`Copy HTML
                 <span class="copy-code-svg">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                         viewBox="0 0 89.458 103.583">
@@ -63,9 +68,9 @@ $(document).ready(function () {
                                             transform="translate(-2 -1)" fill="#ffffff"></path>
                                     </svg>
                                 </span>`);
-                                $('#html-section').find('button').removeClass('copied');
+                                $('.html-section').find('button').removeClass('copied');
                                 //css button
-                $('#css-section').find('button').html(`Copy CSS
+                $('.css-section').find('button').html(`Copy CSS
                 <span class="copy-code-svg">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                         viewBox="0 0 89.458 103.583">
@@ -74,7 +79,7 @@ $(document).ready(function () {
                                             transform="translate(-2 -1)" fill="#ffffff"></path>
                                     </svg>
                                 </span>`);
-                                $('#css-section').find('button').removeClass('copied');
+                                $('.css-section').find('button').removeClass('copied');
         }
     });
 
@@ -526,6 +531,18 @@ $(document).ready(function () {
         
     });
 
+            // Feature-image-pathway colour select option
+            $('.feature-image-pathway-colour-selector .colour-select-wrapper #feature-image-pathway-colour-set').change(function () {
+
+                var expr = $(this).val();
+                
+                if(expr === "variation"){
+                    $(".feature-image-pathway").addClass("variation")
+                }else{
+                    $(".feature-image-pathway.variation").removeClass("variation")
+                }
+            });
+
 
     /*----------- COMPONENT EXAMPLE: Datepicker ----------- */
 
@@ -841,13 +858,15 @@ $(document).ready(function () {
     // Tabs component functionality
     $(".nav-link").on("click", function (e) {
         e.preventDefault();
-        $(".tab-section").hide();
+       const tabAncestors = $(this).parents('.tabs-component');
+       $(tabAncestors[0]).find('.tab-section').hide();
 
-        var active_section = "#" + $(this).attr("href");
-        $(active_section).show();
+        var active_section = "." + $(this).attr("href");
+        $(tabAncestors).find(active_section).show();
         
-        if ( active_section === '#html-section') {
-            $('#html-section').find('button').html(`Copy HTML
+        //Change copy-code button text
+        if ( active_section === '.css-section') {
+            $('.html-section').find('button').html(`Copy HTML
             <span class="copy-code-svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                     viewBox="0 0 89.458 103.583">
@@ -856,9 +875,9 @@ $(document).ready(function () {
                                         transform="translate(-2 -1)" fill="#ffffff"></path>
                                 </svg>
                             </span>`);
-                            $('#html-section').find('button').removeClass('copied');
-        } else if (active_section === '#css-section') {
-            $('#css-section').find('button').html(`Copy CSS
+                            $('.html-section').find('button').removeClass('copied');
+        } else if (active_section === '.html-section') {
+            $('.css-section').find('button').html(`Copy CSS
             <span class="copy-code-svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                     viewBox="0 0 89.458 103.583">
@@ -867,7 +886,7 @@ $(document).ready(function () {
                                         transform="translate(-2 -1)" fill="#ffffff"></path>
                                 </svg>
                             </span>`);
-                            $('#css-section').find('button').removeClass('copied');
+                            $('.css-section').find('button').removeClass('copied');
         } else {
             console.log("There was an error")
         }
@@ -906,7 +925,7 @@ $(document).ready(function () {
         $temp.remove();
 
         //Change button text
-        if ($(this).parent().is('#css-section')) {
+        if ($(this).parent().is('.css-section')) {
             $(this).html(`CSS copied 
             <span class="code-copied-svg">
                 <svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 89.458 103.583">
@@ -917,7 +936,7 @@ $(document).ready(function () {
                 </svg>
         </span>`);
         $(this).addClass('copied');
-        } else if ($(this).parent().is('#html-section')) {
+        } else if ($(this).parent().is('.html-section')) {
             $(this).html(`HTML copied 
             <span class="code-copied-svg">
                 <svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 89.458 103.583">

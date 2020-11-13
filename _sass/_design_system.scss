@@ -2020,8 +2020,8 @@
     }
     .description {
       padding-bottom: 48px;
+      font-weight: normal;
     }
-
     .icon-link {
       background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px
         center;
@@ -2040,22 +2040,20 @@
       transition-duration: 0.4s, 0.4s;
       transition-timing-function: ease, ease;
       transition-delay: 0s, 0s;
-    }
+      cursor: pointer;
 
-    &:hover {
-      h3 {
-        color: $blue-primary;
-        text-decoration: underline;
-      }
-
-      .icon-link {
-        background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat
-          left 0px center;
-        height: 32px;
-      }
-
-      .standard-container {
+      &:hover {
         transform: translateY(-0.1875rem);
+        h3 {
+          color: $blue-primary;
+          text-decoration: underline;
+        }
+
+        .icon-link {
+          background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat
+            left 0px center;
+          height: 32px;
+        }
       }
     }
   }
@@ -2069,6 +2067,7 @@
   .light-pathway {
     .description {
       padding-bottom: 16px;
+      font-weight: normal;
     }
 
     .light-container {
@@ -2083,6 +2082,18 @@
       border-top: 4px solid $blue-primary-light;
       background: none;
       padding: 16px 24px 24px 0;
+      cursor: pointer;
+      &:hover {
+        background: $blue-primary-lightest;
+        h3 {
+          color: $blue-primary;
+          text-decoration: underline;
+          transform: none;
+        }
+        .light-wrapper {
+          transform: translateX(1rem);
+        }
+      }
     }
     h3 {
       padding: 0 0 16px 0;
@@ -2097,20 +2108,6 @@
       background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center;
       height: 16px;
       padding: 0;
-    }
-
-    &:hover {
-      h3 {
-        color: $blue-primary;
-        text-decoration: underline;
-        transform: none;
-      }
-      .light-container {
-        background: $blue-primary-lightest;
-      }
-      .light-wrapper {
-        transform: translateX(1rem);
-      }
     }
   }
 
@@ -2131,6 +2128,7 @@
       transition-duration: 0.4s, 0.4s;
       transition-timing-function: ease, ease;
       transition-delay: 0s, 0s;
+      cursor: pointer;
     }
 
     .icon-link {
@@ -2182,7 +2180,7 @@
       height: auto;
       display: -webkit-flex; /* Safari 6.1+ */
       display: flex;
-
+      cursor: pointer;
       &:hover {
         transform: translateY(-0.1875rem);
         background: $blue-primary;
@@ -2192,6 +2190,7 @@
           background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat
             left 0px center;
           height: 32px;
+          transform: translateX(8px);
         }
       }
       h3 {
@@ -2234,20 +2233,7 @@
       width: 66%;
       padding: 0;
     }
-    &:hover {
-      h3 {
-        color: $white;
-        text-decoration: underline;
-      }
-      .icon-link {
-        background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat
-          left 0px center;
-        height: 32px;
-      }
-      .feature-image-container {
-        background: $blue-primary;
-      }
-    }
+
     img {
       margin-bottom: 0;
     }
@@ -2255,6 +2241,19 @@
     &.variation {
       .feature-image-container {
         background: $grey-lighter;
+
+        &:hover {
+          .feature-image-container {
+            background: $grey-light;
+          }
+          h3 {
+            color: $blue-primary;
+          }
+          .icon-link {
+            background: url(../assets/Icon-arrow-circle-right-blue.svg)
+              no-repeat left 0px center;
+          }
+        }
       }
       .label,
       .icon-link,
@@ -2265,18 +2264,6 @@
       .icon-link {
         background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px
           center;
-      }
-      &:hover {
-        .feature-image-container {
-          background: $grey-light;
-        }
-        h3 {
-          color: $blue-primary;
-        }
-        .icon-link {
-          background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat
-            left 0px center;
-        }
       }
     }
 
@@ -2379,21 +2366,20 @@
       transition-duration: 0.4s, 0.4s;
       transition-timing-function: ease, ease;
       transition-delay: 0s, 0s;
-    }
+      cursor: pointer;
+      &:hover {
+        h3 {
+          color: $blue-primary;
+          text-decoration: underline;
+        }
 
-    &:hover {
-      h3 {
-        color: $blue-primary;
-        text-decoration: underline;
-      }
+        .icon-link {
+          background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat
+            left 0px center;
+          height: 32px;
+          transform: translateX(8px);
+        }
 
-      .icon-link {
-        background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat
-          left 0px center;
-        height: 32px;
-      }
-
-      .image-list-container {
         transform: translateY(-0.1875rem);
       }
     }
@@ -5457,7 +5443,7 @@
 
     p {
       display: block;
-      width: 100;
+      width: 100%;
       padding: 16px 0px;
       margin-top: 80px;
       background: rgba(102, 102, 102, 0.85);
@@ -5926,6 +5912,19 @@
     margin: 16px 0 24px 0;
     list-style: none;
     border-bottom-width: 0px;
+
+    &.coming-soon {
+      .nav-item {
+        min-width: 163px;
+        .coming-soon-label {
+          p {
+            margin-top: 0;
+            padding: 9px 0px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
 
     .nav-item {
       text-align: center;
