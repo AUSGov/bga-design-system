@@ -37,7 +37,7 @@
     
     <script src=/bga-design-system/js/design-system.js></script>
    
-    
+    <script src=/bga-design-system/js/code-examples.js></script>
 
 </head>
 
@@ -306,119 +306,71 @@
                                         </button>
                                     </div>
 
-                                    <div class="element-code">
-                                        <h4>Accordion - closed state</h4>
-                                        <h5>Accordion item title</h5>
-                                        <code>
-                                            <pre>
-h5 {
-    color: #666666;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
-}
-h5:hover {
-    color: #000000;
-    box-shadow: inset 0 -2.08px 0 #666666;
-}
+                                    <div class="element-code accordian-code">
 
-</pre>
-                                        </code>
-                                        <h5>Accordion item button</h5>
-                                        <code>
-                                            <pre>
-.button {    
-    color: #000000;
-    width: 48px;
-    height: 48px;
-    background-color: #F5C550;
-    border-radius: 50px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-}
-.button:hover {
-    background-color: #FFD964;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.button:active {
-    background-color: #E1AA21;
-    box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.3);
-}
+                                        <div class="col-sm-12 tabs-component">
+    <!-- Tabs -->
+    <div class="row">
+        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+            <div class="body-copy col-sm-12 col-md-12">
+                
+                <ul class="nav nav-tabs coming-soon">
+                                    
+                    <li class="nav-item html-tab"><a class="nav-link active" data-toggle="tab" href="html-section">HTML</a>
+                </li>
+                    <li class="nav-item css-tab"><a class="nav-link" data-toggle="tab" href="css-section">CSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Tab Content -->
+    <div class="tab-content-container">
+        <!-- HTML -->
+        
+        <div class="tab-section html-section" style="display: none;">
+            
+                        <button class="copy-code-button">
+                            Copy html
+                            <span class="copy-code-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 89.458 103.583">
+                                    <path
+                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
+                                        transform="translate(-2 -1)" fill="#ffffff"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="html-code">
+                            <code>
+                                <pre>
 
-</pre>
-                                        </code>
-
-                                        <h5>Accordion item container</h5>
-                                        <code>
-                                            <pre>
-.item-container {
-    background-color: #FFFFFF;
-    border-bottom: 0.0625rem solid #EBEBEB;
-    padding: 32px;
-}
-.item-container:hover {
-    border-bottom: solid 4px #FFD964;
-}
-
-</pre>
-                                        </code>
-
-                                        <h4>Accordion - open state</h4>
-                                        <h5>Accordion item title</h5>
-                                        <code>
-                                            <pre>
-h5 {
-    color: #000000;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
-    box-shadow: inset 0 -2.08px 0 #666666;
-}
-
-</pre>
-                                        </code>
-
-                                        <h5>Accordion item button</h5>
-                                        <code>
-                                            <pre>
-.button {    
-    color: #000000;
-    width: 48px;
-    height: 48px;
-    background-color: #F5C550;
-    border-radius: 50px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-}
-.button:hover {
-    background-color: #FFD964;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.button:active {
-    background-color: #E1AA21;
-    box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.3);
-}
-
-</pre>
-                                        </code>
-
-                                        <h5>Accordion item container</h5>
-                                        <code>
-                                            <pre>
-.item-container {
-    background-color: #EBEBEB;
-    border-bottom: solid 4px #FFD964;
-    padding: 32px;
-}
-
-</pre>
-                                        </code>
-
-                                        <h5>Accordion item content</h5>
-
-                                        <p>Accordion content is styled as standard body content.
-                                            Refer to the <a href=/bga-design-system/foundations/typography.html>typography guidelines</a>.</p>
-
-
-
+                                </pre>
+                            </code>
+                        </div>
+        </div>
+        <!-- CSS -->
+        
+        <div class="tab-section css-section">
+            
+                        <button class="copy-code-button">
+                            Copy css
+                            <span class="copy-code-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 89.458 103.583">
+                                    <path
+                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
+                                        transform="translate(-2 -1)" fill="#ffffff"></path>
+                                </svg>
+                            </span>
+                            
+                        </button>
+                        <div class="css-code">
+                        </div>
+        </div>
+    </div>
+</div>
+            
                                     </div>
 
                                 </div>

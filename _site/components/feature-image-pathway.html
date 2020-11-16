@@ -37,7 +37,7 @@
     
     <script src=/bga-design-system/js/design-system.js></script>
    
-    
+    <script src=/bga-design-system/js/code-examples.js></script>
 
 </head>
 
@@ -210,8 +210,17 @@
                     </div>
                     
                 </div>
-                    
-                    
+                <div class="body-copy-content feature-image-pathway-colour-selector">
+                <div class="colour-select-wrapper">
+                    <label for="feature-image-pathway-colour-set">Colour set:</label>
+
+                    <select id="feature-image-pathway-colour-set" class="colour-set">
+                        <option selected="selected" value="default">Default</option>
+                        <option value="variation" >Variation</option>
+                    </select>  
+                </div>
+            </div>
+
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper white-back">
@@ -260,273 +269,77 @@
                         </div>
                             
 
-            <div class="element-code">
-<h4>Desktop</h4>
-<h5>Heading</h5>
-<code>
-<pre>
-h3 {
-    color: #FFFFFF;
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    line-height: 28px;
-}
-h3:hover {
-    color: #FFFFFF;
-    text-decoration: underline;
-}
-</pre>
-</code>
+                        <div class="element-code feature-image-pathway-code">
 
-<h5>Label</h5>
-<code>
-<pre>
-p.label {
-    color: #FFFFFF;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 22px;
-    text-transform: uppercase;
-}
-</pre>
-</code>
+                            <div class="col-sm-12 tabs-component">
+    <!-- Tabs -->
+    <div class="row">
+        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+            <div class="body-copy col-sm-12 col-md-12">
                 
-<h5>Description</h5>
-
-<code>
-<pre>
-p.description {
-    color: #FFFFFF;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
-}
-</pre>
-</code>
-                                
-<h5>Icon link</h5>
-
-<code>
-<pre>
-.icon {    
-    color: #FFFFFF;
-    height: 16px;
-    width: 16px;
-}
-.icon:hover {
-    color: #FFFFFF;
-    height: 32px;
-    width: 32px;
-}
-
-</pre>
-</code>
-   
-<h5>Container</h5>
-                                
-<code>
-<pre>
-.container {
-    background: #4569A0;
-    padding: 32px;
-    border: none;
-}
-.container:hover {
-    background: #254f90;
-    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
-}
-
-</pre>
-</code>
-
-<h4>Mobile</h4>                    
-<h5>Heading</h5>
-<code>
-<pre>
-h3 {    
-    color: #FFFFFF;
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    line-height: 30px;
-}
-</pre>
-</code>
-
-
+                    <ul class="nav nav-tabs">
+                                        
+                    <li class="nav-item html-tab"><a class="nav-link active" data-toggle="tab" href="html-section">HTML</a>
+                </li>
+                    <li class="nav-item css-tab"><a class="nav-link" data-toggle="tab" href="css-section">CSS</a>
+                    </li>
+                </ul>
             </div>
-
-
-                    </div>
-
-                </div>
-
-                <h3>Feature image pathway variation</h3>
-                <div class="design-system-card component extra-wide">
-
-                <div class="responsive-toggle-container">
-                    <p class="toggle-name">Design view: <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                        <span class="switch-text-mobile"></span>
-                        <span class="switch-text-desktop"></span>
-                    </label></p>
-                    
-                    <div class="mobile-only"><h5>Mobile design</h5>
-                        <p>Desktop designs can be viewed on screens wider than 650px.</p>
-                    </div>
-                    
-                </div>
-                    
-                    
-                    <div class="design-system-card-content">
-
-                        <div class="example-wrapper white-back">
-                            <div class="feature-image-pathway variation">
-                                <div class="example feature-image-container">
-
-                                    <div class="feature-text">
-                                        <p class="label">Label</p>
-                                        <h3>Feature image pathway</h3>
-                                        <p class="description">The feature image pathway highlights a link to important content with an image.</p>
-                                        <p class="icon-link"></p>
-                                        
-                                        
-                                    </div>
-                                    <div class="feature-image"><img class="responsive-img" src=/bga-design-system/assets/feature-image.jpg alt="" title=""></div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                        
-                        <div class="component notes">
-                            <div class="">
-                                <h4>Notes</h4>
-                                <p>This component has three main breakpoints and displays differently at mobile, tablet and desktop size.</p>
-                            </div>
-                            
-
-                        </div>
-                        
-                        
-                        
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
-
-                        </div>
-                            
-
-            <div class="element-code">
-<h4>Desktop</h4>
-<h5>Heading</h5>
-<code>
-<pre>
-h3 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    line-height: 28px;
-}
-h3:hover {
-    color: #254F90;
-    text-decoration: underline;
-}
-</pre>
-</code>
-
-<h5>Label</h5>
-<code>
-<pre>
-p.label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 22px;
-    text-transform: uppercase;
-}
-</pre>
-</code>
+        </div>
+    </div>
+    <!-- Tab Content -->
+    <div class="tab-content-container">
+        <!-- HTML -->
+        
+            <div class="tab-section html-section">
                 
-<h5>Description</h5>
+                        <button class="copy-code-button">
+                            Copy html
+                            <span class="copy-code-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 89.458 103.583">
+                                    <path
+                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
+                                        transform="translate(-2 -1)" fill="#ffffff"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="html-code">
+                            <code>
+                                <pre>
 
-<code>
-<pre>
-p.description {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
-}
-</pre>
-</code>
-                                
-<h5>Icon link</h5>
+                                </pre>
+                            </code>
+                        </div>
+        </div>
+        <!-- CSS -->
+        
+            <div class="tab-section css-section" style="display: none;">
+                
+                        <button class="copy-code-button">
+                            Copy css
+                            <span class="copy-code-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 89.458 103.583">
+                                    <path
+                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
+                                        transform="translate(-2 -1)" fill="#ffffff"></path>
+                                </svg>
+                            </span>
+                            
+                        </button>
+                        <div class="css-code">
+                        </div>
+        </div>
+    </div>
+</div>
 
-<code>
-<pre>
-.icon {    
-    color: #254F90;
-    height: 16px;
-    width: 16px;
-}
-.icon:hover {
-    color: #254F90;
-    height: 32px;
-    width: 32px;
-}
-
-</pre>
-</code>
-   
-<h5>Container</h5>
-                                
-<code>
-<pre>
-.container {
-    background: #EBEBEB;
-    padding: 32px;
-    border: none;
-}
-.container:hover {
-    background: #D8D8D8;
-    box-shadow: 0 .25rem .5rem 0 rgba(0,0,0,.2);
-}
-
-</pre>
-</code>
-
-<h4>Mobile</h4>                    
-<h5>Heading</h5>
-<code>
-<pre>
-h3 {    
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    line-height: 30px;
-}
-</pre>
-</code>
-
-
-            </div>
+                        </div>
 
 
                     </div>
 
                 </div>
-
-
                 
             </div>
 
