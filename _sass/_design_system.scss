@@ -2113,7 +2113,10 @@
 
   .inline-pathway {
     .description {
-      padding-bottom: 16px;
+        padding-bottom: 16px;
+        color: $blue-primary;
+        text-decoration: underline;
+        @include font-format($font-family, $font-semibold, normal);
     }
 
     .inline-container {
@@ -2153,20 +2156,24 @@
     }
 
     &:hover {
-      .description {
-        text-decoration: underline;
-      }
 
-      .icon-link,
-      .description {
-        transform: none;
-      }
+        .description {
+            text-decoration: underline;
+        }
 
-      .inline-wrapper {
-        transform: translateX(1rem);
-      }
+        .icon-link,
+        .description {
+            transform: none;
+        }
+
+        .inline-container {
+            background: #D5E2F2;
+        }
+        .inline-wrapper {
+            transform: translateX(1rem);
+        }
     }
-  }
+    }
 
   .feature-image-pathway {
     .feature-image-container {
