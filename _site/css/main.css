@@ -4700,7 +4700,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .inline-pathway .description { padding-bottom: 16px; color: #254F90; text-decoration: underline; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .inline-pathway .inline-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 24px; border-top: 4px solid #B3C2D8; background: #EFF4FB; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; cursor: pointer; }
+.design-system-card .inline-pathway .inline-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 24px; border-top: 4px solid #B3C2D8; background: #E5EDF7; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; cursor: pointer; }
 
 .design-system-card .inline-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center; height: auto; padding: 0 0 0 24px; }
 
