@@ -751,34 +751,42 @@ const inlinePathwayHtml =
 `
 <a class="inline-pathway-card" href="#">
     <div class="inline-pathway-card-content">
-        <p class="description">The inline pathway is an in-page link to another page on the site.</p>
-        <div class="icon-container">
-            <div class="icon">
-                <svg viewBox="0 0 16 16"><path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path></svg>
-            </div>
-            <p class="link-text">Linked page title (internal link)</p>
-        </div>
+       <p class="description">The inline pathway is an in-page link to another page on the site.</p>
+       <div class="link-container">
+          <div class="link-icon">
+             <svg viewBox="0 0 16 16">
+                <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+             </svg>
+          </div>
+          <p class="link-text">Linked page title (internal link)</p>
+       </div>
     </div>
-</a>
-<a class="inline-pathway-card" href="#">
+ </a>
+ <a class="inline-pathway-card" href="#">
     <div class="inline-pathway-card-content">
-        <p class="description">The inline pathway can also link to external sites.</p>
-        <div class="icon-container">
-            <div class="circleIcon-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                    <defs>
-                        <clipPath id="clip-path"><path id="Path_1491" data-name="Path 1491" d="M38-40.586l-6.293,6.293-1.414-1.414L36.586-42H34v-2h6v6H38ZM38-30v-5h2v7H24V-44h7v2H26v12Z" fill="#254f90" clip-rule="evenodd" /></clipPath>
-                        <clipPath id="clip-path-2"><path id="Path_1490" data-name="Path 1490" d="M24-28H40V-44H24Z" fill="#254f90" /></clipPath>
-                    </defs>
-                    <g id="Group_1533" data-name="Group 1533" transform="translate(-24 44)" clip-path="url(#clip-path)">
-                        <g id="Group_1532" data-name="Group 1532" clip-path="url(#clip-path-2)"><path id="Path_1489" data-name="Path 1489" d="M19-49H45v26H19Z" fill="#254f90" /></g>
-                    </g>
-                </svg>
-            </div>
-            <p class="link-text">Website name (external link)</p>
-        </div>
+       <p class="description">The inline pathway can also link to external sites.</p>
+       <div class="link-container">
+          <div class="link-icon">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                <defs>
+                   <clipPath id="clip-path">
+                      <path id="Path_1491" data-name="Path 1491" d="M38-40.586l-6.293,6.293-1.414-1.414L36.586-42H34v-2h6v6H38ZM38-30v-5h2v7H24V-44h7v2H26v12Z" fill="#254f90" clip-rule="evenodd" />
+                   </clipPath>
+                   <clipPath id="clip-path-2">
+                      <path id="Path_1490" data-name="Path 1490" d="M24-28H40V-44H24Z" fill="#254f90" />
+                   </clipPath>
+                </defs>
+                <g id="Group_1533" data-name="Group 1533" transform="translate(-24 44)" clip-path="url(#clip-path)">
+                   <g id="Group_1532" data-name="Group 1532" clip-path="url(#clip-path-2)">
+                      <path id="Path_1489" data-name="Path 1489" d="M19-49H45v26H19Z" fill="#254f90" />
+                   </g>
+                </g>
+             </svg>
+          </div>
+          <p class="link-text">Website name (external link)</p>
+       </div>
     </div>
-</a>
+ </a>  
 `
 
 $(".inline-pathway-code .html-code code pre").text(inlinePathwayHtml);
@@ -811,13 +819,14 @@ const inlinePathwayCss =
 .inline-pathway-card:focus .inline-pathway-card-content {
   transform: translateX(1rem);
 }
-.inline-pathway-card .icon-container {
+.inline-pathway-card .link-container {
   position: relative;
   display: flex;
   align-items: center;
 }
 </pre>
 </code>
+
 <h5>Text</h5>
 <code>
 <pre>
@@ -841,20 +850,22 @@ const inlinePathwayCss =
 }
 </pre>
 </code>
+
 <h5>Icon</h5>
 <code>
 <pre>
 /* Icon */
-.inline-pathway-card .icon-container .icon {
+.inline-pathway-card .link-container .link-icon {
   height: 16px;
   width: 16px;
   position: relative;
 }
-.inline-pathway-card .icon-container .icon svg {
+.inline-pathway-card .link-container .link-icon svg {
   fill: #254f90;
 }
 </pre>
 </code>
+
 <h5>Media queries</h5>
 <code>
 <pre>
@@ -1664,7 +1675,31 @@ $(".grants-page-header-code .css-code").html(grantsPageHeaderCss);
 //html
 const standardCallToActionHtml =
 `
-Coming soon
+<div class="call-to-action">
+   <h2>Standard call to action</h2>
+   <p>Promote high-value actions in an information page.</p>
+   <ul>
+      <li>
+         <svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g transform="matrix(1,0,0,1,0,-1)">
+               <path d="M0,9.937L1.901,8.002L5.255,11.364L14.115,2.509L16.033,4.414L5.255,15.192L0,9.937Z" style="fill:rgb(193,129,0);fill-rule:nonzero;"/>
+            </g>
+         </svg>
+         <p>This component can include bullet points</p>
+      </li>
+      <li>
+         <svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g transform="matrix(1,0,0,1,0,-1)">
+               <path d="M0,9.937L1.901,8.002L5.255,11.364L14.115,2.509L16.033,4.414L5.255,15.192L0,9.937Z" style="fill:rgb(193,129,0);fill-rule:nonzero;"/>
+            </g>
+         </svg>
+         <p>which can be very handy.</p>
+      </li>
+   </ul>
+   <div class="button-wrapper">
+      <a href="#" class="button"><span>CTA button</span></a>
+   </div>
+</div>
 `
 
 $(".standard-call-to-action-code .html-code code pre").text(standardCallToActionHtml);
@@ -1672,84 +1707,129 @@ $(".standard-call-to-action-code .html-code code pre").text(standardCallToAction
 //css
 const standardCallToActionCss =
 `
-<h4>Desktop</h4>
-<h5>Heading</h5>
+<h5>Container</h5>
 <code>
-<pre>h2 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 32px;
-    line-height: 40px;
+<pre>
+/* Container */
+.call-to-action {
+  height: auto;
+  border-top: none;
+  background: none;
+  padding: 32px;
+  border-top: 4px solid #d8d8d8;
+  background: #ebebeb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.0125rem;
+  line-height: 1.78;
+  text-align: left;
 }
 </pre>
 </code>
     
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
+<pre>
+/* Text */
+.call-to-action h2 {
+  padding: 0 0 32px 0;
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.25;
+  font-size: 32px;
+}
+.call-to-action p {
+  line-height: 32px;
+  font-size: 16px;
+  padding: 0 0 32px 0;
+  margin: 0;
+  letter-spacing: 0.0125rem;
+  color: #333;
+  display: inline-block;
 }
 </pre>
 </code>
     
 <h5>List</h5>
 <code>
-<pre>li  {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
+<pre>
+/* List */
+.call-to-action ul {
+  padding: 0 0 0 16px;
+  margin: 0;
+  line-height: 1.78;
+  list-style: none;
 }
-bullet {
-    color: #C18100;
-    height: 8px;
-    width: 8px;
+.call-to-action ul li {
+  padding-bottom: 16px;
+  margin: 0;
+  line-height: 32px;
+  position: relative;
+}
+.call-to-action ul li:last-of-type {
+  padding-bottom: 32px;
+}
+.call-to-action ul li p {
+  padding: 0px;
+  display: inline;
+}
+.call-to-action ul li svg {
+  padding-right: 16px;
+}
+</pre>
+</code>        
+    
+<h5>Button</h5>
+<code>
+<pre>
+/* Button */
+.call-to-action .button-wrapper {
+  width: auto;
+  display: inline-block;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  margin-top: 4px;
+}
+.call-to-action .button {
+  background: #4569a0 0% 0% no-repeat padding-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  border: 2px solid #254f90;
+  border-radius: 6px;
+  opacity: 1;
+  padding: 8px 32px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  text-decoration: none !important;
+}
+.call-to-action .button:hover {
+  background: #254f90 0% 0% no-repeat padding-box;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+  border: 2px solid #18335c;
+  border-radius: 6px;
+  opacity: 1;
+}
+.call-to-action .button-wrapper:hover {
+  transform: translateY(-0.1875rem);
 }
 </pre>
 </code>
     
-<h5>Call to action button</h5>
+<h5>Media query</h5>
 <code>
-<pre>.primary-button {
-    color: #FFFFFF;
-    background-color: #254F90;
-    box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-    border: 2px solid #254F90;
-    border-radius: 6px;
-    opacity: 1;
-    padding: 8px 32px;
-    text-align: center;
-    letter-spacing: 0;
-}
-.primary-button:hover {
-    background: #254F90 0% 0% no-repeat padding-box;
-    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-}
-.primary-button:active {
-    background: #18335C 0% 0% no-repeat padding-box;
-    box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-}
-</pre>
-</code>         
-    
-<h5>Container</h5>
-<code>
-<pre>.container {
-    background-color: #EBEBEB;
-    border-top: 4px solid #D8D8D8;
-    padding: 32px 32px 48px 32px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<code>
-<pre>h2 {
-    font-size: 24px;
-    line-height: 32px;
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  .call-to-action {
+    padding: 24px;
+  }
 }
 </pre>
 </code>
@@ -1760,7 +1840,33 @@ $(".standard-call-to-action-code .css-code").html(standardCallToActionCss);
 //html
 const downloadCallToActionHtml =
 `
-Coming soon
+       <div class="call-to-action">
+            <h2>Download call to action</h2>
+            <p>Promote high-value actions in an information page.</p>
+            <ul>
+               <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4"/></svg>
+                  <p>This component can include bullet points</p>
+               </li>
+               <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4"/></svg>
+                  <p>which can be very handy.</p>
+               </li>
+            </ul>
+            <button class="download-card">
+                <div class="download-card-content">
+                    <p>Title of the download file</p>
+                    <div class="link-container">
+                        <div class="circle-icon"><svg viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8"></circle>
+                            </svg></div>
+                        <div class="download-icon"><svg viewBox="0 0 16 16">
+                                <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+                            </svg></div><span>docx·0.09 MB </span>
+                    </div>
+                </div>
+            </button>
+         </div>
 `
 
 $(".download-call-to-action-code .html-code code pre").text(downloadCallToActionHtml);
@@ -1768,110 +1874,257 @@ $(".download-call-to-action-code .html-code code pre").text(downloadCallToAction
 //css
 const downloadCallToActionCss =
 `
-<h4>Desktop</h4>
-<h5>Heading</h5>
+<h4>Information</h4>
+<h5>Container</h5>
 <code>
-<pre>h2 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 32px;
-    line-height: 40px;
+<pre>
+/* Container */
+.call-to-action {
+  height: auto;
+  border-top: none;
+  background: none;
+  padding: 32px;
+  border-top: 4px solid #d8d8d8;
+  background: #ebebeb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.0125rem;
+  line-height: 1.78;
+  text-align: left;
 }
 </pre>
 </code>
     
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
+<pre>
+/* Text */
+.call-to-action h2 {
+  padding: 0 0 32px 0;
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.25;
+  font-size: 32px;
+}
+.call-to-action p {
+  line-height: 32px;
+  font-size: 16px;
+  padding: 0 0 32px 0;
+  margin: 0;
+  letter-spacing: 0.0125rem;
+  color: #333;
+  display: inline-block;
 }
 </pre>
 </code>
     
 <h5>List</h5>
 <code>
-<pre>li  {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
+<pre>
+/* List */
+.call-to-action ul {
+  padding: 0 0 0 16px;
+  margin: 0;
+  line-height: 1.78;
+  list-style: none;
 }
-bullet {
-    color: #C18100;
+.call-to-action ul li {
+  padding-bottom: 16px;
+  margin: 0;
+  line-height: 32px;
+  position: relative;
+}
+.call-to-action ul li:last-of-type {
+  padding-bottom: 32px;
+}
+.call-to-action ul li p {
+  padding: 0px;
+  display: inline;
+}
+.call-to-action ul li svg {
+  padding-right: 16px;
+}
+</pre>
+</code>        
+    
+<h5>Button</h5>
+<code>
+<pre>
+/* Button */
+.call-to-action .button-wrapper {
+  width: auto;
+  display: inline-block;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  margin-top: 4px;
+}
+.call-to-action .button {
+  background: #4569a0 0% 0% no-repeat padding-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  border: 2px solid #254f90;
+  border-radius: 6px;
+  opacity: 1;
+  padding: 8px 32px;
+  text-align: center;
+  letter-spacing: 0;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  text-decoration: none !important;
+}
+.call-to-action .button:hover {
+  background: #254f90 0% 0% no-repeat padding-box;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+  border: 2px solid #18335c;
+  border-radius: 6px;
+  opacity: 1;
+}
+.call-to-action .button-wrapper:hover {
+  transform: translateY(-0.1875rem);
 }
 </pre>
 </code>
     
-<h5>Download link container</h5>                             
+
+<h5>Media query</h5>
 <code>
-<pre>.link-container {
-    background: #FFFFFF;
-    border-top: 4px solid #B3C2D8;
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  .call-to-action {
     padding: 24px;
+  }
+}
+</pre>
+</code>
+
+<h4>Download card</h4>
+<h5>Containers</h5>
+<code>
+<pre>
+/* Download card*/
+/* Container */
+.download-card {
+  background: #ffffff;
+  border: none;
+  border-top: 0.25rem solid #b3c2d8;
+  padding: 0;
+  width: 100%;
+}
+.download-card:hover {
+  cursor: pointer;
+}
+.download-card-content {
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  width: 90%;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+}
+.download-card:focus .download-card-content,
+.download-card:hover .download-card-content {
+  transform: translateX(1rem);
+}
+.link-container {
+  align-items: center;
+  display: flex;
+  position: relative;
 }
 </pre>
 </code>
     
-<h5>Download description</h5>
+<h5>Text</h5>
 <code>
-<pre>p.description {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 25px;
+<pre>
+/* Text */
+.download-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.56;
+  margin-bottom: 0;
+  line-height: 32px;
+  font-size: 1rem;
+  padding: 0 0 32px 0;
+  margin: 0;
+  color: #333;
 }
-p.description:hover {
-    color: #254F90;
+.download-card:hover .p,
+.download-card:hover .p {
+  color: #254f90;
+}
+.download-card:focus span,
+.download-card:hover span {
+  margin-left: 1rem;
 }
 </pre>
 </code>
     
-<h5>File type text</h5>
+<h5>Icon</h5>
 <code>
-<pre>p.file-type {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 24px;
+<pre>
+/* Icon */
+/* Circle icon */
+.download-card .circle-icon {
+  bottom: 0;
+  display: none;
+  height: 32px;
+  left: 0;
+  margin-bottom: auto;
+  margin-right: 0;
+  margin-top: auto;
+  padding-top: inherit;
+  position: absolute;
+  top: 0;
+  transform: translateX(-0.5rem);
+  width: 32px;
+}
+.download-card .circle-icon svg {
+  fill: none;
+}
+.download-card:focus .circle-icon,
+.download-card:hover .circle-icon {
+  display: inline;
+}
+.download-card:focus .circle-icon svg,
+.download-card:hover .circle-icon svg {
+  fill: #4569a0;
+  transition: fill 0.2s ease;
+}
+/* Download icon */
+.download-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  fill: #254f90;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+.download-card .download-icon svg {
+  fill: #4267b2;
+}
+.download-card span {
+  color: #666;
+  font-size: 0.75rem;
+  line-height: 2px;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 12px;
+}
+.download-card:focus .download-icon svg,
+.download-card:hover .download-icon svg {
+  fill: #fff;
 }
 </pre>
-</code>
-<h5>File type icon</h5>
-<code>
-<pre>.icon {    
-    color: #254F90;
-    height: 16px;
-    width: 16px;
-}
-.icon:hover {
-    color: #254F90;
-    height: 32px;
-    width: 32px;
-}
-</pre>
-</code>
-    
-<h5>Call to action container</h5>
-<code>
-<pre>.cta-container {
-    background-color: #EBEBEB;
-    border-top: 4px solid #D8D8D8;
-    padding: 32px 32px 48px 32px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<code>
-<pre>h2 {
-    font-size: 24px;
-    line-height: 32px;
-}
-</pre>
-</code>
+</code>        
 `
 $(".download-call-to-action-code .css-code").html(downloadCallToActionCss);
 
@@ -1880,7 +2133,24 @@ $(".download-call-to-action-code .css-code").html(downloadCallToActionCss);
 //html
 const standardCallOutBoxHtml =
 `
-Coming soon
+<div class="call-out-box">
+   <h3>Heading</h3>
+   <p>The text in this component can be paragraphs.</p>
+   <ul>
+      <li>
+         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+            <circle fill="#c18100" cx="8" cy="8" r="4"/>
+         </svg>
+         <p>Or list points which are also handy.</p>
+      </li>
+      <li>
+         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+            <circle fill="#c18100" cx="8" cy="8" r="4"/>
+         </svg>
+         <p>It just needs to be formatted in the same was as general body text on the site.</p>
+      </li>
+   </ul>
+</div>
 `
 
 $(".standard-call-out-box-code .html-code code pre").text(standardCallOutBoxHtml);
@@ -1888,60 +2158,87 @@ $(".standard-call-out-box-code .html-code code pre").text(standardCallOutBoxHtml
 //css
 const standardCallOutBoxCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Heading</h5>
+<h5>Container</h5>
 <code>
-<pre>h3 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    line-height: 28px;
+<pre>
+/* Container */
+.call-out-box {
+  height: auto;
+  border-top: none;
+  background: none;
+  padding: 32px;
+  border-top: 4px solid #d8d8d8;
+  background: #ebebeb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.0125rem;
+  line-height: 1.78;
+  text-align: left;
 }
 </pre>
 </code>
     
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
+<pre>
+/* Text */
+.call-out-box h3 {
+  padding: 0 0 32px 0;
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.25;
+  font-size: 21px;
+}
+.call-out-box p {
+  line-height: 32px;
+  font-size: 16px;
+  padding: 0 0 32px 0;
+  margin: 0;
+  letter-spacing: 0.0125rem;
+  color: #333;
+  display: inline-block;
 }
 </pre>
 </code>
     
 <h5>List</h5>
 <code>
-<pre>li  {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
+<pre>
+/* List */
+.call-out-box ul {
+  padding: 0 0 0 16px;
+  margin: 0;
+  line-height: 1.78;
+  list-style: none;
 }
-bullet {
-    color: #C18100;
-    height: 8px;
-    width: 8px;
+.call-out-box ul li {
+  padding-bottom: 16px;
+  margin: 0;
+  line-height: 32px;
+  position: relative;
+}
+.call-out-box ul li:last-of-type {
+  padding-bottom: 0px;
+}
+.call-out-box ul li p {
+  padding: 0px;
+  display: inline;
+}
+.call-out-box ul li svg {
+  padding-right: 16px;
 }
 </pre>
 </code>        
     
-<h5>Container</h5>
+<h5>Media query</h5>
 <code>
-<pre>.container {
-    background-color: #EBEBEB;
-    border-top: 4px solid #D8D8D8;
-    padding: 32px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<h5>Container</h5>
-<code>
-<pre>.container {
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  .call-out-box {
     padding: 24px;
+  }
 }
 </pre>
 </code>
@@ -1952,7 +2249,34 @@ $(".standard-call-out-box-code .css-code").html(standardCallOutBoxCss);
 //html
 const contactCallOutBoxHtml =
 `
-Coming soon
+<div class="call-out-box contact-call-out-box">
+	<h3>Need Help?</h3>
+	<p>Contact us for help with your application or to find out more.</p>
+	<ul>
+		<li>
+			<svg width="16px" height="16px" viewBox="0 0 16 16">
+				<path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z" fill="#254f90"></path>
+			</svg>
+			<a href="#">Contact Us</a>
+		</li>
+		<li>
+			<svg width="16px" height="16px" viewBox="0 0 16 16">
+				<path fill="#254F90" fill-rule="evenodd" d="M6.22 2.805L3.811.397C3.33-.084 2.504-.153 2.092.33L.647 1.773c-1.858 1.858.55 6.192 3.853 9.563 3.44 3.44 7.842 5.917 9.769 3.99l1.376-1.376c.481-.481.412-1.307-.07-1.788l-2.338-2.34c-.55-.55-1.307-.55-1.789-.137l-1.445 1.445c-2.545-1.24-4.196-3.027-5.16-5.16l1.445-1.445c.482-.413.413-1.238-.069-1.72z"></path>
+			</svg>
+			<a href="#">13 28 46</a>
+		</li>
+		<li>
+			<svg width="16px" height="16px" viewBox="0 0 16 16"
+				xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zm0-2A6 6 0 1 0 8 2a6 6 0 0 0 0 12zM7 5h2v3h3v2H7V5z" id="a"></path>
+				</defs>
+				<use fill="#4569A0" fill-rule="nonzero" xlink:href="#a"></use>
+			</svg>
+			<p>Monday – Friday, 8am – 8pm across Australia</p>
+		</li>
+	</ul>
+</div>
 `
 
 $(".contact-call-out-box-code .html-code code pre").text(contactCallOutBoxHtml);
@@ -1960,63 +2284,96 @@ $(".contact-call-out-box-code .html-code code pre").text(contactCallOutBoxHtml);
 //css
 const contactCallOutBoxCss =
 `
-<h4>Desktop</h4>
-<h5>Heading</h5>
+<h5>Container</h5>
 <code>
-<pre>h3 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 21px;
-    line-height: 28px;
+<pre>
+/* Container */
+.call-out-box {
+  height: auto;
+  border-top: none;
+  background: none;
+  padding: 32px;
+  border-top: 4px solid #d8d8d8;
+  background: #ebebeb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.0125rem;
+  line-height: 1.78;
+  text-align: left;
 }
 </pre>
 </code>
     
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
+<pre>
+/* Text */
+.call-out-box h3 {
+  padding: 0 0 32px 0;
+  margin: 0;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.25;
+  font-size: 21px;
 }
-</pre>
-</code>
-<h5>Link text</h5>
-<code>
-<pre>a {
-    color: #254F90;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 32px;
-    text-decoration: underline;
-} 
-</pre>
-</code>
-<h5>Link icon</h5>
-<code>
-<pre>.icon {    
-    color: #254F90;
-    height: 16px;
-    width: 16px;
+.call-out-box p {
+  line-height: 32px;
+  font-size: 16px;
+  padding: 0 0 32px 0px;
+  margin: 0;
+  letter-spacing: 0.0125rem;
+  color: #333;
+  display: inline-block;
 }
 </pre>
 </code>
     
-<h5>Container</h5>
+<h5>List</h5>
 <code>
-<pre>.container {
-    background-color: #EBEBEB;
-    border-top: 4px solid #D8D8D8;
-    padding: 32px;
+<pre>
+/* List */
+.call-out-box.contact-call-out-box ul {
+  padding: 0;
+  margin: 0;
+  line-height: 1.78;
+  list-style: none;
+}
+.call-out-box ul li {
+  padding-bottom: 16px;
+  margin: 0;
+  line-height: 32px;
+  position: relative;
+}
+.call-out-box ul li:last-of-type {
+  padding-bottom: 0px;
+}
+.call-out-box.contact-call-out-box ul li a {
+  font-weight: 600;
+  font-style: normal;
+  color: #254f90;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+.call-out-box ul li p {
+  padding: 0;
+}
+.call-out-box ul li svg {
+  padding-right: 16px;
 }
 </pre>
-</code>
-<h4>Mobile</h4>
-<h5>Container</h5>
+</code>        
+    
+<h5>Media query</h5>
 <code>
-<pre>.container {
+<pre>
+/* Media queries */
+@media (max-width: 576px) {
+  .call-out-box {
     padding: 24px;
+  }
 }
 </pre>
 </code>
@@ -2028,7 +2385,18 @@ $(".contact-call-out-box-code .css-code").html(contactCallOutBoxCss);
 //html
 const calloutLinkHtml =
 `
-Coming soon
+<div class="callout-link">
+	<div class="icon-container">
+		<div class="icon">
+			<svg viewBox="0 0 16 16">
+				<path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
+			</svg>
+		</div>
+	</div>
+	<div class="detail">
+		<a href="#">Call out links are often used for subscriptions and alerts.</a>
+	</div>
+</div>
 `
 
 $(".callout-link-code .html-code code pre").text(calloutLinkHtml);
@@ -2036,45 +2404,86 @@ $(".callout-link-code .html-code code pre").text(calloutLinkHtml);
 //css
 const calloutLinkCss =
 `
+<h5>Container</h5>
 <code>
 <pre>
-a {
-    color: #666666;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 24px;
-    box-shadow: inset 0 -3.2px 0 #748FB8;
+/* Container */
+.callout-link {
+  border-top: 0.25rem solid #d8d8d8;
+  padding: 32px 24px;
+  background-color: #f5f5f5;
+  position: relative;
+  align-items: center;
+  display: flex;
 }
-a:hover {
-    box-shadow: inset 0 -20px 0 #DDEEFF;
+.callout-link .icon-container {
+  background-color: #e0e9f7;
+  border-radius: 50%;
+  height: 4rem;
+  justify-content: center;
+  min-width: 4rem;
+  width: 4rem;
+  align-items: center;
+  display: flex;
+}
+.callout-link .detail {
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 0 0 16px;
 }
 </pre>
 </code>
     
-<h5>icon</h5>
+<h5>Text</h5>
 <code>
 <pre>
-.icon {
-    color: #254F90;
-    height: 24px;
-    width: 24px;
+/* Text */
+.callout-link a {
+  background-color: transparent;
+  border: 0.0625rem dotted transparent;
+  box-shadow: inset 0 -3.2px 0 #748fb8;
+  color: #254f90;
+  font-weight: 700;
+  text-decoration: none;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  box-shadow: inset 0 -3.2px 0 #748fb8;
 }
-.icon-background {
-    background-color: #E0E9F7;
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
+
+.callout-link .detail a:visited {
+  color: #666;
 }
+
+.callout-link .detail a:hover,
+.callout-link .detail a:focus {
+  box-shadow: inset 0 -20px 0 #def;
+  text-decoration: none;
+}
+
 </pre>
-</code>   
+</code>
     
-<h5>Container</h5>
+<h5>Icon</h5>
 <code>
 <pre>
-.container {
-    background-color: #F5F5F5;
-    border-top: 4px solid #D8D8D8;
-    padding: 32px 24px;
+/* Icon */
+.icon-container .icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  fill: #254f90;
+  line-height: 0;
+  position: relative;
+  right: 0;
 }
 </pre>
 </code>
