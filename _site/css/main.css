@@ -4698,9 +4698,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .light-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center; height: 16px; padding: 0; }
 
-.design-system-card .inline-pathway .description { padding-bottom: 16px; }
+.design-system-card .inline-pathway .description { padding-bottom: 16px; color: #254F90; text-decoration: underline; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .inline-pathway .inline-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 24px; border-top: 4px solid #B3C2D8; background: #EFF4FB; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; cursor: pointer; }
+.design-system-card .inline-pathway .inline-container { height: auto; max-width: 620px; border-top: none; background: none; padding: 24px; border-top: 4px solid #B3C2D8; background: #E5EDF7; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; cursor: pointer; }
 
 .design-system-card .inline-pathway .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left center; height: auto; padding: 0 0 0 24px; }
 
@@ -4711,6 +4711,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .inline-pathway:hover .description { text-decoration: underline; }
 
 .design-system-card .inline-pathway:hover .icon-link, .design-system-card .inline-pathway:hover .description { transform: none; }
+
+.design-system-card .inline-pathway:hover .inline-container { background: #D5E2F2; }
 
 .design-system-card .inline-pathway:hover .inline-wrapper { transform: translateX(1rem); }
 
@@ -5226,9 +5228,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .pagination a { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; box-shadow: none; padding: 0 6px; margin: 0 10px; }
 
-.design-system-card .buttons-links .pagination a.current { color: #000000; background: #E0EAF6; border-radius: 2px; }
+.design-system-card .buttons-links .pagination a.current { color: #000000; background: #E5EDF7; border-radius: 2px; }
 
-.design-system-card .buttons-links .pagination a:hover { background-color: #E0EAF6; border-radius: 2px; }
+.design-system-card .buttons-links .pagination a:hover { background-color: #E5EDF7; border-radius: 2px; }
 
 .design-system-card .buttons-links .pagination a:active { color: #000000; background: #B3C2D8; border-radius: 2px; }
 
@@ -5284,7 +5286,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .button-example[data-state="hover-state"] .link-dark .link-text { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
 
-.design-system-card .buttons-links .button-example[data-state="hover-state"] .pagination a { background-color: #E0EAF6; border-radius: 2px; }
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .pagination a { background-color: #E5EDF7; border-radius: 2px; }
 
 .design-system-card .buttons-links .button-example[data-state="active-state"] .button-wrapper { transform: translateY(-0.1875rem); }
 
@@ -5484,7 +5486,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.no-header .design-system-card-content .colours.blue-tint2 { border-top: 60px solid #96B7DF; }
 
-.design-system-card.no-header .design-system-card-content .colours.blue-tint3 { border-top: 60px solid #E0EAF6; }
+.design-system-card.no-header .design-system-card-content .colours.blue-tint3 { border-top: 60px solid #E5EDF7; }
 
 .design-system-card.no-header .design-system-card-content .colours.red-primary { border-top: 60px solid #CC3C1C; }
 
