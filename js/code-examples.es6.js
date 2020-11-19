@@ -798,7 +798,7 @@ const inlinePathwayCss =
   transition-duration: 0.4s, 0.4s;
   transition-timing-function: ease, ease;
   transition-delay: 0s, 0s;
-  background: #eff4fb;
+  background: #E5EDF7;
   padding: 24px;
   border-top: 4px solid #b3c2d8;
   font-family: "Open Sans", sans-serif;
@@ -806,6 +806,9 @@ const inlinePathwayCss =
   font-stretch: normal;
   text-decoration: none;
   color: #333333;
+}
+.inline-pathway-card:hover {
+    background: #D5E2F2;
 }
 .inline-pathway-card:hover .inline-pathway-card-content,
 .inline-pathway-card:focus .inline-pathway-card-content {
@@ -826,6 +829,9 @@ const inlinePathwayCss =
   margin: 0 0 16px 0;
   font-size: 16px;
   line-height: 28px;
+  color: #254F90;
+  font-weight: 600;
+  text-decoration: underline;
 }
 .inline-pathway-card:hover .description,
 .inline-pathway-card:focus .description {
@@ -838,6 +844,11 @@ const inlinePathwayCss =
   text-transform: uppercase;
   text-decoration: none;
   margin: 0 0 0 8px;
+  color: #333333;
+}
+.inline-pathway-card:hover .link-text,
+.inline-pathway-card:focus .link-text {
+  text-decoration: none;
 }
 </pre>
 </code>
