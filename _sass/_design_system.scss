@@ -2775,7 +2775,10 @@
           a {
               @include font-format($font-family, $font-semibold, normal);
               color: $blue-primary;
-
+              
+              &:visited {
+                  color: $blue-primary;
+              }
 
               &:after {
                   content: "";
