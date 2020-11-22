@@ -1406,280 +1406,472 @@ $(".image-pathway-code .css-code").html(imagePathwayCss);
 
 //======================================================= CONTENT ========================================================================
 
-//PAGE HEADERS
-
-//Topics and categories page header
-
-//html
-const topicAndCategoryPageHeaderHtml =
-`
-Coming soon
-`
-
-$(".topic-and-category-page-header-code .html-code code pre").text(topicAndCategoryPageHeaderHtml);
-
-//css
-const topicAndCategoryPageHeaderCss =
-`
-<h4>Desktop</h4>
-<h5>Heading</h5>
-<code>
-<pre>h1 {
-    color: #FFFFFF;
-    font-family: OpenSans-Semibold;
-    font-size: 44px;
-    line-height: 56px;
-}
-</pre>
-</code>
-<h5>Label</h5>
-<code>
-<pre>p.label {
-    color: #FFFFFF;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
-}
-</pre>
-</code>
+ //PAGE HEADERS
     
-<h5>Description</h5>
-<code>
-<pre>p.description {
-    color: #FFFFFF;
-    font-family: OpenSans;
-    font-size: 18px;
-    line-height: 30px;
-}
-</pre>
-</code>
-<h5>Component container</h5>
-<code>
-<pre>.container {
-    background: #4569A0;
-    padding: 64px 0px;
-}
-</pre>
-</code>
+    //Topics and categories page header
     
-<h4>Mobile &amp; tablet</h4>
-<h5>Heading</h5>
-<code>
-<pre>h1 {
-    font-size: 32px;
-    line-height: 37px;
-}
-</pre>
-</code>
-<h5>Label</h5>
-<code>
-<pre>p.label {
-    font-size: 12px;
-    line-height: 16px;
-}
-</pre>
-</code>
+    //html
+    const topicAndCategoryPageHeaderHtml =
+    `
+    <div class="topic-and-category-page-header">
+       <div class="topic-and-category-page-header-content">
+          <div class="topic-and-category-page-header-content-left">
+             <p class="category">Category Label</p>
+             <h1 class="title">Page Header</h1>
+             <p class="description">The long description can be used to briefly describe the contents of the page.</p>
+          </div>
+          <div class="topic-and-category-page-header-content-right">
+             <div class="svg-image">
+                <svg width="159px" height="200px" viewBox="0 0 159 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+                   <g id="Group_2509" transform="matrix(0.611499,0,0,0.614954,-509.02,200.259)">
+                      <g id="Group_2469">
+                         <clipPath id="_clip1">
+                            <path d="M984,-129.279L984,-88L992.527,-97.692L1001,-93.786L1001,-134L984,-129.279Z"/>
+                         </clipPath>
+                         <g clip-path="url(#_clip1)">
+                            <g id="Group_2468">
+                               <rect id="Path_2479" x="979" y="-139" width="27" height="56" style="fill:rgb(65,102,158);fill-rule:nonzero;"/>
+                            </g>
+                         </g>
+                      </g>
+                      <g id="Group_2471">
+                         <clipPath id="_clip2">
+                            <path d="M939.7,-193.956C939.7,-193.956 943.109,-169.294 926.933,-157.726C924.414,-155.909 921.134,-155.498 918.245,-156.638L915.988,-157.533C914.786,-158.031 913.998,-159.211 913.998,-160.512C913.998,-161.599 914.548,-162.616 915.458,-163.211C922.908,-168.072 934.369,-179.249 931.391,-200.999"/>
+                         </clipPath>
+                         <g clip-path="url(#_clip2)">
+                            <g id="Group_2470">
+                               <rect id="Path_2482" x="909" y="-206" width="36" height="55" style="fill:rgb(65,102,158);fill-rule:nonzero;"/>
+                            </g>
+                         </g>
+                      </g>
+                      <g id="Group_2473">
+                         <clipPath id="_clip3">
+                            <path d="M922,-1.311L895.081,-143.1L857,-155L857,-112.884L863.795,-109.855C868.202,-107.838 871.851,-104.465 874.206,-100.229C876.58,-96.036 877.817,-91.294 877.794,-86.476L877.794,-77.595C877.903,-69.011 874.981,-60.658 869.546,-54.014C866.225,-50.013 861.893,-46.974 857,-45.214L857,-1L922,-1.311Z"/>
+                         </clipPath>
+                         <g clip-path="url(#_clip3)">
+                            <g id="Group_2472">
+                               <clipPath id="_clip4">
+                                  <rect x="0" y="-356" width="1200" height="356"/>
+                               </clipPath>
+                               <g clip-path="url(#_clip4)">
+                                  <rect id="Path_2485" x="852" y="-160" width="75" height="164" style="fill:rgb(65,102,158);fill-rule:nonzero;"/>
+                               </g>
+                            </g>
+                         </g>
+                      </g>
+                      <g id="Group_2475">
+                         <clipPath id="_clip5">
+                            <path d="M942.7,-204.231L936.238,-213.431C931.938,-219.554 929.132,-229.195 928.082,-236.865C928.045,-237.247 927.953,-237.622 927.808,-237.977C926.242,-245.263 925.594,-260.553 925.34,-269.546C925.339,-275.019 925.709,-280.485 926.449,-285.908L926.771,-287.775C929.371,-302.837 938.615,-311.694 951.171,-317.407C956.852,-319.775 962.867,-321.242 969,-321.756C967.283,-321.909 965.481,-321.998 963.6,-322L961.007,-322C953.038,-322.017 945.143,-320.453 937.782,-317.4C925.226,-311.688 915.982,-302.83 913.382,-287.768L912.461,-282.433C912.102,-280.494 911.881,-278.532 911.799,-276.562C899.299,-276.637 903.775,-253.79 903.775,-253.79C904.824,-245.053 908.475,-238.898 913.424,-238.797C914.547,-238.774 914.692,-236.858 914.692,-236.858C915.742,-229.188 918.546,-219.547 922.848,-213.424L929.31,-204.224C933.969,-197.457 940.57,-192.258 948.24,-189.314C952.324,-187.785 956.649,-187.001 961.009,-187L963.6,-187C965.408,-187.003 967.213,-187.141 969,-187.414C966.484,-187.793 964.015,-188.432 961.631,-189.321C953.961,-192.265 947.36,-197.464 942.701,-204.231"/>
+                         </clipPath>
+                         <g clip-path="url(#_clip5)">
+                            <g id="Group_2474">
+                               <rect id="Path_2488" x="898" y="-327" width="76" height="145" style="fill:rgb(65,102,158);fill-rule:nonzero;"/>
+                            </g>
+                         </g>
+                      </g>
+                      <g id="Group_2477">
+                         <clipPath id="_clip6">
+                            <path d="M866,-167L866,-158.166L962,-129L962,-130.907L866,-167Z"/>
+                         </clipPath>
+                         <g clip-path="url(#_clip6)">
+                            <g id="Group_2476">
+                               <rect id="Path_2491" x="861" y="-172" width="106" height="48" style="fill:rgb(65,102,158);fill-rule:nonzero;"/>
+                            </g>
+                         </g>
+                      </g>
+                      <g id="Group_2479">
+                         <clipPath id="_clip7">
+                            <path d="M1082,-53.518C1065.39,-54.032 1065.13,-69.481 1065.13,-70.254L1065.13,-102C1063.46,-101.538 1061.96,-100.6 1060.82,-99.3C1053.65,-91.82 1056.6,-74.005 1056.6,-74.005C1056.64,-73.793 1056.68,-73.588 1056.72,-73.38C1057.16,-70.415 1058.06,-67.535 1059.37,-64.839C1060.64,-61.983 1062.52,-59.436 1064.87,-57.377L1064.96,-57.298C1072.54,-50.93 1082,-53.513 1082,-53.513"/>
+                         </clipPath>
+                         <g clip-path="url(#_clip7)">
+                            <g id="Group_2478">
+                               <rect id="Path_2494" x="1051" y="-107" width="36" height="59" style="fill:rgb(65,102,158);fill-rule:nonzero;"/>
+                            </g>
+                         </g>
+                      </g>
+                      <g id="Group_2481">
+                         <clipPath id="_clip8">
+                            <path d="M836,-99.547L836,-64.855C836,-56.821 840.68,-53.945 845,-52.999L845,-108.799C836.086,-110.629 836,-99.55 836,-99.55"/>
+                         </clipPath>
+                         <g clip-path="url(#_clip8)">
+                            <g id="Group_2480">
+                               <rect id="Path_2497" x="831" y="-114" width="19" height="66" style="fill:rgb(65,102,158);fill-rule:nonzero;"/>
+                            </g>
+                         </g>
+                      </g>
+                      <g id="Group_2508">
+                         <clipPath id="_clip9">
+                            <rect x="0" y="-356" width="1200" height="356"/>
+                         </clipPath>
+                         <g clip-path="url(#_clip9)">
+                            <g id="Group_2482" transform="matrix(1,0,0,1,856,-43)">
+                               <path id="Path_2500" d="M0,0L0,42" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2483" transform="matrix(1,0,0,1,1067,-44)">
+                               <path id="Path_2501" d="M0,0L0,44" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2484" transform="matrix(1,0,0,1,857,-155)">
+                               <path id="Path_2502" d="M105,33.2L0,0L0,40" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2485" transform="matrix(1,0,0,1,866,-168)">
+                               <path id="Path_2503" d="M96,36L0,0L0,5.889" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2486" transform="matrix(1,0,0,1,963,-155)">
+                               <path id="Path_2504" d="M105,40L105,0L0,33.2" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2487" transform="matrix(1,0,0,1,963,-167)">
+                               <path id="Path_2505" d="M96,5L96,0L0,34" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2488" transform="matrix(1,0,0,1,876,-107)">
+                               <path id="Path_2506" d="M68,22L0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2489" transform="matrix(1,0,0,1,879,-82)">
+                               <path id="Path_2507" d="M65,21L0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2490" transform="matrix(1,0,0,1,876,-60)">
+                               <path id="Path_2508" d="M68,22L0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2491" transform="matrix(1,0,0,1,981,-80)">
+                               <path id="Path_2509" d="M0,21L63,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2492" transform="matrix(1,0,0,1,981,-64)">
+                               <path id="Path_2510" d="M0,21L63,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2493" transform="matrix(1,0,0,1,1000,-47)">
+                               <path id="Path_2511" d="M0,13L39,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2494" transform="matrix(1,0,0,1,957,-112)">
+                               <path id="Path_2512" d="M0,0L0,111" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2495" transform="matrix(1,0,0,1,969,-112)">
+                               <path id="Path_2513" d="M0,0L0,111" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2496" transform="matrix(1,0,0,1,984,-128)">
+                               <path id="Path_2514" d="M0,42L0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2497" transform="matrix(1,0,0,1,1000,-133)">
+                               <path id="Path_2515" d="M0,40L0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2498" transform="matrix(1,0,0,1,984,-97)">
+                               <path id="Path_2516" d="M0,10L8.527,0L17,4.03" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2499" transform="matrix(1,0,0,1,914,-260)">
+                               <path id="Path_2517" d="M1,11C0.453,7.356 0.119,3.683 0,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2500" transform="matrix(1,0,0,1,1011,-260)">
+                               <path id="Path_2518" d="M0,11C0.547,7.356 0.881,3.683 1,0" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2501" transform="matrix(1,0,0,1,904,-322)">
+                               <path id="Path_2519" d="M97.986,13.7C103.666,19.199 107.39,26.41 108.586,34.225L109.51,39.56C109.87,41.499 110.091,43.46 110.173,45.43C122.71,45.355 118.224,68.203 118.224,68.203C117.171,76.94 113.513,83.095 108.543,83.196C107.416,83.219 107.271,85.135 107.271,85.135C106.218,92.805 103.404,102.445 99.089,108.568L92.606,117.768C87.926,124.539 81.304,129.738 73.615,132.678C69.516,134.211 65.176,134.997 60.8,135L58.2,135C53.826,134.997 49.489,134.21 45.392,132.679C37.703,129.739 31.081,124.54 26.4,117.769L19.917,108.569C15.6,102.45 12.787,92.809 11.734,85.14C11.734,85.14 11.588,83.224 10.462,83.201C5.492,83.1 1.833,76.945 0.781,68.208C0.781,68.208 -3.705,45.361 8.832,45.435C8.914,43.465 9.136,41.503 9.496,39.565L10.419,34.23C13.025,19.168 22.3,10.311 34.9,4.6C42.287,1.546 50.206,-0.017 58.2,0L60.8,0C68.794,-0.017 76.713,1.546 84.1,4.6C84.951,4.986 85.786,5.386 86.606,5.8L91.77,2.23L94.545,6.73L100.7,8.141L97.986,13.7Z" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2502" transform="matrix(1,0,0,1,1056,-109)">
+                               <path id="Path_2520" d="M27.371,54.459C30.151,53.214 32,49.974 32,46.348L32,8.231C32,2.517 27.36,-1.455 22.978,0.508L8.743,6.886C3.492,9.239 0,15.358 0,22.205L0,31.028C0,48.363 14.078,60.415 27.371,54.459Z" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2503" transform="matrix(1,0,0,1,836,-109)">
+                               <path id="Path_2521" d="M4.629,54.459C1.849,53.214 0,49.974 0,46.348L0,8.231C0,2.517 4.64,-1.455 9.021,0.508L23.257,6.886C28.508,9.239 32,15.358 32,22.205L32,31.028C32,48.363 17.922,60.415 4.629,54.459Z" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2504" transform="matrix(1,0,0,1,994,-188)">
+                               <path id="Path_2522" d="M0,0C0.17,7.117 4.382,13.694 11.043,18.616C13.271,20.218 15.594,21.682 18,23" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2505" transform="matrix(1,0,0,1,913,-188)">
+                               <path id="Path_2523" d="M18,0C17.83,7.22 13.618,13.56 6.956,18.552C4.731,20.176 2.407,21.661 0,23" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2506" transform="matrix(1,0,0,1,931,-178)">
+                               <path id="Path_2524" d="M66,0C59.853,9.272 47.615,15 32.976,15C18.311,15 6.134,9.368 0,0.069" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                            <g id="Group_2507" transform="matrix(1,0,0,1,912,-296)">
+                               <path id="Path_2525" d="M0,19.536C1.517,20.51 3.146,21.297 4.852,21.88C6.558,22.463 5.442,31.08 15.712,31.533C15.712,31.533 14.612,9.333 17.969,10.433C49.716,20.873 67.564,0 67.564,0C70.982,11.446 85.031,10.436 85.031,10.436C86.778,13.466 87.288,32.992 87.288,32.992C95.388,33.329 96.66,22.367 96.66,22.367C101.873,21.211 103,19.535 103,19.535" style="fill:none;fill-rule:nonzero;stroke:rgb(59,97,155);stroke-width:7px;"/>
+                            </g>
+                         </g>
+                      </g>
+                   </g>
+                </svg>
+             </div>
+          </div>
+       </div>
+    </div>
+    `
     
-<h5>Description</h5>
-<code>
-<pre>p.description {
-    font-size: 16px;
-    line-height: 28px;
-}
-</pre>
-</code>
+    $(".topic-and-category-page-header-code .html-code code pre").text(topicAndCategoryPageHeaderHtml);
     
-<h5>Component container</h5>
-<code>
-<pre>.container {
-    background: #4569A0;
-    padding: 64px 32px 48px 32px;
-}
-</pre>
-</code>
-`
-$(".topic-and-category-page-header-code .css-code").html(topicAndCategoryPageHeaderCss);
-
-//Information page header
-//html
-const informationPageHeaderHtml =
-`
-Coming soon
-`
-
-$(".information-page-header-code .html-code code pre").text(informationPageHeaderHtml);
-
-//css
-const informationPageHeaderCss =
-`
-<h4>Desktop</h4>
-<h5>Heading</h5>
-<code>
-<pre>h1 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 44px;
-    line-height: 56px;
-}
-</pre>
-</code>
-<h5>Last updated</h5>
-<code>
-<pre>p.updated {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 12px;
-    letter-spacing: 0.2px;
-    line-height: 18px;
-    font-style: italic;
-}
-</pre>
-</code>
+    //css
+    const topicAndCategoryPageHeaderCss =
+    `
+    <h5>Containers</h5>
+    <code>
+    <pre>
+    /* Containers */
+    .topic-and-category-page-header {
+      padding: 0 48px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-content: center;
+      justify-content: flex-start;
+      background-color: #4569a0;
+      box-sizing: border-box;
+    }
+    .topic-and-category-page-header-content {
+      width: 100%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+    }
+    .topic-and-category-page-header-content-left {
+      margin-right: 64px;
+      padding: 64px 0;
+    }
+    .topic-and-category-page-header-content-right {
+      position: relative;
+      display: flex;
+      min-width: 159px;
+      min-height: 200px;
+      align-content: center;
+      justify-content: center;
+    }
+    </pre>
+    </code>
     
-<h5>Description</h5>
-<code>
-<pre>p.description {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 18px;
-    line-height: 30px;
-}
-</pre>
-</code>
-<h5>Container</h5>
-<code>
-<pre>.container {
-    background: #E2E2E2;
-    padding: 64px 0px;
-}
-</pre>
-</code>
+    <h5>Text</h5>
+    <code>
+    <pre>
+    /* Text */
+    .topic-and-category-page-header .category {
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin: 0 0 16px 0;
+      padding: 0;
+      font-weight: 400;
+    }
+    .topic-and-category-page-header .title {
+      font-size: 44px;
+      line-height: 56px;
+      margin: 0 0 16px 0;
+      padding: 0;
+      font-weight: 600;
+    }
+    .topic-and-category-page-header .description {
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    </pre>
+    </code>
+        
+    <h5>svg image</h5>
+    <code>
+    <pre>
+    /* svg image */
+    .topic-and-category-page-header .svg-image {
+      align-items: center;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    </pre>
+    </code>
     
-<h4>Mobile &amp; tablet</h4>
+    <h5>Media queries</h5>
+    <code>
+    <pre>
+    /* Media queries */
+    @media (max-width: 576px) {
+      .topic-and-category-page-header .title {
+        font-size: 32px;
+      }
+      .topic-and-category-page-header .description {
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 767px) {
+      .topic-and-category-page-header-content-right {
+        display: none;
+      }
+      .topic-and-category-page-header-content-left {
+        margin-right: 0px;
+      }
+    }
+    </pre>
+    </code>
+    `
+    $(".topic-and-category-page-header-code .css-code").html(topicAndCategoryPageHeaderCss);
     
-<h5>Heading</h5>
-<code>
-<pre>h1 {
-    font-size: 32px;
-    line-height: 37px;
-}
-</pre>
-</code>
-<h5>Last updated</h5>
-<code>
-<pre>p.updated {
-    font-size: 12px;
-    line-height: 16px;
-}
-</pre>
-</code>
+    //Information page header
+    //html
+    const informationPageHeaderHtml =
+    `
+    <div class="information-page-header">
+       <h1 class="title">Descriptive page title</h1>
+       <p class="updated">Last Updated: 15 Octover 2019</p>
+       <p class="description">The long description can be used to briefly describe the contents of the page.</p>
+    </div>
+    `
     
-<h5>Component container</h5>
-<code>
-<pre>.container {
-    background: #4569A0;
-    padding: 64px 32px 48px 32px;
-}
-</pre>
-</code>
-`
-$(".information-page-header-code .css-code").html(informationPageHeaderCss);
-
-//Grants page header
-//html
-const grantsPageHeaderHtml =
-`
-Coming soon
-`
-
-$(".grants-page-header-code .html-code code pre").text(grantsPageHeaderHtml);
-
-//css
-const grantsPageHeaderCss =
-`
-<h4>Desktop</h4>
-<h5>Grant name</h5>
-<code>
-<pre>p.grant-name {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
-}
-</pre>
-</code>
+    $(".information-page-header-code .html-code code pre").text(informationPageHeaderHtml);
     
-<h5>Heading</h5>
-<code>
-<pre>h1 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 44px;
-    line-height: 56px;
-}
-</pre>
-</code>
-<h5>Last updated</h5>
-<code>
-<pre>p.updated {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    font-style: italic;
-}
-</pre>
-</code>
+    //css
+    const informationPageHeaderCss =
+    `
+    <h5>Containers</h5>
+    <code>
+    <pre>
+    /* Containers */
+    .information-page-header {
+      padding: 64px 48px;
+      width: 100%;
+      height: auto;
+      display: inline-block;
+      background-color: #e2e2e2;
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+      font-stretch: normal;
+    }
+    </pre>
+    </code>
     
-<h5>Container</h5>
-<code>
-<pre>.container {
-    background: #E2E2E2;
-    padding: 64px 0px;
-}
-</pre>
-</code>
+    <h5>Text</h5>
+    <code>
+    <pre>
+    /* Text */
+    .information-page-header .title {
+      margin: 0;
+      padding: 0 0 16px 0;
+      font-size: 44px;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 1.27;
+    }
+    .information-page-header .updated {
+      font-weight: 400;
+      font-style: italic;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      line-height: 18px;
+      padding: 0 0 16px 0;
+      margin: 0;
+    }
+    .information-page-header .description {
+      padding: 0px;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.71;
+    }
+    </pre>
+    </code>
+        
+    <h5>svg image</h5>
+    <code>
+    <pre>
+    /* Media queries */
+    @media (max-width: 576px) {
+      .information-page-header .title {
+        font-size: 32px;
+      }
+      .information-page-header .description {
+        font-size: 16px;
+      }
+    }
+    </pre>
+    </code>
+    `
+    $(".information-page-header-code .css-code").html(informationPageHeaderCss);
     
-<h4>Mobile &amp; tablet</h4>
+    //Grants page header
+    //html
+    const grantsPageHeaderHtml =
+    `
+    <div class="grants-page-header">
+       <p class="category">Category Label</p>
+       <h1 class="title">Descriptive page title</h1>
+       <p class="updated">Last Updated: 15 Octover 2019</p>
+    </div>
+    `
     
-<h5>Grant name</h5>
-<code>
-<pre>p.grant-name {
-    font-size: 12px;
-    line-height: 16px;
-}
-</pre>
-</code>
-<h5>Heading</h5>
-<code>
-<pre>h1 {
-    font-size: 32px;
-    line-height: 37px;
-}
-</pre>
-</code>
-<h5>Last updated</h5>
-<code>
-<pre>p.updated {
-    font-size: 12px;
-    line-height: 16px;
-}
-</pre>
-</code>
+    $(".grants-page-header-code .html-code code pre").text(grantsPageHeaderHtml);
     
-<h5>Component container</h5>
-<code>
-<pre>.container {
-    background: #4569A0;
-    padding: 64px 32px 48px 32px;
-}
-</pre>
-</code>
-`
-$(".grants-page-header-code .css-code").html(grantsPageHeaderCss);
+    //css
+    const grantsPageHeaderCss =
+    `
+    <h5>Containers</h5>
+    <code>
+    <pre>
+    /* Containers */
+    .grants-page-header {
+      padding: 64px 48px;
+      width: 100%;
+      height: auto;
+      display: inline-block;
+      background-color: #e2e2e2;
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+      font-stretch: normal;
+    }
+    </pre>
+    </code>
+    
+    <h5>Text</h5>
+    <code>
+    <pre>
+    /* Text */
+    .grants-page-header .category {
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 0;
+      padding: 0 0 16px 0;
+    }
+    .grants-page-header .title {
+      margin: 0;
+      padding: 0 0 16px 0;
+      font-size: 44px;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 1.27;
+    }
+    .grants-page-header .updated {
+      font-weight: 400;
+      font-style: italic;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      line-height: 18px;
+      padding: 0;
+      margin: 0;
+    }
+    .grants-page-header .description {
+      padding: 0px;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.71;
+    }
+    </pre>
+    </code>
+        
+    <h5>svg image</h5>
+    <code>
+    <pre>
+    /* Media queries */
+    @media (max-width: 576px) {
+      .grants-page-header .title {
+        font-size: 32px;
+      }
+      .grants-page-header .description {
+        font-size: 16px;
+      }
+    }
+    </pre>
+    </code>
+    `
+    $(".grants-page-header-code .css-code").html(grantsPageHeaderCss);
 
 //CALL TO ACTION
 //Standard call to action
