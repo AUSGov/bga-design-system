@@ -2399,8 +2399,13 @@ const calloutLinkHtml =
 <div class="callout-link">
 	<div class="icon-container">
 		<div class="icon">
-			<svg viewBox="0 0 16 16">
-				<path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
+			<svg
+				xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+				<g id="Group_7897" data-name="Group 7897" transform="translate(-85.793 -28.724)">
+					<circle id="Ellipse_17" data-name="Ellipse 17" cx="28" cy="28" r="28" transform="translate(85.793 28.724)" fill="#4569a0"></circle>
+					<path id="Rectangle_8" data-name="Rectangle 8" d="M122.793,65.724h-18v-18h7.5v-3h-10.5v24h24v-10.5h-3Z" fill="#fff"></path>
+					<path id="Path_6382" data-name="Path 6382" d="M116.793,44.724v3h3.878l-9.439,9.439,2.121,2.121,9.44-9.44v3.88h3v-9Z" fill="#fff"></path>
+				</g>
 			</svg>
 		</div>
 	</div>
@@ -2422,19 +2427,17 @@ const calloutLinkCss =
 .callout-link {
   border-top: 0.25rem solid #d8d8d8;
   padding: 32px 24px;
-  background-color: #f5f5f5;
+  background: #ebebeb;
   position: relative;
   align-items: center;
   display: flex;
 }
 .callout-link .icon-container {
-  background-color: #e0e9f7;
   border-radius: 50%;
-  height: 4rem;
-  justify-content: center;
-  min-width: 4rem;
-  width: 4rem;
-  align-items: center;
+  height: auto;
+  justify-self: center;
+  width: auto;
+  align-self: flex-start;
   display: flex;
 }
 .callout-link .detail {
@@ -2469,17 +2472,14 @@ const calloutLinkCss =
   font-style: normal;
   box-shadow: inset 0 -3.2px 0 #748fb8;
 }
-
 .callout-link .detail a:visited {
-  color: #666;
+  color: #254f90;
 }
-
 .callout-link .detail a:hover,
 .callout-link .detail a:focus {
   box-shadow: inset 0 -20px 0 #def;
   text-decoration: none;
 }
-
 </pre>
 </code>
     
@@ -2488,13 +2488,25 @@ const calloutLinkCss =
 <pre>
 /* Icon */
 .icon-container .icon {
-  height: 24px;
-  width: 24px;
+  height: 56px;
+  width: 56px;
   display: inline-block;
-  fill: #254f90;
   line-height: 0;
   position: relative;
   right: 0;
+}
+</pre>
+</code>
+
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .icon-container .icon {
+    height: 44px;
+    width: 44px;
+  }
 }
 </pre>
 </code>
