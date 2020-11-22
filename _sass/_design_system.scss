@@ -2765,23 +2765,67 @@
   }
 
   .callout-link {
-    .callout-link-content {
-      padding: 32px 24px;
+      .callout-link-content {
+          padding: 24px;
+          background: $grey-lighter;
+          align-items: normal;
+
+
+
+          a {
+              @include font-format($font-family, $font-semibold, normal);
+              color: $blue-primary;
+              
+              &:visited {
+                  color: $blue-primary;
+              }
+
+              &:after {
+                  content: "";
+                  height: 0;
+                  width: 0;
+              }
+          }
+      }
+
+      .callout-link-content-icon {
+          background: none;
+          height: 56px;
+          justify-content: normal;
+          min-width: 56px;
+          width: 56px;
+
+          .BgaIcon {
+              height: auto;
+              width: auto;
+          }
+      }
 
       .callout-link-content-detail {
-        padding: 0 0 0 16px;
-
-        a {
-          @include font-format($font-family, $font-semibold, normal);
-
-          &:after {
-            content: "";
-            height: 0;
-            width: 0;
-          }
-        }
+          padding: 8px 0 0 16px;
       }
-    }
+  }
+
+  .mobile-example .callout-link,
+  .mobile-media-query .callout-link {
+      .callout-link-content {
+          .callout-link-content-icon {
+              min-width: 44px;
+              width: 44px;
+              height: 44px;
+
+              .BgaIcon {
+                  svg {
+                      width: 44px;
+                      height: 44px;
+                  }
+              }
+          }
+
+          .callout-link-content-detail {
+              padding: 0 0 0 16px;
+          }
+      }
   }
 
   .table {
