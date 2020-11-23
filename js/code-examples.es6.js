@@ -2705,114 +2705,267 @@ const calloutLinkCss =
 `
 $(".callout-link-code .css-code").html(calloutLinkCss);
 
-//Accordian
+//Accordion
 
-//html
-const accordianHtml =
-`
-Coming soon
-`
+  //html
+  const accordionHtml = `
+<div class="accordion">
+	<div class=" accordion-group">
+		<div class="accordion-group-toggle">
+			<div tabindex="0" class="accordion-group-toggle-content">
+				<h5 class="title">Open all</h5>
+				<div class="arrow-icon">
+					<svg width="16" height="16">
+						<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="accordion-item">
+				<div class="accordion-item-tile" tabindex="0">
+					<div class="accordion-item-tile-content">
+						<h5 class="title">Accordion item 1 title</h5>
+						<button tabindex="-1" class="icon-container">
+							<div class="arrow-icon ">
+								<svg width="16" height="16">
+									<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+								</svg>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="accordion-item-content">
+					<ul>
+						<li>
+							<svg
+								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+								<circle fill="#c18100" cx="8" cy="8" r="4"/>
+							</svg>
+							<p>Accordions can contain lists.</p>
+						</li>
+						<li>
+							<svg
+								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+								<circle fill="#c18100" cx="8" cy="8" r="4"/>
+							</svg>
+							<p>Complete with links like other body copy.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="accordion-item">
+				<div class="accordion-item-tile" tabindex="0">
+					<div class="accordion-item-tile-content">
+						<h5 class="title">Accordion item 1 title</h5>
+						<button tabindex="-1" class="icon-container">
+							<div class="arrow-icon ">
+								<svg width="16" height="16">
+									<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+								</svg>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="accordion-item-content">
+					<p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+`;
 
-$(".accordian-code .html-code code pre").text(accordianHtml);
+  $(".accordion-code .html-code code pre").text(accordionHtml);
 
-//css
-const accordianCss =
-`
-<h4>Accordion - closed state</h4>
-<h5>Accordion item title</h5>
+  //css
+  const accordionCss = `
+<h5>Containers</h5>
 <code>
-   <pre>h5 {
-    color: #666666;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.accordion-group-toggle {
+  border-bottom: 1px solid #ebebeb;
+  justify-content: flex-end;
+  padding: 24px 48px 24px 24px;
+  align-items: center;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
 }
-h5:hover {
-    color: #000000;
-    box-shadow: inset 0 -2.08px 0 #666666;
+.accordion-group-toggle-content {
+  height: 32px;
+  align-items: center;
+  display: flex;
+  outline: none;
+}
+.accordion-item-tile {
+  border-bottom: 1px solid #ebebeb;
+  box-sizing: border-box;
+  transition: background-color 0.5s;
+  background-color: #ffffff;
+}
+.accordion-item-tile-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+.accordion .icon-container {
+  align-items: center;
+  background-color: #f5c550;
+  border: none;
+  border-radius: 3.125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  outline: none;
+  padding: 16px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.accordion-item-content {
+  display: none;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  max-height: 0;
+  overflow: hidden;
+  transition: height 0.8s, background-color 0.5s;
+}
+.accordion-item-banner {
+  background-color: #ffd964;
+  height: 0;
+  position: absolute;
+  transition: height 0.2s;
+  width: 100%;
+  z-index: 1;
+}
+.accordion-item-content.visible {
+  display: block;
+  background-color: #ebebeb !important;
+  padding: 0 112px 0px 32px;
+  border-bottom: solid 4px #ffd964;
+  max-height: none;
+}
+.accordion-item.open .accordion-item-tile {
+  background-color: #ebebeb !important;
+}
+.accordion-item-tile:focus,
+.accordion-item-tile:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+  outline: none;
+}
+.accordion-item.open .accordion-item-tile,
+.accordion-item.open .accordion-item-tile:hover,
+.accordion-item.open .accordion-item-tile:focus {
+  border-bottom: none !important;
+}
+.accordion-item-tile:hover,
+.accordion-item-tile:focus {
+  border-bottom: solid 4px #ffd964 !important;
+}
+.accordion-item-tile:focus .icon-container,
+.accordion-item-tile:hover .icon-container,
+.accordion-item.open .accordion-item-tile-content .icon-container {
+  background-color: #ffd964;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.125rem);
 }
 </pre>
 </code>
-<h5>Accordion item button</h5>
-<code>
-   <pre>.button {    
-    color: #000000;
-    width: 48px;
-    height: 48px;
-    background-color: #F5C550;
-    border-radius: 50px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-}
-.button:hover {
-    background-color: #FFD964;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.button:active {
-    background-color: #E1AA21;
-    box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.3);
-}
-</pre>
-</code>
-<h5>Accordion item container</h5>
-<code>
-   <pre>.item-container {
-    background-color: #FFFFFF;
-    border-bottom: 0.0625rem solid #EBEBEB;
-    padding: 32px;
-}
-.item-container:hover {
-    border-bottom: solid 4px #FFD964;
-}
-</pre>
-</code>
-<h4>Accordion - open state</h4>
-<h5>Accordion item title</h5>
-<code>
-   <pre>h5 {
-    color: #000000;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
-    box-shadow: inset 0 -2.08px 0 #666666;
-}
-</pre>
-</code>
-<h5>Accordion item button</h5>
-<code>
-   <pre>.button {    
-    color: #000000;
-    width: 48px;
-    height: 48px;
-    background-color: #F5C550;
-    border-radius: 50px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-}
-.button:hover {
-    background-color: #FFD964;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.button:active {
-    background-color: #E1AA21;
-    box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.3);
-}
-</pre>
-</code>
-<h5>Accordion item container</h5>
-<code>
-   <pre>.item-container {
-    background-color: #EBEBEB;
-    border-bottom: solid 4px #FFD964;
-    padding: 32px;
-}
-</pre>
-</code>
-<h5>Accordion item content</h5>
-<p>Accordion content is styled as standard body content.
-   Refer to the <a href="/bga-design-system/foundations/typography.html">typography guidelines</a>.
-</p>
-`
-$(".accordian-code .css-code").html(accordianCss);
 
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.accordion .title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #666;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+  box-shadow: none;
+  font-stretch: normal;
+  letter-spacing: 0;
+  line-height: 1.75;
+}
+.accordion-group-toggle-content .title {
+  font-weight: 600;
+  line-height: 2;
+  margin: 0 8px 0 0;
+  padding-bottom: 0;
+}
+.accordion-item-tile-content .title {
+  max-width: 100%;
+  margin: 0;
+}
+.accordion-group-toggle-content:hover .title {
+  box-shadow: inset 0 -0.11rem 0 #666;
+  cursor: pointer;
+  line-height: 1.38;
+}
+.accordion-item .accordion-item-tile:hover .title,
+.accordion-item .accordion-item-tile:focus .title,
+.accordion-item.open .accordion-item-tile-content .title {
+  color: #000;
+  box-shadow: inset 0 -2.08px 0 #666666;
+}
+.accordion p {
+  color: #333;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 0 32px 0;
+}
+.accordion ul {
+  padding: 0 0 0 32px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.78;
+  list-style: none;
+  padding: 0;
+}
+.accordion ul li {
+  padding: 0 0 16px 16px;
+  margin: 0;
+}
+.accordion ul li:last-of-type {
+  padding: 0 0 32px 16px;
+}
+.accordion ul li p {
+  display: inline;
+  padding-left: 16px;
+}
+</pre>
+</code>
+
+<h5>Icon</h5>
+<code>
+<pre>
+/* Icon */
+.accordion .arrow-icon {
+  line-height: 0.5;
+}
+.accordion-group-toggle-content.all-open .arrow-icon,
+.accordion-item.open .accordion-item-tile .arrow-icon {
+  transform: scaleY(-1);
+}
+.accordion-item-tile .arrow-icon svg {
+  fill: #333;
+  transition: transform 0.3s;
+}
+</pre>
+</code>
+`;
+  $(".accordion-code .css-code").html(accordionCss);
 //Table
 
 //html
