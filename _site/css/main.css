@@ -4916,6 +4916,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .callout-link .callout-link-content-detail { padding: 8px 0 0 16px; }
 
+.design-system-card .mobile-example .callout-link .callout-link-content a, .design-system-card .mobile-media-query .callout-link .callout-link-content a { font-size: 14px; }
+
 .design-system-card .mobile-example .callout-link .callout-link-content .callout-link-content-icon, .design-system-card .mobile-media-query .callout-link .callout-link-content .callout-link-content-icon { min-width: 44px; width: 44px; height: 44px; }
 
 .design-system-card .mobile-example .callout-link .callout-link-content .callout-link-content-icon .BgaIcon svg, .design-system-card .mobile-media-query .callout-link .callout-link-content .callout-link-content-icon .BgaIcon svg { width: 44px; height: 44px; }
@@ -5338,37 +5340,39 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .progress-indicator .progress, .design-system-card .mobile-example .progress-indicator .progress-bar, .design-system-card .mobile-media-query .progress-indicator .progress, .design-system-card .mobile-media-query .progress-indicator .progress-bar { height: 3px; }
 
-.design-system-card .notification.notification-information .notification-wrapper { display: flex; padding: 24px; background: #EFF4FB; border-top: 4px solid #B3C2D8; }
+.design-system-card .notification.notification-information .notification-wrapper { background: #E5EDF7; border-top: 4px solid #B3C1D7; }
 
-.design-system-card .notification.notification-information p { color: #254F90; }
+.design-system-card .notification.notification-confirmation .notification-wrapper { background: #E8F4E8; border-top: 4px solid #A6D5A6; }
 
-.design-system-card .notification.notification-information .notification-icon { background: url(../assets/Icon-alert-information.svg) no-repeat; }
+.design-system-card .notification.notification-warning .notification-wrapper { background: #FCE9E9; border-top: 4px solid #F5B5B5; }
 
-.design-system-card .notification.notification-confirmation .notification-wrapper { display: flex; padding: 24px; background: #E8F4E8; border-top: 4px solid #A6D5A6; }
+.design-system-card .notification .notification-wrapper { position: relative; display: flex; padding: 24px; }
 
-.design-system-card .notification.notification-confirmation p { color: #297E28; }
+.design-system-card .notification .notification-wrapper.with-close { padding-right: 32px; }
 
-.design-system-card .notification.notification-confirmation .notification-icon { background: url(../assets/Icon-alert-confirmtion.svg) no-repeat; }
+.design-system-card .notification .notification-icon { padding-right: 16px; height: 56px; width: 56px; min-width: 56px; }
 
-.design-system-card .notification.notification-warning .notification-wrapper { display: flex; padding: 24px; background: #FCE9E9; border-top: 4px solid #F5B5B5; }
-
-.design-system-card .notification.notification-warning p, .design-system-card .notification.notification-warning li { color: #D2201E; }
-
-.design-system-card .notification.notification-warning .notification-icon { background: url(../assets/Icon-alert-warning.svg) no-repeat; }
-
-.design-system-card .notification .notification-icon { margin-top: 4px; background-size: 40px 40px; height: 40px; min-width: 40px; width: 40px; }
-
-.design-system-card .notification .notification-content { padding: 0 16px; }
+.design-system-card .notification .notification-content { padding: 8px 0 0 16px; }
 
 .design-system-card .notification .notification-content p { padding-bottom: 16px; }
 
-.design-system-card .notification .notification-close { margin-top: 6px; background: url(../assets/BGAIcon-close.svg) no-repeat; background-size: 20px 20px; height: 20px; min-width: 20px; width: 20px; }
+.design-system-card .notification .notification-content p:last-of-type { padding-bottom: 0; }
 
-.design-system-card .mobile-example .notification .notification-wrapper, .design-system-card .mobile-media-query .notification .notification-wrapper { padding: 8px; display: block; position: relative; }
+.design-system-card .notification .notification-content.with-close { padding-right: 16px; }
 
-.design-system-card .mobile-example .notification .notification-icon, .design-system-card .mobile-media-query .notification .notification-icon { background-position: top center !important; margin-bottom: 16px; width: 100%; }
+.design-system-card .notification .notification-close { margin-top: 0px; background: url(../assets/BGAIcon-close.svg) no-repeat; background-size: 16px 16px; height: 16px; min-width: 16px; width: 16px; position: absolute; top: 16px; right: 16px; }
 
-.design-system-card .mobile-example .notification .notification-close, .design-system-card .mobile-media-query .notification .notification-close { position: absolute; top: 8px; right: 16px; }
+.design-system-card .mobile-example .notification .notification-wrapper, .design-system-card .mobile-media-query .notification .notification-wrapper { padding: 24px; }
+
+.design-system-card .mobile-example .notification .notification-icon, .design-system-card .mobile-media-query .notification .notification-icon { min-width: 44px; width: 44px; height: 44px; }
+
+.design-system-card .mobile-example .notification .notification-icon svg, .design-system-card .mobile-media-query .notification .notification-icon svg { width: 44px; height: 44px; }
+
+.design-system-card .mobile-example .notification .notification-content, .design-system-card .mobile-media-query .notification .notification-content { padding: 0 0 0 16px; }
+
+.design-system-card .mobile-example .notification .notification-content.with-close, .design-system-card .mobile-media-query .notification .notification-content.with-close { padding: 8px 16px 0 16px; }
+
+.design-system-card .mobile-example .notification .notification-content p, .design-system-card .mobile-media-query .notification .notification-content p { font-size: 14px; }
 
 .design-system-card .modal-example .modal-example-content { padding: 32px; border-radius: 0; background: #ffffff; border-top: 4px solid #4569A0; position: relative; margin: 0 auto; }
 
