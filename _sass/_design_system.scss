@@ -2807,6 +2807,9 @@
   .mobile-example .callout-link,
   .mobile-media-query .callout-link {
       .callout-link-content {
+          a {
+              font-size: 14px;
+          }
           .callout-link-content-icon {
               min-width: 44px;
               width: 44px;

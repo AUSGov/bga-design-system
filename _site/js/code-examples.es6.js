@@ -2695,6 +2695,9 @@ const calloutLinkCss =
 <pre>
 /* Media Query */
 @media (max-width: 576px) {
+  .callout-link a {
+    font-size: 14px;
+  }
   .icon-container .icon {
     height: 44px;
     width: 44px;
@@ -3644,11 +3647,11 @@ $(".information-notification-code .html-code code pre").text(informationNotifica
 //css
 const informationNotificationCss =
 `
-<h4>Desktop &amp; mobile</h4>    
+<h4>Desktop</h4>    
 <h5>Paragraph</h5>
 <code>
 <pre>p {
-    color: #254F90;
+    color: #333333;
     font-family: OpenSans;
     font-size: 16px;
     line-height: 28px;
@@ -3661,8 +3664,8 @@ const informationNotificationCss =
 <pre>.icon-information {
     color: #254F90;
     background: #FFFFFF;
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
 }
 </pre>
 </code>
@@ -3671,8 +3674,8 @@ const informationNotificationCss =
 <code>
 <pre>.icon-close {
     color: #254F90;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 </pre>
 </code>
@@ -3680,10 +3683,28 @@ const informationNotificationCss =
 <h5>Container</h5>
 <code>
 <pre>div {
-    background-color: #EFF4FB;
-    border-top: 4px solid #B3C2D8;
-    padding: 16px;
+    background-color: #E5EDF7;
+    border-top: 4px solid #B3C1D7;
+    padding: 24px;
     border-radius: 0;
+}
+</pre>
+</code>
+
+<h4>Mobile</h4>
+<h5>Paragraph</h5>
+<code>
+<pre>p {
+    font-size: 14px;
+}
+</pre>
+</code>
+
+<h5>Notification icon</h5>
+<code>
+<pre>.icon-information {
+    width: 44px;
+    height: 44px;
 }
 </pre>
 </code>
@@ -3702,11 +3723,11 @@ $(".confirmation-notification-code .html-code code pre").text(confirmationNotifi
 //css
 const confirmationNotificationCss =
 `
-<h4>Desktop &amp; mobile</h4>  
+<h4>Desktop</h4>  
 <h5>Paragraph</h5>
 <code>
 <pre>p {
-    color: #297E28;
+    color: #333333;
     font-family: OpenSans;
     font-size: 16px;
     line-height: 28px;
@@ -3717,10 +3738,9 @@ const confirmationNotificationCss =
 <h5>Confirmation icon</h5>
 <code>
 <pre>.icon-confirmation {
-    color: #254F90;
-    background: #FFFFFF;
-    width: 40px;
-    height: 40px;
+    color: #219520;
+    width: 56px;
+    height: 56px;
 }
 </pre>
 </code>
@@ -3729,8 +3749,8 @@ const confirmationNotificationCss =
 <code>
 <pre>.icon-close {
     color: #254F90;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 </pre>
 </code>
@@ -3742,6 +3762,24 @@ const confirmationNotificationCss =
     border-top: 4px solid #A6D5A6;
     padding: 16px;
     border-radius: 0;
+}
+</pre>
+</code>
+
+<h4>Mobile</h4>
+<h5>Paragraph</h5>
+<code>
+<pre>p {
+    font-size: 14px;
+}
+</pre>
+</code>
+
+<h5>Notification icon</h5>
+<code>
+<pre>.icon-information {
+    width: 44px;
+    height: 44px;
 }
 </pre>
 </code>
@@ -3760,11 +3798,11 @@ $(".warning-notification-code .html-code code pre").text(warningNotificationHtml
 //css
 const warningNotificationCss =
 `
-<h4>Desktop &amp; mobile</h4>      
+<h4>Desktop</h4>      
 <h5>Paragraph</h5>
 <code>
 <pre>p {
-    color: #D2201E;
+    color: #333333;
     font-family: OpenSans;
     font-size: 16px;
     line-height: 28px;
@@ -3775,10 +3813,10 @@ const warningNotificationCss =
 <h5>Warning icon</h5>
 <code>
 <pre>.icon-warning {
-    color: #254F90;
+    color: #E75755;
     background: #FFFFFF;
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
 }
 </pre>
 </code>
@@ -3787,8 +3825,8 @@ const warningNotificationCss =
 <code>
 <pre>.icon-close {
     color: #254F90;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 </pre>
 </code>
@@ -3800,6 +3838,24 @@ const warningNotificationCss =
     border-top: 4px solid #F5B5B5;
     padding: 16px;
     border-radius: 0;
+}
+</pre>
+</code>
+
+<h4>Mobile</h4>
+<h5>Paragraph</h5>
+<code>
+<pre>p {
+    font-size: 14px;
+}
+</pre>
+</code>
+
+<h5>Notification icon</h5>
+<code>
+<pre>.icon-information {
+    width: 44px;
+    height: 44px;
 }
 </pre>
 </code>
