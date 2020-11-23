@@ -2769,9 +2769,7 @@
           padding: 24px;
           background: $grey-lighter;
           align-items: normal;
-
-
-
+          
           a {
               @include font-format($font-family, $font-semibold, normal);
               color: $blue-primary;
@@ -2821,7 +2819,6 @@
                   }
               }
           }
-
           .callout-link-content-detail {
               padding: 0 0 0 16px;
           }
@@ -4210,92 +4207,92 @@
   .notification {
     &.notification-information {
       .notification-wrapper {
-        display: flex;
-        padding: 24px;
-        background: $blue-primary-lightest;
-        border-top: 4px solid $blue-primary-light;
-      }
-
-      p {
-        color: $blue-primary;
-      }
-      .notification-icon {
-        background: url(../assets/Icon-alert-information.svg) no-repeat;
+        background: $blue-lightest;
+        border-top: 4px solid #B3C1D7;
       }
     }
-
     &.notification-confirmation {
       .notification-wrapper {
-        display: flex;
-        padding: 24px;
         background: $green-positive-lightest;
         border-top: 4px solid $green-positive-light;
       }
-
-      p {
-        color: $green-positive-dark;
-      }
-      .notification-icon {
-        background: url(../assets/Icon-alert-confirmtion.svg) no-repeat;
-      }
     }
-
     &.notification-warning {
       .notification-wrapper {
-        display: flex;
-        padding: 24px;
         background: $red-negative-lightest;
         border-top: 4px solid $red-negative-light;
       }
-
-      p,
-      li {
-        color: $red-negative-dark;
-      }
-      .notification-icon {
-        background: url(../assets/Icon-alert-warning.svg) no-repeat;
-      }
     }
 
+    .notification-wrapper {
+        position: relative;
+        display: flex;
+        padding: 24px;
+        
+        &.with-close {
+            padding-right:32px
+        }
+    }  
     .notification-icon {
-      margin-top: 4px;
-      background-size: 40px 40px;
-      height: 40px;
-      min-width: 40px;
-      width: 40px;
+        padding-right: 16px;
+        height: 56px;
+        width: 56px;
+        min-width: 56px;
     }
     .notification-content {
-      padding: 0 16px;
-      p {
-        padding-bottom: 16px;
-      }
+        padding: 8px 0 0 16px;
+
+        p {
+            padding-bottom: 16px;
+
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+        &.with-close {
+            padding-right: 16px;
+        }
     }
+    
     .notification-close {
-      margin-top: 6px;
-      background: url(../assets/BGAIcon-close.svg) no-repeat;
-      background-size: 20px 20px;
-      height: 20px;
-      min-width: 20px;
-      width: 20px;
+        margin-top: 0px;
+        background: url(../assets/BGAIcon-close.svg) no-repeat;
+        background-size: 16px 16px;
+        height: 16px;
+        min-width: 16px;
+        width: 16px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
     }
   }
   .mobile-example .notification,
   .mobile-media-query .notification {
-    .notification-wrapper {
-      padding: 8px;
-      display: block;
-      position: relative;
-    }
-    .notification-icon {
-      background-position: top center !important;
-      margin-bottom: 16px;
-      width: 100%;
-    }
-    .notification-close {
-      position: absolute;
-      top: 8px;
-      right: 16px;
-    }
+      .notification-wrapper {
+          padding: 24px;
+      }
+
+      .notification-icon {
+          min-width: 44px;
+          width: 44px;
+          height: 44px;
+
+          svg {
+              width: 44px;
+              height: 44px;
+          }
+      }
+      .notification-content {
+          padding: 0 0 0 16px;
+          
+          &.with-close {
+            padding: 8px 16px 0 16px;
+          }
+          
+          p {
+              font-size: 14px;
+          }
+      }
   }
 
   .modal-example {
