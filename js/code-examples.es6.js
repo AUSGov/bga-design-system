@@ -4075,7 +4075,14 @@ $(".advisor-profile-code .css-code").html(advisorProfileCss);
 //html
 const progressBarUnNamedStepsHtml =
 `
-Coming soon
+<div class="progress-indicator">
+   <div class="progress-percentage">
+      <p>25% complete</p>
+   </div>
+   <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+   </div>
+</div>
 `
 
 $(".progress-bar-unnamed-steps-code .html-code code pre").text(progressBarUnNamedStepsHtml);
@@ -4083,61 +4090,65 @@ $(".progress-bar-unnamed-steps-code .html-code code pre").text(progressBarUnName
 //css
 const progressBarUnNamedStepsCss =
 `
-<h4>Desktop</h4>    
-<h5>Progress percentage text</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {   
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: normal;
-    margin-bottom: 16px;
+<pre>
+/* Containers */
+.progress-percentage {
+  margin-bottom: 16px;
+}
+.progress {
+  display: flex;
+  overflow: hidden;
+  font-size: 12px;
+  border-radius: 4px;
+  height: 4px;
+  background: #d8d8d8;
+}
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  height: 4px;
+  background: #4569a0;
+  border-radius: 4px;
+  transition: width 0.6s ease;
 }
 </pre>
 </code>
-    
-<h5>Progress bar</h5>
+
+<h5>Text</h5>
 <code>
-<pre>.progress-bar {
-    height: 4px;
-   border-radius: 4px;
-   color: #D8D8D8;
+<pre>
+/* Text */
+.progress-percentage p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #666666;
+  display: inline;
 }
 </pre>
 </code>
-    
-<h5>Progress bar completed</h5>
+
+<h5>Media Query</h5>
 <code>
-<pre>.progress-completed {
-    height: 4px;
-    border-radius: 4px;
-    color: #4569A0;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>    
-<h5>Progress percentage text</h5>
-<code>
-<pre>p {   
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .progress,
+  .progress-bar {
+    height: 3px;
+  }
+  .progress-percentage p {
     font-size: 12px;
     margin-bottom: 8px;
-}
-</pre>
-</code>
-    
-<h5>Progress bar</h5>
-<code>
-<pre>.progress-bar {
-    height: 3px;
-}
-</pre>
-</code>
-    
-<h5>Progress bar completed</h5>
-<code>
-<pre>.progress-completed {
-    height: 3px;
+  }
 }
 </pre>
 </code>
@@ -4148,7 +4159,15 @@ $(".progress-bar-unnamed-steps-code .css-code").html(progressBarUnNamedStepsCss)
 //html
 const progressBarNamedStepsHtml =
 `
-Coming soon
+<div class="progress-indicator">
+   <div class="progress-percentage">
+      <h4>Step name:</h4>
+      <p>25% complete</p>
+   </div>
+   <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+   </div>
+</div>
 `
 
 $(".progress-bar-named-steps-code .html-code code pre").text(progressBarNamedStepsHtml);
@@ -4156,64 +4175,71 @@ $(".progress-bar-named-steps-code .html-code code pre").text(progressBarNamedSte
 //css
 const progressBarNamedStepsCss =
 `
-<h4>Desktop</h4>    
-<h5>Progress percentage text</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {   
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: normal;
-    margin-bottom: 16px;
+<pre>
+/* Containers */
+.progress-percentage {
+  margin-bottom: 16px;
 }
-strong {
-    font-family: OpenSans-Semibold;
+.progress {
+  display: flex;
+  overflow: hidden;
+  font-size: 12px;
+  border-radius: 4px;
+  height: 4px;
+  background: #d8d8d8;
 }
-</pre>
-</code>
-    
-<h5>Progress bar</h5>
-<code>
-<pre>.progress-bar {
-    height: 4px;
-   border-radius: 4px;
-   color: #D8D8D8;
-}
-</pre>
-</code>
-    
-<h5>Progress bar completed</h5>
-<code>
-<pre>.progress-completed {
-    height: 4px;
-    border-radius: 4px;
-    color: #4569A0;
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  height: 4px;
+  background: #4569a0;
+  border-radius: 4px;
+  transition: width 0.6s ease;
 }
 </pre>
 </code>
-    
-<h4>Mobile</h4>    
-<h5>Progress percentage text</h5>
+
+<h5>Text</h5>
 <code>
-<pre>p {   
+<pre>
+/* Text */
+.progress-percentage h4,
+.progress-percentage p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #666666;
+  display: inline;
+}
+.progress-percentage h4 {
+  font-weight: bolder;
+  padding-right: 5px;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .progress,
+  .progress-bar {
+    height: 3px;
+  }
+  .progress-percentage h4,
+  .progress-percentage p {
     font-size: 12px;
     margin-bottom: 8px;
-}
-</pre>
-</code>
-    
-<h5>Progress bar</h5>
-<code>
-<pre>.progress-bar {
-    height: 3px;
-}
-</pre>
-</code>
-    
-<h5>Progress bar completed</h5>
-<code>
-<pre>.progress-completed {
-    height: 3px;
+  }
 }
 </pre>
 </code>
