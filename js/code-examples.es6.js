@@ -2784,7 +2784,8 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
   $(".accordion-code .html-code code pre").text(accordionHtml);
 
   //css
-  const accordionCss = `
+  const accordionCss = 
+`
 <h5>Containers</h5>
 <code>
 <pre>
@@ -2974,7 +2975,70 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
 //html
 const tableHtml =
 `
-Coming soon
+<table class="table">
+	<thead>
+		<tr>
+			<th>Applicant Organisation</th>
+			<th>Project Name</th>
+			<th>Project Description</th>
+			<th>Project Location</th>
+			<th>Amount</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-title="Applicant Organisation">District Council Of Endor
+                    
+				<div class="arrow-icon">
+					<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+						<path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+					</svg>
+				</div>
+			</td>
+			<td data-title="Project Name">Endor Tourism Strategy</td>
+			<td data-title="Project Description">The project will deliver a strategy for tourism in Endor, benefiting all the Ewoks.</td>
+			<td data-title="Project Location">Endor moon</td>
+			<td data-title="Amount">$20,000</td>
+		</tr>
+		<tr>
+			<td data-title="Applicant Organisation">Great Southern Land Centre
+                    
+				<div class="arrow-icon">
+					<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+						<path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+					</svg>
+				</div>
+			</td>
+			<td data-title="Project Name">Great Southern Land Master Plan</td>
+			<td data-title="Project Description">The project will deliver a Master Plan for the Great Southern Land over a ten year period.</td>
+			<td data-title="Project Location">Albany</td>
+			<td data-title="Amount">$125,000</td>
+		</tr>
+		<tr>
+			<td data-title="Applicant Organisation">Mephis City Council
+                    
+				<div class="arrow-icon">
+					<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+						<path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+					</svg>
+				</div>
+			</td>
+			<td data-title="Project Name">Memphic City Economic Development Strategy</td>
+			<td data-title="Project Description">The project will develop a suite planning documents towards economic growth of Memphis. </td>
+			<td data-title="Project Location">Gracelands</td>
+			<td data-title="Amount">$50,000</td>
+		</tr>
+	</tbody>
+</table> 
 `
 
 $(".table-code .html-code code pre").text(tableHtml);
@@ -2982,102 +3046,127 @@ $(".table-code .html-code code pre").text(tableHtml);
 //css
 const tableCss =
 `
-<h4>Desktop</h4>
 <h5>Table</h5>
 <code>
-<pre>table {
-    background-color: transparent;
-    border-top: 4px solid #DDE2E6;
+<pre>
+/* Table */
+.table {
+  border-collapse: collapse;
+  border-top: 4px solid #d8d8d8;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  overflow-y: hidden;
+  margin-bottom: 32px;
+  overflow-x: auto;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+.table th {
+  font-weight: 600;
+  padding: 16px;
+  border-bottom: 2px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+  vertical-align: bottom;
+  width: auto;
+  text-align: left;
+  color: #212529;
+}
+.table tr {
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.table tbody tr {
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5;
+}
+.table td {
+  border-top: 1px solid #dee2e6;
+  padding: 0.75rem;
+  vertical-align: top;
+  font-weight: 400;
+  padding: 16px;
 }
 </pre>
 </code>
-    
-<h5>Header cells</h5>
+     
+<h5>Icon</h5>
 <code>
-<pre>th {
-    color: #333333;
-    font-family: OpenSans-Semibold;
+<pre>
+/* Icon */
+.arrow-icon {
+  float: right;
+  padding: 0;
+  display: none;
+}
+.flip-icon {
+  transform: scaleY(-1);
+}
+</pre>
+</code>
+
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    display: table;
+    width: 100%;
+    border-bottom: solid 1px #d8d8d8;
+  }
+  .table td {
+    display: none;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+    border-top: 0px;
+    padding-left: 45%;
     font-size: 14px;
-    line-height: 24px;
-    background-color: #F5F5F5;
-    border-bottom: 2px solid #DDE2E6;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h5>Body cells</h5>
-<code>
-<pre>td {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 24px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #DDE2E6;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<h5>Table</h5>
-<code>
-<pre>table {
-    background-color: transparent;
-    border-top: 4px solid #DDE2E6;
-}
-</pre>
-</code>
-    
-<h5>Header cells - closed row</h5>
-<code>
-<pre>th {
-    color: #33333;
-    font-family: OpenSans-Semibold;
-    font-size: 14px;
-    line-height: 22px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #DDE2E6;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h5>Header cells - open row</h5>
-<code>
-<pre>th {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 14px;
-    line-height: 22px;
-    background-color: #EBEBEB;
-    border-bottom: none;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h5>Body cells - open row</h5>
-<code>
-<pre>th {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 22px;
-    background-color: #EBEBEB;
-    border-bottom: none;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h5>Chevron icon</h5>
-<code>
-<pre>.icon {
-    color: #333333;
-    width: 16px;
-    height: 10px;
+    line-height: 1.4rem;
+    background: #ebebeb;
+  }
+  .table td:first-of-type {
+    background: #ffffff;
+    background-position: right 16px center;
+    background-size: 16px 10px;
+    font-weight: 600;
+    padding-left: 16px;
+    padding-right: 15px;
+    display: block;
+    cursor: pointer;
+  }
+  .table td.showGroup {
+    display: block;
+    transition: all 0.2s;
+    background: #ebebeb;
+  }
+  .table td::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-align: left;
+    content: attr(data-title);
+    display: block;
+  }
+  .table td:first-of-type::before {
+    content: "";
+  }
+  .table .groupParent td:first-of-type {
+    background-position: right 16px center;
+    background-size: 16px 10px;
+  }
+  .arrow-icon {
+    display: block;
+  }
 }
 </pre>
 </code>
@@ -3298,7 +3387,79 @@ $(".media-player-code .css-code").html(mediaPlayerCss);
 //html
 const downloadListHtml =
 `
-Coming soon
+<div class="download-list">
+	<div class="download-group">
+		<h4 class="download-group-heading">Download list item</h4>
+		<div class="icon-row">
+			<a href="#" class="download-item">
+				<div class="download-icon" style="fill:#cc3c1c">
+					<svg viewBox="0 0 16 16">
+						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+					</svg>
+				</div>
+				<span style="color:#cc3c1c">pdf ·0.70 MB </span>
+			</a>
+			<a href="#"  class="download-item">
+				<div class="download-icon" style="fill:#2f70bf">
+					<svg viewBox="0 0 16 16">
+						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+					</svg>
+				</div>
+				<span style="color:#2f70bf">docx ·0.19 MB </span>
+			</a>
+		</div>
+	</div>
+	<div class="download-group">
+		<h4 class="download-group-heading">Another list item</h4>
+		<div class="icon-row">
+			<a href="#" class="download-item">
+				<div class="download-icon" style="fill:#218080">
+					<svg viewBox="0 0 16 16">
+						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+					</svg>
+				</div>
+				<span style="color:#218080">xls ·0.70 MB </span>
+			</a>
+		</div>
+	</div>
+	<div class="download-group">
+		<h4 class="download-group-heading">And finally another list item</h4>
+		<div class="icon-row">
+			<a href="#" class="download-item">
+				<div class="download-icon" style="fill:#A42079">
+					<svg viewBox="0 0 16 16">
+						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+					</svg>
+				</div>
+				<span style="color:#A42079">ppt ·0.70 MB </span>
+			</a>
+			<a href="#" class="download-item">
+				<div class="download-icon" style="fill:#244E90">
+					<svg viewBox="0 0 16 16">
+						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+					</svg>
+				</div>
+				<span style="color:#244E90">jpeg ·0.19 MB </span>
+			</a>
+			<a href="#" class="download-item">
+				<div class="download-icon" style="fill:#5A43D0">
+					<svg viewBox="0 0 16 16">
+						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+					</svg>
+				</div>
+				<span style="color:#5A43D0">eps ·0.19 MB </span>
+			</a>
+			<a href="#" class="download-item">
+				<div class="download-icon" style="fill:#2f71bf">
+					<svg viewBox="0 0 16 16">
+						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+					</svg>
+				</div>
+				<span style="color:#2f71bf">docx ·0.19 MB </span>
+			</a>
+		</div>
+	</div>
+</div>
 `
 
 $(".download-list-code .html-code code pre").text(downloadListHtml);
@@ -3306,59 +3467,81 @@ $(".download-list-code .html-code code pre").text(downloadListHtml);
 //css
 const downloadListCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Download title</h5>
+<h5>Containers</h5>
 <code>
-<pre>h4 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 24px;
+<pre>
+/* Contianers */
+.download-list .download-group {
+  padding-bottom: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+.download-list .download-item {
+  align-items: center;
+  display: flex;
+  padding-left: 0;
+  margin-right: 16px;
+  position: relative;
+  text-decoration: none;
+  background-color: transparent;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+}
+.download-list .icon-row {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
 }
 </pre>
 </code>
-<h4>Link text</h4>
+
+<h5>Text</h5>
 <code>
-<pre>a {
-    font-family: OpenSans-Semibold;
-    font-size: 12px;
-    letter-spacing: 0.2px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
+<pre>
+/* Text */
+.download-list .download-group-heading {
+  color: #333;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.33;
+  margin: 0 0 8px 0;
 }
-a:hover {
-    text-decoration: underline;
+.download-list span {
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none !important;
+  font-size: 12px;
+  line-height: 2;
+  margin-left: 8px;
+  text-transform: uppercase;
 }
 </pre>
 </code>
-<h4>Link icon</h4>
+
+<h5>Icon</h5>
 <code>
-<pre>.icon {
-    height: 16px;
-    width: 16px;
+<pre>
+/* Icon */
+.download-list .download-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  fill: #254f90;
+  line-height: 0;
+  right: 0;
 }
 </pre>
 </code>
-<h4>Link colours</h4>
+
+<h5>Media Query</h5>
 <code>
-<pre>pdf {
-    color: #CC3C1C;
-}
-docx {
-    color: #2F70BF;
-}
-xls {
-    color: #218080;
-}
-ppt {
-    color: #A42079;
-}
-jpeg {
-    color: #244E90;
-}
-eps {
-    color: #5A43D0;
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  .download-list .download-item {
+    margin-bottom: 8px;
+  }
 }
 </pre>
 </code>
@@ -3370,7 +3553,32 @@ $(".download-list-code .css-code").html(downloadListCss);
 //html
 const openGrantStatusIndicatorHtml =
 `
-Coming soon
+<div class="grant-status-indicator">
+	<div class="status-wrapper">
+		<div class="icon-wrapper icon-open">
+			<svg class="icon" viewBox="0 0 16 16">
+				<path fill="#219520" d="M0 9.937l1.901-1.935 3.354 3.362 8.86-8.855 1.918 1.905L5.255 15.192z"></path>
+			</svg>
+		</div>
+		<span class="status">Open</span>
+	</div>
+	<div>
+		<div class="description">
+			<div class="field">
+				<h5>Open date: </h5>
+				<p>1st January 2019</p>
+			</div>
+			<div class="field">
+				<h5>Close date: </h5>
+				<p>1st January 2022.</p>
+			</div>
+			<div class="field">
+				<h5>Application detail: </h5>
+				<p>You can submit an expression of interest for Commercialisation Guidance at any time. After receiving guidance, you may be eligible to apply for a Grant. </p>
+			</div>
+		</div>
+	</div>
+</div>
 `
 
 $(".open-grant-status-indicator-code .html-code code pre").text(openGrantStatusIndicatorHtml);
@@ -3378,45 +3586,91 @@ $(".open-grant-status-indicator-code .html-code code pre").text(openGrantStatusI
 //css
 const openGrantStatusIndicatorCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Grant status icon and text</h5>
+<h5>Containers</h5>
 <code>
-<pre>p.status {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 32px;
+<pre>
+/* Containers */
+.grant-status-indicator {
+  background: #ffffff;
+  padding: 16px;
+  align-items: center;
+}
+.grant-status-indicator .status-wrapper {
+  align-items: center;
+  display: flex;
+  margin-bottom: 24px;
+}
+.grant-status-indicator .field {
+  display: block;
+  padding: 12px 0;
 }
 </pre>
 </code>
-    
-<h5>Open icon</h5>
+
+<h5>Text</h5>
 <code>
-<pre>.icon-open {
-    height: 24px;
-    width: 24px;
-    color: #219520;
+<pre>
+/* Text */
+.grant-status-indicator .status {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1.78;
+  padding-left: 20px;
 }
-.icon-container {
-    background: #E8F4E8;
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
+.grant-status-indicator .field h5,
+.grant-status-indicator .field p {
+  display: inline;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 1.78;
+  color: #333;
+}
+.grant-status-indicator .field h5 {
+  font-weight: 700;
+}
+.grant-status-indicator .field p {
+  font-weight: 400;
 }
 </pre>
 </code>
-    
-<h5>Grant information</h5>    
+
+<h5>Icon</h5>
 <code>
-<pre>p.details {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Icon */
+.grant-status-indicator .icon-wrapper {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  min-width: 64px;
+  width: 64px;
 }
-p.details strong {
-    font-family: OpenSans-Semibold;
+.grant-status-indicator .icon {
+  width: 24px;
+  display: inline-block;
+  fill: #254f90;
+  line-height: 0;
+  position: relative;
+  right: 0;
 }
+.grant-status-indicator .icon-open {
+  background-color: #e8f4e8;
+}
+.grant-status-indicator .icon-open svg path {
+  fill: #219520 !important;
+}
+
 </pre>
 </code>
 `
@@ -3426,7 +3680,24 @@ $(".open-grant-status-indicator-code .css-code").html(openGrantStatusIndicatorCs
 //html
 const closedGrantStatusIndicatorHtml =
 `
-Coming soon
+<div class="grant-status-indicator">
+	<div class="status-wrapper">
+		<div class="icon-wrapper icon-closed">
+			<svg class="icon" viewBox="0 0 24 23">
+				<path fill="#E75755" fill-rule="evenodd" d="M12 0C5.37 0 0 5.146 0 11.5S5.37 23 12 23s12-5.146 12-11.5S18.63 0 12 0zm0 20.7c-5.304 0-9.6-4.117-9.6-9.2 0-2.127.762-4.077 2.022-5.635L17.88 18.762A9.832 9.832 0 0 1 12 20.7zm7.578-3.565L6.12 4.238A9.832 9.832 0 0 1 12 2.3c5.304 0 9.6 4.117 9.6 9.2 0 2.127-.762 4.077-2.022 5.635z"></path>
+			</svg>
+		</div>
+		<span class="status">Closed</span>
+	</div>
+	<div>
+		<div class="description">
+			<div class="field">
+				<h5>Application detail: </h5>
+				<p>Application detail: Applications closed June 2019 and will reopen in January 2022.</p>
+			</div>
+		</div>
+	</div>
+</div>
 `
 
 $(".closed-grant-status-indicator-code .html-code code pre").text(closedGrantStatusIndicatorHtml);
@@ -3434,37 +3705,89 @@ $(".closed-grant-status-indicator-code .html-code code pre").text(closedGrantSta
 //css
 const closedGrantStatusIndicatorCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Grant status icon and text</h5>
+<h5>Containers</h5>
 <code>
-<pre>p.status {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 32px;
+<pre>
+/* Containers */
+.grant-status-indicator {
+  background: #ffffff;
+  padding: 16px;
+  align-items: center;
+}
+.grant-status-indicator .status-wrapper {
+  align-items: center;
+  display: flex;
+  margin-bottom: 24px;
+}
+.grant-status-indicator .field {
+  display: block;
+  padding: 12px 0;
 }
 </pre>
 </code>
-    
+
+<h5>Text</h5>
 <code>
-<pre>.icon-closed {
-    color: #E75755;
-    height: 24px;
-    width: 24px;
+<pre>
+/* Text */
+.grant-status-indicator .status {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1.78;
+  padding-left: 20px;
+}
+.grant-status-indicator .field h5,
+.grant-status-indicator .field p {
+  display: inline;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 1.78;
+  color: #333;
+}
+.grant-status-indicator .field h5 {
+  font-weight: 700;
+}
+.grant-status-indicator .field p {
+  font-weight: 400;
 }
 </pre>
 </code>
-    
-<h5>Grant information</h5>    
+
+<h5>Icon</h5>
 <code>
-<pre>p.details {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Icon */
+.grant-status-indicator .icon-wrapper {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  min-width: 64px;
+  width: 64px;
 }
-p.details strong {
-    font-family: OpenSans-Semibold;
+.grant-status-indicator .icon {
+  width: 24px;
+  display: inline-block;
+  fill: #254f90;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+.grant-status-indicator .icon-closed {
+  background-color: #ffffff;
+}
+.grant-status-indicator .icon-closed svg path {
+  fill: #e75755 !important;
 }
 </pre>
 </code>
@@ -3476,7 +3799,21 @@ $(".closed-grant-status-indicator-code .css-code").html(closedGrantStatusIndicat
 //html
 const pullQuotesHtml =
 `
-Coming soon
+<div class="pull-quote">
+	<svg width="40" height="24">
+		<path
+            d="M8.392 24C2.797 24 0 21.215 0 15.646 0 10.076 3.96 4.862 11.88 0l5.564 2.03-5.846 7.478.188.461c3.332.677 4.998 2.923 4.998 6.739 0 4.861-2.798 7.292-8.392 7.292zm22.556 0c-5.594 0-8.392-2.785-8.392-8.354 0-5.57 3.96-10.784 11.88-15.646L40 2.03l-5.846 7.478.189.461c3.331.677 4.997 2.923 4.997 6.739 0 4.861-2.797 7.292-8.392 7.292z"
+            fill="#F3DEA7"
+            fill-rule="evenodd"
+        ></path>
+	</svg>
+	<p class="quote">Block quotes are centered in the middle of the page like this.</p>
+	<div class="quote-source">
+		<hr />
+		<em>Chloe Richardson, Product Owner, business.gov.au</em>
+	</div>
+	<hr class="pull-quote-hr hr-bottom" />
+</div>
 `
 
 $(".pull-quotes-code .html-code code pre").text(pullQuotesHtml);
@@ -3484,60 +3821,73 @@ $(".pull-quotes-code .html-code code pre").text(pullQuotesHtml);
 //css
 const pullQuotesCss =
 `
-<h4>Desktop</h4>
-<h5>Quotation mark</h5>
+<h5>Containers</h5>
 <code>
-<pre>.quotation-mark {    
-    color: #F3DEA7;
-    width: 40px;
-    height: 24px;
-    margin-bottom: 20px;
+<pre>
+/* Containers */
+.pull-quote {
+  text-align: center;
+}
+.pull-quote .quote-source {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #666;
+  padding-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
 }
 </pre>
 </code>
-<h5>Quote</h5>
+
+<h5>Text</h5>
 <code>
-<pre>p.quote {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 21px;
-    letter-spacing: 0.2px;
-    text-align: center;
-    line-height: 40px;
+<pre>
+/* Text */
+.pull-quote p.quote {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 40px;
 }
 </pre>
 </code>
-<h5>Source</h5>
+
+<h5>Quotation mark svg</h5>
 <code>
-<pre>p.source {
-    color: #666666;
-    font-family: OpenSans-Italic;
-    font-size: 16px;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 24px;
+<pre>
+/* Dividers */
+.pull-quote .quote-source hr {
+  border-top: 2px solid #666666;
+  border-top-width: 2px;
+  display: inline-block;
+  height: 2px;
+  line-height: 24px;
+  margin: 0 2px 0 0;
+  opacity: 0.6;
+  vertical-align: middle;
+  width: 25px;
+  padding: 0;
+}
+.pull-quote hr {
+  border: 0;
+  text-align: left;
+  box-sizing: content-box;
+  overflow: visible;
+}
+.pull-quote .hr-bottom {
+  background-color: #edca72;
+  border-top: 0;
+  height: 2px;
+  margin: 0 auto;
+  width: 42px;
+  margin-top: 24px;
+  padding: 0;
 }
 </pre>
 </code>
-<h5>Divider</h5>
-<code>
-<pre>hr {
-    color: #EDCA72;
-    height: 2px;
-    width: 42px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<h5>Quote</h5>
-<code>
-<pre>p.quote {
-    font-size: 18px;
-    line-height: 24px;
-}
-</pre>
-</code>   
 `
 $(".pull-quotes-code .css-code").html(pullQuotesCss);
 
@@ -3546,7 +3896,38 @@ $(".pull-quotes-code .css-code").html(pullQuotesCss);
 //html
 const advisorProfileHtml =
 `
-Coming soon
+<div class="advisor-profile">
+   <div class="advisor-details">
+      <div class="advisor-details-information">
+         <div class="field advisor-name">
+            <h2>Karen Green</h2>
+         </div>
+         <div class="field">
+            <h4>Partner:</h4>
+            <p>XYZ Private</p>
+         </div>
+         <div class="field">
+            <h4>Location:</h4>
+            <p>Hobart</p>
+         </div>
+         <div class="field">
+            <h4>Email:</h4>
+            <a href="#">karen@xyz.com.au</a>
+         </div>
+         <div class="field">
+            <h4>Phone:</h4>
+            <a href="#">0400 000 000</a>
+         </div>
+      </div>
+      <div class="advisor-details-image">
+         <img src="image-advisor.jpg" alt="image_advisor" class="responsive-image">
+      </div>
+   </div>
+   <div class="advisor-description">
+      <p>A few short paragraphs outlining the background of the advisor.</p>
+      <p>Karen has a Master of Business and Technology (MBA Technology) degree. She sits on the XYZ Board of the Centre for Excellence at the Victorian Business School.</p>
+   </div>
+</div>
 `
 
 $(".advisor-profile-code .html-code code pre").text(advisorProfileHtml);
@@ -3554,85 +3935,138 @@ $(".advisor-profile-code .html-code code pre").text(advisorProfileHtml);
 //css
 const advisorProfileCss =
 `
-<h4>Desktop</h4>
-<h5>Advisor name</h5>
+<h5>Containers</h5>
 <code>
-<pre>h4 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 24px;
-    line-height: 38px;
+<pre>
+/* Containers */
+.advisor-profile {
+  padding: 32px;
+  border-top: 4px solid #d8d8d8;
+  background: #ebebeb;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+.advisor-details {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 32px;
+}
+.advisor-details-information {
+  max-width: 66.66667%;
+  padding-right: 16px;
+}
+.advisor-profile .field {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0 0 12px 0;
+}
+.advisor-details-image {
+  max-width: 33.33333%;
 }
 </pre>
 </code>
-    
-<h5>Advisor details</h5>
+
+<h5>Text</h5>
 <code>
-<pre>p.detail-type {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Text */
+.advisor-profile .field h2 {
+  font-size: 24px;
+  padding: 0 0 16px 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
-p.detail-information {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+.advisor-details .field h4,
+.advisor-details .field p,
+.advisor-details .field a,
+.advisor-description p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.0125rem;
+  text-align: left;
+  color: #333;
+}
+.advisor-profile .field h4 {
+  font-weight: 600;
+  margin: 0;
+  min-width: 130px;
+}
+.advisor-profile .field p,
+.advisor-profile .field a {
+  margin: 0;
+  padding: 0;
+}
+.advisor-profile .field a {
+  background-color: transparent;
+  border: 0.0625rem dotted transparent;
+  box-shadow: inset 0 -3.2px 0 #748fb8;
+  color: #254f90;
+  font-weight: 700;
+  text-decoration: none;
+  transition: box-shadow 0.25s;
+  display: table; /* ie fix */
+  width: fit-content;
+}
+.advisor-profile .field a:hover {
+  box-shadow: inset 0 -20px 0 #def;
+  text-decoration: none;
+}
+.advisor-description p {
+  padding: 0 0 32px 0;
+  margin: 0;
+  line-height: 32px;
+}
+.advisor-description p:last-of-type {
+  padding: 0 0 16px 0;
+  margin: 0;
 }
 </pre>
 </code>
-    
-<h5>Paragraph</h5>
+
+<h5>Media Query</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
-}
-</pre>
-</code>       
-    
-<h5>Container</h5>
-<code>
-<pre>.container {
-    background-color: #EBEBEB;
-    border-top: 4px solid #D8D8D8;
-    padding: 32px;
-}
-</pre>
-</code>
-<h4>Mobile</h4>
-<h5>Advisor name</h5>
-<code>
-<pre>h4 {
-    font-size: 18px;
-    line-height: 28px;
-}
-</pre>
-</code>
-    
-<h5>Advisor details</h5>
-<code>
-<pre>p.detail-type {
-    font-size: 16px;
-    line-height: 24px;
-}
-p.detail-information {
-    font-size: 16px;
-    line-height: 24px;
-}
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>.container {
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .advisor-profile {
     padding: 24px 16px;
+  }
+  .advisor-details {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 32px;
+  }
+  .advisor-details-image {
+    max-width: 100%;
+    align-self: center;
+  }
+  .advisor-details-information {
+    max-width: 100%;
+  }
+  .advisor-profile .field.advisor-name {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .advisor-profile .field {
+    flex-direction: column;
+  }
+  .advisor-profile .field h2 {
+    font-size: 18px;
+    padding: 12px 0 16px 0;
+  }
 }
 </pre>
-</code> 
+</code>
 `
 $(".advisor-profile-code .css-code").html(advisorProfileCss);
 
