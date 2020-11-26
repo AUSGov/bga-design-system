@@ -4480,7 +4480,17 @@ $(".warning-notification-code .css-code").html(warningNotificationCss);
 //html
 const modalHtml =
 `
-Coming soon
+<div class="modal-dialog">
+   <div class="close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="21.119" height="21.119" viewBox="0 0 21.119 21.119">
+         <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+      </svg>
+   </div>
+   <div class="modal-dialog-content">
+      <h3 class="title">Modal title</h3>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dictum ante, eu viverra elit. Integer sit amet turpis nec lacus vestibulum faucibus.</p>
+   </div>
+</div>
 `
 
 $(".modal-code .html-code code pre").text(modalHtml);
@@ -4488,47 +4498,67 @@ $(".modal-code .html-code code pre").text(modalHtml);
 //css
 const modalCss =
 `
-<h4>Desktop &amp; mobile</h4>
-    
-<h5>Title</h5>
+<h5>Containers</h5>
 <code>
-<pre>h4 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.modal-dialog {
+  border-top: 4px solid #254f90;
+  background: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  color: #333333;
+}
+.modal-dialog-content {
+  padding: 0 32px 32px 32px;
 }
 </pre>
 </code>
-    
-<h5>Paragraph</h5>
+
+<h5>Text</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Text */
+.modal-dialog .title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  font-stretch: normal;
+  letter-spacing: 0;
+  color: #333;
+  padding: 16px 0;
+  margin: 0;
+}
+.modal-dialog .description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+  padding: 0 0 32px 0;
+  color: #333;
+}
+.modal-dialog p:last-of-type {
+  padding-bottom: 0;
 }
 </pre>
 </code>
-    
-<h5>Close icon</h5>
+
+<h5>Icon</h5>
 <code>
-<pre>.icon-close {
-    color: #254F90;
-    width: 20px;
-    height: 20px;
+<pre>
+/* Icon */
+.close-icon {
+  display: flex;
+  justify-content: flex-end;
+  height: 32px;
+  padding: 20px;
+  box-sizing: border-box;
 }
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>div {
-    background-color: #FFFFFF;
-    border-top: 4px solid #254F90;
-    padding: 32px;
-    border-radius: 0;
+.close-icon svg:hover {
+  cursor: pointer;
 }
 </pre>
 </code>
