@@ -4570,7 +4570,26 @@ $(".modal-code .css-code").html(modalCss);
 //html
 const utilitiesHtml =
 `
-Coming soon
+<div class="utilities">
+   <div class="utility-item">
+      <svg width="16" height="16">
+         <path fill="#4569A0" fill-rule="evenodd" d="M13.6 11.2a2.39 2.39 0 0 0-1.648.658L6.234 9.014a3.194 3.194 0 0 0 0-2.028l5.718-2.844A2.4 2.4 0 1 0 11.2 2.4c0 .108.01.214.024.318l-5.87 2.92A3.184 3.184 0 0 0 3.2 4.8a3.2 3.2 0 1 0 0 6.4c.83 0 1.584-.319 2.153-.838l5.87 2.92A2.4 2.4 0 1 0 13.6 11.2"></path>
+      </svg>
+      <button class="utility-button">Share</button>
+   </div>
+   <div class="utility-item">
+      <svg viewBox="0 0 16 16">
+         <path fill="#4569A0" fill-rule="evenodd" d="M15.333 1.5H.667c-.4 0-.667.26-.667.65v11.7c0 .39.267.65.667.65h14.666c.4 0 .667-.26.667-.65V2.15c0-.39-.267-.65-.667-.65zM13.8 4.7L8.467 9.367A1.236 1.236 0 0 1 8 9.5c-.133 0-.333-.067-.467-.133L2.2 4.7c-.267-.267-.333-.667-.067-.933.267-.267.667-.334.934-.067l4.866 4.267L12.8 3.7c.267-.267.667-.2.933.067.334.266.334.666.067.933z"></path>
+      </svg>
+      <button class="utility-button">Email</button>
+   </div>
+   <div class="utility-item">
+      <svg width="16" height="16">
+         <path fill="#4569A0" fill-rule="evenodd" d="M14.101 4.087v2.657H2.044V4.087H0v7.562h2.044v3.474h11.88l.015-3.474h2.018L16 4.087h-1.899zm-1.84 9.606H3.68v-1.84h8.583v1.84zm.205-9.552v.968H3.68V0h8.787v4.14z"></path>
+      </svg>
+      <button class="utility-button">Print</button>
+   </div>
+</div>
 `
 
 $(".utilities-code .html-code code pre").text(utilitiesHtml);
@@ -4578,24 +4597,58 @@ $(".utilities-code .html-code code pre").text(utilitiesHtml);
 //css
 const utilitiesCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Link text</h5>
+<h5>Containers</h5>
 <code>
-<pre>a {
-    color: #4569A0;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 32px;
+<pre>
+/* Containers */
+.utilities {
+  background: #ffffff;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.utility-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  padding: 16px 0 8px 0;
 }
 </pre>
 </code>
-    
-<h5>Link icon</h5>
+
+<h5>Icon</h5>
 <code>
-<pre>.icon-open {
-    color: #4569A0;
-    height: 16px;
-    width: 16px;
+<pre>
+/* Icon */
+.utility-item svg {
+  height: 16px;
+  vertical-align: inherit;
+  width: 16px;
+}
+.utility-item svg path {
+  fill: #4569a0;
+}
+.utility-button {
+  background: none;
+  border: none;
+  color: #4569a0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.78;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .utility-item {
+    margin-right: 9.6px;
+  }
 }
 </pre>
 </code>
