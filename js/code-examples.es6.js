@@ -4578,3 +4578,156 @@ const checklistSaveProgressCss =
 `
 $(".checklist-save-progress-code .css-code").html(checklistSaveProgressCss);
 });
+
+
+
+
+
+
+//FEATURE BOX
+//Feature box - tips
+//html
+const featureBoxTipsHtml =
+`
+<div class="feature-box">
+    <div class="feature-box-title">
+     <div class="feature-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                                <g id="Group_7610" data-name="Group 7610" transform="translate(-3981.769 -458)">
+                                    <circle id="Ellipse_17" data-name="Ellipse 17" cx="28" cy="28" r="28" transform="translate(3981.769 458)" fill="#e1aa21" />
+                                    <g id="Layer_1" data-name="Layer 1" transform="translate(3998.443 470.146)">
+                                        <path id="Path_3937" data-name="Path 3937" d="M16.741,3a11.263,11.263,0,0,0-2.348.235A11.724,11.724,0,0,0,8.926,23.492a3.261,3.261,0,0,1,1.107,2.465v3.874a3.364,3.364,0,0,0,3.354,3.354h.47a3.319,3.319,0,0,0,5.769,0h.47a3.364,3.364,0,0,0,3.354-3.354V25.957a3.252,3.252,0,0,1,1.073-2.448A11.726,11.726,0,0,0,16.741,3Zm3.354,26.831H13.387V28.154h6.708Zm0-3.354H13.387V24.8h6.708Zm2.2-5.467c-.151.134-.268.3-.4.436H18.208V17.381L21.092,14.5a.633.633,0,0,0,0-.889l-1.186-1.186a.65.65,0,0,0-.892,0l-2.264,2.266L14.468,12.4a.651.651,0,0,0-.89,0l-1.186,1.187a.63.63,0,0,0,0,.889l2.881,2.881v4.085h-3.7a5.171,5.171,0,0,0-.4-.453,8.38,8.38,0,1,1,13.952-6.255A8.338,8.338,0,0,1,22.291,21.01Z" transform="translate(-4.997 -3)" fill="#fff" />
+                                    </g>
+                                </g>
+                            </svg>
+         </div>
+    <h3>Tip - feature box heading</h3>
+    </div>
+    <p>The text in this component can be paragraphs.</p>
+    <ul>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Or list points which are also handy.
+        </li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            It just needs to be formatted in the same was as general body text on the site.
+        </li>
+    </ul>
+</div>
+`
+
+$(" feature-box-tips-code .html-code code pre").text(featureBoxTipsHtml);
+
+//css
+const featureBoxTipsCss =
+`
+<h5>Container</h5>
+<code>
+<pre>
+/* Container */
+.feature-box {
+    height: auto;
+    border-top: none;
+    background: none;
+    padding: 32px;
+    border-top: 4px solid #E1AA21;
+    background: #FFF8E0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+    line-height: 1.78;
+    text-align: left;
+}
+/* Remove bottom padding from last element in the component*/
+/* Remove bottom padding from last element in the component*/
+.feature-box > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.feature-box > *:last-child li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+</pre>
+</code>
+    
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.feature-box-title {
+    display: flex;
+    margin-bottom: 32px;
+}
+.feature-box h3 {
+    margin: 8px 0 0 16px;
+    padding: 0;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.25;
+    font-size: 21px;
+}
+
+.feature-box p {
+    line-height: 32px;
+    font-size: 16px;
+    padding: 0 0 32px 0;
+    margin: 0;
+    letter-spacing: 0.0125rem;
+    color: #333;
+    display: inline-block;
+}
+</pre>
+</code>
+    
+<h5>List</h5>
+<code>
+<pre>
+/* List */
+.feature-box ul {
+    padding: 0 0 0 16px;
+    margin: 0;
+    line-height: 1.78;
+    list-style: none;
+}
+
+.feature-box ul li {
+    padding: 0 0 16px 32px;
+    margin: 0;
+    line-height: 32px;
+    position: relative;
+}
+
+.feature-box ul li svg {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+</pre>
+</code>        
+    
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+    .feature-box {
+        padding: 24px;
+    }
+    .feature-box .feature-icon {
+        width: 44px;
+        height: 44px;
+    }
+    .feature-box .feature-icon svg {
+        width: 44px;
+        height: 44px;
+    }
+    .feature-box h3 {
+        margin: 0 0 0 16px;
+    }
+} 
+</pre>
+</code>
+`
+$(".feature-box-tips-code .css-code").html(featureBoxTipsCss);
+
+

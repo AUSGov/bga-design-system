@@ -2485,6 +2485,59 @@
     }
   }
 
+    .feature-box {
+        .feature-box-container {
+            background: #FFF8E0;
+            padding: 32px;
+            border-top: 4px solid $yellow-secondary-mid;
+
+            .feature-box-content {
+                
+                .feature-box-title {
+                    display: flex;
+                    margin-bottom: 32px;
+
+                    h3 {
+                        margin: 8px 0 0 16px;
+                        padding: 0;
+                    }
+                }
+                
+                & > *:last-child {
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+
+                    li:last-of-type {
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
+        }
+    }
+    .mobile-example .feature-box,
+    .mobile-media-query .feature-box {
+        .feature-box-container {
+            padding: 24px;
+            
+            .feature-box-content {
+                .feature-icon {
+                    width: 44px;
+                    height: 44px;
+                    
+                    svg {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+                h3 {
+                    margin: 0 0 0 16px
+                }
+            }
+        }
+    } 
+    
   .call-to-action,
   .callout,
   .advisor-profile {

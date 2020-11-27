@@ -4818,6 +4818,24 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .page-headers .label, .design-system-card .mobile-media-query .page-headers .label { line-height: 16px; }
 
+.design-system-card .feature-box .feature-box-container { background: #FFF8E0; padding: 32px; border-top: 4px solid #E1AA21; }
+
+.design-system-card .feature-box .feature-box-container .feature-box-content .feature-box-title { display: flex; margin-bottom: 32px; }
+
+.design-system-card .feature-box .feature-box-container .feature-box-content .feature-box-title h3 { margin: 8px 0 0 16px; padding: 0; }
+
+.design-system-card .feature-box .feature-box-container .feature-box-content > *:last-child { padding-bottom: 0; margin-bottom: 0; }
+
+.design-system-card .feature-box .feature-box-container .feature-box-content > *:last-child li:last-of-type { padding-bottom: 0; margin-bottom: 0; }
+
+.design-system-card .mobile-example .feature-box .feature-box-container, .design-system-card .mobile-media-query .feature-box .feature-box-container { padding: 24px; }
+
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon { width: 44px; height: 44px; }
+
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon svg, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon svg { width: 44px; height: 44px; }
+
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content h3, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content h3 { margin: 0 0 0 16px; }
+
 .design-system-card .call-to-action h2, .design-system-card .callout h2, .design-system-card .advisor-profile h2 { padding: 0 0 32px 0; }
 
 .design-system-card .call-to-action h3, .design-system-card .callout h3, .design-system-card .advisor-profile h3 { line-height: 28px; }
