@@ -653,8 +653,8 @@
         }
       }
       .textarea-char-count {
-        text-align: right;
-        font-size: 14px;
+        //text-align: right;
+        //font-size: 14px;
         color: $grey-darker;
         padding: 8px 0 0 0;
         margin: 0;
@@ -663,7 +663,7 @@
           display: block;
           color: $red-negative-dark;
           margin: 0;
-          padding: 16px 0 0 0;
+          padding: 8px 0 0 0;
           font-size: 16px;
           text-align: left;
         }
