@@ -2487,7 +2487,8 @@
 
     .feature-box {
         .feature-box-container {
-            background: #FFF8E0;
+            //background: #FFF8E0;
+            background: #FFF0C1;
             padding: 32px;
             border-top: 4px solid $yellow-secondary-mid;
 
@@ -2880,6 +2881,88 @@
           }
       }
   }
+    
+  .disclaimer {
+        .short-alert-container,
+        .visible-disclaimer-container,
+        .hidden-disclaimer-container {
+            border: #B3C2D8 1px solid;
+            border-left: none;
+            border-right: none;
+            display: flex;
+            padding: 8px 0;
+            
+            .alert-icon {
+                width: 20px;
+                height: 20px;
+                margin: 0 8px 0 0;
+                padding:0;
+                
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0;
+                    padding: 0;
+                    display: block;
+                }
+            }
+                
+            .disclaimer-title {
+                padding: 0 0 16px 0;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                padding-bottom: 16px;
+                
+                &:last-of-type {
+                    padding: 0;
+                }
+            }
+            a {
+                color: $blue-primary;
+                @include font-format($font-family, $font-regular, normal);
+                text-decoration: underline;
+                
+                &:hover, &:focus {
+                    @include font-format($font-family, $font-semibold, normal);
+                }
+            }
+        }
+        .hidden-disclaimer-container {
+            display: block;
+            
+            .disclaimer-title-wrapper {
+                display: flex;
+                width: 100%;
+                background: url(../assets/BGAIcon-chevron-down.svg) no-repeat;
+                background-size: 16px 10px;
+                background-position: right center;
+                cursor: pointer;
+
+                &.open {
+                    background: url(../assets/BGAIcon-chevron-up.svg) no-repeat;
+                    background-size: 16px 10px;
+                    background-position: right center; 
+                }
+                
+                .disclaimer-title {
+                    padding: 0;
+                }
+                &:hover {
+                    .disclaimer-title {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .hidden-disclaimer-content {
+                padding: 16px 24px 0 28px;
+                display: none;
+            }
+        }
+    }
 
   .table {
     .table-responsive {
