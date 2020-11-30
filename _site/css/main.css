@@ -4230,9 +4230,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container #form-text-area[type="text"] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0; }
 
-.design-system-card .form-elements .form-example-container .textarea-char-count { text-align: right; font-size: 14px; color: #666666; padding: 8px 0 0 0; margin: 0; }
+.design-system-card .form-elements .form-example-container .textarea-char-count { color: #666666; padding: 8px 0 0 0; margin: 0; }
 
-.design-system-card .form-elements .form-example-container .textarea-char-count.excess-count { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; font-size: 16px; text-align: left; }
+.design-system-card .form-elements .form-example-container .textarea-char-count.excess-count { display: block; color: #D2201E; margin: 0; padding: 8px 0 0 0; font-size: 16px; text-align: left; }
 
 .design-system-card .form-elements .form-example-container mark { background: #F5B5B5; }
 
@@ -4479,6 +4479,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message.error-hidden { display: none; }
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message.textarea-error-message { padding-top: 8px; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .textarea-char-count.under { display: none; }
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .input-group .input-group-addon { border: solid 3px #D2201E; border-left: none; }
 

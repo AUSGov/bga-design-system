@@ -24,6 +24,7 @@
 			if (this.getType(config) === 'custom') {
 				this.highlight = config;
 				this.generate();
+    
 			} else {
 				console.error('valid config object not provided');
 			}
