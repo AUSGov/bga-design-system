@@ -4480,6 +4480,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message.textarea-error-message { padding-top: 8px; }
 
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .textarea-char-count.under { display: none; }
+
 .design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .input-group .input-group-addon { border: solid 3px #D2201E; border-left: none; }
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .datepicker { border: solid 3px #D2201E; border-top: none; }

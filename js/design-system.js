@@ -408,6 +408,7 @@ $(document).ready(function() {
             $(common_ancestor).find('.design-system-card-content .form-example-container').attr('data-state', 'focus-state');
             $('.state-selector label input').removeAttr('checked');
             $('.state-selector .focus-label input').attr('checked', 'checked');
+            $('.textarea-char-count').addClass('under');
         } else if (textarea_count > max_length) {
             var excess_count = textarea_count - max_length;
             $('.textarea-char-count').text('Character limited exceeded by ' + excess_count).addClass('excess-count');
@@ -415,6 +416,7 @@ $(document).ready(function() {
             $(common_ancestor).find('.design-system-card-content .form-example-container').attr('data-state', 'error-state');
             $('.state-selector label input').removeAttr('checked');
             $('.state-selector .error-label input').attr('checked', 'checked');
+            $('.textarea-char-count').removeClass('under');
         }
     });
 

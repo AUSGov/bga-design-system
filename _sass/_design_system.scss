@@ -653,8 +653,6 @@
         }
       }
       .textarea-char-count {
-        //text-align: right;
-        //font-size: 14px;
         color: $grey-darker;
         padding: 8px 0 0 0;
         margin: 0;
@@ -1452,6 +1450,9 @@
             padding-top: 8px;
           }
         }
+          .textarea-char-count.under {
+              display: none;
+          }
         #datepicker {
           .input-group {
             .input-group-addon {
