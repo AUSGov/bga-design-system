@@ -2525,7 +2525,6 @@
             
             .feature-box-content {
                 .feature-icon {
-                    width: 44px;
                     height: 44px;
                     
                     svg {
@@ -2894,7 +2893,7 @@
             padding: 8px 0;
             
             .alert-icon {
-                width: 20px;
+                //width: 20px;
                 height: 20px;
                 margin: 0 8px 0 0;
                 padding:0;
@@ -2926,6 +2925,7 @@
                 color: $blue-primary;
                 @include font-format($font-family, $font-regular, normal);
                 text-decoration: underline;
+                cursor: pointer;
                 
                 &:hover, &:focus {
                     @include font-format($font-family, $font-semibold, normal);

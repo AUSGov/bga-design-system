@@ -2726,7 +2726,7 @@ const featureBoxTipsHtml =
             </g>
         </svg>
     </div>
-    <h3>Tip - feature box heading</h3>
+    <h3>Tip - feature box heading TESTING TesTING TESING</h3>
     </div>
     <p>The text in this component can be paragraphs.</p>
     <ul>
@@ -2839,7 +2839,6 @@ const featureBoxTipsCss =
         padding: 24px;
     }
     .feature-box .feature-icon {
-        width: 44px;
         height: 44px;
     }
     .feature-box .feature-icon svg {
@@ -2989,7 +2988,6 @@ const featureBoxExamplesCss =
         padding: 24px;
     }
     .feature-box .feature-icon {
-        width: 44px;
         height: 44px;
     }
     .feature-box .feature-icon svg {
@@ -3143,7 +3141,6 @@ const featureBoxNewsCss =
         padding: 24px;
     }
     .feature-box .feature-icon {
-        width: 44px;
         height: 44px;
     }
     .feature-box .feature-icon svg {
@@ -3212,7 +3209,6 @@ const shortAlertCss =
 <pre>
 /* Icon */
  .disclaimer .alert-icon {
-    width: 20px;
     height: 20px;
     margin: 0 8px 0 0;
     padding:0;
@@ -3248,6 +3244,7 @@ const shortAlertCss =
     text-decoration: underline;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .disclaimer a:hover,
@@ -3309,7 +3306,6 @@ const visibleDisclaimerCss =
 <pre>
 /* Icon */
  .disclaimer .alert-icon {
-    width: 20px;
     height: 20px;
     margin: 0 8px 0 0;
     padding:0;
@@ -3353,6 +3349,7 @@ const visibleDisclaimerCss =
     text-decoration: underline;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .disclaimer a:hover,
@@ -3431,7 +3428,6 @@ const hiddenDisclaimerCss =
 <pre>
 /* Icon */
 .hidden-disclaimer .alert-icon {
-    width: 20px;
     height: 20px;
     margin: 0 8px 0 0;
     padding:0;
@@ -3492,6 +3488,7 @@ const hiddenDisclaimerCss =
     text-decoration: underline;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .hidden-disclaimer a:hover,

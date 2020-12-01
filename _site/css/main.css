@@ -4832,7 +4832,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .feature-box .feature-box-container, .design-system-card .mobile-media-query .feature-box .feature-box-container { padding: 24px; }
 
-.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon { width: 44px; height: 44px; }
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon { height: 44px; }
 
 .design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon svg, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon svg { width: 44px; height: 44px; }
 
@@ -4946,7 +4946,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .disclaimer .short-alert-container, .design-system-card .disclaimer .visible-disclaimer-container, .design-system-card .disclaimer .hidden-disclaimer-container { border: #B3C2D8 1px solid; border-left: none; border-right: none; display: flex; padding: 8px 0; }
 
-.design-system-card .disclaimer .short-alert-container .alert-icon, .design-system-card .disclaimer .visible-disclaimer-container .alert-icon, .design-system-card .disclaimer .hidden-disclaimer-container .alert-icon { width: 20px; height: 20px; margin: 0 8px 0 0; padding: 0; }
+.design-system-card .disclaimer .short-alert-container .alert-icon, .design-system-card .disclaimer .visible-disclaimer-container .alert-icon, .design-system-card .disclaimer .hidden-disclaimer-container .alert-icon { height: 20px; margin: 0 8px 0 0; padding: 0; }
 
 .design-system-card .disclaimer .short-alert-container .alert-icon svg, .design-system-card .disclaimer .visible-disclaimer-container .alert-icon svg, .design-system-card .disclaimer .hidden-disclaimer-container .alert-icon svg { width: 20px; height: 20px; margin: 0; padding: 0; display: block; }
 
@@ -4956,7 +4956,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .disclaimer .short-alert-container p:last-of-type, .design-system-card .disclaimer .visible-disclaimer-container p:last-of-type, .design-system-card .disclaimer .hidden-disclaimer-container p:last-of-type { padding: 0; }
 
-.design-system-card .disclaimer .short-alert-container a, .design-system-card .disclaimer .visible-disclaimer-container a, .design-system-card .disclaimer .hidden-disclaimer-container a { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; text-decoration: underline; }
+.design-system-card .disclaimer .short-alert-container a, .design-system-card .disclaimer .visible-disclaimer-container a, .design-system-card .disclaimer .hidden-disclaimer-container a { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; text-decoration: underline; cursor: pointer; }
 
 .design-system-card .disclaimer .short-alert-container a:hover, .design-system-card .disclaimer .short-alert-container a:focus, .design-system-card .disclaimer .visible-disclaimer-container a:hover, .design-system-card .disclaimer .visible-disclaimer-container a:focus, .design-system-card .disclaimer .hidden-disclaimer-container a:hover, .design-system-card .disclaimer .hidden-disclaimer-container a:focus { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
