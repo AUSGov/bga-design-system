@@ -500,10 +500,10 @@ $(document).ready(function() {
 
         var expr = $(this).val();
         var addColourClass = "hero-pathway-list-color-" + expr;
-        var removeColourClasses = ["hero-pathway-list-color-blue", "hero-pathway-list-color-yellow", "hero-pathway-list-color-magenta", "hero-pathway-list-color-bga-blue"]
+        var removeColourClasses = ["hero-pathway-list-color-blue", "hero-pathway-list-color-yellow", "hero-pathway-list-color-magenta", "hero-pathway-list-color-bga-blue"];
 
-        $(".example .hero-pathway-list-hero").removeClass(removeColourClasses)
-        $(".example .hero-pathway-list-hero").addClass(addColourClass)
+        $(".example .hero-pathway-list-hero").removeClass(removeColourClasses);
+        $(".example .hero-pathway-list-hero").addClass(addColourClass);
 
     });
 
@@ -513,9 +513,9 @@ $(document).ready(function() {
         var expr = $(this).val();
 
         if (expr === "variation") {
-            $(".feature-image-pathway").addClass("variation")
+            $(".feature-image-pathway").addClass("variation");
         } else {
-            $(".feature-image-pathway.variation").removeClass("variation")
+            $(".feature-image-pathway.variation").removeClass("variation");
         }
     });
 
@@ -794,6 +794,13 @@ $(document).ready(function() {
         });
     });
 
+    
+    /*----------- COMPONENT EXAMPLE: Hidden disclaimer ----------- */
+    $('.disclaimer-title-wrapper').on('click', function(){
+        $(this).next('.hidden-disclaimer-content').slideToggle();
+        $(this).toggleClass('open');
+    });
+    
     /*----------- SAB Navigation 2 functionality  ----------- */
 
     // Activate submenu functionality
@@ -848,7 +855,7 @@ $(document).ready(function() {
             $('.css-section').find('button').html("Copy CSS\n            <span class=\"copy-code-svg\">\n                                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\"\n                                    viewBox=\"0 0 89.458 103.583\">\n                                    <path\n                                        d=\"M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z\"\n                                        transform=\"translate(-2 -1)\" fill=\"#ffffff\"></path>\n                                </svg>\n                            </span>");
             $('.css-section').find('button').removeClass('copied');
         } else {
-            console.log("There was an error")
+            console.log("There was an error");
         }
     });
 
@@ -894,7 +901,7 @@ $(document).ready(function() {
             $(this).html("HTML copied \n            <span class=\"code-copied-svg\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\"  width=\"20\" height=\"20\" viewBox=\"0 0 89.458 103.583\">\n                    <g transform=\"translate(2801.694 4748.224)\">\n                        <path d=\"M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z\" transform=\"translate(-2803.694 -4749.224)\" fill=\"$white\"></path>\n                        <path d=\"M0,20.386l5.218-5.309,9.2,9.225L38.737,0,44,5.23,14.422,34.808Z\" transform=\"translate(-2770.08 -4703)\" fill=\"#ffffff\"></path>\n                    </g>\n                </svg>\n        </span>");
             $(this).addClass('copied');
         } else {
-            console.log("There was an error")
+            console.log("There was an error");
         }
     });
 }); // END doc ready

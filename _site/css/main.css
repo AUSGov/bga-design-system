@@ -4820,6 +4820,30 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .page-headers .label, .design-system-card .mobile-media-query .page-headers .label { line-height: 16px; }
 
+.design-system-card .feature-box .feature-box-container { background: #FFF0C1; padding: 32px; border-top: 4px solid #E1AA21; }
+
+.design-system-card .feature-box .feature-box-container .feature-box-content .feature-box-title { display: flex; margin-bottom: 32px; }
+
+.design-system-card .feature-box .feature-box-container .feature-box-content .feature-box-title h3 { margin: 8px 0 0 16px; padding: 0; }
+
+.design-system-card .feature-box .feature-box-container .feature-box-content > *:last-child { padding-bottom: 0; margin-bottom: 0; }
+
+.design-system-card .feature-box .feature-box-container .feature-box-content > *:last-child li:last-of-type { padding-bottom: 0; margin-bottom: 0; }
+
+.design-system-card .feature-box.not-full-width { max-width: 700px; }
+
+@media (min-width: 1200px) { .design-system-card .feature-box.full-width .feature-box-container { padding: 32px 120px 32px 152px; position: relative; } .design-system-card .feature-box.full-width .feature-box-container .feature-box-title h3 { margin: 8px 0 0 0px; padding: 0; line-height: 40px; font-size: 32px; } .design-system-card .feature-box.full-width .feature-box-container .feature-icon { position: absolute; left: 32px; top: 32px; height: 88px; } .design-system-card .feature-box.full-width .feature-box-container .feature-icon svg { width: 88px; height: 88px; } }
+
+.design-system-card .mobile-example .feature-box.not-full-width, .design-system-card .mobile-media-query .feature-box.not-full-width { max-width: none; }
+
+.design-system-card .mobile-example .feature-box .feature-box-container, .design-system-card .mobile-media-query .feature-box .feature-box-container { padding: 24px; }
+
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon { height: 44px; position: relative; top: auto; left: auto; }
+
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon svg, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon svg { width: 44px; height: 44px; }
+
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content h3, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content h3 { margin: 4px 0 0 16px; font-size: 21px; line-height: 1.25; line-height: 1.25; }
+
 .design-system-card .call-to-action h2, .design-system-card .callout h2, .design-system-card .advisor-profile h2 { padding: 0 0 32px 0; }
 
 .design-system-card .call-to-action h3, .design-system-card .callout h3, .design-system-card .advisor-profile h3 { line-height: 28px; }
@@ -4925,6 +4949,34 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .mobile-example .callout-link .callout-link-content .callout-link-content-icon .BgaIcon svg, .design-system-card .mobile-media-query .callout-link .callout-link-content .callout-link-content-icon .BgaIcon svg { width: 44px; height: 44px; }
 
 .design-system-card .mobile-example .callout-link .callout-link-content .callout-link-content-detail, .design-system-card .mobile-media-query .callout-link .callout-link-content .callout-link-content-detail { padding: 0 0 0 16px; }
+
+.design-system-card .disclaimer .short-alert-container, .design-system-card .disclaimer .visible-disclaimer-container, .design-system-card .disclaimer .hidden-disclaimer-container { border: #B3C2D8 1px solid; border-left: none; border-right: none; display: flex; padding: 8px 0; }
+
+.design-system-card .disclaimer .short-alert-container .alert-icon, .design-system-card .disclaimer .visible-disclaimer-container .alert-icon, .design-system-card .disclaimer .hidden-disclaimer-container .alert-icon { height: 20px; margin: 0 8px 0 0; padding: 0; }
+
+.design-system-card .disclaimer .short-alert-container .alert-icon svg, .design-system-card .disclaimer .visible-disclaimer-container .alert-icon svg, .design-system-card .disclaimer .hidden-disclaimer-container .alert-icon svg { width: 20px; height: 20px; margin: 0; padding: 0; display: block; }
+
+.design-system-card .disclaimer .short-alert-container .disclaimer-title, .design-system-card .disclaimer .visible-disclaimer-container .disclaimer-title, .design-system-card .disclaimer .hidden-disclaimer-container .disclaimer-title { padding: 0 0 16px 0; text-transform: uppercase; font-size: 12px; }
+
+.design-system-card .disclaimer .short-alert-container p, .design-system-card .disclaimer .visible-disclaimer-container p, .design-system-card .disclaimer .hidden-disclaimer-container p { font-size: 12px; line-height: 20px; padding-bottom: 16px; }
+
+.design-system-card .disclaimer .short-alert-container p:last-of-type, .design-system-card .disclaimer .visible-disclaimer-container p:last-of-type, .design-system-card .disclaimer .hidden-disclaimer-container p:last-of-type { padding: 0; }
+
+.design-system-card .disclaimer .short-alert-container a, .design-system-card .disclaimer .visible-disclaimer-container a, .design-system-card .disclaimer .hidden-disclaimer-container a { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; text-decoration: underline; cursor: pointer; }
+
+.design-system-card .disclaimer .short-alert-container a:hover, .design-system-card .disclaimer .short-alert-container a:focus, .design-system-card .disclaimer .visible-disclaimer-container a:hover, .design-system-card .disclaimer .visible-disclaimer-container a:focus, .design-system-card .disclaimer .hidden-disclaimer-container a:hover, .design-system-card .disclaimer .hidden-disclaimer-container a:focus { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
+.design-system-card .disclaimer .hidden-disclaimer-container { display: block; }
+
+.design-system-card .disclaimer .hidden-disclaimer-container .disclaimer-title-wrapper { display: flex; width: 100%; background: url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right center; cursor: pointer; }
+
+.design-system-card .disclaimer .hidden-disclaimer-container .disclaimer-title-wrapper.open { background: url(../assets/BGAIcon-chevron-up.svg) no-repeat; background-size: 16px 10px; background-position: right center; }
+
+.design-system-card .disclaimer .hidden-disclaimer-container .disclaimer-title-wrapper .disclaimer-title { padding: 0; }
+
+.design-system-card .disclaimer .hidden-disclaimer-container .disclaimer-title-wrapper:hover .disclaimer-title { text-decoration: underline; }
+
+.design-system-card .disclaimer .hidden-disclaimer-container .hidden-disclaimer-content { padding: 16px 24px 0 28px; display: none; }
 
 .design-system-card .table .table-responsive { overflow-y: hidden; }
 
