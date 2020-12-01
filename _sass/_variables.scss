@@ -91,3 +91,5 @@ $font-bold: 700;
     font-weight: $font-weight;
     font-style: $font-style;
 }
+//example use
+// @include font-format($font-family, $font-semibold, normal);
