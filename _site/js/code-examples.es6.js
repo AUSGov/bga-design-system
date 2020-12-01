@@ -2726,7 +2726,7 @@ const featureBoxTipsHtml =
             </g>
         </svg>
     </div>
-    <h3>Tip - feature box heading TESTING TesTING TESING</h3>
+    <h3>Tip - feature box heading</h3>
     </div>
     <p>The text in this component can be paragraphs.</p>
     <ul>
@@ -2753,16 +2753,17 @@ const featureBoxTipsCss =
     height: auto;
     border-top: none;
     background: none;
-    padding: 32px;
+    padding: 32px 120px 32px 152px;
     border-top: 4px solid #E1AA21;
-    background: #FFF8E0;
+    background: #FFF0C1;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.0125rem;
     line-height: 1.78;
     text-align: left;
+    position: relative;
 }
-/* Remove bottom padding from last element in the component*/
+
 /* Remove bottom padding from last element in the component*/
 .feature-box > *:last-child {
     padding-bottom: 0;
@@ -2784,14 +2785,13 @@ const featureBoxTipsCss =
     margin-bottom: 32px;
 }
 .feature-box h3 {
-    margin: 8px 0 0 16px;
+    margin: 8px 0 0 0;
     padding: 0;
     font-weight: 600;
     font-style: normal;
-    line-height: 1.25;
-    font-size: 21px;
+    line-height: 40px;
+    font-size: 32px;
 }
-
 .feature-box p {
     line-height: 32px;
     font-size: 16px;
@@ -2814,26 +2814,61 @@ const featureBoxTipsCss =
     line-height: 1.78;
     list-style: none;
 }
-
 .feature-box ul li {
     padding: 0 0 16px 32px;
     margin: 0;
     line-height: 32px;
     position: relative;
 }
-
 .feature-box ul li svg {
     position: absolute;
     left: 0;
     top: 10px;
 }
 </pre>
-</code>        
-    
-<h5>Media query</h5>
+</code>
+
+<h5>Icon</h5>
 <code>
 <pre>
-/* Media query */
+/* Icon */
+.feature-box .feature-icon {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    height: 88px;
+}
+.feature-box .feature-icon svg {
+    width: 88px;
+    height: 88px;
+}
+</pre>
+</code>
+    
+<h5>Media queries</h5>
+<code>
+<pre>
+/* Media queries */
+@media (max-width: 992px) {
+    .feature-box {
+        padding: 32px;
+    }
+    .feature-box h3 {
+        margin: 8px 0 0 16px;
+        font-size: 21px;
+        line-height: 1.33;
+    }
+    .feature-box .feature-icon {
+        position: relative;
+        height: 56px;
+        top:auto;
+        left: auto;
+    }
+    .feature-box .feature-icon svg {
+        width: 56px;
+        height: 56px;
+    }
+}
 @media (max-width: 576px) {
     .feature-box {
         padding: 24px;
@@ -2845,10 +2880,13 @@ const featureBoxTipsCss =
         width: 44px;
         height: 44px;
     }
+
     .feature-box h3 {
-        margin: 0 0 0 16px;
+        margin: 4px 0 0 16px;
+        line-height: 1.25;
+        font-size: 21px;
     }
-} 
+}
 </pre>
 </code>
 `
@@ -2902,16 +2940,17 @@ const featureBoxExamplesCss =
     height: auto;
     border-top: none;
     background: none;
-    padding: 32px;
+    padding: 32px 120px 32px 152px;
     border-top: 4px solid #E1AA21;
-    background: #FFF8E0;
+    background: #FFF0C1;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.0125rem;
     line-height: 1.78;
     text-align: left;
+    position: relative;
 }
-/* Remove bottom padding from last element in the component*/
+
 /* Remove bottom padding from last element in the component*/
 .feature-box > *:last-child {
     padding-bottom: 0;
@@ -2933,14 +2972,13 @@ const featureBoxExamplesCss =
     margin-bottom: 32px;
 }
 .feature-box h3 {
-    margin: 8px 0 0 16px;
+    margin: 8px 0 0 0;
     padding: 0;
     font-weight: 600;
     font-style: normal;
-    line-height: 1.25;
-    font-size: 21px;
+    line-height: 40px;
+    font-size: 32px;
 }
-
 .feature-box p {
     line-height: 32px;
     font-size: 16px;
@@ -2963,26 +3001,61 @@ const featureBoxExamplesCss =
     line-height: 1.78;
     list-style: none;
 }
-
 .feature-box ul li {
     padding: 0 0 16px 32px;
     margin: 0;
     line-height: 32px;
     position: relative;
 }
-
 .feature-box ul li svg {
     position: absolute;
     left: 0;
     top: 10px;
 }
 </pre>
-</code>        
-    
-<h5>Media query</h5>
+</code>
+
+<h5>Icon</h5>
 <code>
 <pre>
-/* Media query */
+/* Icon */
+.feature-box .feature-icon {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    height: 88px;
+}
+.feature-box .feature-icon svg {
+    width: 88px;
+    height: 88px;
+}
+</pre>
+</code>
+    
+<h5>Media queries</h5>
+<code>
+<pre>
+/* Media queries */
+@media (max-width: 992px) {
+    .feature-box {
+        padding: 32px;
+    }
+    .feature-box h3 {
+        margin: 8px 0 0 16px;
+        font-size: 21px;
+        line-height: 1.33;
+    }
+    .feature-box .feature-icon {
+        position: relative;
+        height: 56px;
+        top:auto;
+        left: auto;
+    }
+    .feature-box .feature-icon svg {
+        width: 56px;
+        height: 56px;
+    }
+}
 @media (max-width: 576px) {
     .feature-box {
         padding: 24px;
@@ -2994,10 +3067,13 @@ const featureBoxExamplesCss =
         width: 44px;
         height: 44px;
     }
+
     .feature-box h3 {
-        margin: 0 0 0 16px;
+        margin: 4px 0 0 16px;
+        line-height: 1.25;
+        font-size: 21px;
     }
-} 
+}
 </pre>
 </code>
 `
@@ -3055,16 +3131,17 @@ const featureBoxNewsCss =
     height: auto;
     border-top: none;
     background: none;
-    padding: 32px;
+    padding: 32px 120px 32px 152px;
     border-top: 4px solid #E1AA21;
-    background: #FFF8E0;
+    background: #FFF0C1;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.0125rem;
     line-height: 1.78;
     text-align: left;
+    position: relative;
 }
-/* Remove bottom padding from last element in the component*/
+
 /* Remove bottom padding from last element in the component*/
 .feature-box > *:last-child {
     padding-bottom: 0;
@@ -3086,14 +3163,13 @@ const featureBoxNewsCss =
     margin-bottom: 32px;
 }
 .feature-box h3 {
-    margin: 8px 0 0 16px;
+    margin: 8px 0 0 0;
     padding: 0;
     font-weight: 600;
     font-style: normal;
-    line-height: 1.25;
-    font-size: 21px;
+    line-height: 40px;
+    font-size: 32px;
 }
-
 .feature-box p {
     line-height: 32px;
     font-size: 16px;
@@ -3116,26 +3192,61 @@ const featureBoxNewsCss =
     line-height: 1.78;
     list-style: none;
 }
-
 .feature-box ul li {
     padding: 0 0 16px 32px;
     margin: 0;
     line-height: 32px;
     position: relative;
 }
-
 .feature-box ul li svg {
     position: absolute;
     left: 0;
     top: 10px;
 }
 </pre>
-</code>        
-    
-<h5>Media query</h5>
+</code>
+
+<h5>Icon</h5>
 <code>
 <pre>
-/* Media query */
+/* Icon */
+.feature-box .feature-icon {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    height: 88px;
+}
+.feature-box .feature-icon svg {
+    width: 88px;
+    height: 88px;
+}
+</pre>
+</code>
+    
+<h5>Media queries</h5>
+<code>
+<pre>
+/* Media queries */
+@media (max-width: 992px) {
+    .feature-box {
+        padding: 32px;
+    }
+    .feature-box h3 {
+        margin: 8px 0 0 16px;
+        font-size: 21px;
+        line-height: 1.33;
+    }
+    .feature-box .feature-icon {
+        position: relative;
+        height: 56px;
+        top:auto;
+        left: auto;
+    }
+    .feature-box .feature-icon svg {
+        width: 56px;
+        height: 56px;
+    }
+}
 @media (max-width: 576px) {
     .feature-box {
         padding: 24px;
@@ -3147,10 +3258,13 @@ const featureBoxNewsCss =
         width: 44px;
         height: 44px;
     }
+
     .feature-box h3 {
-        margin: 0 0 0 16px;
+        margin: 4px 0 0 16px;
+        line-height: 1.25;
+        font-size: 21px;
     }
-} 
+}
 </pre>
 </code>
 `

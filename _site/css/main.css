@@ -4830,13 +4830,19 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .feature-box .feature-box-container .feature-box-content > *:last-child li:last-of-type { padding-bottom: 0; margin-bottom: 0; }
 
+.design-system-card .feature-box.not-full-width { max-width: 700px; }
+
+@media (min-width: 1200px) { .design-system-card .feature-box.full-width .feature-box-container { padding: 32px 120px 32px 152px; position: relative; } .design-system-card .feature-box.full-width .feature-box-container .feature-box-title h3 { margin: 8px 0 0 0px; padding: 0; line-height: 40px; font-size: 32px; } .design-system-card .feature-box.full-width .feature-box-container .feature-icon { position: absolute; left: 32px; top: 32px; height: 88px; } .design-system-card .feature-box.full-width .feature-box-container .feature-icon svg { width: 88px; height: 88px; } }
+
+.design-system-card .mobile-example .feature-box.not-full-width, .design-system-card .mobile-media-query .feature-box.not-full-width { max-width: none; }
+
 .design-system-card .mobile-example .feature-box .feature-box-container, .design-system-card .mobile-media-query .feature-box .feature-box-container { padding: 24px; }
 
-.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon { height: 44px; }
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon { height: 44px; position: relative; top: auto; left: auto; }
 
 .design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content .feature-icon svg, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content .feature-icon svg { width: 44px; height: 44px; }
 
-.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content h3, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content h3 { margin: 0 0 0 16px; }
+.design-system-card .mobile-example .feature-box .feature-box-container .feature-box-content h3, .design-system-card .mobile-media-query .feature-box .feature-box-container .feature-box-content h3 { margin: 4px 0 0 16px; font-size: 21px; line-height: 1.25; line-height: 1.25; }
 
 .design-system-card .call-to-action h2, .design-system-card .callout h2, .design-system-card .advisor-profile h2 { padding: 0 0 32px 0; }
 
