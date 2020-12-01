@@ -4252,7 +4252,53 @@ $(".progress-bar-named-steps-code .css-code").html(progressBarNamedStepsCss);
 //html
 const informationNotificationHtml =
 `
-Coming soon
+<div class="information-notification">
+   <div class="information-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7846" data-name="Group 7846" transform="translate(-3212 -1646)">
+                  <g id="Group_7569" data-name="Group 7569" transform="translate(3212 1646)">
+                     <path id="Path_6296" data-name="Path 6296" d="M28,0A28,28,0,1,1,0,28,28,28,0,0,1,28,0Z" fill="#4569a0"></path>
+                  </g>
+                  <g id="Group_7571" data-name="Group 7571" transform="translate(3236.907 1661.892)">
+                     <g id="Icon_info" data-name="Icon / info">
+                        <path id="Info" d="M18.335,5V0h5V5ZM0,5V0H15V5Z" transform="translate(0 23.337) rotate(-90)" fill="#fff"></path>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Information notifications contain neutral information that the user may be interested in.</p>
+   </div>
+</div>
+<div class="information-notification">
+   <div class="close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="16px" height="16px" viewBox="0 0 21.119 21.119">
+         <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+      </svg>
+   </div>
+   <div class="information-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7846" data-name="Group 7846" transform="translate(-3212 -1646)">
+                  <g id="Group_7569" data-name="Group 7569" transform="translate(3212 1646)">
+                     <path id="Path_6296" data-name="Path 6296" d="M28,0A28,28,0,1,1,0,28,28,28,0,0,1,28,0Z" fill="#4569a0"></path>
+                  </g>
+                  <g id="Group_7571" data-name="Group 7571" transform="translate(3236.907 1661.892)">
+                     <g id="Icon_info" data-name="Icon / info">
+                        <path id="Info" d="M18.335,5V0h5V5ZM0,5V0H15V5Z" transform="translate(0 23.337) rotate(-90)" fill="#fff"></path>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Information notifications contain neutral information that the user may be interested in.</p>
+   </div>
+</div>
 `
 
 $(".information-notification-code .html-code code pre").text(informationNotificationHtml);
@@ -4260,64 +4306,88 @@ $(".information-notification-code .html-code code pre").text(informationNotifica
 //css
 const informationNotificationCss =
 `
-<h4>Desktop</h4>    
-<h5>Paragraph</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.information-notification {
+  background: #e5edf7;
+  border-top: 4px solid #b3c1d7;
+  color: #333333;
 }
-</pre>
-</code>
-    
-<h5>Notification icon</h5>
-<code>
-<pre>.icon-information {
-    color: #254F90;
-    background: #FFFFFF;
-    width: 56px;
-    height: 56px;
+.information-notification-content {
+  display: flex;
+  padding: 24px 32px 24px 24px;
 }
-</pre>
-</code>
-    
-<h5>Close icon</h5>
-<code>
-<pre>.icon-close {
-    color: #254F90;
-    width: 16px;
-    height: 16px;
-}
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>div {
-    background-color: #E5EDF7;
-    border-top: 4px solid #B3C1D7;
-    padding: 24px;
-    border-radius: 0;
+.information-notification .icon-container {
+  border-radius: 50%;
+  height: auto;
+  justify-self: center;
+  width: auto;
+  align-self: flex-start;
+  display: flex;
+  min-width: 56px;
 }
 </pre>
 </code>
 
-<h4>Mobile</h4>
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
+<pre>
+/* Text */
+.information-notification .description {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 8px 0 0 16px;
+}
+</pre>
+</code>
+
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.information-notification .close-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 8px;
+}
+.information-notification .close-icon svg:hover {
+  cursor: pointer;
+}
+.information-notification .icon-container .icon {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .information-notification .description {
     font-size: 14px;
-}
-</pre>
-</code>
-
-<h5>Notification icon</h5>
-<code>
-<pre>.icon-information {
-    width: 44px;
+  }
+  .information-notification .icon-container {
+    min-width: 44px;
+  }
+  .information-notification .icon-container .icon {
     height: 44px;
+    width: 44px;
+  }
 }
 </pre>
 </code>
@@ -4328,7 +4398,45 @@ $(".information-notification-code .css-code").html(informationNotificationCss);
 //html
 const confirmationNotificationHtml =
 `
-Coming soon
+<div class="confirmation-notification">
+   <div class="confirmation-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7864" data-name="Group 7864" transform="translate(-3212 -964)">
+                  <circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3212 964)" fill="#219520"></circle>
+                  <g id="Icon_tick" data-name="Icon / tick" transform="translate(3228 981.86)">
+                     <path id="Tick" d="M0,11.12l2.846-2.9,5.02,5.032L21.129,0,24,2.853,7.866,18.986Z" fill="#fff"></path>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Confirmation notifications let the user know an action has been successful.</p>
+   </div>
+</div>
+<div class="confirmation-notification">
+   <div class="close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="16px" height="16px" viewBox="0 0 21.119 21.119">
+         <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+      </svg>
+   </div>
+   <div class="confirmation-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7864" data-name="Group 7864" transform="translate(-3212 -964)">
+                  <circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3212 964)" fill="#219520"></circle>
+                  <g id="Icon_tick" data-name="Icon / tick" transform="translate(3228 981.86)">
+                     <path id="Tick" d="M0,11.12l2.846-2.9,5.02,5.032L21.129,0,24,2.853,7.866,18.986Z" fill="#fff"></path>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Confirmation notifications let the user know an action has been successful.</p>
+   </div>
+</div>
 `
 
 $(".confirmation-notification-code .html-code code pre").text(confirmationNotificationHtml);
@@ -4336,63 +4444,88 @@ $(".confirmation-notification-code .html-code code pre").text(confirmationNotifi
 //css
 const confirmationNotificationCss =
 `
-<h4>Desktop</h4>  
-<h5>Paragraph</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.confirmation-notification {
+  background: #e8f4e8;
+  border-top: 4px solid #a6d5a6;
+  color: #333333;
 }
-</pre>
-</code>
-    
-<h5>Confirmation icon</h5>
-<code>
-<pre>.icon-confirmation {
-    color: #219520;
-    width: 56px;
-    height: 56px;
+.confirmation-notification-content {
+  display: flex;
+  padding: 24px 32px 24px 24px;
 }
-</pre>
-</code>
-    
-<h5>Close icon</h5>
-<code>
-<pre>.icon-close {
-    color: #254F90;
-    width: 16px;
-    height: 16px;
-}
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>div {
-    background-color: #E8F4E8;
-    border-top: 4px solid #A6D5A6;
-    padding: 16px;
-    border-radius: 0;
+.confirmation-notification .icon-container {
+  border-radius: 50%;
+  height: auto;
+  justify-self: center;
+  width: auto;
+  align-self: flex-start;
+  display: flex;
+  min-width: 56px;
 }
 </pre>
 </code>
 
-<h4>Mobile</h4>
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
+<pre>
+/* Text */
+.confirmation-notification .description {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 8px 0 0 16px;
+}
+</pre>
+</code>
+
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.confirmation-notification .close-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 8px;
+}
+.confirmation-notification .close-icon svg:hover {
+  cursor: pointer;
+}
+.confirmation-notification .icon-container .icon {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .confirmation-notification .description {
     font-size: 14px;
-}
-</pre>
-</code>
-
-<h5>Notification icon</h5>
-<code>
-<pre>.icon-information {
-    width: 44px;
+  }
+  .confirmation-notification .icon-container {
+    min-width: 44px;
+  }
+  .confirmation-notification .icon-container .icon {
     height: 44px;
+    width: 44px;
+  }
 }
 </pre>
 </code>
@@ -4403,7 +4536,53 @@ $(".confirmation-notification-code .css-code").html(confirmationNotificationCss)
 //html
 const warningNotificationHtml =
 `
-Coming soon
+<div class="warning-notification">
+   <div class="warning-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7871" data-name="Group 7871" transform="translate(-3210 -867)">
+                  <circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3210 867)" fill="#e75755"></circle>
+                  <g id="Group_7573" data-name="Group 7573" transform="translate(3224.631 880.679)">
+                     <path id="Path" d="M12.932,0a1.453,1.453,0,0,0-1.19.706L.192,20.181a1.375,1.375,0,0,0,0,1.408,1.455,1.455,0,0,0,1.254.7h23.1a1.455,1.455,0,0,0,1.254-.7,1.375,1.375,0,0,0,0-1.408L14.248.707A1.456,1.456,0,0,0,12.932,0Z" fill="#fff"></path>
+                     <g id="Group_117" data-name="Group 117" transform="translate(11.375 6.609)">
+                        <path id="Shape" d="M1.995,1.256A1.149,1.149,0,0,1,1,2.512,1.149,1.149,0,0,1,0,1.256,1.149,1.149,0,0,1,1,0a1.15,1.15,0,0,1,1,1.256Z" transform="translate(0.51 9.38)" fill="#d2201e"></path>
+                        <path id="Path-2" data-name="Path" d="M3.009,1.255A1.308,1.308,0,0,0,2.68.527,1.568,1.568,0,0,0,.36.5a1.315,1.315,0,0,0-.355.756,1.21,1.21,0,0,0,0,.226L.627,7.633A.72.72,0,0,0,.881,8.1a.957.957,0,0,0,.626.224.967.967,0,0,0,.575-.184.732.732,0,0,0,.3-.512l.622-6.151A1.2,1.2,0,0,0,3.009,1.255Z" transform="translate(0 0)" fill="#d2201e"></path>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Warning alerts contain information on errors that the user needs to know.</p>
+   </div>
+</div>
+<div class="warning-notification">
+   <div class="close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="16px" height="16px" viewBox="0 0 21.119 21.119">
+         <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+      </svg>
+   </div>
+   <div class="warning-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7871" data-name="Group 7871" transform="translate(-3210 -867)">
+                  <circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3210 867)" fill="#e75755"></circle>
+                  <g id="Group_7573" data-name="Group 7573" transform="translate(3224.631 880.679)">
+                     <path id="Path" d="M12.932,0a1.453,1.453,0,0,0-1.19.706L.192,20.181a1.375,1.375,0,0,0,0,1.408,1.455,1.455,0,0,0,1.254.7h23.1a1.455,1.455,0,0,0,1.254-.7,1.375,1.375,0,0,0,0-1.408L14.248.707A1.456,1.456,0,0,0,12.932,0Z" fill="#fff"></path>
+                     <g id="Group_117" data-name="Group 117" transform="translate(11.375 6.609)">
+                        <path id="Shape" d="M1.995,1.256A1.149,1.149,0,0,1,1,2.512,1.149,1.149,0,0,1,0,1.256,1.149,1.149,0,0,1,1,0a1.15,1.15,0,0,1,1,1.256Z" transform="translate(0.51 9.38)" fill="#d2201e"></path>
+                        <path id="Path-2" data-name="Path" d="M3.009,1.255A1.308,1.308,0,0,0,2.68.527,1.568,1.568,0,0,0,.36.5a1.315,1.315,0,0,0-.355.756,1.21,1.21,0,0,0,0,.226L.627,7.633A.72.72,0,0,0,.881,8.1a.957.957,0,0,0,.626.224.967.967,0,0,0,.575-.184.732.732,0,0,0,.3-.512l.622-6.151A1.2,1.2,0,0,0,3.009,1.255Z" transform="translate(0 0)" fill="#d2201e"></path>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Warning alerts contain information on errors that the user needs to know.</p>
+   </div>
+</div>
 `
 
 $(".warning-notification-code .html-code code pre").text(warningNotificationHtml);
@@ -4411,64 +4590,88 @@ $(".warning-notification-code .html-code code pre").text(warningNotificationHtml
 //css
 const warningNotificationCss =
 `
-<h4>Desktop</h4>      
-<h5>Paragraph</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.warning-notification {
+  background: #fce9e9;
+  border-top: 4px solid #f5b5b5;
+  color: #333333;
 }
-</pre>
-</code>
-    
-<h5>Warning icon</h5>
-<code>
-<pre>.icon-warning {
-    color: #E75755;
-    background: #FFFFFF;
-    width: 56px;
-    height: 56px;
+.warning-notification-content {
+  display: flex;
+  padding: 24px 32px 24px 24px;
 }
-</pre>
-</code>
-    
-<h5>Close icon</h5>
-<code>
-<pre>.icon-close {
-    color: #254F90;
-    width: 16px;
-    height: 16px;
-}
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>div {
-    background-color: #FCE9E9;
-    border-top: 4px solid #F5B5B5;
-    padding: 16px;
-    border-radius: 0;
+.warning-notification .icon-container {
+  border-radius: 50%;
+  height: auto;
+  justify-self: center;
+  width: auto;
+  align-self: flex-start;
+  display: flex;
+  min-width: 56px;
 }
 </pre>
 </code>
 
-<h4>Mobile</h4>
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
+<pre>
+/* Text */
+.warning-notification .description {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 8px 0 0 16px;
+}
+</pre>
+</code>
+
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.warning-notification .close-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 8px;
+}
+.warning-notification .close-icon svg:hover {
+  cursor: pointer;
+}
+.warning-notification .icon-container .icon {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .warning-notification .description {
     font-size: 14px;
-}
-</pre>
-</code>
-
-<h5>Notification icon</h5>
-<code>
-<pre>.icon-information {
-    width: 44px;
+  }
+  .warning-notification .icon-container {
+    min-width: 44px;
+  }
+  .warning-notification .icon-container .icon {
     height: 44px;
+    width: 44px;
+  }
 }
 </pre>
 </code>
