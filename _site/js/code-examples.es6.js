@@ -2708,6 +2708,913 @@ const calloutLinkCss =
 `
 $(".callout-link-code .css-code").html(calloutLinkCss);
 
+//FEATURE BOX
+//Feature box - tips
+
+//html
+const featureBoxTipsHtml =
+`
+<div class="feature-box">
+    <div class="feature-box-title">
+     <div class="feature-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+            <g id="Group_7610" data-name="Group 7610" transform="translate(-3981.769 -458)">
+                <circle id="Ellipse_17" data-name="Ellipse 17" cx="28" cy="28" r="28" transform="translate(3981.769 458)" fill="#e1aa21" />
+                <g id="Layer_1" data-name="Layer 1" transform="translate(3998.443 470.146)">
+                    <path id="Path_3937" data-name="Path 3937" d="M16.741,3a11.263,11.263,0,0,0-2.348.235A11.724,11.724,0,0,0,8.926,23.492a3.261,3.261,0,0,1,1.107,2.465v3.874a3.364,3.364,0,0,0,3.354,3.354h.47a3.319,3.319,0,0,0,5.769,0h.47a3.364,3.364,0,0,0,3.354-3.354V25.957a3.252,3.252,0,0,1,1.073-2.448A11.726,11.726,0,0,0,16.741,3Zm3.354,26.831H13.387V28.154h6.708Zm0-3.354H13.387V24.8h6.708Zm2.2-5.467c-.151.134-.268.3-.4.436H18.208V17.381L21.092,14.5a.633.633,0,0,0,0-.889l-1.186-1.186a.65.65,0,0,0-.892,0l-2.264,2.266L14.468,12.4a.651.651,0,0,0-.89,0l-1.186,1.187a.63.63,0,0,0,0,.889l2.881,2.881v4.085h-3.7a5.171,5.171,0,0,0-.4-.453,8.38,8.38,0,1,1,13.952-6.255A8.338,8.338,0,0,1,22.291,21.01Z" transform="translate(-4.997 -3)" fill="#fff" />
+                </g>
+            </g>
+        </svg>
+    </div>
+    <h3>Tip - feature box heading</h3>
+    </div>
+    <p>The text in this component can be paragraphs.</p>
+    <ul>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Or list points which are also handy.
+        </li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            It just needs to be formatted in the same was as general body text on the site.
+        </li>
+    </ul>
+</div>
+`
+
+$(".feature-box-tips-code .html-code code pre").text(featureBoxTipsHtml);
+
+//css
+const featureBoxTipsCss =
+`
+<h5>Container</h5>
+<code>
+<pre>
+/* Container */
+.feature-box {
+    height: auto;
+    border-top: none;
+    background: none;
+    padding: 32px 120px 32px 152px;
+    border-top: 4px solid #E1AA21;
+    background: #FFF0C1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+    line-height: 1.78;
+    text-align: left;
+    position: relative;
+}
+
+/* Remove bottom padding from last element in the component*/
+.feature-box > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.feature-box > *:last-child li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+</pre>
+</code>
+    
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.feature-box-title {
+    display: flex;
+    margin-bottom: 32px;
+}
+.feature-box h3 {
+    margin: 8px 0 0 0;
+    padding: 0;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 32px;
+}
+.feature-box p {
+    line-height: 32px;
+    font-size: 16px;
+    padding: 0 0 32px 0;
+    margin: 0;
+    letter-spacing: 0.0125rem;
+    color: #333;
+    display: inline-block;
+}
+</pre>
+</code>
+    
+<h5>List</h5>
+<code>
+<pre>
+/* List */
+.feature-box ul {
+    padding: 0 0 0 16px;
+    margin: 0;
+    line-height: 1.78;
+    list-style: none;
+}
+.feature-box ul li {
+    padding: 0 0 16px 32px;
+    margin: 0;
+    line-height: 32px;
+    position: relative;
+}
+.feature-box ul li svg {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+</pre>
+</code>
+
+<h5>Icon</h5>
+<code>
+<pre>
+/* Icon */
+.feature-box .feature-icon {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    height: 88px;
+}
+.feature-box .feature-icon svg {
+    width: 88px;
+    height: 88px;
+}
+</pre>
+</code>
+    
+<h5>Media queries</h5>
+<code>
+<pre>
+/* Media queries */
+@media (max-width: 992px) {
+    .feature-box {
+        padding: 32px;
+    }
+    .feature-box h3 {
+        margin: 8px 0 0 16px;
+        font-size: 21px;
+        line-height: 1.33;
+    }
+    .feature-box .feature-icon {
+        position: relative;
+        height: 56px;
+        top:auto;
+        left: auto;
+    }
+    .feature-box .feature-icon svg {
+        width: 56px;
+        height: 56px;
+    }
+}
+@media (max-width: 576px) {
+    .feature-box {
+        padding: 24px;
+    }
+    .feature-box .feature-icon {
+        height: 44px;
+    }
+    .feature-box .feature-icon svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .feature-box h3 {
+        margin: 4px 0 0 16px;
+        line-height: 1.25;
+        font-size: 21px;
+    }
+}
+</pre>
+</code>
+`
+$(".feature-box-tips-code .css-code").html(featureBoxTipsCss);
+    
+//Feature box - examples
+
+//html
+const featureBoxExamplesHtml =
+`
+<div class="feature-box">
+    <div class="feature-box-title">
+     <div class="feature-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+            <g id="Group_7608" data-name="Group 7608" transform="translate(-3979 -861.5)">
+                <g id="Group_7577" data-name="Group 7577" transform="translate(3979 861)">
+                    <g id="Group_7576" data-name="Group 7576" transform="translate(0 0.5)">
+                        <circle id="Ellipse_17" data-name="Ellipse 17" cx="27.5" cy="27.5" r="27.5" fill="#e1aa21" />
+                    </g>
+                </g>
+                <g id="Group_7598" data-name="Group 7598" transform="translate(3995.6 876.053)">
+                    <path id="Path_6301" data-name="Path 6301" d="M24.959,17.382a5.612,5.612,0,0,0-2.979-8.35V4.8a2.723,2.723,0,0,0-2.715-2.715H4.335A2.723,2.723,0,0,0,1.62,4.8v19a2.723,2.723,0,0,0,2.715,2.715h14.93A2.723,2.723,0,0,0,21.98,23.8V19.721a5.636,5.636,0,0,0,1.193-.565l3.661,3.661,1.786-1.786ZM19.265,23.8H4.335V4.8h14.93v4a5.651,5.651,0,0,0-4.323,3.443H6.55v2.516h8a5.629,5.629,0,0,0,4.713,5.181Zm2.715-6.858a3.132,3.132,0,1,1,1.344-2.571A3.114,3.114,0,0,1,21.98,16.947Z" transform="translate(-1.62 -2.087)" fill="#fff" />
+                    <rect id="Rectangle_451" data-name="Rectangle 451" width="8.161" height="2.843" transform="translate(4.696 14.968)" fill="#fff" />
+                    <rect id="Rectangle_452" data-name="Rectangle 452" width="11.659" height="2.843" transform="translate(4.534 5.054)" fill="#fff" />
+                </g>
+            </g>
+        </svg>
+    </div>
+    <h3>Example or cases study title</h3>
+    </div>
+    <p>The text in this component can be paragraphs.</p>
+    <ul>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>Or list points which are also handy.</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>It just needs to be formatted in the same was as general body text on the site.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisisultricies arcu non pretium.</p>
+
+</div>
+`
+
+$(".feature-box-examples-code .html-code code pre").text(featureBoxExamplesHtml);
+
+//css
+const featureBoxExamplesCss =
+`
+<h5>Container</h5>
+<code>
+<pre>
+/* Container */
+.feature-box {
+    height: auto;
+    border-top: none;
+    background: none;
+    padding: 32px 120px 32px 152px;
+    border-top: 4px solid #E1AA21;
+    background: #FFF0C1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+    line-height: 1.78;
+    text-align: left;
+    position: relative;
+}
+
+/* Remove bottom padding from last element in the component*/
+.feature-box > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.feature-box > *:last-child li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+</pre>
+</code>
+    
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.feature-box-title {
+    display: flex;
+    margin-bottom: 32px;
+}
+.feature-box h3 {
+    margin: 8px 0 0 0;
+    padding: 0;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 32px;
+}
+.feature-box p {
+    line-height: 32px;
+    font-size: 16px;
+    padding: 0 0 32px 0;
+    margin: 0;
+    letter-spacing: 0.0125rem;
+    color: #333;
+    display: inline-block;
+}
+</pre>
+</code>
+    
+<h5>List</h5>
+<code>
+<pre>
+/* List */
+.feature-box ul {
+    padding: 0 0 0 16px;
+    margin: 0;
+    line-height: 1.78;
+    list-style: none;
+}
+.feature-box ul li {
+    padding: 0 0 16px 32px;
+    margin: 0;
+    line-height: 32px;
+    position: relative;
+}
+.feature-box ul li svg {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+</pre>
+</code>
+
+<h5>Icon</h5>
+<code>
+<pre>
+/* Icon */
+.feature-box .feature-icon {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    height: 88px;
+}
+.feature-box .feature-icon svg {
+    width: 88px;
+    height: 88px;
+}
+</pre>
+</code>
+    
+<h5>Media queries</h5>
+<code>
+<pre>
+/* Media queries */
+@media (max-width: 992px) {
+    .feature-box {
+        padding: 32px;
+    }
+    .feature-box h3 {
+        margin: 8px 0 0 16px;
+        font-size: 21px;
+        line-height: 1.33;
+    }
+    .feature-box .feature-icon {
+        position: relative;
+        height: 56px;
+        top:auto;
+        left: auto;
+    }
+    .feature-box .feature-icon svg {
+        width: 56px;
+        height: 56px;
+    }
+}
+@media (max-width: 576px) {
+    .feature-box {
+        padding: 24px;
+    }
+    .feature-box .feature-icon {
+        height: 44px;
+    }
+    .feature-box .feature-icon svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .feature-box h3 {
+        margin: 4px 0 0 16px;
+        line-height: 1.25;
+        font-size: 21px;
+    }
+}
+</pre>
+</code>
+`
+$(".feature-box-examples-code .css-code").html(featureBoxExamplesCss);
+    
+//Feature box - examples
+
+//html
+const featureBoxNewsHtml =
+`
+<div class="feature-box">
+    <div class="feature-box-title">
+     <div class="feature-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+            <g id="Group_7612" data-name="Group 7612" transform="translate(-3978 -1265.5)">
+                <g id="Group_7577" data-name="Group 7577" transform="translate(3978 1265.5)">
+                    <g id="Group_7576" data-name="Group 7576">
+                        <circle id="Ellipse_17" data-name="Ellipse 17" cx="27.5" cy="27.5" r="27.5" fill="#e1aa21" />
+                    </g>
+                </g>
+                <g id="Group_7638" data-name="Group 7638" transform="translate(3992.009 1282.036)">
+                    <g id="Group_7637" data-name="Group 7637">
+                        <path id="Path_6307" data-name="Path 6307" d="M25.545,5.114a14.488,14.488,0,0,0-4.3-.614A11.414,11.414,0,0,0,14.5,6.341,11.414,11.414,0,0,0,7.75,4.5,11.414,11.414,0,0,0,1,6.341V24.32a.66.66,0,0,0,.614.614c.123,0,.184-.061.307-.061a14.979,14.979,0,0,1,5.83-1.35,11.414,11.414,0,0,1,6.75,1.841,14.783,14.783,0,0,1,6.75-1.841,12.492,12.492,0,0,1,5.83,1.289.553.553,0,0,0,.307.061A.66.66,0,0,0,28,24.259V6.341A8.371,8.371,0,0,0,25.545,5.114Zm0,16.568a14.261,14.261,0,0,0-4.3-.614,14.783,14.783,0,0,0-6.75,1.841V8.8a14.783,14.783,0,0,1,6.75-1.841,14.261,14.261,0,0,1,4.3.614Z" transform="translate(-1 -4.5)" fill="#fff" />
+                        <g id="Group_7636" data-name="Group 7636" transform="translate(15.516 5.825)">
+                            <path id="Path_6308" data-name="Path 6308" d="M18.168,10.723a13.43,13.43,0,0,1,2.871.3V9.276A15.507,15.507,0,0,0,18.168,9,13.215,13.215,0,0,0,13,9.953V11.86A10.661,10.661,0,0,1,18.168,10.723Z" transform="translate(-13 -9)" fill="#fff" />
+                            <path id="Path_6309" data-name="Path 6309" d="M13,12.613V14.52a10.661,10.661,0,0,1,5.168-1.137,13.43,13.43,0,0,1,2.871.3V11.936a15.507,15.507,0,0,0-2.871-.276A13.426,13.426,0,0,0,13,12.613Z" transform="translate(-13 -8.605)" fill="#fff" />
+                            <path id="Path_6310" data-name="Path 6310" d="M18.168,14.33A13.215,13.215,0,0,0,13,15.283V17.19a10.661,10.661,0,0,1,5.168-1.137,13.43,13.43,0,0,1,2.871.3V14.606A14.582,14.582,0,0,0,18.168,14.33Z" transform="translate(-13 -8.209)" fill="#fff" />
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <h3>Latest news on grants and programs</h3>
+    </div>
+    <p>The text in this component can be paragraphs.</p>
+    <ul>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>Or list points which are also handy.</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>It just needs to be formatted in the same was as general body text on the site.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisisultricies arcu non pretium.</p>
+</div>
+`
+
+$(".feature-box-news-code .html-code code pre").text(featureBoxNewsHtml);
+
+//css
+const featureBoxNewsCss =
+`
+<h5>Container</h5>
+<code>
+<pre>
+/* Container */
+.feature-box {
+    height: auto;
+    border-top: none;
+    background: none;
+    padding: 32px 120px 32px 152px;
+    border-top: 4px solid #E1AA21;
+    background: #FFF0C1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+    line-height: 1.78;
+    text-align: left;
+    position: relative;
+}
+
+/* Remove bottom padding from last element in the component*/
+.feature-box > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.feature-box > *:last-child li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+</pre>
+</code>
+    
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.feature-box-title {
+    display: flex;
+    margin-bottom: 32px;
+}
+.feature-box h3 {
+    margin: 8px 0 0 0;
+    padding: 0;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 32px;
+}
+.feature-box p {
+    line-height: 32px;
+    font-size: 16px;
+    padding: 0 0 32px 0;
+    margin: 0;
+    letter-spacing: 0.0125rem;
+    color: #333;
+    display: inline-block;
+}
+</pre>
+</code>
+    
+<h5>List</h5>
+<code>
+<pre>
+/* List */
+.feature-box ul {
+    padding: 0 0 0 16px;
+    margin: 0;
+    line-height: 1.78;
+    list-style: none;
+}
+.feature-box ul li {
+    padding: 0 0 16px 32px;
+    margin: 0;
+    line-height: 32px;
+    position: relative;
+}
+.feature-box ul li svg {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+</pre>
+</code>
+
+<h5>Icon</h5>
+<code>
+<pre>
+/* Icon */
+.feature-box .feature-icon {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    height: 88px;
+}
+.feature-box .feature-icon svg {
+    width: 88px;
+    height: 88px;
+}
+</pre>
+</code>
+    
+<h5>Media queries</h5>
+<code>
+<pre>
+/* Media queries */
+@media (max-width: 992px) {
+    .feature-box {
+        padding: 32px;
+    }
+    .feature-box h3 {
+        margin: 8px 0 0 16px;
+        font-size: 21px;
+        line-height: 1.33;
+    }
+    .feature-box .feature-icon {
+        position: relative;
+        height: 56px;
+        top:auto;
+        left: auto;
+    }
+    .feature-box .feature-icon svg {
+        width: 56px;
+        height: 56px;
+    }
+}
+@media (max-width: 576px) {
+    .feature-box {
+        padding: 24px;
+    }
+    .feature-box .feature-icon {
+        height: 44px;
+    }
+    .feature-box .feature-icon svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .feature-box h3 {
+        margin: 4px 0 0 16px;
+        line-height: 1.25;
+        font-size: 21px;
+    }
+}
+</pre>
+</code>
+`
+$(".feature-box-news-code .css-code").html(featureBoxNewsCss);
+    
+
+//DISCLAIMERS
+//Short alert
+
+//html
+const shortAlertHtml =
+`
+<div class="disclaimer">
+    <div class="short-alert-container">
+        <div class="alert-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <g id="Group_7896" data-name="Group 7896" transform="translate(-210 -948.5)">
+                    <circle id="Ellipse_37" data-name="Ellipse 37" cx="10" cy="10" r="10" transform="translate(210 948.5)" fill="#4569a0" />
+                    <g id="Group_7707" data-name="Group 7707" transform="translate(219.011 953.5)">
+                        <g id="Group_117" data-name="Group 117">
+                            <path id="Shape" d="M0,.859a.891.891,0,0,0,.92.859.891.891,0,0,0,.92-.859A.891.891,0,0,0,.92,0,.891.891,0,0,0,0,.859Z" transform="translate(0.348 8.295)" fill="#fff" />
+                            <path id="Path" d="M0,1.142A1.236,1.236,0,0,1,.282.479,1.281,1.281,0,0,1,1.269,0a1.279,1.279,0,0,1,.966.454,1.24,1.24,0,0,1,.3.688,1.189,1.189,0,0,1,0,.206l-.523,5.6a.672.672,0,0,1-.214.429.784.784,0,0,1-1.011.037.677.677,0,0,1-.256-.466L0,1.348A1.176,1.176,0,0,1,0,1.142Z" transform="translate(0 0)" fill="#fff" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="short-alert-content">
+            <p>Content on this page has been supplied by XYZ. View their <a class="">privacy policy</a>.</p>
+        </div>
+    </div>
+</div>
+`
+
+$(".short-alert-code .html-code code pre").text(shortAlertHtml);
+
+//css
+const shortAlertCss =
+`
+<h5>Container</h5>
+<code>
+<pre>
+/* Container */
+.disclaimer .short-alert-container {
+    border: #B3C2D8 1px solid;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    padding: 8px 0;
+}    
+</pre>
+</code>
+
+<h5>Icon</h5>
+<code>
+<pre>
+/* Icon */
+ .disclaimer .alert-icon {
+    height: 20px;
+    margin: 0 8px 0 0;
+    padding:0;
+}           
+.disclaimer .alert-icon svg {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}         
+</pre>
+</code>
+    
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.disclaimer .short-alert-content p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 0 16px 0;
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}            
+.disclaimer .short-alert-content p:last-of-type {
+    padding: 0;
+}
+.disclaimer a {
+    color: #254F90;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.disclaimer a:hover,
+.disclaimer a:focus {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;          
+}
+</pre>
+</code>
+`
+$(".short-alert-code .css-code").html(shortAlertCss);
+    
+//html
+const visibleDisclaimerHtml =
+`
+<div class="disclaimer">
+<div class="visible-disclaimer-container">
+<div class="alert-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <g id="Group_7896" data-name="Group 7896" transform="translate(-210 -948.5)">
+            <circle id="Ellipse_37" data-name="Ellipse 37" cx="10" cy="10" r="10" transform="translate(210 948.5)" fill="#4569a0" />
+            <g id="Group_7707" data-name="Group 7707" transform="translate(219.011 953.5)">
+                <g id="Group_117" data-name="Group 117">
+                    <path id="Shape" d="M0,.859a.891.891,0,0,0,.92.859.891.891,0,0,0,.92-.859A.891.891,0,0,0,.92,0,.891.891,0,0,0,0,.859Z" transform="translate(0.348 8.295)" fill="#fff" />
+                    <path id="Path" d="M0,1.142A1.236,1.236,0,0,1,.282.479,1.281,1.281,0,0,1,1.269,0a1.279,1.279,0,0,1,.966.454,1.24,1.24,0,0,1,.3.688,1.189,1.189,0,0,1,0,.206l-.523,5.6a.672.672,0,0,1-.214.429.784.784,0,0,1-1.011.037.677.677,0,0,1-.256-.466L0,1.348A1.176,1.176,0,0,1,0,1.142Z" transform="translate(0 0)" fill="#fff" />
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>
+<div class="visible-disclaimer-content">
+    <h4 class="disclaimer-title">Disclaimer</h4>
+    <p>As a condition for access you agree that the Commonwealth makes no representations or warranties regarding the database and does not accept any liability in connection with reliance on the information contained within the database (including by third parties you in any way allow or assist to access the information). View the <a class="">privacy policy</a>.</p>
+</div>
+</div>
+</div>
+`
+$(".visible-disclaimer-code .html-code code pre").text(visibleDisclaimerHtml);
+
+//css
+const visibleDisclaimerCss =
+`
+<h5>Container</h5>
+<code>
+<pre>
+/* Container */
+.disclaimer .visible-disclaimer-container {
+    border: #B3C2D8 1px solid;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    padding: 8px 0;
+}    
+</pre>
+</code>
+
+<h5>Icon</h5>
+<code>
+<pre>
+/* Icon */
+ .disclaimer .alert-icon {
+    height: 20px;
+    margin: 0 8px 0 0;
+    padding:0;
+}           
+.disclaimer .alert-icon svg {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}         
+</pre>
+</code>
+    
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.disclaimer .disclaimer-title {
+    padding: 0 0 16px 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.disclaimer .visible-disclaimer-content p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 0 16px 0;
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}            
+.disclaimer .visible-disclaimer-content p:last-of-type {
+    padding: 0;
+}
+.disclaimer a {
+    color: #254F90;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.disclaimer a:hover,
+.disclaimer a:focus {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;          
+}
+</pre>
+</code>
+`
+$(".visible-disclaimer-code .css-code").html(visibleDisclaimerCss);
+    
+//html
+const hiddenDisclaimerHtml =
+`
+<div class="hidden-disclaimer">
+<div class="hidden-disclaimer-container">
+<div class="disclaimer-title-wrapper">
+<div class= "alert-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <g id="Group_7896" data-name="Group 7896" transform="translate(-210 -948.5)">
+            <circle id="Ellipse_37" data-name="Ellipse 37" cx="10" cy="10" r="10" transform="translate(210 948.5)" fill="#4569a0" />
+            <g id="Group_7707" data-name="Group 7707" transform="translate(219.011 953.5)">
+                <g id="Group_117" data-name="Group 117">
+                    <path id="Shape" d="M0,.859a.891.891,0,0,0,.92.859.891.891,0,0,0,.92-.859A.891.891,0,0,0,.92,0,.891.891,0,0,0,0,.859Z" transform="translate(0.348 8.295)" fill="#fff" />
+                    <path id="Path" d="M0,1.142A1.236,1.236,0,0,1,.282.479,1.281,1.281,0,0,1,1.269,0a1.279,1.279,0,0,1,.966.454,1.24,1.24,0,0,1,.3.688,1.189,1.189,0,0,1,0,.206l-.523,5.6a.672.672,0,0,1-.214.429.784.784,0,0,1-1.011.037.677.677,0,0,1-.256-.466L0,1.348A1.176,1.176,0,0,1,0,1.142Z" transform="translate(0 0)" fill="#fff" />
+                </g>
+            </g>
+        </g>
+    </svg>
+</div>
+<h4 class="disclaimer-title">Disclaimer</h4>
+   <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+       <path id="Chevron_Down" data-name="Chevron / Down" d="M6.028,8,0,14.018,1.986,16,10,8,1.986,0,0,1.982Z" transform="translate(16) rotate(90)" fill="#4569a0" />
+   </svg>
+
+</div>
+<div class="hidden-disclaimer-content">
+    <p>As a condition for access you agree that the Commonwealth makes no representations or warranties regarding the database and does not accept any liability in connection with reliance on the information contained within the database (including by third parties you in any way allow or assist to access the information). View the <a class="">privacy policy</a>.</p>
+</div>
+</div>
+</div>
+`
+
+$(".hidden-disclaimer-code .html-code code pre").text(hiddenDisclaimerHtml);
+
+//css
+const hiddenDisclaimerCss =
+`
+<h5>Containers</h5>
+<code>
+<pre>
+/* Container */
+.hidden-disclaimer .hidden-disclaimer-container {
+    border: #B3C2D8 1px solid;
+    border-left: none;
+    border-right: none;
+    display: block;
+    padding: 8px 0;
+}
+.hidden-disclaimer .disclaimer-title-wrapper {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.hidden-disclaimer .hidden-disclaimer-content {
+    padding: 16px 24px 0 28px;
+    /* display: none; Toggle content display with javascript */
+}    
+</pre>
+</code>
+
+<h5>Icon</h5>
+<code>
+<pre>
+/* Icon */
+.hidden-disclaimer .alert-icon {
+    height: 20px;
+    margin: 0 8px 0 0;
+    padding:0;
+}           
+.hidden-disclaimer .alert-icon svg {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}        
+</pre>
+</code>
+   
+<h5>Chevron</h5>
+<code>
+<pre>
+/* Chevron */
+.hidden-disclaimer .chevron {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);  
+}        
+</pre>
+</code>
+  
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.hidden-disclaimer .disclaimer-title {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.hidden-disclaimer .disclaimer-title-wrapper:hover .disclaimer-title,
+.hidden-disclaimer .disclaimer-title-wrapper:focus .disclaimer-title {
+    text-decoration: underline;
+}       
+.hidden-disclaimer .hidden-disclaimer-content p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 0 16px 0;
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}            
+.hidden-disclaimer .hidden-disclaimer-content p:last-of-type {
+    padding: 0;
+}
+.hidden-disclaimer a {
+    color: #254F90;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.hidden-disclaimer a:hover,
+.hidden-disclaimer a:focus {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;         
+}
+</pre>
+</code>
+`
+$(".hidden-disclaimer-code .css-code").html(hiddenDisclaimerCss);
+    
 //Accordian
 
 //html
@@ -4578,3 +5485,6 @@ const checklistSaveProgressCss =
 `
 $(".checklist-save-progress-code .css-code").html(checklistSaveProgressCss);
 });
+
+
+
