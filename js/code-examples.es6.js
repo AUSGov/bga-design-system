@@ -4610,8 +4610,8 @@ const informationNotificationCss =
 <h5>Notification icon</h5>
 <code>
 <pre>.icon-information {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
 }
 </pre>
 </code>
@@ -4685,8 +4685,8 @@ const confirmationNotificationCss =
 <h5>Notification icon</h5>
 <code>
 <pre>.icon-information {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
 }
 </pre>
 </code>
@@ -4761,8 +4761,8 @@ const warningNotificationCss =
 <h5>Notification icon</h5>
 <code>
 <pre>.icon-information {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
 }
 </pre>
 </code>
