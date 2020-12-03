@@ -1969,6 +1969,7 @@ const standardCallToActionCss =
   margin: 0;
   line-height: 32px;
   position: relative;
+  padding-left: 32px;
 }
 .call-to-action ul li:last-of-type {
   padding-bottom: 32px;
@@ -1979,6 +1980,9 @@ const standardCallToActionCss =
 }
 .call-to-action ul li svg {
   padding-right: 16px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
 }
 </pre>
 </code>        
@@ -2137,6 +2141,7 @@ const downloadCallToActionCss =
   margin: 0;
   line-height: 32px;
   position: relative;
+  padding-left: 32px;
 }
 .call-to-action ul li:last-of-type {
   padding-bottom: 32px;
@@ -2147,6 +2152,9 @@ const downloadCallToActionCss =
 }
 .call-to-action ul li svg {
   padding-right: 16px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
 }
 </pre>
 </code>        
@@ -2378,6 +2386,9 @@ const standardCallOutBoxCss =
   line-height: 1.78;
   text-align: left;
 }
+.call-out-box > *:last-child {
+  padding-bottom: 0px;
+}
 </pre>
 </code>
     
@@ -2420,8 +2431,9 @@ const standardCallOutBoxCss =
   margin: 0;
   line-height: 32px;
   position: relative;
+  padding-left: 32px;
 }
-.call-out-box ul li:last-of-type {
+.call-out-box > *:last-child li:last-of-type {
   padding-bottom: 0px;
 }
 .call-out-box ul li p {
@@ -2429,7 +2441,9 @@ const standardCallOutBoxCss =
   display: inline;
 }
 .call-out-box ul li svg {
-  padding-right: 16px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
 }
 </pre>
 </code>        
@@ -2504,6 +2518,9 @@ const contactCallOutBoxCss =
   line-height: 1.78;
   text-align: left;
 }
+.call-out-box > *:last-child {
+  padding-bottom: 0;
+}
 </pre>
 </code>
     
@@ -2546,8 +2563,9 @@ const contactCallOutBoxCss =
   margin: 0;
   line-height: 32px;
   position: relative;
+  padding-left: 32px;
 }
-.call-out-box ul li:last-of-type {
+.call-out-box > *:last-child li:last-of-type {
   padding-bottom: 0px;
 }
 .call-out-box.contact-call-out-box ul li a {
@@ -2565,6 +2583,9 @@ const contactCallOutBoxCss =
 }
 .call-out-box ul li svg {
   padding-right: 16px;
+  position: absolute;
+  top: 8px;
+  left: 0;
 }
 </pre>
 </code>        
@@ -2711,73 +2732,72 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
 //Accordion
 
   //html
-  const accordionHtml = `
+  const accordionHtml = 
+`
 <div class="accordion">
-	<div class=" accordion-group">
-		<div class="accordion-group-toggle">
-			<div tabindex="0" class="accordion-group-toggle-content">
-				<h5 class="title">Open all</h5>
-				<div class="arrow-icon">
-					<svg width="16" height="16">
-						<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-					</svg>
-				</div>
-			</div>
-		</div>
-		<div>
-			<div class="accordion-item">
-				<div class="accordion-item-tile" tabindex="0">
-					<div class="accordion-item-tile-content">
-						<h5 class="title">Accordion item 1 title</h5>
-						<button tabindex="-1" class="icon-container">
-							<div class="arrow-icon ">
-								<svg width="16" height="16">
-									<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-								</svg>
-							</div>
-						</button>
-					</div>
-				</div>
-				<div class="accordion-item-content">
-					<ul>
-						<li>
-							<svg
-								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-								<circle fill="#c18100" cx="8" cy="8" r="4"/>
-							</svg>
-							<p>Accordions can contain lists.</p>
-						</li>
-						<li>
-							<svg
-								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-								<circle fill="#c18100" cx="8" cy="8" r="4"/>
-							</svg>
-							<p>Complete with links like other body copy.</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div>
-			<div class="accordion-item">
-				<div class="accordion-item-tile" tabindex="0">
-					<div class="accordion-item-tile-content">
-						<h5 class="title">Accordion item 1 title</h5>
-						<button tabindex="-1" class="icon-container">
-							<div class="arrow-icon ">
-								<svg width="16" height="16">
-									<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-								</svg>
-							</div>
-						</button>
-					</div>
-				</div>
-				<div class="accordion-item-content">
-					<p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class=" accordion-group">
+       <div class="accordion-group-toggle">
+          <div tabindex="0" class="accordion-group-toggle-content"> <!-- Toggle 'all-open' class with js when clicked-->
+             <h5 class="title">Open all</h5> <!-- Toggle 'open/close' text with js when button is clicked-->
+             <div class="arrow-icon">
+                <svg width="16" height="16">
+                   <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                </svg>
+             </div>
+          </div>
+       </div>
+       <div>
+          <div class="accordion-item"> <!-- Toggle 'open' class with js when clicked -->
+             <div class="accordion-item-tile" tabindex="0">
+                <div class="accordion-item-tile-content">
+                   <h5 class="title">Accordion item 1 title</h5>
+                   <button tabindex="-1" class="icon-container">
+                      <div class="arrow-icon ">
+                         <svg width="16" height="16">
+                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                         </svg>
+                      </div>
+                   </button>
+                </div>
+             </div>
+             <div class="accordion-item-content"> <!-- Toggle 'visible' class with js to expand-->
+                <ul>
+                   <li>
+                      <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                         <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                      </svg>
+                      <p>Accordions can contain lists.</p>
+                   </li>
+                   <li>
+                      <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                         <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                      </svg>
+                      <p>Complete with links like other body copy.</p>
+                   </li>
+                </ul>
+             </div>
+          </div>
+       </div>
+       <div>
+          <div class="accordion-item"> <!-- Toggle 'open' class with js when clicked -->
+             <div class="accordion-item-tile" tabindex="0">
+                <div class="accordion-item-tile-content">
+                   <h5 class="title">Accordion item 2 title</h5>
+                   <button tabindex="-1" class="icon-container">
+                      <div class="arrow-icon ">
+                         <svg width="16" height="16">
+                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                         </svg>
+                      </div>
+                   </button>
+                </div>
+             </div>
+             <div class="accordion-item-content"> <!-- Toggle 'visible' class with js to expand-->
+                <p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
+             </div>
+          </div>
+       </div>
+    </div>
 </div>
 `
 $(".accordion-code .html-code code pre").text(accordionHtml);
@@ -2790,96 +2810,96 @@ const accordionCss =
 <pre>
 /* Containers */
 .accordion-group-toggle {
-border-bottom: 1px solid #ebebeb;
-justify-content: flex-end;
-padding: 24px 48px 24px 24px;
-align-items: center;
-display: flex;
-font-family: "Open Sans", sans-serif;
+  border-bottom: 1px solid #ebebeb;
+  justify-content: flex-end;
+  padding: 24px 48px 24px 24px;
+  align-items: center;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
 }
 .accordion-group-toggle-content {
-height: 32px;
-align-items: center;
-display: flex;
-outline: none;
+  height: 32px;
+  align-items: center;
+  display: flex;
+  outline: none;
 }
 .accordion-item-tile {
-border-bottom: 1px solid #ebebeb;
-box-sizing: border-box;
-transition: background-color 0.5s;
-background-color: #ffffff;
+  border-bottom: 1px solid #ebebeb;
+  box-sizing: border-box;
+  transition: background-color 0.5s;
+  background-color: #ffffff;
 }
 .accordion-item-tile-content {
-align-items: center;
-display: flex;
-justify-content: space-between;
-padding: 32px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
 }
 .accordion .icon-container {
-align-items: center;
-background-color: #f5c550;
-border: none;
-border-radius: 3.125rem;
-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-color: #000;
-cursor: pointer;
-display: flex;
-font-weight: 500;
-justify-content: center;
-outline: none;
-padding: 16px;
-position: relative;
-transition: all 0.3s ease 0s;
+  align-items: center;
+  background-color: #f5c550;
+  border: none;
+  border-radius: 3.125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  outline: none;
+  padding: 16px;
+  position: relative;
+  transition: all 0.3s ease 0s;
 }
 .accordion-item-content {
-display: none;
-transition-property: transform, -webkit-transform;
-transition-duration: 0.4s, 0.4s;
-transition-timing-function: ease, ease;
-transition-delay: 0s, 0s;
-max-height: 0;
-overflow: hidden;
-transition: height 0.8s, background-color 0.5s;
+  display: none;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  max-height: 0;
+  overflow: hidden;
+  transition: height 0.8s, background-color 0.5s;
+  padding: 0 112px 32px 32px;
 }
 .accordion-item-banner {
-background-color: #ffd964;
-height: 0;
-position: absolute;
-transition: height 0.2s;
-width: 100%;
-z-index: 1;
+  background-color: #ffd964;
+  height: 0;
+  position: absolute;
+  transition: height 0.2s;
+  width: 100%;
+  z-index: 1;
 }
 .accordion-item-content.visible {
-display: block;
-background-color: #ebebeb !important;
-padding: 0 112px 0px 32px;
-border-bottom: solid 4px #ffd964;
-max-height: none;
+  display: block;
+  background-color: #ebebeb !important;
+  border-bottom: solid 4px #ffd964;
+  max-height: none;
 }
 .accordion-item.open .accordion-item-tile {
-background-color: #ebebeb !important;
+  background-color: #ebebeb !important;
 }
 .accordion-item-tile:focus,
 .accordion-item-tile:hover {
-background-color: #ebebeb;
-cursor: pointer;
-outline: none;
+  background-color: #ebebeb;
+  cursor: pointer;
+  outline: none;
 }
 .accordion-item.open .accordion-item-tile,
 .accordion-item.open .accordion-item-tile:hover,
 .accordion-item.open .accordion-item-tile:focus {
-border-bottom: none !important;
+  border-bottom: none !important;
 }
 .accordion-item-tile:hover,
 .accordion-item-tile:focus {
-border-bottom: solid 4px #ffd964 !important;
+  border-bottom: solid 4px #ffd964 !important;
 }
 .accordion-item-tile:focus .icon-container,
 .accordion-item-tile:hover .icon-container,
 .accordion-item.open .accordion-item-tile-content .icon-container {
-background-color: #ffd964;
-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-transform: translateY(-0.125rem);
+  background-color: #ffd964;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.125rem);
 }
 </pre>
 </code>
@@ -2889,63 +2909,74 @@ transform: translateY(-0.125rem);
 <pre>
 /* Text */
 .accordion .title {
-font-family: "Open Sans", sans-serif;
-font-weight: 600;
-font-style: normal;
-color: #666;
-font-size: 16px;
-transition: all 0.3s ease 0s;
-box-shadow: none;
-font-stretch: normal;
-letter-spacing: 0;
-line-height: 1.75;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #666;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+  box-shadow: none;
+  font-stretch: normal;
+  letter-spacing: 0;
+  line-height: 1.75;
 }
 .accordion-group-toggle-content .title {
-font-weight: 600;
-line-height: 2;
-margin: 0 8px 0 0;
-padding-bottom: 0;
+  font-weight: 600;
+  line-height: 2;
+  margin: 0 8px 0 0;
+  padding-bottom: 0;
 }
 .accordion-item-tile-content .title {
-max-width: 100%;
-margin: 0;
+  max-width: 100%;
+  margin: 0;
 }
 .accordion-group-toggle-content:hover .title {
-box-shadow: inset 0 -0.11rem 0 #666;
-cursor: pointer;
-line-height: 1.38;
+  box-shadow: inset 0 -0.11rem 0 #666;
+  cursor: pointer;
+  line-height: 1.38;
 }
 .accordion-item .accordion-item-tile:hover .title,
 .accordion-item .accordion-item-tile:focus .title,
 .accordion-item.open .accordion-item-tile-content .title {
-color: #000;
-box-shadow: inset 0 -2.08px 0 #666666;
+  color: #000;
+  box-shadow: inset 0 -2.08px 0 #666666;
 }
 .accordion p {
-color: #333;
-overflow-wrap: break-word;
-word-break: break-word;
-font-family: "Open Sans", sans-serif;
-padding: 0 0 32px 0;
+  color: #333;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 0 32px 0;
+  margin: 0;
+  line-height: 1.71;
 }
 .accordion ul {
-padding: 0 0 0 32px;
-margin: 0;
-font-size: 16px;
-line-height: 1.78;
-list-style: none;
-padding: 0;
+  padding: 0 0 0 16px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.78;
+  list-style: none;
 }
 .accordion ul li {
-padding: 0 0 16px 16px;
-margin: 0;
+  padding: 0 0 16px 16px;
+  margin: 0;
+  position: relative;
 }
-.accordion ul li:last-of-type {
-padding: 0 0 32px 16px;
+.accordion-item-content > *:last-child {
+  padding-bottom: 0;
+}
+.accordion-item-content > *:last-child li:last-of-type {
+  padding-bottom: 0;
+}
+.accordion ul li svg {
+  position: absolute;
+  top: 6px;
+  left: 0px;
 }
 .accordion ul li p {
-display: inline;
-padding-left: 16px;
+  display: block;
+  padding-left: 16px;
+  padding-bottom: 0px;
 }
 </pre>
 </code>
@@ -2955,15 +2986,15 @@ padding-left: 16px;
 <pre>
 /* Icon */
 .accordion .arrow-icon {
-line-height: 0.5;
+  line-height: 0.5;
 }
 .accordion-group-toggle-content.all-open .arrow-icon,
 .accordion-item.open .accordion-item-tile .arrow-icon {
-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 .accordion-item-tile .arrow-icon svg {
-fill: #333;
-transition: transform 0.3s;
+  fill: #333;
+  transition: transform 0.3s;
 }
 </pre>
 </code>
@@ -4095,7 +4126,8 @@ const imageCss =
 `
 <h5>Image</h5>
 <code>
-<pre>img {
+<pre>
+img {
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -4104,7 +4136,8 @@ const imageCss =
 </code>
 <h5>Caption</h5>
 <code>
-<pre>p {
+<pre>
+p {
     color: #333333;
     font-family: OpenSans;
     font-size: 14px;
@@ -4115,7 +4148,8 @@ const imageCss =
     
 <h5>Caption container</h5>
 <code>
-<pre>.container {
+<pre>
+.container {
     background-color: #EBEBEB;
     padding: 16px;
     width: 100%;
@@ -4130,7 +4164,111 @@ $(".image-code .css-code").html(imageCss);
 //html
 const mediaPlayerHtml =
 `
-Coming soon
+/* This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and local hosted videos */
+
+<div class="media-player">
+   <div id="media-player-not-available-videoid" class="media-player-not-available" style="visibility:hidden;">
+      <span>The request media could not be loaded at this time. Please try again later.</span>
+   </div>
+   <!-- Video Player section -->
+   <div id="video-player-player-videoid" class="video-player-player" style="background-image: url(media-player-placeholder.jpg);">
+      <button id="video-player-button-videoid" aria-label="Play video video title" class="video-player-button" onclick="bga.sc.feature.media.onPlayVideoClick('videoid'); triggerGoal('');">
+         <span class="video-player-button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 39 80 80">
+               <path class="st5 playiconWrapper" d="M2.5 79c0-20.7 16.8-37.5 37.5-37.5S77.5 58.3 77.5 79 60.7 116.5 40 116.5 2.5 99.7 2.5 79z"></path>
+               <path class="st0" d="M60.3 77c.6.2.8.8.6 1.4-.1.3-.3.5-.6.6L30 96.5c-1 .6-1.7.1-1.7-1v-35c0-1.1.8-1.5 1.7-1L60.3 77z"></path>
+            </svg>
+         </span>
+      </button>
+      <div id="video-player-player-me-videoid" style="visibility: hidden;">
+         <span class="mejs__offscreen">Video Player</span>
+         <div id="mep_0" class="mejs__container mejs__container-keyboard-inactive mejs__video" tabindex="0" role="application" aria-label="Video Player" style="width: 730px; height: 410.625px; min-width: 0px;">
+            <div class="mejs__inner">
+               <div class="mejs__mediaelement">
+                  <mediaelementwrapper id="videoid">
+                     <iframe id="videoid_youtube_iframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/nMnjUlzkm7U?controls=1&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=1&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;mute=0&amp;color=white&amp;cc_lang_pref=en&amp;cc_load_policy=1&amp;playsinline=1&amp;origin=https%3A%2F%2Fbgaauth.test.business.gov.au&amp;enablejsapi=1&amp;widgetid=1" data-gtm-yt-inspected-12375630_91="true" width="730" height="410.625"></iframe>
+                     <video id="videoid_from_mejs" style="width: 100%; height: 100%; display: none;" preload="auto" poster="" tabindex="0" src="https://www.youtube.com/watch?v=nMnjUlzkm7U">
+                        <source src="//www.youtube.com/watch?v=nMnjUlzkm7U" type="video/youtube">
+                     </video>
+                  </mediaelementwrapper>
+               </div>
+               <div class="mejs__layers">
+                  <div class="mejs__poster mejs__layer" style="display: none; width: 100%; height: 100%;"></div>
+                  <div class="mejs__overlay mejs__layer" style="width: 100%; height: 100%; display: none;">
+                     <div class="mejs__overlay-loading"><span class="mejs__overlay-loading-bg-img"></span></div>
+                  </div>
+                  <div class="mejs__overlay mejs__layer" style="display: none; width: 100%; height: 100%;">
+                     <div class="mejs__overlay-error"></div>
+                  </div>
+                  <div style="display: none; width: 100%; height: 100%;"></div>
+               </div>
+               <div class="mejs__controls" style="display: none;">
+                  <div class="mejs__button mejs__playpause-button mejs__play"><button type="button" aria-controls="mep_0" title="Play" aria-label="Play" tabindex="0"></button></div>
+                  <div class="mejs__time mejs__currenttime-container" role="timer" aria-live="off"><span class="mejs__currenttime">00:00</span></div>
+                  <div class="mejs__time-rail"><span class="mejs__time-total mejs__time-slider"><span class="mejs__time-buffering" style="display: none;"></span><span class="mejs__time-loaded"></span><span class="mejs__time-current" style="transform: scaleX(0);"></span><span class="mejs__time-hovered no-hover"></span><span class="mejs__time-handle" style="transform: translateX(0px);"><span class="mejs__time-handle-content"></span></span><span class="mejs__time-float"><span class="mejs__time-float-current">00:00</span><span class="mejs__time-float-corner"></span></span></span></div>
+                  <div class="mejs__time mejs__duration-container"><span class="mejs__duration">02:18</span></div>
+                  <div class="mejs__button mejs__volume-button mejs__unmute"><button type="button" aria-controls="mep_0" title="Unmute" aria-label="Unmute" tabindex="0"></button></div>
+                  <a class="mejs__horizontal-volume-slider" href="javascript:void(0);" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" role="slider" aria-valuetext="100%">
+                     <span class="mejs__offscreen">Use Up/Down Arrow keys to increase or decrease volume.</span>
+                     <div class="mejs__horizontal-volume-total">
+                        <div class="mejs__horizontal-volume-current" style="left: 0px; width: 0%;"></div>
+                        <div class="mejs__horizontal-volume-handle" style="left: 0%;"></div>
+                     </div>
+                  </a>
+                  <div class="mejs__button mejs__fullscreen-button"><button type="button" aria-controls="mep_0" title="Fullscreen" aria-label="Fullscreen" tabindex="0"></button></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Transcript section -->
+   <div id="media-player-transcript-info-videoid" class="media-player-transcript-info">
+      <div class="media-player-transcript-toggle">
+         <button id="toggle-transcript-videoid" aria-label="Toggle media transcript, transcript open">
+            <span>Open transcript</span> <!-- Toggle open/close text with javascript -->
+            <span class="iconAnimateWrapper">
+               <!-- Toggle 'active-expand' class with javascript -->
+               <svg width="16" height="16">
+                  <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+               </svg>
+            </span>
+         </button>
+      </div>
+      <div id="media-player-transcript-videoid" class="media-player-transcript" style="display: none;">
+         <!-- Toggle 'display: none;' inline style with javascript -->
+         <div class="media-transcript">
+            <div id="media-transcript-content-videoid" class="media-transcript-content">
+               <!-- Transcript text is obtained and placed here, if available -->
+               <p data-timeinseconds="12" data-duration="2.75" id="t-videoid-0" tabindex="0">This video transcript is a written copy</p>
+               <p data-timeinseconds="17" data-duration="3.3099999999999987" id="t-videoid-2" tabindex="0">of the video content.</p>
+               <p data-timeinseconds="20" data-duration="1.9100000000000001" id="t-videoid-3" tabindex="0">The transcript scrolls as the video progresses</p>
+               <p data-timeinseconds="22" data-duration="2.91" id="t-videoid-4" tabindex="0">and allows users with audio impairment</p>
+               <p data-timeinseconds="25" data-duration="3.490000000000002" id="t-videoid-5" tabindex="0">To read the the content.</p>
+               <p data-timeinseconds="28" data-duration="2.5969999999999978" id="t-videoid-6" tabindex="0">The current place in the video is highlighted in white.</p>
+               <p data-timeinseconds="31" data-duration="2.9830000000000005" id="t-videoid-7" tabindex="0">The current place in the video is highlighted in white.</p>
+               <p data-timeinseconds="34" data-duration="4.340000000000003" id="t-videoid-8" tabindex="0">The current place in the video is highlighted in white.</p>
+               <p data-timeinseconds="38" data-duration="2.7079999999999984" id="t-videoid-9" tabindex="0">The current place in the video is highlighted in white.</p>
+               <p data-timeinseconds="49" data-duration="1.5799999999999983" id="t-videoid-13" tabindex="0">So we have a successful business</p>
+               <p data-timeinseconds="51" data-duration="2.8000000000000043" id="t-videoid-14" tabindex="0">that looks at a certain sector.</p>
+               <p data-timeinseconds="53" data-duration="2.3599999999999994" id="t-videoid-15" tabindex="0">It's understanding how that technology</p>
+               <p data-timeinseconds="56" data-duration="2.460000000000001" id="t-videoid-16" tabindex="0">and that innovation can then be utilised</p>
+               <p data-timeinseconds="58" data-duration="1.25" id="t-videoid-17" tabindex="0">within the defence sector from</p>
+               <p data-timeinseconds="59" data-duration="1.75" id="t-videoid-18" tabindex="0">an Australian industry perspective.</p>
+               <p data-timeinseconds="61" data-duration="2.4699999999999918" id="t-videoid-19" tabindex="0">We have our JSF specialist.</p>
+               <p data-timeinseconds="64" data-duration="2.490000000000009" id="t-videoid-20" tabindex="0">Transcripts are important to meet accessibility requirements</p>
+               <p data-timeinseconds="66" data-duration="4.700000000000003" id="t-videoid-21" tabindex="0">Lorem ipsum dolor sit amet,</p>
+               <p data-timeinseconds="71" data-duration="2.796999999999997" id="t-videoid-22" tabindex="0">consectetur idipiscing elit.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Media info section -->
+   <div id="media-player-info-videoid" class="media-player-info">
+      <h3 class="title">Video Title</h3>
+      <p id="totalMediaTimeLabel-videoid" class="date">Time: 01:02</p>
+      <p class="detail">A short description describing the video can be placed here</p>
+   </div>
+</div>
 `
 
 $(".media-player-code .html-code code pre").text(mediaPlayerHtml);
@@ -4138,151 +4276,272 @@ $(".media-player-code .html-code code pre").text(mediaPlayerHtml);
 //css
 const mediaPlayerCss =
 `
-<h4>Desktop</h4>
-<h5>Play button</h5>
+<h5>Video</h5>
 <code>
-<pre>.arrow-icon {
-    color: #FFFFFF;
-    opacity: 1.0;
-    width: 29px;
-    height: 33px;
+<pre>
+/* Video */
+.media-player {
+  padding-bottom: 32px;
+  position: relative;
+  flex: 1;
 }
-button {
-    color: #333333;
-    opacity: 0.8;
-    width: 112px;
-    height: 79px;
-    
+.media-player-not-available {
+  text-align: center;
 }
-button:hover {
-    color: #4569A0;
-    opacity: 1.0;
+.video-player-player {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba(170, 178, 195, 0.7);
+}
+.video-player-button {
+  background: transparent;
+  border: 0;
+  max-height: 96px;
+  margin: 0 auto;
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: visible;
+}
+.video-player-button-icon {
+  width: 112px;
+  max-width: 80px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+.video-player-button svg .playiconWrapper {
+  fill: rgba(51, 51, 51, 0.8);
+}
+.video-player-player:hover .video-player-button svg .playiconWrapper {
+  fill: #4569a0;
+  transition: fill 0.2s;
+  cursor: pointer;
 }
 </pre>
 </code>
     
-<h5>Transcript toggle text</h5>
+<h5>Transcript</h5>
 <code>
-<pre>.toggle-text {
-    color: #4C4C4C;
-    font-family: OpenSans-Semibold;
+<pre>
+/* Transcript */
+.media-player-transcript-toggle {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 56px;
+  border-bottom: 2px solid #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.media-player-transcript-toggle button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  margin-right: 32px;
+  border: none;
+}
+.media-player-transcript-toggle button:hover {
+  cursor: pointer;
+}
+.media-player-transcript-toggle button:hover span {
+  background: transparent;
+  box-shadow: inset 0 -2.08px 0 #4c4c4c;
+}
+.media-player-transcript-toggle span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #4c4c4c;
+  transition: all 0.3s;
+  margin-right: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+.media-player-transcript {
+  transition: height 0.6s;
+  overflow: hidden;
+  height: 312px;
+  border-bottom: 2px solid #d8d8d8;
+}
+.media-transcript {
+  position: relative;
+  background-color: #ebebeb;
+  width: 100%;
+  padding: 0;
+  border-bottom: 2px solid #d8d8d8;
+}
+.media-transcript-content {
+  height: 312px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.media-transcript-content div {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.media-transcript-content:before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: calc(100% - 20px);
+  position: absolute;
+  background: linear-gradient(to top, rgba(235, 235, 235, 0), #ebebeb);
+  z-index: 1;
+}
+.media-player p {
+  font-size: 14px;
+  line-height: 1.78;
+  padding: 0 0 32px 0;
+  letter-spacing: 0.2px;
+  text-align: left;
+  margin: 0;
+  color: #333;
+}
+.media-transcript-content p {
+  margin: 5px 0 5px 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "Open Sans", sans-serif;
+}
+.media-transcript-content p:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+</pre>
+</code>
+    
+<h5>Description</h5>
+<code>
+<pre>
+/* Description */
+.media-player-info {
+  padding: 32px;
+  background-color: #ebebeb;
+  border-bottom: 2px solid #d8d8d8;
+  font-family: "Open Sans", sans-serif;
+}
+.media-player-info .title {
+  font-weight: 600;
+  font-size: 24px;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #333333;
+  letter-spacing: 0;
+  padding: 0 0 8px 0;
+  margin: 0;
+}
+.media-player-info .date {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #666;
+  padding-bottom: 8px;
+}
+.media-player-info .detail {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0;
+}
+</pre>
+</code>
+    
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.media-player .iconAnimateWrapper {
+  display: inline-block;
+  line-height: 0.5;
+  position: relative;
+  right: 0;
+  line-height: 1;
+}
+.media-player
+  .media-player-transcript-toggle
+  button:hover
+  span.iconAnimateWrapper {
+  box-shadow: none;
+}
+.media-player-transcript-toggle .iconAnimateWrapper svg {
+  transition: transform 0.3s;
+  fill: #333;
+}
+.media-player-transcript-toggle .active-expand svg {
+  transform: scaleY(-1);
+}
+.st6 {
+  stroke: #ffffff;
+  stroke-width: 5;
+}
+.st5 {
+  stroke: #ffffff;
+  stroke-width: 5;
+  enable-background: new;
+}
+.st0 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+</pre>
+</code>
+    
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .video-player-button {
+    bottom: 0;
+    transform: translate(-50%, -50%);
+  }
+  .video-player-button-icon {
+    width: 61px;
+    max-width: 42px;
+  }
+  .media-player-transcript-toggle {
+    height: 56px;
+  }
+  .media-player-transcript-toggle button {
+    margin-right: 24px;
+  }
+  .media-player-transcript-toggle button span {
     font-size: 16px;
-    line-height: 24px;
-}
-.toggle-text:hover {
-    box-shadow: inset 0 -0.13rem 0 #4C4C4C;
-}
-</pre>
-</code>
-    
-<h5>Transcript toggle icon</h5>
-<code>
-<pre>.chevron {
-    color: #333333;
-    width: 16px;
-    height: 10px;
-}
-</pre>
-</code>
-    
-<h5>Transcript time</h5>
-<code>
-<pre>.time {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 18px;
-}
-</pre>
-</code>
-    
-<h5>Transcript text</h5>
-<code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
+  }
+  .media-transcript-content p {
     font-size: 16px;
-    line-height: 28px;
-    padding: 0 10px;
-}
-p:hover {
-    background: #FFFFFF;
-}
-</pre>
-</code>
-    
-<h5>Video title</h5>
-<code>
-<pre>h3 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 24px;
-    line-height: 32px;
-}
-</pre>
-</code>
-    
-<h5>Video duration</h5>
-<code>
-<pre>p.time {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 24px;
-}
-</pre>
-</code>
-    
-<h5>Video description</h5>
-<code>
-<pre>p.description {
-    color: #333333;
-    font-family: OpenSans;
+  }
+  .media-player p {
     font-size: 16px;
-    line-height: 32px;
-}
-</pre>
-</code>
-    
-<h5>Text container</h5>
-<code>
-<pre>.container {
-    background-color: #EBEBEB;
-    padding: 32px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<h5>Transcript time</h5>
-<code>
-<pre>.time {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 10px;
-    line-height: 15px;
-}
-</pre>
-</code>
-    
-<h5>Play button</h5>
-<code>
-<pre>.arrow-icon {
-    color: #FFFFFF;
-    opacity: 1.0;
-    width: 15px;
-    height: 17px;
-}
-button {
-    color: #333333;
-    opacity: 0.8;
-    width: 60px;
-    height: 42px;
-    
-}
-button:hover {
-    color: #4569A0;
-    opacity: 1.0;
+    line-height: 1.71;
+  }
+  .media-player-info {
+    padding: 24px 16px;
+  }
+  .media-player-info .detail {
+    font-size: 16px;
+  }
 }
 </pre>
 </code>
@@ -4931,10 +5190,13 @@ const advisorProfileCss =
   margin: 0;
   line-height: 32px;
 }
-.advisor-description p:last-of-type {
-  padding: 0 0 16px 0;
+.advisor-description > *:last-child {
+  padding-bottom: 0;
   margin: 0;
 }
+.advisor-description > *:last-child li:last-of-type {
+  padding-bottom: 0;
+} 
 </pre>
 </code>
 
@@ -5650,7 +5912,7 @@ const modalCss =
   padding: 0 0 32px 0;
   color: #333;
 }
-.modal-dialog p:last-of-type {
+.modal-dialog > *:last-child {
   padding-bottom: 0;
 }
 </pre>
