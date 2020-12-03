@@ -5558,19 +5558,9 @@ const informationNotificationCss =
 
 <h5>Media Query</h5>
 <code>
-<pre>
-/* Media Query */
-@media (max-width: 576px) {
-  .information-notification .description {
-    font-size: 14px;
-  }
-  .information-notification .icon-container {
-    min-width: 44px;
-  }
-  .information-notification .icon-container .icon {
-    height: 44px;
-    width: 44px;
-  }
+<pre>.icon-information {
+    width: 32px;
+    height: 32px;
 }
 </pre>
 </code>
@@ -5696,19 +5686,9 @@ const confirmationNotificationCss =
 
 <h5>Media Query</h5>
 <code>
-<pre>
-/* Media Query */
-@media (max-width: 576px) {
-  .confirmation-notification .description {
-    font-size: 14px;
-  }
-  .confirmation-notification .icon-container {
-    min-width: 44px;
-  }
-  .confirmation-notification .icon-container .icon {
-    height: 44px;
-    width: 44px;
-  }
+<pre>.icon-information {
+    width: 32px;
+    height: 32px;
 }
 </pre>
 </code>
@@ -5842,19 +5822,9 @@ const warningNotificationCss =
 
 <h5>Media Query</h5>
 <code>
-<pre>
-/* Media Query */
-@media (max-width: 576px) {
-  .warning-notification .description {
-    font-size: 14px;
-  }
-  .warning-notification .icon-container {
-    min-width: 44px;
-  }
-  .warning-notification .icon-container .icon {
-    height: 44px;
-    width: 44px;
-  }
+<pre>.icon-information {
+    width: 32px;
+    height: 32px;
 }
 </pre>
 </code>

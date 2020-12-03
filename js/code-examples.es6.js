@@ -5565,13 +5565,12 @@ const informationNotificationCss =
     font-size: 14px;
   }
   .information-notification .icon-container {
-    min-width: 44px;
+    min-width: 32px;
   }
   .information-notification .icon-container .icon {
-    height: 44px;
-    width: 44px;
+    width: 32px;
+    height: 32px;
   }
-}
 </pre>
 </code>
 `
@@ -5703,11 +5702,11 @@ const confirmationNotificationCss =
     font-size: 14px;
   }
   .confirmation-notification .icon-container {
-    min-width: 44px;
+    min-width: 32px;
   }
   .confirmation-notification .icon-container .icon {
-    height: 44px;
-    width: 44px;
+    width: 32px;
+    height: 32px;
   }
 }
 </pre>
@@ -5849,11 +5848,11 @@ const warningNotificationCss =
     font-size: 14px;
   }
   .warning-notification .icon-container {
-    min-width: 44px;
+    min-width: 32px;
   }
   .warning-notification .icon-container .icon {
-    height: 44px;
-    width: 44px;
+    width: 32px;
+    height: 32px;
   }
 }
 </pre>
