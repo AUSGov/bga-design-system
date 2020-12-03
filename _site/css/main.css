@@ -5416,15 +5416,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .notification .notification-close { margin-top: 0px; background: url(../assets/BGAIcon-close.svg) no-repeat; background-size: 16px 16px; height: 16px; min-width: 16px; width: 16px; position: absolute; top: 16px; right: 16px; }
 
-.design-system-card .mobile-example .notification .notification-wrapper, .design-system-card .mobile-media-query .notification .notification-wrapper { padding: 24px; }
+.design-system-card .mobile-example .notification .notification-wrapper, .design-system-card .mobile-media-query .notification .notification-wrapper { padding: 24px; flex-wrap: wrap; }
 
-.design-system-card .mobile-example .notification .notification-icon, .design-system-card .mobile-media-query .notification .notification-icon { min-width: 44px; width: 44px; height: 44px; }
+.design-system-card .mobile-example .notification .notification-icon, .design-system-card .mobile-media-query .notification .notification-icon { height: 32px; text-align: center; flex: 1 0 100%; }
 
-.design-system-card .mobile-example .notification .notification-icon svg, .design-system-card .mobile-media-query .notification .notification-icon svg { width: 44px; height: 44px; }
+.design-system-card .mobile-example .notification .notification-icon svg, .design-system-card .mobile-media-query .notification .notification-icon svg { width: 32px; height: 32px; display: inline-block; }
 
-.design-system-card .mobile-example .notification .notification-content, .design-system-card .mobile-media-query .notification .notification-content { padding: 0 0 0 16px; }
-
-.design-system-card .mobile-example .notification .notification-content.with-close, .design-system-card .mobile-media-query .notification .notification-content.with-close { padding: 8px 16px 0 16px; }
+.design-system-card .mobile-example .notification .notification-content, .design-system-card .mobile-media-query .notification .notification-content { padding: 16px 0 0 0; flex: 1 0 100%; /*&.with-close { padding: 8px 16px 0 16px; }*/ }
 
 .design-system-card .mobile-example .notification .notification-content p, .design-system-card .mobile-media-query .notification .notification-content p { font-size: 14px; }
 
