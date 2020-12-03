@@ -4116,7 +4116,12 @@ $(".table-code .css-code").html(tableCss);
 //html
 const imageHtml =
 `
-Coming soon
+<div class="image-container">
+   <img src="image-source.jpg" alt="image-name" class="responsive-image">
+   <div class="caption">
+      <p>This caption is optional. Sometimes you will need it and sometimes you won't.</p>
+   </div>
+</div>
 `
 
 $(".image-code .html-code code pre").text(imageHtml);
@@ -4124,35 +4129,44 @@ $(".image-code .html-code code pre").text(imageHtml);
 //css
 const imageCss =
 `
+<h5>Container</h5>
+<code>
+<pre>
+/* Container */
+.image-container {
+  max-width: 100%;
+  width: 100%;
+}
+</pre>
+</code>
+
 <h5>Image</h5>
 <code>
 <pre>
-img {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
+/* Image */
+.responsive-image {
+  width: 100%;
+  display: block;
 }
 </pre>
 </code>
+
 <h5>Caption</h5>
 <code>
 <pre>
-p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 24px;
+/* Caption */
+.caption {
+  background: #ebebeb;
+  padding: 16px;
+  max-width: 100%;
+  width: 100%;
+  display: block;
 }
-</pre>
-</code>
-    
-<h5>Caption container</h5>
-<code>
-<pre>
-.container {
-    background-color: #EBEBEB;
-    padding: 16px;
-    width: 100%;
+.image-container p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 </pre>
 </code>
@@ -4164,7 +4178,7 @@ $(".image-code .css-code").html(imageCss);
 //html
 const mediaPlayerHtml =
 `
-/* This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and local hosted videos */
+/* This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and locally hosted videos */
 
 <div class="media-player">
    <div id="media-player-not-available-videoid" class="media-player-not-available" style="visibility:hidden;">
