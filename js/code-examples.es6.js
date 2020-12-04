@@ -1790,8 +1790,8 @@ $(".information-page-header-code .css-code").html(informationPageHeaderCss);
 const grantsPageHeaderHtml =
 `
 <div class="grants-page-header">
-   <p class="category">Category Label</p>
-   <h1 class="title">Descriptive page title</h1>
+   <p class="category">GRANT NAME</p>
+   <h1 class="title">Descriptive title explaining what the grant is for</h1>
    <p class="updated">Last Updated: 15 Octover 2019</p>
 </div>
 `
@@ -2539,7 +2539,7 @@ const contactCallOutBoxCss =
 .call-out-box p {
   line-height: 32px;
   font-size: 16px;
-  padding: 0 0 32px 0px;
+  padding: 0 0 16px 0px;
   margin: 0;
   letter-spacing: 0.0125rem;
   color: #333;
@@ -3914,69 +3914,61 @@ $(".hidden-disclaimer-code .css-code").html(hiddenDisclaimerCss);
 const tableHtml =
 `
 <table class="table">
-	<thead>
-		<tr>
-			<th>Applicant Organisation</th>
-			<th>Project Name</th>
-			<th>Project Description</th>
-			<th>Project Location</th>
-			<th>Amount</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td data-title="Applicant Organisation">District Council Of Endor
-                    
-				<div class="arrow-icon">
-					<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-						<path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
-					</svg>
-				</div>
-			</td>
-			<td data-title="Project Name">Endor Tourism Strategy</td>
-			<td data-title="Project Description">The project will deliver a strategy for tourism in Endor, benefiting all the Ewoks.</td>
-			<td data-title="Project Location">Endor moon</td>
-			<td data-title="Amount">$20,000</td>
-		</tr>
-		<tr>
-			<td data-title="Applicant Organisation">Great Southern Land Centre
-                    
-				<div class="arrow-icon">
-					<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-						<path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
-					</svg>
-				</div>
-			</td>
-			<td data-title="Project Name">Great Southern Land Master Plan</td>
-			<td data-title="Project Description">The project will deliver a Master Plan for the Great Southern Land over a ten year period.</td>
-			<td data-title="Project Location">Albany</td>
-			<td data-title="Amount">$125,000</td>
-		</tr>
-		<tr>
-			<td data-title="Applicant Organisation">Mephis City Council
-                    
-				<div class="arrow-icon">
-					<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-						<path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
-					</svg>
-				</div>
-			</td>
-			<td data-title="Project Name">Memphic City Economic Development Strategy</td>
-			<td data-title="Project Description">The project will develop a suite planning documents towards economic growth of Memphis. </td>
-			<td data-title="Project Location">Gracelands</td>
-			<td data-title="Amount">$50,000</td>
-		</tr>
-	</tbody>
-</table> 
+   <thead>
+      <tr>
+         <th>Applicant Organisation</th>
+         <th>Project Name</th>
+         <th>Project Description</th>
+         <th>Project Location</th>
+         <th>Amount</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <!-- Toggle 'showGroup' class on mobile view to expand accordion -->
+         <td data-title="Applicant Organisation">
+            District Council Of Endor                    				
+            <div class="arrow-icon">
+               <svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"						xmlns="http://www.w3.org/2000/svg"						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                  <path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+               </svg>
+            </div>
+         </td>
+         <td data-title="Project Name">Endor Tourism Strategy</td>
+         <td data-title="Project Description">The project will deliver a strategy for tourism in Endor, benefiting all the Ewoks.</td>
+         <td data-title="Project Location">Endor moon</td>
+         <td data-title="Amount">$20,000</td>
+      </tr>
+      <tr>
+         <td data-title="Applicant Organisation">
+            Great Southern Land Centre                    				
+            <div class="arrow-icon">
+               <svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"						xmlns="http://www.w3.org/2000/svg"						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                  <path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+               </svg>
+            </div>
+         </td>
+         <td data-title="Project Name">Great Southern Land Master Plan</td>
+         <td data-title="Project Description">The project will deliver a Master Plan for the Great Southern Land over a ten year period.</td>
+         <td data-title="Project Location">Albany</td>
+         <td data-title="Amount">$125,000</td>
+      </tr>
+      <tr>
+         <td data-title="Applicant Organisation">
+            Mephis City Council                    				
+            <div class="arrow-icon">
+               <svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"						xmlns="http://www.w3.org/2000/svg"						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                  <path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+               </svg>
+            </div>
+         </td>
+         <td data-title="Project Name">Memphic City Economic Development Strategy</td>
+         <td data-title="Project Description">The project will develop a suite planning documents towards economic growth of Memphis. </td>
+         <td data-title="Project Location">Gracelands</td>
+         <td data-title="Amount">$50,000</td>
+      </tr>
+   </tbody>
+</table>
 `
 
 $(".table-code .html-code code pre").text(tableHtml);
@@ -4042,7 +4034,7 @@ const tableCss =
   padding: 0;
   display: none;
 }
-.flip-icon {
+.showGroup .arrow-icon {
   transform: scaleY(-1);
 }
 </pre>
@@ -4082,7 +4074,7 @@ const tableCss =
     display: block;
     cursor: pointer;
   }
-  .table td.showGroup {
+  .table .showGroup td {
     display: block;
     transition: all 0.2s;
     background: #ebebeb;
@@ -4178,10 +4170,10 @@ $(".image-code .css-code").html(imageCss);
 //html
 const mediaPlayerHtml =
 `
-/* This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and locally hosted videos */
+<!-- This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and locally hosted videos -->
 
 <div class="media-player">
-   <div id="media-player-not-available-videoid" class="media-player-not-available" style="visibility:hidden;">
+   <div id="media-player-not-available-videoid" class="media-player-not-available" style="display: none;">
       <span>The request media could not be loaded at this time. Please try again later.</span>
    </div>
    <!-- Video Player section -->
@@ -5571,6 +5563,7 @@ const informationNotificationCss =
     width: 32px;
     height: 32px;
   }
+}
 </pre>
 </code>
 `

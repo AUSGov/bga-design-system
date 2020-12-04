@@ -4020,6 +4020,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .element-design { border: none; padding: 24px 32px 24px 24px; background: #ffffff; transition: background-color 0.2s ease; overflow: auto; position: relative; min-height: 96px; }
 
+.design-system-card.component .element-design:hover { cursor: pointer; }
+
 .design-system-card.component .element-design .float-button { position: absolute; top: -webkit-calc(50% - 24px); top: -moz-calc(50% - 24px); top: calc(50% - 24px); width: 48px; right: 24px; }
 
 .design-system-card.component .element-design.closed { border-bottom: none; background: #ffffff; }
