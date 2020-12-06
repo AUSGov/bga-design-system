@@ -2735,69 +2735,75 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
   const accordionHtml = 
 `
 <div class="accordion">
-    <div class=" accordion-group">
-       <div class="accordion-group-toggle">
-          <div tabindex="0" class="accordion-group-toggle-content"> <!-- Toggle 'all-open' class with js when clicked-->
-             <h5 class="title">Open all</h5> <!-- Toggle 'open/close' text with js when button is clicked-->
-             <div class="arrow-icon">
-                <svg width="16" height="16">
-                   <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                </svg>
-             </div>
-          </div>
-       </div>
-       <div>
-          <div class="accordion-item"> <!-- Toggle 'open' class with js when clicked -->
-             <div class="accordion-item-tile" tabindex="0">
-                <div class="accordion-item-tile-content">
-                   <h5 class="title">Accordion item 1 title</h5>
-                   <button tabindex="-1" class="icon-container">
-                      <div class="arrow-icon ">
-                         <svg width="16" height="16">
-                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                         </svg>
-                      </div>
-                   </button>
-                </div>
-             </div>
-             <div class="accordion-item-content"> <!-- Toggle 'visible' class with js to expand-->
-                <ul>
-                   <li>
-                      <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                         <circle fill="#c18100" cx="8" cy="8" r="4"/>
-                      </svg>
-                      <p>Accordions can contain lists.</p>
-                   </li>
-                   <li>
-                      <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                         <circle fill="#c18100" cx="8" cy="8" r="4"/>
-                      </svg>
-                      <p>Complete with links like other body copy.</p>
-                   </li>
-                </ul>
-             </div>
-          </div>
-       </div>
-       <div>
-          <div class="accordion-item"> <!-- Toggle 'open' class with js when clicked -->
-             <div class="accordion-item-tile" tabindex="0">
-                <div class="accordion-item-tile-content">
-                   <h5 class="title">Accordion item 2 title</h5>
-                   <button tabindex="-1" class="icon-container">
-                      <div class="arrow-icon ">
-                         <svg width="16" height="16">
-                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                         </svg>
-                      </div>
-                   </button>
-                </div>
-             </div>
-             <div class="accordion-item-content"> <!-- Toggle 'visible' class with js to expand-->
-                <p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
-             </div>
-          </div>
-       </div>
-    </div>
+   <div class=" accordion-group">
+      <div class="accordion-group-toggle">
+         <div tabindex="0" class="accordion-group-toggle-content">
+            <!-- Toggle 'all-open' class with js when clicked-->             
+            <h5 class="title">Open all</h5>
+            <!-- Toggle 'open/close' text with js when button is clicked-->             
+            <div class="arrow-icon">
+               <svg width="16" height="16">
+                  <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+               </svg>
+            </div>
+         </div>
+      </div>
+      <div>
+         <div class="accordion-item open">
+            <!-- Toggle 'open' class with js when clicked -->             
+            <div class="accordion-item-tile" tabindex="0">
+               <div class="accordion-item-tile-content">
+                  <h5 class="title">Accordion item 1 title</h5>
+                  <button tabindex="-1" class="icon-container">
+                     <div class="arrow-icon ">
+                        <svg width="16" height="16">
+                           <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                        </svg>
+                     </div>
+                  </button>
+               </div>
+            </div>
+            <div class="accordion-item-content visible">
+               <!-- Toggle 'visible' class with js to expand-->                
+               <ul>
+                  <li>
+                     <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                        <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                     </svg>
+                     <p>Accordions can contain lists.</p>
+                  </li>
+                  <li>
+                     <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                        <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                     </svg>
+                     <p>Complete with links like other body copy.</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div>
+         <div class="accordion-item">
+            <!-- Toggle 'open' class with js when clicked -->             
+            <div class="accordion-item-tile" tabindex="0">
+               <div class="accordion-item-tile-content">
+                  <h5 class="title">Accordion item 2 title</h5>
+                  <button tabindex="-1" class="icon-container">
+                     <div class="arrow-icon ">
+                        <svg width="16" height="16">
+                           <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                        </svg>
+                     </div>
+                  </button>
+               </div>
+            </div>
+            <div class="accordion-item-content">
+               <!-- Toggle 'visible' class with js to expand-->                
+               <p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
 `
 $(".accordion-code .html-code code pre").text(accordionHtml);
@@ -4171,12 +4177,9 @@ $(".image-code .css-code").html(imageCss);
 const mediaPlayerHtml =
 `
 <!-- This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and locally hosted videos -->
-
 <div class="media-player">
-   <div id="media-player-not-available-videoid" class="media-player-not-available" style="display: none;">
-      <span>The request media could not be loaded at this time. Please try again later.</span>
-   </div>
-   <!-- Video Player section -->
+   <div id="media-player-not-available-videoid" class="media-player-not-available" style="display: none;">      <span>The request media could not be loaded at this time. Please try again later.</span>   </div>
+   <!-- Video Player section -->   
    <div id="video-player-player-videoid" class="video-player-player" style="background-image: url(media-player-placeholder.jpg);">
       <button id="video-player-button-videoid" aria-label="Play video video title" class="video-player-button" onclick="bga.sc.feature.media.onPlayVideoClick('videoid'); triggerGoal('');">
          <span class="video-player-button-icon">
@@ -4187,12 +4190,12 @@ const mediaPlayerHtml =
          </span>
       </button>
       <div id="video-player-player-me-videoid" style="visibility: hidden;">
-         <span class="mejs__offscreen">Video Player</span>
+         <span class="mejs__offscreen">Video Player</span>         
          <div id="mep_0" class="mejs__container mejs__container-keyboard-inactive mejs__video" tabindex="0" role="application" aria-label="Video Player" style="width: 730px; height: 410.625px; min-width: 0px;">
             <div class="mejs__inner">
                <div class="mejs__mediaelement">
                   <mediaelementwrapper id="videoid">
-                     <iframe id="videoid_youtube_iframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/nMnjUlzkm7U?controls=1&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=1&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;mute=0&amp;color=white&amp;cc_lang_pref=en&amp;cc_load_policy=1&amp;playsinline=1&amp;origin=https%3A%2F%2Fbgaauth.test.business.gov.au&amp;enablejsapi=1&amp;widgetid=1" data-gtm-yt-inspected-12375630_91="true" width="730" height="410.625"></iframe>
+                     <iframe id="videoid_youtube_iframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/nMnjUlzkm7U?controls=1&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=1&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;mute=0&amp;color=white&amp;cc_lang_pref=en&amp;cc_load_policy=1&amp;playsinline=1&amp;origin=https%3A%2F%2Fbgaauth.test.business.gov.au&amp;enablejsapi=1&amp;widgetid=1" data-gtm-yt-inspected-12375630_91="true" width="730" height="410.625"></iframe>                     
                      <video id="videoid_from_mejs" style="width: 100%; height: 100%; display: none;" preload="auto" poster="" tabindex="0" src="https://www.youtube.com/watch?v=nMnjUlzkm7U">
                         <source src="//www.youtube.com/watch?v=nMnjUlzkm7U" type="video/youtube">
                      </video>
@@ -4215,7 +4218,7 @@ const mediaPlayerHtml =
                   <div class="mejs__time mejs__duration-container"><span class="mejs__duration">02:18</span></div>
                   <div class="mejs__button mejs__volume-button mejs__unmute"><button type="button" aria-controls="mep_0" title="Unmute" aria-label="Unmute" tabindex="0"></button></div>
                   <a class="mejs__horizontal-volume-slider" href="javascript:void(0);" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" role="slider" aria-valuetext="100%">
-                     <span class="mejs__offscreen">Use Up/Down Arrow keys to increase or decrease volume.</span>
+                     <span class="mejs__offscreen">Use Up/Down Arrow keys to increase or decrease volume.</span>                     
                      <div class="mejs__horizontal-volume-total">
                         <div class="mejs__horizontal-volume-current" style="left: 0px; width: 0%;"></div>
                         <div class="mejs__horizontal-volume-handle" style="left: 0%;"></div>
@@ -4227,13 +4230,13 @@ const mediaPlayerHtml =
          </div>
       </div>
    </div>
-   <!-- Transcript section -->
+   <!-- Transcript section -->   
    <div id="media-player-transcript-info-videoid" class="media-player-transcript-info">
       <div class="media-player-transcript-toggle">
          <button id="toggle-transcript-videoid" aria-label="Toggle media transcript, transcript open">
-            <span>Open transcript</span> <!-- Toggle open/close text with javascript -->
+            <span>Open transcript</span> <!-- Toggle open/close text with javascript -->            
             <span class="iconAnimateWrapper">
-               <!-- Toggle 'active-expand' class with javascript -->
+               <!-- Toggle 'active-expand' class with javascript -->               
                <svg width="16" height="16">
                   <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
                </svg>
@@ -4241,10 +4244,10 @@ const mediaPlayerHtml =
          </button>
       </div>
       <div id="media-player-transcript-videoid" class="media-player-transcript" style="display: none;">
-         <!-- Toggle 'display: none;' inline style with javascript -->
+         <!-- Toggle 'display: none;' inline style with javascript -->         
          <div class="media-transcript">
             <div id="media-transcript-content-videoid" class="media-transcript-content">
-               <!-- Transcript text is obtained and placed here, if available -->
+               <!-- Transcript text is obtained and placed here, if available -->               
                <p data-timeinseconds="12" data-duration="2.75" id="t-videoid-0" tabindex="0">This video transcript is a written copy</p>
                <p data-timeinseconds="17" data-duration="3.3099999999999987" id="t-videoid-2" tabindex="0">of the video content.</p>
                <p data-timeinseconds="20" data-duration="1.9100000000000001" id="t-videoid-3" tabindex="0">The transcript scrolls as the video progresses</p>
@@ -4268,7 +4271,7 @@ const mediaPlayerHtml =
          </div>
       </div>
    </div>
-   <!-- Media info section -->
+   <!-- Media info section -->   
    <div id="media-player-info-videoid" class="media-player-info">
       <h3 class="title">Video Title</h3>
       <p id="totalMediaTimeLabel-videoid" class="date">Time: 01:02</p>
@@ -4298,6 +4301,8 @@ const mediaPlayerCss =
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 56.25%;
+  height: 0;
   position: relative;
   cursor: pointer;
   background-color: rgba(170, 178, 195, 0.7);
@@ -4560,77 +4565,77 @@ $(".media-player-code .css-code").html(mediaPlayerCss);
 const downloadListHtml =
 `
 <div class="download-list">
-	<div class="download-group">
-		<h4 class="download-group-heading">Download list item</h4>
-		<div class="icon-row">
-			<a href="#" class="download-item">
-				<div class="download-icon" style="fill:#cc3c1c">
-					<svg viewBox="0 0 16 16">
-						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
-					</svg>
-				</div>
-				<span style="color:#cc3c1c">pdf ·0.70 MB </span>
-			</a>
-			<a href="#"  class="download-item">
-				<div class="download-icon" style="fill:#2f70bf">
-					<svg viewBox="0 0 16 16">
-						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
-					</svg>
-				</div>
-				<span style="color:#2f70bf">docx ·0.19 MB </span>
-			</a>
-		</div>
-	</div>
-	<div class="download-group">
-		<h4 class="download-group-heading">Another list item</h4>
-		<div class="icon-row">
-			<a href="#" class="download-item">
-				<div class="download-icon" style="fill:#218080">
-					<svg viewBox="0 0 16 16">
-						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
-					</svg>
-				</div>
-				<span style="color:#218080">xls ·0.70 MB </span>
-			</a>
-		</div>
-	</div>
-	<div class="download-group">
-		<h4 class="download-group-heading">And finally another list item</h4>
-		<div class="icon-row">
-			<a href="#" class="download-item">
-				<div class="download-icon" style="fill:#A42079">
-					<svg viewBox="0 0 16 16">
-						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
-					</svg>
-				</div>
-				<span style="color:#A42079">ppt ·0.70 MB </span>
-			</a>
-			<a href="#" class="download-item">
-				<div class="download-icon" style="fill:#244E90">
-					<svg viewBox="0 0 16 16">
-						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
-					</svg>
-				</div>
-				<span style="color:#244E90">jpeg ·0.19 MB </span>
-			</a>
-			<a href="#" class="download-item">
-				<div class="download-icon" style="fill:#5A43D0">
-					<svg viewBox="0 0 16 16">
-						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
-					</svg>
-				</div>
-				<span style="color:#5A43D0">eps ·0.19 MB </span>
-			</a>
-			<a href="#" class="download-item">
-				<div class="download-icon" style="fill:#2f71bf">
-					<svg viewBox="0 0 16 16">
-						<path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
-					</svg>
-				</div>
-				<span style="color:#2f71bf">docx ·0.19 MB </span>
-			</a>
-		</div>
-	</div>
+   <div class="download-group">
+      <h4 class="download-group-heading">Download list item</h4>
+      <div class="icon-row">
+         <a href="#" class="download-item" style="text-decoration-color:#cc3c1c;">
+            <div class="download-icon" style="fill:#cc3c1c">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#cc3c1c">pdf ·0.70 MB </span>			
+         </a>
+         <a href="#"  class="download-item" style="text-decoration-color: #2f70bf;">
+            <div class="download-icon" style="fill:#2f70bf">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#2f70bf">docx ·0.19 MB </span>			
+         </a>
+      </div>
+   </div>
+   <div class="download-group">
+      <h4 class="download-group-heading">Another list item</h4>
+      <div class="icon-row">
+         <a href="#" class="download-item" style="text-decoration-color: #218080;">
+            <div class="download-icon" style="fill:#218080">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#218080">xls ·0.70 MB </span>			
+         </a>
+      </div>
+   </div>
+   <div class="download-group">
+      <h4 class="download-group-heading">And finally another list item</h4>
+      <div class="icon-row">
+         <a href="#" class="download-item" style="text-decoration-color: #A42079;">
+            <div class="download-icon" style="fill:#A42079">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#A42079">ppt ·0.70 MB </span>			
+         </a>
+         <a href="#" class="download-item" style="text-decoration-color: #244E90;">
+            <div class="download-icon" style="fill:#244E90;">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#244E90;">jpeg ·0.19 MB </span>			
+         </a>
+         <a href="#" class="download-item" style="text-decoration-color:#5A43D0;">
+            <div class="download-icon" style="fill:#5A43D0">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#5A43D0">eps ·0.19 MB </span>			
+         </a>
+         <a href="#" class="download-item" style="text-decoration-color:#2f71bf;">
+            <div class="download-icon" style="fill:#2f71bf">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#2f71bf">docx ·0.19 MB </span>			
+         </a>
+      </div>
+   </div>
 </div>
 `
 
@@ -4656,6 +4661,9 @@ const downloadListCss =
   text-decoration: none;
   background-color: transparent;
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+}
+.download-list .download-item:hover {
+  text-decoration: underline;
 }
 .download-list .icon-row {
   max-width: 1200px;
@@ -5492,7 +5500,7 @@ const informationNotificationCss =
 }
 .information-notification-content {
   display: flex;
-  padding: 24px 32px 24px 24px;
+  padding: 24px;
 }
 .information-notification .icon-container {
   border-radius: 50%;
@@ -5555,13 +5563,18 @@ const informationNotificationCss =
 @media (max-width: 576px) {
   .information-notification .description {
     font-size: 14px;
+    padding-top: 16px;
   }
   .information-notification .icon-container {
     min-width: 32px;
+    align-self: center;
   }
   .information-notification .icon-container .icon {
     width: 32px;
     height: 32px;
+  }
+  .information-notification-content {
+    flex-direction: column;
   }
 }
 </pre>
@@ -5630,7 +5643,7 @@ const confirmationNotificationCss =
 }
 .confirmation-notification-content {
   display: flex;
-  padding: 24px 32px 24px 24px;
+  padding: 24px;
 }
 .confirmation-notification .icon-container {
   border-radius: 50%;
@@ -5693,13 +5706,18 @@ const confirmationNotificationCss =
 @media (max-width: 576px) {
   .confirmation-notification .description {
     font-size: 14px;
+    padding-top: 16px;
   }
   .confirmation-notification .icon-container {
     min-width: 32px;
+    align-self: center;
   }
   .confirmation-notification .icon-container .icon {
     width: 32px;
     height: 32px;
+  }
+  .confirmation-notification-content {
+    flex-direction: column;
   }
 }
 </pre>
@@ -5839,13 +5857,18 @@ const warningNotificationCss =
 @media (max-width: 576px) {
   .warning-notification .description {
     font-size: 14px;
+    padding-top: 16px;
   }
   .warning-notification .icon-container {
     min-width: 32px;
+    align-self: center;
   }
   .warning-notification .icon-container .icon {
     width: 32px;
     height: 32px;
+  }
+  .warning-notification-content {
+    flex-direction: column;
   }
 }
 </pre>
@@ -5858,15 +5881,17 @@ $(".warning-notification-code .css-code").html(warningNotificationCss);
 //html
 const modalHtml =
 `
-<div class="modal-dialog">
-   <div class="close-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="21.119" height="21.119" viewBox="0 0 21.119 21.119">
-         <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
-      </svg>
-   </div>
-   <div class="modal-dialog-content">
-      <h3 class="title">Modal title</h3>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dictum ante, eu viverra elit. Integer sit amet turpis nec lacus vestibulum faucibus.</p>
+<div style="background: grey; padding: 32px;">
+   <div class="modal-dialog">
+      <div class="close-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="21.119" height="21.119" viewBox="0 0 21.119 21.119">
+            <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+         </svg>
+      </div>
+      <div class="modal-dialog-content">
+         <h3 class="title">Modal title</h3>
+         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dictum ante, eu viverra elit. Integer sit amet turpis nec lacus vestibulum faucibus.</p>
+      </div>
    </div>
 </div>
 `
@@ -5887,6 +5912,7 @@ const modalCss =
   font-style: normal;
   font-stretch: normal;
   color: #333333;
+  margin: 32px;
 }
 .modal-dialog-content {
   padding: 0 32px 32px 32px;
