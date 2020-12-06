@@ -1790,8 +1790,8 @@ $(".information-page-header-code .css-code").html(informationPageHeaderCss);
 const grantsPageHeaderHtml =
 `
 <div class="grants-page-header">
-   <p class="category">Category Label</p>
-   <h1 class="title">Descriptive page title</h1>
+   <p class="category">GRANT NAME</p>
+   <h1 class="title">Descriptive title explaining what the grant is for</h1>
    <p class="updated">Last Updated: 15 Octover 2019</p>
 </div>
 `
@@ -1969,6 +1969,7 @@ const standardCallToActionCss =
   margin: 0;
   line-height: 32px;
   position: relative;
+  padding-left: 32px;
 }
 .call-to-action ul li:last-of-type {
   padding-bottom: 32px;
@@ -1979,6 +1980,9 @@ const standardCallToActionCss =
 }
 .call-to-action ul li svg {
   padding-right: 16px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
 }
 </pre>
 </code>        
@@ -2137,6 +2141,7 @@ const downloadCallToActionCss =
   margin: 0;
   line-height: 32px;
   position: relative;
+  padding-left: 32px;
 }
 .call-to-action ul li:last-of-type {
   padding-bottom: 32px;
@@ -2147,6 +2152,9 @@ const downloadCallToActionCss =
 }
 .call-to-action ul li svg {
   padding-right: 16px;
+  position: absolute;
+  top: 10px;
+  left: 0px;
 }
 </pre>
 </code>        
@@ -2378,6 +2386,9 @@ const standardCallOutBoxCss =
   line-height: 1.78;
   text-align: left;
 }
+.call-out-box > *:last-child {
+  padding-bottom: 0px;
+}
 </pre>
 </code>
     
@@ -2420,8 +2431,9 @@ const standardCallOutBoxCss =
   margin: 0;
   line-height: 32px;
   position: relative;
+  padding-left: 32px;
 }
-.call-out-box ul li:last-of-type {
+.call-out-box > *:last-child li:last-of-type {
   padding-bottom: 0px;
 }
 .call-out-box ul li p {
@@ -2429,7 +2441,9 @@ const standardCallOutBoxCss =
   display: inline;
 }
 .call-out-box ul li svg {
-  padding-right: 16px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
 }
 </pre>
 </code>        
@@ -2504,6 +2518,9 @@ const contactCallOutBoxCss =
   line-height: 1.78;
   text-align: left;
 }
+.call-out-box > *:last-child {
+  padding-bottom: 0;
+}
 </pre>
 </code>
     
@@ -2522,7 +2539,7 @@ const contactCallOutBoxCss =
 .call-out-box p {
   line-height: 32px;
   font-size: 16px;
-  padding: 0 0 32px 0px;
+  padding: 0 0 16px 0px;
   margin: 0;
   letter-spacing: 0.0125rem;
   color: #333;
@@ -2546,8 +2563,9 @@ const contactCallOutBoxCss =
   margin: 0;
   line-height: 32px;
   position: relative;
+  padding-left: 32px;
 }
-.call-out-box ul li:last-of-type {
+.call-out-box > *:last-child li:last-of-type {
   padding-bottom: 0px;
 }
 .call-out-box.contact-call-out-box ul li a {
@@ -2565,6 +2583,9 @@ const contactCallOutBoxCss =
 }
 .call-out-box ul li svg {
   padding-right: 16px;
+  position: absolute;
+  top: 8px;
+  left: 0;
 }
 </pre>
 </code>        
@@ -2707,6 +2728,284 @@ const calloutLinkCss =
 </code>
 `
 $(".callout-link-code .css-code").html(calloutLinkCss);
+
+//Accordion
+
+  //html
+  const accordionHtml = 
+`
+<div class="accordion">
+   <div class=" accordion-group">
+      <div class="accordion-group-toggle">
+         <div tabindex="0" class="accordion-group-toggle-content">
+            <!-- Toggle 'all-open' class with js when clicked-->             
+            <h5 class="title">Open all</h5>
+            <!-- Toggle 'open/close' text with js when button is clicked-->             
+            <div class="arrow-icon">
+               <svg width="16" height="16">
+                  <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+               </svg>
+            </div>
+         </div>
+      </div>
+      <div>
+         <div class="accordion-item open">
+            <!-- Toggle 'open' class with js when clicked -->             
+            <div class="accordion-item-tile" tabindex="0">
+               <div class="accordion-item-tile-content">
+                  <h5 class="title">Accordion item 1 title</h5>
+                  <button tabindex="-1" class="icon-container">
+                     <div class="arrow-icon ">
+                        <svg width="16" height="16">
+                           <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                        </svg>
+                     </div>
+                  </button>
+               </div>
+            </div>
+            <div class="accordion-item-content visible">
+               <!-- Toggle 'visible' class with js to expand-->                
+               <ul>
+                  <li>
+                     <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                        <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                     </svg>
+                     <p>Accordions can contain lists.</p>
+                  </li>
+                  <li>
+                     <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                        <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                     </svg>
+                     <p>Complete with links like other body copy.</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div>
+         <div class="accordion-item">
+            <!-- Toggle 'open' class with js when clicked -->             
+            <div class="accordion-item-tile" tabindex="0">
+               <div class="accordion-item-tile-content">
+                  <h5 class="title">Accordion item 2 title</h5>
+                  <button tabindex="-1" class="icon-container">
+                     <div class="arrow-icon ">
+                        <svg width="16" height="16">
+                           <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                        </svg>
+                     </div>
+                  </button>
+               </div>
+            </div>
+            <div class="accordion-item-content">
+               <!-- Toggle 'visible' class with js to expand-->                
+               <p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+`
+$(".accordion-code .html-code code pre").text(accordionHtml);
+
+//css
+const accordionCss = 
+`
+<h5>Containers</h5>
+<code>
+<pre>
+/* Containers */
+.accordion-group-toggle {
+  border-bottom: 1px solid #ebebeb;
+  justify-content: flex-end;
+  padding: 24px 48px 24px 24px;
+  align-items: center;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+.accordion-group-toggle-content {
+  height: 32px;
+  align-items: center;
+  display: flex;
+  outline: none;
+}
+.accordion-item-tile {
+  border-bottom: 1px solid #ebebeb;
+  box-sizing: border-box;
+  transition: background-color 0.5s;
+  background-color: #ffffff;
+}
+.accordion-item-tile-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+.accordion .icon-container {
+  align-items: center;
+  background-color: #f5c550;
+  border: none;
+  border-radius: 3.125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  outline: none;
+  padding: 16px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.accordion-item-content {
+  display: none;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  max-height: 0;
+  overflow: hidden;
+  transition: height 0.8s, background-color 0.5s;
+  padding: 0 112px 32px 32px;
+}
+.accordion-item-banner {
+  background-color: #ffd964;
+  height: 0;
+  position: absolute;
+  transition: height 0.2s;
+  width: 100%;
+  z-index: 1;
+}
+.accordion-item-content.visible {
+  display: block;
+  background-color: #ebebeb !important;
+  border-bottom: solid 4px #ffd964;
+  max-height: none;
+}
+.accordion-item.open .accordion-item-tile {
+  background-color: #ebebeb !important;
+}
+.accordion-item-tile:focus,
+.accordion-item-tile:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+  outline: none;
+}
+.accordion-item.open .accordion-item-tile,
+.accordion-item.open .accordion-item-tile:hover,
+.accordion-item.open .accordion-item-tile:focus {
+  border-bottom: none !important;
+}
+.accordion-item-tile:hover,
+.accordion-item-tile:focus {
+  border-bottom: solid 4px #ffd964 !important;
+}
+.accordion-item-tile:focus .icon-container,
+.accordion-item-tile:hover .icon-container,
+.accordion-item.open .accordion-item-tile-content .icon-container {
+  background-color: #ffd964;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.125rem);
+}
+</pre>
+</code>
+
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.accordion .title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #666;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+  box-shadow: none;
+  font-stretch: normal;
+  letter-spacing: 0;
+  line-height: 1.75;
+}
+.accordion-group-toggle-content .title {
+  font-weight: 600;
+  line-height: 2;
+  margin: 0 8px 0 0;
+  padding-bottom: 0;
+}
+.accordion-item-tile-content .title {
+  max-width: 100%;
+  margin: 0;
+}
+.accordion-group-toggle-content:hover .title {
+  box-shadow: inset 0 -0.11rem 0 #666;
+  cursor: pointer;
+  line-height: 1.38;
+}
+.accordion-item .accordion-item-tile:hover .title,
+.accordion-item .accordion-item-tile:focus .title,
+.accordion-item.open .accordion-item-tile-content .title {
+  color: #000;
+  box-shadow: inset 0 -2.08px 0 #666666;
+}
+.accordion p {
+  color: #333;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 0 32px 0;
+  margin: 0;
+  line-height: 1.71;
+}
+.accordion ul {
+  padding: 0 0 0 16px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.78;
+  list-style: none;
+}
+.accordion ul li {
+  padding: 0 0 16px 16px;
+  margin: 0;
+  position: relative;
+}
+.accordion-item-content > *:last-child {
+  padding-bottom: 0;
+}
+.accordion-item-content > *:last-child li:last-of-type {
+  padding-bottom: 0;
+}
+.accordion ul li svg {
+  position: absolute;
+  top: 6px;
+  left: 0px;
+}
+.accordion ul li p {
+  display: block;
+  padding-left: 16px;
+  padding-bottom: 0px;
+}
+</pre>
+</code>
+
+<h5>Icon</h5>
+<code>
+<pre>
+/* Icon */
+.accordion .arrow-icon {
+  line-height: 0.5;
+}
+.accordion-group-toggle-content.all-open .arrow-icon,
+.accordion-item.open .accordion-item-tile .arrow-icon {
+  transform: scaleY(-1);
+}
+.accordion-item-tile .arrow-icon svg {
+  fill: #333;
+  transition: transform 0.3s;
+}
+</pre>
+</code>
+`;
+$(".accordion-code .css-code").html(accordionCss);
 
 //FEATURE BOX
 //Feature box - tips
@@ -3614,121 +3913,68 @@ const hiddenDisclaimerCss =
 </code>
 `
 $(".hidden-disclaimer-code .css-code").html(hiddenDisclaimerCss);
-    
-//Accordian
-
-//html
-const accordianHtml =
-`
-Coming soon
-`
-
-$(".accordian-code .html-code code pre").text(accordianHtml);
-
-//css
-const accordianCss =
-`
-<h4>Accordion - closed state</h4>
-<h5>Accordion item title</h5>
-<code>
-   <pre>h5 {
-    color: #666666;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
-}
-h5:hover {
-    color: #000000;
-    box-shadow: inset 0 -2.08px 0 #666666;
-}
-</pre>
-</code>
-<h5>Accordion item button</h5>
-<code>
-   <pre>.button {    
-    color: #000000;
-    width: 48px;
-    height: 48px;
-    background-color: #F5C550;
-    border-radius: 50px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-}
-.button:hover {
-    background-color: #FFD964;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.button:active {
-    background-color: #E1AA21;
-    box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.3);
-}
-</pre>
-</code>
-<h5>Accordion item container</h5>
-<code>
-   <pre>.item-container {
-    background-color: #FFFFFF;
-    border-bottom: 0.0625rem solid #EBEBEB;
-    padding: 32px;
-}
-.item-container:hover {
-    border-bottom: solid 4px #FFD964;
-}
-</pre>
-</code>
-<h4>Accordion - open state</h4>
-<h5>Accordion item title</h5>
-<code>
-   <pre>h5 {
-    color: #000000;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
-    box-shadow: inset 0 -2.08px 0 #666666;
-}
-</pre>
-</code>
-<h5>Accordion item button</h5>
-<code>
-   <pre>.button {    
-    color: #000000;
-    width: 48px;
-    height: 48px;
-    background-color: #F5C550;
-    border-radius: 50px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-}
-.button:hover {
-    background-color: #FFD964;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-.button:active {
-    background-color: #E1AA21;
-    box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.3);
-}
-</pre>
-</code>
-<h5>Accordion item container</h5>
-<code>
-   <pre>.item-container {
-    background-color: #EBEBEB;
-    border-bottom: solid 4px #FFD964;
-    padding: 32px;
-}
-</pre>
-</code>
-<h5>Accordion item content</h5>
-<p>Accordion content is styled as standard body content.
-   Refer to the <a href="/bga-design-system/foundations/typography.html">typography guidelines</a>.
-</p>
-`
-$(".accordian-code .css-code").html(accordianCss);
 
 //Table
 
 //html
 const tableHtml =
 `
-Coming soon
+<table class="table">
+   <thead>
+      <tr>
+         <th>Applicant Organisation</th>
+         <th>Project Name</th>
+         <th>Project Description</th>
+         <th>Project Location</th>
+         <th>Amount</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <!-- Toggle 'showGroup' class on mobile view to expand accordion -->
+         <td data-title="Applicant Organisation">
+            District Council Of Endor                    				
+            <div class="arrow-icon">
+               <svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"						xmlns="http://www.w3.org/2000/svg"						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                  <path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+               </svg>
+            </div>
+         </td>
+         <td data-title="Project Name">Endor Tourism Strategy</td>
+         <td data-title="Project Description">The project will deliver a strategy for tourism in Endor, benefiting all the Ewoks.</td>
+         <td data-title="Project Location">Endor moon</td>
+         <td data-title="Amount">$20,000</td>
+      </tr>
+      <tr>
+         <td data-title="Applicant Organisation">
+            Great Southern Land Centre                    				
+            <div class="arrow-icon">
+               <svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"						xmlns="http://www.w3.org/2000/svg"						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                  <path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+               </svg>
+            </div>
+         </td>
+         <td data-title="Project Name">Great Southern Land Master Plan</td>
+         <td data-title="Project Description">The project will deliver a Master Plan for the Great Southern Land over a ten year period.</td>
+         <td data-title="Project Location">Albany</td>
+         <td data-title="Amount">$125,000</td>
+      </tr>
+      <tr>
+         <td data-title="Applicant Organisation">
+            Mephis City Council                    				
+            <div class="arrow-icon">
+               <svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1"						xmlns="http://www.w3.org/2000/svg"						xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"						xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                  <path d="M8,6L2,0L0,2L8,10L16,2L14,0L8,6Z" style="fill:rgb(51,51,51);fill-rule:nonzero;"/>
+               </svg>
+            </div>
+         </td>
+         <td data-title="Project Name">Memphic City Economic Development Strategy</td>
+         <td data-title="Project Description">The project will develop a suite planning documents towards economic growth of Memphis. </td>
+         <td data-title="Project Location">Gracelands</td>
+         <td data-title="Amount">$50,000</td>
+      </tr>
+   </tbody>
+</table>
 `
 
 $(".table-code .html-code code pre").text(tableHtml);
@@ -3736,102 +3982,127 @@ $(".table-code .html-code code pre").text(tableHtml);
 //css
 const tableCss =
 `
-<h4>Desktop</h4>
 <h5>Table</h5>
 <code>
-<pre>table {
-    background-color: transparent;
-    border-top: 4px solid #DDE2E6;
+<pre>
+/* Table */
+.table {
+  border-collapse: collapse;
+  border-top: 4px solid #d8d8d8;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  overflow-y: hidden;
+  margin-bottom: 32px;
+  overflow-x: auto;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+.table th {
+  font-weight: 600;
+  padding: 16px;
+  border-bottom: 2px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+  vertical-align: bottom;
+  width: auto;
+  text-align: left;
+  color: #212529;
+}
+.table tr {
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.table tbody tr {
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5;
+}
+.table td {
+  border-top: 1px solid #dee2e6;
+  padding: 0.75rem;
+  vertical-align: top;
+  font-weight: 400;
+  padding: 16px;
 }
 </pre>
 </code>
-    
-<h5>Header cells</h5>
+     
+<h5>Icon</h5>
 <code>
-<pre>th {
-    color: #333333;
-    font-family: OpenSans-Semibold;
+<pre>
+/* Icon */
+.arrow-icon {
+  float: right;
+  padding: 0;
+  display: none;
+}
+.showGroup .arrow-icon {
+  transform: scaleY(-1);
+}
+</pre>
+</code>
+
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    display: table;
+    width: 100%;
+    border-bottom: solid 1px #d8d8d8;
+  }
+  .table td {
+    display: none;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+    border-top: 0px;
+    padding-left: 45%;
     font-size: 14px;
-    line-height: 24px;
-    background-color: #F5F5F5;
-    border-bottom: 2px solid #DDE2E6;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h5>Body cells</h5>
-<code>
-<pre>td {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 24px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #DDE2E6;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<h5>Table</h5>
-<code>
-<pre>table {
-    background-color: transparent;
-    border-top: 4px solid #DDE2E6;
-}
-</pre>
-</code>
-    
-<h5>Header cells - closed row</h5>
-<code>
-<pre>th {
-    color: #33333;
-    font-family: OpenSans-Semibold;
-    font-size: 14px;
-    line-height: 22px;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #DDE2E6;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h5>Header cells - open row</h5>
-<code>
-<pre>th {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 14px;
-    line-height: 22px;
-    background-color: #EBEBEB;
-    border-bottom: none;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h5>Body cells - open row</h5>
-<code>
-<pre>th {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 22px;
-    background-color: #EBEBEB;
-    border-bottom: none;
-    padding: 16px;
-}
-</pre>
-</code>
-    
-<h5>Chevron icon</h5>
-<code>
-<pre>.icon {
-    color: #333333;
-    width: 16px;
-    height: 10px;
+    line-height: 1.4rem;
+    background: #ebebeb;
+  }
+  .table td:first-of-type {
+    background: #ffffff;
+    background-position: right 16px center;
+    background-size: 16px 10px;
+    font-weight: 600;
+    padding-left: 16px;
+    padding-right: 15px;
+    display: block;
+    cursor: pointer;
+  }
+  .table .showGroup td {
+    display: block;
+    transition: all 0.2s;
+    background: #ebebeb;
+  }
+  .table td::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-align: left;
+    content: attr(data-title);
+    display: block;
+  }
+  .table td:first-of-type::before {
+    content: "";
+  }
+  .table .groupParent td:first-of-type {
+    background-position: right 16px center;
+    background-size: 16px 10px;
+  }
+  .arrow-icon {
+    display: block;
+  }
 }
 </pre>
 </code>
@@ -3843,7 +4114,12 @@ $(".table-code .css-code").html(tableCss);
 //html
 const imageHtml =
 `
-Coming soon
+<div class="image-container">
+   <img src="image-source.jpg" alt="image-name" class="responsive-image">
+   <div class="caption">
+      <p>This caption is optional. Sometimes you will need it and sometimes you won't.</p>
+   </div>
+</div>
 `
 
 $(".image-code .html-code code pre").text(imageHtml);
@@ -3851,32 +4127,44 @@ $(".image-code .html-code code pre").text(imageHtml);
 //css
 const imageCss =
 `
+<h5>Container</h5>
+<code>
+<pre>
+/* Container */
+.image-container {
+  max-width: 100%;
+  width: 100%;
+}
+</pre>
+</code>
+
 <h5>Image</h5>
 <code>
-<pre>img {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
+<pre>
+/* Image */
+.responsive-image {
+  width: 100%;
+  display: block;
 }
 </pre>
 </code>
+
 <h5>Caption</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 24px;
+<pre>
+/* Caption */
+.caption {
+  background: #ebebeb;
+  padding: 16px;
+  max-width: 100%;
+  width: 100%;
+  display: block;
 }
-</pre>
-</code>
-    
-<h5>Caption container</h5>
-<code>
-<pre>.container {
-    background-color: #EBEBEB;
-    padding: 16px;
-    width: 100%;
+.image-container p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 </pre>
 </code>
@@ -3888,7 +4176,108 @@ $(".image-code .css-code").html(imageCss);
 //html
 const mediaPlayerHtml =
 `
-Coming soon
+<!-- This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and locally hosted videos -->
+<div class="media-player">
+   <div id="media-player-not-available-videoid" class="media-player-not-available" style="display: none;">      <span>The request media could not be loaded at this time. Please try again later.</span>   </div>
+   <!-- Video Player section -->   
+   <div id="video-player-player-videoid" class="video-player-player" style="background-image: url(media-player-placeholder.jpg);">
+      <button id="video-player-button-videoid" aria-label="Play video video title" class="video-player-button" onclick="bga.sc.feature.media.onPlayVideoClick('videoid'); triggerGoal('');">
+         <span class="video-player-button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 39 80 80">
+               <path class="st5 playiconWrapper" d="M2.5 79c0-20.7 16.8-37.5 37.5-37.5S77.5 58.3 77.5 79 60.7 116.5 40 116.5 2.5 99.7 2.5 79z"></path>
+               <path class="st0" d="M60.3 77c.6.2.8.8.6 1.4-.1.3-.3.5-.6.6L30 96.5c-1 .6-1.7.1-1.7-1v-35c0-1.1.8-1.5 1.7-1L60.3 77z"></path>
+            </svg>
+         </span>
+      </button>
+      <div id="video-player-player-me-videoid" style="visibility: hidden;">
+         <span class="mejs__offscreen">Video Player</span>         
+         <div id="mep_0" class="mejs__container mejs__container-keyboard-inactive mejs__video" tabindex="0" role="application" aria-label="Video Player" style="width: 730px; height: 410.625px; min-width: 0px;">
+            <div class="mejs__inner">
+               <div class="mejs__mediaelement">
+                  <mediaelementwrapper id="videoid">
+                     <iframe id="videoid_youtube_iframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/nMnjUlzkm7U?controls=1&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=1&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;mute=0&amp;color=white&amp;cc_lang_pref=en&amp;cc_load_policy=1&amp;playsinline=1&amp;origin=https%3A%2F%2Fbgaauth.test.business.gov.au&amp;enablejsapi=1&amp;widgetid=1" data-gtm-yt-inspected-12375630_91="true" width="730" height="410.625"></iframe>                     
+                     <video id="videoid_from_mejs" style="width: 100%; height: 100%; display: none;" preload="auto" poster="" tabindex="0" src="https://www.youtube.com/watch?v=nMnjUlzkm7U">
+                        <source src="//www.youtube.com/watch?v=nMnjUlzkm7U" type="video/youtube">
+                     </video>
+                  </mediaelementwrapper>
+               </div>
+               <div class="mejs__layers">
+                  <div class="mejs__poster mejs__layer" style="display: none; width: 100%; height: 100%;"></div>
+                  <div class="mejs__overlay mejs__layer" style="width: 100%; height: 100%; display: none;">
+                     <div class="mejs__overlay-loading"><span class="mejs__overlay-loading-bg-img"></span></div>
+                  </div>
+                  <div class="mejs__overlay mejs__layer" style="display: none; width: 100%; height: 100%;">
+                     <div class="mejs__overlay-error"></div>
+                  </div>
+                  <div style="display: none; width: 100%; height: 100%;"></div>
+               </div>
+               <div class="mejs__controls" style="display: none;">
+                  <div class="mejs__button mejs__playpause-button mejs__play"><button type="button" aria-controls="mep_0" title="Play" aria-label="Play" tabindex="0"></button></div>
+                  <div class="mejs__time mejs__currenttime-container" role="timer" aria-live="off"><span class="mejs__currenttime">00:00</span></div>
+                  <div class="mejs__time-rail"><span class="mejs__time-total mejs__time-slider"><span class="mejs__time-buffering" style="display: none;"></span><span class="mejs__time-loaded"></span><span class="mejs__time-current" style="transform: scaleX(0);"></span><span class="mejs__time-hovered no-hover"></span><span class="mejs__time-handle" style="transform: translateX(0px);"><span class="mejs__time-handle-content"></span></span><span class="mejs__time-float"><span class="mejs__time-float-current">00:00</span><span class="mejs__time-float-corner"></span></span></span></div>
+                  <div class="mejs__time mejs__duration-container"><span class="mejs__duration">02:18</span></div>
+                  <div class="mejs__button mejs__volume-button mejs__unmute"><button type="button" aria-controls="mep_0" title="Unmute" aria-label="Unmute" tabindex="0"></button></div>
+                  <a class="mejs__horizontal-volume-slider" href="javascript:void(0);" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" role="slider" aria-valuetext="100%">
+                     <span class="mejs__offscreen">Use Up/Down Arrow keys to increase or decrease volume.</span>                     
+                     <div class="mejs__horizontal-volume-total">
+                        <div class="mejs__horizontal-volume-current" style="left: 0px; width: 0%;"></div>
+                        <div class="mejs__horizontal-volume-handle" style="left: 0%;"></div>
+                     </div>
+                  </a>
+                  <div class="mejs__button mejs__fullscreen-button"><button type="button" aria-controls="mep_0" title="Fullscreen" aria-label="Fullscreen" tabindex="0"></button></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Transcript section -->   
+   <div id="media-player-transcript-info-videoid" class="media-player-transcript-info">
+      <div class="media-player-transcript-toggle">
+         <button id="toggle-transcript-videoid" aria-label="Toggle media transcript, transcript open">
+            <span>Open transcript</span> <!-- Toggle open/close text with javascript -->            
+            <span class="iconAnimateWrapper">
+               <!-- Toggle 'active-expand' class with javascript -->               
+               <svg width="16" height="16">
+                  <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+               </svg>
+            </span>
+         </button>
+      </div>
+      <div id="media-player-transcript-videoid" class="media-player-transcript" style="display: none;">
+         <!-- Toggle 'display: none;' inline style with javascript -->         
+         <div class="media-transcript">
+            <div id="media-transcript-content-videoid" class="media-transcript-content">
+               <!-- Transcript text is obtained and placed here, if available -->               
+               <p data-timeinseconds="12" data-duration="2.75" id="t-videoid-0" tabindex="0">This video transcript is a written copy</p>
+               <p data-timeinseconds="17" data-duration="3.3099999999999987" id="t-videoid-2" tabindex="0">of the video content.</p>
+               <p data-timeinseconds="20" data-duration="1.9100000000000001" id="t-videoid-3" tabindex="0">The transcript scrolls as the video progresses</p>
+               <p data-timeinseconds="22" data-duration="2.91" id="t-videoid-4" tabindex="0">and allows users with audio impairment</p>
+               <p data-timeinseconds="25" data-duration="3.490000000000002" id="t-videoid-5" tabindex="0">To read the the content.</p>
+               <p data-timeinseconds="28" data-duration="2.5969999999999978" id="t-videoid-6" tabindex="0">The current place in the video is highlighted in white.</p>
+               <p data-timeinseconds="31" data-duration="2.9830000000000005" id="t-videoid-7" tabindex="0">The current place in the video is highlighted in white.</p>
+               <p data-timeinseconds="34" data-duration="4.340000000000003" id="t-videoid-8" tabindex="0">The current place in the video is highlighted in white.</p>
+               <p data-timeinseconds="38" data-duration="2.7079999999999984" id="t-videoid-9" tabindex="0">The current place in the video is highlighted in white.</p>
+               <p data-timeinseconds="49" data-duration="1.5799999999999983" id="t-videoid-13" tabindex="0">So we have a successful business</p>
+               <p data-timeinseconds="51" data-duration="2.8000000000000043" id="t-videoid-14" tabindex="0">that looks at a certain sector.</p>
+               <p data-timeinseconds="53" data-duration="2.3599999999999994" id="t-videoid-15" tabindex="0">It's understanding how that technology</p>
+               <p data-timeinseconds="56" data-duration="2.460000000000001" id="t-videoid-16" tabindex="0">and that innovation can then be utilised</p>
+               <p data-timeinseconds="58" data-duration="1.25" id="t-videoid-17" tabindex="0">within the defence sector from</p>
+               <p data-timeinseconds="59" data-duration="1.75" id="t-videoid-18" tabindex="0">an Australian industry perspective.</p>
+               <p data-timeinseconds="61" data-duration="2.4699999999999918" id="t-videoid-19" tabindex="0">We have our JSF specialist.</p>
+               <p data-timeinseconds="64" data-duration="2.490000000000009" id="t-videoid-20" tabindex="0">Transcripts are important to meet accessibility requirements</p>
+               <p data-timeinseconds="66" data-duration="4.700000000000003" id="t-videoid-21" tabindex="0">Lorem ipsum dolor sit amet,</p>
+               <p data-timeinseconds="71" data-duration="2.796999999999997" id="t-videoid-22" tabindex="0">consectetur idipiscing elit.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Media info section -->   
+   <div id="media-player-info-videoid" class="media-player-info">
+      <h3 class="title">Video Title</h3>
+      <p id="totalMediaTimeLabel-videoid" class="date">Time: 01:02</p>
+      <p class="detail">A short description describing the video can be placed here</p>
+   </div>
+</div>
 `
 
 $(".media-player-code .html-code code pre").text(mediaPlayerHtml);
@@ -3896,151 +4285,274 @@ $(".media-player-code .html-code code pre").text(mediaPlayerHtml);
 //css
 const mediaPlayerCss =
 `
-<h4>Desktop</h4>
-<h5>Play button</h5>
+<h5>Video</h5>
 <code>
-<pre>.arrow-icon {
-    color: #FFFFFF;
-    opacity: 1.0;
-    width: 29px;
-    height: 33px;
+<pre>
+/* Video */
+.media-player {
+  padding-bottom: 32px;
+  position: relative;
+  flex: 1;
 }
-button {
-    color: #333333;
-    opacity: 0.8;
-    width: 112px;
-    height: 79px;
-    
+.media-player-not-available {
+  text-align: center;
 }
-button:hover {
-    color: #4569A0;
-    opacity: 1.0;
+.video-player-player {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 56.25%;
+  height: 0;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba(170, 178, 195, 0.7);
+}
+.video-player-button {
+  background: transparent;
+  border: 0;
+  max-height: 96px;
+  margin: 0 auto;
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: visible;
+}
+.video-player-button-icon {
+  width: 112px;
+  max-width: 80px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+.video-player-button svg .playiconWrapper {
+  fill: rgba(51, 51, 51, 0.8);
+}
+.video-player-player:hover .video-player-button svg .playiconWrapper {
+  fill: #4569a0;
+  transition: fill 0.2s;
+  cursor: pointer;
 }
 </pre>
 </code>
     
-<h5>Transcript toggle text</h5>
+<h5>Transcript</h5>
 <code>
-<pre>.toggle-text {
-    color: #4C4C4C;
-    font-family: OpenSans-Semibold;
+<pre>
+/* Transcript */
+.media-player-transcript-toggle {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 56px;
+  border-bottom: 2px solid #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.media-player-transcript-toggle button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  margin-right: 32px;
+  border: none;
+}
+.media-player-transcript-toggle button:hover {
+  cursor: pointer;
+}
+.media-player-transcript-toggle button:hover span {
+  background: transparent;
+  box-shadow: inset 0 -2.08px 0 #4c4c4c;
+}
+.media-player-transcript-toggle span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #4c4c4c;
+  transition: all 0.3s;
+  margin-right: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+.media-player-transcript {
+  transition: height 0.6s;
+  overflow: hidden;
+  height: 312px;
+  border-bottom: 2px solid #d8d8d8;
+}
+.media-transcript {
+  position: relative;
+  background-color: #ebebeb;
+  width: 100%;
+  padding: 0;
+  border-bottom: 2px solid #d8d8d8;
+}
+.media-transcript-content {
+  height: 312px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.media-transcript-content div {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.media-transcript-content:before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: calc(100% - 20px);
+  position: absolute;
+  background: linear-gradient(to top, rgba(235, 235, 235, 0), #ebebeb);
+  z-index: 1;
+}
+.media-player p {
+  font-size: 14px;
+  line-height: 1.78;
+  padding: 0 0 32px 0;
+  letter-spacing: 0.2px;
+  text-align: left;
+  margin: 0;
+  color: #333;
+}
+.media-transcript-content p {
+  margin: 5px 0 5px 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "Open Sans", sans-serif;
+}
+.media-transcript-content p:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+</pre>
+</code>
+    
+<h5>Description</h5>
+<code>
+<pre>
+/* Description */
+.media-player-info {
+  padding: 32px;
+  background-color: #ebebeb;
+  border-bottom: 2px solid #d8d8d8;
+  font-family: "Open Sans", sans-serif;
+}
+.media-player-info .title {
+  font-weight: 600;
+  font-size: 24px;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #333333;
+  letter-spacing: 0;
+  padding: 0 0 8px 0;
+  margin: 0;
+}
+.media-player-info .date {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #666;
+  padding-bottom: 8px;
+}
+.media-player-info .detail {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0;
+}
+</pre>
+</code>
+    
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.media-player .iconAnimateWrapper {
+  display: inline-block;
+  line-height: 0.5;
+  position: relative;
+  right: 0;
+  line-height: 1;
+}
+.media-player
+  .media-player-transcript-toggle
+  button:hover
+  span.iconAnimateWrapper {
+  box-shadow: none;
+}
+.media-player-transcript-toggle .iconAnimateWrapper svg {
+  transition: transform 0.3s;
+  fill: #333;
+}
+.media-player-transcript-toggle .active-expand svg {
+  transform: scaleY(-1);
+}
+.st6 {
+  stroke: #ffffff;
+  stroke-width: 5;
+}
+.st5 {
+  stroke: #ffffff;
+  stroke-width: 5;
+  enable-background: new;
+}
+.st0 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+</pre>
+</code>
+    
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .video-player-button {
+    bottom: 0;
+    transform: translate(-50%, -50%);
+  }
+  .video-player-button-icon {
+    width: 61px;
+    max-width: 42px;
+  }
+  .media-player-transcript-toggle {
+    height: 56px;
+  }
+  .media-player-transcript-toggle button {
+    margin-right: 24px;
+  }
+  .media-player-transcript-toggle button span {
     font-size: 16px;
-    line-height: 24px;
-}
-.toggle-text:hover {
-    box-shadow: inset 0 -0.13rem 0 #4C4C4C;
-}
-</pre>
-</code>
-    
-<h5>Transcript toggle icon</h5>
-<code>
-<pre>.chevron {
-    color: #333333;
-    width: 16px;
-    height: 10px;
-}
-</pre>
-</code>
-    
-<h5>Transcript time</h5>
-<code>
-<pre>.time {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 18px;
-}
-</pre>
-</code>
-    
-<h5>Transcript text</h5>
-<code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
+  }
+  .media-transcript-content p {
     font-size: 16px;
-    line-height: 28px;
-    padding: 0 10px;
-}
-p:hover {
-    background: #FFFFFF;
-}
-</pre>
-</code>
-    
-<h5>Video title</h5>
-<code>
-<pre>h3 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 24px;
-    line-height: 32px;
-}
-</pre>
-</code>
-    
-<h5>Video duration</h5>
-<code>
-<pre>p.time {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 12px;
-    line-height: 24px;
-}
-</pre>
-</code>
-    
-<h5>Video description</h5>
-<code>
-<pre>p.description {
-    color: #333333;
-    font-family: OpenSans;
+  }
+  .media-player p {
     font-size: 16px;
-    line-height: 32px;
-}
-</pre>
-</code>
-    
-<h5>Text container</h5>
-<code>
-<pre>.container {
-    background-color: #EBEBEB;
-    padding: 32px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<h5>Transcript time</h5>
-<code>
-<pre>.time {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 10px;
-    line-height: 15px;
-}
-</pre>
-</code>
-    
-<h5>Play button</h5>
-<code>
-<pre>.arrow-icon {
-    color: #FFFFFF;
-    opacity: 1.0;
-    width: 15px;
-    height: 17px;
-}
-button {
-    color: #333333;
-    opacity: 0.8;
-    width: 60px;
-    height: 42px;
-    
-}
-button:hover {
-    color: #4569A0;
-    opacity: 1.0;
+    line-height: 1.71;
+  }
+  .media-player-info {
+    padding: 24px 16px;
+  }
+  .media-player-info .detail {
+    font-size: 16px;
+  }
 }
 </pre>
 </code>
@@ -4052,7 +4564,79 @@ $(".media-player-code .css-code").html(mediaPlayerCss);
 //html
 const downloadListHtml =
 `
-Coming soon
+<div class="download-list">
+   <div class="download-group">
+      <h4 class="download-group-heading">Download list item</h4>
+      <div class="icon-row">
+         <a href="#" class="download-item" style="text-decoration-color:#cc3c1c;">
+            <div class="download-icon" style="fill:#cc3c1c">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#cc3c1c">pdf ·0.70 MB </span>			
+         </a>
+         <a href="#"  class="download-item" style="text-decoration-color: #2f70bf;">
+            <div class="download-icon" style="fill:#2f70bf">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#2f70bf">docx ·0.19 MB </span>			
+         </a>
+      </div>
+   </div>
+   <div class="download-group">
+      <h4 class="download-group-heading">Another list item</h4>
+      <div class="icon-row">
+         <a href="#" class="download-item" style="text-decoration-color: #218080;">
+            <div class="download-icon" style="fill:#218080">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#218080">xls ·0.70 MB </span>			
+         </a>
+      </div>
+   </div>
+   <div class="download-group">
+      <h4 class="download-group-heading">And finally another list item</h4>
+      <div class="icon-row">
+         <a href="#" class="download-item" style="text-decoration-color: #A42079;">
+            <div class="download-icon" style="fill:#A42079">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#A42079">ppt ·0.70 MB </span>			
+         </a>
+         <a href="#" class="download-item" style="text-decoration-color: #244E90;">
+            <div class="download-icon" style="fill:#244E90;">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#244E90;">jpeg ·0.19 MB </span>			
+         </a>
+         <a href="#" class="download-item" style="text-decoration-color:#5A43D0;">
+            <div class="download-icon" style="fill:#5A43D0">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#5A43D0">eps ·0.19 MB </span>			
+         </a>
+         <a href="#" class="download-item" style="text-decoration-color:#2f71bf;">
+            <div class="download-icon" style="fill:#2f71bf">
+               <svg viewBox="0 0 16 16">
+                  <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+               </svg>
+            </div>
+            <span style="color:#2f71bf">docx ·0.19 MB </span>			
+         </a>
+      </div>
+   </div>
+</div>
 `
 
 $(".download-list-code .html-code code pre").text(downloadListHtml);
@@ -4060,59 +4644,84 @@ $(".download-list-code .html-code code pre").text(downloadListHtml);
 //css
 const downloadListCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Download title</h5>
+<h5>Containers</h5>
 <code>
-<pre>h4 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 24px;
+<pre>
+/* Contianers */
+.download-list .download-group {
+  padding-bottom: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+.download-list .download-item {
+  align-items: center;
+  display: flex;
+  padding-left: 0;
+  margin-right: 16px;
+  position: relative;
+  text-decoration: none;
+  background-color: transparent;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+}
+.download-list .download-item:hover {
+  text-decoration: underline;
+}
+.download-list .icon-row {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
 }
 </pre>
 </code>
-<h4>Link text</h4>
+
+<h5>Text</h5>
 <code>
-<pre>a {
-    font-family: OpenSans-Semibold;
-    font-size: 12px;
-    letter-spacing: 0.2px;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
+<pre>
+/* Text */
+.download-list .download-group-heading {
+  color: #333;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.33;
+  margin: 0 0 8px 0;
 }
-a:hover {
-    text-decoration: underline;
+.download-list span {
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none !important;
+  font-size: 12px;
+  line-height: 2;
+  margin-left: 8px;
+  text-transform: uppercase;
 }
 </pre>
 </code>
-<h4>Link icon</h4>
+
+<h5>Icon</h5>
 <code>
-<pre>.icon {
-    height: 16px;
-    width: 16px;
+<pre>
+/* Icon */
+.download-list .download-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  fill: #254f90;
+  line-height: 0;
+  right: 0;
 }
 </pre>
 </code>
-<h4>Link colours</h4>
+
+<h5>Media Query</h5>
 <code>
-<pre>pdf {
-    color: #CC3C1C;
-}
-docx {
-    color: #2F70BF;
-}
-xls {
-    color: #218080;
-}
-ppt {
-    color: #A42079;
-}
-jpeg {
-    color: #244E90;
-}
-eps {
-    color: #5A43D0;
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  .download-list .download-item {
+    margin-bottom: 8px;
+  }
 }
 </pre>
 </code>
@@ -4124,7 +4733,32 @@ $(".download-list-code .css-code").html(downloadListCss);
 //html
 const openGrantStatusIndicatorHtml =
 `
-Coming soon
+<div class="grant-status-indicator">
+	<div class="status-wrapper">
+		<div class="icon-wrapper icon-open">
+			<svg class="icon" viewBox="0 0 16 16">
+				<path fill="#219520" d="M0 9.937l1.901-1.935 3.354 3.362 8.86-8.855 1.918 1.905L5.255 15.192z"></path>
+			</svg>
+		</div>
+		<span class="status">Open</span>
+	</div>
+	<div>
+		<div class="description">
+			<div class="field">
+				<h5>Open date: </h5>
+				<p>1st January 2019</p>
+			</div>
+			<div class="field">
+				<h5>Close date: </h5>
+				<p>1st January 2022.</p>
+			</div>
+			<div class="field">
+				<h5>Application detail: </h5>
+				<p>You can submit an expression of interest for Commercialisation Guidance at any time. After receiving guidance, you may be eligible to apply for a Grant. </p>
+			</div>
+		</div>
+	</div>
+</div>
 `
 
 $(".open-grant-status-indicator-code .html-code code pre").text(openGrantStatusIndicatorHtml);
@@ -4132,45 +4766,91 @@ $(".open-grant-status-indicator-code .html-code code pre").text(openGrantStatusI
 //css
 const openGrantStatusIndicatorCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Grant status icon and text</h5>
+<h5>Containers</h5>
 <code>
-<pre>p.status {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 32px;
+<pre>
+/* Containers */
+.grant-status-indicator {
+  background: #ffffff;
+  padding: 16px;
+  align-items: center;
+}
+.grant-status-indicator .status-wrapper {
+  align-items: center;
+  display: flex;
+  margin-bottom: 24px;
+}
+.grant-status-indicator .field {
+  display: block;
+  padding: 12px 0;
 }
 </pre>
 </code>
-    
-<h5>Open icon</h5>
+
+<h5>Text</h5>
 <code>
-<pre>.icon-open {
-    height: 24px;
-    width: 24px;
-    color: #219520;
+<pre>
+/* Text */
+.grant-status-indicator .status {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1.78;
+  padding-left: 20px;
 }
-.icon-container {
-    background: #E8F4E8;
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
+.grant-status-indicator .field h5,
+.grant-status-indicator .field p {
+  display: inline;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 1.78;
+  color: #333;
+}
+.grant-status-indicator .field h5 {
+  font-weight: 700;
+}
+.grant-status-indicator .field p {
+  font-weight: 400;
 }
 </pre>
 </code>
-    
-<h5>Grant information</h5>    
+
+<h5>Icon</h5>
 <code>
-<pre>p.details {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Icon */
+.grant-status-indicator .icon-wrapper {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  min-width: 64px;
+  width: 64px;
 }
-p.details strong {
-    font-family: OpenSans-Semibold;
+.grant-status-indicator .icon {
+  width: 24px;
+  display: inline-block;
+  fill: #254f90;
+  line-height: 0;
+  position: relative;
+  right: 0;
 }
+.grant-status-indicator .icon-open {
+  background-color: #e8f4e8;
+}
+.grant-status-indicator .icon-open svg path {
+  fill: #219520 !important;
+}
+
 </pre>
 </code>
 `
@@ -4180,7 +4860,24 @@ $(".open-grant-status-indicator-code .css-code").html(openGrantStatusIndicatorCs
 //html
 const closedGrantStatusIndicatorHtml =
 `
-Coming soon
+<div class="grant-status-indicator">
+	<div class="status-wrapper">
+		<div class="icon-wrapper icon-closed">
+			<svg class="icon" viewBox="0 0 24 23">
+				<path fill="#E75755" fill-rule="evenodd" d="M12 0C5.37 0 0 5.146 0 11.5S5.37 23 12 23s12-5.146 12-11.5S18.63 0 12 0zm0 20.7c-5.304 0-9.6-4.117-9.6-9.2 0-2.127.762-4.077 2.022-5.635L17.88 18.762A9.832 9.832 0 0 1 12 20.7zm7.578-3.565L6.12 4.238A9.832 9.832 0 0 1 12 2.3c5.304 0 9.6 4.117 9.6 9.2 0 2.127-.762 4.077-2.022 5.635z"></path>
+			</svg>
+		</div>
+		<span class="status">Closed</span>
+	</div>
+	<div>
+		<div class="description">
+			<div class="field">
+				<h5>Application detail: </h5>
+				<p>Application detail: Applications closed June 2019 and will reopen in January 2022.</p>
+			</div>
+		</div>
+	</div>
+</div>
 `
 
 $(".closed-grant-status-indicator-code .html-code code pre").text(closedGrantStatusIndicatorHtml);
@@ -4188,37 +4885,89 @@ $(".closed-grant-status-indicator-code .html-code code pre").text(closedGrantSta
 //css
 const closedGrantStatusIndicatorCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Grant status icon and text</h5>
+<h5>Containers</h5>
 <code>
-<pre>p.status {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 32px;
+<pre>
+/* Containers */
+.grant-status-indicator {
+  background: #ffffff;
+  padding: 16px;
+  align-items: center;
+}
+.grant-status-indicator .status-wrapper {
+  align-items: center;
+  display: flex;
+  margin-bottom: 24px;
+}
+.grant-status-indicator .field {
+  display: block;
+  padding: 12px 0;
 }
 </pre>
 </code>
-    
+
+<h5>Text</h5>
 <code>
-<pre>.icon-closed {
-    color: #E75755;
-    height: 24px;
-    width: 24px;
+<pre>
+/* Text */
+.grant-status-indicator .status {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1.78;
+  padding-left: 20px;
+}
+.grant-status-indicator .field h5,
+.grant-status-indicator .field p {
+  display: inline;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 1.78;
+  color: #333;
+}
+.grant-status-indicator .field h5 {
+  font-weight: 700;
+}
+.grant-status-indicator .field p {
+  font-weight: 400;
 }
 </pre>
 </code>
-    
-<h5>Grant information</h5>    
+
+<h5>Icon</h5>
 <code>
-<pre>p.details {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Icon */
+.grant-status-indicator .icon-wrapper {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  min-width: 64px;
+  width: 64px;
 }
-p.details strong {
-    font-family: OpenSans-Semibold;
+.grant-status-indicator .icon {
+  width: 24px;
+  display: inline-block;
+  fill: #254f90;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+.grant-status-indicator .icon-closed {
+  background-color: #ffffff;
+}
+.grant-status-indicator .icon-closed svg path {
+  fill: #e75755 !important;
 }
 </pre>
 </code>
@@ -4230,7 +4979,21 @@ $(".closed-grant-status-indicator-code .css-code").html(closedGrantStatusIndicat
 //html
 const pullQuotesHtml =
 `
-Coming soon
+<div class="pull-quote">
+	<svg width="40" height="24">
+		<path
+            d="M8.392 24C2.797 24 0 21.215 0 15.646 0 10.076 3.96 4.862 11.88 0l5.564 2.03-5.846 7.478.188.461c3.332.677 4.998 2.923 4.998 6.739 0 4.861-2.798 7.292-8.392 7.292zm22.556 0c-5.594 0-8.392-2.785-8.392-8.354 0-5.57 3.96-10.784 11.88-15.646L40 2.03l-5.846 7.478.189.461c3.331.677 4.997 2.923 4.997 6.739 0 4.861-2.797 7.292-8.392 7.292z"
+            fill="#F3DEA7"
+            fill-rule="evenodd"
+        ></path>
+	</svg>
+	<p class="quote">Block quotes are centered in the middle of the page like this.</p>
+	<div class="quote-source">
+		<hr />
+		<em>Chloe Richardson, Product Owner, business.gov.au</em>
+	</div>
+	<hr class="pull-quote-hr hr-bottom" />
+</div>
 `
 
 $(".pull-quotes-code .html-code code pre").text(pullQuotesHtml);
@@ -4238,60 +5001,73 @@ $(".pull-quotes-code .html-code code pre").text(pullQuotesHtml);
 //css
 const pullQuotesCss =
 `
-<h4>Desktop</h4>
-<h5>Quotation mark</h5>
+<h5>Containers</h5>
 <code>
-<pre>.quotation-mark {    
-    color: #F3DEA7;
-    width: 40px;
-    height: 24px;
-    margin-bottom: 20px;
+<pre>
+/* Containers */
+.pull-quote {
+  text-align: center;
+}
+.pull-quote .quote-source {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #666;
+  padding-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
 }
 </pre>
 </code>
-<h5>Quote</h5>
+
+<h5>Text</h5>
 <code>
-<pre>p.quote {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 21px;
-    letter-spacing: 0.2px;
-    text-align: center;
-    line-height: 40px;
+<pre>
+/* Text */
+.pull-quote p.quote {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  line-height: 40px;
 }
 </pre>
 </code>
-<h5>Source</h5>
+
+<h5>Quotation mark svg</h5>
 <code>
-<pre>p.source {
-    color: #666666;
-    font-family: OpenSans-Italic;
-    font-size: 16px;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 24px;
+<pre>
+/* Dividers */
+.pull-quote .quote-source hr {
+  border-top: 2px solid #666666;
+  border-top-width: 2px;
+  display: inline-block;
+  height: 2px;
+  line-height: 24px;
+  margin: 0 2px 0 0;
+  opacity: 0.6;
+  vertical-align: middle;
+  width: 25px;
+  padding: 0;
+}
+.pull-quote hr {
+  border: 0;
+  text-align: left;
+  box-sizing: content-box;
+  overflow: visible;
+}
+.pull-quote .hr-bottom {
+  background-color: #edca72;
+  border-top: 0;
+  height: 2px;
+  margin: 0 auto;
+  width: 42px;
+  margin-top: 24px;
+  padding: 0;
 }
 </pre>
 </code>
-<h5>Divider</h5>
-<code>
-<pre>hr {
-    color: #EDCA72;
-    height: 2px;
-    width: 42px;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>
-<h5>Quote</h5>
-<code>
-<pre>p.quote {
-    font-size: 18px;
-    line-height: 24px;
-}
-</pre>
-</code>   
 `
 $(".pull-quotes-code .css-code").html(pullQuotesCss);
 
@@ -4300,7 +5076,38 @@ $(".pull-quotes-code .css-code").html(pullQuotesCss);
 //html
 const advisorProfileHtml =
 `
-Coming soon
+<div class="advisor-profile">
+   <div class="advisor-details">
+      <div class="advisor-details-information">
+         <div class="field advisor-name">
+            <h2>Karen Green</h2>
+         </div>
+         <div class="field">
+            <h4>Partner:</h4>
+            <p>XYZ Private</p>
+         </div>
+         <div class="field">
+            <h4>Location:</h4>
+            <p>Hobart</p>
+         </div>
+         <div class="field">
+            <h4>Email:</h4>
+            <a href="#">karen@xyz.com.au</a>
+         </div>
+         <div class="field">
+            <h4>Phone:</h4>
+            <a href="#">0400 000 000</a>
+         </div>
+      </div>
+      <div class="advisor-details-image">
+         <img src="image-advisor.jpg" alt="image_advisor" class="responsive-image">
+      </div>
+   </div>
+   <div class="advisor-description">
+      <p>A few short paragraphs outlining the background of the advisor.</p>
+      <p>Karen has a Master of Business and Technology (MBA Technology) degree. She sits on the XYZ Board of the Centre for Excellence at the Victorian Business School.</p>
+   </div>
+</div>
 `
 
 $(".advisor-profile-code .html-code code pre").text(advisorProfileHtml);
@@ -4308,85 +5115,141 @@ $(".advisor-profile-code .html-code code pre").text(advisorProfileHtml);
 //css
 const advisorProfileCss =
 `
-<h4>Desktop</h4>
-<h5>Advisor name</h5>
+<h5>Containers</h5>
 <code>
-<pre>h4 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 24px;
-    line-height: 38px;
+<pre>
+/* Containers */
+.advisor-profile {
+  padding: 32px;
+  border-top: 4px solid #d8d8d8;
+  background: #ebebeb;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+.advisor-details {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 32px;
+}
+.advisor-details-information {
+  max-width: 66.66667%;
+  padding-right: 16px;
+}
+.advisor-profile .field {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0 0 12px 0;
+}
+.advisor-details-image {
+  max-width: 33.33333%;
 }
 </pre>
 </code>
-    
-<h5>Advisor details</h5>
+
+<h5>Text</h5>
 <code>
-<pre>p.detail-type {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Text */
+.advisor-profile .field h2 {
+  font-size: 24px;
+  padding: 0 0 16px 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
-p.detail-information {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+.advisor-details .field h4,
+.advisor-details .field p,
+.advisor-details .field a,
+.advisor-description p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.0125rem;
+  text-align: left;
+  color: #333;
 }
+.advisor-profile .field h4 {
+  font-weight: 600;
+  margin: 0;
+  min-width: 130px;
+}
+.advisor-profile .field p,
+.advisor-profile .field a {
+  margin: 0;
+  padding: 0;
+}
+.advisor-profile .field a {
+  background-color: transparent;
+  border: 0.0625rem dotted transparent;
+  box-shadow: inset 0 -3.2px 0 #748fb8;
+  color: #254f90;
+  font-weight: 700;
+  text-decoration: none;
+  transition: box-shadow 0.25s;
+  display: table; /* ie fix */
+  width: fit-content;
+}
+.advisor-profile .field a:hover {
+  box-shadow: inset 0 -20px 0 #def;
+  text-decoration: none;
+}
+.advisor-description p {
+  padding: 0 0 32px 0;
+  margin: 0;
+  line-height: 32px;
+}
+.advisor-description > *:last-child {
+  padding-bottom: 0;
+  margin: 0;
+}
+.advisor-description > *:last-child li:last-of-type {
+  padding-bottom: 0;
+} 
 </pre>
 </code>
-    
-<h5>Paragraph</h5>
+
+<h5>Media Query</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 32px;
-}
-</pre>
-</code>       
-    
-<h5>Container</h5>
-<code>
-<pre>.container {
-    background-color: #EBEBEB;
-    border-top: 4px solid #D8D8D8;
-    padding: 32px;
-}
-</pre>
-</code>
-<h4>Mobile</h4>
-<h5>Advisor name</h5>
-<code>
-<pre>h4 {
-    font-size: 18px;
-    line-height: 28px;
-}
-</pre>
-</code>
-    
-<h5>Advisor details</h5>
-<code>
-<pre>p.detail-type {
-    font-size: 16px;
-    line-height: 24px;
-}
-p.detail-information {
-    font-size: 16px;
-    line-height: 24px;
-}
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>.container {
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .advisor-profile {
     padding: 24px 16px;
+  }
+  .advisor-details {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 32px;
+  }
+  .advisor-details-image {
+    max-width: 100%;
+    align-self: center;
+  }
+  .advisor-details-information {
+    max-width: 100%;
+  }
+  .advisor-profile .field.advisor-name {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .advisor-profile .field {
+    flex-direction: column;
+  }
+  .advisor-profile .field h2 {
+    font-size: 18px;
+    padding: 12px 0 16px 0;
+  }
 }
 </pre>
-</code> 
+</code>
 `
 $(".advisor-profile-code .css-code").html(advisorProfileCss);
 
@@ -4395,7 +5258,14 @@ $(".advisor-profile-code .css-code").html(advisorProfileCss);
 //html
 const progressBarUnNamedStepsHtml =
 `
-Coming soon
+<div class="progress-indicator">
+   <div class="progress-percentage">
+      <p>25% complete</p>
+   </div>
+   <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+   </div>
+</div>
 `
 
 $(".progress-bar-unnamed-steps-code .html-code code pre").text(progressBarUnNamedStepsHtml);
@@ -4403,61 +5273,65 @@ $(".progress-bar-unnamed-steps-code .html-code code pre").text(progressBarUnName
 //css
 const progressBarUnNamedStepsCss =
 `
-<h4>Desktop</h4>    
-<h5>Progress percentage text</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {   
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: normal;
-    margin-bottom: 16px;
+<pre>
+/* Containers */
+.progress-percentage {
+  margin-bottom: 16px;
+}
+.progress {
+  display: flex;
+  overflow: hidden;
+  font-size: 12px;
+  border-radius: 4px;
+  height: 4px;
+  background: #d8d8d8;
+}
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  height: 4px;
+  background: #4569a0;
+  border-radius: 4px;
+  transition: width 0.6s ease;
 }
 </pre>
 </code>
-    
-<h5>Progress bar</h5>
+
+<h5>Text</h5>
 <code>
-<pre>.progress-bar {
-    height: 4px;
-   border-radius: 4px;
-   color: #D8D8D8;
+<pre>
+/* Text */
+.progress-percentage p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #666666;
+  display: inline;
 }
 </pre>
 </code>
-    
-<h5>Progress bar completed</h5>
+
+<h5>Media Query</h5>
 <code>
-<pre>.progress-completed {
-    height: 4px;
-    border-radius: 4px;
-    color: #4569A0;
-}
-</pre>
-</code>
-    
-<h4>Mobile</h4>    
-<h5>Progress percentage text</h5>
-<code>
-<pre>p {   
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .progress,
+  .progress-bar {
+    height: 3px;
+  }
+  .progress-percentage p {
     font-size: 12px;
     margin-bottom: 8px;
-}
-</pre>
-</code>
-    
-<h5>Progress bar</h5>
-<code>
-<pre>.progress-bar {
-    height: 3px;
-}
-</pre>
-</code>
-    
-<h5>Progress bar completed</h5>
-<code>
-<pre>.progress-completed {
-    height: 3px;
+  }
 }
 </pre>
 </code>
@@ -4468,7 +5342,15 @@ $(".progress-bar-unnamed-steps-code .css-code").html(progressBarUnNamedStepsCss)
 //html
 const progressBarNamedStepsHtml =
 `
-Coming soon
+<div class="progress-indicator">
+   <div class="progress-percentage">
+      <h4>Step name:</h4>
+      <p>25% complete</p>
+   </div>
+   <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+   </div>
+</div>
 `
 
 $(".progress-bar-named-steps-code .html-code code pre").text(progressBarNamedStepsHtml);
@@ -4476,64 +5358,71 @@ $(".progress-bar-named-steps-code .html-code code pre").text(progressBarNamedSte
 //css
 const progressBarNamedStepsCss =
 `
-<h4>Desktop</h4>    
-<h5>Progress percentage text</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {   
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: normal;
-    margin-bottom: 16px;
+<pre>
+/* Containers */
+.progress-percentage {
+  margin-bottom: 16px;
 }
-strong {
-    font-family: OpenSans-Semibold;
+.progress {
+  display: flex;
+  overflow: hidden;
+  font-size: 12px;
+  border-radius: 4px;
+  height: 4px;
+  background: #d8d8d8;
 }
-</pre>
-</code>
-    
-<h5>Progress bar</h5>
-<code>
-<pre>.progress-bar {
-    height: 4px;
-   border-radius: 4px;
-   color: #D8D8D8;
-}
-</pre>
-</code>
-    
-<h5>Progress bar completed</h5>
-<code>
-<pre>.progress-completed {
-    height: 4px;
-    border-radius: 4px;
-    color: #4569A0;
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  height: 4px;
+  background: #4569a0;
+  border-radius: 4px;
+  transition: width 0.6s ease;
 }
 </pre>
 </code>
-    
-<h4>Mobile</h4>    
-<h5>Progress percentage text</h5>
+
+<h5>Text</h5>
 <code>
-<pre>p {   
+<pre>
+/* Text */
+.progress-percentage h4,
+.progress-percentage p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #666666;
+  display: inline;
+}
+.progress-percentage h4 {
+  font-weight: bolder;
+  padding-right: 5px;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .progress,
+  .progress-bar {
+    height: 3px;
+  }
+  .progress-percentage h4,
+  .progress-percentage p {
     font-size: 12px;
     margin-bottom: 8px;
-}
-</pre>
-</code>
-    
-<h5>Progress bar</h5>
-<code>
-<pre>.progress-bar {
-    height: 3px;
-}
-</pre>
-</code>
-    
-<h5>Progress bar completed</h5>
-<code>
-<pre>.progress-completed {
-    height: 3px;
+  }
 }
 </pre>
 </code>
@@ -4546,7 +5435,53 @@ $(".progress-bar-named-steps-code .css-code").html(progressBarNamedStepsCss);
 //html
 const informationNotificationHtml =
 `
-Coming soon
+<div class="information-notification">
+   <div class="information-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7846" data-name="Group 7846" transform="translate(-3212 -1646)">
+                  <g id="Group_7569" data-name="Group 7569" transform="translate(3212 1646)">
+                     <path id="Path_6296" data-name="Path 6296" d="M28,0A28,28,0,1,1,0,28,28,28,0,0,1,28,0Z" fill="#4569a0"></path>
+                  </g>
+                  <g id="Group_7571" data-name="Group 7571" transform="translate(3236.907 1661.892)">
+                     <g id="Icon_info" data-name="Icon / info">
+                        <path id="Info" d="M18.335,5V0h5V5ZM0,5V0H15V5Z" transform="translate(0 23.337) rotate(-90)" fill="#fff"></path>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Information notifications contain neutral information that the user may be interested in.</p>
+   </div>
+</div>
+<div class="information-notification">
+   <div class="close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="16px" height="16px" viewBox="0 0 21.119 21.119">
+         <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+      </svg>
+   </div>
+   <div class="information-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7846" data-name="Group 7846" transform="translate(-3212 -1646)">
+                  <g id="Group_7569" data-name="Group 7569" transform="translate(3212 1646)">
+                     <path id="Path_6296" data-name="Path 6296" d="M28,0A28,28,0,1,1,0,28,28,28,0,0,1,28,0Z" fill="#4569a0"></path>
+                  </g>
+                  <g id="Group_7571" data-name="Group 7571" transform="translate(3236.907 1661.892)">
+                     <g id="Icon_info" data-name="Icon / info">
+                        <path id="Info" d="M18.335,5V0h5V5ZM0,5V0H15V5Z" transform="translate(0 23.337) rotate(-90)" fill="#fff"></path>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Information notifications contain neutral information that the user may be interested in.</p>
+   </div>
+</div>
 `
 
 $(".information-notification-code .html-code code pre").text(informationNotificationHtml);
@@ -4554,64 +5489,93 @@ $(".information-notification-code .html-code code pre").text(informationNotifica
 //css
 const informationNotificationCss =
 `
-<h4>Desktop</h4>    
-<h5>Paragraph</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.information-notification {
+  background: #e5edf7;
+  border-top: 4px solid #b3c1d7;
+  color: #333333;
 }
-</pre>
-</code>
-    
-<h5>Notification icon</h5>
-<code>
-<pre>.icon-information {
-    color: #254F90;
-    background: #FFFFFF;
-    width: 56px;
-    height: 56px;
+.information-notification-content {
+  display: flex;
+  padding: 24px;
 }
-</pre>
-</code>
-    
-<h5>Close icon</h5>
-<code>
-<pre>.icon-close {
-    color: #254F90;
-    width: 16px;
-    height: 16px;
-}
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>div {
-    background-color: #E5EDF7;
-    border-top: 4px solid #B3C1D7;
-    padding: 24px;
-    border-radius: 0;
+.information-notification .icon-container {
+  border-radius: 50%;
+  height: auto;
+  justify-self: center;
+  width: auto;
+  align-self: flex-start;
+  display: flex;
+  min-width: 56px;
 }
 </pre>
 </code>
 
-<h4>Mobile</h4>
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
+<pre>
+/* Text */
+.information-notification .description {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 8px 0 0 16px;
+}
+</pre>
+</code>
+
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.information-notification .close-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 8px;
+}
+.information-notification .close-icon svg:hover {
+  cursor: pointer;
+}
+.information-notification .icon-container .icon {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .information-notification .description {
     font-size: 14px;
-}
-</pre>
-</code>
-
-<h5>Notification icon</h5>
-<code>
-<pre>.icon-information {
+    padding-top: 16px;
+  }
+  .information-notification .icon-container {
+    min-width: 32px;
+    align-self: center;
+  }
+  .information-notification .icon-container .icon {
     width: 32px;
     height: 32px;
+  }
+  .information-notification-content {
+    flex-direction: column;
+  }
 }
 </pre>
 </code>
@@ -4622,7 +5586,45 @@ $(".information-notification-code .css-code").html(informationNotificationCss);
 //html
 const confirmationNotificationHtml =
 `
-Coming soon
+<div class="confirmation-notification">
+   <div class="confirmation-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7864" data-name="Group 7864" transform="translate(-3212 -964)">
+                  <circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3212 964)" fill="#219520"></circle>
+                  <g id="Icon_tick" data-name="Icon / tick" transform="translate(3228 981.86)">
+                     <path id="Tick" d="M0,11.12l2.846-2.9,5.02,5.032L21.129,0,24,2.853,7.866,18.986Z" fill="#fff"></path>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Confirmation notifications let the user know an action has been successful.</p>
+   </div>
+</div>
+<div class="confirmation-notification">
+   <div class="close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="16px" height="16px" viewBox="0 0 21.119 21.119">
+         <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+      </svg>
+   </div>
+   <div class="confirmation-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7864" data-name="Group 7864" transform="translate(-3212 -964)">
+                  <circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3212 964)" fill="#219520"></circle>
+                  <g id="Icon_tick" data-name="Icon / tick" transform="translate(3228 981.86)">
+                     <path id="Tick" d="M0,11.12l2.846-2.9,5.02,5.032L21.129,0,24,2.853,7.866,18.986Z" fill="#fff"></path>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Confirmation notifications let the user know an action has been successful.</p>
+   </div>
+</div>
 `
 
 $(".confirmation-notification-code .html-code code pre").text(confirmationNotificationHtml);
@@ -4630,63 +5632,93 @@ $(".confirmation-notification-code .html-code code pre").text(confirmationNotifi
 //css
 const confirmationNotificationCss =
 `
-<h4>Desktop</h4>  
-<h5>Paragraph</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.confirmation-notification {
+  background: #e8f4e8;
+  border-top: 4px solid #a6d5a6;
+  color: #333333;
 }
-</pre>
-</code>
-    
-<h5>Confirmation icon</h5>
-<code>
-<pre>.icon-confirmation {
-    color: #219520;
-    width: 56px;
-    height: 56px;
+.confirmation-notification-content {
+  display: flex;
+  padding: 24px;
 }
-</pre>
-</code>
-    
-<h5>Close icon</h5>
-<code>
-<pre>.icon-close {
-    color: #254F90;
-    width: 16px;
-    height: 16px;
-}
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>div {
-    background-color: #E8F4E8;
-    border-top: 4px solid #A6D5A6;
-    padding: 16px;
-    border-radius: 0;
+.confirmation-notification .icon-container {
+  border-radius: 50%;
+  height: auto;
+  justify-self: center;
+  width: auto;
+  align-self: flex-start;
+  display: flex;
+  min-width: 56px;
 }
 </pre>
 </code>
 
-<h4>Mobile</h4>
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
+<pre>
+/* Text */
+.confirmation-notification .description {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 8px 0 0 16px;
+}
+</pre>
+</code>
+
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.confirmation-notification .close-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 8px;
+}
+.confirmation-notification .close-icon svg:hover {
+  cursor: pointer;
+}
+.confirmation-notification .icon-container .icon {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .confirmation-notification .description {
     font-size: 14px;
-}
-</pre>
-</code>
-
-<h5>Notification icon</h5>
-<code>
-<pre>.icon-information {
+    padding-top: 16px;
+  }
+  .confirmation-notification .icon-container {
+    min-width: 32px;
+    align-self: center;
+  }
+  .confirmation-notification .icon-container .icon {
     width: 32px;
     height: 32px;
+  }
+  .confirmation-notification-content {
+    flex-direction: column;
+  }
 }
 </pre>
 </code>
@@ -4697,7 +5729,53 @@ $(".confirmation-notification-code .css-code").html(confirmationNotificationCss)
 //html
 const warningNotificationHtml =
 `
-Coming soon
+<div class="warning-notification">
+   <div class="warning-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7871" data-name="Group 7871" transform="translate(-3210 -867)">
+                  <circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3210 867)" fill="#e75755"></circle>
+                  <g id="Group_7573" data-name="Group 7573" transform="translate(3224.631 880.679)">
+                     <path id="Path" d="M12.932,0a1.453,1.453,0,0,0-1.19.706L.192,20.181a1.375,1.375,0,0,0,0,1.408,1.455,1.455,0,0,0,1.254.7h23.1a1.455,1.455,0,0,0,1.254-.7,1.375,1.375,0,0,0,0-1.408L14.248.707A1.456,1.456,0,0,0,12.932,0Z" fill="#fff"></path>
+                     <g id="Group_117" data-name="Group 117" transform="translate(11.375 6.609)">
+                        <path id="Shape" d="M1.995,1.256A1.149,1.149,0,0,1,1,2.512,1.149,1.149,0,0,1,0,1.256,1.149,1.149,0,0,1,1,0a1.15,1.15,0,0,1,1,1.256Z" transform="translate(0.51 9.38)" fill="#d2201e"></path>
+                        <path id="Path-2" data-name="Path" d="M3.009,1.255A1.308,1.308,0,0,0,2.68.527,1.568,1.568,0,0,0,.36.5a1.315,1.315,0,0,0-.355.756,1.21,1.21,0,0,0,0,.226L.627,7.633A.72.72,0,0,0,.881,8.1a.957.957,0,0,0,.626.224.967.967,0,0,0,.575-.184.732.732,0,0,0,.3-.512l.622-6.151A1.2,1.2,0,0,0,3.009,1.255Z" transform="translate(0 0)" fill="#d2201e"></path>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Warning alerts contain information on errors that the user needs to know.</p>
+   </div>
+</div>
+<div class="warning-notification">
+   <div class="close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="16px" height="16px" viewBox="0 0 21.119 21.119">
+         <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+      </svg>
+   </div>
+   <div class="warning-notification-content">
+      <div class="icon-container">
+         <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+               <g id="Group_7871" data-name="Group 7871" transform="translate(-3210 -867)">
+                  <circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3210 867)" fill="#e75755"></circle>
+                  <g id="Group_7573" data-name="Group 7573" transform="translate(3224.631 880.679)">
+                     <path id="Path" d="M12.932,0a1.453,1.453,0,0,0-1.19.706L.192,20.181a1.375,1.375,0,0,0,0,1.408,1.455,1.455,0,0,0,1.254.7h23.1a1.455,1.455,0,0,0,1.254-.7,1.375,1.375,0,0,0,0-1.408L14.248.707A1.456,1.456,0,0,0,12.932,0Z" fill="#fff"></path>
+                     <g id="Group_117" data-name="Group 117" transform="translate(11.375 6.609)">
+                        <path id="Shape" d="M1.995,1.256A1.149,1.149,0,0,1,1,2.512,1.149,1.149,0,0,1,0,1.256,1.149,1.149,0,0,1,1,0a1.15,1.15,0,0,1,1,1.256Z" transform="translate(0.51 9.38)" fill="#d2201e"></path>
+                        <path id="Path-2" data-name="Path" d="M3.009,1.255A1.308,1.308,0,0,0,2.68.527,1.568,1.568,0,0,0,.36.5a1.315,1.315,0,0,0-.355.756,1.21,1.21,0,0,0,0,.226L.627,7.633A.72.72,0,0,0,.881,8.1a.957.957,0,0,0,.626.224.967.967,0,0,0,.575-.184.732.732,0,0,0,.3-.512l.622-6.151A1.2,1.2,0,0,0,3.009,1.255Z" transform="translate(0 0)" fill="#d2201e"></path>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+         </div>
+      </div>
+      <p class="description">Warning alerts contain information on errors that the user needs to know.</p>
+   </div>
+</div>
 `
 
 $(".warning-notification-code .html-code code pre").text(warningNotificationHtml);
@@ -4705,64 +5783,93 @@ $(".warning-notification-code .html-code code pre").text(warningNotificationHtml
 //css
 const warningNotificationCss =
 `
-<h4>Desktop</h4>      
-<h5>Paragraph</h5>
+<h5>Containers</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.warning-notification {
+  background: #fce9e9;
+  border-top: 4px solid #f5b5b5;
+  color: #333333;
 }
-</pre>
-</code>
-    
-<h5>Warning icon</h5>
-<code>
-<pre>.icon-warning {
-    color: #E75755;
-    background: #FFFFFF;
-    width: 56px;
-    height: 56px;
+.warning-notification-content {
+  display: flex;
+  padding: 24px 32px 24px 24px;
 }
-</pre>
-</code>
-    
-<h5>Close icon</h5>
-<code>
-<pre>.icon-close {
-    color: #254F90;
-    width: 16px;
-    height: 16px;
-}
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>div {
-    background-color: #FCE9E9;
-    border-top: 4px solid #F5B5B5;
-    padding: 16px;
-    border-radius: 0;
+.warning-notification .icon-container {
+  border-radius: 50%;
+  height: auto;
+  justify-self: center;
+  width: auto;
+  align-self: flex-start;
+  display: flex;
+  min-width: 56px;
 }
 </pre>
 </code>
 
-<h4>Mobile</h4>
-<h5>Paragraph</h5>
+<h5>Text</h5>
 <code>
-<pre>p {
+<pre>
+/* Text */
+.warning-notification .description {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 8px 0 0 16px;
+}
+</pre>
+</code>
+
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.warning-notification .close-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 17px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 8px;
+}
+.warning-notification .close-icon svg:hover {
+  cursor: pointer;
+}
+.warning-notification .icon-container .icon {
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  right: 0;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .warning-notification .description {
     font-size: 14px;
-}
-</pre>
-</code>
-
-<h5>Notification icon</h5>
-<code>
-<pre>.icon-information {
+    padding-top: 16px;
+  }
+  .warning-notification .icon-container {
+    min-width: 32px;
+    align-self: center;
+  }
+  .warning-notification .icon-container .icon {
     width: 32px;
     height: 32px;
+  }
+  .warning-notification-content {
+    flex-direction: column;
+  }
 }
 </pre>
 </code>
@@ -4774,7 +5881,19 @@ $(".warning-notification-code .css-code").html(warningNotificationCss);
 //html
 const modalHtml =
 `
-Coming soon
+<div style="background: grey; padding: 32px;">
+   <div class="modal-dialog">
+      <div class="close-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" id="Icon_close" data-name="Icon / close" width="21.119" height="21.119" viewBox="0 0 21.119 21.119">
+            <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0"/>
+         </svg>
+      </div>
+      <div class="modal-dialog-content">
+         <h3 class="title">Modal title</h3>
+         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dictum ante, eu viverra elit. Integer sit amet turpis nec lacus vestibulum faucibus.</p>
+      </div>
+   </div>
+</div>
 `
 
 $(".modal-code .html-code code pre").text(modalHtml);
@@ -4782,47 +5901,68 @@ $(".modal-code .html-code code pre").text(modalHtml);
 //css
 const modalCss =
 `
-<h4>Desktop &amp; mobile</h4>
-    
-<h5>Title</h5>
+<h5>Containers</h5>
 <code>
-<pre>h4 {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 28px;
+<pre>
+/* Containers */
+.modal-dialog {
+  border-top: 4px solid #254f90;
+  background: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  color: #333333;
+  margin: 32px;
+}
+.modal-dialog-content {
+  padding: 0 32px 32px 32px;
 }
 </pre>
 </code>
-    
-<h5>Paragraph</h5>
+
+<h5>Text</h5>
 <code>
-<pre>p {
-    color: #333333;
-    font-family: OpenSans-Semibold;
-    font-size: 16px;
-    line-height: 28px;
+<pre>
+/* Text */
+.modal-dialog .title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  font-stretch: normal;
+  letter-spacing: 0;
+  color: #333;
+  padding: 16px 0;
+  margin: 0;
+}
+.modal-dialog .description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+  padding: 0 0 32px 0;
+  color: #333;
+}
+.modal-dialog > *:last-child {
+  padding-bottom: 0;
 }
 </pre>
 </code>
-    
-<h5>Close icon</h5>
+
+<h5>Icon</h5>
 <code>
-<pre>.icon-close {
-    color: #254F90;
-    width: 20px;
-    height: 20px;
+<pre>
+/* Icon */
+.close-icon {
+  display: flex;
+  justify-content: flex-end;
+  height: 32px;
+  padding: 20px;
+  box-sizing: border-box;
 }
-</pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>div {
-    background-color: #FFFFFF;
-    border-top: 4px solid #254F90;
-    padding: 32px;
-    border-radius: 0;
+.close-icon svg:hover {
+  cursor: pointer;
 }
 </pre>
 </code>
@@ -4834,7 +5974,26 @@ $(".modal-code .css-code").html(modalCss);
 //html
 const utilitiesHtml =
 `
-Coming soon
+<div class="utilities">
+   <div class="utility-item">
+      <svg width="16" height="16">
+         <path fill="#4569A0" fill-rule="evenodd" d="M13.6 11.2a2.39 2.39 0 0 0-1.648.658L6.234 9.014a3.194 3.194 0 0 0 0-2.028l5.718-2.844A2.4 2.4 0 1 0 11.2 2.4c0 .108.01.214.024.318l-5.87 2.92A3.184 3.184 0 0 0 3.2 4.8a3.2 3.2 0 1 0 0 6.4c.83 0 1.584-.319 2.153-.838l5.87 2.92A2.4 2.4 0 1 0 13.6 11.2"></path>
+      </svg>
+      <button class="utility-button">Share</button>
+   </div>
+   <div class="utility-item">
+      <svg viewBox="0 0 16 16">
+         <path fill="#4569A0" fill-rule="evenodd" d="M15.333 1.5H.667c-.4 0-.667.26-.667.65v11.7c0 .39.267.65.667.65h14.666c.4 0 .667-.26.667-.65V2.15c0-.39-.267-.65-.667-.65zM13.8 4.7L8.467 9.367A1.236 1.236 0 0 1 8 9.5c-.133 0-.333-.067-.467-.133L2.2 4.7c-.267-.267-.333-.667-.067-.933.267-.267.667-.334.934-.067l4.866 4.267L12.8 3.7c.267-.267.667-.2.933.067.334.266.334.666.067.933z"></path>
+      </svg>
+      <button class="utility-button">Email</button>
+   </div>
+   <div class="utility-item">
+      <svg width="16" height="16">
+         <path fill="#4569A0" fill-rule="evenodd" d="M14.101 4.087v2.657H2.044V4.087H0v7.562h2.044v3.474h11.88l.015-3.474h2.018L16 4.087h-1.899zm-1.84 9.606H3.68v-1.84h8.583v1.84zm.205-9.552v.968H3.68V0h8.787v4.14z"></path>
+      </svg>
+      <button class="utility-button">Print</button>
+   </div>
+</div>
 `
 
 $(".utilities-code .html-code code pre").text(utilitiesHtml);
@@ -4842,24 +6001,58 @@ $(".utilities-code .html-code code pre").text(utilitiesHtml);
 //css
 const utilitiesCss =
 `
-<h4>Desktop &amp; mobile</h4>
-<h5>Link text</h5>
+<h5>Containers</h5>
 <code>
-<pre>a {
-    color: #4569A0;
-    font-family: OpenSans-Semibold;
-    font-size: 18px;
-    line-height: 32px;
+<pre>
+/* Containers */
+.utilities {
+  background: #ffffff;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.utility-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  padding: 16px 0 8px 0;
 }
 </pre>
 </code>
-    
-<h5>Link icon</h5>
+
+<h5>Icon</h5>
 <code>
-<pre>.icon-open {
-    color: #4569A0;
-    height: 16px;
-    width: 16px;
+<pre>
+/* Icon */
+.utility-item svg {
+  height: 16px;
+  vertical-align: inherit;
+  width: 16px;
+}
+.utility-item svg path {
+  fill: #4569a0;
+}
+.utility-button {
+  background: none;
+  border: none;
+  color: #4569a0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.78;
+}
+</pre>
+</code>
+
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 576px) {
+  .utility-item {
+    margin-right: 9.6px;
+  }
 }
 </pre>
 </code>

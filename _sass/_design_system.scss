@@ -41,6 +41,10 @@
       overflow: auto;
       position: relative;
       min-height: 96px;
+        
+        &:hover {
+            cursor: pointer;
+        }
 
       .float-button {
         position: absolute;
@@ -2691,7 +2695,7 @@
         padding: 0;
 
         p:last-of-type {
-          margin-bottom: 16px;
+          margin-bottom: 0;
           padding-bottom: 0;
         }
       }

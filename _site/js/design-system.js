@@ -47,13 +47,14 @@ $(document).ready(function() {
 
 
     /*----------- Design system card open/close functionality ----------- */
-    $('.float-button').on('click', function() {
-        if ($(this).parents('element-design').hasClass('unavailable')) {
+        
+    $('.element-design.component').on('click', function() {
+        if ($(this).hasClass('unavailable')) {
             return;
         } else {
-            $(this).parent().toggleClass('closed');
-            $(this).parent().next('.element-code').toggleClass('open');
-            var icon = $(this).find('.BgaIcon');
+            $(this).toggleClass('closed');
+            $(this).next('.element-code').toggleClass('open');
+            var icon = $(this).find('.float-button').find('.BgaIcon');
             $(icon).toggleClass('open');
 
             //Reset copy-code button text
