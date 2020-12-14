@@ -47,6 +47,7 @@ $(document).ready(function() {
 
 
     /*----------- Design system card open/close functionality ----------- */
+
         
     $('.element-design.component').on('click', function() {
         if ($(this).hasClass('unavailable')) {
@@ -56,6 +57,7 @@ $(document).ready(function() {
             $(this).next('.element-code').toggleClass('open');
             var icon = $(this).find('.float-button').find('.BgaIcon');
             $(icon).toggleClass('open');
+            console.log('component');
 
             //Reset copy-code button text
             //html button
@@ -64,6 +66,19 @@ $(document).ready(function() {
             //css button
             $('.css-section').find('button').html("Copy CSS\n                <span class=\"copy-code-svg\">\n                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\"\n                                        viewBox=\"0 0 89.458 103.583\">\n                                        <path\n                                            d=\"M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z\"\n                                            transform=\"translate(-2 -1)\" fill=\"#ffffff\"></path>\n                                    </svg>\n                                </span>");
             $('.css-section').find('button').removeClass('copied');
+        }
+    });
+    
+        
+     $('.float-button').on('click', function() {
+        if ($(this).hasClass('unavailable') || $(this).parent().hasClass('component')) {
+            return;
+        } else {
+            $(this).toggleClass('closed');
+            $(this).parent().next('.element-code').toggleClass('open');
+            var icon = $(this).find('.BgaIcon');
+            $(icon).toggleClass('open');
+            console.log('foundation');
         }
     });
 
