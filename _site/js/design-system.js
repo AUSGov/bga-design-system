@@ -66,6 +66,18 @@ $(document).ready(function() {
             $('.css-section').find('button').removeClass('copied');
         }
     });
+    
+        
+     $('.float-button').on('click', function() {
+        if ($(this).hasClass('unavailable') || $(this).parent().hasClass('component')) {
+            return;
+        } else {
+            $(this).toggleClass('closed');
+            $(this).parent().next('.element-code').toggleClass('open');
+            var icon = $(this).find('.BgaIcon');
+            $(icon).toggleClass('open');
+        }
+    });
 
 
     /*----------- Add side-menu (sticky_list) functionality ----------- */
