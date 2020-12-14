@@ -47,7 +47,6 @@ $(document).ready(function() {
 
 
     /*----------- Design system card open/close functionality ----------- */
-
         
     $('.element-design.component').on('click', function() {
         if ($(this).hasClass('unavailable')) {
@@ -57,7 +56,6 @@ $(document).ready(function() {
             $(this).next('.element-code').toggleClass('open');
             var icon = $(this).find('.float-button').find('.BgaIcon');
             $(icon).toggleClass('open');
-            console.log('component');
 
             //Reset copy-code button text
             //html button
@@ -78,7 +76,6 @@ $(document).ready(function() {
             $(this).parent().next('.element-code').toggleClass('open');
             var icon = $(this).find('.BgaIcon');
             $(icon).toggleClass('open');
-            console.log('foundation');
         }
     });
 
