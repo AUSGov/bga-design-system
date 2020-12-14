@@ -5142,11 +5142,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .breadcrumbs #breadcrumb-list { margin: 0; padding: 12px 0; }
 
-.design-system-card .breadcrumbs #breadcrumb-list li { display: inline-block; list-style-type: none; margin: 0; padding: 0; font-size: 14px; line-height: normal; color: #333333; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; line-height: 0; cursor: pointer; }
+.design-system-card .breadcrumbs #breadcrumb-list li { display: inline-block; list-style-type: none; margin: 0; padding: 0; font-size: 14px; line-height: normal; color: #333333; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; line-height: 0; }
 
 .design-system-card .breadcrumbs #breadcrumb-list li:before { content: ""; display: none; }
 
-.design-system-card .breadcrumbs #breadcrumb-list li a { color: #4569A0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 14px; line-height: normal; text-decoration: underline; border: none; }
+.design-system-card .breadcrumbs #breadcrumb-list li a { color: #4569A0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 14px; line-height: normal; text-decoration: underline; border: none; cursor: pointer; }
 
 .design-system-card .breadcrumbs #breadcrumb-list li span { padding: 0 8px; color: #9c9c9c; }
 

@@ -3586,12 +3586,12 @@
         color: $black-light;
         @include font-format($font-family, $font-semibold, normal);
         line-height: 0;
-        cursor: pointer;
 
         &:before {
           content: "";
           display: none;
         }
+
 
         a {
           color: $blue-primary-mid;
@@ -3600,6 +3600,7 @@
           line-height: normal;
           text-decoration: underline;
           border: none;
+          cursor: pointer;
         }
         span {
           padding: 0 8px;
