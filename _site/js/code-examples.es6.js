@@ -6289,7 +6289,7 @@ $(".breadcrumbs-code .css-code").html(breadcrumbsCss);
 //html
 const crossSiteHeaderHtml =
 `
-<div class="cross-site-navigation">
+<header class="cross-site-navigation">
    <div class="cross-site-links-container">
       <div class="cross-site-links-container-content">
          <a class="home-link" href="www.google.com">
@@ -6319,7 +6319,7 @@ const crossSiteHeaderHtml =
          <h1>Sister Site Name</h1>
       </div>
    </div>
-</div>
+</header>
 `
 
 $(".cross-site-header-code .html-code code pre").text(crossSiteHeaderHtml);
@@ -7471,7 +7471,7 @@ $(".checklist-save-progress-code .css-code").html(checklistSaveProgressCss);
 //html
 const globalFooterHtml =
 `
-<footer class="footer">
+<footer class="global-footer">
    <div class="footer-navigation">
       <div class="footer-navigation-content">
          <div class="footer-navigation-content-top">
@@ -7690,7 +7690,7 @@ const globalFooterCss =
   justify-content: space-between;
   align-content: center;
 }
-.footer .links-group-column {
+.global-footer .links-group-column {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -7722,19 +7722,19 @@ const globalFooterCss =
 <code>
 <pre>
 /* Site navigation links */
-.footer .links-group-column ul {
+.global-footer .links-group-column ul {
   padding: 16px 16px 0 16px;
   margin: 0;
   width: 100%;
 }
-.footer .links-group-column ul li {
+.global-footer .links-group-column ul li {
   list-style: none;
   line-height: 24px;
   display: flex;
   padding: 0 0 16px 0;
   width: 100%;
 }
-.footer .links-group-column ul li .link-svg-container {
+.global-footer .links-group-column ul li .link-svg-container {
   height: 16px;
   width: 16px;
   right: 16px;
@@ -7746,18 +7746,18 @@ const globalFooterCss =
   position: relative;
   fill: #ffffff;
 }
-.footer .links-group-column ul li a {
+.global-footer .links-group-column ul li a {
   text-decoration: underline;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-.footer .links-group-column ul li a:hover,
-.footer .links-group-column ul li a:focus {
+.global-footer .links-group-column ul li a:hover,
+.global-footer .links-group-column ul li a:focus {
   font-weight: 600;
 }
-.footer .links-group-column h3 {
+.global-footer .links-group-column h3 {
   font-weight: 600;
   font-size: 1.5rem;
   padding: 0;
@@ -7768,9 +7768,9 @@ const globalFooterCss =
   margin: 0;
   line-height: 1.33;
   font-family: "Open Sans", sans-serif;
-}
+} 
 /* Newsletter subscribe button */
-.footer .newsletter-subscribe-button {
+.global-footer .newsletter-subscribe-button {
   background-color: #4569a0;
   border: 2px solid #fff;
   border-radius: 6px;
@@ -7783,38 +7783,38 @@ const globalFooterCss =
   cursor: pointer;
   margin-right: auto;
 }
-.footer .newsletter-subscribe-button span {
+.global-footer .newsletter-subscribe-button span {
   color: #ffffff;
   font-weight: 600;
   font-size: 1.125rem;
   padding-right: 8px;
   font-family: "Open Sans", sans-serif;
 }
-.footer .newsletter-subscribe-button-svg-container {
+.global-footer .newsletter-subscribe-button-svg-container {
   display: inline-block;
   line-height: 0;
   top: 3px;
   position: relative;
 }
-.footer .newsletter-subscribe-button-svg-container svg {
+.global-footer .newsletter-subscribe-button-svg-container svg {
   fill: #ffffff;
   height: 16px;
   width: 16px;
 }
-.footer .newsletter-subscribe-button:hover,
-.footer .newsletter-subscribe-button:focus {
+.global-footer .newsletter-subscribe-button:hover,
+.global-footer .newsletter-subscribe-button:focus {
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   transform: translate(0, -0.25rem);
 }
-.footer .newsletter-subscribe-button:hover span,
-.footer .newsletter-subscribe-button:focus span {
+.global-footer .newsletter-subscribe-button:hover span,
+.global-footer .newsletter-subscribe-button:focus span {
   color: #254f90;
 }
-.footer .newsletter-subscribe-button:hover svg,
-.footer .newsletter-subscribe-button:focus svg {
+.global-footer .newsletter-subscribe-button:hover svg,
+.global-footer .newsletter-subscribe-button:focus svg {
   fill: #254f90;
-}
+} 
 </pre>
 </code>
 
@@ -7822,14 +7822,14 @@ const globalFooterCss =
 <code>
 <pre>
 /* Social links */
-.footer .social-links {
+.global-footer .social-links {
   display: flex;
   line-height: 48px;
   padding: 0;
   margin-left: 16px;
   list-style: none;
 }
-.footer .social-links .social-link-circle {
+.global-footer .social-links .social-link-circle {
   border: 2px solid #fff;
   background-color: #4569a0;
   border-radius: 50%;
@@ -7843,19 +7843,19 @@ const globalFooterCss =
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   padding-bottom: 0;
 }
-.footer .social-links .social-link-circle svg {
+.global-footer .social-links .social-link-circle svg {
   fill: #fff;
   height: 1rem;
   width: 1rem;
 }
-.footer .social-links .social-link-circle:hover,
-.footer .social-links .social-link-circle:focus {
+.global-footer .social-links .social-link-circle:hover,
+.global-footer .social-links .social-link-circle:focus {
   background-color: #fff;
   transform: translate(0, -0.25rem);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
-.footer .social-links .social-link-circle:hover svg,
-.footer .social-links .social-link-circle:focus svg {
+.global-footer .social-links .social-link-circle:hover svg,
+.global-footer .social-links .social-link-circle:focus svg {
   fill: #254f90;
 }
 </pre>
@@ -7865,7 +7865,7 @@ const globalFooterCss =
 <code>
 <pre>
 /* Contact number */
-.footer .contact-number {
+.global-footer .contact-number {
   color: #fff;
   font-weight: 600;
   text-decoration: none;
@@ -7902,18 +7902,18 @@ const globalFooterCss =
 <pre>
 /* Media querires */
 @media (max-width: 1024px) {
-  .footer .links-group-column ul li a {
+  .global-footer .links-group-column ul li a {
     font-size: 0.875rem;
     margin-left: -0.5rem;
   }
-  .footer .newsletter-subscribe-button {
+  .global-footer .newsletter-subscribe-button {
     margin-bottom: 32px;
   }
-  .footer .contact-number {
+  .global-footer .contact-number {
     margin-right: auto;
     margin-left: 0;
   }
-  .footer .social-links {
+  .global-footer .social-links {
     justify-content: space-evenly;
     align-self: flex-start;
     width: 50%;
@@ -7928,13 +7928,13 @@ const globalFooterCss =
     flex-direction: column;
     margin-bottom: 32px;
   }
-  .footer .links-group-column {
+  .global-footer .links-group-column {
     margin-top: 40px;
   }
   .footer-navigation-content {
     padding: 1.5rem 0.5rem 4rem 0.5rem;
   }
-  .footer .links-group-column ul li a {
+  .global-footer .links-group-column ul li a {
     font-size: 16px;
     margin-left: 0;
   }
@@ -7942,12 +7942,12 @@ const globalFooterCss =
     flex-direction: column;
     align-content: flex-start;
   }
-  .footer .social-links {
+  .global-footer .social-links {
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 32px;
   }
-  .footer .social-links .social-link-circle {
+  .global-footer .social-links .social-link-circle {
     margin-right: 32px;
   }
 }
