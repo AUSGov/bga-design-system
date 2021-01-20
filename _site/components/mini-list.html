@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mini-list</title>
+    <meta name="description" content="">
+
+    <meta name="robots" content="noarchive, nofollow, noindex, nosnippet, notranslate, noydir">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap" rel="stylesheet">
+
+    <!-- Media element styles and javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement.min.js" integrity="sha512-+b9/1TlD066WAdb06Kad2E1EY+rX1RHQ54KCMa70c1YcCDJ/Wfr1MqqOddjBAwvZ/2igGiBg+YADB3ZHZllb9g==" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" integrity="sha512-RZKnkU75qu9jzuyC+OJGffPEsJKQa7oNARCA6/8hYsHk2sd7Sj89tUCWZ+mV4uAaUbuzay7xFZhq7RkKFtP4Dw==" crossorigin="anonymous" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href=/bga-design-system/css/bootstrap.min.css>
+
+    <!-- Prototype specific CSS -->
+    <link rel="stylesheet" href=/bga-design-system/css/main.css>
+
+
+    <!-- Optional JavaScript -->
+
+    <script src=/bga-design-system/js/jquery-3.4.1.js></script>
+
+    <script src=/bga-design-system/js/bootstrap.bundle.min.js></script>
+
+    <script src=/bga-design-system/js/bootstrap-dropdownhover.min.js></script>
+
+    <script src=/bga-design-system/js/jquery.highlight-within-textarea.js></script>
+
+    <script src=/bga-design-system/js/bootstrap-datepicker.js></script>
+
+    <script src=/bga-design-system/js/design-system.js></script>
+
+    <script src=/bga-design-system/js/code-examples.js></script>
+
+</head>
+
+
+
+<body class="au-grid guide_content_page">
+
+    <!-- HEADER -->
+    <div class="header-wrapper">
+        <div class="header">
+            <header>
+
+
+        <div class="c-wrapper c-wrapper-bg-transparent search-bar-wrapper container-fluid d-none d-sm-block mobile-hide">
+            <div class="row">
+                <div class="search-bar-container">
+                    <div class="search-bar-inner-wrapper"><a href=/bga-design-system/index.html class="search-bar-desktop-logo">
+                        
+                         <img src=/bga-design-system/assets/bga_design_system_crest.svg alt="business.gov.au design system"></a>   
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="c-wrapper c-wrapper-bg-transparent search-bar-wrapper container-fluid">
+            <div class="row">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light row">
+                            <a class="navbar-brand d-sm-none" href=/bga-design-system/index.html>business.gov.au design system</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="navbar-nav mr-auto">
+                                    <div class="navbar-menu" id="foundations-link">
+                                            <a href=/bga-design-system/topic-foundations.html class="btn btn-default navigation-item-button" aria-label="Foundations">Foundations</a>
+                                            
+                                        </div>
+                                        <div class="navbar-menu" id="components-link">
+                                                <a href=/bga-design-system/topic-components.html class="btn btn-default navigation-item-button" aria-label="Components">Components</a>
+                                                
+                                            </div>
+                                            
+                                            
+                                            <div  class="navbar-menu"id="accessibility-link">
+                                                <a href=/bga-design-system/accessibility.html class="btn btn-default navigation-item-button" aria-label="Accessibility">Accessibility</a>
+                                                
+                                            </div>
+                                        </div>
+                            </div>
+                            </nav>
+            </div>
+        </div>
+    
+    
+    </header>
+        </div>
+    </div>
+    
+    
+    <!-- BREADCRUMB -->
+        <div>
+        <div class="c-wrapper c-wrapper-bg-transparent breadcrumbs-wrapper container-fluid">
+            <div class="row">
+                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden ">
+                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
+                    </svg><a href=/bga-design-system/index.html class="breadcrumb-link ">Home</a>
+                    <p class="right-arrow">›</p>
+                </div>
+                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden ">
+                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
+                    </svg><a href=/bga-design-system/topic-components.html class="breadcrumb-link " aria-label=Components>Components</a>
+                    <p class="right-arrow">›</p>
+                </div>
+                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden arrow">
+                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
+                    </svg><a href=/bga-design-system/ class="breadcrumb-link last" aria-label=></a>
+                    <p class="right-arrow">›</p>
+                </div>
+                <p class="breadcrumb-location">Mini-list</p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!-- PAGE HEADER -->
+    <div>
+        <div class="c-wrapper c-wrapper-bg-transparent  page-header-theme-grey container-fluid" >
+            <div class="row">
+                <div class="page-header" id="page-header">
+                    <div class="col-12 col-sm-12 col-md-8">
+                        <h1 class="page-header-title">
+                            Mini-list
+                        </h1>
+                       
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8">
+                        <div class="page-header-intro">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    <!-- CONTENT -->
+    
+    <div class="main-section">
+    <div>
+        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+            <div class="row">
+                <div class="anchor-col col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
+                    <div>
+                        <div>
+                            <div class="anchor-menu" data-reactroot="">
+                                <div class="sticky-container">
+                                    <div>
+                                        <h5 class="sticky-list-head">On this page</h5>
+                                        <ul>
+                                            <li><a href="" aria-label="Visual design">Visual design</a></li>
+                                            <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
+                                            <li><a href="" aria-label="Layouts">Layouts</a></li>
+                                            <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-8">
+
+                    <!-- Visual design -->
+                    <div class="anchor-section" name="visual-design"><a href="" id="visual-design" aria-label="visual design"></a>
+
+                        <div class="c-padding-top">
+                            <div class="body-copy">
+                                <div>
+                                    <div class="body-copy-headline col-12">
+                                        <h2>Visual design</h2>
+                                    </div>
+                                    <hr />
+                                </div>
+                                <div class="body-copy-content">
+
+
+                                    <div class="design-system-card component">
+                                        <div class="responsive-toggle-container">
+                                            <p class="toggle-name">Design view: <label class="switch" data-children-count="1">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                    <span class="switch-text-mobile"></span>
+                                                    <span class="switch-text-desktop"></span>
+                                                </label></p>
+
+                                            <div class="mobile-only">
+                                                <h5>Mobile design</h5>
+                                                <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="design-system-card-content">
+
+                                            <div class="example-wrapper white-back">
+                                                <div class="mini-list">
+                                                    <div class="example mini-list-container">
+
+                                                        <div class="mini-list">
+                                                            <div class="mini-list-item">
+                                                                <div class="title-container" tabindex="0">
+                                                                    <div class="svg-container tick-svg">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                                                            <g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+                                                                                <circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+                                                                                <g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+                                                                                    <path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <h3 class="title">Know our decision for closing your business, such as financial or personel circumstances</h3>
+                                                                    <div class="svg-container arrow-svg">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+                                                                            <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-container">
+                                                                    <div class="content">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <p>Lorem ipsum dolor sit amet</p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p>Cras varius ligula eros, id vestibulum sem consectetur ut.</p>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mini-list-item">
+                                                                <div class="title-container" tabindex="0">
+                                                                    <div class="svg-container tick-svg">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                                                            <g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+                                                                                <circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+                                                                                <g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+                                                                                    <path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <h3 class="title">Get professional advice from an accountant or business adviser</h3>
+                                                                    <div class="svg-container arrow-svg">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+                                                                            <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-container">
+                                                                    <div class="content">
+                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
+                                                                        <a href="#">In suscipit rutrum maximus.</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mini-list-item">
+                                                                <div class="title-container" tabindex="0">
+                                                                    <div class="svg-container tick-svg">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                                                            <g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+                                                                                <circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+                                                                                <g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+                                                                                    <path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <h3 class="title">Set your date to officially close your business</h3>
+                                                                    <div class="svg-container arrow-svg">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+                                                                            <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content-container">
+                                                                    <div class="content">
+                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
+                                                                        <a>In suscipit rutrum maximus.</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="element-design component closed">
+                                                <div class="content-wrapper">
+                                                    <p>HTML/CSS Styles</p>
+                                                </div>
+                                                <button role="none" tabindex="-1" class="float-button">
+                                                    <div tabindex="-1" class="float-button-content">
+                                                        <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                                                <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                                            </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                                    </div>
+                                                </button>
+
+                                            </div>
+
+                                            <div class="element-code mini-list-code">
+
+                                                <div class="col-sm-12 tabs-component">
+    <!-- Tabs -->
+    <div class="row">
+        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+            <div class="body-copy col-sm-12 col-md-12">
+                
+                    <ul class="nav nav-tabs">
+                                        
+                    <li class="nav-item html-tab"><a class="nav-link active" data-toggle="tab" href="html-section">HTML</a>
+                </li>
+                    <li class="nav-item css-tab"><a class="nav-link" data-toggle="tab" href="css-section">CSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Tab Content -->
+    <div class="tab-content-container">
+        <!-- HTML -->
+        
+            <div class="tab-section html-section">
+                
+                        <button class="copy-code-button">
+                            Copy html
+                            <span class="copy-code-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 89.458 103.583">
+                                    <path
+                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
+                                        transform="translate(-2 -1)" fill="#ffffff"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="html-code">
+                            <code>
+                                <pre>
+
+                                </pre>
+                            </code>
+                        </div>
+        </div>
+        <!-- CSS -->
+        
+            <div class="tab-section css-section" style="display: none;">
+                
+                        <button class="copy-code-button">
+                            Copy css
+                            <span class="copy-code-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 89.458 103.583">
+                                    <path
+                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
+                                        transform="translate(-2 -1)" fill="#ffffff"></path>
+                                </svg>
+                            </span>
+                            
+                        </button>
+                        <div class="css-code">
+                        </div>
+        </div>
+    </div>
+</div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- USAGE -->
+                    <div class="anchor-section" name="guidelines-for-use"><a href="" id="guidelines-for-use" aria-label="guidelines for use"></a>
+
+                        <div class="body-copy">
+                            <div>
+
+                                <h2>Guidelines for use</h2>
+
+                                <hr />
+                            </div>
+                            <div class="body-copy-content">
+
+                                <h3>Purpose</h3>
+                                <p>The mini-list component has expandable sections with nested content. It provides content details when opened by users on a content page.</p>
+                                <h3>When to use this component</h3>
+                                <p>The mini-list highlights information at the top of tutorial or 101 pages that the user needs to know. Generally it is used to draw the users attention to any tasks that need to be done before the rest content on the page is considered.</p>
+                                <h3>Content rules</h3>
+                                <ul>
+                                    <li>No more than 5 items per mini-list.</li>
+                                    <li>One mini-list per page.</li>
+                                    <li>The mini-list only appears on information pages, not on category or topic pages.</li>
+                                    <li>Content in mini-list items should be short. They can contain links to further information.</li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LAYOUTS -->
+                    <div class="anchor-section" name="layouts"><a href="" id="layouts"></a>
+
+                        <div class="body-copy">
+                            <div>
+
+                               <h2>Layouts</h2>
+                  
+                        <hr />
+                    </div>
+                    
+                    <div class="body-copy-content">
+
+
+                      <h3>Page width</h3>
+                        <p>The video player is used in <a href=/bga-design-system/foundations/page-layouts.html>two-third width pages</a>.</p> 
+
+                        <h3>Component layout options</h3>
+                        <h4>Full width layout</h4>
+                        <div class="layouts">
+
+                            <p><strong>Desktop, Tablet &amp; Mobile:</strong> One component in a row.</p>
+
+                            <img class="responsive-img desktop" src=/bga-design-system/assets/layout-desktop-full-width.svg alt="">
+
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EXAMPLES & ASSETS -->
+                    <div class="anchor-section" name="examples-and-assets"><a href="" id="examples-and-assets" aria-label="Layouts"></a>
+
+                        <div class="body-copy">
+                            <div>
+
+                                <h2>Examples and assets</h2>
+
+                                <hr />
+                            </div>
+                            <div class="body-copy-content">
+
+
+                                <div class="adobe-link vertical-list ">
+
+                                    <div>
+                                        <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/e0b051d3-864c-4622-91ae-876ca7f6dca0/Mini-list/">
+                                            <div class="action-card-button">
+                                                <div class="action-card-content">
+                                                    <p class="vertical-list-fileName">View mini-list design and assets in Adobe XD.</p>
+                                                    <div class="action-card-info">
+                                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
+                                                                <path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
+                                                            </svg></div>
+                                                        <div class="site-name"><span>ADOBE XD</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!--  <div class="example-link vertical-list ">
+
+                                    <div>
+                                        <a class="action-card-anchor" target="blank" href="bga-mini-list-link">
+                                            <div class="action-card-button">
+                                                <div class="action-card-content">
+                                                    <p class="vertical-list-fileName">View the standard pathway component on business.gov.au</p>
+                                                    <div class="action-card-info">
+                                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
+                                                                <path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
+                                                            </svg></div>
+                                                        <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div> -->
+
+
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+    
+
+    <!-- FOOTER -->
+    <div class="footer-wrapper">
+        <div class="footer">
+            <footer>
+    <div class="footer">
+        <div class="footer-bottom">
+            <div class="container-fluid">
+                <div class="c-wrapper row">
+                    <div class="col-12 col-md-10 col-lg-8"><a href="https://business.gov.au/"><img src=/bga-design-system/assets/footer-logo-white.svg alt="business.gov.au design system"></a>
+
+                        <p>We acknowledge the traditional owners of the country throughout Australia and their continuing connection to land, sea and community. We pay our respect to them and their cultures and to the elders past and present.</p>
+                        <p>© Commonwealth of Australia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

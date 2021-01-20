@@ -1888,7 +1888,7 @@ const standardCallToActionHtml =
                <path d="M0,9.937L1.901,8.002L5.255,11.364L14.115,2.509L16.033,4.414L5.255,15.192L0,9.937Z" style="fill:rgb(193,129,0);fill-rule:nonzero;"/>
             </g>
          </svg>
-         <p>This component can include bullet points</p>
+         This component can include bullet points
       </li>
       <li>
          <svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -1896,7 +1896,7 @@ const standardCallToActionHtml =
                <path d="M0,9.937L1.901,8.002L5.255,11.364L14.115,2.509L16.033,4.414L5.255,15.192L0,9.937Z" style="fill:rgb(193,129,0);fill-rule:nonzero;"/>
             </g>
          </svg>
-         <p>which can be very handy.</p>
+         which can be very handy.
       </li>
    </ul>
    <div class="button-wrapper">
@@ -2053,11 +2053,11 @@ const downloadCallToActionHtml =
     <ul>
        <li>
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4"/></svg>
-          <p>This component can include bullet points</p>
+          This component can include bullet points<
        </li>
        <li>
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4"/></svg>
-          <p>which can be very handy.</p>
+          which can be very handy.
        </li>
     </ul>
     <button class="download-card">
@@ -2352,13 +2352,13 @@ const standardCallOutBoxHtml =
          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
             <circle fill="#c18100" cx="8" cy="8" r="4"/>
          </svg>
-         <p>Or list points which are also handy.</p>
+         Or list points which are also handy.
       </li>
       <li>
          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
             <circle fill="#c18100" cx="8" cy="8" r="4"/>
          </svg>
-         <p>It just needs to be formatted in the same was as general body text on the site.</p>
+         It just needs to be formatted in the same was as general body text on the site.
       </li>
    </ul>
 </div>
@@ -2490,7 +2490,7 @@ const contactCallOutBoxHtml =
 				</defs>
 				<use fill="#4569A0" fill-rule="nonzero" xlink:href="#a"></use>
 			</svg>
-			<p>Monday – Friday, 8am – 8pm across Australia</p>
+			Monday – Friday, 8am – 8pm across Australia
 		</li>
 	</ul>
 </div>
@@ -4175,18 +4175,22 @@ const imageCss =
 `
 $(".image-code .css-code").html(imageCss);
 
-//Media player
+//Video player
 
 //html
-const mediaPlayerHtml =
+const videoPlayerHtml =
 `
-<!-- This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and locally hosted videos -->
-<div class="media-player">
+<!-- This video player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls for external video hosts e.g. youtube and locally hosted videos -->
+     <!-- Use these CDN links to render controls
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement.min.js" integrity="sha512-+b9/1TlD066WAdb06Kad2E1EY+rX1RHQ54KCMa70c1YcCDJ/Wfr1MqqOddjBAwvZ/2igGiBg+YADB3ZHZllb9g==" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" integrity="sha512-RZKnkU75qu9jzuyC+OJGffPEsJKQa7oNARCA6/8hYsHk2sd7Sj89tUCWZ+mV4uAaUbuzay7xFZhq7RkKFtP4Dw==" crossorigin="anonymous" /> -->
+
+<div class="video-player">
    <div id="media-player-not-available-videoid" class="media-player-not-available" style="display: none;">      <span>The request media could not be loaded at this time. Please try again later.</span>   </div>
    <!-- Video Player section -->   
    <div id="video-player-player-videoid" class="video-player-player" style="background-image: url(media-player-placeholder.jpg);">
-      <button id="video-player-button-videoid" aria-label="Play video video title" class="video-player-button" onclick="bga.sc.feature.media.onPlayVideoClick('videoid'); triggerGoal('');">
-         <span class="video-player-button-icon">
+      <button id="video-player-button-videoid" aria-label="Play video video title" class="video-player-button">
+         <span class="video-player-button-icon"> <!-- 'display: none;' after playing video -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 39 80 80">
                <path class="st5 playiconWrapper" d="M2.5 79c0-20.7 16.8-37.5 37.5-37.5S77.5 58.3 77.5 79 60.7 116.5 40 116.5 2.5 99.7 2.5 79z"></path>
                <path class="st0" d="M60.3 77c.6.2.8.8.6 1.4-.1.3-.3.5-.6.6L30 96.5c-1 .6-1.7.1-1.7-1v-35c0-1.1.8-1.5 1.7-1L60.3 77z"></path>
@@ -4201,7 +4205,7 @@ const mediaPlayerHtml =
                   <mediaelementwrapper id="videoid">
                      <iframe id="videoid_youtube_iframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/nMnjUlzkm7U?controls=1&amp;rel=0&amp;disablekb=1&amp;showinfo=0&amp;modestbranding=1&amp;html5=1&amp;iv_load_policy=3&amp;autoplay=0&amp;mute=0&amp;color=white&amp;cc_lang_pref=en&amp;cc_load_policy=1&amp;playsinline=1&amp;origin=https%3A%2F%2Fbgaauth.test.business.gov.au&amp;enablejsapi=1&amp;widgetid=1" data-gtm-yt-inspected-12375630_91="true" width="730" height="410.625"></iframe>                     
                      <video id="videoid_from_mejs" style="width: 100%; height: 100%; display: none;" preload="auto" poster="" tabindex="0" src="https://www.youtube.com/watch?v=nMnjUlzkm7U">
-                        <source src="//www.youtube.com/watch?v=nMnjUlzkm7U" type="video/youtube">
+                        <source src="video-src-here" type="video/video-src-type-here"> <!-- Replace video-src and video-src-type here -->
                      </video>
                   </mediaelementwrapper>
                </div>
@@ -4284,16 +4288,16 @@ const mediaPlayerHtml =
 </div>
 `
 
-$(".media-player-code .html-code code pre").text(mediaPlayerHtml);
+$(".video-player-code .html-code code pre").text(videoPlayerHtml);
 
 //css
-const mediaPlayerCss =
+const videoPlayerCss =
 `
 <h5>Video</h5>
 <code>
 <pre>
 /* Video */
-.media-player {
+.video-player {
   padding-bottom: 32px;
   position: relative;
   flex: 1;
@@ -4491,6 +4495,7 @@ const mediaPlayerCss =
   position: relative;
   right: 0;
   line-height: 1;
+  margin-right: 0;
 }
 .media-player
   .media-player-transcript-toggle
@@ -4561,7 +4566,410 @@ const mediaPlayerCss =
 </pre>
 </code>
 `
-$(".media-player-code .css-code").html(mediaPlayerCss);
+$(".video-player-code .css-code").html(videoPlayerCss);
+    
+//Audio player
+
+//html
+const audioPlayerHtml =
+`
+<!-- This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls -->
+<!-- Use these CDN links to render controls
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement.min.js" integrity="sha512-+b9/1TlD066WAdb06Kad2E1EY+rX1RHQ54KCMa70c1YcCDJ/Wfr1MqqOddjBAwvZ/2igGiBg+YADB3ZHZllb9g==" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" integrity="sha512-RZKnkU75qu9jzuyC+OJGffPEsJKQa7oNARCA6/8hYsHk2sd7Sj89tUCWZ+mV4uAaUbuzay7xFZhq7RkKFtP4Dw==" crossorigin="anonymous" /> -->
+
+<div class="media-player">
+   <div id="media-player-not-available-audioid" class="media-player-not-available" style="display: none;">      <span>The request media could not be loaded at this time. Please try again later.</span>   </div>
+   <!-- Audio Player section -->      
+   <div id="audio-player-banner-audioid" class="audio-player-banner graphic">
+      <img src="img-src-here" alt="audio_banner_image"> 
+        <!-- Insert banner image source here -->
+      <div id="audio-player-title-audioid" class="audio-player-title">
+         <h2>BRS ABLIS Research 5 MP3 audio with media poster and no subtitles</h2>
+      </div>
+   </div>
+   <div id="audio-player-player-audioid" class="audio-player-player">
+      <div id="audio-player-player-me-audioid" class="audio-player-controls-background">
+         <span class="mejs__offscreen">Audio Player</span>
+         <div id="mep_2" class="mejs__container mejs__container-keyboard-inactive mejs__audio" tabindex="0" role="application" aria-label="Audio Player" style="width: 100%; height: 40px; min-width: 273px;background: none;">
+            <div class="mejs__inner">
+               <div class="mejs__mediaelement">
+                  <mediaelementwrapper id="audioid">
+                     <audio id="audioid_html5" style="width:100%; height:100%" preload="auto" tabindex="0" src="audio-src-here">
+                        <!-- Add audio src here -->
+                        <source src="audio-src-here"  type="audio/mp3">
+                        <!-- Add audio src here -->
+                     </audio>
+                  </mediaelementwrapper>
+               </div>
+               <div class="mejs__layers">
+                  <div class="mejs__poster mejs__layer" style="display: none; width: 100%; height: 100%;"></div>
+               </div>
+               <div class="mejs__controls" style="background: none;">
+                  <div class="mejs__button mejs__playpause-button mejs__play"><button type="button" aria-controls="mep_2" title="Play" aria-label="Play" tabindex="0"></button></div>
+                  <div class="mejs__time mejs__currenttime-container" role="timer" aria-live="off"><span class="mejs__currenttime">00:00</span></div>
+                  <div class="mejs__time-rail"><span class="mejs__time-total mejs__time-slider" role="slider" tabindex="0" aria-label="Time Slider" aria-valuemin="0" aria-valuemax="4161.411313" aria-valuenow="0" aria-valuetext="00:00"><span class="mejs__time-buffering" style="display: none;"></span><span class="mejs__time-loaded" style="transform: scaleX(0.0489569);"></span><span class="mejs__time-current" style="transform: scaleX(0);"></span><span class="mejs__time-hovered no-hover"></span><span class="mejs__time-handle" style="transform: translateX(0px);"><span class="mejs__time-handle-content"></span></span><span class="mejs__time-float"><span class="mejs__time-float-current">00:00</span><span class="mejs__time-float-corner"></span></span></span></div>
+                  <div class="mejs__time mejs__duration-container"><span class="mejs__duration">01:09:21</span></div>
+                  <div class="mejs__button mejs__volume-button mejs__mute"><button type="button" aria-controls="mep_2" title="Mute" aria-label="Mute" tabindex="0"></button></div>
+                  <a class="mejs__horizontal-volume-slider" href="javascript:void(0);" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" role="slider" aria-valuetext="80%">
+                     <span class="mejs__offscreen">Use Up/Down Arrow keys to increase or decrease volume.</span>
+                     <div class="mejs__horizontal-volume-total">
+                        <div class="mejs__horizontal-volume-current" style="left: 0px; width: 80%;"></div>
+                        <div class="mejs__horizontal-volume-handle" style="left: 80%;"></div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Transcript section -->      
+   <div id="media-player-transcript-info-audioid" class="media-player-transcript-info">
+      <div class="media-player-transcript-toggle">
+         <button id="toggle-transcript-audioid" aria-label="Toggle media transcript, transcript open">
+            <span>Open transcript</span> <!-- Toggle open/close text with javascript -->                        
+            <span class="iconAnimateWrapper">
+               <!-- Toggle 'active-expand' class with javascript -->                              
+               <svg width="16" height="16">
+                  <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+               </svg>
+            </span>
+         </button>
+      </div>
+      <div id="media-player-transcript-audioid" class="media-player-transcript" style="display: none;">
+         <!-- Toggle 'display: none;' inline style with javascript -->                  
+         <div class="media-transcript">
+            <div id="media-transcript-content-audioid" class="media-transcript-content">
+               <!-- Transcript text is obtained and placed here, if available -->                              
+               <p data-timeinseconds="12" data-duration="2.75" id="t-audioid-0" tabindex="0">This Audio transcript is a written copy</p>
+               <p data-timeinseconds="17" data-duration="3.3099999999999987" id="t-audioid-2" tabindex="0">of the Audio content.</p>
+               <p data-timeinseconds="20" data-duration="1.9100000000000001" id="t-audioid-3" tabindex="0">The transcript scrolls as the Audio progresses</p>
+               <p data-timeinseconds="22" data-duration="2.91" id="t-audioid-4" tabindex="0">and allows users with audio impairment</p>
+               <p data-timeinseconds="25" data-duration="3.490000000000002" id="t-audioid-5" tabindex="0">To read the the content.</p>
+               <p data-timeinseconds="28" data-duration="2.5969999999999978" id="t-audioid-6" tabindex="0">The current place in the Audio is highlighted in white.</p>
+               <p data-timeinseconds="31" data-duration="2.9830000000000005" id="t-audioid-7" tabindex="0">The current place in the Audio is highlighted in white.</p>
+               <p data-timeinseconds="34" data-duration="4.340000000000003" id="t-audioid-8" tabindex="0">The current place in the Audio is highlighted in white.</p>
+               <p data-timeinseconds="38" data-duration="2.7079999999999984" id="t-audioid-9" tabindex="0">The current place in the Audio is highlighted in white.</p>
+               <p data-timeinseconds="49" data-duration="1.5799999999999983" id="t-audioid-13" tabindex="0">So we have a successful business</p>
+               <p data-timeinseconds="51" data-duration="2.8000000000000043" id="t-audioid-14" tabindex="0">that looks at a certain sector.</p>
+               <p data-timeinseconds="53" data-duration="2.3599999999999994" id="t-audioid-15" tabindex="0">It's understanding how that technology</p>
+               <p data-timeinseconds="56" data-duration="2.460000000000001" id="t-audioid-16" tabindex="0">and that innovation can then be utilised</p>
+               <p data-timeinseconds="58" data-duration="1.25" id="t-audioid-17" tabindex="0">within the defence sector from</p>
+               <p data-timeinseconds="59" data-duration="1.75" id="t-audioid-18" tabindex="0">an Australian industry perspective.</p>
+               <p data-timeinseconds="61" data-duration="2.4699999999999918" id="t-audioid-19" tabindex="0">We have our JSF specialist.</p>
+               <p data-timeinseconds="64" data-duration="2.490000000000009" id="t-audioid-20" tabindex="0">Transcripts are important to meet accessibility requirements</p>
+               <p data-timeinseconds="66" data-duration="4.700000000000003" id="t-audioid-21" tabindex="0">Lorem ipsum dolor sit amet,</p>
+               <p data-timeinseconds="71" data-duration="2.796999999999997" id="t-audioid-22" tabindex="0">consectetur idipiscing elit.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Media info section -->      
+   <div id="media-player-info-audioid" class="media-player-info">
+      <h3 class="title">Audio Title</h3>
+      <p id="totalMediaTimeLabel-audioid" class="date">Time: 01:02</p>
+      <p class="detail">A short description describing the audio can be placed here</p>
+   </div>
+</div>
+`
+
+$(".audio-player-code .html-code code pre").text(audioPlayerHtml);
+
+//css
+const audioPlayerCss =
+`
+<h5>Audio</h5>
+<code>
+<pre>
+/* Audio */
+.audio-player {
+  padding-bottom: 32px;
+  position: relative;
+  flex: 1;
+}
+.media-player-not-available {
+  text-align: center;
+}
+.audio-player-banner.graphic {
+  display: flex;
+  align-items: flex-start;
+}
+.audio-player-banner {
+  background: #4569a0;
+  padding: 32px;
+}
+.audio-player-banner.graphic img {
+  width: 132px;
+  height: 132px;
+  margin-right: 32px;
+  vertical-align: middle;
+  border-style: none;
+}
+.audio-player-banner.graphic .audio-player-title {
+  display: flex;
+  align-items: center;
+}
+.audio-player-banner h2 {
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  font-family: "Open Sans";
+  padding: 0;
+}
+.audio-player-player {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba(170, 178, 195, 0.7);
+}
+.audio-player-controls-background {
+  background: #18335c;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+</pre>
+</code>
+    
+<h5>Transcript</h5>
+<code>
+<pre>
+/* Transcript */
+.media-player-transcript-toggle {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 56px;
+  border-bottom: 2px solid #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.media-player-transcript-toggle button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  margin-right: 32px;
+  border: none;
+}
+.media-player-transcript-toggle button:hover {
+  cursor: pointer;
+}
+.media-player-transcript-toggle button:hover span {
+  background: transparent;
+  box-shadow: inset 0 -2.08px 0 #4c4c4c;
+}
+.media-player-transcript-toggle span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #4c4c4c;
+  transition: all 0.3s;
+  margin-right: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+.media-player-transcript {
+  transition: height 0.6s;
+  overflow: hidden;
+  height: 312px;
+  border-bottom: 2px solid #d8d8d8;
+}
+.media-transcript {
+  position: relative;
+  background-color: #ebebeb;
+  width: 100%;
+  padding: 0;
+  border-bottom: 2px solid #d8d8d8;
+}
+.media-transcript-content {
+  height: 312px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.media-transcript-content div {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.media-transcript-content:before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 32px;
+  width: calc(100% - 20px);
+  position: absolute;
+  background: linear-gradient(to top, rgba(235, 235, 235, 0), #ebebeb);
+  z-index: 1;
+}
+.media-player p {
+  font-size: 14px;
+  line-height: 1.78;
+  padding: 0 0 32px 0;
+  letter-spacing: 0.2px;
+  text-align: left;
+  margin: 0;
+  color: #333;
+}
+.media-transcript-content p {
+  margin: 5px 0 5px 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "Open Sans", sans-serif;
+}
+.media-transcript-content p:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+</pre>
+</code>
+    
+<h5>Description</h5>
+<code>
+<pre>
+/* Description */
+.media-player-info {
+  padding: 32px;
+  background-color: #ebebeb;
+  border-bottom: 2px solid #d8d8d8;
+  font-family: "Open Sans", sans-serif;
+}
+.media-player-info .title {
+  font-weight: 600;
+  font-size: 24px;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #333333;
+  letter-spacing: 0;
+  padding: 0 0 8px 0;
+  margin: 0;
+}
+.media-player-info .date {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #666;
+  padding-bottom: 8px;
+}
+.media-player-info .detail {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0;
+}
+</pre>
+</code>
+    
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.media-player .iconAnimateWrapper {
+  display: inline-block;
+  line-height: 0.5;
+  position: relative;
+  right: 0;
+  line-height: 1;
+  margin-right: 0;
+}
+.media-player
+  .media-player-transcript-toggle
+  button:hover
+  span.iconAnimateWrapper {
+  box-shadow: none;
+}
+.media-player-transcript-toggle .iconAnimateWrapper svg {
+  transition: transform 0.3s;
+  fill: #333;
+}
+.media-player-transcript-toggle .active-expand svg {
+  transform: scaleY(-1);
+}
+.st6 {
+  stroke: #ffffff;
+  stroke-width: 5;
+}
+.st5 {
+  stroke: #ffffff;
+  stroke-width: 5;
+  enable-background: new;
+}
+.st0 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+</pre>
+</code>
+    
+<h5>Media Query</h5>
+<code>
+<pre>
+/* Media Query */
+@media (max-width: 768px) {
+  .audio-player-banner h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .audio-player-banner.graphic img {
+    width: 80px;
+    height: 80px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .audio-player-banner {
+    padding: 24px 16px;
+  }
+  .audio-player-banner.graphic img {
+    width: 56px;
+    height: 56px;
+  }
+  .audio-player-banner h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .media-player-transcript-toggle {
+    height: 56px;
+  }
+  .media-player-transcript-toggle button {
+    margin-right: 24px;
+  }
+  .media-player-transcript-toggle button span {
+    font-size: 16px;
+  }
+  .media-transcript-content p {
+    font-size: 16px;
+  }
+  .media-player p {
+    font-size: 16px;
+    line-height: 1.71;
+  }
+  .media-player-info {
+    padding: 24px 16px;
+  }
+  .media-player-info .detail {
+    font-size: 16px;
+  }
+}
+</pre>
+</code>
+`
+$(".audio-player-code .css-code").html(audioPlayerCss);
 
 //Download list
 
@@ -6062,6 +6470,281 @@ const utilitiesCss =
 </code>
 `
 $(".utilities-code .css-code").html(utilitiesCss);
+    
+    //MINI-LIST
+
+//html
+const miniListHtml =
+`
+<div class="mini-list">
+   <div class="mini-list-item active">
+      <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
+      <div class="title-container" tabindex="0">
+         <div class="svg-container tick-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+               <g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+                  <circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+                  <g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+                     <path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+                  </g>
+               </g>
+            </svg>
+         </div>
+         <h3 class="title">Know our decision for closing your business, such as financial or personel circumstances</h3>
+         <div class="svg-container arrow-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+               <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90"/>
+            </svg>
+         </div>
+      </div>
+      <div class="content-container">
+         <div class="content">
+            <ul>
+               <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                     <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                  </svg>
+                  Lorem ipsum dolor sit amet
+               </li>
+               <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                     <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                  </svg>
+                  Cras varius ligula eros, id vestibulum sem consectetur ut.
+               </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
+         </div>
+      </div>
+   </div>
+   <div class="mini-list-item active">
+      <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
+      <div class="title-container" tabindex="0">
+         <div class="svg-container tick-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+               <g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+                  <circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+                  <g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+                     <path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+                  </g>
+               </g>
+            </svg>
+         </div>
+         <h3 class="title">Get professional advice from an accountant or business adviser</h3>
+         <div class="svg-container arrow-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+               <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90"/>
+            </svg>
+         </div>
+      </div>
+      <div class="content-container">
+         <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
+            <a href="#">In suscipit rutrum maximus.</a>
+         </div>
+      </div>
+   </div>
+   <div class="mini-list-item">
+      <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
+      <div class="title-container" tabindex="0">
+         <div class="svg-container tick-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+               <g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+                  <circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+                  <g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+                     <path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+                  </g>
+               </g>
+            </svg>
+         </div>
+         <h3 class="title">Set your date to officially close your business</h3>
+         <div class="svg-container arrow-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+               <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90"/>
+            </svg>
+         </div>
+      </div>
+      <div class="content-container">
+         <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
+            <a>In suscipit rutrum maximus.</a>
+         </div>
+      </div>
+   </div>
+</div>
+`
+
+$(".mini-list-code .html-code code pre").text(miniListHtml);
+
+//css
+const miniListCss =
+`
+<h5>Containers</h5>
+<code>
+<pre>
+/* Containers */
+.mini-list {
+  width: 100%;
+  height: auto;
+}
+.mini-list-item {
+  margin-bottom: 4px;
+}
+.mini-list .title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #e5edf7;
+  padding: 16px 24px 16px 16px;
+  cursor: pointer;
+}
+.mini-list .content-container {
+  background: #d5e2f2;
+  padding: 0 24px 24px 64px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Open Sans", sans-serif;
+  display: none;
+}
+.mini-list .content {
+  animation: fadeInTop 0.6s forwards;
+}
+.mini-list .title-container:hover,
+.mini-list .title-container:focus,
+.mini-list-item.active .title-container {
+  background: #d5e2f2;
+  outline: none;
+}
+.mini-list-item.active .content-container {
+  display: block;
+}
+.mini-list .svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</pre>
+</code>
+
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.mini-list .title {
+  margin: 0 16px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.mini-list .title-container:hover .title,
+.mini-list .title-container:focus .title {
+  text-decoration: underline;
+}
+.mini-list .content-container p {
+  margin: 0;
+  padding: 0 0 32px 0;
+}
+.mini-list .content-container a {
+  color: #254f90;
+  box-shadow: none;
+  border-bottom: 2px solid #748fb8;
+  text-decoration: none;
+  transition: box-shadow 250ms;
+  font-weight: 600;
+  display: inline;
+}
+.mini-list .content-container a:hover,
+.mini-list .content-container a:focus {
+  box-shadow: #fff 0px -20px 0px 0px inset;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline;
+  outline: none;
+}
+</pre>
+</code>
+
+<h5>List</h5>
+<code>
+<pre>
+/* List */
+.mini-list ul {
+  padding: 0 0 0 16px;
+  margin: 0;
+  line-height: 1.78;
+  list-style: none;
+}
+.mini-list ul li {
+  padding-bottom: 16px;
+  margin: 0;
+  line-height: 32px;
+  position: relative;
+  padding-left: 32px;
+}
+.mini-list .content > *:last-child li:last-of-type {
+  padding-bottom: 0px;
+}
+.mini-list ul li p {
+  padding: 0px;
+  display: inline;
+}
+.mini-list ul li svg {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+</pre>
+</code>
+
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.mini-list .tick-svg {
+  width: 32px;
+  height: 32px;
+  align-self: flex-start;
+}
+.mini-list .arrow-svg {
+  margin-left: auto;
+  width: 20px;
+  height: 13px;
+  transition: transform 0.3s;
+}
+.mini-list-item.active .arrow-svg {
+  transform: scaleY(-1);
+}
+</pre>
+</code>
+
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  .mini-list .tick-svg {
+    width: 24px;
+    height: 24px;
+  }
+  .mini-list .title-container {
+    padding: 16px 8px 16px 8px;
+  }
+  .mini-list .title {
+    margin: 0 8px;
+    font-size: 16px;
+  }
+  .mini-list .content-container {
+    padding: 0 24px 16px 40px;
+    font-size: 16px;
+  }
+}
+</pre>
+</code>
+`
+$(".mini-list-code .css-code").html(miniListCss);
 
 //======================================================= NAVIGATION / MENU COMPONENTS =============================================================================
 
@@ -6462,7 +7145,7 @@ const steppedNavigationHtml =
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
             </svg>
-            <p class="step-number">1</p>
+            <span class="step-number">1</span>
          </a>
          <a href="#" class="step-name">Step one</a>
       </div>
@@ -6473,7 +7156,7 @@ const steppedNavigationHtml =
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
             </svg>
-            <p class="step-number">2</p>
+            <span class="step-number">2</span>
          </a>
          <a href="#" class="step-name">Step two</a>
       </div>
@@ -6485,7 +7168,7 @@ const steppedNavigationHtml =
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
             </svg>
-            <p class="step-number">3</p>
+            <span class="step-number">3</span>
          </a>
          <a href="#" class="step-name">This is step three</a>
       </div>
@@ -6497,7 +7180,7 @@ const steppedNavigationHtml =
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
             </svg>
-            <p class="step-number">4</p>
+            <span class="step-number">4</span>
          </a>
          <a href="#" class="step-name">Step four</a>
       </div>
@@ -6508,7 +7191,7 @@ const steppedNavigationHtml =
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
             </svg>
-            <p class="step-number">5</p>
+            <span class="step-number">5</span>
          </a>
          <a href="#" class="step-name">This is step five</a>
       </div>
@@ -6839,25 +7522,25 @@ const checklistItemsHtml =
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                            <circle fill="#c18100" cx="8" cy="8" r="4"/>
                         </svg>
-                        <p>pay</p>
+                        pay
                      </li>
                      <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                            <circle fill="#c18100" cx="8" cy="8" r="4"/>
                         </svg>
-                        <p>hours of work</p>
+                        hours of work
                      </li>
                      <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                            <circle fill="#c18100" cx="8" cy="8" r="4"/>
                         </svg>
-                        <p>rosters</p>
+                        rosters
                      </li>
                      <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                            <circle fill="#c18100" cx="8" cy="8" r="4"/>
                         </svg>
-                        <p>breaks</p>
+                        breaks
                      </li>
                   </ul>
                   <p>You can also use the <a href="">Pay Calculator</a> to work out what you’ll need to pay your new employee under the relevant award (including any penalty rates).  </p>
@@ -7130,6 +7813,9 @@ const checklistItemsCss =
   padding: 16px 32px 32px 32px;
   position: relative;
 }
+.checklist-sub-item-content > *:last-child {
+  padding-bottom: 0px;
+}
 .checklist-sub-item-content a {
   color: #254f90;
   box-shadow: none;
@@ -7172,18 +7858,16 @@ const checklistItemsCss =
   list-style: none;
 }
 .checklist ul li {
-  padding-bottom: 16px;
+  padding: 0 0 16px 32px;
   margin: 0;
   line-height: 32px;
   position: relative;
-  padding-left: 32px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.2px;
 }
 .checklist ul li:last-of-type {
   padding-bottom: 32px;
-}
-.checklist ul li p {
-  padding: 0px;
-  display: inline;
 }
 .checklist ul li svg {
   padding-right: 16px;

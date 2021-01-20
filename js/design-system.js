@@ -802,6 +802,11 @@ $(document).ready(function() {
         $(this).toggleClass('open');
     });
     
+    /*----------- COMPONENT EXAMPLE: Mini-list ----------- */
+    $('.mini-list .mini-list-item .title-container').on('click', function(){
+        $(this).parent().toggleClass('active');
+    });
+    
     /*----------- SAB Navigation 2 functionality  ----------- */
 
     // Activate submenu functionality
