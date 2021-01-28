@@ -3581,6 +3581,7 @@
                 display: flex;
                 align-items: flex-start;
 
+
                 .audio-player-title {
                     display: flex;
                     align-items: center;
@@ -3592,6 +3593,10 @@
                     margin-right: 32px;
                     vertical-align: middle;
                     border-style: none;
+
+                    &.hide-image {
+                        display: none;
+                    }
                 }
 
             }
@@ -3718,6 +3723,7 @@
 
         .audio-player-banner {
             padding: 24px 16px;
+
             &.graphic {
                 img {
                     width: 56px;
@@ -5641,7 +5647,7 @@
     }
 }
 
-.colour-select-wrapper {
+.variation-select-wrapper {
     border: 1px solid $grey-light;
     border-bottom: none;
     background: $white;
@@ -5651,7 +5657,7 @@
     @include font-format($font-family, $font-semibold, normal);
     background: $blue-primary-mid;
 
-    select.colour-set {
+    select.variation-set {
         border: solid 1px #495c74;
         background: pink;
         padding: 8px 12px;

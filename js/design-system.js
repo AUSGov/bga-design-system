@@ -66,6 +66,17 @@ $(document).ready(function() {
             $('.css-section').find('button').removeClass('copied');
         }
     });
+    
+    $('.foundation .float-button').on('click', function() {
+        if ($(this).hasClass('unavailable')) {
+            return;
+        } else {
+            $(this).parent().toggleClass('closed');
+            $(this).parent().next('.element-code').toggleClass('open');
+            var icon = $(this).find('.BgaIcon');
+            $(icon).toggleClass('open');
+        }
+    });
 
 
     /*----------- Add side-menu (sticky_list) functionality ----------- */
@@ -455,7 +466,7 @@ $(document).ready(function() {
     });
 
     // Infographic colour select option
-    $('.infographic-colour-selector .colour-select-wrapper #infographic-colour-set').change(function() {
+    $('.infographic-colour-selector .variation-select-wrapper #infographic-colour-set').change(function() {
 
         var expr = $(this).val();
 
@@ -493,30 +504,6 @@ $(document).ready(function() {
                 $('.example.blue').removeClass('hide-infographic');
                 break;
 
-        }
-    });
-
-    // Hero-pathway colour select option
-    $('.hero-pathway-colour-selector .colour-select-wrapper #hero-pathway-colour-set').change(function() {
-
-        var expr = $(this).val();
-        var addColourClass = "hero-pathway-list-color-" + expr;
-        var removeColourClasses = ["hero-pathway-list-color-blue", "hero-pathway-list-color-yellow", "hero-pathway-list-color-magenta", "hero-pathway-list-color-bga-blue"];
-
-        $(".example .hero-pathway-list-hero").removeClass(removeColourClasses);
-        $(".example .hero-pathway-list-hero").addClass(addColourClass);
-
-    });
-
-    // Feature-image-pathway colour select option
-    $('.feature-image-pathway-colour-selector .colour-select-wrapper #feature-image-pathway-colour-set').change(function() {
-
-        var expr = $(this).val();
-
-        if (expr === "variation") {
-            $(".feature-image-pathway").addClass("variation");
-        } else {
-            $(".feature-image-pathway.variation").removeClass("variation");
         }
     });
 

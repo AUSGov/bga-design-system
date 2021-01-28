@@ -5054,6 +5054,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .media-player-example .audio-player-banner.graphic img { width: 132px; height: 132px; margin-right: 32px; vertical-align: middle; border-style: none; }
 
+.design-system-card .media-player-example .audio-player-banner.graphic img.hide-image { display: none; }
+
 .design-system-card .media-player-example .audio-player-player { background-position: center; background-size: cover; background-repeat: no-repeat; position: relative; cursor: pointer; background-color: rgba(170, 178, 195, 0.7); }
 
 .design-system-card .media-player-example .audio-player-controls-background { background: #18335c; height: 70px; display: flex; align-items: center; justify-content: stretch; }
@@ -5726,15 +5728,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.no-header .design-system-card-links { background: #ffffff; }
 
-.colour-select-wrapper { border: 1px solid #D8D8D8; border-bottom: none; background: #ffffff; padding: 16px 24px; text-align: left; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0; }
+.variation-select-wrapper { border: 1px solid #D8D8D8; border-bottom: none; background: #ffffff; padding: 16px 24px; text-align: left; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0; }
 
-.colour-select-wrapper select.colour-set { border: solid 1px #495c74; background: pink; padding: 8px 12px; margin-left: 8px; width: 300px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; border-radius: 0px; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
+.variation-select-wrapper select.variation-set { border: solid 1px #495c74; background: pink; padding: 8px 12px; margin-left: 8px; width: 300px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; border-radius: 0px; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
 
-.colour-select-wrapper select.colour-set:focus { outline: none; border: solid 1px #254F90 !important; }
+.variation-select-wrapper select.variation-set:focus { outline: none; border: solid 1px #254F90 !important; }
 
-.colour-select-wrapper select.colour-set[type="text"] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
+.variation-select-wrapper select.variation-set[type="text"] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
-.colour-select-wrapper select::-ms-expand { display: none !important; }
+.variation-select-wrapper select::-ms-expand { display: none !important; }
 
 .infographic-examples-wrapper { border: 1px solid #D8D8D8; background: #ffffff; padding: 24px; margin-bottom: 32px; width: auto; }
 

@@ -10,9 +10,7 @@ $(document).ready(function () {
       var addColourClass = `hero-pathway-list-color-${expr}`;
       var removeColourClasses = ["hero-pathway-list-color-blue", "hero-pathway-list-color-yellow", "hero-pathway-list-color-magenta", "hero-pathway-list-color-bga-blue"]
 
-        $(".code-example .hero-pathway-list-hero").removeClass(removeColourClasses)
-        $(".code-example .hero-pathway-list-hero").addClass(addColourClass)
-
+        $(".example .hero-pathway-list-hero").removeClass(removeColourClasses).addClass(addColourClass);
     evaluateHeroPathwayHtml(expr);
 });
 
@@ -893,15 +891,15 @@ $(".inline-pathway-code .css-code").html(inlinePathwayCss);
 
 //FEATURE-IMAGE-PATHWAY-LIST
               // Feature-image-pathway colour select option
-              $('.feature-image-pathway-colour-selector .colour-select-wrapper #feature-image-pathway-colour-set').change(function () {
+    $('.feature-image-pathway-colour-selector .colour-select-wrapper #feature-image-pathway-colour-set').change(function() {
 
-      //Code example changes
-      var expr = $(this).val();
-      var addColourClass = `feature-image-pathway-colour-${expr}`;
-      var removeColourClasses = ["feature-image-pathway-colour-default", "feature-image-pathway-colour-variation"]
+        var expr = $(this).val();
 
-      $(".code-example .feature-image-pathway-hero").removeClass(removeColourClasses)
-      $(".code-example .feature-image-pathway-hero").addClass(addColourClass)
+        if (expr === "variation") {
+            $(".example .feature-image-pathway").addClass("variation");
+        } else {
+            $(".example .feature-image-pathway.variation").removeClass("variation");
+        }
 
       evaluateFeatureImagePathwayHtml(expr);
 });
@@ -4568,9 +4566,19 @@ const videoPlayerCss =
 `
 $(".video-player-code .css-code").html(videoPlayerCss);
     
-//Audio player
+//AUDIO PLAYER
+    
+    // Audio player image dropdown
+    $('.audio-player-image-selector #audio-player-image-variation-boolean').change(function () {
 
-//html
+      var expr = $(this).val();
+
+        $(".example .audio-player-banner img").removeClass("hide-image").addClass(expr);
+    evaluateAudioPlayerHtml(expr);
+});
+
+ //html
+ function evaluateAudioPlayerHtml(imageState) {
 const audioPlayerHtml =
 `
 <!-- This media player uses the 'media element' (https://github.com/mediaelement/mediaelement) library to render the media controls -->
@@ -4582,7 +4590,7 @@ const audioPlayerHtml =
    <div id="media-player-not-available-audioid" class="media-player-not-available" style="display: none;">      <span>The request media could not be loaded at this time. Please try again later.</span>   </div>
    <!-- Audio Player section -->      
    <div id="audio-player-banner-audioid" class="audio-player-banner graphic">
-      <img src="img-src-here" alt="audio_banner_image"> 
+      <img src="img-src-here" alt="audio_banner_image" class="${imageState}"> 
         <!-- Insert banner image source here -->
       <div id="audio-player-title-audioid" class="audio-player-title">
          <h2>BRS ABLIS Research 5 MP3 audio with media poster and no subtitles</h2>
@@ -4674,6 +4682,7 @@ const audioPlayerHtml =
 `
 
 $(".audio-player-code .html-code code pre").text(audioPlayerHtml);
+ };
 
 //css
 const audioPlayerCss =
@@ -4704,6 +4713,9 @@ const audioPlayerCss =
   margin-right: 32px;
   vertical-align: middle;
   border-style: none;
+}
+.audio-player-banner.graphic img.hide-image {
+  display: none;
 }
 .audio-player-banner.graphic .audio-player-title {
   display: flex;
@@ -4970,6 +4982,7 @@ const audioPlayerCss =
 </code>
 `
 $(".audio-player-code .css-code").html(audioPlayerCss);
+    evaluateAudioPlayerHtml("hide-image");
 
 //Download list
 
