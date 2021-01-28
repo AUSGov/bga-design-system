@@ -891,14 +891,14 @@ $(".inline-pathway-code .css-code").html(inlinePathwayCss);
 
 //FEATURE-IMAGE-PATHWAY-LIST
               // Feature-image-pathway colour select option
-    $('.feature-image-pathway-colour-selector .colour-select-wrapper #feature-image-pathway-colour-set').change(function() {
+    $('.feature-image-pathway-colour-selector .variation-select-wrapper #feature-image-pathway-colour-set').change(function() {
 
         var expr = $(this).val();
 
         if (expr === "variation") {
-            $(".example .feature-image-pathway").addClass("variation");
+            $(".example-wrapper .feature-image-pathway").addClass("variation");
         } else {
-            $(".example .feature-image-pathway.variation").removeClass("variation");
+            $(".example-wrapper .feature-image-pathway.variation").removeClass("variation");
         }
 
       evaluateFeatureImagePathwayHtml(expr);
