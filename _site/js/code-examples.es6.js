@@ -6552,8 +6552,7 @@ const miniListHtml =
       </div>
       <div class="content-container">
          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
-            <a href="#">In suscipit rutrum maximus.</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. <a href="#">In suscipit rutrum maximus.</a></p>
          </div>
       </div>
    </div>
@@ -6579,8 +6578,7 @@ const miniListHtml =
       </div>
       <div class="content-container">
          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
-            <a>In suscipit rutrum maximus.</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui.             <a>In suscipit rutrum maximus.</a></p>
          </div>
       </div>
    </div>
@@ -6636,6 +6634,7 @@ const miniListCss =
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 </pre>
 </code>
