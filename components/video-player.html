@@ -1,160 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: content
+title: Video player
+breadcrumb1: Components
+url1: topic-components.html
+breadcrumb2:
+url2:
+longdesc: Display video content with an automatic transcript.
 
-<head>
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Media player</title>
-    <meta name="description" content="">
- 
-    <meta name="robots" content="noarchive, nofollow, noindex, nosnippet, notranslate, noydir">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap" rel="stylesheet">
-    
-
-    
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href=/bga-design-system/css/bootstrap.min.css>
-
-    <!-- Prototype specific CSS -->
-    <link rel="stylesheet" href=/bga-design-system/css/main.css>
-
-    
-    <!-- Optional JavaScript -->
-   
-    <script src=/bga-design-system/js/jquery-3.4.1.js></script>
-
-    <script src=/bga-design-system/js/bootstrap.bundle.min.js></script>
-    
-    <script src=/bga-design-system/js/bootstrap-dropdownhover.min.js></script>
-    
-    <script src=/bga-design-system/js/jquery.highlight-within-textarea.js></script>
-    
-    <script src=/bga-design-system/js/bootstrap-datepicker.js></script>
-    
-    <script src=/bga-design-system/js/design-system.js></script>
-
-    <script src=/bga-design-system/js/code-examples.js></script>
-
-</head>
-
-
-<body class="au-grid guide_content_page">
-
-    <!-- HEADER -->
-    <div class="header-wrapper">
-        <div class="header">
-            <header>
-
-
-        <div class="c-wrapper c-wrapper-bg-transparent search-bar-wrapper container-fluid d-none d-sm-block mobile-hide">
-            <div class="row">
-                <div class="search-bar-container">
-                    <div class="search-bar-inner-wrapper"><a href=/bga-design-system/index.html class="search-bar-desktop-logo">
-                        
-                         <img src=/bga-design-system/assets/bga_design_system_crest.svg alt="business.gov.au design system"></a>   
-                        
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        <div class="c-wrapper c-wrapper-bg-transparent search-bar-wrapper container-fluid">
-            <div class="row">
-                    <nav class="navbar navbar-expand-sm navbar-light bg-light row">
-                            <a class="navbar-brand d-sm-none" href=/bga-design-system/index.html>business.gov.au design system</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div class="navbar-nav mr-auto">
-                                    <div class="navbar-menu" id="foundations-link">
-                                            <a href=/bga-design-system/topic-foundations.html class="btn btn-default navigation-item-button" aria-label="Foundations">Foundations</a>
-                                            
-                                        </div>
-                                        <div class="navbar-menu" id="components-link">
-                                                <a href=/bga-design-system/topic-components.html class="btn btn-default navigation-item-button" aria-label="Components">Components</a>
-                                                
-                                            </div>
-                                            
-                                            
-                                            <div  class="navbar-menu"id="accessibility-link">
-                                                <a href=/bga-design-system/accessibility.html class="btn btn-default navigation-item-button" aria-label="Accessibility">Accessibility</a>
-                                                
-                                            </div>
-                                        </div>
-                            </div>
-                            </nav>
-            </div>
-        </div>
-    
-    
-    </header>
-        </div>
-    </div>
-    
-    
-    <!-- BREADCRUMB -->
-        <div>
-        <div class="c-wrapper c-wrapper-bg-transparent breadcrumbs-wrapper container-fluid">
-            <div class="row">
-                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden ">
-                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
-                    </svg><a href=/bga-design-system/index.html class="breadcrumb-link ">Home</a>
-                    <p class="right-arrow">›</p>
-                </div>
-                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden ">
-                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
-                    </svg><a href=/bga-design-system/topic-components.html class="breadcrumb-link " aria-label=Components>Components</a>
-                    <p class="right-arrow">›</p>
-                </div>
-                <div class="breadcrumb-home-wrapper"><svg width="16" height="16" class="hidden arrow">
-                        <path fill="#4569A0" fill-rule="evenodd" d="M3.981 7L6.5 9.513 5.01 11 0 6l5.01-5L6.5 2.487 3.981 5H16v2H3.981zM14 7h2v6h-2V7zm-4 4h4v2h-4v-2z"></path>
-                    </svg><a href=/bga-design-system/ class="breadcrumb-link last" aria-label=></a>
-                    <p class="right-arrow">›</p>
-                </div>
-                <p class="breadcrumb-location">Media player</p>
-            </div>
-        </div>
-    </div>
-
-    
-    
-    <!-- PAGE HEADER -->
-    <div>
-        <div class="c-wrapper c-wrapper-bg-transparent  page-header-theme-grey container-fluid" >
-            <div class="row">
-                <div class="page-header" id="page-header">
-                    <div class="col-12 col-sm-12 col-md-8">
-                        <h1 class="page-header-title">
-                            Media player
-                        </h1>
-                       
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-8">
-                        <div class="page-header-intro">
-                            <p>
-                                Display video content with an automatic transcript.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    
-    
-    <!-- CONTENT -->
-    
-    <div class="main-section">
+---
+<div class="main-section">
         <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
             <div class="row">
                 <div class="anchor-col col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
@@ -304,70 +158,9 @@
 
                         </div>
                             
-                        <div class="element-code media-player-code">
+                        <div class="element-code video-player-code">
 
-                            <div class="col-sm-12 tabs-component">
-    <!-- Tabs -->
-    <div class="row">
-        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
-            <div class="body-copy col-sm-12 col-md-12">
-                
-                    <ul class="nav nav-tabs">
-                                        
-                    <li class="nav-item html-tab"><a class="nav-link active" data-toggle="tab" href="html-section">HTML</a>
-                </li>
-                    <li class="nav-item css-tab"><a class="nav-link" data-toggle="tab" href="css-section">CSS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Tab Content -->
-    <div class="tab-content-container">
-        <!-- HTML -->
-        
-            <div class="tab-section html-section">
-                
-                        <button class="copy-code-button">
-                            Copy html
-                            <span class="copy-code-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 89.458 103.583">
-                                    <path
-                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
-                                        transform="translate(-2 -1)" fill="#ffffff"></path>
-                                </svg>
-                            </span>
-                        </button>
-                        <div class="html-code">
-                            <code>
-                                <pre>
-
-                                </pre>
-                            </code>
-                        </div>
-        </div>
-        <!-- CSS -->
-        
-            <div class="tab-section css-section" style="display: none;">
-                
-                        <button class="copy-code-button">
-                            Copy css
-                            <span class="copy-code-svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 89.458 103.583">
-                                    <path
-                                        d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z"
-                                        transform="translate(-2 -1)" fill="#ffffff"></path>
-                                </svg>
-                            </span>
-                            
-                        </button>
-                        <div class="css-code">
-                        </div>
-        </div>
-    </div>
-</div>
+                            {% include tab-component.html %}
 
                         </div>
 
@@ -398,7 +191,7 @@
                 <div class="body-copy-content">
 
                    <h3>Purpose:</h3>
-                   <p>The media player component displays video in a content page with the ability to play and pause. It includes a title, optional description and a transcript that displays in time with the video. </p>
+                   <p>The video player component displays video in a content page with the ability to play and pause. It includes a title, optional description and a transcript that displays in time with the video. </p>
                    <h3>When to use this component:</h3>
                    <ul>
                        <li>We use video as secondary information to reinforce the message on a content page.</li>
@@ -406,7 +199,7 @@
                    </ul>
                    <h3>Content rules</h3>
                    <ul>
-                       <li>On 101 or tutorial pages, provide lead in content above the video.</li>
+                       <li>On 101, tutorial pages, transaction pages, resource articles, news articles or grant landing pages, provide lead in content above the video.</li>
                        <li>When embedding video, insert only the YouTube ID (not the full URL) for the transcript to play correctly (e.g. NPBAdEfO9h0, rather than https://youtu.be/NPBAdEfO9h0&gt;</li>
                        <li>YouTube transcripts must be UK English to play on our site.</li>
                    </ul>
@@ -439,7 +232,7 @@
 
 
                       <h3>Page width</h3>
-                        <p>The media player is used in <a href=/bga-design-system/foundations/page-layouts.html>two-third width pages</a>.</p> 
+                        <p>The video player is used in <a href={{"foundations/page-layouts.html" | relative_url}}>two-third width pages</a>.</p> 
 
                         <h3>Component layout options</h3>
                         <h4>Full width layout</h4>
@@ -447,7 +240,7 @@
 
                             <p><strong>Desktop, Tablet &amp; Mobile:</strong> One component in a row.</p>
 
-                            <img class="responsive-img desktop" src=/bga-design-system/assets/layout-desktop-full-width.svg alt="">
+                            <img class="responsive-img desktop" src={{"assets/layout-desktop-full-width.svg" | relative_url}} alt="">
 
                         </div>
                     </div>
@@ -484,7 +277,7 @@
                     <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/9c4bf6c3-1c8d-41e6-97e4-c19e84927500/Media-player/">
                             <div class="action-card-button">
                                 <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View media player design and assets in Adobe XD.</p>
+                                    <p class="vertical-list-fileName">View video player design and assets in Adobe XD.</p>
                                     <div class="action-card-info">
                                         <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
                                         <div class="site-name"><span>ADOBE XD</span></div>
@@ -501,7 +294,7 @@
                     <a class="action-card-anchor" target="blank" href="https://www.business.gov.au/cdic/case-studies-in-defence-industry/norseld">
                             <div class="action-card-button">
                                 <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View the media player component on business.gov.au</p>
+                                    <p class="vertical-list-fileName">View the video player component on business.gov.au</p>
                                     <div class="action-card-info">
                                         <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
                                         <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
@@ -526,33 +319,3 @@
 
 </div>
 </div>
-
-    
-    
-
-    <!-- FOOTER -->
-    <div class="footer-wrapper">
-        <div class="footer">
-            <footer>
-    <div class="footer">
-        <div class="footer-bottom">
-            <div class="container-fluid">
-                <div class="c-wrapper row">
-                    <div class="col-12 col-md-10 col-lg-8"><a href="https://business.gov.au/"><img src=/bga-design-system/assets/footer-logo-white.svg alt="business.gov.au design system"></a>
-
-                        <p>We acknowledge the traditional owners of the country throughout Australia and their continuing connection to land, sea and community. We pay our respect to them and their cultures and to the elders past and present.</p>
-                        <p>© Commonwealth of Australia.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-        </div>
-    </div>
-    
-
-</body>
-
-</html>

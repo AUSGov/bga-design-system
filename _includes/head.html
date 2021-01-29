@@ -1,37 +1,40 @@
 <head>
-  
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
- 
+
     <meta name="robots" content="noarchive, nofollow, noindex, nosnippet, notranslate, noydir">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap" rel="stylesheet">
-    
 
+    <!-- Media element styles and javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement.min.js" integrity="sha512-+b9/1TlD066WAdb06Kad2E1EY+rX1RHQ54KCMa70c1YcCDJ/Wfr1MqqOddjBAwvZ/2igGiBg+YADB3ZHZllb9g==" crossorigin="anonymous"></script>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" integrity="sha512-RZKnkU75qu9jzuyC+OJGffPEsJKQa7oNARCA6/8hYsHk2sd7Sj89tUCWZ+mV4uAaUbuzay7xFZhq7RkKFtP4Dw==" crossorigin="anonymous" />
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href={{ "css/bootstrap.min.css" | relative_url }}>
 
     <!-- Prototype specific CSS -->
     <link rel="stylesheet" href={{ "css/main.css" | relative_url }}>
 
-    
+
     <!-- Optional JavaScript -->
-   
+
     <script src={{ "js/jquery-3.4.1.js" | relative_url }}></script>
 
     <script src={{ "js/bootstrap.bundle.min.js" | relative_url }}></script>
-    
+
     <script src={{ "js/bootstrap-dropdownhover.min.js" | relative_url }}></script>
-    
+
     <script src={{ "js/jquery.highlight-within-textarea.js" | relative_url }}></script>
-    
+
     <script src={{ "js/bootstrap-datepicker.js" | relative_url }}></script>
-    
+
     <script src={{ "js/design-system.js" | relative_url }}></script>
 
     <script src={{ "js/code-examples.js" | relative_url }}></script>
