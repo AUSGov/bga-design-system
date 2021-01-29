@@ -5039,7 +5039,7 @@
                 .content {
                     animation: fadeInTop 0.6s forwards;
 
-                    > *:last-child li:last-of-type {
+                    > *:last-child li:last-of-type, > *:last-child {
                         padding-bottom: 0px;
                     }
                 }
