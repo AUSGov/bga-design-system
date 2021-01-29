@@ -5486,7 +5486,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mini-list .mini-list-item .content-container .content { animation: fadeInTop 0.6s forwards; }
 
-.design-system-card .mini-list .mini-list-item .content-container .content > *:last-child li:last-of-type { padding-bottom: 0px; }
+.design-system-card .mini-list .mini-list-item .content-container .content > *:last-child li:last-of-type, .design-system-card .mini-list .mini-list-item .content-container .content > *:last-child { padding-bottom: 0px; }
 
 .design-system-card .mini-list .mini-list-item .content-container p { margin: 0; padding: 0 0 32px 0; }
 

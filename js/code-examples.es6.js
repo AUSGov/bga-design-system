@@ -6676,6 +6676,9 @@ const miniListCss =
   display: inline;
   outline: none;
 }
+.mini-list .content > *:last-child {
+  padding-bottom: 0px;
+}
 </pre>
 </code>
 
