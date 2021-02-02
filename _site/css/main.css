@@ -4042,6 +4042,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .example-wrapper.white-back { background: #ffffff; border-bottom: 1px solid #D8D8D8; }
 
+.design-system-card.component .example-wrapper.blue-back { background-color: #254F90; }
+
 .design-system-card.component .example-wrapper.no-padding { padding: 0; }
 
 .design-system-card.component .example-wrapper.header-blue-back { padding: 40px 0px; background: #4569A0; }
@@ -4085,10 +4087,6 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card.foundation .element-design .float-button .BgaIcon.open { transform: scaleY(-1); }
 
 .design-system-card.foundation .element-design .float-button .BgaIcon { fill: #333333; }
-
-.design-system-card.foundation .element-design.blue-back { background-color: #254F90; }
-
-.design-system-card.foundation .element-design.blue-back:hover { background-color: #254F90; }
 
 .design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; border-top: solid 4px #254F90; }
 
@@ -5246,7 +5244,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links h4 { padding-bottom: 16px; }
 
-.design-system-card .buttons-links .button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; margin-top: 8px; }
+.design-system-card .buttons-links .button-wrapper { transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; width: fit-content; display: block; margin: 0 auto; }
 
 .design-system-card .buttons-links .button-wrapper:hover { transform: translateY(-0.1875rem); }
 
@@ -5256,19 +5254,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .cta-button { box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; }
 
-.design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+.design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; width: 130px; margin: 0 auto; display: block; }
 
-.design-system-card .buttons-links .primary-button .cta-button:focus { background: #4569A0 0% 0% no-repeat padding-box; border: solid 3px #18335C; }
-
-.design-system-card .buttons-links .primary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
+.design-system-card .buttons-links .primary-button .cta-button:hover, .design-system-card .buttons-links .primary-button .cta-button:focus { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
 
 .design-system-card .buttons-links .primary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
 
-.design-system-card .buttons-links .primary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #254F90; }
+.design-system-card .buttons-links .primary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #254F90; width: 130px; margin: 0 auto; display: block; }
 
-.design-system-card .buttons-links .primary-dark-button .cta-button:focus { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #ffffff; color: #ffffff; }
-
-.design-system-card .buttons-links .primary-dark-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
+.design-system-card .buttons-links .primary-dark-button .cta-button:hover, .design-system-card .buttons-links .primary-dark-button .cta-button:focus { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
 
 .design-system-card .buttons-links .primary-dark-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; border-color: #18335C; }
 
@@ -5320,6 +5314,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .pagination .pagination-container { padding-top: 8px; }
 
+.design-system-card .buttons-links .pagination .pagination-container .pagination-wrapper { width: fit-content; display: block; margin: 0 auto; }
+
 .design-system-card .buttons-links .pagination a { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; box-shadow: none; padding: 0 6px; margin: 0 10px; }
 
 .design-system-card .buttons-links .pagination a.current { color: #000000; background: #E5EDF7; border-radius: 2px; }
@@ -5346,13 +5342,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .button-example[data-state="visited-state"] .link .link-text { color: #A42079; border-color: #DFB1D0; }
 
-.design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: solid 3px #18335C; }
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: solid 2px #18335C; }
 
-.design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #ffffff; color: #ffffff; }
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: solid 2px #ffffff; color: #ffffff; }
 
-.design-system-card .buttons-links .button-example[data-state="focus-state"] .secondary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #18335C; color: #ffffff; }
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .secondary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #18335C; color: #ffffff; }
 
-.design-system-card .buttons-links .button-example[data-state="focus-state"] .secondary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 3px solid #ffffff; color: #ffffff; }
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .secondary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
 
 .design-system-card .buttons-links .button-example[data-state="focus-state"] .tertiary-button .cta-button { background: url(../assets/Icon-arrow-circle-right-blue.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
 

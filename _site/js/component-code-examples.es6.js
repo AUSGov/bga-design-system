@@ -7,6 +7,7 @@ $(document).ready(function () {
     $('.hero-pathway-colour-selector #hero-pathway-colour-set').change(function () {
 
       var expr = $(this).val();
+        console.log(expr);
       var addColourClass = `hero-pathway-list-color-${expr}`;
       var removeColourClasses = ["hero-pathway-list-color-blue", "hero-pathway-list-color-yellow", "hero-pathway-list-color-magenta", "hero-pathway-list-color-bga-blue"]
 

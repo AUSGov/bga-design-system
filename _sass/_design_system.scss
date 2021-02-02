@@ -104,6 +104,10 @@
                 border-bottom: 1px solid $grey-light;
             }
 
+            &.blue-back {
+                background-color: $blue-primary;
+            }
+
             &.no-padding {
                 padding: 0;
             }
@@ -209,14 +213,6 @@
 
                 .BgaIcon {
                     fill: $black-light;
-                }
-            }
-
-            &.blue-back {
-                background-color: $blue-primary;
-
-                &:hover {
-                    background-color: $blue-primary;
                 }
             }
         }
@@ -4251,13 +4247,13 @@
         }
 
         .button-wrapper {
-            width: auto;
-            display: inline-block;
             transition-property: transform, -webkit-transform;
             transition-duration: 0.4s, 0.4s;
             transition-timing-function: ease, ease;
             transition-delay: 0s, 0s;
-            margin-top: 8px;
+            width: fit-content;
+            display: block;
+            margin: 0 auto;
 
             &:hover {
                 transform: translateY(-0.1875rem);
@@ -4292,13 +4288,12 @@
                 border: 2px solid $blue-primary;
                 color: $white;
                 @include font-format($font-family, $font-semibold, normal);
+                width: 130px;
+                margin: 0 auto;
+                display: block;
 
+                &:hover,
                 &:focus {
-                    background: $blue-primary-mid 0% 0% no-repeat padding-box;
-                    border: solid 3px $blue-active;
-                }
-
-                &:hover {
                     background: $blue-primary 0% 0% no-repeat padding-box;
                     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
                     border: 2px solid $blue-active;
@@ -4318,14 +4313,12 @@
                 background: $white 0% 0% no-repeat padding-box;
                 border: 2px solid $blue-primary;
                 color: $blue-primary;
+                width: 130px;
+                margin: 0 auto;
+                display: block;
 
+                &:hover,
                 &:focus {
-                    background: $blue-primary 0% 0% no-repeat padding-box;
-                    border: 3px solid $white;
-                    color: $white;
-                }
-
-                &:hover {
                     background: $blue-primary 0% 0% no-repeat padding-box;
                     border: 2px solid $white;
                     color: $white;
@@ -4523,6 +4516,12 @@
         .pagination {
             .pagination-container {
                 padding-top: 8px;
+
+                .pagination-wrapper {
+                    width: fit-content;
+                    display: block;
+                    margin: 0 auto;
+                }
             }
 
             a {
@@ -4610,25 +4609,25 @@
 
             &[data-state="focus-state"] {
                 .primary-button .cta-button {
-                    background: $blue-primary 0% 0% no-repeat padding-box;
-                    border: solid 3px $blue-active;
+                    background: #254F90 0% 0% no-repeat padding-box;
+                    border: solid 2px $blue-active;
                 }
 
                 .primary-dark-button .cta-button {
                     background: $blue-primary 0% 0% no-repeat padding-box;
-                    border: 3px solid $white;
+                    border: solid 2px $white;
                     color: $white;
                 }
 
                 .secondary-button .cta-button {
                     background: $blue-primary 0% 0% no-repeat padding-box;
-                    border: 3px solid $blue-active;
+                    border: 2px solid $blue-active;
                     color: $white;
                 }
 
                 .secondary-dark-button .cta-button {
                     background: $blue-primary 0% 0% no-repeat padding-box;
-                    border: 3px solid $white;
+                    border: 2px solid $white;
                     color: $white;
                 }
 
@@ -5039,7 +5038,8 @@
                 .content {
                     animation: fadeInTop 0.6s forwards;
 
-                    > *:last-child li:last-of-type, > *:last-child {
+                    > *:last-child li:last-of-type,
+                    > *:last-child {
                         padding-bottom: 0px;
                     }
                 }
