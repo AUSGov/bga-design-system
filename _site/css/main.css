@@ -4036,7 +4036,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .element-code.open { background: #ffffff; }
 
-.design-system-card.component .example-wrapper { background: #F5F5F5; box-shadow: none; padding: 40px; display: block; position: relative; max-width: 1000px; }
+.design-system-card.component .example-wrapper { background: #F5F5F5; box-shadow: none; padding: 40px; position: relative; max-width: 1000px; }
 
 @media (max-width: 650px) { .design-system-card.component .example-wrapper { padding: 24px; } }
 
@@ -4056,9 +4056,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .example-wrapper h3 { padding-top: 0; }
 
-.design-system-card.component .hero-pathway-example-wrapper { padding: 20px 15px; }
+.design-system-card.component .example-wrapper .example { width: fit-content; margin: 0 auto; }
 
-.design-system-card.component .example { margin: 0 auto; }
+.design-system-card.component .example-wrapper .example.align-example-left { margin: 0; }
+
+.design-system-card.component .example-wrapper .example.textarea-example, .design-system-card.component .example-wrapper .example.text-field-example { min-width: 500px; }
+
+.design-system-card.component .hero-pathway-example-wrapper { padding: 20px 15px; }
 
 .design-system-card.component .content-wrapper { padding-right: 56px; }
 
@@ -4072,11 +4076,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.foundation { box-shadow: none; }
 
-.design-system-card.foundation .element-design { border: 1px solid #D8D8D8; padding: 24px 24px 16px 24px; overflow: auto; position: relative; min-height: 96px; }
+.design-system-card.foundation .element-design { border: 1px solid #D8D8D8; padding: 24px 24px 16px 24px; overflow: auto; position: relative; min-height: 96px; /* .example { width: -webkit-calc(100% - 48px); width: -moz-calc(100% - 48px); width: calc(100% - 48px); float: left; padding-right: 16px; } */ }
 
 @media (max-width: 600px) { .design-system-card.foundation .element-design { padding: 24px 8px; } }
-
-.design-system-card.foundation .element-design .example { width: -webkit-calc(100% - 48px); width: -moz-calc(100% - 48px); width: calc(100% - 48px); float: left; padding-right: 16px; }
 
 .design-system-card.foundation .element-design .float-button { width: 48px; padding-left: 8px; position: absolute; top: -webkit-calc(50% - 24px); top: -moz-calc(50% - 24px); top: calc(50% - 24px); right: 24px; }
 
@@ -4160,6 +4162,30 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .desktop-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: 0.2px; line-height: 20px; text-transform: uppercase; }
 
+.design-system-card .mobile-example h1 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 32px; letter-spacing: 0; line-height: 36px; }
+
+.design-system-card .mobile-example h2 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 24px; line-height: 30px; }
+
+.design-system-card .mobile-example h3 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 21px; letter-spacing: 0; line-height: 30px; }
+
+.design-system-card .mobile-example h4 { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; font-size: 18px; letter-spacing: 0; line-height: 28px; }
+
+.design-system-card .mobile-example h5 { line-height: 24px; }
+
+.design-system-card .mobile-example p { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
+
+.design-system-card .mobile-example li { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 24px; padding-left: 1rem; }
+
+.design-system-card .mobile-example li:last-of-type { padding-bottom: 16px !important; }
+
+.design-system-card .mobile-example ul ul li:before { content: "¯" !important; height: 100%; margin-top: 7px; font-weight: 600; color: #666; }
+
+.design-system-card .mobile-example p.header-intro { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; letter-spacing: 0.2px; line-height: 28px; }
+
+.design-system-card .mobile-example p.header-update { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; letter-spacing: 0.2px; line-height: 16px; }
+
+.design-system-card .mobile-example p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: 0.2px; line-height: 20px; text-transform: uppercase; }
+
 .design-system-card .mobile-sample { padding-bottom: 32px; }
 
 .design-system-card .mobile-sample h1, .design-system-card .mobile-sample h2, .design-system-card .mobile-sample h3, .design-system-card .mobile-sample h4, .design-system-card .mobile-sample h5, .design-system-card .mobile-sample p { margin: 0; padding: 0; color: #333333; }
@@ -4199,6 +4225,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .mobile-sample p.header-update { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: italic; font-size: 12px; letter-spacing: 0.2px; line-height: 16px; }
 
 .design-system-card .mobile-sample p.header-label { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: 0.2px; line-height: 20px; text-transform: uppercase; }
+
+.design-system-card .form-elements .form-example-container.text-field, .design-system-card .form-elements .form-example-container.text-area { min-width: 500px; }
 
 .design-system-card .form-elements .form-example-container label { width: 100%; display: block; font-size: 16px; padding: 0 0 16px 0; margin: 0; }
 
@@ -4256,7 +4284,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 650px) { .design-system-card .form-elements .form-example-container .text-box-with-units input { width: 40%; } }
 
-.design-system-card .form-elements .form-example-container select { height: 52px; width: 100%; max-width: 400px; padding: 10px 15px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; border-radius: 0px; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
+.design-system-card .form-elements .form-example-container select { height: 52px; width: 100%; max-width: 400px; min-width: 400px; padding: 10px 15px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; border-radius: 0px; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
 
 .design-system-card .form-elements .form-example-container select:focus { outline: none; border: solid 3px #254F90 !important; }
 
@@ -4306,7 +4334,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .button-wrapper .tertiary-link { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; text-decoration: underline; box-shadow: none; margin-right: 40px; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .add-field { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; color: #333333; text-decoration: none; box-shadow: none; margin-right: 40px; padding: 4px 0 4px 40px; position: relative; display: inline-block; }
+.design-system-card .form-elements .form-example-container .button-wrapper .add-field { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; color: #333333; text-decoration: none; box-shadow: none; padding: 4px 0 4px 40px; position: relative; display: inline-block; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper .add-field:hover, .design-system-card .form-elements .form-example-container .button-wrapper .add-field:active { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
 
@@ -4400,7 +4428,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 650px) { .design-system-card .form-elements .form-example-container .datepicker { width: 250px !important; top: 116px !important; left: 24px !important; padding: 8px; } .design-system-card .form-elements .form-example-container .datepicker .table-condensed .day { padding: 6px; height: 36px; width: 36px; } }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo-example { position: relative; -webkit-transform: none; transform: none; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example { position: relative; -webkit-transform: none; transform: none; min-width: 457px; }
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example input { max-width: 350px; display: inline-block; vertical-align: middle; }
 
@@ -6041,6 +6069,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .coming-soon .coming-soon-label p { display: block; width: 100%; padding: 16px 0px; margin-top: 80px; background: rgba(102, 102, 102, 0.85); color: #ffffff; opacity: 1; text-align: center; font-size: 21px; }
 
 /* Tables in page content */
+.body-copy .example h1, .body-copy .example h2, .body-copy .example h3 { padding: 0; }
+
 .body-copy .media-player a { transition: none; color: unset; box-shadow: none; background-color: none; border: none; }
 
 .body-copy .table .table-responsive { overflow-y: hidden; margin-bottom: 32px; }

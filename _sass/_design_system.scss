@@ -91,7 +91,6 @@
             background: $grey-lightest;
             box-shadow: none;
             padding: 40px;
-            display: block;
             position: relative;
             max-width: 1000px;
 
@@ -133,14 +132,21 @@
             h3 {
                 padding-top: 0;
             }
+			
+			.example {
+				width: fit-content;
+				margin: 0 auto;
+				&.align-example-left {
+					margin: 0;
+				}
+				&.textarea-example, &.text-field-example {
+					min-width: 500px;
+				}
+			}
         }
 
         .hero-pathway-example-wrapper {
             padding: 20px 15px;
-        }
-
-        .example {
-            margin: 0 auto;
         }
 
         .content-wrapper {
@@ -181,13 +187,13 @@
                 padding: 24px 8px;
             }
 
-            .example {
+            /* .example {
                 width: -webkit-calc(100% - 48px);
                 width: -moz-calc(100% - 48px);
                 width: calc(100% - 48px);
                 float: left;
                 padding-right: 16px;
-            }
+            } */
 
             .float-button {
                 width: 48px;
@@ -465,6 +471,86 @@
             text-transform: uppercase;
         }
     }
+	
+	.mobile-example {
+ h1 {
+            @include font-format($font-family, $font-semibold, normal);
+            font-size: 32px;
+            letter-spacing: 0;
+            line-height: 36px;
+        }
+
+        h2 {
+            @include font-format($font-family, $font-semibold, normal);
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        h3 {
+            @include font-format($font-family, $font-semibold, normal);
+            font-size: 21px;
+            letter-spacing: 0;
+            line-height: 30px;
+        }
+
+        h4 {
+            @include font-format($font-family, $font-semibold, normal);
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+
+        h5 {
+            line-height: 24px;
+        }
+
+        p {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            line-height: 28px;
+        }
+		        li {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            line-height: 24px;
+            padding-left: 1rem;
+
+            &:last-of-type {
+                padding-bottom: 16px !important;
+            }
+        }
+
+        ul ul li:before {
+            content: "¯" !important;
+            height: 100%;
+            margin-top: 7px;
+            font-weight: 600;
+            color: #666;
+        }
+		        p.header-intro {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            line-height: 28px;
+        }
+
+        p.header-update {
+            @include font-format($font-family, $font-regular, italic);
+            font-size: 12px;
+            letter-spacing: 0.2px;
+            line-height: 16px;
+        }
+
+        p.header-label {
+            @include font-format($font-family, $font-regular, normal);
+            font-size: 12px;
+            letter-spacing: 0.2px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+	}
 
     .mobile-sample {
 
@@ -614,6 +700,9 @@
 
     .form-elements {
         .form-example-container {
+			&.text-field, &.text-area {
+				min-width: 500px;
+			}
             label {
                 width: 100%;
                 display: block;
@@ -826,6 +915,7 @@
                 height: 52px;
                 width: 100%;
                 max-width: 400px;
+				min-width: 400px;
                 padding: 10px 15px;
                 color: $black-light;
                 background: $white url(../assets/BGAIcon-chevron-down.svg) no-repeat;
@@ -1003,7 +1093,6 @@
                     color: $black-light;
                     text-decoration: none;
                     box-shadow: none;
-                    margin-right: 40px;
                     padding: 4px 0 4px 40px;
                     position: relative;
                     display: inline-block;
@@ -1312,6 +1401,7 @@
                 position: relative;
                 -webkit-transform: none;
                 transform: none;
+				min-width: 457px;
 
                 input {
                     max-width: 350px;
@@ -6464,6 +6554,11 @@
 
 /* Tables in page content */
 .body-copy {
+	.example {
+		h1, h2, h3 {
+			padding: 0;
+		}
+	}
     .media-player a {
         transition: none;
         color: unset;

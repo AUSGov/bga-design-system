@@ -126,4 +126,116 @@ $(document).ready(function () {
   //css
   var paginationCss = "\n<h5>Containers</h5>\n<code>\n<pre>\n/* Container */\n.pagination {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.pagination .svg-container {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-shrink: 0;\n}\n</pre>\n</code>\n\n<h5>Links</h5>\n<code>\n<pre>\n/* Links */\n.pagination a {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-family: \"Open Sans\", sans-serif;\n  font-weight: 600;\n  font-style: normal;\n  color: #254f90;\n  box-shadow: none;\n  padding: 0 6px;\n  margin: 0 10px;\n  text-decoration: none;\n  border: 1px solid transparent;\n}\n.pagination a.active {\n  color: #000000;\n  background: #e5edf7;\n  padding: 0 6px;\n  border-radius: 2px;\n}\n.body-copy a:focus {\n  border: 1px dotted #748fb8;\n  outline: none;\n}\n.pagination a:hover {\n  background-color: #e5edf7;\n  border-radius: 2px;\n  padding: 0 6px;\n}\n.pagination a:active {\n  color: #000;\n  background: #b3c2d8;\n  border: 1px dotted transparent;\n  border-radius: 2px;\n  border: 1px dotted #748fb8;\n}\n.pagination a:active .svg-container svg path {\n  fill: #000;\n}\n</pre>\n</code>\n\n<h5>Icons</h5>\n<code>\n<pre>\n/* Icons */\n.first .svg-container,\n.previous .svg-container {\n  padding-right: 8px;\n}\n.last .svg-container,\n.next .svg-container {\n  padding-left: 8px;\n}\n.previous .svg-container,\n.next .svg-container {\n  width: 8px;\n  height: 12px;\n}\n.last .svg-container,\n.first .svg-container {\n  width: 12px;\n  height: 12px;\n}\n</pre>\n</code>\n";
   $(".pagination-code .css-code").html(paginationCss);
+
+  //======================================================= Headers =============================================================================
+
+  //H1
+  //html
+  var headingOneHtml = "<h1>Heading 1 (H1)</h1>";
+
+  $(".heading-one-code .html-code code pre").text(headingOneHtml);
+
+  //css
+  var headingOneCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\nh1 {\n  color: #333333;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 44px;\n  letter-spacing: 0;\n  line-height: 56px;\n}\n</pre>\n</code>\n\n<h5>Media query</h5>\n<code>\n<pre>\n/* Media query */\n@media (max-width: 576px) {\n  h1 {\n    font-size: 32px;\n    line-height: 36px;\n  }\n}\n</pre>\n</code>\n";
+  $(".heading-one-code .css-code").html(headingOneCss);
+
+  //H2
+  //html
+  var headingTwoHtml = "<h2>Heading 2 (H2)</h2>";
+
+  $(".heading-two-code .html-code code pre").text(headingTwoHtml);
+
+  //css
+  var headingTwoCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\nh2 {\n  color: #333333;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 32px;\n  letter-spacing: 0;\n  line-height: 40px;\n}\n</pre>\n</code>\n\n<h5>Media query</h5>\n<code>\n<pre>\n/* Media query */\n@media (max-width: 576px) {\n  h2 {\n    font-size: 24px;\n    line-height: 30px;\n  }\n}\n</pre>\n</code>\n";
+  $(".heading-two-code .css-code").html(headingTwoCss);
+
+  //H3
+  //html
+  var headingThreeHtml = "<h3>Heading 3 (H3)</h3>";
+
+  $(".heading-three-code .html-code code pre").text(headingThreeHtml);
+
+  //css
+  var headingThreeCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\nh3 {\n  color: #333333;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 21px;\n  letter-spacing: 0;\n  line-height: 28px;\n}\n</pre>\n</code>\n\n<h5>Media query</h5>\n<code>\n<pre>\n/* Media query */\n@media (max-width: 576px) {\n  h3 {\n    line-height: 30px;\n  }\n}\n</pre>\n</code>\n";
+  $(".heading-three-code .css-code").html(headingThreeCss);
+
+  //H4
+  //html
+  var headingFourHtml = "<h4>Heading 4 (H4)</h4>";
+
+  $(".heading-four-code .html-code code pre").text(headingFourHtml);
+
+  //css
+  var headingFourCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\nh4 {\n  color: #333333;\n  font-family: OpenSans-Semibold; \n  font-size: 18px; \n  letter-spacing: 0;\n  line-height: 28px;\n}\n</pre>\n</code>\n";
+  $(".heading-four-code .css-code").html(headingFourCss);
+
+  //H5
+  //html
+  var headingFiveHtml = "<h5>Heading 5 (H5)</h5>";
+
+  $(".heading-five-code .html-code code pre").text(headingFiveHtml);
+
+  //css
+  var headingFiveCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\nh5 {\n  color: #333333;\n  font-family: OpenSans-Semibold;\n  font-size: 16px;\n  letter-spacing: 0;\n  line-height: 28px;\n}\n</pre>\n</code>\n\n<h5>Media query</h5>\n<code>\n<pre>\n/* Media query */\n@media (max-width: 576px) {\n  h5 {\n    line-height: 24px;\n  }\n}\n</pre>\n</code>\n";
+  $(".heading-five-code .css-code").html(headingFiveCss);
+
+  //Body text
+  //html
+  var bodyTextHtml = "<p class=\"body-text\">Body text - Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>";
+
+  $(".body-text-code .html-code code pre").text(bodyTextHtml);
+
+  //css
+  var bodyTextCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\n.body-text {\n  font-family: \"Open Sans\",sans-serif;\n  font-weight: 400;\n  font-style: normal;\n  font-size: 16px;\n  letter-spacing: 0.2px;\n  line-height: 28px;\n}\n</pre>\n</code>\n";
+  $(".body-text-code .css-code").html(bodyTextCss);
+
+  //Body mini
+  //html
+  var bodyMiniHtml = "<p class=\"body-mini-text\">Mini body text - Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>";
+
+  $(".body-mini-code .html-code code pre").text(bodyMiniHtml);
+
+  //css
+  var bodyMiniCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\n.body-mini-text {\n  font-family: \"Open Sans\",sans-serif;\n  font-weight: 400;\n  font-style: normal;\n  font-size: 14px;\n  letter-spacing: 0;\n  line-height: 24px;\n}\n</pre>\n</code>\n";
+  $(".body-mini-code .css-code").html(bodyMiniCss);
+
+  //List
+  //html
+  var listHtml = "\n<ul>\n   <li>\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 16 16\">\n         <circle fill=\"#c18100\" cx=\"8\" cy=\"8\" r=\"4\"/>\n      </svg>\n      List style on desktop\n   </li>\n   <li>\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 16 16\">\n         <circle fill=\"#c18100\" cx=\"8\" cy=\"8\" r=\"4\"/>\n      </svg>\n      Lorem ipsum dolor sit amet, consectet adipiscing elit.\n   </li>\n   <ul>\n      <li>Nested list style on desktop</li>\n      <li>Lorem ipsum dolor sit elit.</li>\n   </ul>\n</ul>\n";
+
+  $(".list-code .html-code code pre").text(listHtml);
+
+  //css
+  var listCss = "\n<h5>List</h5>\n<code>\n<pre>\n/* List */\nul {\n  padding: 0 0 0 16px;\n  margin: 0;\n  line-height: 1.78;\n  list-style: none;\n  font-family: \"Open Sans\", sans-serif;\n}\nul li {\n  padding-bottom: 16px;\n  margin: 0;\n  line-height: 28px;\n  letter-spacing: 0;\n  position: relative;\n  padding-left: 32px;\n}\n.content > *:last-child li:last-of-type {\n  padding-bottom: 0px;\n}\nul li svg {\n  position: absolute;\n  left: 0px;\n  top: 10px;\n}\n\nul ul li:before {\n  content: \"¯\" !important;\n  height: 100%;\n  padding-right: 21px;\n  font-weight: 600;\n  color: #666;\n  vertical-align: -20%;\n}\n\nul ul li {\n  padding-left: 18px;\n}\n\n@media (max-width: 576px) {\n  ul li {\n    line-height: 24px;\n    letter-spacing: 0.2px;\n  }\n}\n</pre>\n</code>\n";
+  $(".list-code .css-code").html(listCss);
+
+  //Header intro
+  //html
+  var headerIntroHtml = "<p class=\"header-intro\">Header introduction - Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>";
+
+  $(".header-intro-code .html-code code pre").text(headerIntroHtml);
+
+  //css
+  var headerIntroCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\n.header-intro {\n  font-family: \"Open Sans\", sans-serif;\n  font-weight: 400;\n  font-style: normal;\n  font-size: 18px;\n  letter-spacing: 0.2px;\n  line-height: 30px;\n}\n\n@media (max-width: 576px) {\n  .header-intro {\n    font-size: 16px;\n    line-height: 28px;\n  }\n}\n</pre>\n</code>\n";
+  $(".header-intro-code .css-code").html(headerIntroCss);
+
+  //Header updated
+  //html
+  var headerUpdatedHtml = "<p class=\"header-updated\">Updated: 15 March 2019</p>";
+
+  $(".header-updated-code .html-code code pre").text(headerUpdatedHtml);
+
+  //css
+  var headerUpdatedCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\n.header-updated {\n  font-family: \"Open Sans\",sans-serif;\n  font-weight: 400;\n  font-style: italic;\n  font-size: 12px;\n  letter-spacing: 0.2px;\n  line-height: 18px;\n}\n\n@media (max-width: 576px) {\n  .header-updated {\n    line-height: 16px;\n  }\n}\n</pre>\n</code>\n";
+  $(".header-updated-code .css-code").html(headerUpdatedCss);
+
+  //Header label
+  //html
+  var headerLabelHtml = "<p class=\"header-label\">Label</p>";
+
+  $(".header-label-code .html-code code pre").text(headerLabelHtml);
+
+  //css
+  var headerLabelCss = "\n<h5>Text</h5>\n<code>\n<pre>\n/* Text */\n.header-label {\n  font-family: \"Open Sans\",sans-serif;\n  font-weight: 400;\n  font-style: normal;\n  font-size: 12px;\n  letter-spacing: 0.2px;\n  line-height: 20px;\n  text-transform: uppercase;\n}\n</pre>\n</code>\n";
+  $(".header-label-code .css-code").html(headerLabelCss);
 });

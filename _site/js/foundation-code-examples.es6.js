@@ -582,6 +582,418 @@ const paginationCss =
 </code>
 `
 $(".pagination-code .css-code").html(paginationCss);
+    
+	//======================================================= Headers =============================================================================
+    
+//H1
+//html
+var headingOneHtml =
+`<h1>Heading 1 (H1)</h1>`
+
+$(".heading-one-code .html-code code pre").text(headingOneHtml);
+
+//css
+const headingOneCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+h1 {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 44px;
+  letter-spacing: 0;
+  line-height: 56px;
+}
+</pre>
+</code>
+
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+</pre>
+</code>
+`
+$(".heading-one-code .css-code").html(headingOneCss);
+	
+//H2
+//html
+var headingTwoHtml =
+`<h2>Heading 2 (H2)</h2>`
+
+$(".heading-two-code .html-code code pre").text(headingTwoHtml);
+
+//css
+const headingTwoCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+h2 {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 40px;
+}
+</pre>
+</code>
+
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+</pre>
+</code>
+`
+$(".heading-two-code .css-code").html(headingTwoCss);
+	
+	//H3
+//html
+var headingThreeHtml =
+`<h3>Heading 3 (H3)</h3>`
+
+$(".heading-three-code .html-code code pre").text(headingThreeHtml);
+
+//css
+const headingThreeCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+h3 {
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+</pre>
+</code>
+
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  h3 {
+    line-height: 30px;
+  }
+}
+</pre>
+</code>
+`
+$(".heading-three-code .css-code").html(headingThreeCss);
+	
+//H4
+//html
+var headingFourHtml =
+`<h4>Heading 4 (H4)</h4>`
+
+$(".heading-four-code .html-code code pre").text(headingFourHtml);
+
+//css
+const headingFourCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+h4 {
+  color: #333333;
+  font-family: OpenSans-Semibold; 
+  font-size: 18px; 
+  letter-spacing: 0;
+  line-height: 28px;
+}
+</pre>
+</code>
+`
+$(".heading-four-code .css-code").html(headingFourCss);
+	
+//H5
+//html
+var headingFiveHtml =
+`<h5>Heading 5 (H5)</h5>`
+
+$(".heading-five-code .html-code code pre").text(headingFiveHtml);
+
+//css
+const headingFiveCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+h5 {
+  color: #333333;
+  font-family: OpenSans-Semibold;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+</pre>
+</code>
+
+<h5>Media query</h5>
+<code>
+<pre>
+/* Media query */
+@media (max-width: 576px) {
+  h5 {
+    line-height: 24px;
+  }
+}
+</pre>
+</code>
+`
+$(".heading-five-code .css-code").html(headingFiveCss);
+	
+//Body text
+//html
+var bodyTextHtml =
+`<p class="body-text">Body text - Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>`
+
+$(".body-text-code .html-code code pre").text(bodyTextHtml);
+
+//css
+const bodyTextCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.body-text {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+}
+</pre>
+</code>
+`
+$(".body-text-code .css-code").html(bodyTextCss);
+	
+//Body mini
+//html
+var bodyMiniHtml =
+`<p class="body-mini-text">Mini body text - Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>`
+
+$(".body-mini-code .html-code code pre").text(bodyMiniHtml);
+
+//css
+const bodyMiniCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.body-mini-text {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+</pre>
+</code>
+`
+$(".body-mini-code .css-code").html(bodyMiniCss);
+	
+//List
+//html
+var listHtml =
+`
+<ul>
+   <li>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+         <circle fill="#c18100" cx="8" cy="8" r="4"/>
+      </svg>
+      List style on desktop
+   </li>
+   <li>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+         <circle fill="#c18100" cx="8" cy="8" r="4"/>
+      </svg>
+      Lorem ipsum dolor sit amet, consectet adipiscing elit.
+   </li>
+   <ul>
+      <li>Nested list style on desktop</li>
+      <li>Lorem ipsum dolor sit elit.</li>
+   </ul>
+</ul>
+`
+
+$(".list-code .html-code code pre").text(listHtml);
+
+//css
+const listCss =
+`
+<h5>List</h5>
+<code>
+<pre>
+/* List */
+ul {
+  padding: 0 0 0 16px;
+  margin: 0;
+  line-height: 1.78;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+ul li {
+  padding-bottom: 16px;
+  margin: 0;
+  line-height: 28px;
+  letter-spacing: 0;
+  position: relative;
+  padding-left: 32px;
+}
+.content > *:last-child li:last-of-type {
+  padding-bottom: 0px;
+}
+ul li svg {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+
+ul ul li:before {
+  content: "¯" !important;
+  height: 100%;
+  padding-right: 21px;
+  font-weight: 600;
+  color: #666;
+  vertical-align: -20%;
+}
+
+ul ul li {
+  padding-left: 18px;
+}
+
+@media (max-width: 576px) {
+  ul li {
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+}
+</pre>
+</code>
+`
+$(".list-code .css-code").html(listCss);
+	
+//Header intro
+//html
+var headerIntroHtml =
+`<p class="header-intro">Header introduction - Lorem ipsum dolor sit amet, consectet adipiscing elit.</p>`
+
+$(".header-intro-code .html-code code pre").text(headerIntroHtml);
+
+//css
+const headerIntroCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.header-intro {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+}
+
+@media (max-width: 576px) {
+  .header-intro {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+</pre>
+</code>
+`
+$(".header-intro-code .css-code").html(headerIntroCss);
+	
+//Header updated
+//html
+var headerUpdatedHtml =
+`<p class="header-updated">Updated: 15 March 2019</p>`
+
+$(".header-updated-code .html-code code pre").text(headerUpdatedHtml);
+
+//css
+const headerUpdatedCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.header-updated {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+}
+
+@media (max-width: 576px) {
+  .header-updated {
+    line-height: 16px;
+  }
+}
+</pre>
+</code>
+`
+$(".header-updated-code .css-code").html(headerUpdatedCss);
+	
+//Header label
+//html
+var headerLabelHtml =
+`<p class="header-label">Label</p>`
+
+$(".header-label-code .html-code code pre").text(headerLabelHtml);
+
+//css
+const headerLabelCss =
+`
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.header-label {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+</pre>
+</code>
+`
+$(".header-label-code .css-code").html(headerLabelCss);
 });
 
 
