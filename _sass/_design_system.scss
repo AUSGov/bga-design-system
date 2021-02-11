@@ -5709,9 +5709,6 @@
 				}
 
 				.example {
-					border: 2px solid #254F90;
-					border-bottom-left-radius: 6px;
-					border-bottom-right-radius: 6px;
 					text-align: center;
 					display: flex;
 					flex-direction: column;
@@ -5720,7 +5717,9 @@
 					min-width: 150px;
 
 					&.copied {
+						.svg-icon-container {
 						border-color: #297e28;
+						}
 
 						.copy-icon-code {
 							background: #297e28;
@@ -5754,6 +5753,7 @@
 					}
 
 					.svg-icon-container {
+						border: 2px solid #254F90;
 						height: 53px;
 						display: flex;
 						justify-content: center;
@@ -7241,7 +7241,10 @@
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	border-top: 2px solid #254F90;
+	border: 2px solid #254F90;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 	padding: 4px 0;
 
 	&.copy-code-button {
@@ -7296,7 +7299,7 @@
 
 	.copy-code-text {
 		color: #297e28;
-		border-top-color: #297e28;
+		border-color: #297e28;
 	}
 
 	span {

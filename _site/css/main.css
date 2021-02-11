@@ -5738,9 +5738,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 657px) { .design-system-card.no-header .design-system-card-content .icons { width: 100%; } }
 
-.design-system-card.no-header .design-system-card-content .icons .example { border: 2px solid #254F90; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: stretch; min-width: 150px; }
+.design-system-card.no-header .design-system-card-content .icons .example { text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: stretch; min-width: 150px; }
 
-.design-system-card.no-header .design-system-card-content .icons .example.copied { border-color: #297e28; }
+.design-system-card.no-header .design-system-card-content .icons .example.copied .svg-icon-container { border-color: #297e28; }
 
 .design-system-card.no-header .design-system-card-content .icons .example.copied .copy-icon-code { background: #297e28; color: #ffffff; }
 
@@ -5752,7 +5752,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.no-header .design-system-card-content .icons .example:hover span svg path { fill: #ffffff; }
 
-.design-system-card.no-header .design-system-card-content .icons .example .svg-icon-container { height: 53px; display: flex; justify-content: center; align-items: center; }
+.design-system-card.no-header .design-system-card-content .icons .example .svg-icon-container { border: 2px solid #254F90; height: 53px; display: flex; justify-content: center; align-items: center; }
 
 .design-system-card.no-header .design-system-card-content .icons .example .svg-icon-container object { height: 0; opacity: 0.1; position: absolute; }
 
@@ -6237,7 +6237,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .tab-content-container .tab-section .css-code h4 { padding-top: 0; }
 
-.copy-code-text { color: #4569a0; text-align: center; letter-spacing: 0; font-weight: 600; display: flex; justify-content: center; align-content: center; border-top: 2px solid #254F90; padding: 4px 0; }
+.copy-code-text { color: #4569a0; text-align: center; letter-spacing: 0; font-weight: 600; display: flex; justify-content: center; align-content: center; border: 2px solid #254F90; border-top: none; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; padding: 4px 0; }
 
 .copy-code-text.copy-code-button { background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569a0; width: 180px; align-self: flex-end; margin-bottom: 1rem; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; padding: 0.5rem 1rem; }
 
@@ -6253,7 +6253,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .copied { color: #297e28; }
 
-.copied .copy-code-text { color: #297e28; border-top-color: #297e28; }
+.copied .copy-code-text { color: #297e28; border-color: #297e28; }
 
 .copied span svg path { fill: #297e28; }
 
