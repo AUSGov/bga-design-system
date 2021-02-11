@@ -879,8 +879,6 @@ $(document).ready(function() {
             //If html tab is selected
         } else if ($(this).closest("div").find(".html-code").find("code").find("pre").text()) {
             $temp.val($(this).closest("div").find(".html-code").find("code").find("pre").text()).select();
-        } else {
-            console.log("an error has occured");
         }
 
         document.execCommand("copy");
@@ -893,8 +891,30 @@ $(document).ready(function() {
         } else if ($(this).parent().is('.html-section')) {
             $(this).html("HTML copied \n            <span class=\"code-copied-svg\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\"  width=\"20\" height=\"20\" viewBox=\"0 0 89.458 103.583\">\n                    <g transform=\"translate(2801.694 4748.224)\">\n                        <path d=\"M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z\" transform=\"translate(-2803.694 -4749.224)\" fill=\"$white\"></path>\n                        <path d=\"M0,20.386l5.218-5.309,9.2,9.225L38.737,0,44,5.23,14.422,34.808Z\" transform=\"translate(-2770.08 -4703)\" fill=\"#ffffff\"></path>\n                    </g>\n                </svg>\n        </span>");
             $(this).addClass('copied');
-        } else {
-            console.log("There was an error");
         }
     });
+	
+	//ICON SVG CONTENT
+	$( ".example" ).click(function() {
+
+		//Icons copy text
+		var svg = $(this).find("object")[0].contentDocument.documentElement;
+		var svgCode = svg.outerHTML || new XMLSerializer().serializeToString(svg);
+		//Copy text
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(svgCode).select();
+        document.execCommand("copy");
+		$temp.remove();
+
+		
+		//Change button text
+		 $('.copy-icon-code').html("Copy code\n            <span class=\"copy-code-svg\">\n                                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\"\n                                    viewBox=\"0 0 89.458 103.583\">\n                                    <path\n                                        d=\"M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z\"\n                                        transform=\"translate(-2 -1)\" fill=\"#ffffff\"></path>\n                                </svg>\n                            </span>");
+            $('.example').removeClass('copied');
+		
+		
+		$(this).find(".copy-icon-code").html("Copied \n            <span class=\"code-copied-svg\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\"  width=\"20\" height=\"20\" viewBox=\"0 0 89.458 103.583\">\n                    <g transform=\"translate(2801.694 4748.224)\">\n                        <path d=\"M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z\" transform=\"translate(-2803.694 -4749.224)\" fill=\"$white\"></path>\n                        <path d=\"M0,20.386l5.218-5.309,9.2,9.225L38.737,0,44,5.23,14.422,34.808Z\" transform=\"translate(-2770.08 -4703)\" fill=\"#ffffff\"></path>\n                    </g>\n                </svg>\n        </span>");
+            $(this).addClass('copied');
+		
+});
 }); // END doc ready
