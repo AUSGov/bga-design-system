@@ -6767,7 +6767,7 @@ $(".mini-list-code .css-code").html(miniListCss);
 //html
 const prosAndConsHtml =
 `
-<div class="example pros-and-cons-container">
+<div class="pros-and-cons-container">
 <div class="pros">
     <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
             <circle id="Ellipse_17" data-name="Ellipse 17" cx="24" cy="24" r="24" fill="#297e28" />
@@ -6806,7 +6806,7 @@ const prosAndConsHtml =
             Orci varius natoque penatibus et magnis dis parturient montes.</li>
     </ul>
 </div>
-                    </div>             
+</div>             
 `
 
 $(".pros-and-cons-code .html-code code pre").text(prosAndConsHtml);
