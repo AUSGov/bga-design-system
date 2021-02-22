@@ -6760,6 +6760,180 @@ const miniListCss =
 </code>
 `
 $(".mini-list-code .css-code").html(miniListCss);
+    
+    
+//PROS AND CONS LIST
+
+//html
+const prosAndConsHtml =
+`
+<div class="example pros-and-cons-container">
+<div class="pros">
+    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+            <circle id="Ellipse_17" data-name="Ellipse 17" cx="24" cy="24" r="24" fill="#297e28" />
+            <g id="Icon_tick" data-name="Icon / tick" transform="translate(12 15)">
+                <path id="Tick" d="M0,11.12l2.846-2.9,5.02,5.032L21.129,0,24,2.853,7.866,18.986Z" fill="#fff" />
+            </g>
+        </svg> </div>
+    <h3>Pros</h3>
+    <ul>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Nunc sed ipsum eleifend, tempor nibh tincidunt, suscipit ex.</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Nam quis porta ante. Proin ornare posuere neque, et tristique ex.</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Orci varius natoque penatibus et magnis dis parturient montes.</li>
+    </ul>
+</div>
+<div class="cons">
+    <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+            <g>
+                <circle id="Ellipse_18" data-name="Ellipse 18" cx="24" cy="24" r="24" fill="#cc3c1c" />
+                <g id="Icon_close" data-name="Icon / close" transform="translate(13 13)">
+                    <path id="Close" d="M11,13.2,2.2,22,0,19.8,8.8,11,0,2.2,2.2,0,11,8.8,19.8,0,22,2.2,13.2,11,22,19.8,19.8,22Z" fill="#fff" />
+                </g>
+            </g>
+        </svg></div>
+    <h3>Cons</h3>
+    <ul>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Nunc sed ipsum eleifend, tempor nibh tincidunt, suscipit ex.</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Nam quis porta ante. Proin ornare posuere neque, et tristique ex.</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16"><circle fill="#c18100" cx="8" cy="8" r="4" /></svg>
+            Orci varius natoque penatibus et magnis dis parturient montes.</li>
+    </ul>
+</div>
+                    </div>             
+`
+
+$(".pros-and-cons-code .html-code code pre").text(prosAndConsHtml);
+
+//css
+const prosAndConsCss =
+`
+<h5>Containers</h5>
+<code>
+<pre>
+/* Containers */
+.pros-and-cons-container {
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 16px;
+    padding: 0;
+    border: none;
+    background: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    color: #333333;
+    text-decoration: none;
+    display: flex;
+}
+.pros-and-cons-container .pros, 
+.pros-and-cons-container .cons {
+    border: 1px solid #D8D8D8;
+    border-top: 4px solid #297E28;
+    width: 50%;
+    padding: 16px 32px 32px 32px;
+}
+.pros-and-cons-container .cons {
+    border-left: none;
+    border-top: 4px solid #CC3C1C;
+}
+/* Remove bottom padding from last element in the component*/
+.pros-and-cons-container .pros > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.pros-and-cons-container .pros > *:last-child li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.pros-and-cons-container .cons > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.pros-and-cons-container .cons > *:last-child li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+</pre>
+</code>
+
+<h5>Icons</h5>
+<code>
+<pre>
+/* Icons */
+.pros-and-cons-container .icon {
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;     
+}
+</pre>
+</code>
+
+<h5>Text</h5>
+<code>
+<pre>
+/* Text */
+.pros-and-cons-container h3 {
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0;
+  font-size: 21px;
+  margin: 0 0 16px 0;
+} 
+.pros-and-cons-container ul {
+    padding: 0 0 0 16px;
+    margin: 0;
+    line-height: 1.78;
+    list-style: none;
+}
+.pros-and-cons-container ul li {
+    padding: 0 0 16px 32px;
+    margin: 0;
+    line-height: 32px;
+    position: relative;
+}
+.pros-and-cons-container ul li svg {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+</pre>
+</code>
+
+<h5>Media queries</h5>
+<code>
+<pre>
+/* Media queries */    
+@media (max-width: 768px) {
+.pros-and-cons-container .pros,
+.pros-and-cons-container .cons {
+        padding: 16px 24px 24px 24px;
+    }
+}
+@media (max-width: 576px) {
+.pros-and-cons-container {
+    display: block;
+}
+.pros-and-cons-container .pros, 
+.pros-and-cons-container .cons {
+    box-sizing: border-box;    
+    width: 100%;
+    display: block;
+    border-left: 1px solid #D8D8D8; 
+    }
+}
+</pre>
+</code>
+`
+$(".pros-and-cons-code .css-code").html(prosAndConsCss);    
+    
+    
 
 //======================================================= NAVIGATION / MENU COMPONENTS =============================================================================
 

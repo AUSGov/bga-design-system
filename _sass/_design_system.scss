@@ -5094,7 +5094,6 @@
             }
         }
     }
-
     .mobile-example {
         .mini-list {
             .mini-list-item {
@@ -5119,7 +5118,6 @@
             }
         }
     }
-
     @media (max-width: 640px) {
         .mini-list {
             .mini-list-item {
@@ -5143,6 +5141,73 @@
                 }
             }
         }
+    }
+    
+    /* Pros and cons */
+        .pros-and-cons {
+        h3 {
+            line-height: 28px;
+        }
+
+        .description {
+            padding-bottom: 48px;
+            font-weight: normal;
+        }
+
+        .icon-link {
+            background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
+            height: 32px;
+        }
+
+        .pros-and-cons-container {
+            height: auto;
+            max-width: 100%;
+            background: $white;
+            border: none;
+            display: flex;
+            
+            .pros,
+            .cons {
+                border: 1px solid $grey-light;
+                border-top: 4px solid $green-positive-dark;
+                width: 50%;
+                padding: 16px 32px 32px 32px;
+                
+                li:last-of-type {
+                    padding-bottom: 0;
+                }
+            }
+            .cons {  
+                border-left: none;
+                border-top: 4px solid $red-dark;
+            }
+            .icon {
+                margin-bottom: 16px;
+                width: 100%;
+                text-align: center;     
+            }
+            
+        }
+    }
+    .mobile-example .pros-and-cons,
+    .mobile-media-query .pros-and-cons {
+        .pros-and-cons-container {
+            display: block;
+
+            h3 {
+                line-height: 30px;
+            }
+
+            .pros,
+            .cons {
+                box-sizing: border-box;    
+                width: 100%;
+                display: block;
+                padding: 16px 24px 24px 24px;
+                border-left: 1px solid #D8D8D8; 
+            }
+        }
+
     }
 
     .header-example {

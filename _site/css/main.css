@@ -4004,7 +4004,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 /*# sourceMappingURL=bootstrap-datepicker3.css.map */
 /* Design system styles */
-.design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); width: auto; /* Mini-list */ }
+.design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); width: auto; /* Mini-list */ /* Pros and cons */ }
 
 .design-system-card.extra-wide { max-width: 1000px; }
 
@@ -5511,6 +5511,28 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .mobile-example .mini-list .mini-list-item .content-container { padding: 0 24px 16px 40px; font-size: 16px; }
 
 @media (max-width: 640px) { .design-system-card .mini-list .mini-list-item .title-container { padding: 16px 8px 16px 8px; } .design-system-card .mini-list .mini-list-item .title-container .title { margin: 0 8px; font-size: 16px; } .design-system-card .mini-list .mini-list-item .title-container .tick-svg { width: 24px; height: 24px; } .design-system-card .mini-list .mini-list-item .content-container { padding: 0 24px 16px 40px; font-size: 16px; } }
+
+.design-system-card .pros-and-cons h3 { line-height: 28px; }
+
+.design-system-card .pros-and-cons .description { padding-bottom: 48px; font-weight: normal; }
+
+.design-system-card .pros-and-cons .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; height: 32px; }
+
+.design-system-card .pros-and-cons .pros-and-cons-container { height: auto; max-width: 100%; background: #ffffff; border: none; display: flex; }
+
+.design-system-card .pros-and-cons .pros-and-cons-container .pros, .design-system-card .pros-and-cons .pros-and-cons-container .cons { border: 1px solid #D8D8D8; border-top: 4px solid #297E28; width: 50%; padding: 16px 32px 32px 32px; }
+
+.design-system-card .pros-and-cons .pros-and-cons-container .pros li:last-of-type, .design-system-card .pros-and-cons .pros-and-cons-container .cons li:last-of-type { padding-bottom: 0; }
+
+.design-system-card .pros-and-cons .pros-and-cons-container .cons { border-left: none; border-top: 4px solid #CC3C1C; }
+
+.design-system-card .pros-and-cons .pros-and-cons-container .icon { margin-bottom: 16px; width: 100%; text-align: center; }
+
+.design-system-card .mobile-example .pros-and-cons .pros-and-cons-container, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container { display: block; }
+
+.design-system-card .mobile-example .pros-and-cons .pros-and-cons-container h3, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container h3 { line-height: 30px; }
+
+.design-system-card .mobile-example .pros-and-cons .pros-and-cons-container .pros, .design-system-card .mobile-example .pros-and-cons .pros-and-cons-container .cons, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container .pros, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container .cons { box-sizing: border-box; width: 100%; display: block; padding: 16px 24px 24px 24px; border-left: 1px solid #D8D8D8; }
 
 .design-system-card .header-example img.desktop-example { display: block; }
 
