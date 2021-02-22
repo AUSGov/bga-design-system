@@ -883,6 +883,7 @@ $(document).ready(function () {
 
 		document.execCommand("copy");
 		$temp.remove();
+		$(this).focus().blur();
 
 		//Change button text
 		if ($(this).parent().is('.css-section')) {
@@ -895,7 +896,7 @@ $(document).ready(function () {
 	});
 
 	//ICON SVG CONTENT
-	$(".example").click(function () {
+	$(".icons .example").click(function () {
 		var svgSrc = $(this).find("img").attr('src');
 		$.get(svgSrc, function (data) {
 			var svgNode = data.childNodes;
@@ -906,7 +907,7 @@ $(document).ready(function () {
 		$temp.val(svgCode).select();
 		document.execCommand("copy");
 		$temp.remove();
-			
+		$(this).focus().blur();
 		});
 
 

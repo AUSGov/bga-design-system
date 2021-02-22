@@ -9,107 +9,823 @@ longdesc: Guidelines on form element styles.
 
 ---
 <div class="main-section">
-        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
-            <div class="row">
-                <div class="anchor-col col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
-                     <div class="anchor-menu" >    
-                    <div class="sticky-container">
-                                <div>
-                                    <h5 class="sticky-list-head">On this page</h5>
-                                    <ul>
-                                        <li><a href="" aria-label="Text fields">Text fields</a></li>
-                                        <li><a href="" aria-label="Select option fields">Select option fields</a></li>
-                                        <li><a href="" aria-label="Form buttons">Form buttons</a></li>
-                                        <li><a href="" aria-label="Text box button combinations">Text box / button combinations</a></li>
-                                        <li><a href="" aria-label="Date field">Date field</a></li>
-                                        <li><a href="" aria-label="Contextual help">Contextual help</a></li>
-                                        <li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
+	<div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+		<div class="row">
+			<div class="anchor-col col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
+				<div class="anchor-menu">
+					<div class="sticky-container">
+						<div>
+							<h5 class="sticky-list-head">On this page</h5>
+							<ul>
+								<li><a href="" aria-label="Text fields">Text fields</a></li>
+								<li><a href="" aria-label="Select option fields">Select option fields</a></li>
+								<li><a href="" aria-label="Form buttons">Form buttons</a></li>
+								<li><a href="" aria-label="Text box button combinations">Text box / button combinations</a></li>
+								<li><a href="" aria-label="Date field">Date field</a></li>
+								<li><a href="" aria-label="Contextual help">Contextual help</a></li>
+								<li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
 
-                                    </ul>
-                                </div>
-                                </div>
-                    </div>
-                </div>
-                
-<div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-8">
-                 
-<!-- Text fields -->
-<div class="anchor-section" name="text-fields"><a href="" id="text-fields" aria-label="text-fields"></a>
-    <div class="c-padding-top anchor-section-full-width  ">
-        <div class="body-copy">
-            <div>
-                <div class="body-copy-headline col-12">
-                    <h2>Text fields</h2>
-                </div>
-                <hr />
-            </div>
-            <div class="body-copy-content">
-                
-                <h3>Text box</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
+			<div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-8">
 
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example form-example-container text-field-example" data-state="default-state">
+				<!-- Text fields -->
+				<div class="anchor-section" name="text-fields"><a href="" id="text-fields" aria-label="text-fields"></a>
+					<div class="c-padding-top anchor-section-full-width  ">
+						<div class="body-copy">
+							<div>
+								<div class="body-copy-headline col-12">
+									<h2>Text fields</h2>
+								</div>
+								<hr />
+							</div>
+							<div class="body-copy-content">
 
-                                <!-- Component content -->
+								<h3>Text box</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
 
-                                <label for="form-text-box" class="form-text-box-label">Text box label</label>
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
 
-                                <input id="form-text-box" name="form-text-box" type="text" value="" maxlength="255" placeholder="" class="example-form-element">
-                                
-                                <p class="error-message">Descriptive error message</p>
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
 
-                            </div>
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example full-width form-example-container text-field-example" data-state="default-state">
+
+													<!-- Component content -->
+
+													<label for="form-text-box" class="form-text-box-label">Text box label</label>
+
+													<input id="form-text-box" name="form-text-box" type="text" value="" maxlength="255" placeholder="" class="example-form-element">
+
+													<p class="error-message">Descriptive error message</p>
+
+												</div>
 
 
-                        </div>
-                        </div>
+											</div>
+										</div>
 
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
+										{% include code-dropdown.html componentName="text-box" %}
 
-                        </div>
-                            
-<div class="element-code">
+									</div>
 
-<h5>Label</h5>
-<code>
-<pre>
+								</div>
+
+
+								<h3>Text area</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example full-width textarea-example form-example-container" data-state="default-state">
+
+													<!-- Component content -->
+
+													<label for="form-text-box" class="form-text-box-label">Text area label</label>
+
+													<textarea id="form-text-area" name="form-text-area" type="text" value="" maxlength="" placeholder="" class="example-form-element"></textarea>
+													<p class="textarea-char-count under">0 of 100 characters used</p>
+													<p class="error-message textarea-error-message">Descriptive error message</p>
+
+												</div>
+
+
+											</div>
+										</div>
+
+										{% include code-dropdown.html componentName="text-area" %}
+
+									</div>
+
+								</div>
+
+
+								<h3>Text box with units</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example form-example-container" data-state="default-state">
+
+													<!-- Component content -->
+
+													<label for="form-text-box-units" class="form-text-box-units-label">Text box label</label>
+
+													<div class="text-box-with-units"><span>$AUD</span><input id="form-text-box-units" name="form-text-area" type="number" value="" maxlength="255" placeholder="" class="example-form-element"><span>.00</span>
+													</div>
+
+													<p class="error-message">Descriptive error message</p>
+
+												</div>
+
+
+											</div>
+										</div>
+
+										{% include code-dropdown.html componentName="units-text-box" %}
+
+									</div>
+
+								</div>
+
+
+
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+
+
+				<!-- Select option fields -->
+				<div class="anchor-section" name="select-option-fields"><a href="" id="select-option-fields" aria-label="select-option-fields"></a>
+					<div class="c-padding-top anchor-section-full-width  ">
+						<div class="body-copy">
+							<div>
+
+								<h2>Select option fields</h2>
+
+								<hr />
+							</div>
+							<div class="body-copy-content">
+
+
+
+								<h3>Select box</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example form-example-container" data-state="default-state">
+
+													<!-- Component content -->
+
+													<label for="form-select-box" class="form-select-box-label">Select box label</label>
+
+													<select id="form-select-box" name="form-select-box" type="text" value="" placeholder="" class="example-form-element">
+														<option value="">Please select</option>
+														<option value="Option 1">Option 1</option>
+														<option value="Option 2">Option 2</option>
+														<option value="Option 3">Option 3</option>
+														<option value="option 4">Option 4</option>
+													</select>
+
+													<p class="error-message">Descriptive error message</p>
+
+												</div>
+
+
+											</div>
+										</div>
+
+										{% include code-dropdown.html componentName="select-dropdown" %}
+
+									</div>
+
+								</div>
+
+								<h3>Radio buttons</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example radio-example form-example-container">
+
+													<!-- Component content -->
+
+													<label for="form-radio" class="form-radio-label">Radio group label</label>
+
+													<div class="radio-item">
+														<input id="form-radio-1" name="form-radio-1" type="radio" class="example-form-element"><label for="form-radio-1">Yes, I want to do this thing.</label>
+													</div>
+
+
+													<div class="radio-item">
+														<input id="form-radio-2" name="form-radio-2" type="radio" class="example-form-element"><label for="form-radio-2">No, I don't think I'll do that now.</label>
+													</div>
+
+
+													<div class="radio-item">
+														<input id="form-radio-3" name="form-radio-3" type="radio" class="example-form-element"><label for="form-radio-3">Maybe I will do this at a later time.</label>
+													</div>
+
+													<p class="error-message">Descriptive error message</p>
+
+
+
+												</div>
+
+
+											</div>
+										</div>
+
+										{% include code-dropdown.html componentName="radio-buttons" %}
+
+									</div>
+
+								</div>
+
+
+								<h3>Multiple select list</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example multiple-select-example form-example-container" data-state="default-state">
+
+													<!-- Component content -->
+
+													<label for="form-select-list" class="form-select-box-label">Multiple select list label</label>
+
+
+													<div class="checkbox-item">
+														<input id="form-multiple-1" name="form-multiple-1" type="checkbox" class="example-form-element"><label for="form-multiple-1" class="checkbox-label">Multiple choice option 1</label>
+													</div>
+
+
+													<div class="checkbox-item">
+														<input id="form-multiple-2" name="form-multiple-2" type="checkbox" class="example-form-element"><label for="form-multiple-2" class="checkbox-label">Multiple choice option 2</label>
+													</div>
+
+
+													<div class="checkbox-item">
+														<input id="form-multiple-3" name="form-multiple-3" type="checkbox" class="example-form-element"><label for="form-multiple-3" class="checkbox-label">Multiple choice option 3</label>
+													</div>
+
+													<div class="checkbox-item">
+														<input id="form-multiple-4" name="form-multiple-4" type="checkbox" class="example-form-element"><label for="form-multiple-4" class="checkbox-label">Multiple choice option 4</label>
+													</div>
+
+													<p class="error-message">Descriptive error message</p>
+
+												</div>
+
+
+											</div>
+										</div>
+
+										{% include code-dropdown.html componentName="checkbox" %}
+
+									</div>
+
+								</div>
+
+
+
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+
+
+				<!-- Form buttons -->
+				<div class="form-buttons" name="form-buttons"><a href="" id="form-buttons"></a>
+					<div class="c-padding-top anchor-section-full-width  ">
+						<div class="body-copy">
+							<div>
+
+								<h2>Form buttons</h2>
+
+								<hr />
+							</div>
+							<div class="body-copy-content">
+
+
+								<h3>Primary action button</h3>
+
+								<div class="design-system-card component">
+
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="hover-label" data-state="hover-state">
+											<input type="radio">
+											<span>Hover</span>
+										</label>
+
+										<label class="active-label" data-state="active-state">
+											<input type="radio">
+											<span>Active</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+
+									</div>
+									<div class="body-copy-content primary-button-colour-selector">
+
+										<div class="variation-select-wrapper">
+											<label for="primary-button-colour-set">Colour set:</label>
+
+											<select id="primary-button-colour-set" class="variation-set">
+												<option selected="selected" value="">Default</option>
+												<option value="light">Light</option>
+											</select>
+										</div>
+									</div>
+
+
+
+									<div class="design-system-card-content buttons-links">
+
+
+										<div class="button-example button-links form-example-container">
+
+											<div class="example-wrapper white-back">
+												<div class="example primary-button">
+
+													<div class="primary-container">
+
+														<div class="button-wrapper">
+															<a href="" class="cta-button" aria-label="Primary button"><span>Submit</span></a>
+														</div>
+													</div>
+
+												</div>
+
+
+											</div>
+
+
+										</div>
+										{% include code-dropdown.html componentName="primary-button" %}
+
+									</div>
+
+
+								</div>
+
+
+								<h3>Secondary action button</h3>
+
+								<div class="design-system-card component">
+
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="hover-label" data-state="hover-state">
+											<input type="radio">
+											<span>Hover</span>
+										</label>
+
+										<label class="active-label" data-state="active-state">
+											<input type="radio">
+											<span>Active</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+
+									</div>
+									<div class="body-copy-content secondary-button-colour-selector">
+
+										<div class="variation-select-wrapper">
+											<label for="secondary-button-colour-set">Colour set:</label>
+
+											<select id="secondary-button-colour-set" class="variation-set">
+												<option selected="selected" value="">Default</option>
+												<option value="dark">Dark</option>
+											</select>
+										</div>
+									</div>
+
+
+
+									<div class="design-system-card-content buttons-links">
+
+
+										<div class="button-example button-links form-example-container">
+
+											<div class="example-wrapper white-back">
+												<div class="example secondary-button">
+
+													<div class="secondary-container">
+
+														<div class="button-wrapper">
+															<a href="" class="cta-button" aria-label="secondary button"><span>Previous</span></a>
+														</div>
+													</div>
+
+												</div>
+
+
+											</div>
+
+
+										</div>
+										{% include code-dropdown.html componentName="secondary-button" %}
+
+									</div>
+
+
+								</div>
+
+
+
+								<h3>Button group</h3>
+
+								<div class="design-system-card component">
+
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="hover-label" data-state="hover-state">
+											<input type="radio">
+											<span>Hover</span>
+										</label>
+
+										<label class="active-label" data-state="active-state">
+											<input type="radio">
+											<span>Active</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+
+									</div>
+
+
+
+									<div class="design-system-card-content buttons-links">
+
+
+										<div class="button-example button-links form-example-container">
+
+											<div class="example-wrapper white-back">
+												<div class="example">
+													<div class="button-group">
+														<a href="" class="tertiary-link" aria-label="Primary button"><span>Cancel</span></a>
+														<div class="primary-button">
+															<div class="primary-container">
+																<div class="button-wrapper">
+																	<a href="" class="cta-button" aria-label="Primary button"><span>Save</span></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+											</div>
+
+
+										</div>
+										{% include code-dropdown.html componentName="button-group" %}
+
+									</div>
+
+
+								</div>
+
+
+								<h3>Add form field button</h3>
+								<div class="design-system-card component">
+
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="hover-label" data-state="hover-state">
+											<input type="radio">
+											<span>Hover</span>
+										</label>
+
+										<label class="active-label" data-state="active-state">
+											<input type="radio">
+											<span>Active</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+
+									</div>
+
+
+
+									<div class="design-system-card-content buttons-links">
+
+
+										<div class="button-example button-links form-example-container">
+
+											<div class="example-wrapper white-back">
+
+												<div class="add-field-wrapper example">
+													<div><a href="" class="add-field" aria-label="Tertiary link"><span>Add another subsidiary</span></a></div>
+												</div>
+
+
+
+											</div>
+
+
+										</div>
+										{% include code-dropdown.html componentName="add-field" %}
+
+									</div>
+
+
+								</div>
+
+
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Form / button combos -->
+
+				<div class="text-box-button-combinations" name="text-box-button-combinations"><a href="" id="text-box-button-combinations"></a>
+					<div class="c-padding-top anchor-section-full-width  ">
+						<div class="body-copy">
+							<div>
+
+								<h2>Text box / button combinations</h2>
+
+								<hr />
+							</div>
+							<div class="body-copy-content">
+
+
+								<h3>Text box combined with primary button</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="active-label" data-state="active-state">
+											<input type="radio">
+											<span>Active</span>
+										</label>
+
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example form-example-container text-box-button-combo-example" data-state="default-state">
+													<div>
+
+														<!-- Component content -->
+
+
+														<label for="form-text-box-primary" class="form-text-box-primary-label">Text box label</label>
+														<div class="form-combo-box-input-container">
+
+															<input id="form-combo-box-primary" name="form-text-box-primary" type="text" value="" class="example-form-element">
+
+
+															<div class="combo-button-wrapper primary-button-wrapper">
+																<div><a href="" id="primary-combo" class="combo-button primary-combo" aria-label="Primary button"><span>Add</span></a></div>
+															</div>
+														</div>
+														<p class="error-message">Descriptive error message</p>
+
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+										<button class="element-design component closed">
+											<div class="content-wrapper">
+												<p>HTML/CSS Styles</p>
+											</div>
+											<div role="none" class="float-button">
+												<div tabindex="-1" class="float-button-content">
+													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+														</svg></div><span class="sr-only">Button toggle current accordion</span>
+												</div>
+											</div>
+										</button>
+
+										<div class="element-code">
+											<h5>Label</h5>
+
+											<code>
+												<pre>
 label {
     color: #333333;
     font-family: OpenSans;
@@ -119,11 +835,10 @@ label {
 }
 
 </pre>
-</code>
-
-<h5>Input</h5>
-<code>
-<pre>
+											</code>
+											<h5>Text field</h5>
+											<code>
+												<pre>
 input {
     height: 52px;
     padding: 10px;
@@ -142,1379 +857,11 @@ input.disabled {
 }
 
 </pre>
-</code>
-
-<h5>Error message</h5>
-<code>
-<pre>
-p.error-message {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-</code>
-
-</div>
-
-                    </div>
-
-                </div>
-
-                
-                <h3>Text area</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example textarea-example form-example-container" data-state="default-state">
-
-                                <!-- Component content -->
-
-                                <label for="form-text-box" class="form-text-box-label">Text area label</label>
-
-                                <textarea id="form-text-area" name="form-text-area" type="text" value="" maxlength="" placeholder="" class="example-form-element"></textarea>
-                                <p class="textarea-char-count under">0 of 100 characters used</p>
-                                <p class="error-message textarea-error-message">Descriptive error message</p>
-
-                            </div>
-
-
-                        </div>
-                        </div>
-
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
-
-                        </div>
-                            
-<div class="element-code">
-<h5>Label</h5>
-<code>
-<pre>
-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-
-</pre>
-</code>
-
-<h5>Textarea</h5>
-<code>
-<pre>
-textarea {
-    padding: 10px;
-    border: solid 1px #495C74;
-}
-textarea:focus {
-    outline: none;
-    border: solid 3px #254F90;
-}
-textarea.error {
-    border: solid 3px #D2201E;
-}
-textarea.disabled {
-    border: solid 1px #E2E2E2;
-    background-color: #F5F5F5;
-}
-
-</pre>
-</code>
-
-<h5>Character count</h5>
-<code>
-<pre>
-p.character-count {
-    color: #666666; 
-    font-family: OpenSans;
-    font-size: 14px;
-    text-align: right;
-}
-    
-</pre>
-</code>
-
-<h5>Error message</h5>
-<code>
-<pre>
-p.error-message {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-</code>
-
-</div>
-
-                    </div>
-
-                </div>
-
-                                
-                <h3>Text box with units</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example form-example-container" data-state="default-state">
-
-                                <!-- Component content -->
-
-                                <label for="form-text-box-units" class="form-text-box-units-label">Text box label</label>
-
-                                <div class="text-box-with-units"><span>$AUD</span><input id="form-text-box-units" name="form-text-area" type="text" value="" maxlength="255" placeholder="" class="example-form-element"><span>.00</span>
-                                </div>
-                                
-                                <p class="error-message">Descriptive error message</p>
-
-                            </div>
-
-
-                        </div>
-                        </div>
-
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
-
-                        </div>
-                            
-<div class="element-code">
-<h5>Label</h5>
-<code>
-<pre>
-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-
-</pre>
-</code>
-
-<h5>Input</h5>
-<code>
-<pre>
-input {
-    height: 52px;
-    padding: 10px;
-    border: solid 1px #495C74;
-}
-input:focus {
-    outline: none;
-    border: solid 3px #254F90;
-}
-input.error {
-    border: solid 3px #D2201E;
-}
-input.disabled {
-    border: solid 1px #E2E2E2;
-    background-color: #F5F5F5;
-}
-
-</pre>
-</code>
-
-<h5>Units</h5>
-<code>
-<pre>
-span.units {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-    border: solid 1px #495C74;
-    background-color: #F5F5F5;
-}
-
-</pre>
-</code>
-
-<h5>Error message</h5>
-<code>
-<pre>
-p.error-message {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-</code>
-
-</div>
-
-                    </div>
-
-                </div>
-
-           
-                
-            </div>
-           
-
-        </div>
-    </div>
-
-</div>
-                   
-                        
-<!-- Select option fields -->                      
-<div class="anchor-section" name="select-option-fields"><a href="" id="select-option-fields" aria-label="select-option-fields"></a>
-<div class="c-padding-top anchor-section-full-width  ">
-        <div class="body-copy">
-                <div>
-                    
-                        <h2>Select option fields</h2>
-                  
-                    <hr />
-                </div>
-                <div class="body-copy-content">
-
-                    
-                    
-                <h3>Select box</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example form-example-container" data-state="default-state">
-
-                                <!-- Component content -->
-
-                                <label for="form-select-box" class="form-select-box-label">Select box label</label>
-
-                                <select id="form-select-box" name="form-select-box" type="text" value=""  placeholder="" class="example-form-element">
-                                    <option value="">Please select</option>
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 3">Option 3</option>
-                                    <option value="option 4">Option 4</option>
-                                </select>
-                                
-                                <p class="error-message">Descriptive error message</p>
-
-                            </div>
-
-
-                        </div>
-                        </div>
-
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
-
-                        </div>
-                            
-<div class="element-code">
-<h5>Label</h5>
-<code>
-<pre>
-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-
-</pre>
-</code>
-
-<h5>Select input</h5>
-<code>
-<pre>
-select {
-    height: 52px;
-    padding: 10px;
-    border: solid 1px #495C74;
-}
-select:focus {
-    outline: none;
-    border: solid 3px #254F90;
-}
-select.error {
-    border: solid 3px #D2201E;
-}
-select.disabled {
-    border: solid 1px #E2E2E2;
-    background-color: #F5F5F5;
-}
-select.icon {
-    color: #4569A0;
-    height: 10px;
-    width: 16px;
-}
-
-</pre>
-    </code>
-<h5>Error message</h5>
-<code>
-<pre>
-p.error-message {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-</code>
-
-</div>
-
-                    </div>
-
-                </div>
-
-                <h3>Radio buttons</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example radio-example form-example-container" >
-
-                                <!-- Component content -->
-
-                                <label for="form-radio" class="form-radio-label">Radio group label</label>
-                                
-                                <div class="radio-item">
-                                <input id="form-radio-1" name="form-radio-1" type="radio"  class="example-form-element"><label for="form-radio-1">Yes, I want to do this thing.</label>
-                                </div>
-                                
-                                
-                                <div class="radio-item">
-                                <input id="form-radio-2" name="form-radio-2" type="radio"  class="example-form-element"><label for="form-radio-2">No, I don't think I'll do that now.</label>
-                                </div>
-                                
-                             
-                                <div class="radio-item">
-                                <input id="form-radio-3" name="form-radio-3" type="radio"  class="example-form-element"><label for="form-radio-3">Maybe I will do this at a later time.</label>
-                                </div>
-                                
-                                <p class="error-message">Descriptive error message</p>
-                                
-                                
-
-                            </div>
-
-
-                        </div>
-                        </div>
-
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
-
-                        </div>
-                            
-<div class="element-code">
-<h5>Label</h5>
-<code>
-<pre>
-.radio-group-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-.input-group-wrapper {
-    height: 52px;
-    padding: 10px;
-    border: solid 1px #495C74;
-}
-.input-group-wrapper:focus {
-    outline: none;
-    border: solid 3px #254F90;
-}
-.input-group-wrapper.error {
-    border: solid 3px #D2201E;
-}
-.input-group-wrapper.disabled {
-    border: solid 1px #E2E2E2;
-    background-color: #F5F5F5;
-}
-.radio-button {
-    border: solid 2px #AAB2C3;
-    height: 24px;
-    width: 24px;
-}
-.radio-button-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-.radio-button-label:focus {
-    color: #254F90;
-    font-family: OpenSans-Semibold;
-}
-.radio-button-label.error {
-    color: #333333;
-    font-family: OpenSans;
-}
-.radio-button-label.disabled {
-    color: #8E8E8E;
-    font-family: OpenSans;
-}
-p.error-message {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-</code>
-
-</div>
-
-                    </div>
-
-                </div>
-
-                  
-                <h3>Multiple select list</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example multiple-select-example form-example-container" data-state="default-state">
-
-                                <!-- Component content -->
-
-                                <label for="form-select-list" class="form-select-box-label">Multiple select list label</label>
-
-                               
-                                <div class="checkbox-item">
-                                <input id="form-multiple-1" name="form-multiple-1" type="checkbox" class="example-form-element"><label for="form-multiple-1" class="checkbox-label">Multiple choice option 1</label>
-                                </div>
-                                
-                                
-                                <div class="checkbox-item">
-                                <input id="form-multiple-2" name="form-multiple-2" type="checkbox"  class="example-form-element"><label for="form-multiple-2" class="checkbox-label">Multiple choice option 2</label>
-                                </div>
-                                
-                             
-                                <div class="checkbox-item">
-                                <input id="form-multiple-3" name="form-multiple-3" type="checkbox"  class="example-form-element"><label for="form-multiple-3" class="checkbox-label">Multiple choice option 3</label>
-                                </div>
-                                    
-                                <div class="checkbox-item">
-                                <input id="form-multiple-4" name="form-multiple-4" type="checkbox"  class="example-form-element"><label for="form-multiple-4" class="checkbox-label">Multiple choice option 4</label>
-                                </div>
-                                
-                                <p class="error-message">Descriptive error message</p>
-
-                            </div>
-
-
-                        </div>
-                        </div>
-
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
-
-                        </div>
-                            
-<div class="element-code">
-<h5>Label</h5>
-<code>
-<pre>
-.multiple-select-group-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-.checkbox {
-    height: 28px;
-    width: 28px;
-    border: solid 1px #495C74;
-}
-.checkbox:focus {
-    outline: none;
-    border: solid 3px #254F90;
-}
-.checkbox.error {
-    border: solid 3px #D2201E;
-}
-.checkbox.disabled {
-    border: solid 1px #E2E2E2;
-    background-color: #F5F5F5;
-}
-.checkbox-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-.checkbox-label:focus {
-    color: #254F90;
-    font-family: OpenSans-Semibold;
-}
-.checkbox-label.error {
-    color: #333333;
-    font-family: OpenSans;
-}
-.checkbox-label.disabled {
-    color: #8E8E8E;
-    font-family: OpenSans;
-}
-p.error-message {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-</code>
-
-</div>
-
-                    </div>
-
-                </div>
-
-                    
-
-                </div>
-
-
-            </div>
-</div>
-
-    </div>
-
-                            
-<!-- Form buttons -->                               
-<div class="form-buttons" name="form-buttons"><a href="" id="form-buttons"></a>
-<div class="c-padding-top anchor-section-full-width  ">
-        <div class="body-copy">
-            <div>
-
-                    <h2>Form buttons</h2>
-
-                <hr />
-            </div>
-            <div class="body-copy-content">
-
-
-        <h3>Primary action button</h3>
-        <div class="design-system-card component">
-           <div class="state-selector">
-                        <p class="state-selector-intro">View state: </p>
-                        <label class="default-label" data-state="default-state">
-                            <input type="radio" checked="checked">
-                            <span>Default</span>
-                        </label>
-
-                        <label class="hover-label" data-state="hover-state">
-                            <input type="radio" >
-                            <span>Hover</span>
-                        </label>
-
-                        <label class="active-label" data-state="active-state">
-                            <input type="radio" >
-                            <span>Active</span>
-                        </label>
-
-
-                        <label class="disabled-label" data-state="disabled-state">
-                            <input type="radio" >
-                            <span>Disabled</span>
-                        </label>
-                    </div>
-            <div class="design-system-card-content">
-
-                <div class="form-elements">
-
-                <div class="example-wrapper white-back">
-
-                    <div class="example button-example form-example-container" data-state="default-state">
-
-                        <!-- Component content -->
-
-                                    <div class="button-wrapper primary-button-wrapper">
-                                        <div><a href="" class="cta-button" aria-label="Primary button"><span>Submit</span></a></div>
-                                    </div>
-
-                    </div>
-                </div>
-                </div>
-
-                <div class="element-design component closed">
-                    <div class="content-wrapper">
-                        <p>CSS styles</p>
-                    </div>
-                    <button role="none" tabindex="-1" class="float-button">
-                        <div tabindex="-1" class="float-button-content">
-                            <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                    <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                </svg></div><span class="sr-only">Button toggle current accordion</span>
-                        </div>
-                    </button>
-
-                </div>
-
-<div class="element-code">
-<h5>Button container</h5>
-<code>
-<pre>
-.primary-button {
-border: 2px solid #254F90;
-border-radius: 6px;
-padding: 8px 32px;
-text-align: center;
-background: #4569A0;
-box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-transition-property: transform, -webkit-transform;
-transition-duration: 0.4s, 0.4s;
-transition-timing-function: ease, ease;
-transition-delay: 0s, 0s; 
-}
-.primary-button:hover {
-border: 2px solid #18335C;
-background: #254F90;
-box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-transform: translateY(-.1875rem);
-}
-.primary-button:active {
-border: 2px solid #18335C;
-background: #18335C;
-box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-transform: translateY(-.1875rem);
-}
-.primary-button.disabled {
-border: 2px solid #C7C7C7;
-text-align: center;
-background: #FFFFFF;
-box-shadow:none;
-}
-
-</pre>
-</code>
-<h5>Button text</h5>
-<code>
-<pre>
-a {
-color: #FFFFFF;
-font-family: OpenSans-Semibold;
-font-size: 16px
-line-height: 28px;
-}
-a.disabled {
-color: #8E8E8E;
-}
-</pre>
-</code>
-
-</div>
-
-            </div>
-
-        </div>
-
-
-
-        <h3>Secondary action button</h3>
-        <div class="design-system-card component">
-           <div class="state-selector">
-                        <p class="state-selector-intro">View state: </p>
-                        <label class="default-label" data-state="default-state">
-                            <input type="radio" checked="checked">
-                            <span>Default</span>
-                        </label>
-
-                        <label class="hover-label" data-state="hover-state">
-                            <input type="radio" >
-                            <span>Hover</span>
-                        </label>
-
-                        <label class="active-label" data-state="active-state">
-                            <input type="radio" >
-                            <span>Active</span>
-                        </label>
-
-
-                        <label class="disabled-label" data-state="disabled-state">
-                            <input type="radio" >
-                            <span>Disabled</span>
-                        </label>
-                    </div>
-            <div class="design-system-card-content">
-
-                <div class="form-elements">
-
-                <div class="example-wrapper white-back">
-
-                    <div class="example button-example form-example-container" data-state="default-state">
-
-                        <!-- Component content -->
-
-                                    <div class="button-wrapper secondary-button-wrapper">
-                                        <div><a href="" class="cta-button secondary-button" aria-label="Secondary button"><span>Previous</span></a></div>
-                                    </div>
-
-                    </div>
-                </div>
-                </div>
-
-                <div class="element-design component closed">
-                    <div class="content-wrapper">
-                        <p>CSS styles</p>
-                    </div>
-                    <button role="none" tabindex="-1" class="float-button">
-                        <div tabindex="-1" class="float-button-content">
-                            <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                    <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                </svg></div><span class="sr-only">Button toggle current accordion</span>
-                        </div>
-                    </button>
-
-                </div>
-
-<div class="element-code">
-
-<h5>Button container</h5>
-<code>
-<pre>
-.secondary-button {
-background: #FFFFFF;
-border: 2px solid #4569A0;
-box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-border-radius: 6px;
-padding: 8px 32px;
-text-align: center;
-letter-spacing: 0;
-transition-property: transform, -webkit-transform;
-transition-duration: 0.4s, 0.4s;
-transition-timing-function: ease, ease;
-transition-delay: 0s, 0s;  
-}
-.secondary-button:hover {
-background: #254F90;
-border: 2px solid #18335C;
-transform: translateY(-.1875rem);
-box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-}
-.secondary-button:active {
-background: #18335C;
-border: 2px solid #18335C;
-}
-.secondary-button.disabled {
-border: 2px solid #C7C7C7;
-text-align: center;
-background: #FFFFFF;
-box-shadow:none;
-}
-
-</pre>
-</code>
-<h5>Button text</h5>
-<code>
-<pre>
-a {
-color: #4569A0;
-font-family: OpenSans-Semibold;
-font-size: 16px
-line-height: 28px;
-}
-a:hover {
-color: #FFFFFF;
-}
-a:active {
-color: #FFFFFF;
-}
-a.disabled {
-color: #8E8E8E;
-}
-</pre>
-</code>
-
-
-</div>
-
-            </div>
-
-        </div>
-
-
-
-        <h3>Button group</h3>
-        <div class="design-system-card component">
-           <div class="state-selector">
-                        <p class="state-selector-intro">View state: </p>
-                        <label class="default-label" data-state="default-state">
-                            <input type="radio" checked="checked">
-                            <span>Default</span>
-                        </label>
-
-                        <label class="hover-label" data-state="hover-state">
-                            <input type="radio" >
-                            <span>Hover</span>
-                        </label>
-
-                        <label class="active-label" data-state="active-state">
-                            <input type="radio" >
-                            <span>Active</span>
-                        </label>
-
-
-                        <label class="disabled-label" data-state="disabled-state">
-                            <input type="radio" >
-                            <span>Disabled</span>
-                        </label>
-                    </div>
-            <div class="design-system-card-content">
-
-                <div class="form-elements">
-
-                <div class="example-wrapper white-back">
-
-                    <div class="example button-example form-example-container" data-state="default-state">
-
-                        <!-- Component content -->
-
-                        <div class="button-wrapper tertiary-button-wrapper">
-                                <div><a href="" class="tertiary-link" aria-label="Primary button"><span>Cancel</span></a></div>
-                        </div>  
-
-                        <div class="button-wrapper primary-button-wrapper">
-                                <div><a href="" class="cta-button" aria-label="Primary button"><span>Save</span></a></div>
-                        </div>
-
-                    </div>
-                </div>
-                </div>
-
-                <div class="element-design component closed">
-                    <div class="content-wrapper">
-                        <p>CSS styles</p>
-                    </div>
-                    <button role="none" tabindex="-1" class="float-button">
-                        <div tabindex="-1" class="float-button-content">
-                            <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                    <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                </svg></div><span class="sr-only">Button toggle current accordion</span>
-                        </div>
-                    </button>
-
-                </div>
-
-<div class="element-code">
-
-<h5>Primary button container</h5>
-<code>
-<pre>
-.primary-button {
-border: 2px solid #254F90;
-border-radius: 6px;
-padding: 8px 32px;
-text-align: center;
-background: #4569A0;
-box-shadow:rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
-transition-property: transform, -webkit-transform;
-transition-duration: 0.4s, 0.4s;
-transition-timing-function: ease, ease;
-transition-delay: 0s, 0s; 
-}
-.primary-button:hover {
-border: 2px solid #18335C;
-background: #254F90;
-box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-transform: translateY(-.1875rem);
-}
-.primary-button:active {
-border: 2px solid #18335C;
-background: #18335C;
-box-shadow:rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-transform: translateY(-.1875rem);
-}
-.primary-button.disabled {
-border: 2px solid #C7C7C7;
-text-align: center;
-background: #FFFFFF;
-box-shadow:none;
-}
-
-</pre>
-</code>
-<h5>Primary button text</h5>
-<code>
-<pre>
-a {
-color: #FFFFFF;
-font-family: OpenSans-Semibold;
-font-size: 16px
-line-height: 28px;
-}
-a.disabled {
-color: #8E8E8E;
-}
-
-</pre>
-</code>
-
-<h5>Tertiary link</h5>
-<code>
-<pre>
-a {
-color: #254F90;
-font-family: OpenSans-Semibold;
-text-decoration: underline;
-font-size: 16px
-line-height: 28px;
-}
-a:hover {
-color: #254F90;
-}
-a:active {
-color: #18335C;
-}
-a.disabled {
-color: #8E8E8E;
-}
-
-</pre>
-</code>                      
-
-</div>
-
-            </div>
-
-        </div>
-
-
-        <h3>Add form field button</h3>
-        <div class="design-system-card component">
-           <div class="state-selector">
-                        <p class="state-selector-intro">View state: </p>
-                        <label class="default-label" data-state="default-state">
-                            <input type="radio" checked="checked">
-                            <span>Default</span>
-                        </label>
-
-                        <label class="hover-label" data-state="hover-state">
-                            <input type="radio" >
-                            <span>Hover</span>
-                        </label>
-
-                        <label class="active-label" data-state="active-state">
-                            <input type="radio" >
-                            <span>Active</span>
-                        </label>
-
-
-                        <label class="disabled-label" data-state="disabled-state">
-                            <input type="radio" >
-                            <span>Disabled</span>
-                        </label>
-                    </div>
-            <div class="design-system-card-content">
-
-                <div class="form-elements">
-
-                <div class="example-wrapper white-back">
-
-                    <div class="example button-example form-example-container" data-state="default-state">
-
-                        <!-- Component content -->
-
-
-                        <div class="button-wrapper add-field-wrapper">
-                                <div><a href="" class="add-field" aria-label="Tertiary link"><span>Add another subsidiary</span></a></div>
-                        </div>
-
-                    </div>
-                </div>
-                </div>
-
-                <div class="element-design component closed">
-                    <div class="content-wrapper">
-                        <p>CSS styles</p>
-                    </div>
-                    <button role="none" tabindex="-1" class="float-button">
-                        <div tabindex="-1" class="float-button-content">
-                            <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                    <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                </svg></div><span class="sr-only">Button toggle current accordion</span>
-                        </div>
-                    </button>
-
-                </div>
-
-<div class="element-code">
-
-<h5>Button text</h5>
-<code>
-<pre>
-a {
-color: #333333;
-font-family: OpenSans;
-font-size: 16px
-line-height: 28px;
-}
-a:hover {
-color: #254F90;
-font-family: OpenSans-Semibold;
-}
-a:active {
-color: #18335C;
-font-family: OpenSans-Semibold;
-}
-a.disabled {
-color: #8E8E8E;
-font-family: OpenSans;
-}
-
-</pre>
-</code>
-<h5>Button icon</h5>
-<code>
-<pre>
-.icon {
-color: #4569A0;
-height: 32px;
-width: 32px;
-}
-.icon:hover {
-color: #254F90;
-}
-.icon:active {
-color: #18335C;
-}
-.icon.disabled {
-color: #8E8E8E;
-}
-</pre>
-</code>
-
-
-</div>
-
-            </div>
-
-        </div>
-
-
-
-            </div>
-
-
-        </div>
-    </div>   
-</div>
-
-
-<!-- Form / button combos -->                               
-<div class="text-box-button-combinations" name="text-box-button-combinations"><a href="" id="text-box-button-combinations"></a>
-<div class="c-padding-top anchor-section-full-width  ">
-    <div class="body-copy">
-                    <div>
-                        
-                            <h2>Text box / button combinations</h2>
-                   
-                        <hr />
-                    </div>
-                    <div class="body-copy-content">
-
-                                        
-                <h3>Text box combined with primary button</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-                       
-                                <label class="active-label" data-state="active-state">
-                                    <input type="radio" >
-                                    <span>Active</span>
-                                </label>
-                       
-                               <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example form-example-container text-box-button-combo-example" data-state="default-state">
-
-                                <!-- Component content -->
-
-                                
-                                <label for="form-text-box-primary" class="form-text-box-primary-label">Text box label</label>
-
-                                <input id="form-combo-box-primary" name="form-text-box-primary" type="text" value="" class="example-form-element">
-
-            
-                                <div class="combo-button-wrapper primary-button-wrapper">
-                                    <div><a href="" id="primary-combo" class="combo-button primary-combo" aria-label="Primary button"><span>Add</span></a></div>
-                                </div>
-                                
-                                 <p class="error-message">Descriptive error message</p>
-
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
-
-                        </div>
-                            
-<div class="element-code">
-<h5>Label</h5>
-    
-<code>
-<pre>
-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-
-</pre>    
-</code> 
-<h5>Text field</h5>
-<code>
-<pre>
-input {
-    height: 52px;
-    padding: 10px;
-    border: solid 1px #495C74;
-}
-input:focus {
-    outline: none;
-    border: solid 3px #254F90;
-}
-input.error {
-    border: solid 3px #D2201E;
-}
-input.disabled {
-    border: solid 1px #E2E2E2;
-    background-color: #F5F5F5;
-}
-
-</pre>
-</code>
-
-<h5>Primary button container</h5>
-<code>
-<pre>
+											</code>
+
+											<h5>Primary button container</h5>
+											<code>
+												<pre>
 .primary-button {
     border: solid 1px #495C74;
     border-radius: 6px;
@@ -1544,11 +891,11 @@ input.disabled {
 }
 
 </pre>
-</code>
-    
-<h5>Primary button text</h5>
-<code>
-<pre>
+											</code>
+
+											<h5>Primary button text</h5>
+											<code>
+												<pre>
 a {
     color: #FFFFFF;
     font-family: OpenSans-Semibold;
@@ -1560,22 +907,22 @@ a.disabled {
 }
 
 </pre>
-</code>
-    
-    <h5>Icon</h5>
-<code>
-<pre>
+											</code>
+
+											<h5>Icon</h5>
+											<code>
+												<pre>
 .icon {
     color: #FFFFFF;
     height: 14px;
     width: 14px;
 }
-</pre>    
-</code>    
-    
-<h5>Error message</h5>
-<code>
-<pre>
+</pre>
+											</code>
+
+											<h5>Error message</h5>
+											<code>
+												<pre>
 p.error-message {
     color: #D2201E;
     font-family: OpenSans;
@@ -1583,91 +930,93 @@ p.error-message {
     letter-spacing: 0.2px;
     line-height: 28px;
 }
-</pre>   
-</code>
+</pre>
+											</code>
 
-</div>
+										</div>
 
-                    </div>
+									</div>
 
-                </div>
-
-                                                
-                <h3>Text box combined with secondary action button</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-                       
-                                <label class="active-label" data-state="active-state">
-                                    <input type="radio" >
-                                    <span>Active</span>
-                                </label>
-                       
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
+								</div>
 
 
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example form-example-container text-box-button-combo-example" data-state="default-state">
+								<h3>Text box combined with secondary action button</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
 
-                                <!-- Component content -->
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
 
-                                <label for="form-text-box-secondary" class="form-text-box-secondary-label">Text box label</label>
+										<label class="active-label" data-state="active-state">
+											<input type="radio">
+											<span>Active</span>
+										</label>
 
-                                <input id="form-text-box-secondary" name="form-text-box-primary" type="text" value="" maxlength="255" placeholder="" class="example-form-element">    
-                                
-                                <div class="combo-button-wrapper secondary-button-wrapper">
-                                        <div><a href="" id="secondary-combo" class="combo-button secondary-combo" aria-label="Secondary button"><span>Find</span></a></div>
-                                    </div>
-                                
-                                 <p class="error-message">Descriptive error message</p>
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
 
 
-                            </div>
-                        </div>
-                        </div>
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
 
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
+										<div class="form-elements">
 
-                        </div>
-                            
-<div class="element-code">
+											<div class="example-wrapper white-back">
 
-<h5>Label</h5>
-    
-<code>
-<pre>
+												<div class="example form-example-container text-box-button-combo-example" data-state="default-state">
+
+													<div>
+
+														<!-- Component content -->
+
+														<label for="form-text-box-secondary" class="form-text-box-secondary-label">Text box label</label>
+														<div class="form-combo-box-input-container">
+															<input id="form-text-box-secondary" name="form-text-box-primary" type="text" value="" maxlength="255" placeholder="" class="example-form-element">
+
+															<div class="combo-button-wrapper secondary-button-wrapper">
+																<div><a href="" id="secondary-combo" class="combo-button secondary-combo" aria-label="Secondary button"><span>Find</span></a></div>
+															</div>
+														</div>
+
+														<p class="error-message">Descriptive error message</p>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+										<button class="element-design component closed">
+											<div class="content-wrapper">
+												<p>HTML/CSS Styles</p>
+											</div>
+											<div role="none" class="float-button">
+												<div tabindex="-1" class="float-button-content">
+													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+														</svg></div><span class="sr-only">Button toggle current accordion</span>
+												</div>
+											</div>
+										</button>
+
+										<div class="element-code">
+
+											<h5>Label</h5>
+
+											<code>
+												<pre>
 label {
     color: #333333;
     font-family: OpenSans;
@@ -1676,11 +1025,11 @@ label {
     line-height: 28px;
 }
 
-</pre>    
-</code> 
-<h5>Text field</h5>
-<code>
-<pre>
+</pre>
+											</code>
+											<h5>Text field</h5>
+											<code>
+												<pre>
 input {
     height: 52px;
     padding: 10px;
@@ -1699,11 +1048,11 @@ input.disabled {
 }
 
 </pre>
-</code>
+											</code>
 
-<h5>Secondary button container</h5>
-<code>
-<pre>
+											<h5>Secondary button container</h5>
+											<code>
+												<pre>
 .secondary-button {
     background: #FFFFFF;
     border: 2px solid #4569A0;
@@ -1730,11 +1079,11 @@ input.disabled {
 }
 
 </pre>
-</code>
-    
-<h5>Secondary button text</h5>
-<code>
-<pre>
+											</code>
+
+											<h5>Secondary button text</h5>
+											<code>
+												<pre>
 a {
     color: #4569A0;
     font-family: OpenSans-Semibold;
@@ -1749,22 +1098,22 @@ a.disabled {
 }
 
 </pre>
-</code>
-    
-    <h5>Icon</h5>
-<code>
-<pre>
+											</code>
+
+											<h5>Icon</h5>
+											<code>
+												<pre>
 .icon {
     color: #FFFFFF;
     height: 14px;
     width: 14px;
 }
-</pre>    
-</code>    
-    
-<h5>Error message</h5>
-<code>
-<pre>
+</pre>
+											</code>
+
+											<h5>Error message</h5>
+											<code>
+												<pre>
 p.error-message {
     color: #D2201E;
     font-family: OpenSans;
@@ -1772,107 +1121,108 @@ p.error-message {
     letter-spacing: 0.2px;
     line-height: 28px;
 }
-</pre>   
-</code>
+</pre>
+											</code>
 
-</div>
+										</div>
 
-                    </div>
+									</div>
 
-                </div>
-            
-
-                    </div>
+								</div>
 
 
-                </div>
-</div>
-
-</div>
+							</div>
 
 
-                    
-<!-- Date picker -->
-<div class="anchor-section" name="date-field"><a href="" id="date-field" aria-label="date-field"></a>
+						</div>
+					</div>
 
-        <div class="body-copy">
-            <div>
-                <div class="body-copy-headline col-12">
-                    <h2>Date field</h2>
-                </div>
-                <hr />
-            </div>
-            <div class="body-copy-content">
-                
-                
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example form-example-container" id="datepicker-container" data-state="default-state">
-
-                                <!-- Component content -->
-                                
-                                <div id="datepicker">
-                                <label for="date" class="form-text-box-label">Date field label</label>
-                 
-                                    <div class="input-group date">
-                                        <input type="text" class="form-control"><span class="input-group-addon close-button"><i class="glyphicon glyphicon-th"></i></span>
-                                    </div>
-  
-                                </div>
-                               
-                                <p class="error-message">Descriptive error message</p>
-
-                            </div>
+				</div>
 
 
-                        </div>
-                        </div>
 
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
+				<!-- Date picker -->
+				<div class="anchor-section" name="date-field"><a href="" id="date-field" aria-label="date-field"></a>
 
-                        </div>
-                            
-<div class="element-code">
+					<div class="body-copy">
+						<div>
+							<div class="body-copy-headline col-12">
+								<h2>Date field</h2>
+							</div>
+							<hr />
+						</div>
+						<div class="body-copy-content">
 
-<code>
-<pre>
+
+							<div class="design-system-card component">
+								<div class="state-selector">
+									<p class="state-selector-intro">View state: </p>
+									<label class="default-label" data-state="default-state">
+										<input type="radio" checked="checked">
+										<span>Default</span>
+									</label>
+
+									<label class="focus-label" data-state="focus-state">
+										<input type="radio">
+										<span>Focus</span>
+									</label>
+
+									<label class="error-label" data-state="error-state">
+										<input type="radio">
+										<span>Error</span>
+									</label>
+
+									<label class="disabled-label" data-state="disabled-state">
+										<input type="radio">
+										<span>Disabled</span>
+									</label>
+								</div>
+								<div class="design-system-card-content">
+
+									<div class="form-elements">
+
+										<div class="example-wrapper white-back">
+
+											<div class="example form-example-container text-box-button-combo-example" id="datepicker-container" data-state="default-state">
+												<div>
+
+													<!-- Component content -->
+
+													<div id="datepicker">
+														<label for="date" class="form-text-box-label">Date field label</label>
+														<div class="form-combo-box-input-container">
+															<div class="input-group date">
+																<input type="text" class="form-control date-field"><span class="input-group-addon close-button"><i class="glyphicon glyphicon-th"></i></span>
+															</div>
+														</div>
+
+													</div>
+
+													<p class="error-message">Descriptive error message</p>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+
+									<button class="element-design component closed">
+										<div class="content-wrapper">
+											<p>HTML/CSS Styles</p>
+										</div>
+										<div role="none" class="float-button">
+											<div tabindex="-1" class="float-button-content">
+												<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+														<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+													</svg></div><span class="sr-only">Button toggle current accordion</span>
+											</div>
+										</div>
+									</button>
+
+									<div class="element-code">
+
+										<code>
+											<pre>
 label {
     color: #333333;
     font-family: OpenSans;
@@ -1904,104 +1254,103 @@ p.error-message {
     line-height: 28px;
 }
 </pre>
-</code>
+										</code>
 
-</div>
+									</div>
 
-                    </div>
+								</div>
 
-                </div>
-
-       
-                
-            </div>
-           
-
-        </div>
-
-</div>
-                   
+							</div>
 
 
-<!-- Contextual help -->
-<div class="anchor-section" name="contextual-help"><a href="" id="contextual-help" aria-label="contextual-help"></a>
-<div class="c-padding-top anchor-section-full-width  ">
-        <div class="body-copy">
-            <div>
-                <div class="body-copy-headline col-12">
-                    <h2>Contextual help</h2>
-                </div>
-                <hr />
-            </div>
-            <div class="body-copy-content">
-                
-                <h3>Inline help - simple</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
 
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example form-example-container" data-state="default-state">
-
-                                <!-- Component content -->
-
-                                <label for="contextual-simple" class="form-text-box-label">Text box label</label>
-                                <div class="help-wrapper">
-                                <p class="contextual-help">Help message providing information on how to fill out the field.</p>
-                                </div>
-
-                                <input id="contextual-simple" name="contextual-simple" type="text" value="" placeholder="" class="example-form-element">
-                                
-                                <p class="error-message">Descriptive error message</p>
-
-                            </div>
+						</div>
 
 
-                        </div>
-                        </div>
+					</div>
 
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
+				</div>
 
-                        </div>
-                            
-<div class="element-code">
-<h4>Help text</h4>
-<code>
-<pre>
+
+
+				<!-- Contextual help -->
+				<div class="anchor-section" name="contextual-help"><a href="" id="contextual-help" aria-label="contextual-help"></a>
+					<div class="c-padding-top anchor-section-full-width  ">
+						<div class="body-copy">
+							<div>
+								<div class="body-copy-headline col-12">
+									<h2>Contextual help</h2>
+								</div>
+								<hr />
+							</div>
+							<div class="body-copy-content">
+
+								<h3>Inline help - simple</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
+
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
+
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
+
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example full-width form-example-container" data-state="default-state">
+
+													<!-- Component content -->
+
+													<label for="contextual-simple" class="form-text-box-label">Text box label</label>
+													<div class="help-wrapper">
+														<p class="contextual-help">Help message providing information on how to fill out the field.</p>
+													</div>
+
+													<input id="contextual-simple" name="contextual-simple" type="text" value="" placeholder="" class="example-form-element">
+
+													<p class="error-message">Descriptive error message</p>
+
+												</div>
+
+
+											</div>
+										</div>
+
+										<button class="element-design component closed">
+											<div class="content-wrapper">
+												<p>HTML/CSS Styles</p>
+											</div>
+											<div role="none" class="float-button">
+												<div tabindex="-1" class="float-button-content">
+													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+														</svg></div><span class="sr-only">Button toggle current accordion</span>
+												</div>
+											</div>
+										</button>
+
+										<div class="element-code">
+											<h4>Help text</h4>
+											<code>
+												<pre>
 p.help-text {
     color: #666666;
     font-family: OpenSans;
@@ -2010,86 +1359,85 @@ p.help-text {
     padding-bottom: 16px;
 }
 </pre>
-</code>
+											</code>
 
-</div>
+										</div>
 
-                    </div>
+									</div>
 
-                </div>
-
-                
-                <h3>Inline help - complex</h3>
-                <div class="design-system-card component">
-                   <div class="state-selector">
-                                <p class="state-selector-intro">View state: </p>
-                                <label class="default-label" data-state="default-state">
-                                    <input type="radio" checked="checked">
-                                    <span>Default</span>
-                                </label>
-                                
-                                <label class="focus-label" data-state="focus-state">
-                                    <input type="radio" >
-                                    <span>Focus</span>
-                                </label>
-
-                                <label class="error-label" data-state="error-state">
-                                    <input type="radio" >
-                                    <span>Error</span>
-                                </label>
-
-                                <label class="disabled-label" data-state="disabled-state">
-                                    <input type="radio" >
-                                    <span>Disabled</span>
-                                </label>
-                            </div>
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example textarea-example form-example-container" data-state="default-state">
-
-                                <!-- Component content -->
-
-                                 <label for="contextual-complex" class="form-text-box-label">Text box label</label>
-                                <div class="help-wrapper complex">
-                                <p class="contextual-help" id="contextual-example-1">How to work out your input credits</p>
-                                <div class="complex-answer" id="contextual-answer-1">
-                                    <p>First work out the lesser of the following two amounts, then divide that amount by three.</p>
-                                    <p>Expenditure in acquiring or producing credit inputs and energy inputs for which you have claimed the incentive, to the extent that it is reasonably attributable to the production of the relevant output (expenditure).</p>
-                                    </div>
-                                </div>
-
-                                <input id="contextual-complex" name="contextual-complex" type="text" value="" placeholder="" class="example-form-element">
-                                
-                                <p class="error-message">Descriptive error message</p>
-                            </div>
+								</div>
 
 
-                        </div>
-                        </div>
+								<h3>Inline help - complex</h3>
+								<div class="design-system-card component">
+									<div class="state-selector">
+										<p class="state-selector-intro">View state: </p>
+										<label class="default-label" data-state="default-state">
+											<input type="radio" checked="checked">
+											<span>Default</span>
+										</label>
 
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
+										<label class="focus-label" data-state="focus-state">
+											<input type="radio">
+											<span>Focus</span>
+										</label>
 
-                        </div>
-                            
-<div class="element-code">
+										<label class="error-label" data-state="error-state">
+											<input type="radio">
+											<span>Error</span>
+										</label>
 
-<h4>Help text link</h4>
-<code>
-<pre>
+										<label class="disabled-label" data-state="disabled-state">
+											<input type="radio">
+											<span>Disabled</span>
+										</label>
+									</div>
+									<div class="design-system-card-content">
+
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example full-width textarea-example form-example-container" data-state="default-state">
+
+													<!-- Component content -->
+
+													<label for="contextual-complex" class="form-text-box-label">Text box label</label>
+													<div class="help-wrapper complex">
+														<p class="contextual-help" id="contextual-example-1">How to work out your input credits</p>
+														<div class="complex-answer" id="contextual-answer-1">
+															<p>First work out the lesser of the following two amounts, then divide that amount by three.</p>
+															<p>Expenditure in acquiring or producing credit inputs and energy inputs for which you have claimed the incentive, to the extent that it is reasonably attributable to the production of the relevant output (expenditure).</p>
+														</div>
+													</div>
+
+													<input id="contextual-complex" name="contextual-complex" type="text" value="" placeholder="" class="example-form-element">
+
+													<p class="error-message">Descriptive error message</p>
+												</div>
+
+
+											</div>
+										</div>
+
+										<button class="element-design component closed">
+											<div class="content-wrapper">
+												<p>HTML/CSS Styles</p>
+											</div>
+											<div role="none" class="float-button">
+												<div tabindex="-1" class="float-button-content">
+													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+														</svg></div><span class="sr-only">Button toggle current accordion</span>
+												</div>
+											</div>
+										</button>
+
+										<div class="element-code">
+
+											<h4>Help text link</h4>
+											<code>
+												<pre>
 .help-link {
     color: #4569A0;
     font-family: OpenSans;
@@ -2098,22 +1446,22 @@ p.help-text {
     text-decoration: underline;
 }
 </pre>
-</code>
+											</code>
 
-<h4>Arrow icon</h4>
-<code>
-<pre>
+											<h4>Arrow icon</h4>
+											<code>
+												<pre>
 .icon {
     color: #4569A0;
     height: 12px;
     width: 8px;
 }
 </pre>
-</code>
-    
-<h4>Help details</h4>
-<code>
-<pre>
+											</code>
+
+											<h4>Help details</h4>
+											<code>
+												<pre>
 .help-details {
     color: #333333;
     font-family: OpenSans;
@@ -2123,74 +1471,86 @@ p.help-text {
     padding-left: 8px;
 }
 </pre>
-</code>
+											</code>
 
 
-</div>
+										</div>
 
-                    </div>
+									</div>
 
-                </div>
-
-                                
-                <h3>Error summary</h3>
-                <div class="design-system-card component">
-                   
-                    <div class="design-system-card-content">
-            
-                        <div class="form-elements">
-        
-                        <div class="example-wrapper white-back">
-                        
-                            <div class="example form-example-container">
-
-                                <!-- Component content -->
-                                
-                                    <div class="notification notification-warning">
-                                        <div class="example notification-info-container">
-
-                                            <div class="notification-wrapper">
-                                            <div class="notification-icon"></div>
-                                            <div class="notification-content">
-                                                <p>The following issue(s) must be corrected before you can continue.</p>
-                                                <ul>
-                                                    <li>Critical error that needs to be fixed</li>
-                                                    <li>Another thing that needs to be fixed before you can continue</li>
-                                                </ul>
-                                                </div>
-                                            
-                                            </div>
-
-                                        </div>
-
-                        </div>
-                            </div>
-                            <br/>
-                            <p class="note"><strong>Note:</strong> An error summary can be used when a form that contains errors is submitted. The error summary should never replace error states and messaging on each form field.</p>
-                        </div>
-                                                    
-                        </div>
+								</div>
 
 
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>CSS styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
+								<h3>Error summary</h3>
+								<div class="design-system-card component">
 
-                        </div>
-                            
-<div class="element-code">
+									<div class="design-system-card-content">
 
-<h5>Paragraph</h5>
-<code>
-<pre>
+										<div class="form-elements">
+
+											<div class="example-wrapper white-back">
+
+												<div class="example form-example-container">
+
+													<!-- Component content -->
+
+													<div class="notification notification-warning">
+														<div class="example notification-info-container">
+
+															<div class="notification-wrapper">
+																<div class="notification-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+																		<g id="Group_7871" data-name="Group 7871" transform="translate(-3210 -867)">
+																			<circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3210 867)" fill="#e75755"></circle>
+																			<g id="Group_7573" data-name="Group 7573" transform="translate(3224.631 880.679)">
+																				<path id="Path" d="M12.932,0a1.453,1.453,0,0,0-1.19.706L.192,20.181a1.375,1.375,0,0,0,0,1.408,1.455,1.455,0,0,0,1.254.7h23.1a1.455,1.455,0,0,0,1.254-.7,1.375,1.375,0,0,0,0-1.408L14.248.707A1.456,1.456,0,0,0,12.932,0Z" fill="#fff"></path>
+																				<g id="Group_117" data-name="Group 117" transform="translate(11.375 6.609)">
+																					<path id="Shape" d="M1.995,1.256A1.149,1.149,0,0,1,1,2.512,1.149,1.149,0,0,1,0,1.256,1.149,1.149,0,0,1,1,0a1.15,1.15,0,0,1,1,1.256Z" transform="translate(0.51 9.38)" fill="#d2201e"></path>
+																					<path id="Path-2" data-name="Path" d="M3.009,1.255A1.308,1.308,0,0,0,2.68.527,1.568,1.568,0,0,0,.36.5a1.315,1.315,0,0,0-.355.756,1.21,1.21,0,0,0,0,.226L.627,7.633A.72.72,0,0,0,.881,8.1a.957.957,0,0,0,.626.224.967.967,0,0,0,.575-.184.732.732,0,0,0,.3-.512l.622-6.151A1.2,1.2,0,0,0,3.009,1.255Z" transform="translate(0 0)" fill="#d2201e"></path>
+																				</g>
+																			</g>
+																		</g>
+																	</svg>
+																</div>
+																<div class="notification-content">
+																	<p>The following issue(s) must be corrected before you can continue.</p>
+																	<ul>
+																		<li>Critical error that needs to be fixed</li>
+																		<li>Another thing that needs to be fixed before you can continue</li>
+																	</ul>
+																</div>
+
+															</div>
+
+														</div>
+
+													</div>
+												</div>
+												<br />
+												<p class="note"><strong>Note:</strong> An error summary can be used when a form that contains errors is submitted. The error summary should never replace error states and messaging on each form field.</p>
+											</div>
+
+										</div>
+
+
+										<button class="element-design component closed">
+											<div class="content-wrapper">
+												<p>HTML/CSS Styles</p>
+											</div>
+											<div role="none" class="float-button">
+												<div tabindex="-1" class="float-button-content">
+													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+														</svg></div><span class="sr-only">Button toggle current accordion</span>
+												</div>
+											</div>
+										</button>
+
+										<div class="element-code">
+
+											<h5>Paragraph</h5>
+											<code>
+												<pre>
 p {
     color: #D2201E;
     font-family: OpenSans;
@@ -2199,11 +1559,11 @@ p {
 }
 
 </pre>
-</code> 
+											</code>
 
-<h5>Warning icon</h5>
-<code>
-<pre>
+											<h5>Warning icon</h5>
+											<code>
+												<pre>
 .icon-warning {
     color: #254F90;
     background: #FFFFFF;
@@ -2212,11 +1572,11 @@ p {
 }
 
 </pre>
-</code>
-    
-<h5>Container</h5>
-<code>
-<pre>
+											</code>
+
+											<h5>Container</h5>
+											<code>
+												<pre>
 div {
     background-color: #FCE9E9;
     border-top: 4px solid #F5B5B5;
@@ -2224,70 +1584,71 @@ div {
     border-radius: 0;
 }
 </pre>
-</code>
+											</code>
 
+										</div>
+
+									</div>
+
+								</div>
+
+
+
+							</div>
+
+
+						</div>
+					</div>
+
+
+
+
+					<!-- EXAMPLES & ASSETS -->
+					<div class="anchor-section" name="examples-and-assets"><a href="" id="examples-and-assets" aria-label="Layouts"></a>
+						<div class="c-padding-top anchor-section-full-width  ">
+							<div class="body-copy">
+								<div>
+
+									<h2>Examples and assets</h2>
+
+									<hr />
+								</div>
+								<div class="body-copy-content">
+
+
+									<div class="adobe-link vertical-list ">
+
+										<div>
+											<a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/695ae6c5-79ab-432b-9c46-9cfea329d642/Form-elements">
+												<div class="action-card-button">
+													<div class="action-card-content">
+														<p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
+														<div class="action-card-info">
+															<div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
+																	<path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
+																</svg></div>
+															<div class="site-name"><span>ADOBE XD</span></div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
 </div>
-
-                    </div>
-
-                </div>
-
-           
-                
-            </div>
-           
-
-        </div>
-</div>
-                   
-  
-                    
-                    
-<!-- EXAMPLES & ASSETS -->                               
-<div class="anchor-section" name="examples-and-assets"><a href="" id="examples-and-assets"  aria-label="Layouts"></a>
-<div class="c-padding-top anchor-section-full-width  ">
-        <div class="body-copy">
-                    <div>
-                        
-                            <h2>Examples and assets</h2>
-                   
-                        <hr />
-                    </div>
-                    <div class="body-copy-content">
- 
-                         
-            <div class="adobe-link vertical-list ">
-
-                <div>
-                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/695ae6c5-79ab-432b-9c46-9cfea329d642/Form-elements">
-                            <div class="action-card-button">
-                                <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View design and assets in Adobe XD.</p>
-                                    <div class="action-card-info">
-                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
-                                        <div class="site-name"><span>ADOBE XD</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                </div>
-            </div>
-                        
-      
-                    </div>
-
-
-                </div>
-    </div>   
-</div>
-    
-    
-    </div>
-
-     
-            </div>
-    </div>
-
-</div>
-</div>
-

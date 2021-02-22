@@ -43,9 +43,25 @@
 			overflow: auto;
 			position: relative;
 			min-height: 96px;
+			width: 100%;
 
-			&:hover {
+			&:hover,
+			&:focus {
 				cursor: pointer;
+				outline: none;
+
+				.content-wrapper {
+					p {
+						text-decoration: underline;
+					}
+				}
+
+				.float-button {
+					.float-button-content {
+						background-color: #ffd964;
+						box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+					}
+				}
 			}
 
 			.float-button {
@@ -134,16 +150,61 @@
 			}
 
 			.example {
-				width: fit-content;
+				display: table;
 				margin: 0 auto;
+
+				&.full-width {
+					width: 100%;
+				}
 
 				&.align-example-left {
 					margin: 0;
 				}
 
-				&.textarea-example,
-				&.text-field-example {
-					min-width: 500px;
+				.tertiary-link {
+					@include font-format($font-family, $font-semibold, normal);
+					color: $blue-primary;
+					text-decoration: underline;
+					box-shadow: none;
+					margin-right: 40px;
+				}
+
+				.add-field {
+					@include font-format($font-family, $font-regular, normal);
+					color: $black-light;
+					text-decoration: none;
+					box-shadow: none;
+					padding: 4px 0 4px 40px;
+					position: relative;
+					display: inline-block;
+
+					&:hover {
+						@include font-format($font-family, $font-semibold, normal);
+						color: $blue-primary;
+
+						&:before {
+							background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
+						}
+					}
+
+					&:active {
+						color: $black;
+
+						&:before {
+							background: url(../assets/Icon-add-circle-blue-active.svg) no-repeat;
+						}
+					}
+
+					&:before {
+						background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat;
+						content: " ";
+						height: 32px;
+						width: 32px;
+						display: block;
+						position: absolute;
+						top: calc(50% - 16px);
+						left: 0;
+					}
 				}
 			}
 		}
@@ -476,6 +537,10 @@
 	}
 
 	.mobile-example {
+		.align-example-left {
+			margin: auto !important;
+		}
+
 		h1 {
 			@include font-format($font-family, $font-semibold, normal);
 			font-size: 32px;
@@ -1143,16 +1208,12 @@
 						transform: translateY(0px);
 					}
 
-					&.add-field-wrapper {
-						transform: translateY(0px);
+					.add-field {
+						@include font-format($font-family, $font-semibold, normal);
+						color: $blue-primary;
 
-						.add-field {
-							@include font-format($font-family, $font-semibold, normal);
-							color: $blue-primary;
-
-							&:before {
-								background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
-							}
+						&:before {
+							background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
 						}
 					}
 				}
@@ -1169,6 +1230,12 @@
 						border: 2px solid $blue-active;
 					}
 
+					.tertiary-link {
+						span {
+							color: black;
+						}
+					}
+
 					&.tertiary-button-wrapper {
 						transform: translateY(0px);
 
@@ -1177,16 +1244,13 @@
 						}
 					}
 
-					&.add-field-wrapper {
-						transform: translateY(0px);
 
-						.add-field {
-							@include font-format($font-family, $font-semibold, normal);
-							color: $blue-active;
+					.add-field {
+						@include font-format($font-family, $font-semibold, normal);
+						color: $black;
 
-							&:before {
-								background: url(../assets/Icon-add-circle-blue-active.svg) no-repeat;
-							}
+						&:before {
+							background: url(../assets/Icon-add-circle-grey.svg) no-repeat;
 						}
 					}
 				}
@@ -1278,9 +1342,10 @@
 				box-shadow: none;
 				width: auto;
 				display: block;
-				left: 40px !important;
-				top: 134px !important;
+				left: 40px;
+				top: 134px;
 				z-index: 1999;
+				margin-top: 0;
 
 				&:before {
 					display: none;
@@ -1391,8 +1456,6 @@
 
 				@media (max-width: 650px) {
 					width: 250px !important;
-					top: 116px !important;
-					left: 24px !important;
 					padding: 8px;
 
 					.table-condensed {
@@ -1409,15 +1472,28 @@
 				position: relative;
 				-webkit-transform: none;
 				transform: none;
-				min-width: 457px;
+				align-items: center;
+				justify-content: center;
+				display: flex;
+
+				.form-combo-box-input-container {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-wrap: nowrap;
+				}
 
 				input {
-					max-width: 350px;
+					width: 300px;
 					display: inline-block;
 					vertical-align: middle;
 
 					@media (max-width: 850px) {
 						max-width: 250px;
+
+						&.date-field {
+							max-width: none;
+						}
 					}
 
 					@media (max-width: 700px) {
@@ -1426,6 +1502,10 @@
 
 					@media (max-width: 400px) {
 						max-width: 150px;
+
+						&.date-field {
+							max-width: 250px;
+						}
 					}
 				}
 
@@ -1689,6 +1769,14 @@
 			}
 
 			&[data-state="disabled-state"] {
+
+				.add-field {
+					color: $grey-dark;
+
+					&:before {
+						background: url(../assets/Icon-add-circle-grey.svg) no-repeat;
+					}
+				}
 
 				input,
 				#form-text-area,
@@ -3675,7 +3763,6 @@
 				display: flex;
 				align-items: flex-start;
 
-
 				.audio-player-title {
 					display: flex;
 					align-items: center;
@@ -3692,9 +3779,7 @@
 						display: none;
 					}
 				}
-
 			}
-
 		}
 
 		.audio-player-player {
@@ -4371,6 +4456,11 @@
 			margin: 0;
 		}
 
+		.button-group {
+			display: flex;
+			align-items: center;
+		}
+
 		.cta-button {
 			box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
 			border-radius: 6px;
@@ -4380,40 +4470,153 @@
 			letter-spacing: 0;
 		}
 
+
 		.primary-button {
+			.primary-container {
+				display: flex;
+			}
+
 			.cta-button {
 				background: $blue-primary-mid 0% 0% no-repeat padding-box;
 				border: 2px solid $blue-primary;
 				color: $white;
 				@include font-format($font-family, $font-semibold, normal);
-				width: 130px;
-				margin: 0 auto;
-				display: block;
+				margin: 0 16px;
+				display: flex;
+
+
+				.svg-container {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding-left: 6px;
+
+					svg {
+						min-width: 16px;
+						fill: #fff;
+					}
+				}
 
 				&:hover,
 				&:focus {
 					background: $blue-primary 0% 0% no-repeat padding-box;
 					box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 					border: 2px solid $blue-active;
-				}
 
-				&:active {
-					background: $blue-active 0% 0% no-repeat padding-box;
-					box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-					border: 2px solid $blue-active;
+					&:active {
+						background: $blue-active 0% 0% no-repeat padding-box;
+						box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+						border: 2px solid $blue-active;
+					}
 				}
 			}
 		}
 
 		.primary-dark-button {
+			.primary-container {
+				display: flex;
+			}
+
 			.cta-button {
 				@include font-format($font-family, $font-semibold, normal);
 				background: $white 0% 0% no-repeat padding-box;
 				border: 2px solid $blue-primary;
 				color: $blue-primary;
-				width: 130px;
-				margin: 0 auto;
-				display: block;
+				margin: 0 16px;
+				display: flex;
+
+				.svg-container {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding-left: 6px;
+
+					svg {
+						min-width: 16px;
+						fill: #254f90;
+					}
+				}
+
+				&:hover,
+				&:focus {
+					background: $blue-primary 0% 0% no-repeat padding-box;
+					border: 2px solid $white;
+					color: $white;
+
+					.svg-container {
+						svg {
+							fill: #fff;
+						}
+					}
+				}
+
+				&:active {
+					background: $blue-active 0% 0% no-repeat padding-box;
+					border-color: $blue-active;
+				}
+			}
+		}
+
+
+
+		.secondary-button {
+			.secondary-container {
+				display: flex;
+			}
+
+			.cta-button {
+				@include font-format($font-family, $font-semibold, normal);
+				background: $white 0% 0% no-repeat padding-box;
+				border: 2px solid $blue-primary-mid;
+				color: $blue-primary-mid;
+				margin: 0 16px;
+				display: flex;
+
+				&:focus,
+				&:hover {
+					background: $blue-primary 0% 0% no-repeat padding-box;
+					border: 2px solid $blue-active;
+					color: $white;
+
+					.svg-container {
+						svg {
+							fill: #fff;
+						}
+					}
+				}
+
+				&:active {
+					background: $blue-active 0% 0% no-repeat padding-box;
+					color: $white;
+					border-color: $blue-active;
+				}
+
+				.svg-container {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding-left: 6px;
+
+					svg {
+						min-width: 16px;
+						fill: #254f90;
+					}
+				}
+			}
+		}
+
+		.secondary-dark-button {
+			.secondary-container {
+				display: flex;
+			}
+
+			.cta-button {
+				@include font-format($font-family, $font-semibold, normal);
+				background: $blue-primary-mid 0% 0% no-repeat padding-box;
+				border: 2px solid $white;
+				color: $white;
+				margin: 0 16px;
+				display: flex;
 
 				&:hover,
 				&:focus {
@@ -4422,62 +4625,22 @@
 					color: $white;
 				}
 
-				&:active {
-					background: $blue-active 0% 0% no-repeat padding-box;
-					border-color: $blue-active;
-				}
-			}
-		}
-
-		.secondary-button {
-			.cta-button {
-				@include font-format($font-family, $font-semibold, normal);
-				background: $white 0% 0% no-repeat padding-box;
-				border: 2px solid $blue-primary-mid;
-				color: $blue-primary-mid;
-
-				&:focus {
-					background: $blue-primary 0% 0% no-repeat padding-box;
-					border: 3px solid $blue-active;
-					color: $white;
-				}
-
-				&:hover {
-					background: $blue-primary 0% 0% no-repeat padding-box;
-					border: 2px solid $blue-active;
-					color: $white;
-				}
-
-				&:active {
-					background: $blue-active 0% 0% no-repeat padding-box;
-					color: $white;
-					border-color: $blue-active;
-				}
-			}
-		}
-
-		.secondary-dark-button {
-			.cta-button {
-				@include font-format($font-family, $font-semibold, normal);
-				background: $blue-primary-mid 0% 0% no-repeat padding-box;
-				border: 2px solid $white;
-				color: $white;
-
-				&:focus {
-					background: $blue-primary 0% 0% no-repeat padding-box;
-					border: 3px solid $white;
-					color: $white;
-				}
-
-				&:hover {
-					background: $blue-primary 0% 0% no-repeat padding-box;
-					border: 2px solid $white;
-					color: $white;
-				}
 
 				&:active {
 					background: $blue-active 0% 0% no-repeat padding-box;
 					border-color: $blue-active;
+				}
+
+				.svg-container {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding-left: 6px;
+
+					svg {
+						min-width: 16px;
+						fill: #fff;
+					}
 				}
 			}
 		}
@@ -4706,8 +4869,24 @@
 			}
 
 			&[data-state="focus-state"] {
+				.add-field {
+					border: 0.0625rem dotted #748fb8;
+					outline: none;
+
+					&:before {
+						background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
+					}
+				}
+
+				.tertiary-link {
+					span {
+						border: 1px dotted #254f90;
+						outline: none;
+					}
+				}
+
 				.primary-button .cta-button {
-					background: #254F90 0% 0% no-repeat padding-box;
+					background: #254f90 0% 0% no-repeat padding-box;
 					border: solid 2px $blue-active;
 				}
 
@@ -4715,12 +4894,25 @@
 					background: $blue-primary 0% 0% no-repeat padding-box;
 					border: solid 2px $white;
 					color: $white;
+
+					.svg-container {
+						svg {
+							fill: #fff;
+						}
+					}
 				}
+
 
 				.secondary-button .cta-button {
 					background: $blue-primary 0% 0% no-repeat padding-box;
 					border: 2px solid $blue-active;
 					color: $white;
+
+					.svg-container {
+						svg {
+							fill: #fff;
+						}
+					}
 				}
 
 				.secondary-dark-button .cta-button {
@@ -4768,12 +4960,24 @@
 					background: $blue-primary 0% 0% no-repeat padding-box;
 					border: 2px solid $white;
 					color: $white;
+
+					.svg-container {
+						svg {
+							fill: #fff;
+						}
+					}
 				}
 
 				.secondary-button .cta-button {
 					background: $blue-primary 0% 0% no-repeat padding-box;
 					border: 2px solid $blue-active;
 					color: $white;
+
+					.svg-container {
+						svg {
+							fill: #fff;
+						}
+					}
 				}
 
 				.secondary-dark-button .cta-button {
@@ -4811,11 +5015,35 @@
 					background-color: $blue-lightest;
 					border-radius: 2px;
 				}
+
+				.add-field {
+					@include font-format($font-family, $font-semibold, normal);
+					color: $blue-primary;
+
+					&:before {
+						background: url(../assets/Icon-add-circle-blue.svg) no-repeat;
+					}
+				}
 			}
 
 			&[data-state="active-state"] {
+				.add-field {
+					@include font-format($font-family, $font-semibold, normal);
+					color: $black;
+
+					&:before {
+						background: url(../assets/Icon-add-circle-blue-active.svg) no-repeat;
+					}
+				}
+
 				.button-wrapper {
 					transform: translateY(-0.1875rem);
+				}
+
+				.tertiary-link {
+					span {
+						color: $black;
+					}
 				}
 
 				.primary-button .cta-button {
@@ -4828,12 +5056,24 @@
 					background: $blue-active 0% 0% no-repeat padding-box;
 					border-color: $blue-active;
 					color: $white;
+
+					.svg-container {
+						svg {
+							fill: #fff;
+						}
+					}
 				}
 
 				.secondary-button .cta-button {
 					background: $blue-active 0% 0% no-repeat padding-box;
 					color: $white;
 					border-color: $blue-active;
+
+					.svg-container {
+						svg {
+							fill: #fff;
+						}
+					}
 				}
 
 				.secondary-dark-button .cta-button {
@@ -4885,6 +5125,24 @@
 
 					&.last {
 						background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg);
+					}
+				}
+			}
+
+			&[data-state="disabled-state"] {
+				.cta-button {
+						box-shadow: none;
+						border-radius: 6px;
+						border: 2px solid $grey;
+						opacity: 1;
+						background: $white;
+						color: $grey-dark;
+					}
+				.add-field {
+					color: $grey-dark;
+
+					&:before {
+						background: url(../assets/Icon-add-circle-grey.svg) no-repeat;
 					}
 				}
 			}
@@ -5692,9 +5950,11 @@
 			}
 
 			.icons {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
 				width: 25%;
 				padding: 32px 12px 0px 12px;
-
 
 				@media (max-width: 1200px) {
 					width: 33.33%;
@@ -5708,6 +5968,14 @@
 					width: 100%;
 				}
 
+				@media (max-width: 577px) {
+					width: 50%;
+				}
+
+				@media (max-width: 421px) {
+					width: 100%;
+				}
+
 				.example {
 					text-align: center;
 					display: flex;
@@ -5715,10 +5983,13 @@
 					justify-content: center;
 					align-items: stretch;
 					min-width: 150px;
+					padding: 0;
+					border: 0;
+					background: #ffffff;
 
 					&.copied {
 						.svg-icon-container {
-						border-color: #297e28;
+							border-color: #297e28;
 						}
 
 						.copy-icon-code {
@@ -5735,8 +6006,10 @@
 						}
 					}
 
-					&:hover {
+					&:hover,
+					&:focus {
 						cursor: pointer;
+						outline: none;
 
 						.copy-icon-code {
 							background: #254f90;
@@ -5753,19 +6026,12 @@
 					}
 
 					.svg-icon-container {
-						border: 2px solid #254F90;
+						border: 2px solid #254f90;
 						height: 53px;
 						display: flex;
 						justify-content: center;
 						align-items: center;
-
-						object {
-							height: 0;
-							opacity: 0.1;
-							position: absolute;
-						}
 					}
-
 				}
 
 				.empty {
@@ -6827,6 +7093,10 @@
 			transition: 0.4s;
 			border-radius: 34px;
 
+			&:hover {
+				cursor: pointer;
+			}
+
 			&:before {
 				position: absolute;
 				height: 24px;
@@ -6870,6 +7140,10 @@
 			width: 90px;
 			text-align: center;
 
+			&:hover {
+				cursor: pointer;
+			}
+
 			&:before {
 				content: "Mobile";
 			}
@@ -6882,6 +7156,10 @@
 			bottom: 3px;
 			width: 90px;
 			text-align: center;
+
+			&:hover {
+				cursor: pointer;
+			}
 
 			&:before {
 				content: "Desktop";
@@ -7146,7 +7424,8 @@
 				display: block;
 				color: #333;
 
-				&:hover {
+				&:hover,
+				&:focus {
 					background-color: #eee !important;
 					box-shadow: none !important;
 				}
@@ -7235,16 +7514,17 @@
 
 .copy-code-text {
 	color: #4569a0;
+	font-size: 14px;
 	text-align: center;
 	letter-spacing: 0;
 	font-weight: 600;
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	border: 2px solid #254F90;
-    border-top: none;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+	border: 2px solid #254f90;
+	border-top: none;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 	padding: 4px 0;
 
 	&.copy-code-button {
@@ -7256,20 +7536,20 @@
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
 		border-radius: 6px;
 		padding: 0.5rem 1rem;
+		font-size: 16px;
 
-
+		&:hover,
 		&:focus {
-			background: #254f90 0% 0% no-repeat padding-box;
-			border: 3px solid #18335c;
-			box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-		}
-
-		&:hover {
 			background: #254f90 0% 0% no-repeat padding-box;
 			border: 2px solid #18335c;
 			transform: translateY(-0.1875rem);
 			box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 			color: $white;
+
+			&:focus {
+				transform: none;
+				outline: none;
+			}
 
 			span {
 				svg {
@@ -7278,10 +7558,7 @@
 					}
 				}
 			}
-
 		}
-
-
 	}
 
 	svg {
@@ -7291,7 +7568,6 @@
 			fill: #4569a0;
 		}
 	}
-
 }
 
 .copied {
