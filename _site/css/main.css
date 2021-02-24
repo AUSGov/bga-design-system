@@ -4068,6 +4068,12 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .float-button .BgaIcon.open { transform: scaleY(-1); }
 
+.design-system-card.component.page-pattern .example-wrapper { padding: 24px; }
+
+.design-system-card.component.page-pattern .example-wrapper img { border: solid 1px #C7C7C7; }
+
+.design-system-card.component.page-pattern .page-pattern-rules { padding: 24px; }
+
 .design-system-card.foundation { box-shadow: none; }
 
 .design-system-card.foundation .element-design { border: 1px solid #D8D8D8; padding: 24px 24px 16px 24px; overflow: auto; position: relative; min-height: 96px; }

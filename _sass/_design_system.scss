@@ -161,6 +161,19 @@
                 transform: scaleY(-1);
             }
         }
+        
+        &.page-pattern {
+            .example-wrapper {
+                padding: 24px;
+                
+                img {
+                    border: solid 1px $grey;
+                }
+            }
+            .page-pattern-rules {
+                padding: 24px;
+            }
+        }
     }
 
     &.foundation {
