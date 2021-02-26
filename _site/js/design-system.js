@@ -834,7 +834,7 @@ $(document).ready(function() {
     // Tabs component functionality
     $(".nav-link").on("click", function(e) {
         e.preventDefault();
-        const tabAncestors = $(this).parents('.tabs-component');
+        var tabAncestors = $(this).parents('.tabs-component');
         $(tabAncestors[0]).find('.tab-section').hide();
 
         var active_section = "." + $(this).attr("href");
@@ -897,4 +897,67 @@ $(document).ready(function() {
             console.log("There was an error");
         }
     });
+    
+    
+    // PAGE PATTERNS - RULES ACCORDION
+    $('.rules-accordion-item-tile').on('click', function(){
+        $(this).parents('.rules-accordion-item').toggleClass('open');
+        $(this).find('.rules-accordion-item-content').slideToggle();
+        
+        if ($('.rules-accordion-item').length == $('.rules-accordion-item.open').length) {
+            $('.rules-accordion-group-toggle').addClass('open');
+            $(this).parents('.rules-accordion').find('.rules-accordion-group-toggle-content h5').text('Close all');
+        } 
+        else if ( $('.rules-accordion-item.open').length === 0 ) {
+            $('.rules-accordion-group-toggle').removeClass('open');
+            $(this).parents('.rules-accordion').find('.rules-accordion-group-toggle-content h5').text('Open all');      
+        }
+            
+    });
+    
+    $('.rules-accordion-group-toggle').on('click', function(){
+        
+        if (!$(this).hasClass('open')) {
+            
+            $('.rules-accordion-item').each(function(){
+                if (!$(this).hasClass('open')){
+                    $(this).addClass('open');
+                    $(this).find('.rules-accordion-item-content').slideDown();
+                }
+            });
+            $('.rules-accordion-group-toggle').addClass('open');
+            $(this).find('h5').text('Close all');
+        } 
+        
+        else if ($(this).hasClass('open')) {
+            
+            $('.rules-accordion-item').each(function(){
+                if ($(this).hasClass('open')){
+                    $(this).removeClass('open');
+                    $(this).find('.rules-accordion-item-content').slideUp(); 
+                }
+            });
+            $('.rules-accordion-group-toggle').removeClass('open');
+            $(this).find('h5').text('Open all');
+        }
+    });
+    
+    $('.spot a').on('click', function(){
+        var rule_number = "#rule-" + $(this).text();
+        
+        $('html, body').animate({
+            scrollTop: $(rule_number).offset().top
+        }, 500);
+        
+        setTimeout(function () {
+            $(rule_number).addClass('open');
+            $(rule_number).find('.rules-accordion-item-content').slideDown();
+        }, 700);
+  
+    });
+    
+    
 }); // END doc ready
+
+
+

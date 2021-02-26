@@ -1,0 +1,758 @@
+---
+layout: content
+title: Checklist page pattern
+breadcrumb1: Components
+url1: topic-components.html
+breadcrumb2:
+url2:
+longdesc: A checklist pattern for presenting an end to end journey in logical steps.
+
+---
+<div class="main-section">
+    <div>
+        <div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+            <div class="row">
+                <div class="anchor-col col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
+                    <div>
+                        <div>
+                            <div class="anchor-menu" data-reactroot="">
+                                <div class="sticky-container">
+                                    <div>
+                                        <h5 class="sticky-list-head">On this page</h5>
+                                        <ul>
+                                            <li><a href="" aria-label="Page anatomy">Page anatomy</a></li>
+                                            <li><a href="" aria-label="Checklist specific compponents">Checklist specific components</a></li>
+                                            <li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
+                                            <li><a href="" aria-label="Examples">Examples</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-8">
+
+<!-- PAGE ANATOMY -->
+<div class="anchor-section" name="page-anatomy"><a href="" id="page-anatomy" aria-label="Page anatomy"></a>
+
+    <div class="c-padding-top">
+        <div class="body-copy">
+            <div>
+                <div class="body-copy-headline col-12">
+                    <h2>Page anatomy</h2>
+                </div>
+                <hr />
+            </div>
+            <div class="body-copy-content">
+                
+                <p>The checklist pattern consists of a list of numbered items and a 'save progress' feature. The items open to reveal sub-items with checkboxes allowing users to track their progress through the list.</p>
+                
+                
+                <div class="design-system-card component page-pattern extra-wide">
+                    
+                     <div class="responsive-toggle-container">
+                                <p class="toggle-name">Design view: <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        <span class="switch-text-mobile"></span>
+                                        <span class="switch-text-desktop"></span>
+                                    </label></p>
+
+                                <div class="mobile-only">
+                                    <h5>Mobile design</h5>
+                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                                </div>
+
+                            </div>
+                    
+                    <div class="design-system-card-content">
+
+                        <div class="example-wrapper white-back">
+                            <div class="">
+                                <div class="example checklist-container">   
+                                   
+                                   <img class="responsive-img-no-margin desktop-example" src={{ "assets/checklist-desktop.svg" | relative_url }} />
+
+                                   <img class="responsive-img-no-margin mobile-example" src={{ "assets/checklist-mobile.svg" | relative_url }} />
+
+                                    <div class="spots">
+                                        <div class="spot" id="spot-01">
+                                            <div class="spot-subwrapper">
+                                            <a>1</a>
+                                            <p>Header - page title</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="spot" id="spot-02" >
+                                            <div class="spot-subwrapper">
+                                            <a >2</a>
+                                            <p>Header - supporting text</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="spot" id="spot-03">
+                                            <div class="spot-subwrapper">
+                                            <a>3</a>
+                                            <p>Numbered checklist item</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="spot" id="spot-04" >
+                                            <div class="spot-subwrapper">
+                                            <a>4</a>
+                                            <p>&#39;Tips&#39; sub-item</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="spot" id="spot-05" >
+                                            <div class="spot-subwrapper">
+                                            <a>5</a>
+                                            <p>&#39;Must do&#39; sub-item</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="spot" id="spot-06">
+                                            <div class="spot-subwrapper">
+                                            <a>6</a>
+                                            <p>Save progress feature</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                         
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="page-pattern-rules">
+                        
+                        <div class="rules-accordion">
+                            <div class="example rules-accordion-container">
+
+                                <div role="tablist" class=" accordion-group anchor-section-full-width"> 
+                                   
+                                <div class="rules-accordion-header">
+                                <h3>Rules</h3>
+                        
+                                <div class="rules-accordion-group-toggle">
+                                        <div role="button" tabindex="0" aria-label="button Open all items in rules accordion" class="rules-accordion-group-toggle-content">
+                                            <h5>Open all</h5>
+                                            <div class="chevron"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 16 10">
+                                                    <g transform="translate(16 10) rotate(180)">
+                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#666" />
+                                                    </g>
+                                                </svg></div><span class="sr-only">button toggle all accordions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Item 1 -->    
+                                <div id="rule-1" class="rules-accordion-item">
+                                    <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+                                        <div class="rules-accordion-item-tile-inner">
+                                            
+                                            <h5 class=""><span>1</span>Header - page title</h5>
+                                            
+                                            <div class="chevron">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+                                                    <g transform="translate(16 10) rotate(180)">
+                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                         
+                                        </div>
+                                        <div class="rules-accordion-item-content">
+                                            <div class="body-copy" aria-label="accordion content">
+                                                <p>A direct, short title focused on the main action the user will complete on the page. </p>
+                                                <ul>
+                                                    <li>Maximum character limit of 50.</li>
+                                                </ul>
+                                            </div>
+ 
+                                        </div> 
+                                    </div>
+                                </div>
+                                    
+                                
+                                <!-- Item 2 -->
+                                <div id="rule-2" class="rules-accordion-item">
+                                    <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+                                        <div class="rules-accordion-item-tile-inner">
+                                            
+                                            <h5 class=""><span>2</span>Header - supporting text</h5>
+                                            
+                                            <div class="chevron">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+                                                    <g transform="translate(16 10) rotate(180)">
+                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                         
+                                        </div>
+                                        <div class="rules-accordion-item-content">
+                                            <div class="body-copy" aria-label="accordion content">
+                                                <p>A short paragraph that expands on what the checklist is about.</p>
+                                                <ul>
+                                                    <li>The supporting text should explain the end to end process the checklist is for.</li>
+                                                    <li>Maximum character limit of 90.</li>
+                                                    <li>Include the top three keywords for the page.</li>
+                                                </ul>
+                                            </div>
+ 
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                
+                                <!-- Item 3 -->
+                                <div id="rule-3" class="rules-accordion-item">
+                                    <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+                                        <div class="rules-accordion-item-tile-inner">
+                                            
+                                            <h5 class=""><span>3</span>Numbered checklist item</h5>
+                                            
+                                            <div class="chevron">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+                                                    <g transform="translate(16 10) rotate(180)">
+                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                         
+                                        </div>
+                                        <div class="rules-accordion-item-content">
+                                            <div class="body-copy" aria-label="accordion content">
+                                                <p>Item titles should be short, action oriented statements that make it clear at a high-level what the user needs to do.</p>
+                                                
+                                            </div>
+ 
+                                        </div> 
+                                    </div>
+                                </div>
+                                
+                                    
+                                <!-- Item 4 -->
+                                <div id="rule-4" class="rules-accordion-item">
+                                    <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+                                        <div class="rules-accordion-item-tile-inner">
+                                            
+                                            <h5 class=""><span>4</span> &#39;Tips&#39; sub&#45;item</h5>
+                                            
+                                            <div class="chevron">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+                                                    <g transform="translate(16 10) rotate(180)">
+                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                         
+                                        </div>
+                                        <div class="rules-accordion-item-content">
+                                            <div class="body-copy" aria-label="accordion content">
+                                                <p>Recommended content that users should consider.</p>
+                                                <ul>
+                                                    <li>These sub&#45;items are not checkable.</li>
+                                                    <li>Actions are not legally required.</li>
+                                                    
+                                                </ul>
+                                            </div>
+ 
+                                        </div> 
+                                    </div>
+                                    </div>
+                                 
+                                    
+                                <!-- Item 5 -->  
+                                <div id="rule-5" class="rules-accordion-item">
+                                    <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+                                        <div class="rules-accordion-item-tile-inner">
+                                            
+                                            <h5 class=""><span>5</span> &#39;Must do&#39; sub&#45;item</h5>
+                                            
+                                            <div class="chevron">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+                                                    <g transform="translate(16 10) rotate(180)">
+                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                         
+                                        </div>
+                                        <div class="rules-accordion-item-content">
+                                            <div class="body-copy" aria-label="accordion content">
+                                                <p>A direct, short title focused on the main action the user will complete on the page. </p>
+                                                <ul>
+                                                    <li>These sub&#45;items are checkable, users can mark them as done.</li>
+                                                    <li>Actions are legally required.</li>
+                                                </ul>
+                                            </div>
+ 
+                                        </div> 
+                                    </div>
+                                </div>
+                                    
+                                    
+                                <!-- Item 6 -->
+                                <div id="rule-6" class="rules-accordion-item">
+                                    <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+                                        <div class="rules-accordion-item-tile-inner">
+                                            
+                                            <h5 class=""><span>6</span>Save progress feature</h5>
+                                            
+                                            <div class="chevron">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+                                                    <g transform="translate(16 10) rotate(180)">
+                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                         
+                                        </div>
+                                        <div class="rules-accordion-item-content">
+                                            <div class="body-copy" aria-label="accordion content">
+                                                <p>Provides users with the ability to save a link to the checklist.</p>
+                                                <ul>
+                                                    <li>Title and description in this box should stay the same across checklists</li>
+                                                </ul>
+                                            </div>
+ 
+                                        </div> 
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        
+                    
+                    </div>
+
+                </div>
+
+
+
+            </div>
+           
+
+        </div>
+
+
+    </div>
+
+</div>
+
+  
+<!-- COMPONENTS -->
+
+<div class="anchor-section" name="checklist-specific-components"><a href="" id="checklist-specific-components"></a>
+
+                <div class="body-copy">
+                    <div>
+                        
+                            <h2>Checklist specific components</h2>
+                   
+                        <hr />
+                    </div>
+                    <div class="body-copy-content">
+
+                         
+                
+                <h3>Checklist items</h3>
+                <div class="design-system-card component extra-wide">
+                    
+                     <div class="responsive-toggle-container">
+                                <p class="toggle-name">Design view: <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        <span class="switch-text-mobile"></span>
+                                        <span class="switch-text-desktop"></span>
+                                    </label></p>
+
+                                <div class="mobile-only">
+                                    <h5>Mobile design</h5>
+                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                                </div>
+
+                            </div>
+                    
+                    <div class="design-system-card-content">
+
+                        <div class="example-wrapper white-back">
+                            <div class="checklist">
+                                <div class="example checklist-container">   
+                                   
+                                <div id="checklist-example" class="checklist-wrapper new">
+                        
+                         
+                        <div class="checklist-line"></div>
+                         
+                         
+                         <!-- ITEM 1 -->
+                         <div class="checklist-item">
+                        
+                            
+                            <div class="checklist-item-title">
+                                <h2><span>1</span> Item 1 descriptive title</h2>
+                            </div>
+                            
+                            <div class="checklist-sub-item-wrapper step-minimised">
+
+                            <div class="checklist-sub-item tip">
+                                
+                                <div class="checklist-sub-item-title">
+                                    <h3><span></span>Tip - Lorem ipsum dolor sit amet</h3>
+                                    
+                                    </div>
+                                <div class="content-wrapper">
+                                <div class="checklist-item-content">
+                                    
+                                    <p>Nullam id dignissim sapien. Integer efficitur feugiat neque eu porta. Pellentesque ac nisi purus. Aenean eget ipsum dapibus, consequat arcu a, consequat quam. Aenean vel felis risus. Sed pulvinar lectus erat. Mauris magna orci, aliquam ac iaculis ac, egestas et metus.</p>
+                                </div>
+                               
+                                </div>
+                            </div>
+                            
+                            <div class="checklist-sub-item must-do">
+                                
+                                <div class="checklist-sub-item-title">
+                                    <h3>Donec vestibulum lectus at pretium congue.</h3>
+                                    <div class="checklist-item-tag required">Must do</div>
+                                    
+                                </div>
+                                
+                                <div class="content-wrapper">
+                                <div class="checklist-item-content">
+                                    
+                                    <p>Curabitur pellentesque ante ligula. Aenean in scelerisque ipsum, nec finibus justo. Morbi dignissim in nisl non bibendum. Vestibulum mattis et lorem eget semper. In a quam mollis, ornare risus nec, tincidunt odio. Morbi eget nibh id magna vestibulum faucibus. Praesent eu lacus quam:</p>
+                                    <ul>
+                                        <li>full-time or part-time employee</li>  
+                                        <li>fixed-term employee (non-ongoing)</li>
+                                        <li>casual employee</li>  
+                                    </ul>
+                                    <p><a href="" class="external">Find out more about the different types of employee</a></p>
+                                </div>
+                                <div class="checklist-item-checkbox">
+                                    <input type="checkbox">
+                                    <label>Done</label><br>
+                                </div>
+                                </div>
+                            </div>
+                            
+                        
+                            </div>
+
+                            <hr class="checklist-item-divider"/> 
+                        </div>
+
+                        
+                         <!-- ITEM 2 -->
+                         <div class="checklist-item">
+                            
+                            <div class="checklist-item-title">
+                                <h2><span>2</span> Item 2 title</h2>
+                            </div>
+                             
+                            <div class="checklist-sub-item-wrapper step-minimised">
+                            
+                            <div class="checklist-sub-item must-do">
+                                
+                                <div class="checklist-sub-item-title">
+                                    <h3>Quisque quis urna varius </h3> <div class="checklist-item-tag required">Must do</div>
+                                    
+                                    </div>
+                                <div class="content-wrapper">
+                                <div class="checklist-item-content">
+                                   
+                                    <p>Fusce augue felis, sagittis quis lacus non, convallis volutpat velit. Vestibulum faucibus diam sit amet eleifend vestibulum. Cras ultricies quis arcu et fermentum. Proin eget sodales sapien. Vivamus tincidunt ligula condimentum enim egestas molestie. Fusce at venenatis risus. Use the <a href="">Find my award tool</a> to check: </p>
+                                    <ul>
+                                        <li>pay</li>
+                                        <li>hours of work </li>
+                                        <li>rosters </li>
+                                        <li>breaks </li>
+                                    </ul>
+                                    <p>You can also use the <a href="">Pay Calculator</a> to work out what you&rsquo;ll need to pay your new employee under the relevant award (including any penalty rates).  </p>
+                                    
+                                </div>
+                                <div class="checklist-item-checkbox">
+                                    <input type="checkbox">
+                                    <label>Done</label><br>
+                                </div>
+                            </div>
+                                </div>
+                            
+                            <div class="checklist-sub-item must-do">
+                                
+                                <div class="checklist-sub-item-title">
+                                    <h3>Understand aliquam quis lorem volutpat hendrerit.</h3><div class="checklist-item-tag required">Must do</div>
+                                    
+                                    </div>
+                                <div class="content-wrapper">
+                                <div class="checklist-item-content">
+                                   
+                                    <p>Proin laoreet pulvinar vulputate. Integer ultricies massa a congue ullamcorper. You will also need to have <a href="">worker’s compensation insurance</a> for your employee. </p>
+                                    <p>If you want to learn more, check our <a href="">Managing and developing staff</a> topic. </p>
+                                </div>
+                                <div class="checklist-item-checkbox">
+                                    <input type="checkbox">
+                                    <label>Done</label><br>
+                                </div>
+                                
+                               
+                            </div>
+                                </div>
+                                
+                            
+                            
+                            </div>
+                             
+                            <hr class="checklist-item-divider"/> 
+                        </div>
+                         
+                    </div>
+              
+                                    
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="element-design component closed">
+                            <div class="content-wrapper">
+                                <p>HTML/CSS Styles</p>
+                            </div>
+                            <button role="none" tabindex="-1" class="float-button">
+                                <div tabindex="-1" class="float-button-content">
+                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                </div>
+                            </button>
+
+                        </div>
+                            
+                        <div class="element-code checklist-items-code">
+
+                            {% include tab-component.html %}
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                 <h3>Save progress feature</h3>
+                <div class="design-system-card component extra-wide">
+                    
+                     <div class="responsive-toggle-container">
+                                <p class="toggle-name">Design view: <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        <span class="switch-text-mobile"></span>
+                                        <span class="switch-text-desktop"></span>
+                                    </label></p>
+
+                                <div class="mobile-only">
+                                    <h5>Mobile design</h5>
+                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
+                                </div>
+
+                            </div>
+                    
+                    <div class="design-system-card-content">
+
+                        <div class="example-wrapper white-back">
+                            <div class="checklist">
+                                <div class="example checklist-container">   
+                                   
+                                <div id="checklist-example" class="checklist-wrapper new">
+                         
+
+                        
+                        <div class="email-box-container">
+                            <div class="email-intro">
+                                <h3>Save your progress</h3>
+                                <p>Save your checklist and get a link to it – you’ll be able to continue on from where you were.</p>
+                            </div>
+
+                            <div id="email-btn-wrapper" class="email-btn-wrapper-2">
+                                <btn class="email-btn"><span>Save progress</span></btn>
+                            </div>
+                        </div>
+       
+                    </div>
+                      
+                                 
+                                    
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="element-design component closed">
+                            <div class="content-wrapper">
+                                <p>HTML/CSS Styles</p>
+                            </div>
+                            <button role="none" tabindex="-1" class="float-button">
+                                <div tabindex="-1" class="float-button-content">
+                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
+                                </div>
+                            </button>
+
+                        </div>
+                            
+                        <div class="element-code checklist-save-progress-code">
+
+                            {% include tab-component.html %}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                      
+
+
+                    </div>
+
+
+                </div>
+
+</div>
+  
+            
+                        
+<!-- GUIDEINES -->                      
+<div class="anchor-section" name="guidelines-for-use"><a href="" id="guidelines-for-use" aria-label="guidelines for use"></a>
+
+            <div class="body-copy">
+                <div>
+                    
+                        <h2>Guidelines for use</h2>
+                  
+                    <hr />
+                </div>
+                <div class="body-copy-content">
+
+                    <h3>Purpose</h3>
+                    
+
+                    <p>A checklist is used for an end to end process that includes legal steps. This pattern is helpful for someone who needs to complete tasks in a specific order and should include task/action based content only.</p>
+                    
+                   
+                    <h3>General rules:</h3>
+                    <ul>
+                        <li>Should only be used where there is a logical order to complete a larger journey.</li>
+                        <li>Provides numbered steps that presents a specific start and end point.</li>
+                        <li>Provides links within content to other websites to complete each step.</li>
+                        <li>Can include online and offline actions.</li>
+                        <li>Key content is legally required (‘Must do’) steps.</li>
+                        </ul>
+
+                    
+                    <h3>When not to use this pattern:</h3>
+                    
+                    <ul>
+                        <li>When the user only needs to read guidance and not take an action (use Guide pattern instead).</li>
+                        
+                        <li>When you are educating the user about a specific stage in an end to end journey (use the tutorial pattern).</li>
+                    </ul>
+
+
+
+                </div>
+
+
+            </div>
+
+</div>
+
+                            
+                      
+<!-- EXAMPLES -->                               
+<div class="anchor-section" name="examples"><a href="" id="examples"  aria-label="Examples"></a>
+
+                <div class="body-copy">
+                    <div>
+                        
+                            <h2>Examples</h2>
+                   
+                        <hr />
+                    </div>
+                    <div class="body-copy-content">
+ 
+                         
+            <div class="adobe-link vertical-list ">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/515568e1-a93a-498a-ab73-7832034abc81/specs/">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View checklist design and assets in Adobe XD.</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>ADOBE XD</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+                        
+            <div class="example-link vertical-list ">
+
+                <div>
+                    <a class="action-card-anchor" target="blank" href="https://business.gov.au/people/hiring/hiring-employees">
+                            <div class="action-card-button">
+                                <div class="action-card-content">
+                                    <p class="vertical-list-fileName">View the hiring employees checklist on business.gov.au</p>
+                                    <div class="action-card-info">
+                                        <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
+                                        <div class="site-name"><span>BUSINESS.GOV.AU</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                </div>
+            </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+</div>
+
+
+            
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
