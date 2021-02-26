@@ -4068,70 +4068,6 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .float-button .BgaIcon.open { transform: scaleY(-1); }
 
-.design-system-card.component.page-pattern .example-wrapper { padding: 24px; }
-
-.design-system-card.component.page-pattern .example-wrapper img { border: solid 1px #C7C7C7; }
-
-.design-system-card.component.page-pattern .example-wrapper .example { position: relative; }
-
-.design-system-card.component.page-pattern .example-wrapper .example .spot { position: absolute; cursor: pointer; }
-
-.design-system-card.component.page-pattern .example-wrapper .example .spot .spot-subwrapper { position: relative; }
-
-.design-system-card.component.page-pattern .example-wrapper .example .spot a { display: block; position: absolute; top: 0; left: 0; z-index: 10; background: #297E28; color: #ffffff; width: 32px; height: 32px; border-radius: 50%; border: solid 2px #ffffff; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.3); text-align: center; line-height: 1.8; cursor: pointer; }
-
-.design-system-card.component.page-pattern .example-wrapper .example .spot p { display: inline-block; margin-left: 16px; min-height: 32px; background: #236b22; color: #ffffff; padding: 1px 16px 1px 24px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.3); display: none; font-weight: 400; letter-spacing: 0.04em; }
-
-.design-system-card.component.page-pattern .example-wrapper .example .spot:hover p { display: inline-block; }
-
-.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-01 { top: 21%; left: 4%; }
-
-.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-02 { top: 28.5%; left: 4%; }
-
-.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-03 { top: 39.8%; left: 3%; }
-
-.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-04 { top: 46%; left: 8%; }
-
-.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-05 { top: 52%; left: 8%; }
-
-.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-06 { top: 40%; left: 69%; }
-
-.design-system-card.component.page-pattern .page-pattern-rules { padding: 24px; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header { display: flex; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header h3 { padding: 0; margin: 0; display: inline-block; width: -webkit-calc(100% - 80px); width: -moz-calc(100% - 80px); width: calc(100% - 80px); }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle .rules-accordion-group-toggle-content { display: flex; text-align: right; width: 80px; margin-top: 24px; border-bottom: #666666 solid 2px; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle .rules-accordion-group-toggle-content:focus { outline: none; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle .rules-accordion-group-toggle-content h5 { padding: 0; margin: 0; color: #666666; font-size: 14px; margin-top: 3px; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle .rules-accordion-group-toggle-content .chevron { margin-left: 8px; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle.open .rules-accordion-group-toggle-content .chevron { transform: rotate(180deg); }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle.open .rules-accordion-group-toggle-content .chevron svg { margin-top: -5px; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item { border-bottom: solid 1px #C7C7C7; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile:focus { outline: none; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner { display: flex; padding: 16px 0; margin: 0; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner h5 { display: inline-block; width: -webkit-calc(100% - 16px); width: -moz-calc(100% - 16px); width: calc(100% - 16px); padding: 0; margin: 0; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner h5 span { display: inline-block; background: #297E28; color: #ffffff; width: 32px; height: 32px; border-radius: 50%; border: solid 2px #ffffff; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.3); text-align: center; line-height: 1.8; margin-right: 8px; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner .chevron { width: 16px; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-content { margin-left: 36px; display: none; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-content p, .design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-content li { padding-bottom: 16px; }
-
-.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item.open .rules-accordion-item-tile-inner .chevron { transform: rotate(180deg); }
-
 .design-system-card.foundation { box-shadow: none; }
 
 .design-system-card.foundation .element-design { border: 1px solid #D8D8D8; padding: 24px 24px 16px 24px; overflow: auto; position: relative; min-height: 96px; }
@@ -6547,5 +6483,89 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .example-wrapper.mobile-example .checklist-container #clear-progress { display: none; }
 
 @media (max-width: 650px) { .example-wrapper .checklist-container img.mobile-example { display: block; } .example-wrapper .checklist-container img.desktop-example { display: none; } .example-wrapper .checklist-container .checklist-item .checklist-item-title { background-position: right 24px center; padding: 24px 56px 24px 16px; margin-left: 40px; } .example-wrapper .checklist-container .checklist-item .checklist-item-title:hover, .example-wrapper .checklist-container .checklist-item .checklist-item-title:active { background-position: right 15px center !important; } .example-wrapper .checklist-container .checklist-item .checklist-item-title h2 { font-size: 20px; } .example-wrapper .checklist-container .checklist-item .checklist-item-title h2 span { top: 20px; left: -48px; border: 3px solid #C7C7C7; height: 36px; width: 36px; line-height: 1.9rem; } .example-wrapper .checklist-container .checklist-item:last-of-type .checklist-sub-item:last-of-type:after { left: -48px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item:before { top: 18px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item .checklist-sub-item-title { padding: 16px 64px 16px 24px; background-position: right 24px center; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item .checklist-sub-item-title:hover, .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item .checklist-sub-item-title:active { background-position: right 15px center !important; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item .checklist-sub-item-title h3 { font-size: 18px; line-height: 1.4rem; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item .checklist-sub-item-title .checklist-item-tag { position: absolute; bottom: -24px; right: auto; top: auto; left: 24px; width: 85px; text-align: center; z-index: 200; opacity: 0; transition: opacity .6s ease; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item .checklist-item-checkbox { padding: 8px 24px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item .checklist-item-checkbox label { margin-left: 6px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item .checklist-item-content { padding: 40px 24px 24px 24px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.open .checklist-sub-item-title .checklist-item-tag { opacity: 1; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.open .checklist-sub-item-title:hover, .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.open .checklist-sub-item-title:active { background-position: right 15px center !important; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.tip .checklist-sub-item-title:hover, .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.tip .checklist-sub-item-title:active { background-position: right 15px center !important; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.tip .checklist-sub-item-title h3 { padding-left: 24px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.tip .checklist-sub-item-title h3 span { height: 22px; width: 16px; background-size: 16px 22px; left: 24px; top: 18px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.tip .checklist-item-content { padding: 8px 24px 24px 24px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper.step-minimised .checklist-sub-item.open .checklist-sub-item-title { background-position: right 24px center !important; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item-wrapper { margin-left: 24px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item:before { left: -59px; top: 26px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item .checklist-sub-item-title { padding-left: 24px !important; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item .checklist-item-content { padding: 16px 24px 24px 24px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item .checklist-item-content h3 { padding-right: 0; width: 100%; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item .checklist-item-content .checklist-item-tag { position: relative; top: auto; right: auto; font-size: 13px; border: solid 2px #254F90; border-radius: 20px; padding: 0 16px; margin: 0 0 16px 0; display: inline-block; height: 28px; } .example-wrapper .checklist-container .checklist-item .checklist-sub-item.done:before { content: url("../assets/checklist-grey-dot-checked.svg"); left: -59px; } .example-wrapper .checklist-container .checklist-item.open .checklist-item-title { background-position: right 24px center; padding: 24px 56px 24px 16px; } .example-wrapper .checklist-container .checklist-item.open .checklist-item-title h2 span { border: 3px solid #254F90; } .example-wrapper .checklist-container .checklist-item.item-done .checklist-item-title h2 span { border: 3px solid #297E28 !important; } .example-wrapper .checklist-container .checklist-item .checklist-item-divider { border-top: 2px solid #C7C7C7; width: calc(100% - 56px); margin: 0 0 0 56px; } .example-wrapper .checklist-container .checklist-line { width: 2px; margin: 48px 0 0 8px; height: calc(100% - 100px); } .example-wrapper .checklist-container .email-box-container { border: none; padding: 5px; height: 60px; } .example-wrapper .checklist-container .email-box-container .email-intro { display: none; } .example-wrapper .checklist-container .email-box-container #email-btn-wrapper { border: 2px solid #F5C550; height: 48px; background: #FFD964; padding: 6px 24px; text-align: center; width: 100%; margin: 0 !important; } .example-wrapper .checklist-container .email-box-container #email-btn-wrapper .email-btn { line-height: 1.8rem; } .example-wrapper .checklist-container #clear-progress { display: none; } }
+
+.design-system-card.component.page-pattern .example-wrapper { padding: 24px; }
+
+.design-system-card.component.page-pattern .example-wrapper img { border: solid 1px #C7C7C7; }
+
+.design-system-card.component.page-pattern .example-wrapper .example { position: relative; }
+
+.design-system-card.component.page-pattern .example-wrapper .example .spot { position: absolute; cursor: pointer; }
+
+.design-system-card.component.page-pattern .example-wrapper .example .spot .spot-subwrapper { position: relative; }
+
+.design-system-card.component.page-pattern .example-wrapper .example .spot a { display: block; position: absolute; top: 0; left: 0; z-index: 10; background: #297E28; color: #ffffff; width: 32px; height: 32px; border-radius: 50%; border: solid 2px #ffffff; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.3); text-align: center; line-height: 1.8; cursor: pointer; }
+
+.design-system-card.component.page-pattern .example-wrapper .example .spot p { display: inline-block; margin-left: 16px; min-height: 32px; background: #236b22; color: #ffffff; padding: 1px 16px 1px 24px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.3); display: none; font-weight: 400; letter-spacing: 0.04em; }
+
+.design-system-card.component.page-pattern .example-wrapper .example .spot:hover p { display: inline-block; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-01 { top: 21%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-02 { top: 28.5%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-03 { top: 39.8%; left: 2%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-04 { top: 46%; left: 8%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-05 { top: 52%; left: 8%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-06 { top: 40%; left: 69%; }
+
+.design-system-card.component.page-pattern .page-pattern-rules { padding: 24px; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header { display: flex; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header h3 { padding: 0; margin: 0; display: inline-block; width: -webkit-calc(100% - 80px); width: -moz-calc(100% - 80px); width: calc(100% - 80px); }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle .rules-accordion-group-toggle-content { display: flex; text-align: right; width: 80px; margin-top: 24px; margin-bottom: 8px; border-bottom: #666666 solid 2px; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle .rules-accordion-group-toggle-content:focus { outline: none; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle .rules-accordion-group-toggle-content h5 { padding: 0; margin: 0; color: #666666; font-size: 14px; margin-top: 3px; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle .rules-accordion-group-toggle-content .chevron { margin-left: 8px; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle.open .rules-accordion-group-toggle-content .chevron { transform: rotate(180deg); }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-header .rules-accordion-group-toggle.open .rules-accordion-group-toggle-content .chevron svg { margin-top: -5px; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item { border-bottom: solid 1px #C7C7C7; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile:focus { outline: none; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner { display: flex; padding: 16px 5px; margin: 0; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner:hover { background: #F5F5F5; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner h5 { display: inline-block; width: -webkit-calc(100% - 16px); width: -moz-calc(100% - 16px); width: calc(100% - 16px); padding: 0; margin: 0; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner h5 span { display: inline-block; background: #297E28; color: #ffffff; width: 32px; height: 32px; border-radius: 50%; border: solid 2px #ffffff; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.3); text-align: center; line-height: 1.8; margin-right: 8px; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner h5:hover { text-decoration: underline; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-tile-inner .chevron { width: 16px; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-content { padding: 0 32px 0 43px; display: none; background: #F5F5F5; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-content p, .design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item .rules-accordion-item-content li { padding-bottom: 16px; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item.open .rules-accordion-item-tile-inner { background: #F5F5F5; }
+
+.design-system-card.component.page-pattern .page-pattern-rules .rules-accordion-item.open .rules-accordion-item-tile-inner .chevron { transform: rotate(180deg); }
+
+@media (max-width: 900px) { .design-system-card.component.page-pattern .example-wrapper .example .spot a { width: 28px; height: 28px; font-size: 13.5px; } .design-system-card.component.page-pattern .example-wrapper .example .spot p { min-height: 27px; font-size: 13.5px; } }
+
+.design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-01, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-01 { top: 5%; left: 4%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-02, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-02 { top: 17%; left: 4%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-03, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-03 { top: 41.5%; left: 0%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-04, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-04 { top: 51.5%; left: 18%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-05, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-05 { top: 65%; left: 18%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-06, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-06 { top: 93.5%; left: 0%; }
 
 /*# sourceMappingURL=main.css.map */

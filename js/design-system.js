@@ -943,11 +943,17 @@ $(document).ready(function() {
     });
     
     $('.spot a').on('click', function(){
-        var rule_number = "#rule-" +$(this).text();
+        var rule_number = "#rule-" + $(this).text();
+        
         $('html, body').animate({
             scrollTop: $(rule_number).offset().top
-        }, 600);
+        }, 500);
         
+        setTimeout(function () {
+            $(rule_number).addClass('open');
+            $(rule_number).find('.rules-accordion-item-content').slideDown();
+        }, 700);
+  
     });
     
     
