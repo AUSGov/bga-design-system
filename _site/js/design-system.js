@@ -900,9 +900,9 @@ $(document).ready(function() {
     
     
     // PAGE PATTERNS - RULES ACCORDION
-    $('.rules-accordion-item-tile').on('click', function(){
+    $('.rules-accordion-item-tile-inner').on('click', function(){
         $(this).parents('.rules-accordion-item').toggleClass('open');
-        $(this).find('.rules-accordion-item-content').slideToggle();
+        $(this).parents('.rules-accordion-item').find('.rules-accordion-item-content').slideToggle();
         
         if ($('.rules-accordion-item').length == $('.rules-accordion-item.open').length) {
             $('.rules-accordion-group-toggle').addClass('open');
@@ -942,6 +942,7 @@ $(document).ready(function() {
         }
     });
     
+    //Click on hotspots to go to rules
     $('.spot a').on('click', function(){
         var rule_number = "#rule-" + $(this).text();
         
@@ -955,6 +956,21 @@ $(document).ready(function() {
         }, 700);
   
     });
+    
+    $('.spot p').on('click', function(){
+        var rule_number = "#rule-" + $(this).parents('.spot').find('a').text();
+        
+        $('html, body').animate({
+            scrollTop: $(rule_number).offset().top
+        }, 500);
+        
+        setTimeout(function () {
+            $(rule_number).addClass('open');
+            $(rule_number).find('.rules-accordion-item-content').slideDown();
+        }, 700);
+  
+    });
+    
     
     
 }); // END doc ready
