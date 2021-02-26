@@ -1933,20 +1933,32 @@
 
         label {
             font-size: 32px;
-            @include font-format($font-family, $font-semibold, normal);
+            font-weight: 400;
             margin: 0 16px 0 0;
         }
-
         input {
             margin: 0 0 16px 0;
             color: $white;
+            border: solid 1px $white;
+            padding: 6px;
+            background: #43679F;
+            height: 52px;
+            @include font-format($font-family, $font-regular, normal);
+            
+            &::placeholder {
+                color: $grey-lightest;
+                font-weight: 400;
+                font-size: 32px;
+            }
+
+            &#postcode {
+                width: 90px;
+            }
 
             &:focus {
-                border: solid 2px $white;
-
-                &::placeholder {
-                    color: transparent !important;
-                }
+                border: none;
+                background: $grey-lightest;
+                color: $blue-active;
             }
         }
 
@@ -2015,14 +2027,19 @@
 
                 input {
                     color: $blue-primary;
-                    border-bottom: solid $red-negative-dark 2px;
+                    border: solid $red-negative-dark 2px;
+                    background: $grey-lightest;
 
                     &::placeholder {
-                        color: #7983aa;
+                        color: $blue-active;
+                        
                     }
 
                     &:focus {
-                        border: solid $red-negative-dark 2px;
+                        //border: solid $red-negative-dark 2px;
+                       // border: none;
+                background: $grey-lightest;
+                color: $blue-active;
                     }
 
                     &:active {
@@ -2060,7 +2077,7 @@
 
             input,
             select {
-                width: 250px;
+                width: 300px;
             }
 
             &[data-state="focus-state"] {
@@ -2103,10 +2120,11 @@
 
                     input {
                         color: $blue-primary;
-                        border-bottom: solid $red-negative-dark 2px;
+                        border: solid $red-negative-dark 2px;
+                        background: $grey-lightest;
 
                         &::placeholder {
-                            color: #7983aa;
+                            color: $blue-active;  
                         }
 
                         &:focus {
