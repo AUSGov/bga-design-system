@@ -231,7 +231,9 @@ $(document).ready(function () {
 
 		if (example_element.hasClass('example')) {
 			example_element.attr('data-state', element_state);
-		} else if (example_element.hasClass('radio-example')) {
+		}
+		
+		if (example_element.hasClass('radio-example')) {
 			if (element_state == "focus-state") {
 				example_element.find(".radio-item").attr('data-state', "default-state");
 				example_element.find(".radio-item:first").attr('data-state', element_state);
@@ -243,7 +245,10 @@ $(document).ready(function () {
 				example_element.find(".radio-item").attr('data-state', element_state);
 				common_ancestor.find(".error-message").addClass('show');
 			}
-		} else if (example_element.hasClass('multiple-select-example')) {
+		} 
+		
+		if (example_element.hasClass('multiple-select-example')) {
+			
 			example_element.attr('data-state', element_state);
 			if (element_state == "focus-state") {
 				example_element.find(".checkbox-item").removeAttr('data-state');
@@ -253,7 +258,9 @@ $(document).ready(function () {
 				example_element.find(".checkbox-item").removeAttr('data-state');
 				common_ancestor.find(".error-message").removeClass('show');
 			}
-		} else if (example_element.hasClass('button-example')) {
+		} 
+		
+		if (example_element.hasClass('button-example')) {
 			example_element.attr('data-state', element_state);
 			example_element.find(".button-wrapper").attr('data-state', element_state);
 		} else if (example_element.hasClass('dynamic-example')) {

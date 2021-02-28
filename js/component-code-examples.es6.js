@@ -2736,10 +2736,10 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
 <div class="accordion">
    <div class=" accordion-group">
       <div class="accordion-group-toggle">
-         <div tabindex="0" class="accordion-group-toggle-content">
-            <!-- Toggle 'all-open' class with js when clicked-->             
-            <h5 class="title">Open all</h5>
-            <!-- Toggle 'open/close' text with js when button is clicked-->             
+         <!-- Toggle 'all-open' class with js when clicked-->  
+         <div tabindex="0" class="accordion-group-toggle-content">     
+            <!-- Toggle 'open/close' text with js when button is clicked--> 
+            <h5 class="title">Open all</h5>            
             <div class="arrow-icon">
                <svg width="16" height="16">
                   <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
@@ -2748,8 +2748,8 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
          </div>
       </div>
       <div>
-         <div class="accordion-item open">
-            <!-- Toggle 'open' class with js when clicked -->             
+         <!-- Toggle 'open' class with js when clicked -->  
+         <div class="accordion-item open">           
             <div class="accordion-item-tile" tabindex="0">
                <div class="accordion-item-tile-content">
                   <h5 class="title">Accordion item 1 title</h5>
@@ -2762,17 +2762,17 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
                   </button>
                </div>
             </div>
-            <div class="accordion-item-content visible">
-               <!-- Toggle 'visible' class with js to expand-->                
+            <!-- Toggle 'visible' class with js to expand--> 
+            <div class="accordion-item-content visible">               
                <ul>
                   <li>
-                     <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                         <circle fill="#c18100" cx="8" cy="8" r="4"/>
                      </svg>
                      <p>Accordions can contain lists.</p>
                   </li>
                   <li>
-                     <svg								xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                         <circle fill="#c18100" cx="8" cy="8" r="4"/>
                      </svg>
                      <p>Complete with links like other body copy.</p>
@@ -2782,8 +2782,8 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
          </div>
       </div>
       <div>
-         <div class="accordion-item">
-            <!-- Toggle 'open' class with js when clicked -->             
+         <!-- Toggle 'open' class with js when clicked --> 
+         <div class="accordion-item">            
             <div class="accordion-item-tile" tabindex="0">
                <div class="accordion-item-tile-content">
                   <h5 class="title">Accordion item 2 title</h5>
@@ -2796,8 +2796,8 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
                   </button>
                </div>
             </div>
-            <div class="accordion-item-content">
-               <!-- Toggle 'visible' class with js to expand-->                
+            <!-- Toggle 'visible' class with js to expand--> 
+            <div class="accordion-item-content">               
                <p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
             </div>
          </div>
@@ -3933,8 +3933,8 @@ const tableHtml =
       </tr>
    </thead>
    <tbody>
+      <!-- Toggle 'showGroup' class on mobile view to expand accordion -->
       <tr>
-         <!-- Toggle 'showGroup' class on mobile view to expand accordion -->
          <td data-title="Applicant Organisation">
             District Council Of Endor                    				
             <div class="arrow-icon">
@@ -4189,7 +4189,8 @@ const videoPlayerHtml =
    <!-- Video Player section -->   
    <div id="video-player-player-videoid" class="video-player-player" style="background-image: url(media-player-placeholder.jpg);">
       <button id="video-player-button-videoid" aria-label="Play video video title" class="video-player-button">
-         <span class="video-player-button-icon"> <!-- 'display: none;' after playing video -->
+         <!-- 'display: none;' after playing video -->
+         <span class="video-player-button-icon"> 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 39 80 80">
                <path class="st5 playiconWrapper" d="M2.5 79c0-20.7 16.8-37.5 37.5-37.5S77.5 58.3 77.5 79 60.7 116.5 40 116.5 2.5 99.7 2.5 79z"></path>
                <path class="st0" d="M60.3 77c.6.2.8.8.6 1.4-.1.3-.3.5-.6.6L30 96.5c-1 .6-1.7.1-1.7-1v-35c0-1.1.8-1.5 1.7-1L60.3 77z"></path>
@@ -4241,20 +4242,21 @@ const videoPlayerHtml =
    <div id="media-player-transcript-info-videoid" class="media-player-transcript-info">
       <div class="media-player-transcript-toggle">
          <button id="toggle-transcript-videoid" aria-label="Toggle media transcript, transcript open">
-            <span>Open transcript</span> <!-- Toggle open/close text with javascript -->            
-            <span class="iconAnimateWrapper">
-               <!-- Toggle 'active-expand' class with javascript -->               
+            <!-- Toggle open/close text with javascript --> 
+            <span>Open transcript</span> 
+            <!-- Toggle 'active-expand' class with javascript -->  
+            <span class="iconAnimateWrapper">             
                <svg width="16" height="16">
                   <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
                </svg>
             </span>
          </button>
       </div>
-      <div id="media-player-transcript-videoid" class="media-player-transcript" style="display: none;">
-         <!-- Toggle 'display: none;' inline style with javascript -->         
+      <!-- Toggle 'display: none;' inline style with javascript -->  
+      <div id="media-player-transcript-videoid" class="media-player-transcript" style="display: none;">       
          <div class="media-transcript">
-            <div id="media-transcript-content-videoid" class="media-transcript-content">
-               <!-- Transcript text is obtained and placed here, if available -->               
+            <!-- Transcript text is obtained and placed here, if available --> 
+            <div id="media-transcript-content-videoid" class="media-transcript-content">              
                <p data-timeinseconds="12" data-duration="2.75" id="t-videoid-0" tabindex="0">This video transcript is a written copy</p>
                <p data-timeinseconds="17" data-duration="3.3099999999999987" id="t-videoid-2" tabindex="0">of the video content.</p>
                <p data-timeinseconds="20" data-duration="1.9100000000000001" id="t-videoid-3" tabindex="0">The transcript scrolls as the video progresses</p>
@@ -4591,8 +4593,8 @@ const audioPlayerHtml =
    <div id="media-player-not-available-audioid" class="media-player-not-available" style="display: none;">      <span>The request media could not be loaded at this time. Please try again later.</span>   </div>
    <!-- Audio Player section -->      
    <div id="audio-player-banner-audioid" class="audio-player-banner graphic">
+      <!-- Insert banner image source here -->
       <img src="img-src-here" alt="audio_banner_image" class="${imageState}"> 
-        <!-- Insert banner image source here -->
       <div id="audio-player-title-audioid" class="audio-player-title">
          <h2>BRS ABLIS Research 5 MP3 audio with media poster and no subtitles</h2>
       </div>
@@ -4604,10 +4606,10 @@ const audioPlayerHtml =
             <div class="mejs__inner">
                <div class="mejs__mediaelement">
                   <mediaelementwrapper id="audioid">
+                     <!-- Add audio src here -->
                      <audio id="audioid_html5" style="width:100%; height:100%" preload="auto" tabindex="0" src="audio-src-here">
                         <!-- Add audio src here -->
                         <source src="audio-src-here"  type="audio/mp3">
-                        <!-- Add audio src here -->
                      </audio>
                   </mediaelementwrapper>
                </div>
@@ -4636,20 +4638,21 @@ const audioPlayerHtml =
    <div id="media-player-transcript-info-audioid" class="media-player-transcript-info">
       <div class="media-player-transcript-toggle">
          <button id="toggle-transcript-audioid" aria-label="Toggle media transcript, transcript open">
-            <span>Open transcript</span> <!-- Toggle open/close text with javascript -->                        
-            <span class="iconAnimateWrapper">
-               <!-- Toggle 'active-expand' class with javascript -->                              
+            <!-- Toggle open/close text with javascript -->   
+            <span>Open transcript</span>   
+            <!-- Toggle 'active-expand' class with javascript --> 
+            <span class="iconAnimateWrapper">                             
                <svg width="16" height="16">
                   <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
                </svg>
             </span>
          </button>
       </div>
-      <div id="media-player-transcript-audioid" class="media-player-transcript" style="display: none;">
-         <!-- Toggle 'display: none;' inline style with javascript -->                  
+      <!-- Toggle 'display: none;' inline style with javascript --> 
+      <div id="media-player-transcript-audioid" class="media-player-transcript" style="display: none;">                 
          <div class="media-transcript">
-            <div id="media-transcript-content-audioid" class="media-transcript-content">
-               <!-- Transcript text is obtained and placed here, if available -->                              
+            <!-- Transcript text is obtained and placed here, if available --> 
+            <div id="media-transcript-content-audioid" class="media-transcript-content">                             
                <p data-timeinseconds="12" data-duration="2.75" id="t-audioid-0" tabindex="0">This Audio transcript is a written copy</p>
                <p data-timeinseconds="17" data-duration="3.3099999999999987" id="t-audioid-2" tabindex="0">of the Audio content.</p>
                <p data-timeinseconds="20" data-duration="1.9100000000000001" id="t-audioid-3" tabindex="0">The transcript scrolls as the Audio progresses</p>
@@ -6491,8 +6494,8 @@ $(".utilities-code .css-code").html(utilitiesCss);
 const miniListHtml =
 `
 <div class="mini-list">
+   <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
    <div class="mini-list-item active">
-      <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
       <div class="title-container" tabindex="0">
          <div class="svg-container tick-svg">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -6531,8 +6534,8 @@ const miniListHtml =
          </div>
       </div>
    </div>
+   <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
    <div class="mini-list-item active">
-      <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
       <div class="title-container" tabindex="0">
          <div class="svg-container tick-svg">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -6557,8 +6560,8 @@ const miniListHtml =
          </div>
       </div>
    </div>
+   <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
    <div class="mini-list-item">
-      <!-- Using javascript, toggle 'active' class when 'title-container' is clicked -->
       <div class="title-container" tabindex="0">
          <div class="svg-container tick-svg">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -6772,12 +6775,12 @@ const anchorMenuHtml =
    <div class="anchor-menu">
       <h5>On this page</h5>
       <ul>
+         <!-- Add 'active-sticky class' when clicked -->
          <li><a href="#sectionOne">Link to section one</a></li>
          <!-- Add 'active-sticky class' when clicked -->
          <li><a href="#sectionTwo" class="active-sticky">Link to section two</a></li>
          <!-- Add 'active-sticky class' when clicked -->
          <li><a href="#sectionThree">Section 3</a></li>
-         <!-- Add 'active-sticky class' when clicked -->
       </ul>
    </div>
 `
@@ -7177,8 +7180,8 @@ const steppedNavigationHtml =
          <a href="#" class="step-name">Step two</a>
       </div>
    </li>
+   <!-- Use javascript to change to 'completed-step' class when the step is completed and enable clicking to go back to this step -->
    <li class="current-step">
-      <!-- Use javascript to change to 'completed-step' class when the step is completed and enable clicking to go back to this step -->
       <div class="step-container">
          <a href="#" class="step-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
@@ -7190,8 +7193,8 @@ const steppedNavigationHtml =
       </div>
    </li>
    <li>
+      <!-- Use javascript to change to 'current-step' class when the step is being executed and disable click to prohibit users from skipping past the current step -->
       <div class="step-container">
-         <!-- Use javascript to change to 'current-step' class when the step is being executed and disable click to prohibit users from skipping past the current step -->
          <a href="#" class="step-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
@@ -7390,8 +7393,8 @@ const checklistItemsHtml =
 <div class="checklist">
    <div class="checklist-line"></div>
    <!-- ITEM 1 -->
+   <!-- Toggle 'open' class with js to open checklist item  and toggle 'item-done' class when all checkboxes in the item are done --> 
    <div class="checklist-item open">
-      <!-- Toggle 'open' class with js to open checklist item  and toggle 'item-done' class when all checkboxes in the item are done --> 
       <div class="checklist-item-title">
          <h2>
             <span>
@@ -7435,8 +7438,8 @@ const checklistItemsHtml =
                </div>
             </div>
          </div>
+         <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
          <div class="checklist-sub-item">
-            <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
             <div class="checklist-sub-item-title">
                <h3>
                   <span>
@@ -7487,8 +7490,8 @@ const checklistItemsHtml =
       <hr class="checklist-item-divider">
    </div>
    <!-- ITEM 2 -->
+   <!-- Toggle 'open' class with js to open checklist item  and toggle 'item-done' class when all checkboxes in the item are checked --> 
    <div class="checklist-item open item-done">
-      <!-- Toggle 'open' class with js to open checklist item  and toggle 'item-done' class when all checkboxes in the item are checked --> 
       <div class="checklist-item-title">
          <h2>
             <span>
@@ -7509,8 +7512,8 @@ const checklistItemsHtml =
          </svg>
       </div>
       <div class="checklist-sub-items-container">
+         <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
          <div class="checklist-sub-item open done">
-            <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
             <div class="checklist-sub-item-title">
                <h3>
                   <span>
@@ -7578,8 +7581,8 @@ const checklistItemsHtml =
                </div>
             </div>
          </div>
+         <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
          <div class="checklist-sub-item open done">
-            <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
             <div class="checklist-sub-item-title">
                <h3>
                   <span>
@@ -8715,8 +8718,8 @@ const globalHeaderHtml =
                         </svg>
                      </div>
                   </button>
-                  <button type="button" class="expand-nav-btn">
-                     <!-- Add class 'active' on button click using javascript -->               
+                  <!-- Add class 'active' on button click using javascript --> 
+                  <button type="button" class="expand-nav-btn">              
                      <div class="svg-container">
                         <svg class="open-nav-svg" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                            <path d="M1,7h30c0.552,0,1-0.448,1-1c0-0.552-0.448-1-1-1H1C0.448,5,0,5.448,0,6C0,6.552,0.448,7,1,7z"></path>
@@ -8731,8 +8734,8 @@ const globalHeaderHtml =
                </div>
             </div>
          </div>
-         <div class="search-overlay">
-            <!-- Add class 'active', disable scroll and hide the scrollbar for the body when the 'search-btn' in the 'global-header-top' is clicked on mobile view using javascript -->      
+         <!-- Add class 'active', disable scroll and hide the scrollbar for the body when the 'search-btn' in the 'global-header-top' is clicked on mobile view using javascript -->  
+         <div class="search-overlay">    
             <div class="search-container">
                <input type="text" class="search-input" name="header-search" placeholder="search business.gov.au">         
                <button type="button" class="search-btn">
@@ -8785,8 +8788,8 @@ const globalHeaderHtml =
                      </li>
                   </ul>
                </li>
-               <li class="active">
-                  <!-- Add 'active' class here when the nested 'span' is clicked and remove the 'active' class from all other 'li' in the navbar-->            
+               <!-- Add 'active' class here when the nested 'span' is clicked and remove the 'active' class from all other 'li' in the navbar-->  
+               <li class="active">          
                   <div class="nav-item">
                      <span tabindex="0">
                         Business Information                   
@@ -8798,8 +8801,8 @@ const globalHeaderHtml =
                      </span>
                   </div>
                   <ul class="navbar-level-two">
-                     <li class="active">
-                        <!-- Add 'active' class here when the nested 'span' is clicked -->                  
+                     <!-- Add 'active' class here when the nested 'span' is clicked --> 
+                     <li class="active">                                   
                         <div class="nav-item">
                            <span tabindex="0">Planning</span>                      
                            <div class="svg-container">

@@ -153,6 +153,11 @@
 				display: table;
 				margin: 0 auto;
 
+				&.radio-example {
+					max-width: 350px;
+					display: block;
+				}
+
 				&.full-width {
 					width: 100%;
 				}
@@ -233,57 +238,6 @@
 
 			.BgaIcon.open {
 				transform: scaleY(-1);
-			}
-		}
-	}
-
-	&.foundation {
-		box-shadow: none;
-
-		.element-design {
-			border: 1px solid $grey-light;
-			padding: 24px 24px 16px 24px;
-			overflow: auto;
-			position: relative;
-			min-height: 96px;
-
-			@media (max-width: 600px) {
-				padding: 24px 8px;
-			}
-
-			/* .example {
-                width: -webkit-calc(100% - 48px);
-                width: -moz-calc(100% - 48px);
-                width: calc(100% - 48px);
-                float: left;
-                padding-right: 16px;
-            } */
-
-			.float-button {
-				width: 48px;
-				padding-left: 8px;
-				position: absolute;
-				top: -webkit-calc(50% - 24px);
-				top: -moz-calc(50% - 24px);
-				top: calc(50% - 24px);
-				right: 24px;
-
-				@media (max-width: 600px) {
-					right: 8px;
-				}
-
-				.float-button-content {
-					width: 48px;
-					height: 48px;
-				}
-
-				.BgaIcon.open {
-					transform: scaleY(-1);
-				}
-
-				.BgaIcon {
-					fill: $black-light;
-				}
 			}
 		}
 	}
@@ -806,6 +760,14 @@
 				}
 
 				&.complex {
+					&:focus {
+						outline: none;
+
+						span {
+							border: 1px dotted #748fb8;
+						}
+					}
+
 					.contextual-help {
 						cursor: pointer;
 						color: $blue-primary-mid;
@@ -1071,6 +1033,16 @@
 					opacity: 0;
 					width: 0;
 					height: 28px;
+
+					&:checked + label:before {
+						background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important;
+						background-size: 16px 12px !important;
+						background-position: center center !important;
+					}
+
+					&:focus + label:before {
+						border: 3px solid $blue-primary;
+					}
 				}
 
 				label {
@@ -1651,13 +1623,10 @@
 				}
 
 				.checkbox-item[data-state="focus-state"] input + label {
-					color: $blue-primary;
-					@include font-format($font-family, $font-semibold, normal);
 
 					&:before {
-						background: url(../assets/Icon-tick-primary-blue.svg) no-repeat;
-						background-size: 16px 12px;
-						background-position: center center;
+						border: 3px solid $blue-primary;
+						background: none;
 					}
 				}
 
@@ -1834,6 +1803,9 @@
 			}
 
 			.radio-item {
+				display: flex;
+				align-items: center;
+
 				&[data-state="default-state"] {
 					border: solid 1px $darkblue-mid;
 				}
@@ -4474,6 +4446,16 @@
 		.primary-button {
 			.primary-container {
 				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.button-wrapper {
+					margin: 8px 16px;
+				}
+
+				@media(max-width: 768px) {
+					flex-direction: column;
+				}
 			}
 
 			.cta-button {
@@ -4481,7 +4463,6 @@
 				border: 2px solid $blue-primary;
 				color: $white;
 				@include font-format($font-family, $font-semibold, normal);
-				margin: 0 16px;
 				display: flex;
 
 
@@ -4562,6 +4543,16 @@
 		.secondary-button {
 			.secondary-container {
 				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.button-wrapper {
+					margin: 8px 16px;
+				}
+
+				@media(max-width: 768px) {
+					flex-direction: column;
+				}
 			}
 
 			.cta-button {
@@ -4569,7 +4560,6 @@
 				background: $white 0% 0% no-repeat padding-box;
 				border: 2px solid $blue-primary-mid;
 				color: $blue-primary-mid;
-				margin: 0 16px;
 				display: flex;
 
 				&:focus,
@@ -4608,6 +4598,10 @@
 		.secondary-dark-button {
 			.secondary-container {
 				display: flex;
+
+				.button-wrapper {
+					margin: 0 16px;
+				}
 			}
 
 			.cta-button {
@@ -5131,13 +5125,14 @@
 
 			&[data-state="disabled-state"] {
 				.cta-button {
-						box-shadow: none;
-						border-radius: 6px;
-						border: 2px solid $grey;
-						opacity: 1;
-						background: $white;
-						color: $grey-dark;
-					}
+					box-shadow: none;
+					border-radius: 6px;
+					border: 2px solid $grey;
+					opacity: 1;
+					background: $white;
+					color: $grey-dark;
+				}
+
 				.add-field {
 					color: $grey-dark;
 
@@ -5228,14 +5223,22 @@
 
 			p {
 				padding-bottom: 16px;
-
-				&:last-of-type {
-					padding-bottom: 0;
-				}
 			}
 
 			&.with-close {
 				padding-right: 16px;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			ul {
+				li {
+					&:last-of-type {
+						padding-bottom: 0;
+					}
+				}
 			}
 		}
 
@@ -5279,7 +5282,8 @@
             padding: 8px 16px 0 16px;
           }*/
 
-			p {
+			p,
+			li {
 				font-size: 14px;
 			}
 		}
@@ -5367,6 +5371,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				flex-shrink: 0;
 
 				&.tick-svg {
 					width: 32px;
@@ -6092,6 +6097,10 @@
 		&[type="text"] {
 			@include font-format($font-family, $font-regular, normal);
 			font-size: 16px;
+		}
+
+		@media(max-width: 640px) {
+			width: 250px;
 		}
 	}
 

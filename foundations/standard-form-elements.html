@@ -479,17 +479,6 @@ longdesc: Guidelines on form element styles.
 										</label>
 
 									</div>
-									<div class="body-copy-content primary-button-colour-selector">
-
-										<div class="variation-select-wrapper">
-											<label for="primary-button-colour-set">Colour set:</label>
-
-											<select id="primary-button-colour-set" class="variation-set">
-												<option selected="selected" value="">Default</option>
-												<option value="light">Light</option>
-											</select>
-										</div>
-									</div>
 
 
 
@@ -515,7 +504,7 @@ longdesc: Guidelines on form element styles.
 
 
 										</div>
-										{% include code-dropdown.html componentName="primary-button" %}
+										{% include code-dropdown.html componentName="primary-form-button" %}
 
 									</div>
 
@@ -555,19 +544,6 @@ longdesc: Guidelines on form element styles.
 										</label>
 
 									</div>
-									<div class="body-copy-content secondary-button-colour-selector">
-
-										<div class="variation-select-wrapper">
-											<label for="secondary-button-colour-set">Colour set:</label>
-
-											<select id="secondary-button-colour-set" class="variation-set">
-												<option selected="selected" value="">Default</option>
-												<option value="dark">Dark</option>
-											</select>
-										</div>
-									</div>
-
-
 
 									<div class="design-system-card-content buttons-links">
 
@@ -591,7 +567,7 @@ longdesc: Guidelines on form element styles.
 
 
 										</div>
-										{% include code-dropdown.html componentName="secondary-button" %}
+										{% include code-dropdown.html componentName="secondary-form-button" %}
 
 									</div>
 
@@ -645,10 +621,8 @@ longdesc: Guidelines on form element styles.
 													<div class="button-group">
 														<a href="" class="tertiary-link" aria-label="Primary button"><span>Cancel</span></a>
 														<div class="primary-button">
-															<div class="primary-container">
-																<div class="button-wrapper">
-																	<a href="" class="cta-button" aria-label="Primary button"><span>Save</span></a>
-																</div>
+															<div class="button-wrapper">
+																<a href="" class="cta-button" aria-label="Primary button"><span>Save</span></a>
 															</div>
 														</div>
 													</div>
@@ -808,132 +782,7 @@ longdesc: Guidelines on form element styles.
 											</div>
 										</div>
 
-										<button class="element-design component closed">
-											<div class="content-wrapper">
-												<p>HTML/CSS Styles</p>
-											</div>
-											<div role="none" class="float-button">
-												<div tabindex="-1" class="float-button-content">
-													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-														</svg></div><span class="sr-only">Button toggle current accordion</span>
-												</div>
-											</div>
-										</button>
-
-										<div class="element-code">
-											<h5>Label</h5>
-
-											<code>
-												<pre>
-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-
-</pre>
-											</code>
-											<h5>Text field</h5>
-											<code>
-												<pre>
-input {
-    height: 52px;
-    padding: 10px;
-    border: solid 1px #495C74;
-}
-input:focus {
-    outline: none;
-    border: solid 3px #254F90;
-}
-input.error {
-    border: solid 3px #D2201E;
-}
-input.disabled {
-    border: solid 1px #E2E2E2;
-    background-color: #F5F5F5;
-}
-
-</pre>
-											</code>
-
-											<h5>Primary button container</h5>
-											<code>
-												<pre>
-.primary-button {
-    border: solid 1px #495C74;
-    border-radius: 6px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px
-    padding: 10px 24px;
-    text-align: center;
-    background: #4569A0;
-}
-.primary-button:focus {
-    background: #254F90;
-    solid 3px #254F90;
-}
-.primary-button:active {
-    background: #18335C;
-    solid 3px #254F90;
-}
-.primary-button.error {
-    border: solid 3px #D2201E;
-    background: #4569A0;
-}
-.primary-button.disabled {
-    border: 2px solid #C7C7C7;
-    text-align: center;
-    background: #FFFFFF;
-    box-shadow:none;
-}
-
-</pre>
-											</code>
-
-											<h5>Primary button text</h5>
-											<code>
-												<pre>
-a {
-    color: #FFFFFF;
-    font-family: OpenSans-Semibold;
-    font-size: 16px
-    line-height: 28px;
-}
-a.disabled {
-    color: #8E8E8E;
-}
-
-</pre>
-											</code>
-
-											<h5>Icon</h5>
-											<code>
-												<pre>
-.icon {
-    color: #FFFFFF;
-    height: 14px;
-    width: 14px;
-}
-</pre>
-											</code>
-
-											<h5>Error message</h5>
-											<code>
-												<pre>
-p.error-message {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-											</code>
-
-										</div>
+										{% include code-dropdown.html componentName="primary-text-button-field" %}
 
 									</div>
 
@@ -998,133 +847,7 @@ p.error-message {
 											</div>
 										</div>
 
-										<button class="element-design component closed">
-											<div class="content-wrapper">
-												<p>HTML/CSS Styles</p>
-											</div>
-											<div role="none" class="float-button">
-												<div tabindex="-1" class="float-button-content">
-													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-														</svg></div><span class="sr-only">Button toggle current accordion</span>
-												</div>
-											</div>
-										</button>
-
-										<div class="element-code">
-
-											<h5>Label</h5>
-
-											<code>
-												<pre>
-label {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-
-</pre>
-											</code>
-											<h5>Text field</h5>
-											<code>
-												<pre>
-input {
-    height: 52px;
-    padding: 10px;
-    border: solid 1px #495C74;
-}
-input:focus {
-    outline: none;
-    border: solid 3px #254F90;
-}
-input.error {
-    border: solid 3px #D2201E;
-}
-input.disabled {
-    border: solid 1px #E2E2E2;
-    background-color: #F5F5F5;
-}
-
-</pre>
-											</code>
-
-											<h5>Secondary button container</h5>
-											<code>
-												<pre>
-.secondary-button {
-    background: #FFFFFF;
-    border: 2px solid #4569A0;
-    border-radius: 6px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    padding: 10px 24px;
-    text-align: center;
-}
-.secondary-button:hover {
-   background: #254F90;
-   color: #FFFFFF;
-   border: 2px solid #254F90;
-}
-.secondary-button:active {
-   background: #18335C;
-   border: 2px solid #254F90;
-}
-.secondary-button.disabled {
-    border: 2px solid #C7C7C7;
-    text-align: center;
-    background: #FFFFFF;
-    box-shadow:none;
-}
-
-</pre>
-											</code>
-
-											<h5>Secondary button text</h5>
-											<code>
-												<pre>
-a {
-    color: #4569A0;
-    font-family: OpenSans-Semibold;
-    font-size: 16px
-    line-height: 28px;
-}
-a:hover {
-    color: #FFFFFF;
-}
-a.disabled {
-    color: #8E8E8E;
-}
-
-</pre>
-											</code>
-
-											<h5>Icon</h5>
-											<code>
-												<pre>
-.icon {
-    color: #FFFFFF;
-    height: 14px;
-    width: 14px;
-}
-</pre>
-											</code>
-
-											<h5>Error message</h5>
-											<code>
-												<pre>
-p.error-message {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 28px;
-}
-</pre>
-											</code>
-
-										</div>
+										{% include code-dropdown.html componentName="secondary-text-button-field" %}
 
 									</div>
 
@@ -1208,7 +931,7 @@ p.error-message {
 
 									<button class="element-design component closed">
 										<div class="content-wrapper">
-											<p>HTML/CSS Styles</p>
+											<p>CSS Styles</p>
 										</div>
 										<div role="none" class="float-button">
 											<div tabindex="-1" class="float-button-content">
@@ -1334,34 +1057,7 @@ p.error-message {
 											</div>
 										</div>
 
-										<button class="element-design component closed">
-											<div class="content-wrapper">
-												<p>HTML/CSS Styles</p>
-											</div>
-											<div role="none" class="float-button">
-												<div tabindex="-1" class="float-button-content">
-													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-														</svg></div><span class="sr-only">Button toggle current accordion</span>
-												</div>
-											</div>
-										</button>
-
-										<div class="element-code">
-											<h4>Help text</h4>
-											<code>
-												<pre>
-p.help-text {
-    color: #666666;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 24px;
-    padding-bottom: 16px;
-}
-</pre>
-											</code>
-
-										</div>
+										{% include code-dropdown.html componentName="text-box-inline-help-simple" %}
 
 									</div>
 
@@ -1403,8 +1099,8 @@ p.help-text {
 													<!-- Component content -->
 
 													<label for="contextual-complex" class="form-text-box-label">Text box label</label>
-													<div class="help-wrapper complex">
-														<p class="contextual-help" id="contextual-example-1">How to work out your input credits</p>
+													<div class="help-wrapper complex" tabindex="0">
+														<p class="contextual-help" id="contextual-example-1"><span>How to work out your input credits</span></p>
 														<div class="complex-answer" id="contextual-answer-1">
 															<p>First work out the lesser of the following two amounts, then divide that amount by three.</p>
 															<p>Expenditure in acquiring or producing credit inputs and energy inputs for which you have claimed the incentive, to the extent that it is reasonably attributable to the production of the relevant output (expenditure).</p>
@@ -1420,179 +1116,79 @@ p.help-text {
 											</div>
 										</div>
 
-										<button class="element-design component closed">
-											<div class="content-wrapper">
-												<p>HTML/CSS Styles</p>
-											</div>
-											<div role="none" class="float-button">
-												<div tabindex="-1" class="float-button-content">
-													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-														</svg></div><span class="sr-only">Button toggle current accordion</span>
-												</div>
-											</div>
-										</button>
-
-										<div class="element-code">
-
-											<h4>Help text link</h4>
-											<code>
-												<pre>
-.help-link {
-    color: #4569A0;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 24px;
-    text-decoration: underline;
-}
-</pre>
-											</code>
-
-											<h4>Arrow icon</h4>
-											<code>
-												<pre>
-.icon {
-    color: #4569A0;
-    height: 12px;
-    width: 8px;
-}
-</pre>
-											</code>
-
-											<h4>Help details</h4>
-											<code>
-												<pre>
-.help-details {
-    color: #333333;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 24px;
-    border-left: solid 2px #254F90;
-    padding-left: 8px;
-}
-</pre>
-											</code>
-
-
-										</div>
+									{% include code-dropdown.html componentName="text-box-inline-help-complex" %}
 
 									</div>
 
 								</div>
 
 
-								<h3>Error summary</h3>
+								<h3>Warning notification</h3>
 								<div class="design-system-card component">
+
+									<div class="responsive-toggle-container">
+										<p class="toggle-name">Design view: <label class="switch">
+												<input type="checkbox">
+												<span class="slider"></span>
+												<span class="switch-text-mobile"></span>
+												<span class="switch-text-desktop"></span>
+											</label></p>
+
+										<div class="mobile-only">
+											<h5>Mobile design</h5>
+											<p>Desktop designs can be viewed on screens wider than 650px.</p>
+										</div>
+
+									</div>
 
 									<div class="design-system-card-content">
 
-										<div class="form-elements">
+										<div class="example-wrapper white-back">
+											<div class="example">
+												<div class="notification notification-warning">
+													<div class="notification-info-container">
 
-											<div class="example-wrapper white-back">
-
-												<div class="example form-example-container">
-
-													<!-- Component content -->
-
-													<div class="notification notification-warning">
-														<div class="example notification-info-container">
-
-															<div class="notification-wrapper">
-																<div class="notification-icon">
-																	<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
-																		<g id="Group_7871" data-name="Group 7871" transform="translate(-3210 -867)">
-																			<circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3210 867)" fill="#e75755"></circle>
-																			<g id="Group_7573" data-name="Group 7573" transform="translate(3224.631 880.679)">
-																				<path id="Path" d="M12.932,0a1.453,1.453,0,0,0-1.19.706L.192,20.181a1.375,1.375,0,0,0,0,1.408,1.455,1.455,0,0,0,1.254.7h23.1a1.455,1.455,0,0,0,1.254-.7,1.375,1.375,0,0,0,0-1.408L14.248.707A1.456,1.456,0,0,0,12.932,0Z" fill="#fff"></path>
-																				<g id="Group_117" data-name="Group 117" transform="translate(11.375 6.609)">
-																					<path id="Shape" d="M1.995,1.256A1.149,1.149,0,0,1,1,2.512,1.149,1.149,0,0,1,0,1.256,1.149,1.149,0,0,1,1,0a1.15,1.15,0,0,1,1,1.256Z" transform="translate(0.51 9.38)" fill="#d2201e"></path>
-																					<path id="Path-2" data-name="Path" d="M3.009,1.255A1.308,1.308,0,0,0,2.68.527,1.568,1.568,0,0,0,.36.5a1.315,1.315,0,0,0-.355.756,1.21,1.21,0,0,0,0,.226L.627,7.633A.72.72,0,0,0,.881,8.1a.957.957,0,0,0,.626.224.967.967,0,0,0,.575-.184.732.732,0,0,0,.3-.512l.622-6.151A1.2,1.2,0,0,0,3.009,1.255Z" transform="translate(0 0)" fill="#d2201e"></path>
-																				</g>
+														<div class="notification-wrapper">
+															<div class="notification-icon">
+																<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+																	<g id="Group_7871" data-name="Group 7871" transform="translate(-3210 -867)">
+																		<circle id="Ellipse_22" data-name="Ellipse 22" cx="28" cy="28" r="28" transform="translate(3210 867)" fill="#e75755" />
+																		<g id="Group_7573" data-name="Group 7573" transform="translate(3224.631 880.679)">
+																			<path id="Path" d="M12.932,0a1.453,1.453,0,0,0-1.19.706L.192,20.181a1.375,1.375,0,0,0,0,1.408,1.455,1.455,0,0,0,1.254.7h23.1a1.455,1.455,0,0,0,1.254-.7,1.375,1.375,0,0,0,0-1.408L14.248.707A1.456,1.456,0,0,0,12.932,0Z" fill="#fff" />
+																			<g id="Group_117" data-name="Group 117" transform="translate(11.375 6.609)">
+																				<path id="Shape" d="M1.995,1.256A1.149,1.149,0,0,1,1,2.512,1.149,1.149,0,0,1,0,1.256,1.149,1.149,0,0,1,1,0a1.15,1.15,0,0,1,1,1.256Z" transform="translate(0.51 9.38)" fill="#d2201e" />
+																				<path id="Path-2" data-name="Path" d="M3.009,1.255A1.308,1.308,0,0,0,2.68.527,1.568,1.568,0,0,0,.36.5a1.315,1.315,0,0,0-.355.756,1.21,1.21,0,0,0,0,.226L.627,7.633A.72.72,0,0,0,.881,8.1a.957.957,0,0,0,.626.224.967.967,0,0,0,.575-.184.732.732,0,0,0,.3-.512l.622-6.151A1.2,1.2,0,0,0,3.009,1.255Z" transform="translate(0 0)" fill="#d2201e" />
 																			</g>
 																		</g>
-																	</svg>
-																</div>
-																<div class="notification-content">
-																	<p>The following issue(s) must be corrected before you can continue.</p>
-																	<ul>
-																		<li>Critical error that needs to be fixed</li>
-																		<li>Another thing that needs to be fixed before you can continue</li>
-																	</ul>
-																</div>
+																	</g>
+																</svg>
 
+															</div>
+															<div class="notification-content">
+																<p>Warning alerts contain information on errors that the user needs to know.</p>
+																<ul>
+																	<li>Critical error that needs to be fixed</li>
+																	<li>Another thing that needs to be fixed before you can continue</li>
+																</ul>
 															</div>
 
 														</div>
 
 													</div>
 												</div>
-												<br />
-												<p class="note"><strong>Note:</strong> An error summary can be used when a form that contains errors is submitted. The error summary should never replace error states and messaging on each form field.</p>
 											</div>
 
+											<br />
+											<p class="note"><strong>Note:</strong> An error summary can be used when a form that contains errors is submitted. The error summary should never replace error states and messaging on each form field.</p>
 										</div>
 
+										{% include code-dropdown.html componentName="form-warning-notification" %}
 
-										<button class="element-design component closed">
-											<div class="content-wrapper">
-												<p>HTML/CSS Styles</p>
-											</div>
-											<div role="none" class="float-button">
-												<div tabindex="-1" class="float-button-content">
-													<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-															<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-														</svg></div><span class="sr-only">Button toggle current accordion</span>
-												</div>
-											</div>
-										</button>
 
-										<div class="element-code">
-
-											<h5>Paragraph</h5>
-											<code>
-												<pre>
-p {
-    color: #D2201E;
-    font-family: OpenSans;
-    font-size: 16px;
-    line-height: 28px;
-}
-
-</pre>
-											</code>
-
-											<h5>Warning icon</h5>
-											<code>
-												<pre>
-.icon-warning {
-    color: #254F90;
-    background: #FFFFFF;
-    width: 40px;
-    height: 40px;
-}
-
-</pre>
-											</code>
-
-											<h5>Container</h5>
-											<code>
-												<pre>
-div {
-    background-color: #FCE9E9;
-    border-top: 4px solid #F5B5B5;
-    padding: 16px;
-    border-radius: 0;
-}
-</pre>
-											</code>
-
-										</div>
 
 									</div>
 
 								</div>
-
-
 
 							</div>
 

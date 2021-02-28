@@ -4062,6 +4062,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .example-wrapper .example { display: table; margin: 0 auto; }
 
+.design-system-card.component .example-wrapper .example.radio-example { max-width: 350px; display: block; }
+
 .design-system-card.component .example-wrapper .example.full-width { width: 100%; }
 
 .design-system-card.component .example-wrapper .example.align-example-left { margin: 0; }
@@ -4091,22 +4093,6 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card.component .float-button .float-button-content { width: 48px; height: 48px; float: right; }
 
 .design-system-card.component .float-button .BgaIcon.open { transform: scaleY(-1); }
-
-.design-system-card.foundation { box-shadow: none; }
-
-.design-system-card.foundation .element-design { border: 1px solid #D8D8D8; padding: 24px 24px 16px 24px; overflow: auto; position: relative; min-height: 96px; /* .example { width: -webkit-calc(100% - 48px); width: -moz-calc(100% - 48px); width: calc(100% - 48px); float: left; padding-right: 16px; } */ }
-
-@media (max-width: 600px) { .design-system-card.foundation .element-design { padding: 24px 8px; } }
-
-.design-system-card.foundation .element-design .float-button { width: 48px; padding-left: 8px; position: absolute; top: -webkit-calc(50% - 24px); top: -moz-calc(50% - 24px); top: calc(50% - 24px); right: 24px; }
-
-@media (max-width: 600px) { .design-system-card.foundation .element-design .float-button { right: 8px; } }
-
-.design-system-card.foundation .element-design .float-button .float-button-content { width: 48px; height: 48px; }
-
-.design-system-card.foundation .element-design .float-button .BgaIcon.open { transform: scaleY(-1); }
-
-.design-system-card.foundation .element-design .float-button .BgaIcon { fill: #333333; }
 
 .design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; border-top: solid 4px #254F90; }
 
@@ -4256,6 +4242,10 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .help-wrapper p, .design-system-card .form-elements .form-example-container .help-wrapper li { font-size: 14px; line-height: 24px; padding-bottom: 16px; color: #666666; }
 
+.design-system-card .form-elements .form-example-container .help-wrapper.complex:focus { outline: none; }
+
+.design-system-card .form-elements .form-example-container .help-wrapper.complex:focus span { border: 1px dotted #748fb8; }
+
 .design-system-card .form-elements .form-example-container .help-wrapper.complex .contextual-help { cursor: pointer; color: #4569A0; text-decoration: underline; padding: 0 0 0 0; margin-bottom: 16px; }
 
 .design-system-card .form-elements .form-example-container .help-wrapper.complex .contextual-help:before { content: url(../assets/BGAIcon-chevron-right-sml.svg); margin: 0 8px 0 4px; display: inline-block; }
@@ -4329,6 +4319,10 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container .checkbox-item:last-of-type { margin-bottom: 0; }
 
 .design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"] { opacity: 0; width: 0; height: 28px; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:checked + label:before { background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important; background-size: 16px 12px !important; background-position: center center !important; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:focus + label:before { border: 3px solid #254F90; }
 
 .design-system-card .form-elements .form-example-container .checkbox-item label { position: relative; padding-left: 42px; cursor: pointer; display: inline-block; padding-bottom: 0; }
 
@@ -4498,9 +4492,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="focus-state"] .combo-button-wrapper #secondary-combo { background: #254F90 url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
-.design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item[data-state="focus-state"] input + label { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
-
-.design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item[data-state="focus-state"] input + label:before { background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
+.design-system-card .form-elements .form-example-container[data-state="focus-state"] .checkbox-item[data-state="focus-state"] input + label:before { border: 3px solid #254F90; background: none; }
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] .error-message { display: none; }
 
@@ -4555,6 +4547,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] #datepicker .input-group .input-group-addon { border: solid 1px #E2E2E2 !important; border-left: none; background: #F5F5F5 url(../assets/BGAIcon-calendar-grey.svg) no-repeat center center; }
 
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] #datepicker .datepicker { display: none !important; }
+
+.design-system-card .form-elements .form-example-container .radio-item { display: flex; align-items: center; }
 
 .design-system-card .form-elements .form-example-container .radio-item[data-state="default-state"] { border: solid 1px #495C74; }
 
@@ -5308,9 +5302,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .cta-button { box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; }
 
-.design-system-card .buttons-links .primary-button .primary-container { display: flex; }
+.design-system-card .buttons-links .primary-button .primary-container { display: flex; align-items: center; justify-content: center; }
 
-.design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; margin: 0 16px; display: flex; }
+.design-system-card .buttons-links .primary-button .primary-container .button-wrapper { margin: 8px 16px; }
+
+@media (max-width: 768px) { .design-system-card .buttons-links .primary-button .primary-container { flex-direction: column; } }
+
+.design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; display: flex; }
 
 .design-system-card .buttons-links .primary-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; padding-left: 6px; }
 
@@ -5334,9 +5332,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .primary-dark-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; border-color: #18335C; }
 
-.design-system-card .buttons-links .secondary-button .secondary-container { display: flex; }
+.design-system-card .buttons-links .secondary-button .secondary-container { display: flex; align-items: center; justify-content: center; }
 
-.design-system-card .buttons-links .secondary-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; margin: 0 16px; display: flex; }
+.design-system-card .buttons-links .secondary-button .secondary-container .button-wrapper { margin: 8px 16px; }
+
+@media (max-width: 768px) { .design-system-card .buttons-links .secondary-button .secondary-container { flex-direction: column; } }
+
+.design-system-card .buttons-links .secondary-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; display: flex; }
 
 .design-system-card .buttons-links .secondary-button .cta-button:focus, .design-system-card .buttons-links .secondary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #18335C; color: #ffffff; }
 
@@ -5349,6 +5351,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .buttons-links .secondary-button .cta-button .svg-container svg { min-width: 16px; fill: #254f90; }
 
 .design-system-card .buttons-links .secondary-dark-button .secondary-container { display: flex; }
+
+.design-system-card .buttons-links .secondary-dark-button .secondary-container .button-wrapper { margin: 0 16px; }
 
 .design-system-card .buttons-links .secondary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; margin: 0 16px; display: flex; }
 
@@ -5544,9 +5548,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .notification .notification-content p { padding-bottom: 16px; }
 
-.design-system-card .notification .notification-content p:last-of-type { padding-bottom: 0; }
-
 .design-system-card .notification .notification-content.with-close { padding-right: 16px; }
+
+.design-system-card .notification .notification-content:last-child { padding-bottom: 0; }
+
+.design-system-card .notification .notification-content ul li:last-of-type { padding-bottom: 0; }
 
 .design-system-card .notification .notification-close { margin-top: 0px; background: url(../assets/BGAIcon-close.svg) no-repeat; background-size: 16px 16px; height: 16px; min-width: 16px; width: 16px; position: absolute; top: 16px; right: 16px; }
 
@@ -5558,7 +5564,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .notification .notification-content, .design-system-card .mobile-media-query .notification .notification-content { padding: 16px 0 0 0; flex: 1 0 100%; /*&.with-close { padding: 8px 16px 0 16px; }*/ }
 
-.design-system-card .mobile-example .notification .notification-content p, .design-system-card .mobile-media-query .notification .notification-content p { font-size: 14px; }
+.design-system-card .mobile-example .notification .notification-content p, .design-system-card .mobile-example .notification .notification-content li, .design-system-card .mobile-media-query .notification .notification-content p, .design-system-card .mobile-media-query .notification .notification-content li { font-size: 14px; }
 
 .design-system-card .modal-example .modal-example-content { padding: 32px; border-radius: 0; background: #ffffff; border-top: 4px solid #4569A0; position: relative; margin: 0 auto; }
 
@@ -5584,7 +5590,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mini-list .mini-list-item .title-container:hover .title, .design-system-card .mini-list .mini-list-item .title-container:focus .title { text-decoration: underline; }
 
-.design-system-card .mini-list .mini-list-item .svg-container { display: flex; align-items: center; justify-content: center; }
+.design-system-card .mini-list .mini-list-item .svg-container { display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 
 .design-system-card .mini-list .mini-list-item .svg-container.tick-svg { width: 32px; height: 32px; align-self: flex-start; }
 
@@ -5859,6 +5865,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .variation-select-wrapper select.variation-set:focus { outline: none; border: solid 1px #254F90 !important; }
 
 .variation-select-wrapper select.variation-set[type="text"] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
+
+@media (max-width: 640px) { .variation-select-wrapper select.variation-set { width: 250px; } }
 
 .variation-select-wrapper select::-ms-expand { display: none !important; }
 
