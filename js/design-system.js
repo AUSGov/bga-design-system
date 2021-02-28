@@ -841,7 +841,7 @@ $(document).ready(function () {
 	// Tabs component functionality
 	$(".nav-link").on("click", function (e) {
 		e.preventDefault();
-		const tabAncestors = $(this).parents('.tabs-component');
+		var tabAncestors = $(this).parents('.tabs-component');
 		$(tabAncestors[0]).find('.tab-section').hide();
 
 		var active_section = "." + $(this).attr("href");
