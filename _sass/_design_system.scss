@@ -1898,20 +1898,33 @@
 
 		label {
 			font-size: 32px;
-			@include font-format($font-family, $font-semibold, normal);
+			font-weight: 400;
 			margin: 0 16px 0 0;
 		}
 
 		input {
 			margin: 0 0 16px 0;
 			color: $white;
+			border: solid 1px $white;
+			padding: 6px;
+			background: #43679F;
+			height: 52px;
+			@include font-format($font-family, $font-regular, normal);
+
+			&::placeholder {
+				color: $grey-lightest;
+				font-weight: 400;
+				font-size: 32px;
+			}
+
+			&#postcode {
+				width: 90px;
+			}
 
 			&:focus {
-				border: solid 2px $white;
-
-				&::placeholder {
-					color: transparent !important;
-				}
+				border: none;
+				background: $grey-lightest;
+				color: $blue-active;
 			}
 		}
 
@@ -1980,22 +1993,19 @@
 
 				input {
 					color: $blue-primary;
-					border-bottom: solid $red-negative-dark 2px;
+					border: solid $red-negative-dark 2px;
+					background: $grey-lightest;
 
 					&::placeholder {
-						color: #7983aa;
+						color: $blue-active;
+
 					}
 
 					&:focus {
-						border: solid $red-negative-dark 2px;
-					}
-
-					&:active {
-						background-color: $blue-active;
-						color: $white;
-						border-color: $white;
-						transform: translateY(-0.125rem);
-						box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2);
+						//border: solid $red-negative-dark 2px;
+						// border: none;
+						background: $grey-lightest;
+						color: $blue-active;
 					}
 				}
 
@@ -2025,7 +2035,11 @@
 
 			input,
 			select {
-				width: 250px;
+				width: 300px;
+
+				option {
+					color: #333;
+				}
 			}
 
 			&[data-state="focus-state"] {
@@ -2068,10 +2082,11 @@
 
 					input {
 						color: $blue-primary;
-						border-bottom: solid $red-negative-dark 2px;
+						border: solid $red-negative-dark 2px;
+						background: $grey-lightest;
 
 						&::placeholder {
-							color: #7983aa;
+							color: $blue-active;
 						}
 
 						&:focus {
@@ -5504,6 +5519,80 @@
 				}
 			}
 		}
+	}
+
+	/* Pros and cons */
+	.pros-and-cons {
+		h3 {
+			line-height: 28px;
+		}
+
+		.description {
+			padding-bottom: 48px;
+			font-weight: normal;
+		}
+
+		.icon-link {
+			background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center;
+			height: 32px;
+		}
+
+		.pros-and-cons-container {
+			height: auto;
+			max-width: 100%;
+			background: $white;
+			border: none;
+			display: flex !important;
+			flex-wrap: wrap;
+
+			.pros,
+			.cons {
+				border: 1px solid $grey-light;
+				border-top: 4px solid $green-positive-dark;
+				width: 50%;
+				padding: 16px 32px 32px 32px;
+				h3 {
+					padding-bottom: 32px;
+				}
+
+				li:last-of-type {
+					padding-bottom: 0;
+				}
+			}
+
+			.cons {
+				border-left: none;
+				border-top: 4px solid $red-dark;
+			}
+
+			.icon {
+				margin-bottom: 16px;
+				width: 100%;
+				text-align: center;
+			}
+
+		}
+	}
+
+	.mobile-example .pros-and-cons,
+	.mobile-media-query .pros-and-cons {
+		.pros-and-cons-container {
+			display: block;
+
+			h3 {
+				line-height: 30px;
+			}
+
+			.pros,
+			.cons {
+				box-sizing: border-box;
+				width: 100%;
+				display: block;
+				padding: 16px 24px 24px 24px;
+				border-left: 1px solid #D8D8D8;
+			}
+		}
+
 	}
 
 	.header-example {
