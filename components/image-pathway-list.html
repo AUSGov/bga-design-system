@@ -66,8 +66,8 @@ longdesc: Provide a standard pathway to content with a supporting image.
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper">
-                            <div class="image-pathway">
-                                <div class="example image-list-container">
+                            <div class="example image-pathway">
+                                <div class="image-list-container">
                                     <img src={{ "assets/feature-image.jpg" | relative_url }} alt="" class="responsive-img"/>
                                     <div class="image-list-text">
                                     <p class="label">Label</p>
@@ -80,26 +80,7 @@ longdesc: Provide a standard pathway to content with a supporting image.
 
                         </div>
 
-                        <div class="element-design component closed">
-                            <div class="content-wrapper">
-                                <p>HTML/CSS Styles</p>
-                            </div>
-                            <button role="none" tabindex="-1" class="float-button">
-                                <div tabindex="-1" class="float-button-content">
-                                    <div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-                                            <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                                        </svg></div><span class="sr-only">Button toggle current accordion</span>
-                                </div>
-                            </button>
-
-                        </div>
-                            
-
-                        <div class="element-code image-pathway-code">
-
-                            {% include tab-component.html %}
-
-                        </div>
+                                   {% include code-dropdown.html componentName="image-pathway" %}
 
          
                         
