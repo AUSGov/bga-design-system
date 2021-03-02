@@ -5320,7 +5320,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .primary-button .cta-button:hover:active, .design-system-card .buttons-links .primary-button .cta-button:focus:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
 
-.design-system-card .buttons-links .primary-dark-button .primary-container { display: flex; }
+.design-system-card .buttons-links .primary-dark-button .primary-container { display: flex; align-items: center; justify-content: center; }
+
+.design-system-card .buttons-links .primary-dark-button .primary-container .button-wrapper { margin: 8px 16px; }
+
+@media (max-width: 768px) { .design-system-card .buttons-links .primary-dark-button .primary-container { flex-direction: column; } }
 
 .design-system-card .buttons-links .primary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #254F90; margin: 0 16px; display: flex; }
 
@@ -5352,9 +5356,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .secondary-button .cta-button .svg-container svg { min-width: 16px; fill: #254f90; }
 
-.design-system-card .buttons-links .secondary-dark-button .secondary-container { display: flex; }
+.design-system-card .buttons-links .secondary-dark-button .secondary-container { display: flex; align-items: center; justify-content: center; }
 
-.design-system-card .buttons-links .secondary-dark-button .secondary-container .button-wrapper { margin: 0 16px; }
+.design-system-card .buttons-links .secondary-dark-button .secondary-container .button-wrapper { margin: 8px 16px; }
+
+@media (max-width: 768px) { .design-system-card .buttons-links .secondary-dark-button .secondary-container { flex-direction: column; } }
 
 .design-system-card .buttons-links .secondary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; margin: 0 16px; display: flex; }
 
