@@ -6211,9 +6211,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .coming-soon .coming-soon-label p { display: block; width: 100%; padding: 16px 0px; margin-top: 80px; background: rgba(102, 102, 102, 0.85); color: #ffffff; opacity: 1; text-align: center; font-size: 21px; }
 
 /* Tables in page content */
-.body-copy h3.icon-set-heading { padding: 16px 0 0 12px; }
+.body-copy { /*.example { h1, h2, h3 { padding: 0; } }*/ }
 
-.body-copy .example h1, .body-copy .example h2, .body-copy .example h3 { padding: 0; }
+.body-copy h3.icon-set-heading { padding: 16px 0 0 12px; }
 
 .body-copy .media-player a { transition: none; color: unset; box-shadow: none; background-color: none; border: none; }
 
