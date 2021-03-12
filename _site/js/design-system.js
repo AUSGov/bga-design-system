@@ -914,7 +914,7 @@ $(document).ready(function () {
 		$temp.val(svgCode).select();
 		document.execCommand("copy");
 		$temp.remove();
-		$(this).focus().blur();
+		$(".example.copied").focus().blur();
 		});
 
 

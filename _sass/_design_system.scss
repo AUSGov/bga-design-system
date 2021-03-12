@@ -4421,7 +4421,7 @@
 			transition-duration: 0.4s, 0.4s;
 			transition-timing-function: ease, ease;
 			transition-delay: 0s, 0s;
-			width: fit-content;
+			width: auto;
 			display: block;
 			margin: 0 auto;
 
@@ -4479,13 +4479,17 @@
 				color: $white;
 				@include font-format($font-family, $font-semibold, normal);
 				display: flex;
+				align-items: center;
+				justify-content: center;
 
 
 				.svg-container {
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					padding-left: 6px;
+					margin-left: 6px;
+					height: 16px;
+					width: 16px;
 
 					svg {
 						min-width: 16px;
@@ -4513,7 +4517,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				
+
 				.button-wrapper {
 					margin: 8px 16px;
 				}
@@ -4528,14 +4532,17 @@
 				background: $white 0% 0% no-repeat padding-box;
 				border: 2px solid $blue-primary;
 				color: $blue-primary;
-				margin: 0 16px;
 				display: flex;
+				align-items: center;
+				justify-content: center;
 
 				.svg-container {
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					padding-left: 6px;
+					margin-left: 6px;
+					height: 16px;
+					width: 16px;
 
 					svg {
 						min-width: 16px;
@@ -4586,6 +4593,8 @@
 				border: 2px solid $blue-primary-mid;
 				color: $blue-primary-mid;
 				display: flex;
+				align-items: center;
+				justify-content: center;
 
 				&:focus,
 				&:hover {
@@ -4610,7 +4619,9 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					padding-left: 6px;
+					margin-left: 6px;
+					height: 16px;
+					width: 16px;
 
 					svg {
 						min-width: 16px;
@@ -4625,7 +4636,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				
+
 				.button-wrapper {
 					margin: 8px 16px;
 				}
@@ -4640,8 +4651,9 @@
 				background: $blue-primary-mid 0% 0% no-repeat padding-box;
 				border: 2px solid $white;
 				color: $white;
-				margin: 0 16px;
 				display: flex;
+				align-items: center;
+				justify-content: center;
 
 				&:hover,
 				&:focus {
@@ -4660,7 +4672,9 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					padding-left: 6px;
+					margin-left: 6px;
+					height: 16px;
+					width: 16px;
 
 					svg {
 						min-width: 16px;
@@ -6121,10 +6135,15 @@
 					&:focus {
 						cursor: pointer;
 						outline: none;
+						
+						.svg-icon-container {
+							border-color: #254f90;
+						}
 
 						.copy-icon-code {
 							background: #254f90;
 							color: $white;
+							border-color: #254f90;
 						}
 
 						span {
@@ -6998,14 +7017,14 @@
 		padding: 16px 0 0 12px;
 	}
 
-	.example {
+	/*.example {
 
 		h1,
 		h2,
 		h3 {
 			padding: 0;
 		}
-	}
+	}*/
 
 	.media-player a {
 		transition: none;

@@ -5292,7 +5292,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links h4 { padding-bottom: 16px; }
 
-.design-system-card .buttons-links .button-wrapper { transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; width: fit-content; display: block; margin: 0 auto; }
+.design-system-card .buttons-links .button-wrapper { transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; width: auto; display: block; margin: 0 auto; }
 
 .design-system-card .buttons-links .button-wrapper:hover { transform: translateY(-0.1875rem); }
 
@@ -5310,9 +5310,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 768px) { .design-system-card .buttons-links .primary-button .primary-container { flex-direction: column; } }
 
-.design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; display: flex; }
+.design-system-card .buttons-links .primary-button .cta-button { background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; display: flex; align-items: center; justify-content: center; }
 
-.design-system-card .buttons-links .primary-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; padding-left: 6px; }
+.design-system-card .buttons-links .primary-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; margin-left: 6px; height: 16px; width: 16px; }
 
 .design-system-card .buttons-links .primary-button .cta-button .svg-container svg { min-width: 16px; fill: #fff; }
 
@@ -5326,9 +5326,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 768px) { .design-system-card .buttons-links .primary-dark-button .primary-container { flex-direction: column; } }
 
-.design-system-card .buttons-links .primary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #254F90; margin: 0 16px; display: flex; }
+.design-system-card .buttons-links .primary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #254F90; color: #254F90; display: flex; align-items: center; justify-content: center; }
 
-.design-system-card .buttons-links .primary-dark-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; padding-left: 6px; }
+.design-system-card .buttons-links .primary-dark-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; margin-left: 6px; height: 16px; width: 16px; }
 
 .design-system-card .buttons-links .primary-dark-button .cta-button .svg-container svg { min-width: 16px; fill: #254f90; }
 
@@ -5344,7 +5344,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 768px) { .design-system-card .buttons-links .secondary-button .secondary-container { flex-direction: column; } }
 
-.design-system-card .buttons-links .secondary-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; display: flex; }
+.design-system-card .buttons-links .secondary-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; display: flex; align-items: center; justify-content: center; }
 
 .design-system-card .buttons-links .secondary-button .cta-button:focus, .design-system-card .buttons-links .secondary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #18335C; color: #ffffff; }
 
@@ -5352,7 +5352,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .secondary-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; color: #ffffff; border-color: #18335C; }
 
-.design-system-card .buttons-links .secondary-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; padding-left: 6px; }
+.design-system-card .buttons-links .secondary-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; margin-left: 6px; height: 16px; width: 16px; }
 
 .design-system-card .buttons-links .secondary-button .cta-button .svg-container svg { min-width: 16px; fill: #254f90; }
 
@@ -5362,13 +5362,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 768px) { .design-system-card .buttons-links .secondary-dark-button .secondary-container { flex-direction: column; } }
 
-.design-system-card .buttons-links .secondary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; margin: 0 16px; display: flex; }
+.design-system-card .buttons-links .secondary-dark-button .cta-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; display: flex; align-items: center; justify-content: center; }
 
 .design-system-card .buttons-links .secondary-dark-button .cta-button:hover, .design-system-card .buttons-links .secondary-dark-button .cta-button:focus { background: #254F90 0% 0% no-repeat padding-box; border: 2px solid #ffffff; color: #ffffff; }
 
 .design-system-card .buttons-links .secondary-dark-button .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; border-color: #18335C; }
 
-.design-system-card .buttons-links .secondary-dark-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; padding-left: 6px; }
+.design-system-card .buttons-links .secondary-dark-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; margin-left: 6px; height: 16px; width: 16px; }
 
 .design-system-card .buttons-links .secondary-dark-button .cta-button .svg-container svg { min-width: 16px; fill: #fff; }
 
@@ -5874,7 +5874,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.no-header .design-system-card-content .icons .example:hover, .design-system-card.no-header .design-system-card-content .icons .example:focus { cursor: pointer; outline: none; }
 
-.design-system-card.no-header .design-system-card-content .icons .example:hover .copy-icon-code, .design-system-card.no-header .design-system-card-content .icons .example:focus .copy-icon-code { background: #254f90; color: #ffffff; }
+.design-system-card.no-header .design-system-card-content .icons .example:hover .svg-icon-container, .design-system-card.no-header .design-system-card-content .icons .example:focus .svg-icon-container { border-color: #254f90; }
+
+.design-system-card.no-header .design-system-card-content .icons .example:hover .copy-icon-code, .design-system-card.no-header .design-system-card-content .icons .example:focus .copy-icon-code { background: #254f90; color: #ffffff; border-color: #254f90; }
 
 .design-system-card.no-header .design-system-card-content .icons .example:hover span svg path, .design-system-card.no-header .design-system-card-content .icons .example:focus span svg path { fill: #ffffff; }
 
@@ -6209,9 +6211,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .coming-soon .coming-soon-label p { display: block; width: 100%; padding: 16px 0px; margin-top: 80px; background: rgba(102, 102, 102, 0.85); color: #ffffff; opacity: 1; text-align: center; font-size: 21px; }
 
 /* Tables in page content */
-.body-copy h3.icon-set-heading { padding: 16px 0 0 12px; }
+.body-copy { /*.example { h1, h2, h3 { padding: 0; } }*/ }
 
-.body-copy .example h1, .body-copy .example h2, .body-copy .example h3 { padding: 0; }
+.body-copy h3.icon-set-heading { padding: 16px 0 0 12px; }
 
 .body-copy .media-player a { transition: none; color: unset; box-shadow: none; background-color: none; border: none; }
 
