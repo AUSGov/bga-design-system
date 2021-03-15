@@ -6684,6 +6684,14 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component.page-pattern .example-wrapper .example.topic-page-container #spot-04 { top: 43.4%; left: 6%; }
 
+.design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-01 { top: 23.5%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-02 { top: 29.5%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-03 { top: 42%; left: 6.7%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-04 { top: 49%; left: 6.7%; }
+
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.mobile-example { display: block; }
 
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.desktop-example { display: none; }
@@ -6757,5 +6765,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-03, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-03 { top: 44%; left: 4%; }
 
 .design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-04, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-04 { top: 55%; left: 6%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.category-page-container #spot-01, .design-system-card.component.page-pattern .mobile-media-query .example.category-page-container #spot-01 { top: 13%; left: 0%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.category-page-container #spot-02, .design-system-card.component.page-pattern .mobile-media-query .example.category-page-container #spot-02 { top: 25%; left: 0%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.category-page-container #spot-03, .design-system-card.component.page-pattern .mobile-media-query .example.category-page-container #spot-03 { top: 53.5%; left: 6%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.category-page-container #spot-04, .design-system-card.component.page-pattern .mobile-media-query .example.category-page-container #spot-04 { top: 62%; left: 6%; }
 
 /*# sourceMappingURL=main.css.map */
