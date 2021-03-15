@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*! Bootstrap v4.0.0-beta.2 (https://getbootstrap.com) Copyright 2011-2017 The Bootstrap Authors Copyright 2011-2017 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 :root { --blue: #007bff; --breakpoint-lg: 1200px; --breakpoint-md: 900px; --breakpoint-sm: 480px; --breakpoint-xs: 0; --cyan: #17a2b8; --danger: #dc3545; --dark: #343a40; --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace; --font-family-sans-serif: "Open Sans", sans-serif; --gray: #6c757d; --gray-dark: #343a40; --green: #28a745; --indigo: #6610f2; --info: #17a2b8; --light: #f8f9fa; --orange: #ffd964; --pink: #e83e8c; --primary: #254f90; --purple: #6f42c1; --red: #dc3545; --secondary: #4569a0; --success: #28a745; --teal: #20c997; --warning: #ffc107; --white: #fff; --yellow: #ffc107; }
+		"Liberation Mono", "Courier New", monospace; --font-family-sans-serif: "Open Sans", sans-serif; --gray: #6c757d; --gray-dark: #343a40; --green: #28a745; --indigo: #6610f2; --info: #17a2b8; --light: #f8f9fa; --orange: #ffd964; --pink: #e83e8c; --primary: #254f90; --purple: #6f42c1; --red: #dc3545; --secondary: #4569a0; --success: #28a745; --teal: #20c997; --warning: #ffc107; --white: #fff; --yellow: #ffc107; }
 
 @media print { *, :after, :before { -webkit-box-shadow: none !important; box-shadow: none !important; text-shadow: none !important; } a:not(.btn) { text-decoration: underline; } abbr[title]:after { content: " (" attr(title) ")"; } pre { white-space: pre-wrap !important; } blockquote, pre { border: 1px solid #adb5bd; page-break-inside: avoid; } thead { display: table-header-group; } img, tr { page-break-inside: avoid; } h2, h3, p { orphans: 3; widows: 3; } h2, h3 { page-break-after: avoid; } @page { size: a3; } .container, body { min-width: 1200px !important; } .navbar { display: none; } .badge { border: 1px solid #000; } .table { border-collapse: collapse !important; } .table td, .table th { background-color: #fff !important; } .table-bordered td, .table-bordered th { border: 1px solid #dee2e6 !important; } .table-dark { color: inherit; } .table-dark tbody + tbody, .table-dark td, .table-dark th, .table-dark thead th { border-color: #dee2e6; } .table .thead-dark th { border-color: #dee2e6; color: inherit; } }
 
@@ -2518,6 +2518,8 @@ div.chat-later a { color: #fff; text-decoration: none; }
 .body-copy ol li ul, .body-copy ul li ul { margin-bottom: 0; padding-bottom: 0; }
 
 .body-copy .body-copy-list-dot li:before, .body-copy ul li:before { content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3E%3Ccircle fill='%23c18100' cx='8' cy='8' r='4'/%3E%3C/svg%3E"); height: 100%; vertical-align: middle; width: 1rem; }
+
+.body-copy ul ul li:before { content: "¯" !important; height: 100%; margin-top: 7px; font-weight: 600; color: #666; }
 
 .body-copy .body-copy-list-tick li:before { content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23c18100' d='M0 9.937l1.901-1.935 3.354 3.362 8.86-8.855 1.918 1.905L5.255 15.192z'/%3E%3C/svg%3E"); height: 100%; line-height: 2rem; top: -0.0625rem; vertical-align: middle; width: 1rem; }
 
@@ -6646,6 +6648,10 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component.page-pattern .example-wrapper img { border: solid 1px #C7C7C7; }
 
+.design-system-card.component.page-pattern .example-wrapper img.mobile-example { display: none; }
+
+.design-system-card.component.page-pattern .example-wrapper img.desktop-example { display: block; }
+
 .design-system-card.component.page-pattern .example-wrapper .example { position: relative; }
 
 .design-system-card.component.page-pattern .example-wrapper .example .spot { position: absolute; cursor: pointer; }
@@ -6669,6 +6675,18 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-05 { top: 52%; left: 8%; }
 
 .design-system-card.component.page-pattern .example-wrapper .example.checklist-container #spot-06 { top: 40%; left: 69%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.topic-page-container #spot-01 { top: 22.5%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.topic-page-container #spot-02 { top: 28.5%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.topic-page-container #spot-03 { top: 38%; left: 6%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.topic-page-container #spot-04 { top: 43.4%; left: 6%; }
+
+.design-system-card.component.page-pattern .example-wrapper.mobile-example img.mobile-example { display: block; }
+
+.design-system-card.component.page-pattern .example-wrapper.mobile-example img.desktop-example { display: none; }
 
 .design-system-card.component.page-pattern .page-pattern-rules { padding: 24px; }
 
@@ -6718,6 +6736,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 900px) { .design-system-card.component.page-pattern .example-wrapper .example .spot a { width: 28px; height: 28px; font-size: 13.5px; } .design-system-card.component.page-pattern .example-wrapper .example .spot p { min-height: 27px; font-size: 13.5px; } }
 
+@media (max-width: 650px) { .design-system-card.component.page-pattern .example-wrapper img.mobile-example { display: block; } .design-system-card.component.page-pattern .example-wrapper img.desktop-example { display: none; } }
+
 .design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-01, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-01 { top: 5%; left: 4%; }
 
 .design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-02, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-02 { top: 17%; left: 4%; }
@@ -6729,5 +6749,13 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-05, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-05 { top: 65%; left: 18%; }
 
 .design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-06, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-06 { top: 93.5%; left: 0%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-01, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-01 { top: 13%; left: 0%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-02, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-02 { top: 20%; left: 0%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-03, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-03 { top: 44%; left: 4%; }
+
+.design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-04, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-04 { top: 55%; left: 6%; }
 
 /*# sourceMappingURL=main.css.map */
