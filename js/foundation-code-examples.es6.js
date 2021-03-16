@@ -1641,6 +1641,9 @@ const radioButtonsCss =
 .form-field-container .radio-button {
   margin: 0 0 16px 0;
 } 
+.form-field-container .radio-button:last-of-type {
+  margin-bottom: 0;
+}
 </pre>
 </code>
 
