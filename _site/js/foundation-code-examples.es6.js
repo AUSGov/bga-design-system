@@ -1833,6 +1833,9 @@ const checkboxCss =
   display: table;
   width: fit-content;
 }
+.form-field-container .checkbox:last-of-type {
+  margin-bottom: 0;
+}
 </pre>
 </code>
 
