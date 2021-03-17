@@ -6960,6 +6960,20 @@
 .grey-border {
 	border: 1px solid $grey-light;
 }
+a.header {
+    margin-left: 14px;
+    font-size: 28px;
+    text-decoration: none;
+    color: $white;
+    
+    &:hover, &:focus {
+        colour: $white;
+        text-decoration: underline;
+    }
+    strong {
+        font-weight: 600;
+    }
+}
 
 .adobe-link,
 .example-link {
