@@ -4717,6 +4717,7 @@ const audioPlayerCss =
   margin-right: 32px;
   vertical-align: middle;
   border-style: none;
+  flex-shrink: 0;
 }
 .audio-player-banner.graphic img.hide-image {
   display: none;
@@ -9673,6 +9674,7 @@ const globalHeaderCss =
 .global-header .navbar-level-three .active .nav-item a,
 .global-header .navbar-level-three .active .nav-item span {
   background-color: #020a21 !important;
+  color: #fff;
 }
 .global-header .navbar-level-three .nav-item span,
 .global-header .navbar-level-three .nav-item a {

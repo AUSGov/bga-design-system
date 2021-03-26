@@ -11267,8 +11267,8 @@ screen and (-ms-high-contrast: none) {
 .body-copy .body-copy-list-tick li:before {
 	content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23c18100' d='M0 9.937l1.901-1.935 3.354 3.362 8.86-8.855 1.918 1.905L5.255 15.192z'/%3E%3C/svg%3E");
 	height: 100%;
-	line-height: 2rem;
 	top: -0.0625rem;
+	height: 1rem;
 	vertical-align: middle;
 	width: 1rem;
 }
