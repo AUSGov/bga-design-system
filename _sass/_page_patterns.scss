@@ -126,6 +126,30 @@
 
 				}
 
+				// Category page
+				&.category-page-container {
+					#spot-01 {
+						top: 23.5%;
+						left: 4%;
+					}
+
+					#spot-02 {
+						top: 29.5%;
+						left: 4%;
+					}
+
+					#spot-03 {
+						top: 42%;
+						left: 6.7%;
+					}
+
+					#spot-04 {
+						top: 49%;
+						left: 6.7%;
+					}
+
+				}
+
 			}
 
 			&.mobile-example {
@@ -364,6 +388,31 @@
 
 			#spot-04 {
 				top: 55%;
+				left: 6%;
+			}
+
+		}
+
+		// Category page
+		.mobile-example .example.category-page-container,
+		.mobile-media-query .example.category-page-container {
+			#spot-01 {
+				top: 13%;
+				left: 0%;
+			}
+
+			#spot-02 {
+				top: 25%;
+				left: 0%;
+			}
+
+			#spot-03 {
+				top: 53.5%;
+				left: 6%;
+			}
+
+			#spot-04 {
+				top: 62%;
 				left: 6%;
 			}
 

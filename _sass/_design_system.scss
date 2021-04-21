@@ -160,6 +160,7 @@
 
 				&.full-width {
 					width: 100%;
+					display: block;
 				}
 
 				&.align-example-left {
@@ -3498,6 +3499,12 @@
 					width: 100%;
 					border-bottom: solid 1px $grey-light;
 
+					td:first-of-type {
+						&:hover {
+							cursor: pointer;
+						}
+					}
+
 					td {
 						background: $grey-lighter;
 
@@ -3603,6 +3610,13 @@
 				display: table;
 				width: 100%;
 				border-bottom: solid 1px $grey-light;
+
+				td:first-of-type {
+					&:hover {
+						cursor: pointer;
+					}
+				}
+
 
 				td {
 					background: $grey-lighter;
@@ -3759,6 +3773,7 @@
 					margin-right: 32px;
 					vertical-align: middle;
 					border-style: none;
+					flex-shrink: 0;
 
 					&.hide-image {
 						display: none;

@@ -4717,6 +4717,7 @@ const audioPlayerCss =
   margin-right: 32px;
   vertical-align: middle;
   border-style: none;
+  flex-shrink: 0;
 }
 .audio-player-banner.graphic img.hide-image {
   display: none;
