@@ -4006,7 +4006,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 /*# sourceMappingURL=bootstrap-datepicker3.css.map */
 /* Design system styles */
-.design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); width: auto; /* Mini-list */ /* Pros and cons */ }
+.design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); width: auto; /* Mini-list */ /* Pros and cons */ /* Guide Page Header */ /* Containers */ }
 
 .design-system-card.extra-wide { max-width: 1000px; }
 
@@ -4582,7 +4582,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .dynamic-form-elements label { font-size: 32px; font-weight: 400; margin: 0 16px 0 0; }
 
-.design-system-card .dynamic-form-elements input { margin: 0 0 16px 0; color: #ffffff; border: solid 1px #ffffff; padding: 6px; background: #43679F; height: 52px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
+.design-system-card .dynamic-form-elements input { margin: 0 0 16px 0; color: #ffffff; border: solid 1px #ffffff; padding: 6px; background: #43679f; height: 52px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
 
 .design-system-card .dynamic-form-elements input::placeholder { color: #F5F5F5; font-weight: 400; font-size: 32px; }
 
@@ -5584,6 +5584,16 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mini-list { width: 100%; height: auto; }
 
+.design-system-card .mini-list.mini-list-yellow { max-width: 768px; }
+
+.design-system-card .mini-list.mini-list-yellow .mini-list-item .title-container { background: #fff3cf; }
+
+.design-system-card .mini-list.mini-list-yellow .mini-list-item .content-container { background: #ffeeb9; }
+
+.design-system-card .mini-list.mini-list-yellow .mini-list-item .title-container:hover, .design-system-card .mini-list.mini-list-yellow .mini-list-item .title-container:focus, .design-system-card .mini-list.mini-list-yellow .mini-list-item.active .title-container { background: #ffeeb9; }
+
+.design-system-card .mini-list.mini-list-yellow .tick-svg svg path, .design-system-card .mini-list.mini-list-yellow .arrow-svg svg path { fill: #333; }
+
 .design-system-card .mini-list .mini-list-item { margin-bottom: 4px; }
 
 .design-system-card .mini-list .mini-list-item.active .title-container { background: #d5e2f2; outline: none; }
@@ -5658,7 +5668,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .pros-and-cons .pros-and-cons-container h3, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container h3 { line-height: 30px; }
 
-.design-system-card .mobile-example .pros-and-cons .pros-and-cons-container .pros, .design-system-card .mobile-example .pros-and-cons .pros-and-cons-container .cons, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container .pros, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container .cons { box-sizing: border-box; width: 100%; display: block; padding: 16px 24px 24px 24px; border-left: 1px solid #D8D8D8; }
+.design-system-card .mobile-example .pros-and-cons .pros-and-cons-container .pros, .design-system-card .mobile-example .pros-and-cons .pros-and-cons-container .cons, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container .pros, .design-system-card .mobile-media-query .pros-and-cons .pros-and-cons-container .cons { box-sizing: border-box; width: 100%; display: block; padding: 16px 24px 24px 24px; border-left: 1px solid #d8d8d8; }
 
 .design-system-card .header-example img.desktop-example { display: block; }
 
@@ -5893,6 +5903,36 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card.no-header .design-system-card-content .icons span { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
 
 .design-system-card.no-header .design-system-card-links { background: #ffffff; }
+
+.design-system-card .guide-page-header { height: auto; display: flex; align-content: center; justify-content: center; background: #ffe492; padding: 48px 30px; box-sizing: border-box; margin: 0 -40px !important; /* Text */ /* svg image */ /* Media queries */ }
+
+.design-system-card .guide-page-header .guide-page-header-content { max-width: 1140px; display: flex; align-content: center; justify-content: center; color: #333; font-family: "Open Sans", sans-serif; }
+
+.design-system-card .guide-page-header .guide-page-header-content-left { width: 66.666667%; padding-right: 30px; }
+
+.design-system-card .guide-page-header .guide-page-header-content-right { position: relative; display: flex; width: 33.333333%; align-content: center; justify-content: center; }
+
+.design-system-card .guide-page-header .title { font-size: 44px; line-height: 1.27; padding: 0 0 32px 0; margin: 0; font-weight: 600; }
+
+.design-system-card .guide-page-header .description { font-size: 18px; line-height: 30px; margin: 0; padding: 0; }
+
+.design-system-card .guide-page-header .svg-image { align-items: center; display: flex; justify-content: center; width: 350px; margin: auto; }
+
+@media (max-width: 992px) { .design-system-card .guide-page-header .guide-page-header-content-left, .design-system-card .guide-page-header .guide-page-header-content-right { width: 50%; } }
+
+@media (max-width: 767px) { .design-system-card .guide-page-header .guide-page-header-content-right { display: none; } .design-system-card .guide-page-header .guide-page-header-content-left { width: 100%; } .design-system-card .guide-page-header .guide-page-header-content-left { margin-right: 0px; } }
+
+@media (max-width: 576px) { .design-system-card .guide-page-header { padding: 32px 30px 48px 30px; } .design-system-card .guide-page-header .title { font-size: 32px; line-height: 1.14; } .design-system-card .guide-page-header .description { font-size: 16px; line-height: 28px; } }
+
+.design-system-card .mobile-example .guide-page-header, .design-system-card .mobile-media-query .guide-page-header { margin: 0 auto !important; /* Media queries */ padding: 32px 30px 48px 30px; }
+
+.design-system-card .mobile-example .guide-page-header .guide-page-header-content-right, .design-system-card .mobile-media-query .guide-page-header .guide-page-header-content-right { display: none; }
+
+.design-system-card .mobile-example .guide-page-header .guide-page-header-content-left, .design-system-card .mobile-media-query .guide-page-header .guide-page-header-content-left { width: 100%; margin-right: 0px; }
+
+.design-system-card .mobile-example .guide-page-header .title, .design-system-card .mobile-media-query .guide-page-header .title { font-size: 32px; line-height: 1.14; }
+
+.design-system-card .mobile-example .guide-page-header .description, .design-system-card .mobile-media-query .guide-page-header .description { font-size: 16px; line-height: 28px; }
 
 .variation-select-wrapper { border: 1px solid #D8D8D8; border-bottom: none; background: #ffffff; padding: 16px 24px; text-align: left; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #4569A0; }
 
