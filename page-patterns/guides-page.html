@@ -1,0 +1,823 @@
+---
+layout: content
+title: Guides page pattern
+breadcrumb1: Components
+url1: topic-components.html
+breadcrumb2:
+url2:
+longdesc: A checklist pattern for presenting an end to end journey in logical steps.
+
+---
+<div class="main-section">
+	<div>
+		<div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+			<div class="row">
+				<div class="anchor-col col-12 col-sm-4 col-md-3 col-lg-2 col-xl-3">
+					<div>
+						<div>
+							<div class="anchor-menu" data-reactroot="">
+								<div class="sticky-container">
+									<div>
+										<h5 class="sticky-list-head">On this page</h5>
+										<ul>
+											<li><a href="" aria-label="Page anatomy">Page anatomy</a></li>
+											<li><a href="" aria-label="Checklist specific compponents">Checklist specific components</a></li>
+											<li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
+											<li><a href="" aria-label="Examples">Examples</a></li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-9">
+
+					<!-- PAGE ANATOMY -->
+					<div class="anchor-section" name="page-anatomy"><a href="" id="page-anatomy" aria-label="Page anatomy"></a>
+
+						<div class="c-padding-top">
+							<div class="body-copy">
+								<div>
+									<div class="body-copy-headline col-12">
+										<h2>Page anatomy</h2>
+									</div>
+									<hr />
+								</div>
+								<div class="body-copy-content">
+
+									<p>The checklist pattern consists of a list of numbered items and a 'save progress' feature. The items open to reveal sub-items with checkboxes allowing users to track their progress through the list.</p>
+
+
+									<div class="design-system-card component page-pattern extra-wide">
+
+										<div class="responsive-toggle-container">
+											<p class="toggle-name">Design view: <label class="switch">
+													<input type="checkbox">
+													<span class="slider"></span>
+													<span class="switch-text-mobile"></span>
+													<span class="switch-text-desktop"></span>
+												</label></p>
+
+											<div class="mobile-only">
+												<h5>Mobile design</h5>
+												<p>Desktop designs can be viewed on screens wider than 650px.</p>
+											</div>
+
+										</div>
+
+										<div class="design-system-card-content">
+
+											<div class="example-wrapper white-back">
+												<div class="">
+													<div class="example checklist-container">
+
+														<img class="responsive-img-no-margin desktop-example" src={{ "assets/page-pattern-checklist-desktop.png" | relative_url }} />
+
+														<img class="responsive-img-no-margin mobile-example" src={{ "assets/page-pattern-checklist-mobile.png" | relative_url }} />
+
+														<div class="spots">
+															<div class="spot" id="spot-01">
+																<div class="spot-subwrapper">
+																	<a>1</a>
+																	<p>Header - page title</p>
+																</div>
+															</div>
+
+															<div class="spot" id="spot-02">
+																<div class="spot-subwrapper">
+																	<a>2</a>
+																	<p>Header - supporting text</p>
+																</div>
+															</div>
+
+															<div class="spot" id="spot-03">
+																<div class="spot-subwrapper">
+																	<a>3</a>
+																	<p>Numbered checklist item</p>
+																</div>
+															</div>
+
+															<div class="spot" id="spot-04">
+																<div class="spot-subwrapper">
+																	<a>4</a>
+																	<p>&#39;Tips&#39; sub-item</p>
+																</div>
+															</div>
+
+															<div class="spot" id="spot-05">
+																<div class="spot-subwrapper">
+																	<a>5</a>
+																	<p>&#39;Must do&#39; sub-item</p>
+																</div>
+															</div>
+
+															<div class="spot" id="spot-06">
+																<div class="spot-subwrapper">
+																	<a>6</a>
+																	<p>Save progress feature</p>
+																</div>
+															</div>
+
+														</div>
+
+
+													</div>
+												</div>
+
+											</div>
+
+
+										</div>
+
+										<div class="page-pattern-rules">
+
+											<div class="rules-accordion">
+												<div class="example rules-accordion-container">
+
+													<div role="tablist" class=" accordion-group anchor-section-full-width">
+
+														<div class="rules-accordion-header">
+															<h3>Rules</h3>
+
+															<div class="rules-accordion-group-toggle">
+																<div role="button" tabindex="0" aria-label="button Open all items in rules accordion" class="rules-accordion-group-toggle-content">
+																	<h5>Open all</h5>
+																	<div class="chevron"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 16 10">
+																			<g transform="translate(16 10) rotate(180)">
+																				<path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#666" />
+																			</g>
+																		</svg></div><span class="sr-only">button toggle all accordions</span>
+																</div>
+															</div>
+														</div>
+
+														<!-- Item 1 -->
+														<div id="rule-1" class="rules-accordion-item">
+															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+
+																<div class="rules-accordion-item-tile-inner">
+
+																	<h5 class=""><span>1</span>Header - page title</h5>
+
+																	<div class="chevron">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+																			<g transform="translate(16 10) rotate(180)">
+																				<path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+																			</g>
+																		</svg>
+																	</div>
+
+
+																</div>
+
+																<div class="rules-accordion-item-content">
+																	<div class="body-copy" aria-label="accordion content">
+																		<p>A direct, short title focused on the main action the user will complete on the page. </p>
+																		<ul>
+																			<li>Maximum character limit of 50.</li>
+																		</ul>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+
+														<!-- Item 2 -->
+														<div id="rule-2" class="rules-accordion-item">
+															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+																<div class="rules-accordion-item-tile-inner">
+
+																	<h5 class=""><span>2</span>Header - supporting text</h5>
+
+																	<div class="chevron">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+																			<g transform="translate(16 10) rotate(180)">
+																				<path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+																			</g>
+																		</svg>
+																	</div>
+
+
+																</div>
+																<div class="rules-accordion-item-content">
+																	<div class="body-copy" aria-label="accordion content">
+																		<p>A short paragraph that expands on what the checklist is about.</p>
+																		<ul>
+																			<li>The supporting text should explain the end to end process the checklist is for.</li>
+																			<li>Maximum character limit of 90.</li>
+																			<li>Include the top three keywords for the page.</li>
+																		</ul>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+
+														<!-- Item 3 -->
+														<div id="rule-3" class="rules-accordion-item">
+															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+																<div class="rules-accordion-item-tile-inner">
+
+																	<h5 class=""><span>3</span>Numbered checklist item</h5>
+
+																	<div class="chevron">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+																			<g transform="translate(16 10) rotate(180)">
+																				<path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+																			</g>
+																		</svg>
+																	</div>
+
+
+																</div>
+																<div class="rules-accordion-item-content">
+																	<div class="body-copy" aria-label="accordion content">
+																		<p>Item titles should be short, action oriented statements that make it clear at a high-level what the user needs to do.</p>
+
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+
+														<!-- Item 4 -->
+														<div id="rule-4" class="rules-accordion-item">
+															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+																<div class="rules-accordion-item-tile-inner">
+
+																	<h5 class=""><span>4</span> &#39;Tips&#39; sub&#45;item</h5>
+
+																	<div class="chevron">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+																			<g transform="translate(16 10) rotate(180)">
+																				<path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+																			</g>
+																		</svg>
+																	</div>
+
+
+																</div>
+																<div class="rules-accordion-item-content">
+																	<div class="body-copy" aria-label="accordion content">
+																		<p>Recommended content that users should consider.</p>
+																		<ul>
+																			<li>These sub&#45;items are not checkable.</li>
+																			<li>Actions are not legally required.</li>
+
+																		</ul>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+
+														<!-- Item 5 -->
+														<div id="rule-5" class="rules-accordion-item">
+															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+																<div class="rules-accordion-item-tile-inner">
+
+																	<h5 class=""><span>5</span> &#39;Must do&#39; sub&#45;item</h5>
+
+																	<div class="chevron">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+																			<g transform="translate(16 10) rotate(180)">
+																				<path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+																			</g>
+																		</svg>
+																	</div>
+
+
+																</div>
+																<div class="rules-accordion-item-content">
+																	<div class="body-copy" aria-label="accordion content">
+																		<p>A direct, short title focused on the main action the user will complete on the page. </p>
+																		<ul>
+																			<li>These sub&#45;items are checkable, users can mark them as done.</li>
+																			<li>Actions are legally required.</li>
+																		</ul>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+
+														<!-- Item 6 -->
+														<div id="rule-6" class="rules-accordion-item">
+															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+																<div class="rules-accordion-item-tile-inner">
+
+																	<h5 class=""><span>6</span>Save progress feature</h5>
+
+																	<div class="chevron">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+																			<g transform="translate(16 10) rotate(180)">
+																				<path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+																			</g>
+																		</svg>
+																	</div>
+
+
+																</div>
+																<div class="rules-accordion-item-content">
+																	<div class="body-copy" aria-label="accordion content">
+																		<p>Provides users with the ability to save a link to the checklist.</p>
+																		<ul>
+																			<li>Title and description in this box should stay the same across checklists</li>
+																		</ul>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+
+
+											</div>
+
+										</div>
+
+
+
+									</div>
+
+
+								</div>
+
+
+							</div>
+
+						</div>
+
+
+						<!-- COMPONENTS -->
+
+						<div class="anchor-section" name="checklist-specific-components"><a href="" id="checklist-specific-components"></a>
+
+							<div class="body-copy">
+								<div>
+
+									<h2>Guide specific components</h2>
+
+									<hr />
+								</div>
+								<div class="body-copy-content">
+
+
+
+									<h3>Checklist items</h3>
+									<div class="design-system-card component extra-wide">
+
+										<div class="responsive-toggle-container">
+											<p class="toggle-name">Design view: <label class="switch">
+													<input type="checkbox">
+													<span class="slider"></span>
+													<span class="switch-text-mobile"></span>
+													<span class="switch-text-desktop"></span>
+												</label></p>
+
+											<div class="mobile-only">
+												<h5>Mobile design</h5>
+												<p>Desktop designs can be viewed on screens wider than 650px.</p>
+											</div>
+
+										</div>
+
+										<div class="design-system-card-content">
+
+											<div class="example-wrapper white-back">
+													<div class="example full-width mini-list mini-list-yellow">
+														<div class="mini-list-container">
+
+															<div class="mini-list">
+																<div class="mini-list-item">
+																	<div class="title-container" tabindex="0">
+																		<div class="svg-container tick-svg">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+																				<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+																					<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+																					<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+																						<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+																					</g>
+																				</g>
+																			</svg>
+																		</div>
+																		<h3 class="title">Know our decision for closing your business, such as financial or personel circumstances</h3>
+																		<div class="svg-container arrow-svg">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+																				<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+																			</svg>
+																		</div>
+																	</div>
+																	<div class="content-container">
+																		<div class="content">
+																			<ul>
+																				<li>
+																					Lorem ipsum dolor sit amet
+																				</li>
+																				<li>
+																					Cras varius ligula eros, id vestibulum sem consectetur ut.
+																				</li>
+																			</ul>
+																			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
+																		</div>
+																	</div>
+																</div>
+																<div class="mini-list-item">
+																	<div class="title-container" tabindex="0">
+																		<div class="svg-container tick-svg">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+																				<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+																					<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+																					<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+																						<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+																					</g>
+																				</g>
+																			</svg>
+																		</div>
+																		<h3 class="title">Get professional advice from an accountant or business adviser</h3>
+																		<div class="svg-container arrow-svg">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+																				<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+																			</svg>
+																		</div>
+																	</div>
+																	<div class="content-container">
+																		<div class="content">
+																			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. <a href="#">In suscipit rutrum maximus.</a></p>
+																		</div>
+																	</div>
+																</div>
+																<div class="mini-list-item">
+																	<div class="title-container" tabindex="0">
+																		<div class="svg-container tick-svg">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+																				<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+																					<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+																					<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+																						<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+																					</g>
+																				</g>
+																			</svg>
+																		</div>
+																		<h3 class="title">Set your date to officially close your business</h3>
+																		<div class="svg-container arrow-svg">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+																				<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+																			</svg>
+																		</div>
+																	</div>
+																	<div class="content-container">
+																		<div class="content">
+																			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. <a>In suscipit rutrum maximus.</a></p>
+
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+
+											</div>
+
+											{% include code-dropdown.html componentName="guide-mini-list" %}
+
+										</div>
+
+									</div>
+
+									<h3>Guides accordion</h3>
+									<div class="design-system-card component extra-wide">
+
+										<div class="responsive-toggle-container">
+											<p class="toggle-name">Design view: <label class="switch">
+													<input type="checkbox">
+													<span class="slider"></span>
+													<span class="switch-text-mobile"></span>
+													<span class="switch-text-desktop"></span>
+												</label></p>
+
+											<div class="mobile-only">
+												<h5>Mobile design</h5>
+												<p>Desktop designs can be viewed on screens wider than 650px.</p>
+											</div>
+
+										</div>
+
+										<div class="design-system-card-content">
+
+											<div class="example-wrapper white-back">
+												<div class="example full-width guide-accordion-group">
+            <div class="accordion-group-toggle">
+               <!-- Toggle 'all-open' class with js when clicked-->  
+               <div tabindex="0" class="accordion-group-toggle-content">     
+                  <!-- Toggle 'open/close' text with js when button is clicked--> 
+                  <span class="title">Open all</span>   
+                  <div class="arrow-icon">
+                     <svg width="16" height="16">
+                        <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                     </svg>
+                  </div>         
+                  </div>
+                  </div>
+                  <div class="guide-accordion guide-accordion-green active">
+                     <div class="guide-accordion-tile" tabindex="0">
+                        <div class="guide-accordion-image">
+                           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 135"><path d="M115,114.57H.6a.61.61,0,0,1,0-1.21H115a.61.61,0,0,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M115,104H.6a.61.61,0,0,1,0-1.21H115a.61.61,0,0,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M249.2,114.57H135a.61.61,0,0,1,0-1.21H249.2a.61.61,0,0,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M249.2,104H135a.61.61,0,0,1,0-1.21H249.2a.61.61,0,0,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M7.84,87.24H1.31a.6.6,0,0,1-.61-.6V78a.6.6,0,0,1,.61-.6H7.84a.6.6,0,0,1,.6.6v8.62A.6.6,0,0,1,7.84,87.24ZM1.91,86H7.23V78.63H1.91Z" style="fill:#90bfbf"></path><path d="M20.39,87.24H13.86a.6.6,0,0,1-.6-.6V78a.6.6,0,0,1,.6-.6h6.53A.61.61,0,0,1,21,78v8.62A.61.61,0,0,1,20.39,87.24ZM14.47,86h5.32V78.63H14.47Z" style="fill:#90bfbf"></path><path d="M33,87.24H26.42a.6.6,0,0,1-.61-.6V78a.6.6,0,0,1,.61-.6H33a.6.6,0,0,1,.6.6v8.62A.6.6,0,0,1,33,87.24ZM27,86h5.32V78.63H27Z" style="fill:#90bfbf"></path><path d="M7.84,70.31H1.31a.6.6,0,0,1-.61-.6V61.09a.61.61,0,0,1,.61-.61H7.84a.61.61,0,0,1,.6.61v8.62A.6.6,0,0,1,7.84,70.31ZM1.91,69.1H7.23V61.69H1.91Z" style="fill:#90bfbf"></path><path d="M20.39,70.31H13.86a.6.6,0,0,1-.6-.6V61.09a.61.61,0,0,1,.6-.61h6.53a.62.62,0,0,1,.61.61v8.62A.61.61,0,0,1,20.39,70.31ZM14.47,69.1h5.32V61.69H14.47Z" style="fill:#90bfbf"></path><path d="M33,70.31H26.42a.6.6,0,0,1-.61-.6V61.09a.61.61,0,0,1,.61-.61H33a.61.61,0,0,1,.6.61v8.62A.6.6,0,0,1,33,70.31ZM27,69.1h5.32V61.69H27Z" style="fill:#90bfbf"></path><path d="M7.84,53.37H1.31a.6.6,0,0,1-.61-.6V44.15a.6.6,0,0,1,.61-.6H7.84a.6.6,0,0,1,.6.6v8.62A.6.6,0,0,1,7.84,53.37Zm-5.93-1.2H7.23V44.76H1.91Z" style="fill:#90bfbf"></path><path d="M20.39,53.37H13.86a.6.6,0,0,1-.6-.6V44.15a.6.6,0,0,1,.6-.6h6.53a.61.61,0,0,1,.61.6v8.62A.61.61,0,0,1,20.39,53.37Zm-5.92-1.2h5.32V44.76H14.47Z" style="fill:#90bfbf"></path><path d="M33,53.37H26.42a.6.6,0,0,1-.61-.6V44.15a.6.6,0,0,1,.61-.6H33a.6.6,0,0,1,.6.6v8.62A.6.6,0,0,1,33,53.37ZM27,52.17h5.32V44.76H27Z" style="fill:#90bfbf"></path><path d="M38.77,37.22H.81a.6.6,0,1,1,0-1.2H38L36.6,31.2H.6A.61.61,0,0,1,.6,30H37.06a.6.6,0,0,1,.58.44l1.71,6a.55.55,0,0,1-.1.52A.57.57,0,0,1,38.77,37.22Z" style="fill:#90bfbf"></path><path d="M17,28.39a.61.61,0,0,1-.61-.61V5.89a.61.61,0,0,1,.85-.56l38,16.81a.62.62,0,0,1,.31.8.61.61,0,0,1-.8.3L17.58,6.81v21A.6.6,0,0,1,17,28.39Z" style="fill:#90bfbf"></path><path d="M56.75,48.68a.61.61,0,0,1-.6-.61V23.5H16.91a.61.61,0,0,1,0-1.21H56.75a.6.6,0,0,1,.61.6V48.07A.61.61,0,0,1,56.75,48.68Z" style="fill:#90bfbf"></path><path d="M37.4,60.06a.6.6,0,0,1-.6-.61V36.69a.6.6,0,1,1,1.2,0V59.45A.6.6,0,0,1,37.4,60.06Z" style="fill:#90bfbf"></path><path d="M37.4,99.5a.6.6,0,0,1-.6-.6V71A.6.6,0,0,1,38,71V98.9A.6.6,0,0,1,37.4,99.5Z" style="fill:#90bfbf"></path><path d="M69.94,83.9H41.48a.61.61,0,0,1,0-1.21H69.94a.61.61,0,1,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M69.94,90.73H41.48a.61.61,0,0,1,0-1.21H69.94a.61.61,0,1,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M69.94,97.56H41.48a.61.61,0,0,1,0-1.21H69.94a.61.61,0,1,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M75.57,100.77a.6.6,0,0,1-.61-.6V82.69a.61.61,0,0,1,1.21,0v17.48A.6.6,0,0,1,75.57,100.77Z" style="fill:#90bfbf"></path><path d="M81,100.77a.6.6,0,0,1-.61-.6V82.69a.61.61,0,0,1,1.21,0v17.48A.6.6,0,0,1,81,100.77Z" style="fill:#90bfbf"></path><path d="M97.2,100.77a.6.6,0,0,1-.61-.6V82.69a.61.61,0,0,1,1.21,0v17.48A.6.6,0,0,1,97.2,100.77Z" style="fill:#90bfbf"></path><path d="M91.79,100.77a.6.6,0,0,1-.6-.6V82.69a.6.6,0,1,1,1.2,0v17.48A.6.6,0,0,1,91.79,100.77Z" style="fill:#90bfbf"></path><path d="M86.38,100.77a.6.6,0,0,1-.6-.6V82.69a.61.61,0,0,1,1.21,0v17.48A.6.6,0,0,1,86.38,100.77Z" style="fill:#90bfbf"></path><path d="M75.57,48A.61.61,0,0,1,75,47.4V26.31a.61.61,0,1,1,1.21,0V47.4A.6.6,0,0,1,75.57,48Z" style="fill:#90bfbf"></path><path d="M81,48a.61.61,0,0,1-.61-.61V26.31a.61.61,0,1,1,1.21,0V47.4A.6.6,0,0,1,81,48Z" style="fill:#90bfbf"></path><path d="M97.2,48a.61.61,0,0,1-.61-.61V26.31a.61.61,0,1,1,1.21,0V47.4A.6.6,0,0,1,97.2,48Z" style="fill:#90bfbf"></path><path d="M91.79,48a.6.6,0,0,1-.6-.61V26.31a.6.6,0,1,1,1.2,0V47.4A.6.6,0,0,1,91.79,48Z" style="fill:#90bfbf"></path><path d="M86.38,48a.6.6,0,0,1-.6-.61V26.31a.61.61,0,1,1,1.21,0V47.4A.61.61,0,0,1,86.38,48Z" style="fill:#90bfbf"></path><path d="M102.42,48.34a.6.6,0,0,1-.6-.6V23.43H71.22V47.54a.61.61,0,0,1-1.21,0V22.83a.6.6,0,0,1,.6-.61h31.81a.6.6,0,0,1,.6.61V47.74A.6.6,0,0,1,102.42,48.34Z" style="fill:#90bfbf"></path><path d="M190.21,98.43h-8.64a.61.61,0,0,1-.61-.61V89.25A.57.57,0,0,1,181,89a5.43,5.43,0,0,1,4.9-3,5.27,5.27,0,0,1,4.84,3,.59.59,0,0,1,.05.23v8.57A.6.6,0,0,1,190.21,98.43Zm-8-1.21h7.43V89.39a4.08,4.08,0,0,0-3.68-2.21,4.22,4.22,0,0,0-3.75,2.22Z" style="fill:#90bfbf"></path><path d="M204.64,98.43H196a.61.61,0,0,1-.61-.61V89.25a.57.57,0,0,1,.06-.25,5.43,5.43,0,0,1,4.9-3,5.27,5.27,0,0,1,4.84,3,.59.59,0,0,1,.05.23v8.57A.6.6,0,0,1,204.64,98.43Zm-8-1.21H204V89.39a4.08,4.08,0,0,0-3.68-2.21,4.22,4.22,0,0,0-3.75,2.22Z" style="fill:#90bfbf"></path><path d="M219.07,98.43h-8.64a.61.61,0,0,1-.61-.61V89.25a.57.57,0,0,1,.06-.25,5.43,5.43,0,0,1,4.9-3,5.27,5.27,0,0,1,4.84,3,.59.59,0,0,1,0,.23v8.57A.6.6,0,0,1,219.07,98.43Zm-8-1.21h7.43V89.39a4.08,4.08,0,0,0-3.68-2.21A4.22,4.22,0,0,0,211,89.4Z" style="fill:#90bfbf"></path><path d="M190.21,49.34a.6.6,0,0,1-.61-.6v-.53A4.08,4.08,0,0,0,185.92,46a4.24,4.24,0,0,0-3.75,2.21v.53a.61.61,0,0,1-1.21,0v-.67a.57.57,0,0,1,.06-.25,5.43,5.43,0,0,1,4.9-3,5.29,5.29,0,0,1,4.84,3,.69.69,0,0,1,.05.24v.67A.6.6,0,0,1,190.21,49.34Z" style="fill:#90bfbf"></path><path d="M204.94,51.22a.6.6,0,0,1-.61-.6V48.21A4.08,4.08,0,0,0,200.65,46a4.25,4.25,0,0,0-3.75,2.21v.53a.6.6,0,1,1-1.2,0v-.67a.56.56,0,0,1,.05-.25,5.45,5.45,0,0,1,4.9-3,5.29,5.29,0,0,1,4.84,3,.52.52,0,0,1,0,.24v2.55A.6.6,0,0,1,204.94,51.22Z" style="fill:#90bfbf"></path><path d="M219.07,57.25h-8.64a.61.61,0,0,1-.61-.61V48.07a.57.57,0,0,1,.06-.25,5.43,5.43,0,0,1,4.9-3,5.29,5.29,0,0,1,4.84,3,.69.69,0,0,1,0,.24v8.57A.6.6,0,0,1,219.07,57.25ZM211,56h7.43V48.21A4.08,4.08,0,0,0,214.78,46,4.24,4.24,0,0,0,211,48.21Z" style="fill:#90bfbf"></path><path d="M219.07,77.84h-8.64a.61.61,0,0,1-.61-.61V71.84a.61.61,0,0,1,1.21,0v4.79h7.43V68.8a4.08,4.08,0,0,0-3.68-2.21.61.61,0,0,1,0-1.21,5.27,5.27,0,0,1,4.84,3.05.59.59,0,0,1,0,.23v8.57A.6.6,0,0,1,219.07,77.84Z" style="fill:#90bfbf"></path><path d="M142,100.37a.6.6,0,0,1-.61-.6V82.36a.61.61,0,1,1,1.21,0V99.77A.6.6,0,0,1,142,100.37Z" style="fill:#90bfbf"></path><path d="M178,100.37a.6.6,0,0,1-.6-.6V82.36a.61.61,0,1,1,1.21,0V99.77A.6.6,0,0,1,178,100.37Z" style="fill:#90bfbf"></path><path d="M141.93,49.15a.61.61,0,0,1-.61-.61V10a.61.61,0,0,1,.61-.61h35.75a.6.6,0,0,1,.61.6l.2,38.51a.62.62,0,0,1-.6.61h0a.61.61,0,0,1-.61-.61l-.2-37.9H142.53v37.9A.6.6,0,0,1,141.93,49.15Z" style="fill:#90bfbf"></path><path d="M171.06,10.64a.6.6,0,0,1-.61-.6V3.21H148.76V10a.61.61,0,0,1-1.21,0V2.6a.6.6,0,0,1,.6-.6h22.91a.6.6,0,0,1,.6.6V10A.6.6,0,0,1,171.06,10.64Z" style="fill:#90bfbf"></path><path d="M149.16,24.1a4,4,0,1,1,4-4A4,4,0,0,1,149.16,24.1Zm0-6.69a2.74,2.74,0,1,0,2.74,2.74A2.74,2.74,0,0,0,149.16,17.41Z" style="fill:#90bfbf"></path><path d="M159.91,24.1a4,4,0,1,1,4-4A4,4,0,0,1,159.91,24.1Zm0-6.69a2.74,2.74,0,1,0,2.74,2.74A2.75,2.75,0,0,0,159.91,17.41Z" style="fill:#90bfbf"></path><path d="M170.65,24.1a4,4,0,1,1,4-4A4,4,0,0,1,170.65,24.1Zm0-6.69a2.74,2.74,0,1,0,2.75,2.74A2.74,2.74,0,0,0,170.65,17.41Z" style="fill:#90bfbf"></path><path d="M174.4,31.93h-29a.6.6,0,1,1,0-1.2h29a.6.6,0,1,1,0,1.2Z" style="fill:#90bfbf"></path><path d="M174.4,38.26h-29a.61.61,0,0,1,0-1.21h29a.61.61,0,1,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M174.4,44.59h-29a.61.61,0,0,1,0-1.21h29a.61.61,0,1,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M174.4,84.77h-29a.61.61,0,0,1,0-1.21h29a.61.61,0,1,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M174.4,91.1h-29a.61.61,0,0,1,0-1.21h29a.61.61,0,1,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M174.4,97.42h-29a.6.6,0,0,1,0-1.2h29a.6.6,0,1,1,0,1.2Z" style="fill:#90bfbf"></path><path d="M227.5,42.51H180.23a.6.6,0,1,1,0-1.2H226.9V35.82H180.1a.61.61,0,1,1,0-1.21h47.4a.6.6,0,0,1,.61.6v6.7A.6.6,0,0,1,227.5,42.51Z" style="fill:#90bfbf"></path><path d="M211.7,31.93a.6.6,0,0,1-.6-.6v-7a.6.6,0,0,1,.6-.61h37.63a.61.61,0,1,1,0,1.21h-37v6.36A.6.6,0,0,1,211.7,31.93Z" style="fill:#90bfbf"></path><path d="M249.23,28.85H211.77a.6.6,0,1,1,0-1.2h37.46a.6.6,0,1,1,0,1.2Z" style="fill:#90bfbf"></path><path d="M229.58,24.7l-.18,0a.62.62,0,0,1-.4-.76c0-.1,3.39-10.63,14.16-11.54a43.39,43.39,0,0,1,6.12-.05h.13A.6.6,0,0,1,250,13a.61.61,0,0,1-.6.6l-.19,0a44.14,44.14,0,0,0-6,.05c-9.94.85-13.07,10.6-13.1,10.7A.6.6,0,0,1,229.58,24.7Z" style="fill:#90bfbf"></path><path d="M248.26,59.5a.6.6,0,0,1-.6-.6l-.13-23.3a.6.6,0,0,1,.6-.61h0a.62.62,0,0,1,.61.6l.13,23.31a.6.6,0,0,1-.6.6Z" style="fill:#90bfbf"></path><path d="M242.24,59.54a.6.6,0,0,1-.61-.6l-.13-23.31a.6.6,0,0,1,.6-.6h0a.6.6,0,0,1,.61.6l.13,23.3a.6.6,0,0,1-.6.61Z" style="fill:#90bfbf"></path><path d="M236.21,59.5a.6.6,0,0,1-.6-.6l-.14-23.3a.61.61,0,0,1,.6-.61h0a.6.6,0,0,1,.6.6l.13,23.31a.59.59,0,0,1-.6.6Z" style="fill:#90bfbf"></path><path d="M230.18,59.54a.6.6,0,0,1-.6-.6l-.06-10.57a.6.6,0,0,1,.6-.61h0a.6.6,0,0,1,.61.6l.06,10.57a.6.6,0,0,1-.6.61Z" style="fill:#90bfbf"></path><path d="M248.26,93.35a.6.6,0,0,1-.6-.6l-.13-23.3a.6.6,0,0,1,.6-.61h0a.62.62,0,0,1,.61.6l.13,23.31a.6.6,0,0,1-.6.6Z" style="fill:#90bfbf"></path><path d="M242.24,93.39a.6.6,0,0,1-.61-.6l-.13-23.3a.6.6,0,0,1,.6-.61h0a.6.6,0,0,1,.61.6l.13,23.3a.6.6,0,0,1-.6.61Z" style="fill:#90bfbf"></path><path d="M236.21,93.35a.6.6,0,0,1-.6-.6l-.14-23.3a.61.61,0,0,1,.6-.61h0a.6.6,0,0,1,.6.6l.13,23.31a.59.59,0,0,1-.6.6Z" style="fill:#90bfbf"></path><path d="M230.18,93.39a.6.6,0,0,1-.6-.6l-.13-23.3a.6.6,0,0,1,.6-.61h0a.62.62,0,0,1,.61.6l.13,23.3a.6.6,0,0,1-.6.61Z" style="fill:#90bfbf"></path><path d="M223.79,100.3a.6.6,0,0,1-.6-.6V42.15a.6.6,0,1,1,1.2,0V99.7A.6.6,0,0,1,223.79,100.3Z" style="fill:#90bfbf"></path><path d="M223.49,82.42H204a.6.6,0,1,1,0-1.2h19.49a.6.6,0,1,1,0,1.2Z" style="fill:#90bfbf"></path><path d="M223.49,61.63h-9.55a.61.61,0,0,1,0-1.21h9.55a.61.61,0,0,1,0,1.21Z" style="fill:#90bfbf"></path><path d="M58.36,79.34c.4-.14,60.13-28,60.13-28l1.88-.4,1.2,1.47a18.07,18.07,0,0,0,.27,1.87c.13.54.26,22,.27,22.37a12.17,12.17,0,0,1-.81,2.14S121,79.87,118.76,80s-16.61-.14-16.61-.14Z" style="fill:#4fb2b1"></path><path d="M191.41,79.34c-.4-.14-60.13-28-60.13-28L129.4,51l-1.2,1.47s-.14,1.34-.27,1.87-.26,22-.27,22.37a12.17,12.17,0,0,0,.81,2.14s.26,1.07,2.54,1.21,16.61-.14,16.61-.14Z" style="fill:#4fb2b1"></path><path d="M129.67,131.91a1.82,1.82,0,0,1-1.81-1.8l-.6-104.2a1.81,1.81,0,0,1,1.8-1.82h0a1.8,1.8,0,0,1,1.81,1.8l.61,104.19a1.82,1.82,0,0,1-1.8,1.83Z" style="fill:#4fb2b1"></path><path d="M113.4,23.63h19.15s.94,0,.94-1.21V18.54l2.41.4L137,20.68l-.67,4.55S134,27.15,133.76,27s-17.41.14-17.41.14l-2.15-.94Z" style="fill:#4fb2b1"></path><path d="M118.83,48.24a.9.9,0,0,1-.9-.91V30.72a.91.91,0,0,1,1.81,0V47.33A.91.91,0,0,1,118.83,48.24Z" style="fill:#333"></path><path d="M131.15,48.24a.9.9,0,0,1-.9-.91V30.72a.91.91,0,0,1,1.81,0V47.33A.91.91,0,0,1,131.15,48.24Z" style="fill:#333"></path><path d="M118.83,131.94a.9.9,0,0,1-.9-.91V83a.91.91,0,0,1,1.81,0V131A.91.91,0,0,1,118.83,131.94Z" style="fill:#333"></path><path d="M131.15,131.94a.9.9,0,0,1-.9-.91V83a.91.91,0,0,1,1.81,0V131A.91.91,0,0,1,131.15,131.94Z" style="fill:#333"></path><path d="M118.46,80.78H48.72a.9.9,0,0,1-.72-.36L36.89,65.81a.9.9,0,0,1,0-1.1L48,50.13a.9.9,0,0,1,.72-.36h69.63A5.45,5.45,0,0,1,122,51a3.37,3.37,0,0,1,1,2.48V77.06a3.37,3.37,0,0,1-1,2.48A5.4,5.4,0,0,1,118.46,80.78ZM49.17,79h69.19a3.8,3.8,0,0,0,2.4-.74,1.54,1.54,0,0,0,.45-1.17V53.49a1.57,1.57,0,0,0-.45-1.18,3.86,3.86,0,0,0-2.36-.73H49.17L38.75,65.26Z" style="fill:#333"></path><path d="M52.61,70.13a.88.88,0,0,1-.64-.26l-4-4a.89.89,0,0,1,0-1.28l4-4a.91.91,0,0,1,1.28,1.28l-3.38,3.38,3.38,3.38a.91.91,0,0,1,0,1.28A.89.89,0,0,1,52.61,70.13Z" style="fill:#333"></path><path d="M111.13,61.23H58.5a.91.91,0,0,1,0-1.82h52.63a.91.91,0,1,1,0,1.82Z" style="fill:#333"></path><path d="M111.13,66.52H58.5a.91.91,0,0,1,0-1.82h52.63a.91.91,0,0,1,0,1.82Z" style="fill:#333"></path><path d="M111.13,71.81H63.46a.91.91,0,0,1,0-1.82h47.67a.91.91,0,1,1,0,1.82Z" style="fill:#333"></path><path d="M131.5,80.78A5.39,5.39,0,0,1,128,79.54a3.33,3.33,0,0,1-1-2.48V53.49A3.33,3.33,0,0,1,128,51a5.51,5.51,0,0,1,3.67-1.24h69.62a.88.88,0,0,1,.72.36L213.1,64.71a.9.9,0,0,1,0,1.1L202,80.42a.88.88,0,0,1-.72.36H131.5Zm0-29.2a3.69,3.69,0,0,0-2.3.74,1.53,1.53,0,0,0-.44,1.17V77.06a1.53,1.53,0,0,0,.44,1.17,3.77,3.77,0,0,0,2.37.74h69.22l10.43-13.71L200.81,51.58H131.52Z" style="fill:#333"></path><path d="M197.38,70.13a.9.9,0,0,1-.64-1.54l3.38-3.38-3.38-3.38a.89.89,0,0,1,0-1.28.91.91,0,0,1,1.28,0l4,4a.92.92,0,0,1,0,1.28l-4,4A.89.89,0,0,1,197.38,70.13Z" style="fill:#333"></path><path d="M191.49,61.23H138.85a.91.91,0,0,1,0-1.82h52.64a.91.91,0,0,1,0,1.82Z" style="fill:#333"></path><path d="M191.49,66.52H138.85a.91.91,0,0,1,0-1.82h52.64a.91.91,0,0,1,0,1.82Z" style="fill:#333"></path><path d="M186.53,71.81H138.85a.91.91,0,0,1,0-1.82h47.68a.91.91,0,0,1,0,1.82Z" style="fill:#333"></path><path d="M133.53,27.7H116.46a3.93,3.93,0,0,1-3.93-3.93V21.36a3.93,3.93,0,0,1,3.93-3.93h17.07a3.93,3.93,0,0,1,3.93,3.93v2.41A3.93,3.93,0,0,1,133.53,27.7Zm-17.07-8.46a2.12,2.12,0,0,0-2.12,2.12v2.41a2.12,2.12,0,0,0,2.12,2.12h17.07a2.11,2.11,0,0,0,2.11-2.12V21.36a2.11,2.11,0,0,0-2.11-2.12Z" style="fill:#333"></path></svg>
+                        </div>
+                        <div class="guide-accordion-text">
+                           <h5 class="guide-accordion-title">guide-accordion</h5>
+                           <p class="guide-accordion-description">Descripton for guide accordion</p>
+                        </div>
+                        <span class="guide-accordion-arrow-container">
+                           <span class="guide-accordion-arrow">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+                              <path data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="black"> </path>
+                              </svg>
+                           </span>
+                        </div>
+                        <div class="guide-accordion-content">
+                              <div class="guide-pathway-list">
+                                 <div class="guide-pathway-card-container">
+                                 <a class="guide-pathway-card" href="#">
+                                    <div class="status-bubble status-bubble-required">Required</div>
+                                    <h3 class="title">Standard pathway</h3>
+                                    <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                                    <div class="icon-container">
+                                       <div class="arrow-icon">
+                                          <svg viewBox="0 0 16 16">
+                                             <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                          </svg>
+                                       </div>
+                                       <span class="guide-pathway-list-page">This is text here</span>
+                                    </div>
+                                 </a> 
+                              </div>
+                              <div class="guide-pathway-card-container">
+                                 <a class="guide-pathway-card" href="#">
+                                    <div class="status-bubble status-bubble-required">Required</div>
+                                    <h3 class="title">Standard pathway</h3>
+                                    <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                                    <div class="icon-container">
+                                       <div class="arrow-icon">
+                                          <svg viewBox="0 0 16 16">
+                                             <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                          </svg>
+                                       </div>
+                                       <span class="guide-pathway-list-page">This is text here</span>
+                                    </div>
+                                 </a> 
+                              </div><div class="guide-pathway-card-container">
+                                 <a class="guide-pathway-card" href="#">
+                                    <div class="status-bubble status-bubble-required">Required</div>
+                                    <h3 class="title">Standard pathway</h3>
+                                    <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                                    <div class="icon-container">
+                                       <div class="arrow-icon">
+                                          <svg viewBox="0 0 16 16">
+                                             <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                          </svg>
+                                       </div>
+                                       <span class="guide-pathway-list-page">This is text here</span>
+                                    </div>
+                                 </a> 
+                              </div><div class="guide-pathway-card-container">
+                                 <a class="guide-pathway-card" href="#">
+                                    <div class="status-bubble status-bubble-required">Required</div>
+                                    <h3 class="title">Standard pathway</h3>
+                                    <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                                    <div class="icon-container">
+                                       <div class="arrow-icon">
+                                          <svg viewBox="0 0 16 16">
+                                             <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                          </svg>
+                                       </div>
+                                       <span class="guide-pathway-list-page">This is text here</span>
+                                    </div>
+                                 </a> 
+                              </div><div class="guide-pathway-card-container">
+                                 <a class="guide-pathway-card" href="#">
+                                    <div class="status-bubble status-bubble-required">Required</div>
+                                    <h3 class="title">Standard pathway</h3>
+                                    <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                                    <div class="icon-container">
+                                       <div class="arrow-icon">
+                                          <svg viewBox="0 0 16 16">
+                                             <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                                          </svg>
+                                       </div>
+                                       <span class="guide-pathway-list-page">This is text here</span>
+                                    </div>
+                                 </a> 
+                              </div>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+
+													</div>
+
+											</div>
+
+											{% include code-dropdown.html componentName="guide-header" %}
+
+										</div>
+
+									</div>
+
+									<h3>Save progress feature</h3>
+									<div class="design-system-card component extra-wide">
+
+										<div class="responsive-toggle-container">
+											<p class="toggle-name">Design view: <label class="switch">
+													<input type="checkbox">
+													<span class="slider"></span>
+													<span class="switch-text-mobile"></span>
+													<span class="switch-text-desktop"></span>
+												</label></p>
+
+											<div class="mobile-only">
+												<h5>Mobile design</h5>
+												<p>Desktop designs can be viewed on screens wider than 650px.</p>
+											</div>
+
+										</div>
+
+										<div class="design-system-card-content">
+
+											<div class="example-wrapper white-back">
+												<div class="checklist">
+													<div class="example checklist-container">
+
+														<div id="checklist-example" class="checklist-wrapper new">
+
+
+
+															<div class="email-box-container">
+																<div class="email-intro">
+																	<h3>Save your progress</h3>
+																	<p>Save your checklist and get a link to it – you’ll be able to continue on from where you were.</p>
+																</div>
+
+																<div id="email-btn-wrapper" class="email-btn-wrapper-2">
+																	<btn class="email-btn"><span>Save progress</span></btn>
+																</div>
+															</div>
+
+														</div>
+
+
+
+
+													</div>
+												</div>
+
+											</div>
+
+											{% include code-dropdown.html componentName="checklist-save-progress" %}
+
+										</div>
+
+									</div>
+
+
+
+
+
+								</div>
+
+
+							</div>
+
+						</div>
+
+
+
+						<!-- GUIDEINES -->
+						<div class="anchor-section" name="guidelines-for-use"><a href="" id="guidelines-for-use" aria-label="guidelines for use"></a>
+
+							<div class="body-copy">
+								<div>
+
+									<h2>Guidelines for use</h2>
+
+									<hr />
+								</div>
+								<div class="body-copy-content">
+
+									<h3>Purpose</h3>
+
+
+									<p>A checklist is used for an end to end process that includes legal steps. This pattern is helpful for someone who needs to complete tasks in a specific order and should include task/action based content only.</p>
+
+
+									<h3>General rules:</h3>
+									<ul>
+										<li>Should only be used where there is a logical order to complete a larger journey.</li>
+										<li>Provides numbered steps that presents a specific start and end point.</li>
+										<li>Provides links within content to other websites to complete each step.</li>
+										<li>Can include online and offline actions.</li>
+										<li>Key content is legally required (‘Must do’) steps.</li>
+									</ul>
+
+
+									<h3>When not to use this pattern:</h3>
+
+									<ul>
+										<li>When the user only needs to read guidance and not take an action (use Guide pattern instead).</li>
+
+										<li>When you are educating the user about a specific stage in an end to end journey (use the tutorial pattern).</li>
+									</ul>
+
+
+
+								</div>
+
+
+							</div>
+
+						</div>
+
+
+
+						<!-- EXAMPLES -->
+						<div class="anchor-section" name="examples"><a href="" id="examples" aria-label="Examples"></a>
+
+							<div class="body-copy">
+								<div>
+
+									<h2>Examples</h2>
+
+									<hr />
+								</div>
+								<div class="body-copy-content">
+
+
+									<div class="adobe-link vertical-list ">
+
+										<div>
+											<a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/515568e1-a93a-498a-ab73-7832034abc81/specs/">
+												<div class="action-card-button">
+													<div class="action-card-content">
+														<p class="vertical-list-fileName">View checklist design and assets in Adobe XD.</p>
+														<div class="action-card-info">
+															<div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
+																	<path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
+																</svg></div>
+															<div class="site-name"><span>ADOBE XD</span></div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="example-link vertical-list ">
+
+										<div>
+											<a class="action-card-anchor" target="blank" href="https://business.gov.au/people/hiring/hiring-employees">
+												<div class="action-card-button">
+													<div class="action-card-content">
+														<p class="vertical-list-fileName">View the hiring employees checklist on business.gov.au</p>
+														<div class="action-card-info">
+															<div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
+																	<path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
+																</svg></div>
+															<div class="site-name"><span>BUSINESS.GOV.AU</span></div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+
+							</div>
+
+						</div>
+
+
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
