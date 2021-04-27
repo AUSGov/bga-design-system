@@ -10410,31 +10410,19 @@ const guideHeaderCss =
 $(".guide-header-code .css-code").html(guideHeaderCss);
 
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	//GUIDE ACCORDION
-			//get default svg code from .svg file and update code example
+	//get default svg code from .svg file and update code example
 	function getSvgCode(svgTheme) {
 
 		var svgSrc = $(".guide-accordion-image img").attr('src');
-
-		$.get(svgSrc, function (data) {
+		if(svgSrc) {
+		   		$.get(svgSrc, function (data) {
 			var svgNode = data.childNodes;
 			var svgCode = svgNode[0].outerHTML || new XMLSerializer().serializeToString(svgNode[0]);
 			evaluateGuideAccordionHtml(svgTheme, svgCode);
 		});
+		   }
+
 	}
 
 	// Guide-accordion colour dropdown
@@ -11064,5 +11052,6 @@ const guideAccordionCss =
 </code>
 `
 $(".guide-accordion-code .css-code").html(guideAccordionCss);
-getSvgCode("green");
+	   getSvgCode("green");
+
 });

@@ -232,7 +232,7 @@ $(document).ready(function () {
 		if (example_element.hasClass('example')) {
 			example_element.attr('data-state', element_state);
 		}
-		
+
 		if (example_element.hasClass('radio-example')) {
 			if (element_state == "focus-state") {
 				example_element.find(".radio-item").attr('data-state', "default-state");
@@ -245,10 +245,10 @@ $(document).ready(function () {
 				example_element.find(".radio-item").attr('data-state', element_state);
 				common_ancestor.find(".error-message").addClass('show');
 			}
-		} 
-		
+		}
+
 		if (example_element.hasClass('multiple-select-example')) {
-			
+
 			example_element.attr('data-state', element_state);
 			if (element_state == "focus-state") {
 				example_element.find(".checkbox-item").removeAttr('data-state');
@@ -258,8 +258,8 @@ $(document).ready(function () {
 				example_element.find(".checkbox-item").removeAttr('data-state');
 				common_ancestor.find(".error-message").removeClass('show');
 			}
-		} 
-		
+		}
+
 		if (example_element.hasClass('button-example')) {
 			example_element.attr('data-state', element_state);
 			example_element.find(".button-wrapper").attr('data-state', element_state);
@@ -604,19 +604,27 @@ $(document).ready(function () {
 		}
 
 	});
-	
+
 	/*----------- COMPONENT EXAMPLE: Guide accordion ----------- */
-$('.guide-accordion-group .accordion-group-toggle').on('click', function () {
-if ($(".accordion-group-toggle-content").hasClass('all-open')) {
-	$(this).next('.guide-accordion').addClass('active');
-	} else {
-		$(this).next('.guide-accordion').removeClass('active');
-	}
-});
-	
-$('.guide-accordion').on('click', function () {
-	$(this).toggleClass('active');
-});
+	$('.guide-accordion-group .accordion-group-toggle').on('click', function () {
+		if ($(".accordion-group-toggle-content").hasClass('all-open')) {
+			$(this).next('.guide-accordion').addClass('active');
+		} else {
+			$(this).next('.guide-accordion').removeClass('active');
+		}
+	});
+
+	$('.guide-accordion').on('click', function () {
+		$(this).toggleClass('active');
+		if ($(this).hasClass('active')) {
+						$('.accordion-group-toggle-content').addClass('all-open');
+			$('.accordion-group-toggle-content').children('h5').text('Close all');
+
+		} else {
+			$('.accordion-group-toggle-content').removeClass('all-open');
+			$('.accordion-group-toggle-content').children('h5').text('Open all');
+		}
+	});
 
 
 	/*----------- COMPONENT EXAMPLE: Media Player ----------- */
@@ -920,13 +928,13 @@ $('.guide-accordion').on('click', function () {
 		$.get(svgSrc, function (data) {
 			var svgNode = data.childNodes;
 			var svgCode = svgNode[0].outerHTML || new XMLSerializer().serializeToString(svgNode[0]);
-		//Copy text
-		var $temp = $("<input>");
-		$("body").append($temp);
-		$temp.val(svgCode).select();
-		document.execCommand("copy");
-		$temp.remove();
-		$(".example.copied").focus().blur();
+			//Copy text
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val(svgCode).select();
+			document.execCommand("copy");
+			$temp.remove();
+			$(".example.copied").focus().blur();
 		});
 
 
@@ -940,76 +948,73 @@ $('.guide-accordion').on('click', function () {
 		$(this).addClass('copied');
 
 	});
-	
+
 	// PAGE PATTERNS - RULES ACCORDION
-    $('.rules-accordion-item-tile-inner').on('click', function(){
-        $(this).parents('.rules-accordion-item').toggleClass('open');
-        $(this).parents('.rules-accordion-item').find('.rules-accordion-item-content').slideToggle();
-        
-        if ($('.rules-accordion-item').length == $('.rules-accordion-item.open').length) {
-            $('.rules-accordion-group-toggle').addClass('open');
-            $(this).parents('.rules-accordion').find('.rules-accordion-group-toggle-content h5').text('Close all');
-        } 
-        else if ( $('.rules-accordion-item.open').length === 0 ) {
-            $('.rules-accordion-group-toggle').removeClass('open');
-            $(this).parents('.rules-accordion').find('.rules-accordion-group-toggle-content h5').text('Open all');      
-        }
-            
-    });
-    
-    $('.rules-accordion-group-toggle').on('click', function(){
-        
-        if (!$(this).hasClass('open')) {
-            
-            $('.rules-accordion-item').each(function(){
-                if (!$(this).hasClass('open')){
-                    $(this).addClass('open');
-                    $(this).find('.rules-accordion-item-content').slideDown();
-                }
-            });
-            $('.rules-accordion-group-toggle').addClass('open');
-            $(this).find('h5').text('Close all');
-        } 
-        
-        else if ($(this).hasClass('open')) {
-            
-            $('.rules-accordion-item').each(function(){
-                if ($(this).hasClass('open')){
-                    $(this).removeClass('open');
-                    $(this).find('.rules-accordion-item-content').slideUp(); 
-                }
-            });
-            $('.rules-accordion-group-toggle').removeClass('open');
-            $(this).find('h5').text('Open all');
-        }
-    });
-    
-    //Click on hotspots to go to rules
-    $('.spot a').on('click', function(){
-        var rule_number = "#rule-" + $(this).text();
-        
-        $('html, body').animate({
-            scrollTop: $(rule_number).offset().top
-        }, 500);
-        
-        setTimeout(function () {
-            $(rule_number).addClass('open');
-            $(rule_number).find('.rules-accordion-item-content').slideDown();
-        }, 700);
-  
-    });
-    
-    $('.spot p').on('click', function(){
-        var rule_number = "#rule-" + $(this).parents('.spot').find('a').text();
-        
-        $('html, body').animate({
-            scrollTop: $(rule_number).offset().top
-        }, 500);
-        
-        setTimeout(function () {
-            $(rule_number).addClass('open');
-            $(rule_number).find('.rules-accordion-item-content').slideDown();
-        }, 700);
-  
-    });
+	$('.rules-accordion-item-tile-inner').on('click', function () {
+		$(this).parents('.rules-accordion-item').toggleClass('open');
+		$(this).parents('.rules-accordion-item').find('.rules-accordion-item-content').slideToggle();
+
+		if ($('.rules-accordion-item').length == $('.rules-accordion-item.open').length) {
+			$('.rules-accordion-group-toggle').addClass('open');
+			$(this).parents('.rules-accordion').find('.rules-accordion-group-toggle-content h5').text('Close all');
+		} else if ($('.rules-accordion-item.open').length === 0) {
+			$('.rules-accordion-group-toggle').removeClass('open');
+			$(this).parents('.rules-accordion').find('.rules-accordion-group-toggle-content h5').text('Open all');
+		}
+
+	});
+
+	$('.rules-accordion-group-toggle').on('click', function () {
+
+		if (!$(this).hasClass('open')) {
+
+			$('.rules-accordion-item').each(function () {
+				if (!$(this).hasClass('open')) {
+					$(this).addClass('open');
+					$(this).find('.rules-accordion-item-content').slideDown();
+				}
+			});
+			$('.rules-accordion-group-toggle').addClass('open');
+			$(this).find('h5').text('Close all');
+		} else if ($(this).hasClass('open')) {
+
+			$('.rules-accordion-item').each(function () {
+				if ($(this).hasClass('open')) {
+					$(this).removeClass('open');
+					$(this).find('.rules-accordion-item-content').slideUp();
+				}
+			});
+			$('.rules-accordion-group-toggle').removeClass('open');
+			$(this).find('h5').text('Open all');
+		}
+	});
+
+	//Click on hotspots to go to rules
+	$('.spot a').on('click', function () {
+		var rule_number = "#rule-" + $(this).text();
+
+		$('html, body').animate({
+			scrollTop: $(rule_number).offset().top
+		}, 500);
+
+		setTimeout(function () {
+			$(rule_number).addClass('open');
+			$(rule_number).find('.rules-accordion-item-content').slideDown();
+		}, 700);
+
+	});
+
+	$('.spot p').on('click', function () {
+		var rule_number = "#rule-" + $(this).parents('.spot').find('a').text();
+
+		$('html, body').animate({
+			scrollTop: $(rule_number).offset().top
+		}, 500);
+
+		setTimeout(function () {
+			$(rule_number).addClass('open');
+			$(rule_number).find('.rules-accordion-item-content').slideDown();
+		}, 700);
+
+	});
 }); // END doc ready
