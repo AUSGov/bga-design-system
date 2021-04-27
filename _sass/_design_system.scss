@@ -6418,9 +6418,9 @@
 			box-sizing: border-box;
 		}
 
-		.guide-accordion-image svg {
+		.guide-accordion-image img {
 			width: 250px;
-			height: auto;
+			height: 130px;
 		}
 
 		.guide-accordion-text {
@@ -6617,203 +6617,229 @@
 
 		/* Themes */
 		/* Green */
-		.guide-accordion-green .guide-accordion-tile {
-			background: #e0f2f1;
-		}
+		.guide-accordion-green {
 
-		.guide-accordion-green .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion-tile:focus .guide-accordion-arrow {
-			background: #bce3e1;
-		}
+			.guide-accordion-tile {
+				background: #e0f2f1;
+			}
 
-		.guide-accordion-tile:hover,
-		.guide-accordion-tile:focus,
-		.guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-green .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-green .guide-accordion-tile,
-		.guide-accordion.active.guide-accordion-green .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-green .guide-accordion-tile:focus .guide-accordion-arrow,
-		.guide-accordion-green .guide-accordion-content {
-			background: #ceeae9;
-		}
+			.guide-accordion-tile:hover .guide-accordion-arrow,
+			.guide-accordion-tile:focus .guide-accordion-arrow {
+				background: #bce3e1;
+			}
 
-		.guide-accordion-green .guide-pathway-card {
-			border-top: 4px solid #59a0a0;
+			.guide-accordion-tile:hover,
+			.guide-accordion-tile:focus,
+			.guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile,
+			&.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow,
+			.guide-accordion-content {
+				background: #ceeae9;
+			}
+
+			.guide-pathway-card {
+				border-top: 4px solid #59a0a0;
+			}
 		}
 
 		/* Red */
-		.guide-accordion-red .guide-accordion-tile {
-			background: #ffe4de;
+		.guide-accordion-red {
+
+			.guide-accordion-tile {
+				background: #ffe4de;
+			}
+
+			.guide-accordion-tile:hover .guide-accordion-arrow,
+			.guide-accordion-tile:focus .guide-accordion-arrow {
+				background: #ffc3b5;
+			}
+
+			.guide-accordion-tile:hover,
+			.guide-accordion-tile:focus,
+			.guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile,
+			&.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow,
+			.guide-accordion-content {
+				background: #ffd3ca;
+			}
+
+			.guide-pathway-card {
+				border-top: 4px solid #d96d55;
+			}
 		}
 
-		.guide-accordion-red .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion-tile:focus .guide-accordion-arrow {
-			background: #ffc3b5;
-		}
-
-		.guide-accordion-tile:hover,
-		.guide-accordion-tile:focus,
-		.guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-red .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-red .guide-accordion-tile,
-		.guide-accordion.active.guide-accordion-red .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-red .guide-accordion-tile:focus .guide-accordion-arrow,
-		.guide-accordion-red .guide-accordion-content {
-			background: #ffd3ca;
-		}
-
-		.guide-accordion-red .guide-pathway-card {
-			border-top: 4px solid #d96d55;
-		}
 
 		/* Yellow */
-		.guide-accordion-yellow .guide-accordion-tile {
-			background: #fff3cf;
+		.guide-accordion-yellow {
+
+			.guide-accordion-tile {
+				background: #fff3cf;
+			}
+
+			.guide-accordion-tile:hover .guide-accordion-arrow,
+			.guide-accordion-tile:focus .guide-accordion-arrow {
+				background: #ffe9a6;
+			}
+
+			.guide-accordion-tile:hover,
+			.guide-accordion-tile:focus,
+			.guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile,
+			&.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow,
+			.guide-accordion-content {
+				background: #feb;
+			}
+
+			.guide-pathway-card {
+				border-top: 4px solid #f5c550;
+			}
 		}
 
-		.guide-accordion-yellow .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion-tile:focus .guide-accordion-arrow {
-			background: #ffe9a6;
-		}
-
-		.guide-accordion-tile:hover,
-		.guide-accordion-tile:focus,
-		.guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-yellow .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-yellow .guide-accordion-tile,
-		.guide-accordion.active.guide-accordion-yellow .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-yellow .guide-accordion-tile:focus .guide-accordion-arrow,
-		.guide-accordion-yellow .guide-accordion-content {
-			background: #feb;
-		}
-
-		.guide-accordion-yellow .guide-pathway-card {
-			border-top: 4px solid #f5c550;
-		}
 
 		/* Grey */
-		.guide-accordion-grey .guide-accordion-tile {
-			background: #e0e2ee;
-		}
+		.guide-accordion-grey {
 
-		.guide-accordion-grey .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion-tile:focus .guide-accordion-arrow {
-			background: #c9cce1;
-		}
+			.guide-accordion-tile {
+				background: #e0e2ee;
+			}
 
-		.guide-accordion-tile:hover,
-		.guide-accordion-tile:focus,
-		.guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-grey .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-grey .guide-accordion-tile,
-		.guide-accordion.active.guide-accordion-grey .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-grey .guide-accordion-tile:focus .guide-accordion-arrow,
-		.guide-accordion-grey .guide-accordion-content {
-			background: #d6d9e9;
-		}
+			.guide-accordion-tile:hover .guide-accordion-arrow,
+			.guide-accordion-tile:focus .guide-accordion-arrow {
+				background: #c9cce1;
+			}
 
-		.guide-accordion-grey .guide-pathway-card {
-			border-top: 4px solid #495c74;
+			.guide-accordion-tile:hover,
+			.guide-accordion-tile:focus,
+			.guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile,
+			&.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow,
+			.guide-accordion-content {
+				background: #d6d9e9;
+			}
+
+			.guide-pathway-card {
+				border-top: 4px solid #495c74;
+			}
 		}
 
 		/* Purple */
-		.guide-accordion-purple .guide-accordion-tile {
-			background: #f2eefa;
-		}
+		.guide-accordion-purple {
 
-		.guide-accordion-purple .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion-tile:focus .guide-accordion-arrow {
-			background: #ddd2f2;
-		}
+			.guide-accordion-tile {
+				background: #f2eefa;
+			}
 
-		.guide-accordion-tile:hover,
-		.guide-accordion-tile:focus,
-		.guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-purple .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-purple .guide-accordion-tile,
-		.guide-accordion.active.guide-accordion-purple .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-purple .guide-accordion-tile:focus .guide-accordion-arrow,
-		.guide-accordion-purple .guide-accordion-content {
-			background: #e9e2f7;
-		}
+			.guide-accordion-tile:hover .guide-accordion-arrow,
+			.guide-accordion-tile:focus .guide-accordion-arrow {
+				background: #ddd2f2;
+			}
 
-		.guide-accordion-purple .guide-pathway-card {
-			border-top: 4px solid #bdb4ec;
+			.guide-accordion-tile:hover,
+			.guide-accordion-tile:focus,
+			.guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile,
+			&.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow,
+			.guide-accordion-content {
+				background: #e9e2f7;
+			}
+
+			.guide-pathway-card {
+				border-top: 4px solid #bdb4ec;
+			}
 		}
 
 		/* Light blue */
-		.guide-accordion-light-blue .guide-accordion-tile {
-			background: #ebf4ff;
-		}
+		.guide-accordion-light-blue {
 
-		.guide-accordion-light-blue .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion-tile:focus .guide-accordion-arrow {
-			background: #c2deff;
-		}
+			.guide-accordion-tile {
+				background: #ebf4ff;
+			}
 
-		.guide-accordion-tile:hover,
-		.guide-accordion-tile:focus,
-		.guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-light-blue .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-light-blue .guide-accordion-tile,
-		.guide-accordion.active.guide-accordion-light-blue .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-light-blue .guide-accordion-tile:focus .guide-accordion-arrow,
-		.guide-accordion-light-blue .guide-accordion-content {
-			background: #d7e9ff;
-		}
+			.guide-accordion-tile:hover .guide-accordion-arrow,
+			.guide-accordion-tile:focus .guide-accordion-arrow {
+				background: #c2deff;
+			}
 
-		.guide-accordion-light-blue .guide-pathway-card {
-			border-top: 4px solid #6394cf;
+			.guide-accordion-tile:hover,
+			.guide-accordion-tile:focus,
+			.guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile,
+			&.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow,
+			.guide-accordion-content {
+				background: #d7e9ff;
+			}
+
+			.guide-pathway-card {
+				border-top: 4px solid #6394cf;
+			}
 		}
 
 		/* Magenta */
-		.guide-accordion-magenta .guide-accordion-tile {
-			background: #ffecf3;
-		}
+		.guide-accordion-magenta {
 
-		.guide-accordion-magenta .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion-tile:focus .guide-accordion-arrow {
-			background: #ffc8dc;
-		}
+			.guide-accordion-tile {
+				background: #ffecf3;
+			}
 
-		.guide-accordion-tile:hover,
-		.guide-accordion-tile:focus,
-		.guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-magenta .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-magenta .guide-accordion-tile,
-		.guide-accordion.active.guide-accordion-magenta .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-magenta .guide-accordion-tile:focus .guide-accordion-arrow,
-		.guide-accordion-magenta .guide-accordion-content {
-			background: #ffdde9;
-		}
+			.guide-accordion-tile:hover .guide-accordion-arrow,
+			.guide-accordion-tile:focus .guide-accordion-arrow {
+				background: #ffc8dc;
+			}
 
-		.guide-accordion-magenta .guide-pathway-card {
-			border-top: 4px solid #b64d94;
+			.guide-accordion-tile:hover,
+			.guide-accordion-tile:focus,
+			.guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile,
+			&.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow,
+			.guide-accordion-content {
+				background: #ffdde9;
+			}
+
+			.guide-pathway-card {
+				border-top: 4px solid #b64d94;
+			}
 		}
 
 		/* Blue */
-		.guide-accordion-blue .guide-accordion-tile {
-			background: #e4ecf6;
-		}
+		.guide-accordion-blue {
 
-		.guide-accordion-blue .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion-tile:focus .guide-accordion-arrow {
-			background: #c9d9ed;
-		}
+			.guide-accordion-tile {
+				background: #e4ecf6;
+			}
 
-		.guide-accordion-tile:hover,
-		.guide-accordion-tile:focus,
-		.guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-blue .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-blue .guide-accordion-tile,
-		.guide-accordion.active.guide-accordion-blue .guide-accordion-tile:hover .guide-accordion-arrow,
-		.guide-accordion.active.guide-accordion-blue .guide-accordion-tile:focus .guide-accordion-arrow,
-		.guide-accordion-blue .guide-accordion-content {
-			background: #d9e4f2;
-		}
+			.guide-accordion-tile:hover .guide-accordion-arrow,
+			.guide-accordion-tile:focus .guide-accordion-arrow {
+				background: #c9d9ed;
+			}
 
-		.guide-accordion-blue .guide-pathway-card {
-			border-top: 4px solid #4569a0;
+			.guide-accordion-tile:hover,
+			.guide-accordion-tile:focus,
+			.guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile,
+			&.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow,
+			&.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow,
+			.guide-accordion-content {
+				background: #d9e4f2;
+			}
+
+			.guide-pathway-card {
+				border-top: 4px solid #4569a0;
+			}
 		}
 
 		/* Media queries */
@@ -6822,7 +6848,7 @@
 				width: 50%;
 			}
 
-			.guide-accordion-image svg {
+			.guide-accordion-image img {
 				width: 180px;
 			}
 		}
@@ -6832,7 +6858,7 @@
 				width: 100%;
 			}
 
-			.guide-accordion-image svg {
+			.guide-accordion-image img {
 				display: none;
 			}
 		}
@@ -6861,7 +6887,7 @@
 			width: 100%;
 		}
 
-		.guide-accordion-image svg {
+		.guide-accordion-image img {
 			display: none;
 		}
 

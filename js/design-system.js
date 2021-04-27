@@ -604,7 +604,19 @@ $(document).ready(function () {
 		}
 
 	});
-
+	
+	/*----------- COMPONENT EXAMPLE: Guide accordion ----------- */
+$('.guide-accordion-group .accordion-group-toggle').on('click', function () {
+if ($(".accordion-group-toggle-content").hasClass('all-open')) {
+	$(this).next('.guide-accordion').addClass('active');
+	} else {
+		$(this).next('.guide-accordion').removeClass('active');
+	}
+});
+	
+$('.guide-accordion').on('click', function () {
+	$(this).toggleClass('active');
+});
 
 
 	/*----------- COMPONENT EXAMPLE: Media Player ----------- */
