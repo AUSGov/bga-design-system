@@ -149,7 +149,7 @@
                     <div class="col-12 col-sm-12 col-md-8">
                         <div class="page-header-intro">
                             <p>
-                                A checklist pattern for presenting an end to end journey in logical steps.
+                                Guides on BGA are a navigation pattern that pull together information from different areas of the site. They link to site content, not external content.
                             </p>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
 										<h5 class="sticky-list-head">On this page</h5>
 										<ul>
 											<li><a href="" aria-label="Page anatomy">Page anatomy</a></li>
-											<li><a href="" aria-label="Checklist specific compponents">Checklist specific components</a></li>
+											<li><a href="" aria-label="Guide specific compponents">Guide specific components</a></li>
 											<li><a href="" aria-label="Guidelines for use">Guidelines for use</a></li>
 											<li><a href="" aria-label="Examples">Examples</a></li>
 
@@ -202,35 +202,17 @@
 								</div>
 								<div class="body-copy-content">
 
-									<p>The checklist pattern consists of a list of numbered items and a 'save progress' feature. The items open to reveal sub-items with checkboxes allowing users to track their progress through the list.</p>
-
+									<p>Each guide consists of a single landing page with a series of numbered accordions that open to reveal pathway tiles linking to BGA information pages.</p>
 
 									<div class="design-system-card component page-pattern extra-wide">
-
-										<div class="responsive-toggle-container">
-											<p class="toggle-name">Design view: <label class="switch">
-													<input type="checkbox">
-													<span class="slider"></span>
-													<span class="switch-text-mobile"></span>
-													<span class="switch-text-desktop"></span>
-												</label></p>
-
-											<div class="mobile-only">
-												<h5>Mobile design</h5>
-												<p>Desktop designs can be viewed on screens wider than 650px.</p>
-											</div>
-
-										</div>
 
 										<div class="design-system-card-content">
 
 											<div class="example-wrapper white-back">
 												<div class="">
-													<div class="example checklist-container">
+													<div class="example guides-page-container">
 
-														<img class="responsive-img-no-margin desktop-example" src=/bga-design-system/assets/page-pattern-checklist-desktop.png />
-
-														<img class="responsive-img-no-margin mobile-example" src=/bga-design-system/assets/page-pattern-checklist-mobile.png />
+														<img class="responsive-img-no-margin desktop-example-only" src=/bga-design-system/assets/page-pattern-guides-page-desktop.png />
 
 														<div class="spots">
 															<div class="spot" id="spot-01">
@@ -250,28 +232,28 @@
 															<div class="spot" id="spot-03">
 																<div class="spot-subwrapper">
 																	<a>3</a>
-																	<p>Numbered checklist item</p>
+																	<p>Header - unique image</p>
 																</div>
 															</div>
 
 															<div class="spot" id="spot-04">
 																<div class="spot-subwrapper">
 																	<a>4</a>
-																	<p>&#39;Tips&#39; sub-item</p>
+																	<p>Mini-list</p>
 																</div>
 															</div>
 
 															<div class="spot" id="spot-05">
 																<div class="spot-subwrapper">
 																	<a>5</a>
-																	<p>&#39;Must do&#39; sub-item</p>
+																	<p>Guide accordion</p>
 																</div>
 															</div>
 
 															<div class="spot" id="spot-06">
 																<div class="spot-subwrapper">
 																	<a>6</a>
-																	<p>Save progress feature</p>
+																	<p>Guide pathway</p>
 																</div>
 															</div>
 
@@ -329,9 +311,10 @@
 
 																<div class="rules-accordion-item-content">
 																	<div class="body-copy" aria-label="accordion content">
-																		<p>A direct, short title focused on the main action the user will complete on the page. </p>
+																		<p>A direct, short title focused on the main topic the user will learn about.</p>
 																		<ul>
 																			<li>Maximum character limit of 50.</li>
+																			<li>Page title starts with 'Guide to ...'</li>
 																		</ul>
 																	</div>
 
@@ -359,11 +342,16 @@
 																</div>
 																<div class="rules-accordion-item-content">
 																	<div class="body-copy" aria-label="accordion content">
-																		<p>A short paragraph that expands on what the checklist is about.</p>
+																		<p>A short paragraph that expands on what the guide is about what journey it is for.</p>
 																		<ul>
-																			<li>The supporting text should explain the end to end process the checklist is for.</li>
 																			<li>Maximum character limit of 90.</li>
 																			<li>Include the top three keywords for the page.</li>
+																		</ul>
+																		<p>The supporting text should always start with on of the following:</p>
+
+																		<ul>
+																			<li>The problem you are trying to solve.</li>
+																			<li>How the guide can help/what they will be able to do.</li>
 																		</ul>
 																	</div>
 
@@ -377,7 +365,7 @@
 															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
 																<div class="rules-accordion-item-tile-inner">
 
-																	<h5 class=""><span>3</span>Numbered checklist item</h5>
+																	<h5 class=""><span>3</span>Header - unique image</h5>
 
 																	<div class="chevron">
 																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -391,7 +379,7 @@
 																</div>
 																<div class="rules-accordion-item-content">
 																	<div class="body-copy" aria-label="accordion content">
-																		<p>Item titles should be short, action oriented statements that make it clear at a high-level what the user needs to do.</p>
+																		<p>A unique image relating to the content of the guides on the page.</p>
 
 																	</div>
 
@@ -405,7 +393,7 @@
 															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
 																<div class="rules-accordion-item-tile-inner">
 
-																	<h5 class=""><span>4</span> &#39;Tips&#39; sub&#45;item</h5>
+																	<h5 class=""><span>4</span>Mini-list</h5>
 
 																	<div class="chevron">
 																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -419,10 +407,9 @@
 																</div>
 																<div class="rules-accordion-item-content">
 																	<div class="body-copy" aria-label="accordion content">
-																		<p>Recommended content that users should consider.</p>
+																		<p>A mini-list used to highlight information or actions the usr needs to consider before using the guide.</p>
 																		<ul>
-																			<li>These sub&#45;items are not checkable.</li>
-																			<li>Actions are not legally required.</li>
+																			<li>The 'before you get started' sub heading is optional.</li>
 
 																		</ul>
 																	</div>
@@ -437,7 +424,7 @@
 															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
 																<div class="rules-accordion-item-tile-inner">
 
-																	<h5 class=""><span>5</span> &#39;Must do&#39; sub&#45;item</h5>
+																	<h5 class=""><span>5</span>Guide accordion</h5>
 
 																	<div class="chevron">
 																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -451,10 +438,11 @@
 																</div>
 																<div class="rules-accordion-item-content">
 																	<div class="body-copy" aria-label="accordion content">
-																		<p>A direct, short title focused on the main action the user will complete on the page. </p>
+																		<p>Accordions with numbered steps. They should contain:</p>
 																		<ul>
-																			<li>These sub&#45;items are checkable, users can mark them as done.</li>
-																			<li>Actions are legally required.</li>
+																			<li>A unique heading.</li>
+																			<li>Short descriptions with only a few sentences which highlight the accordions content.</li>
+																			<li>An image with colours matching the accordion background colour.</li>
 																		</ul>
 																	</div>
 
@@ -468,7 +456,7 @@
 															<div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
 																<div class="rules-accordion-item-tile-inner">
 
-																	<h5 class=""><span>6</span>Save progress feature</h5>
+																	<h5 class=""><span>6</span>Guide pathway</h5>
 
 																	<div class="chevron">
 																		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -482,9 +470,14 @@
 																</div>
 																<div class="rules-accordion-item-content">
 																	<div class="body-copy" aria-label="accordion content">
-																		<p>Provides users with the ability to save a link to the checklist.</p>
+																		<p>A list of pathway tiles. Tiles should:</p>
 																		<ul>
-																			<li>Title and description in this box should stay the same across checklists</li>
+																			<li>Not be numbered.</li>
+																			<li>Be tagged as recommended or required.</li>
+																			<li>Be ordered based on tag type, required tiles listed first, then recommended.</li>
+																			<li>Contain an action oriented title.</li>
+																			<li>Contain a short description which is contextual to the guide content.</li>
+																			<li>Contain labels reflecting the title of the linked page.</li>
 																		</ul>
 																	</div>
 
@@ -517,7 +510,7 @@
 
 						<!-- COMPONENTS -->
 
-						<div class="anchor-section" name="checklist-specific-components"><a href="" id="checklist-specific-components"></a>
+						<div class="anchor-section" name="guide-specific-components"><a href="" id="guide-specific-components"></a>
 
 							<div class="body-copy">
 								<div>
@@ -528,203 +521,7 @@
 								</div>
 								<div class="body-copy-content">
 
-
-
-									<h3>Checklist items</h3>
-									<div class="design-system-card component extra-wide">
-
-										<div class="responsive-toggle-container">
-											<p class="toggle-name">Design view: <label class="switch">
-													<input type="checkbox">
-													<span class="slider"></span>
-													<span class="switch-text-mobile"></span>
-													<span class="switch-text-desktop"></span>
-												</label></p>
-
-											<div class="mobile-only">
-												<h5>Mobile design</h5>
-												<p>Desktop designs can be viewed on screens wider than 650px.</p>
-											</div>
-
-										</div>
-
-										<div class="design-system-card-content">
-
-											<div class="example-wrapper white-back">
-												<div class="example full-width mini-list mini-list-yellow">
-													<div class="mini-list-container">
-
-														<div class="mini-list">
-															<div class="mini-list-item">
-																<div class="title-container" tabindex="0">
-																	<div class="svg-container tick-svg">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-																			<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
-																				<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
-																				<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
-																					<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
-																				</g>
-																			</g>
-																		</svg>
-																	</div>
-																	<h3 class="title">Know our decision for closing your business, such as financial or personel circumstances</h3>
-																	<div class="svg-container arrow-svg">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
-																			<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
-																		</svg>
-																	</div>
-																</div>
-																<div class="content-container">
-																	<div class="content">
-																		<ul>
-																			<li>
-																				Lorem ipsum dolor sit amet
-																			</li>
-																			<li>
-																				Cras varius ligula eros, id vestibulum sem consectetur ut.
-																			</li>
-																		</ul>
-																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
-																	</div>
-																</div>
-															</div>
-															<div class="mini-list-item">
-																<div class="title-container" tabindex="0">
-																	<div class="svg-container tick-svg">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-																			<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
-																				<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
-																				<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
-																					<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
-																				</g>
-																			</g>
-																		</svg>
-																	</div>
-																	<h3 class="title">Get professional advice from an accountant or business adviser</h3>
-																	<div class="svg-container arrow-svg">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
-																			<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
-																		</svg>
-																	</div>
-																</div>
-																<div class="content-container">
-																	<div class="content">
-																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. <a href="#">In suscipit rutrum maximus.</a></p>
-																	</div>
-																</div>
-															</div>
-															<div class="mini-list-item">
-																<div class="title-container" tabindex="0">
-																	<div class="svg-container tick-svg">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-																			<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
-																				<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
-																				<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
-																					<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
-																				</g>
-																			</g>
-																		</svg>
-																	</div>
-																	<h3 class="title">Set your date to officially close your business</h3>
-																	<div class="svg-container arrow-svg">
-																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
-																			<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
-																		</svg>
-																	</div>
-																</div>
-																<div class="content-container">
-																	<div class="content">
-																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. <a>In suscipit rutrum maximus.</a></p>
-
-																	</div>
-																</div>
-															</div>
-														</div>
-
-													</div>
-												</div>
-
-											</div>
-
-											<button class="element-design component closed">
-	<div class="content-wrapper">
-		<p>HTML/CSS Styles</p>
-	</div>
-	<div role="none" class="float-button">
-		<div tabindex="-1" class="float-button-content">
-			<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
-					<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-				</svg></div><span class="sr-only">Button toggle current accordion</span>
-		</div>
-	</div>
-</button>
-
-<div class="element-code guide-mini-list-code">
-
-	<div class="col-sm-12 tabs-component">
-		<!-- Tabs -->
-		<div class="row">
-			<div class="c-wrapper c-wrapper-bg-transparent container-fluid">
-				<div class="body-copy col-sm-12 col-md-12">
-					
-						<ul class="nav nav-tabs">
-							
-							<li class="nav-item html-tab"><a class="nav-link active" data-toggle="tab" href="html-section">HTML</a>
-							</li>
-							<li class="nav-item css-tab"><a class="nav-link" data-toggle="tab" href="css-section">CSS</a>
-							</li>
-						</ul>
-				</div>
-			</div>
-		</div>
-		<!-- Tab Content -->
-		<div class="tab-content-container">
-			<!-- HTML -->
-			
-				<div class="tab-section html-section">
-					
-					<button class="copy-code-text copy-code-button">
-						Copy html
-						<span class="copy-code-svg">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 89.458 103.583">
-								<path d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z" transform="translate(-2 -1)" fill="#ffffff"></path>
-							</svg>
-						</span>
-					</button>
-					<div class="html-code">
-						<code>
-							<pre>
-
-							</pre>
-						</code>
-					</div>
-				</div>
-				<!-- CSS -->
-				
-					<div class="tab-section css-section" style="display: none;">
-						
-						<button class="copy-code-text copy-code-button">
-							Copy css
-							<span class="copy-code-svg">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 89.458 103.583">
-									<path d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z" transform="translate(-2 -1)" fill="#ffffff"></path>
-								</svg>
-							</span>
-
-						</button>
-						<div class="css-code">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-										</div>
-
-									</div>
-
-									<h3>Guides accordion</h3>
+									<h3>Guides header</h3>
 									<div class="design-system-card component extra-wide">
 
 										<div class="responsive-toggle-container">
@@ -918,6 +715,200 @@
 
 									</div>
 
+									<h3>Guide mini-list</h3>
+									<div class="design-system-card component extra-wide">
+
+										<div class="responsive-toggle-container">
+											<p class="toggle-name">Design view: <label class="switch">
+													<input type="checkbox">
+													<span class="slider"></span>
+													<span class="switch-text-mobile"></span>
+													<span class="switch-text-desktop"></span>
+												</label></p>
+
+											<div class="mobile-only">
+												<h5>Mobile design</h5>
+												<p>Desktop designs can be viewed on screens wider than 650px.</p>
+											</div>
+
+										</div>
+
+										<div class="design-system-card-content">
+
+											<div class="example-wrapper white-back">
+												<div class="example full-width mini-list mini-list-yellow">
+													<div class="mini-list-container">
+
+														<div class="mini-list">
+															<div class="mini-list-item">
+																<div class="title-container" tabindex="0">
+																	<div class="svg-container tick-svg">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+																			<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+																				<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+																				<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+																					<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+																				</g>
+																			</g>
+																		</svg>
+																	</div>
+																	<h3 class="title">Know our decision for closing your business, such as financial or personel circumstances</h3>
+																	<div class="svg-container arrow-svg">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+																			<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+																		</svg>
+																	</div>
+																</div>
+																<div class="content-container">
+																	<div class="content">
+																		<ul>
+																			<li>
+																				Lorem ipsum dolor sit amet
+																			</li>
+																			<li>
+																				Cras varius ligula eros, id vestibulum sem consectetur ut.
+																			</li>
+																		</ul>
+																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. </p>
+																	</div>
+																</div>
+															</div>
+															<div class="mini-list-item">
+																<div class="title-container" tabindex="0">
+																	<div class="svg-container tick-svg">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+																			<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+																				<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+																				<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+																					<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+																				</g>
+																			</g>
+																		</svg>
+																	</div>
+																	<h3 class="title">Get professional advice from an accountant or business adviser</h3>
+																	<div class="svg-container arrow-svg">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+																			<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+																		</svg>
+																	</div>
+																</div>
+																<div class="content-container">
+																	<div class="content">
+																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. <a href="#">In suscipit rutrum maximus.</a></p>
+																	</div>
+																</div>
+															</div>
+															<div class="mini-list-item">
+																<div class="title-container" tabindex="0">
+																	<div class="svg-container tick-svg">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+																			<g id="Group_5622" data-name="Group 5622" transform="translate(-330.594 -656.594)">
+																				<circle id="Ellipse_16" data-name="Ellipse 16" cx="16" cy="16" r="16" transform="translate(330.594 656.594)" fill="#fff"></circle>
+																				<g id="Icon_tick" data-name="Icon / tick" transform="translate(338.898 667.108)">
+																					<path id="Tick" d="M0,6.654,1.873,4.921l3.3,3.011L13.907,0,15.8,1.707,5.178,11.361Z" fill="#254f90"></path>
+																				</g>
+																			</g>
+																		</svg>
+																	</div>
+																	<h3 class="title">Set your date to officially close your business</h3>
+																	<div class="svg-container arrow-svg">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+																			<path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="#254f90" />
+																		</svg>
+																	</div>
+																</div>
+																<div class="content-container">
+																	<div class="content">
+																		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius ligula eros, id vestibulum sem consectetur ut. Vivamus ut tincidunt risus. Curabitur a porttitor erat, a suscipit nisl. Vestibulum at purus in erat mattis vulputate. Nullam tortor quam, ivenenatis at erat. Duis porttitor nibh vitae lorem porttitor dapibus. Donec tincidunt ligula at pharetra lobortis. Aenean risus erat, mollis sed justo in, accumsan convallis dui. <a>In suscipit rutrum maximus.</a></p>
+
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+											</div>
+
+											<button class="element-design component closed">
+	<div class="content-wrapper">
+		<p>HTML/CSS Styles</p>
+	</div>
+	<div role="none" class="float-button">
+		<div tabindex="-1" class="float-button-content">
+			<div class="BgaIcon iconAnimateWrapper "><svg width="16" height="16">
+					<path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+				</svg></div><span class="sr-only">Button toggle current accordion</span>
+		</div>
+	</div>
+</button>
+
+<div class="element-code guide-mini-list-code">
+
+	<div class="col-sm-12 tabs-component">
+		<!-- Tabs -->
+		<div class="row">
+			<div class="c-wrapper c-wrapper-bg-transparent container-fluid">
+				<div class="body-copy col-sm-12 col-md-12">
+					
+						<ul class="nav nav-tabs">
+							
+							<li class="nav-item html-tab"><a class="nav-link active" data-toggle="tab" href="html-section">HTML</a>
+							</li>
+							<li class="nav-item css-tab"><a class="nav-link" data-toggle="tab" href="css-section">CSS</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Tab Content -->
+		<div class="tab-content-container">
+			<!-- HTML -->
+			
+				<div class="tab-section html-section">
+					
+					<button class="copy-code-text copy-code-button">
+						Copy html
+						<span class="copy-code-svg">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 89.458 103.583">
+								<path d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z" transform="translate(-2 -1)" fill="#ffffff"></path>
+							</svg>
+						</span>
+					</button>
+					<div class="html-code">
+						<code>
+							<pre>
+
+							</pre>
+						</code>
+					</div>
+				</div>
+				<!-- CSS -->
+				
+					<div class="tab-section css-section" style="display: none;">
+						
+						<button class="copy-code-text copy-code-button">
+							Copy css
+							<span class="copy-code-svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 89.458 103.583">
+									<path d="M67.917,1h-56.5A9.444,9.444,0,0,0,2,10.417V76.333h9.417V10.417h56.5ZM82.042,19.833H30.25a9.444,9.444,0,0,0-9.417,9.417V95.167a9.444,9.444,0,0,0,9.417,9.417H82.042a9.444,9.444,0,0,0,9.417-9.417V29.25A9.444,9.444,0,0,0,82.042,19.833Zm0,75.333H30.25V29.25H82.042Z" transform="translate(-2 -1)" fill="#ffffff"></path>
+								</svg>
+							</span>
+
+						</button>
+						<div class="css-code">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+										</div>
+
+									</div>
+
 								</div>
 
 								<h3>Guide accordion</h3>
@@ -937,26 +928,26 @@
 										</div>
 
 									</div>
-									
+
 									<div class="body-copy-content guide-accordion-colour-selector">
-                             
-                                        <div class="variation-select-wrapper">
-                                            <label for="guide-accordion-colour-set">Colour set:</label>
-                        
-                                            <select id="guide-accordion-colour-set" class="variation-set">
+
+										<div class="variation-select-wrapper">
+											<label for="guide-accordion-colour-set">Colour set:</label>
+
+											<select id="guide-accordion-colour-set" class="variation-set">
 												<option selected="selected" value="green">Green</option>
 												<option value="red">Red</option>
 												<option value="yellow">Yellow</option>
-                                                <option value="grey">Grey</option>
-                                                <option value="purple">Purple</option>
-												<option value="light-blue" >Light blue</option>
-                                                <option value="magenta">Magenta</option>
-                                                <option value="blue">Blue</option>
+												<option value="grey">Grey</option>
+												<option value="purple">Purple</option>
+												<option value="light-blue">Light blue</option>
+												<option value="magenta">Magenta</option>
+												<option value="blue">Blue</option>
 
 
-                                            </select>  
-                                        </div>
-                                </div>
+											</select>
+										</div>
+									</div>
 									<div class="design-system-card-content">
 
 										<div class="example-wrapper white-back">
@@ -977,7 +968,7 @@
 															<img src="../assets/guide-accordion-svg-green.svg" />
 														</div>
 														<div class="guide-accordion-text">
-															<h5 class="guide-accordion-title">guide-accordion</h5>
+															<h5 class="guide-accordion-title">Guide accordion</h5>
 															<p class="guide-accordion-description">Descripton for guide accordion</p>
 														</div>
 														<span class="guide-accordion-arrow-container">
@@ -992,75 +983,75 @@
 															<div class="guide-pathway-card-container">
 																<a class="guide-pathway-card" href="#">
 																	<div class="status-bubble status-bubble-required">Required</div>
-																	<h3 class="title">Standard pathway</h3>
-																	<p class="description">The standard pathway is an in-page link to another page on the site.</p>
+																	<h3 class="title">Guide pathway</h3>
+																	<p class="description">The guide pathway is an in-page link to a guide on the site.</p>
 																	<div class="icon-container">
 																		<div class="arrow-icon">
 																			<svg viewBox="0 0 16 16">
 																				<path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
 																			</svg>
 																		</div>
-																		<span class="guide-pathway-list-page">This is text here</span>
+																		<span class="guide-pathway-list-page">Page title here</span>
 																	</div>
 																</a>
 															</div>
 															<div class="guide-pathway-card-container">
 																<a class="guide-pathway-card" href="#">
 																	<div class="status-bubble status-bubble-required">Required</div>
-																	<h3 class="title">Standard pathway</h3>
-																	<p class="description">The standard pathway is an in-page link to another page on the site.</p>
+																	<h3 class="title">Guide pathway</h3>
+																	<p class="description">The guide pathway is an in-page link to a guide on the site.</p>
 																	<div class="icon-container">
 																		<div class="arrow-icon">
 																			<svg viewBox="0 0 16 16">
 																				<path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
 																			</svg>
 																		</div>
-																		<span class="guide-pathway-list-page">This is text here</span>
+																		<span class="guide-pathway-list-page">Page title here</span>
 																	</div>
 																</a>
 															</div>
 															<div class="guide-pathway-card-container">
 																<a class="guide-pathway-card" href="#">
 																	<div class="status-bubble status-bubble-required">Required</div>
-																	<h3 class="title">Standard pathway</h3>
-																	<p class="description">The standard pathway is an in-page link to another page on the site.</p>
+																	<h3 class="title">Guide pathway</h3>
+																	<p class="description">The guide pathway is an in-page link to a guide on the site.</p>
 																	<div class="icon-container">
 																		<div class="arrow-icon">
 																			<svg viewBox="0 0 16 16">
 																				<path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
 																			</svg>
 																		</div>
-																		<span class="guide-pathway-list-page">This is text here</span>
+																		<span class="guide-pathway-list-page">Page title here</span>
 																	</div>
 																</a>
 															</div>
 															<div class="guide-pathway-card-container">
 																<a class="guide-pathway-card" href="#">
 																	<div class="status-bubble status-bubble-required">Required</div>
-																	<h3 class="title">Standard pathway</h3>
-																	<p class="description">The standard pathway is an in-page link to another page on the site.</p>
+																	<h3 class="title">Guide pathway</h3>
+																	<p class="description">The guide pathway is an in-page link to a guide on the site.</p>
 																	<div class="icon-container">
 																		<div class="arrow-icon">
 																			<svg viewBox="0 0 16 16">
 																				<path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
 																			</svg>
 																		</div>
-																		<span class="guide-pathway-list-page">This is text here</span>
+																		<span class="guide-pathway-list-page">Page title here</span>
 																	</div>
 																</a>
 															</div>
 															<div class="guide-pathway-card-container">
 																<a class="guide-pathway-card" href="#">
-																	<div class="status-bubble status-bubble-required">Required</div>
-																	<h3 class="title">Standard pathway</h3>
-																	<p class="description">The standard pathway is an in-page link to another page on the site.</p>
+																	<div class="status-bubble status-bubble-recommended">Recommended</div>
+																	<h3 class="title">Guide pathway</h3>
+																	<p class="description">The guide pathway is an in-page link to a guide on the site.</p>
 																	<div class="icon-container">
 																		<div class="arrow-icon">
 																			<svg viewBox="0 0 16 16">
 																				<path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
 																			</svg>
 																		</div>
-																		<span class="guide-pathway-list-page">This is text here</span>
+																		<span class="guide-pathway-list-page">Page title here</span>
 																	</div>
 																</a>
 															</div>
@@ -1177,27 +1168,20 @@
 								<h3>Purpose</h3>
 
 
-								<p>A checklist is used for an end to end process that includes legal steps. This pattern is helpful for someone who needs to complete tasks in a specific order and should include task/action based content only.</p>
+								<p>Guides on BGA are a navigation pattern that pull together information from different areas of the site. They link to site content, not external content.</p>
 
 
 								<h3>General rules:</h3>
 								<ul>
-									<li>Should only be used where there is a logical order to complete a larger journey.</li>
-									<li>Provides numbered steps that presents a specific start and end point.</li>
-									<li>Provides links within content to other websites to complete each step.</li>
-									<li>Can include online and offline actions.</li>
-									<li>Key content is legally required (‘Must do’) steps.</li>
+									<li>Guides should have a clearly defined purpose for a specific audience.</li>
+									<li>Guides often address a particular business scenario/business life event. For example starting a business or closing a business.</li>
+									<li>Guides present information that is intended to be read sequentially (i.e. a step by step process).</li>
+									<li>If establishing a new guide, all content pages need to follow BGA content principles.</li>
+									<li>New guide pages should not duplicate information already in current business.gov.au content.</li>
+									<li>Guides should aim to contain no more than 20 BGA information pages. If guides are much larger than 20 pages, consider breaking them into smaller journeys.</li>
+									<li>Guide tiles should only lead to information pages, not further navigational pages. (A possible exception may be linking to information that differs for different individuals in the intended audience, e.g. linking to industry specific legal information).</li>
+
 								</ul>
-
-
-								<h3>When not to use this pattern:</h3>
-
-								<ul>
-									<li>When the user only needs to read guidance and not take an action (use Guide pattern instead).</li>
-
-									<li>When you are educating the user about a specific stage in an end to end journey (use the tutorial pattern).</li>
-								</ul>
-
 
 
 							</div>
@@ -1225,10 +1209,10 @@
 								<div class="adobe-link vertical-list ">
 
 									<div>
-										<a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/515568e1-a93a-498a-ab73-7832034abc81/specs/">
+										<a class="action-card-anchor" target="blank" href="To be added to the design system">
 											<div class="action-card-button">
 												<div class="action-card-content">
-													<p class="vertical-list-fileName">View checklist design and assets in Adobe XD.</p>
+													<p class="vertical-list-fileName">View guide design and assets in Adobe XD.</p>
 													<div class="action-card-info">
 														<div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
 																<path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
@@ -1244,10 +1228,10 @@
 								<div class="example-link vertical-list ">
 
 									<div>
-										<a class="action-card-anchor" target="blank" href="https://business.gov.au/people/hiring/hiring-employees">
+										<a class="action-card-anchor" target="blank" href="https://www.business.gov.au/guide/starting">
 											<div class="action-card-button">
 												<div class="action-card-content">
-													<p class="vertical-list-fileName">View the hiring employees checklist on business.gov.au</p>
+													<p class="vertical-list-fileName">View the guide to starting a business on business.gov.au</p>
 													<div class="action-card-info">
 														<div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16">
 																<path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path>
