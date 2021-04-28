@@ -2180,6 +2180,10 @@
 				margin: 0 auto;
 				display: block;
 				max-width: 100%;
+                
+                &.mobile-only {
+                    display: none;
+                }
 			}
 		}
 	}
@@ -2204,34 +2208,15 @@
 		}
 	}
 
-	.mobile-example .hero-illustration {
+	.mobile-example .hero-illustration,
+    .mobile-media-query .hero-illustration {
 		.hero-illustration-container {
-			img {
-				display: none;
-			}
-
-			&.blue {
-				background: url(../assets/hero-example-small-blue.svg) no-repeat;
-				background-position: center center;
-				min-height: 250px;
-			}
-
-			&.greyyellow {
-				background: url(../assets/hero-example-small-greyyellow.svg) no-repeat;
-				background-position: center center;
-				min-height: 250px;
-			}
-
-			&.purple {
-				background: url(../assets/hero-example-small-purple.svg) no-repeat;
-				background-position: center center;
-				min-height: 250px;
-			}
-
-			&.lightblue {
-				background: url(../assets/hero-example-small-lightblue.svg) no-repeat;
-				background-position: center center;
-				min-height: 250px;
+            img {
+				display: block;
+                
+                &.desktop-only {
+                    display: none;
+                }
 			}
 		}
 	}

@@ -4668,19 +4668,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .hero-illustration .hero-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
 
+.design-system-card .hero-illustration .hero-illustration-container img.mobile-only { display: none; }
+
 .design-system-card .guide-illustration .guide-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
 
 .design-system-card .header-illustration .header-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
 
-.design-system-card .mobile-example .hero-illustration .hero-illustration-container img { display: none; }
+.design-system-card .mobile-example .hero-illustration .hero-illustration-container img, .design-system-card .mobile-media-query .hero-illustration .hero-illustration-container img { display: block; }
 
-.design-system-card .mobile-example .hero-illustration .hero-illustration-container.blue { background: url(../assets/hero-example-small-blue.svg) no-repeat; background-position: center center; min-height: 250px; }
-
-.design-system-card .mobile-example .hero-illustration .hero-illustration-container.greyyellow { background: url(../assets/hero-example-small-greyyellow.svg) no-repeat; background-position: center center; min-height: 250px; }
-
-.design-system-card .mobile-example .hero-illustration .hero-illustration-container.purple { background: url(../assets/hero-example-small-purple.svg) no-repeat; background-position: center center; min-height: 250px; }
-
-.design-system-card .mobile-example .hero-illustration .hero-illustration-container.lightblue { background: url(../assets/hero-example-small-lightblue.svg) no-repeat; background-position: center center; min-height: 250px; }
+.design-system-card .mobile-example .hero-illustration .hero-illustration-container img.desktop-only, .design-system-card .mobile-media-query .hero-illustration .hero-illustration-container img.desktop-only { display: none; }
 
 .design-system-card .hero-pathway .hero-pathway-list { padding-bottom: 32px; }
 
