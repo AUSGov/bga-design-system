@@ -6894,6 +6894,26 @@ a.header strong { font-weight: 600; }
 
 .design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-04 { top: 49%; left: 6.7%; }
 
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-01 { top: 8.4%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-02 { top: 11.5%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-03 { top: 16%; left: 4%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-03 .spot-subwrapper { z-index: 100; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-04 { top: 16%; left: 27.2%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-05 { top: 29.2%; left: 27.2%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-06 { top: 52%; left: 27.2%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-07 { top: 59.5%; left: 27.2%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-08 { top: 76%; left: 27.2%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.tutorial-page-container #spot-09 { top: 88%; left: 27.2%; }
+
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.mobile-example { display: block; }
 
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.desktop-example { display: none; }
