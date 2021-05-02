@@ -5992,7 +5992,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .guide-accordion-group .guide-pathway-card { height: auto; width: 100%; padding: 24px; background: #ffffff; box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.2); transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; font-family: "Open Sans", sans-serif; font-style: normal; font-stretch: normal; color: #333333; text-decoration: none; font-weight: normal; }
 
-.design-system-card .guide-accordion-group .guide-pathway-card:hover, .design-system-card .guide-accordion-group .guide-pathway-card:focus { transform: translateY(-0.1875rem); text-decoration: none; color: #333333; text-decoration: none; outline: none; }
+.design-system-card .guide-accordion-group .guide-pathway-card:hover, .design-system-card .guide-accordion-group .guide-pathway-card:focus { transform: translateY(-0.1875rem); text-decoration: none; color: #333333; text-decoration: none; outline: none; cursor: pointer; }
 
 .design-system-card .guide-accordion-group .guide-pathway-card .icon-container { position: relative; display: flex; }
 

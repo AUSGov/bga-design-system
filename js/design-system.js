@@ -614,8 +614,8 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.guide-accordion').on('click', function () {
-		$(this).toggleClass('active');
+	$('.guide-accordion-tile').on('click', function () {
+		$(this).parent().toggleClass('active');
 		if ($(this).hasClass('active')) {
 						$('.accordion-group-toggle-content').addClass('all-open');
 			$('.accordion-group-toggle-content').children('h5').text('Close all');
