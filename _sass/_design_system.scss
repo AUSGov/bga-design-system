@@ -6936,6 +6936,10 @@
 			border: solid 1px $blue-primary !important;
 		}
 
+		&:hover {
+			cursor: pointer;
+		}
+
 		&[type="text"] {
 			@include font-format($font-family, $font-regular, normal);
 			font-size: 16px;

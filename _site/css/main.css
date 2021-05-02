@@ -6100,6 +6100,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .variation-select-wrapper select.variation-set:focus { outline: none; border: solid 1px #254F90 !important; }
 
+.variation-select-wrapper select.variation-set:hover { cursor: pointer; }
+
 .variation-select-wrapper select.variation-set[type="text"] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
 @media (max-width: 640px) { .variation-select-wrapper select.variation-set { width: 250px; } }
