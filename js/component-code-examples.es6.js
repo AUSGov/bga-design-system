@@ -5,9 +5,7 @@ $(document).ready(function () {
 //HERO-PATHWAY-LIST
     // Hero pathway colour dropdown
     $('.hero-pathway-colour-selector #hero-pathway-colour-set').change(function () {
-
       var expr = $(this).val();
-        console.log(expr);
       var addColourClass = `hero-pathway-list-color-${expr}`;
       var removeColourClasses = ["hero-pathway-list-color-blue", "hero-pathway-list-color-yellow", "hero-pathway-list-color-magenta", "hero-pathway-list-color-bga-blue"]
 
@@ -10412,4 +10410,648 @@ const guideHeaderCss =
 $(".guide-header-code .css-code").html(guideHeaderCss);
 
 	
+	//GUIDE ACCORDION
+	//get default svg code from .svg file and update code example
+	function getSvgCode(svgTheme) {
+
+		var svgSrc = $(".guide-accordion-image img").attr('src');
+		if(svgSrc) {
+		   		$.get(svgSrc, function (data) {
+			var svgNode = data.childNodes;
+			var svgCode = svgNode[0].outerHTML || new XMLSerializer().serializeToString(svgNode[0]);
+			evaluateGuideAccordionHtml(svgTheme, svgCode);
+		});
+		   }
+
+	}
+
+	// Guide-accordion colour dropdown
+	$('.guide-accordion-colour-selector #guide-accordion-colour-set').change(function () {
+		var expr = $(this).val();
+		var addColourClass = `guide-accordion-${expr}`;
+		var removeColourClasses = ["guide-accordion-green", "guide-accordion-red", "guide-accordion-yellow", "guide-accordion-grey", "guide-accordion-purple", "guide-accordion-light-blue", "guide-accordion-magenta", "guide-accordion-blue"]
+		$(".guide-accordion").removeClass(removeColourClasses).addClass(addColourClass);
+		$(".guide-accordion-image img").attr('src', '../assets/guide-accordion-svg-' + expr + '.svg')
+
+		getSvgCode(expr);
+	});
+
+ //html
+ function evaluateGuideAccordionHtml(selectedColour, selectedSvg, defaultSvg) {
+const guideAccordionHtml =
+`
+<div class="accordion">
+   <div class=" accordion-group">
+      <div class="accordion-group-toggle">
+         <!-- Toggle 'all-open' class with js when clicked-->  
+         <div tabindex="0" class="accordion-group-toggle-content">
+            <!-- Toggle 'open/close' text with js when button is clicked--> 
+            <span class="title">Open all</span>   
+            <div class="arrow-icon">
+               <svg width="16" height="16">
+                  <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+               </svg>
+            </div>
+         </div>
+      </div>
+      <div class="guide-accordion guide-accordion-${selectedColour} active">
+         <div class="guide-accordion-tile" tabindex="0">
+            <div class="guide-accordion-image">
+               ${selectedSvg}
+            </div>
+            <div class="guide-accordion-text">
+               <h5 class="guide-accordion-title">guide-accordion</h5>
+               <p class="guide-accordion-description">Descripton for guide accordion</p>
+            </div>
+            <span class="guide-accordion-arrow-container">
+            <span class="guide-accordion-arrow">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.5" viewBox="0 0 20 12.5">
+                  <path data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(20) rotate(90)" fill="black"> </path>
+               </svg>
+            </span>
+         </div>
+         <div class="guide-accordion-content">
+            <div class="guide-pathway-list">
+               <div class="guide-pathway-card-container">
+                  <a class="guide-pathway-card" href="#">
+                     <div class="status-bubble status-bubble-required">Required</div>
+                     <h3 class="title">Standard pathway</h3>
+                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="icon-container">
+                        <div class="arrow-icon">
+                           <svg viewBox="0 0 16 16">
+                              <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                           </svg>
+                        </div>
+                        <span class="guide-pathway-list-page">This is text here</span>
+                     </div>
+                  </a>
+               </div>
+               <div class="guide-pathway-card-container">
+                  <a class="guide-pathway-card" href="#">
+                     <div class="status-bubble status-bubble-required">Required</div>
+                     <h3 class="title">Standard pathway</h3>
+                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="icon-container">
+                        <div class="arrow-icon">
+                           <svg viewBox="0 0 16 16">
+                              <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                           </svg>
+                        </div>
+                        <span class="guide-pathway-list-page">This is text here</span>
+                     </div>
+                  </a>
+               </div>
+               <div class="guide-pathway-card-container">
+                  <a class="guide-pathway-card" href="#">
+                     <div class="status-bubble status-bubble-required">Required</div>
+                     <h3 class="title">Standard pathway</h3>
+                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="icon-container">
+                        <div class="arrow-icon">
+                           <svg viewBox="0 0 16 16">
+                              <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                           </svg>
+                        </div>
+                        <span class="guide-pathway-list-page">This is text here</span>
+                     </div>
+                  </a>
+               </div>
+               <div class="guide-pathway-card-container">
+                  <a class="guide-pathway-card" href="#">
+                     <div class="status-bubble status-bubble-required">Required</div>
+                     <h3 class="title">Standard pathway</h3>
+                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="icon-container">
+                        <div class="arrow-icon">
+                           <svg viewBox="0 0 16 16">
+                              <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                           </svg>
+                        </div>
+                        <span class="guide-pathway-list-page">This is text here</span>
+                     </div>
+                  </a>
+               </div>
+               <div class="guide-pathway-card-container">
+                  <a class="guide-pathway-card" href="#">
+                     <div class="status-bubble status-bubble-required">Required</div>
+                     <h3 class="title">Standard pathway</h3>
+                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="icon-container">
+                        <div class="arrow-icon">
+                           <svg viewBox="0 0 16 16">
+                              <path d="M11.173 10.07H0v-3h11.171L7.02 2.923 8.929 1 16 8.57l-7.071 7.573-1.91-1.909z"></path>
+                           </svg>
+                        </div>
+                        <span class="guide-pathway-list-page">This is text here</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+`
+
+$(".guide-accordion-code .html-code code pre").text(guideAccordionHtml);
+ }
+
+
+//css
+const guideAccordionCss =
+`
+<h5>Expand all button</h5>
+<code>
+<pre>
+/* open all accordions button */
+.accordion-group-toggle {
+  border-bottom: 1px solid #ebebeb;
+  justify-content: flex-end;
+  padding-bottom: 8px;
+  align-items: center;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 2;
+  font-size: 16px;
+  color: #666666;
+}
+.accordion-group-toggle-content {
+  height: 32px;
+  align-items: center;
+  display: flex;
+  outline: none;
+}
+.accordion-group-toggle-content {
+  cursor: pointer;
+}
+.accordion .arrow-icon {
+  line-height: 0.5;
+}
+.accordion-group-toggle-content.all-open .arrow-icon,
+.accordion-item.open .accordion-item-tile .arrow-icon {
+  transform: scaleY(-1);
+}
+.accordion-group-toggle-content:hover .title,
+.accordion-group-toggle-content:focus .title {
+  box-shadow: inset 0 -0.11rem 0 #666;
+  line-height: 1.38;
+}
+.accordion-group-toggle-content .title {
+  font-weight: 600;
+  line-height: 2;
+  margin: 0 8px 0 0;
+  padding-bottom: 0;
+}
+</pre>
+</code>
+
+<h5>Accordion</h5>
+<code>
+<pre>
+/* Accordion */
+.guide-accordion {
+  margin-bottom: 16px;
+}
+.guide-accordion-tile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 0 0 0 16px;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus {
+  cursor: pointer;
+}
+.guide-accordion-image {
+  padding: 24px 0 16px 0;
+  box-sizing: border-box;
+}
+.guide-accordion-image svg {
+  width: 250px;
+  height: auto;
+}
+.guide-accordion-text {
+  width: 100%;
+  padding: 24px 16px 0 16px;
+}
+.guide-accordion-title {
+  color: #333;
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s ease 0s;
+  font-weight: 600;
+  line-height: 1.75;
+  padding: 0 0 16px 0;
+  margin: 0;
+  display: inline;
+}
+.guide-accordion-tile:focus {
+  outline: none;
+}
+.guide-accordion-tile:hover .guide-accordion-title,
+.guide-accordion-tile:focus .guide-accordion-title {
+  box-shadow: inset 0 -2.08px 0 #666;
+  padding-bottom: 1px;
+}
+.guide-accordion-description {
+  padding: 16px 0 24px 0;
+  font-size: 16px;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.guide-accordion-arrow-container {
+  margin-left: auto;
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+  min-width: 92px;
+}
+.guide-accordion-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: auto;
+}
+.guide-accordion-arrow svg {
+  width: 28px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.guide-accordion.active .guide-accordion-arrow svg {
+  transform: scaleY(-1);
+}
+.guide-accordion-content {
+  overflow: visible;
+  transition: height 0.8s, background-color 0.5s;
+  display: none;
+}
+.guide-accordion.active .guide-accordion-content {
+  display: block;
+}
+.guide-pathway-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 24px 16px 0 16px;
+  animation: fadeInTop 0.6s forwards;
+}
+.guide-pathway-card .icon-container .arrow-icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  margin-right: 8px;
+}
+.guide-pathway-card .icon-container .arrow-icon svg {
+  fill: #4569a0;
+}
+</pre>
+</code>
+
+<h5>Pathway</h5>
+<code>
+<pre>
+/* Guide pathway */
+.guide-pathway-card-container {
+  width: 33.33%;
+  padding: 0 16px 32px 16px;
+  margin: 0;
+  display: flex;
+}
+.guide-pathway-card {
+  height: auto;
+  width: 100%;
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.2);
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  color: #333333;
+  text-decoration: none;
+}
+.guide-pathway-card:hover,
+.guide-pathway-card:focus {
+  transform: translateY(-0.1875rem);
+  text-decoration: none;
+  color: #333333;
+  text-decoration: none;
+  outline: none;
+}
+.guide-pathway-card .icon-container {
+  position: relative;
+  display: flex;
+}
+.guide-pathway-card .title {
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0;
+  font-size: 21px;
+  margin: 0 0 24px 0;
+}
+.guide-pathway-card:hover .title,
+.guide-pathway-card:focus .title {
+  color: #254f90;
+  text-decoration: underline;
+}
+.guide-pathway-card .description {
+  margin: 0 0 48px 0;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+/* Status bubble */
+.guide-pathway-card .status-bubble {
+  width: auto;
+  padding: 0 10px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 22px;
+  display: table;
+}
+.guide-pathway-card .status-bubble-required {
+  background: #ffd964;
+  border: 2px solid #ffd964;
+  font-weight: 600;
+}
+.guide-pathway-card .status-bubble-recommended {
+  background: #ffffff;
+  border: 2px solid #ffd964;
+}
+.guide-pathway-list-page {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+}
+</pre>
+</code>
+
+<h5>Themes</h5>
+<code>
+<pre>
+/* Themes */
+/* Green */
+.guide-accordion-green .guide-accordion-tile {
+  background: #e0f2f1;
+}
+.guide-accordion-green .guide-accordion-tile:hover .guide-accordion-arrow,
+.guide-accordion-tile:focus .guide-accordion-arrow {
+  background: #bce3e1;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus,
+.guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-green .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-green .guide-accordion-tile,
+.guide-accordion.active.guide-accordion-green
+  .guide-accordion-tile:hover
+  .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-green
+  .guide-accordion-tile:focus
+  .guide-accordion-arrow,
+.guide-accordion-green .guide-accordion-content {
+  background: #ceeae9;
+}
+.guide-accordion-green .guide-pathway-card {
+  border-top: 4px solid #59a0a0;
+}
+
+/* Red */
+.guide-accordion-red .guide-accordion-tile {
+  background: #ffe4de;
+}
+.guide-accordion-red .guide-accordion-tile:hover .guide-accordion-arrow,
+.guide-accordion-tile:focus .guide-accordion-arrow {
+  background: #ffc3b5;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus,
+.guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-red .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-red .guide-accordion-tile,
+.guide-accordion.active.guide-accordion-red
+  .guide-accordion-tile:hover
+  .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-red
+  .guide-accordion-tile:focus
+  .guide-accordion-arrow,
+.guide-accordion-red .guide-accordion-content {
+  background: #ffd3ca;
+}
+.guide-accordion-red .guide-pathway-card {
+  border-top: 4px solid #d96d55;
+}
+
+/* Yellow */
+.guide-accordion-yellow .guide-accordion-tile {
+  background: #fff3cf;
+}
+.guide-accordion-yellow .guide-accordion-tile:hover .guide-accordion-arrow,
+.guide-accordion-tile:focus .guide-accordion-arrow {
+  background: #ffe9a6;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus,
+.guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-yellow .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-yellow .guide-accordion-tile,
+.guide-accordion.active.guide-accordion-yellow
+  .guide-accordion-tile:hover
+  .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-yellow
+  .guide-accordion-tile:focus
+  .guide-accordion-arrow,
+.guide-accordion-yellow .guide-accordion-content {
+  background: #feb;
+}
+.guide-accordion-yellow .guide-pathway-card {
+  border-top: 4px solid #f5c550;
+}
+
+/* Grey */
+.guide-accordion-grey .guide-accordion-tile {
+  background: #e0e2ee;
+}
+.guide-accordion-grey .guide-accordion-tile:hover .guide-accordion-arrow,
+.guide-accordion-tile:focus .guide-accordion-arrow {
+  background: #c9cce1;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus,
+.guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-grey .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-grey .guide-accordion-tile,
+.guide-accordion.active.guide-accordion-grey
+  .guide-accordion-tile:hover
+  .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-grey
+  .guide-accordion-tile:focus
+  .guide-accordion-arrow,
+.guide-accordion-grey .guide-accordion-content {
+  background: #d6d9e9;
+}
+.guide-accordion-grey .guide-pathway-card {
+  border-top: 4px solid #495c74;
+}
+
+/* Purple */
+.guide-accordion-purple .guide-accordion-tile {
+  background: #f2eefa;
+}
+.guide-accordion-purple .guide-accordion-tile:hover .guide-accordion-arrow,
+.guide-accordion-tile:focus .guide-accordion-arrow {
+  background: #ddd2f2;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus,
+.guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-purple .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-purple .guide-accordion-tile,
+.guide-accordion.active.guide-accordion-purple
+  .guide-accordion-tile:hover
+  .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-purple
+  .guide-accordion-tile:focus
+  .guide-accordion-arrow,
+.guide-accordion-purple .guide-accordion-content {
+  background: #e9e2f7;
+}
+.guide-accordion-purple .guide-pathway-card {
+  border-top: 4px solid #bdb4ec;
+}
+
+/* Light blue */
+.guide-accordion-light-blue .guide-accordion-tile {
+  background: #ebf4ff;
+}
+.guide-accordion-light-blue .guide-accordion-tile:hover .guide-accordion-arrow,
+.guide-accordion-tile:focus .guide-accordion-arrow {
+  background: #c2deff;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus,
+.guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-light-blue .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-light-blue .guide-accordion-tile,
+.guide-accordion.active.guide-accordion-light-blue
+  .guide-accordion-tile:hover
+  .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-light-blue
+  .guide-accordion-tile:focus
+  .guide-accordion-arrow,
+.guide-accordion-light-blue .guide-accordion-content {
+  background: #d7e9ff;
+}
+.guide-accordion-light-blue .guide-pathway-card {
+  border-top: 4px solid #6394cf;
+}
+
+/* Magenta */
+.guide-accordion-magenta .guide-accordion-tile {
+  background: #ffecf3;
+}
+.guide-accordion-magenta .guide-accordion-tile:hover .guide-accordion-arrow,
+.guide-accordion-tile:focus .guide-accordion-arrow {
+  background: #ffc8dc;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus,
+.guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-magenta .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-magenta .guide-accordion-tile,
+.guide-accordion.active.guide-accordion-magenta
+  .guide-accordion-tile:hover
+  .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-magenta
+  .guide-accordion-tile:focus
+  .guide-accordion-arrow,
+.guide-accordion-magenta .guide-accordion-content {
+  background: #ffdde9;
+}
+.guide-accordion-magenta .guide-pathway-card {
+  border-top: 4px solid #b64d94;
+}
+
+/* Blue */
+.guide-accordion-blue .guide-accordion-tile {
+  background: #e4ecf6;
+}
+.guide-accordion-blue .guide-accordion-tile:hover .guide-accordion-arrow,
+.guide-accordion-tile:focus .guide-accordion-arrow {
+  background: #c9d9ed;
+}
+.guide-accordion-tile:hover,
+.guide-accordion-tile:focus,
+.guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-blue .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-blue .guide-accordion-tile,
+.guide-accordion.active.guide-accordion-blue
+  .guide-accordion-tile:hover
+  .guide-accordion-arrow,
+.guide-accordion.active.guide-accordion-blue
+  .guide-accordion-tile:focus
+  .guide-accordion-arrow,
+.guide-accordion-blue .guide-accordion-content {
+  background: #d9e4f2;
+}
+.guide-accordion-blue .guide-pathway-card {
+  border-top: 4px solid #4569a0;
+}
+</pre>
+</code>
+
+<h5>Media queries</h5>
+<code>
+<pre>
+/* Media queries */
+@media (max-width: 992px) {
+  .guide-pathway-card-container {
+    width: 50%;
+  }
+  .guide-accordion-image svg {
+    width: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .guide-pathway-card-container {
+    width: 100%;
+  }
+  .guide-accordion-image svg {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .guide-pathway-card-container {
+    padding: 0 0 24px 0;
+  }
+  .guide-accordion-text {
+    padding-left: 0;
+  }
+  .guide-accordion-arrow-container,
+  .guide-accordion-arrow {
+    width: 64px;
+    min-width: 64px;
+  }
+}
+</pre>
+</code>
+`
+$(".guide-accordion-code .css-code").html(guideAccordionCss);
+	   getSvgCode("green");
+
 });

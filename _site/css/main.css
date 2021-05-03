@@ -4802,7 +4802,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .feature-image-pathway.variation .icon-link { background: url(../assets/Icon-arrow-right-blue.svg) no-repeat left 8px center; }
 
-@media (max-width: 1100px) { .design-system-card .feature-image-pathway .feature-image-container { display: -webkit-flex; /* Safari 6.1+ */ display: flex; flex-direction: column-reverse; padding: 0; } .design-system-card .feature-image-pathway .feature-text { -webkit-box-flex: 1; flex: 1 100%; padding: 24px; width: 100%; } .design-system-card .feature-image-pathway .feature-image { -webkit-box-flex: 1; flex: 1 100%; padding: 24px 24px 0 24px; width: 100%; } .design-system-card .feature-image-pathway .icon-link { position: relative; } }
+@media (max-width: 1100px) { .design-system-card .feature-image-pathway .feature-image-container { display: -webkit-flex; /* Safari 6.1+ */ display: flex; flex-direction: column-reverse; padding: 0; } .design-system-card .feature-image-pathway .feature-text { padding: 24px; width: 100%; } .design-system-card .feature-image-pathway .feature-image { padding: 24px 24px 0 24px; width: 100%; height: 100%; } .design-system-card .feature-image-pathway .icon-link { position: relative; } }
 
 .design-system-card .mobile-example .feature-image-pathway .feature-image-container, .design-system-card .mobile-media-query .feature-image-pathway .feature-image-container { display: -webkit-flex; /* Safari 6.1+ */ display: flex; flex-direction: column-reverse; padding: 0; }
 
@@ -5958,7 +5958,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .guide-accordion-group .guide-accordion-image { padding: 24px 0 16px 0; box-sizing: border-box; }
 
-.design-system-card .guide-accordion-group .guide-accordion-image svg { width: 250px; height: auto; }
+.design-system-card .guide-accordion-group .guide-accordion-image img { width: 250px; height: 130px; }
 
 .design-system-card .guide-accordion-group .guide-accordion-text { width: 100%; padding: 24px 16px 0 16px; }
 
@@ -5988,7 +5988,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .guide-accordion-group .guide-pathway-card { height: auto; width: 100%; padding: 24px; background: #ffffff; box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.2); transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; font-family: "Open Sans", sans-serif; font-style: normal; font-stretch: normal; color: #333333; text-decoration: none; font-weight: normal; }
 
-.design-system-card .guide-accordion-group .guide-pathway-card:hover, .design-system-card .guide-accordion-group .guide-pathway-card:focus { transform: translateY(-0.1875rem); text-decoration: none; color: #333333; text-decoration: none; outline: none; }
+.design-system-card .guide-accordion-group .guide-pathway-card:hover, .design-system-card .guide-accordion-group .guide-pathway-card:focus { transform: translateY(-0.1875rem); text-decoration: none; color: #333333; text-decoration: none; outline: none; cursor: pointer; }
 
 .design-system-card .guide-accordion-group .guide-pathway-card .icon-container { position: relative; display: flex; }
 
@@ -6012,77 +6012,77 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-tile { background: #e0f2f1; }
 
-.design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-tile:focus .guide-accordion-arrow { background: #bce3e1; }
+.design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-tile:focus .guide-accordion-arrow { background: #bce3e1; }
 
-.design-system-card .guide-accordion-group .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-green .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-green .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-green .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-green .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-content { background: #ceeae9; }
+.design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-green.guide-accordion.active .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-green.guide-accordion.active .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion-green.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-green.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-green .guide-accordion-content { background: #ceeae9; }
 
 .design-system-card .guide-accordion-group .guide-accordion-green .guide-pathway-card { border-top: 4px solid #59a0a0; }
 
 .design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-tile { background: #ffe4de; }
 
-.design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-tile:focus .guide-accordion-arrow { background: #ffc3b5; }
+.design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-tile:focus .guide-accordion-arrow { background: #ffc3b5; }
 
-.design-system-card .guide-accordion-group .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-red .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-red .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-red .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-red .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-content { background: #ffd3ca; }
+.design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-red.guide-accordion.active .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-red.guide-accordion.active .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion-red.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-red.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-red .guide-accordion-content { background: #ffd3ca; }
 
 .design-system-card .guide-accordion-group .guide-accordion-red .guide-pathway-card { border-top: 4px solid #d96d55; }
 
 .design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-tile { background: #fff3cf; }
 
-.design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-tile:focus .guide-accordion-arrow { background: #ffe9a6; }
+.design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-tile:focus .guide-accordion-arrow { background: #ffe9a6; }
 
-.design-system-card .guide-accordion-group .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-yellow .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-yellow .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-yellow .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-yellow .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-content { background: #feb; }
+.design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-yellow.guide-accordion.active .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-yellow.guide-accordion.active .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion-yellow.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-yellow.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-yellow .guide-accordion-content { background: #feb; }
 
 .design-system-card .guide-accordion-group .guide-accordion-yellow .guide-pathway-card { border-top: 4px solid #f5c550; }
 
 .design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-tile { background: #e0e2ee; }
 
-.design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-tile:focus .guide-accordion-arrow { background: #c9cce1; }
+.design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-tile:focus .guide-accordion-arrow { background: #c9cce1; }
 
-.design-system-card .guide-accordion-group .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-grey .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-grey .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-grey .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-grey .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-content { background: #d6d9e9; }
+.design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-grey.guide-accordion.active .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-grey.guide-accordion.active .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion-grey.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-grey.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-grey .guide-accordion-content { background: #d6d9e9; }
 
 .design-system-card .guide-accordion-group .guide-accordion-grey .guide-pathway-card { border-top: 4px solid #495c74; }
 
 .design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-tile { background: #f2eefa; }
 
-.design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-tile:focus .guide-accordion-arrow { background: #ddd2f2; }
+.design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-tile:focus .guide-accordion-arrow { background: #ddd2f2; }
 
-.design-system-card .guide-accordion-group .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-purple .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-purple .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-purple .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-purple .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-content { background: #e9e2f7; }
+.design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-purple.guide-accordion.active .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-purple.guide-accordion.active .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion-purple.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-purple.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-purple .guide-accordion-content { background: #e9e2f7; }
 
 .design-system-card .guide-accordion-group .guide-accordion-purple .guide-pathway-card { border-top: 4px solid #bdb4ec; }
 
 .design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-tile { background: #ebf4ff; }
 
-.design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-tile:focus .guide-accordion-arrow { background: #c2deff; }
+.design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-tile:focus .guide-accordion-arrow { background: #c2deff; }
 
-.design-system-card .guide-accordion-group .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-light-blue .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-light-blue .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-light-blue .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-light-blue .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-content { background: #d7e9ff; }
+.design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-light-blue.guide-accordion.active .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-light-blue.guide-accordion.active .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion-light-blue.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-light-blue.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-accordion-content { background: #d7e9ff; }
 
 .design-system-card .guide-accordion-group .guide-accordion-light-blue .guide-pathway-card { border-top: 4px solid #6394cf; }
 
 .design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-tile { background: #ffecf3; }
 
-.design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-tile:focus .guide-accordion-arrow { background: #ffc8dc; }
+.design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-tile:focus .guide-accordion-arrow { background: #ffc8dc; }
 
-.design-system-card .guide-accordion-group .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-magenta .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-magenta .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-magenta .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-magenta .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-content { background: #ffdde9; }
+.design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-magenta.guide-accordion.active .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-magenta.guide-accordion.active .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion-magenta.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-magenta.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-magenta .guide-accordion-content { background: #ffdde9; }
 
 .design-system-card .guide-accordion-group .guide-accordion-magenta .guide-pathway-card { border-top: 4px solid #b64d94; }
 
 .design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-tile { background: #e4ecf6; }
 
-.design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-tile:focus .guide-accordion-arrow { background: #c9d9ed; }
+.design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-tile:focus .guide-accordion-arrow { background: #c9d9ed; }
 
-.design-system-card .guide-accordion-group .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-blue .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-blue .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-blue .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion.active.guide-accordion-blue .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-content { background: #d9e4f2; }
+.design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-tile:hover, .design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-tile:focus, .design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-blue.guide-accordion.active .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-blue.guide-accordion.active .guide-accordion-tile, .design-system-card .guide-accordion-group .guide-accordion-blue.guide-accordion.active .guide-accordion-tile:hover .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-blue.guide-accordion.active .guide-accordion-tile:focus .guide-accordion-arrow, .design-system-card .guide-accordion-group .guide-accordion-blue .guide-accordion-content { background: #d9e4f2; }
 
 .design-system-card .guide-accordion-group .guide-accordion-blue .guide-pathway-card { border-top: 4px solid #4569a0; }
 
-@media (max-width: 992px) { .design-system-card .guide-accordion-group .guide-pathway-card-container { width: 50%; } .design-system-card .guide-accordion-group .guide-accordion-image svg { width: 180px; } }
+@media (max-width: 992px) { .design-system-card .guide-accordion-group .guide-pathway-card-container { width: 50%; } .design-system-card .guide-accordion-group .guide-accordion-image img { width: 180px; } }
 
-@media (max-width: 768px) { .design-system-card .guide-accordion-group .guide-pathway-card-container { width: 100%; } .design-system-card .guide-accordion-group .guide-accordion-image svg { display: none; } }
+@media (max-width: 768px) { .design-system-card .guide-accordion-group .guide-pathway-card-container { width: 100%; } .design-system-card .guide-accordion-group .guide-accordion-image img { display: none; } }
 
 @media (max-width: 576px) { .design-system-card .guide-accordion-group .guide-pathway-card-container { padding: 0 0 24px 0; } .design-system-card .guide-accordion-group .guide-accordion-text { padding-left: 0; } .design-system-card .guide-accordion-group .guide-accordion-arrow-container, .design-system-card .guide-accordion-group .guide-accordion-arrow { width: 64px; min-width: 64px; } }
 
 .design-system-card .mobile-example .guide-accordion-group .guide-pathway-card-container, .design-system-card .mobile-media-query .guide-accordion-group .guide-pathway-card-container { width: 100%; }
 
-.design-system-card .mobile-example .guide-accordion-group .guide-accordion-image svg, .design-system-card .mobile-media-query .guide-accordion-group .guide-accordion-image svg { display: none; }
+.design-system-card .mobile-example .guide-accordion-group .guide-accordion-image img, .design-system-card .mobile-media-query .guide-accordion-group .guide-accordion-image img { display: none; }
 
 .design-system-card .mobile-example .guide-accordion-group .guide-pathway-card-container, .design-system-card .mobile-media-query .guide-accordion-group .guide-pathway-card-container { padding: 0 0 24px 0; }
 
@@ -6095,6 +6095,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .variation-select-wrapper select.variation-set { border: solid 1px #495c74; background: pink; padding: 8px 12px; margin-left: 8px; width: 300px; color: #333333; background: #ffffff url(../assets/BGAIcon-chevron-down.svg) no-repeat; background-size: 16px 10px; background-position: right 20px center; border-radius: 0px; -webkit-appearance: none !important; -webkit-border-radius: 0px !important; }
 
 .variation-select-wrapper select.variation-set:focus { outline: none; border: solid 1px #254F90 !important; }
+
+.variation-select-wrapper select.variation-set:hover { cursor: pointer; }
 
 .variation-select-wrapper select.variation-set[type="text"] { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 16px; }
 
@@ -6854,6 +6856,8 @@ a.header strong { font-weight: 600; }
 
 .design-system-card.component.page-pattern .example-wrapper img.desktop-example { display: block; }
 
+.design-system-card.component.page-pattern .example-wrapper img.desktop-example-only { display: block; }
+
 .design-system-card.component.page-pattern .example-wrapper .example { position: relative; }
 
 .design-system-card.component.page-pattern .example-wrapper .example .spot { position: absolute; cursor: pointer; }
@@ -6890,9 +6894,21 @@ a.header strong { font-weight: 600; }
 
 .design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-02 { top: 29.5%; left: 4%; }
 
-.design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-03 { top: 42%; left: 6.7%; }
+.design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-03 { top: 43%; left: 6.5%; }
 
-.design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-04 { top: 49%; left: 6.7%; }
+.design-system-card.component.page-pattern .example-wrapper .example.category-page-container #spot-04 { top: 49%; left: 6.5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.guides-page-container #spot-01 { top: 10.5%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.guides-page-container #spot-02 { top: 13.3%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.guides-page-container #spot-03 { top: 9.7%; left: 61%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.guides-page-container #spot-04 { top: 24.5%; left: 7%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.guides-page-container #spot-05 { top: 34.2%; left: 7%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.guides-page-container #spot-06 { top: 51%; left: 10%; }
 
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.mobile-example { display: block; }
 
@@ -6959,21 +6975,5 @@ a.header strong { font-weight: 600; }
 .design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-05, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-05 { top: 65%; left: 18%; }
 
 .design-system-card.component.page-pattern .mobile-example .example.checklist-container #spot-06, .design-system-card.component.page-pattern .mobile-media-query .example.checklist-container #spot-06 { top: 93.5%; left: 0%; }
-
-.design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-01, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-01 { top: 13%; left: 0%; }
-
-.design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-02, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-02 { top: 20%; left: 0%; }
-
-.design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-03, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-03 { top: 44%; left: 4%; }
-
-.design-system-card.component.page-pattern .mobile-example .example.topic-page-container #spot-04, .design-system-card.component.page-pattern .mobile-media-query .example.topic-page-container #spot-04 { top: 55%; left: 6%; }
-
-.design-system-card.component.page-pattern .mobile-example .example.category-page-container #spot-01, .design-system-card.component.page-pattern .mobile-media-query .example.category-page-container #spot-01 { top: 13%; left: 0%; }
-
-.design-system-card.component.page-pattern .mobile-example .example.category-page-container #spot-02, .design-system-card.component.page-pattern .mobile-media-query .example.category-page-container #spot-02 { top: 25%; left: 0%; }
-
-.design-system-card.component.page-pattern .mobile-example .example.category-page-container #spot-03, .design-system-card.component.page-pattern .mobile-media-query .example.category-page-container #spot-03 { top: 53.5%; left: 6%; }
-
-.design-system-card.component.page-pattern .mobile-example .example.category-page-container #spot-04, .design-system-card.component.page-pattern .mobile-media-query .example.category-page-container #spot-04 { top: 62%; left: 6%; }
 
 /*# sourceMappingURL=main.css.map */
