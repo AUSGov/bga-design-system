@@ -226,6 +226,58 @@
 					}
 
 				}
+                
+                // Tutorial page
+				&.tutorial-page-container {
+					#spot-01 {
+						top: 8.4%;
+						left: 4%;
+					}
+
+					#spot-02 {
+						top: 11.5%;
+						left: 4%;
+					}
+
+					#spot-03 {
+						top: 16%;
+                        left: 4%;
+                        
+                        .spot-subwrapper {
+                            z-index: 100;
+                        }
+					}
+
+					#spot-04 {
+						top: 16%;
+                        left: 27.2%;
+					}
+                    #spot-05 {
+						top: 29.2%;
+                        left: 27.2%;
+					}
+
+					#spot-06 {
+						top: 52%;
+                        left: 27.2%;
+					}
+
+					#spot-07 {
+						top: 59.5%;
+                        left: 27.2%;
+					}
+
+					#spot-08 {
+						top: 76%;
+                        left: 27.2%;
+					}
+                    #spot-09 {
+						top: 88%;
+                        left: 27.2%;
+					}
+
+
+				}
 
 				// Resource article page
 				&.resource-article-page-container {
