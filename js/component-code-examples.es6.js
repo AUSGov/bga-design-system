@@ -10386,9 +10386,8 @@ const guideHeaderCss =
   }
   .guide-page-header-content-left {
     width: 100%;
-  }
-  .guide-page-header-content-left {
-    margin-right: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
   }
 }
 @media (max-width: 576px) {
@@ -10474,9 +10473,11 @@ const guideAccordionHtml =
             <div class="guide-pathway-list">
                <div class="guide-pathway-card-container">
                   <a class="guide-pathway-card" href="#">
-                     <div class="status-bubble status-bubble-required">Required</div>
-                     <h3 class="title">Standard pathway</h3>
-                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+					 <div class="guide-pathway-card-container-top">
+						 <div class="status-bubble status-bubble-required">Required</div>
+						 <h3 class="title">Standard pathway</h3>
+						 <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+					 </div>
                      <div class="icon-container">
                         <div class="arrow-icon">
                            <svg viewBox="0 0 16 16">
@@ -10489,9 +10490,11 @@ const guideAccordionHtml =
                </div>
                <div class="guide-pathway-card-container">
                   <a class="guide-pathway-card" href="#">
-                     <div class="status-bubble status-bubble-required">Required</div>
-                     <h3 class="title">Standard pathway</h3>
-                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="guide-pathway-card-container-top">
+						 <div class="status-bubble status-bubble-required">Required</div>
+						 <h3 class="title">Standard pathway</h3>
+						 <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+					 </div>
                      <div class="icon-container">
                         <div class="arrow-icon">
                            <svg viewBox="0 0 16 16">
@@ -10504,9 +10507,11 @@ const guideAccordionHtml =
                </div>
                <div class="guide-pathway-card-container">
                   <a class="guide-pathway-card" href="#">
-                     <div class="status-bubble status-bubble-required">Required</div>
-                     <h3 class="title">Standard pathway</h3>
-                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="guide-pathway-card-container-top">
+						 <div class="status-bubble status-bubble-required">Required</div>
+						 <h3 class="title">Standard pathway</h3>
+						 <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+					 </div>
                      <div class="icon-container">
                         <div class="arrow-icon">
                            <svg viewBox="0 0 16 16">
@@ -10519,9 +10524,11 @@ const guideAccordionHtml =
                </div>
                <div class="guide-pathway-card-container">
                   <a class="guide-pathway-card" href="#">
-                     <div class="status-bubble status-bubble-required">Required</div>
-                     <h3 class="title">Standard pathway</h3>
-                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="guide-pathway-card-container-top">
+						 <div class="status-bubble status-bubble-required">Required</div>
+						 <h3 class="title">Standard pathway</h3>
+						 <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+					 </div>
                      <div class="icon-container">
                         <div class="arrow-icon">
                            <svg viewBox="0 0 16 16">
@@ -10534,9 +10541,11 @@ const guideAccordionHtml =
                </div>
                <div class="guide-pathway-card-container">
                   <a class="guide-pathway-card" href="#">
-                     <div class="status-bubble status-bubble-required">Required</div>
-                     <h3 class="title">Standard pathway</h3>
-                     <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+                     <div class="guide-pathway-card-container-top">
+						 <div class="status-bubble status-bubble-recommended">Recommended</div>
+						 <h3 class="title">Standard pathway</h3>
+						 <p class="description">The standard pathway is an in-page link to another page on the site.</p>
+					 </div>
                      <div class="icon-container">
                         <div class="arrow-icon">
                            <svg viewBox="0 0 16 16">
@@ -10632,7 +10641,7 @@ const guideAccordionCss =
 }
 .guide-accordion-image svg {
   width: 250px;
-  height: auto;
+  height: 130px;
 }
 .guide-accordion-text {
   width: 100%;
@@ -10658,7 +10667,7 @@ const guideAccordionCss =
   padding-bottom: 1px;
 }
 .guide-accordion-description {
-  padding: 16px 0 24px 0;
+  padding: 0 0 24px 0;
   font-size: 16px;
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -10726,9 +10735,12 @@ const guideAccordionCss =
   display: flex;
 }
 .guide-pathway-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
   height: auto;
   width: 100%;
-  padding: 24px;
+  padding: 16px 24px 24px 24px;
   background: #ffffff;
   box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.2);
   transition-property: transform, -webkit-transform;
@@ -10740,6 +10752,7 @@ const guideAccordionCss =
   font-stretch: normal;
   color: #333333;
   text-decoration: none;
+  font-weight: normal;
 }
 .guide-pathway-card:hover,
 .guide-pathway-card:focus {
@@ -10751,6 +10764,8 @@ const guideAccordionCss =
 }
 .guide-pathway-card .icon-container {
   position: relative;
+  height: 100%;
+  align-items: flex-end;
   display: flex;
 }
 .guide-pathway-card .title {
@@ -10758,7 +10773,8 @@ const guideAccordionCss =
   line-height: 28px;
   letter-spacing: 0;
   font-size: 21px;
-  margin: 0 0 24px 0;
+  padding: 0 0 16px 0;
+  margin: 0;
 }
 .guide-pathway-card:hover .title,
 .guide-pathway-card:focus .title {
@@ -10766,10 +10782,11 @@ const guideAccordionCss =
   text-decoration: underline;
 }
 .guide-pathway-card .description {
-  margin: 0 0 48px 0;
+  padding: 0 0 32px 0;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.2px;
+  margin: 0;
 }
 /* Status bubble */
 .guide-pathway-card .status-bubble {
@@ -10791,6 +10808,7 @@ const guideAccordionCss =
   background: #ffffff;
   border: 2px solid #ffd964;
 }
+/* Page link */
 .guide-pathway-list-page {
   font-size: 12px;
   line-height: 18px;

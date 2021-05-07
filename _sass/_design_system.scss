@@ -6276,9 +6276,7 @@
 
 			.guide-page-header-content-left {
 				width: 100%;
-			}
-
-			.guide-page-header-content-left {
+				padding-left: 0;
 				margin-right: 0px;
 			}
 		}
@@ -6311,6 +6309,7 @@
 		.guide-page-header-content-left {
 			width: 100%;
 			margin-right: 0px;
+			padding-right: 0px;
 		}
 
 		padding: 32px 30px 48px 30px;
@@ -6433,7 +6432,7 @@
 		}
 
 		.guide-accordion-description {
-			padding: 16px 0 24px 0;
+			padding: 0 0 24px 0;
 			font-size: 16px;
 			margin: 0;
 			font-family: "Open Sans", sans-serif;
@@ -6496,9 +6495,12 @@
 		}
 
 		.guide-pathway-card {
+			display:flex;
+			flex-direction: column;
+			justify-content: stretch;
 			height: auto;
 			width: 100%;
-			padding: 24px;
+			padding: 16px 24px 24px 24px;
 			background: #ffffff;
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.2);
 			transition-property: transform, -webkit-transform;
@@ -6512,6 +6514,7 @@
 			text-decoration: none;
 			font-weight: normal;
 		}
+		
 
 		.guide-pathway-card:hover,
 		.guide-pathway-card:focus {
@@ -6525,6 +6528,8 @@
 
 		.guide-pathway-card .icon-container {
 			position: relative;
+			height: 100%;
+			align-items: flex-end;
 			display: flex;
 		}
 
@@ -6534,7 +6539,7 @@
 			line-height: 28px;
 			letter-spacing: 0;
 			font-size: 21px;
-			padding: 0 0 24px 0;
+			padding: 0 0 16px 0;
 			margin: 0;
 		}
 
@@ -6545,7 +6550,7 @@
 		}
 
 		.guide-pathway-card .description {
-			padding: 0 0 48px 0;
+			padding: 0 0 32px 0;
 			font-size: 16px;
 			line-height: 28px;
 			letter-spacing: 0.2px;
