@@ -173,6 +173,9 @@
                     
                     justify-content: flex-start;
 				}
+                &.narrow {
+                    max-width: 400px;
+                }
 
 				.tertiary-link {
 					@include font-format($font-family, $font-semibold, normal);

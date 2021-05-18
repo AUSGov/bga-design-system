@@ -4080,6 +4080,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .example-wrapper .example.align-example-left { margin: 0; justify-content: flex-start; }
 
+.design-system-card.component .example-wrapper .example.narrow { max-width: 400px; }
+
 .design-system-card.component .example-wrapper .example .tertiary-link { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; text-decoration: underline; box-shadow: none; margin-right: 40px; }
 
 .design-system-card.component .example-wrapper .example .add-field { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; color: #333333; text-decoration: none; box-shadow: none; padding: 4px 0 4px 40px; position: relative; display: inline-block; }
