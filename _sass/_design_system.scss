@@ -4,7 +4,6 @@
 	border: 1px solid $grey-light;
 	padding: 0;
 	margin-bottom: 32px;
-	box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	width: auto;
 
 	&.extra-wide {
@@ -252,7 +251,7 @@
 	.design-system-card-header {
 		background: $white;
 		padding: 32px 24px 16px;
-		border-top: solid 4px $blue-primary;
+		//border-top: solid 4px $blue-primary;
 
 		h1,
 		h2,
@@ -5821,7 +5820,6 @@
 	}
 
 	&.no-header {
-		border-top: 4px solid $blue-primary;
 		background: $white;
 
 		.boxes-wrapper {
@@ -6124,15 +6122,15 @@
 					min-width: 150px;
 					padding: 0;
 					border: 0;
-					background: #ffffff;
+					background: $white;
 
 					&.copied {
 						.svg-icon-container {
-							border-color: #297e28;
+							border-color: $green-positive-dark;
 						}
 
 						.copy-icon-code {
-							background: #297e28;
+							background: $green-positive-dark;
 							color: $white;
 						}
 
@@ -6151,13 +6149,13 @@
 						outline: none;
 
 						.svg-icon-container {
-							border-color: #254f90;
+							border-color: $blue-primary;
 						}
 
 						.copy-icon-code {
-							background: #254f90;
+							background: $blue-primary;
 							color: $white;
-							border-color: #254f90;
+							border-color: $blue-primary;
 						}
 
 						span {
@@ -6170,8 +6168,9 @@
 					}
 
 					.svg-icon-container {
-						border: 2px solid #254f90;
-						height: 53px;
+						border: 2px solid $blue-primary;
+						min-height: 64px;
+                        padding: 16px 0;
 						display: flex;
 						justify-content: center;
 						align-items: center;
@@ -6196,6 +6195,34 @@
 					@include font-format($font-family, $font-regular, normal);
 				}
 			}
+            
+            .large-icons .icons {
+                display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				width: 33.33%;
+				padding: 0px 12px 0px 12px;
+
+				@media (max-width: 1200px) {
+					width: 33.33%;
+				}
+
+				@media (max-width: 768px) {
+					width: 50%;
+				}
+
+				@media (max-width: 657px) {
+					width: 100%;
+				}
+
+				@media (max-width: 577px) {
+					width: 50%;
+				}
+
+				@media (max-width: 421px) {
+					width: 100%;
+				}
+            }
 		}
 
 		.design-system-card-links {

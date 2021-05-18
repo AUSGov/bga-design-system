@@ -3703,8 +3703,6 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .body-copy p { font-size: 1rem; padding: 0 0 32px 0; margin: 0; }
 
-.body-copy-headline h2 { padding-top: 0; }
-
 .body-copy .body-copy-content p.small { font-size: .8rem; }
 
 .c-wrapper .row { max-width: 1200px; }
@@ -4006,7 +4004,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 /*# sourceMappingURL=bootstrap-datepicker3.css.map */
 /* Design system styles */
-.design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; box-shadow: 0 0.125rem 0.375rem 0 rgba(0, 0, 0, 0.1); width: auto; /* Mini-list */ /* Pros and cons */ /* Guide Page Header */ /* Guide accordion */ /* open all accordions button */ }
+.design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; width: auto; /* Mini-list */ /* Pros and cons */ /* Guide Page Header */ /* Guide accordion */ /* open all accordions button */ }
 
 .design-system-card.extra-wide { max-width: 1000px; }
 
@@ -4098,7 +4096,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.component .float-button .BgaIcon.open { transform: scaleY(-1); }
 
-.design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; border-top: solid 4px #254F90; }
+.design-system-card .design-system-card-header { background: #ffffff; padding: 32px 24px 16px; }
 
 .design-system-card .design-system-card-header h1, .design-system-card .design-system-card-header h2, .design-system-card .design-system-card-header h3, .design-system-card .design-system-card-header h4, .design-system-card .design-system-card-header h5, .design-system-card .design-system-card-header h6 { padding: 0; margin: 0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
@@ -5732,7 +5730,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .header-example img.desktop-example, .design-system-card .mobile-media-query .header-example img.desktop-example { display: none; }
 
-.design-system-card.no-header { border-top: 4px solid #254F90; background: #ffffff; }
+.design-system-card.no-header { background: #ffffff; }
 
 .design-system-card.no-header .boxes-wrapper { display: flex; flex-wrap: wrap; justify-content: space-around; }
 
@@ -5878,21 +5876,21 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.no-header .design-system-card-content .icons .example { text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: stretch; min-width: 150px; padding: 0; border: 0; background: #ffffff; }
 
-.design-system-card.no-header .design-system-card-content .icons .example.copied .svg-icon-container { border-color: #297e28; }
+.design-system-card.no-header .design-system-card-content .icons .example.copied .svg-icon-container { border-color: #297E28; }
 
-.design-system-card.no-header .design-system-card-content .icons .example.copied .copy-icon-code { background: #297e28; color: #ffffff; }
+.design-system-card.no-header .design-system-card-content .icons .example.copied .copy-icon-code { background: #297E28; color: #ffffff; }
 
 .design-system-card.no-header .design-system-card-content .icons .example.copied span svg path { fill: #ffffff; }
 
 .design-system-card.no-header .design-system-card-content .icons .example:hover, .design-system-card.no-header .design-system-card-content .icons .example:focus { cursor: pointer; outline: none; }
 
-.design-system-card.no-header .design-system-card-content .icons .example:hover .svg-icon-container, .design-system-card.no-header .design-system-card-content .icons .example:focus .svg-icon-container { border-color: #254f90; }
+.design-system-card.no-header .design-system-card-content .icons .example:hover .svg-icon-container, .design-system-card.no-header .design-system-card-content .icons .example:focus .svg-icon-container { border-color: #254F90; }
 
-.design-system-card.no-header .design-system-card-content .icons .example:hover .copy-icon-code, .design-system-card.no-header .design-system-card-content .icons .example:focus .copy-icon-code { background: #254f90; color: #ffffff; border-color: #254f90; }
+.design-system-card.no-header .design-system-card-content .icons .example:hover .copy-icon-code, .design-system-card.no-header .design-system-card-content .icons .example:focus .copy-icon-code { background: #254F90; color: #ffffff; border-color: #254F90; }
 
 .design-system-card.no-header .design-system-card-content .icons .example:hover span svg path, .design-system-card.no-header .design-system-card-content .icons .example:focus span svg path { fill: #ffffff; }
 
-.design-system-card.no-header .design-system-card-content .icons .example .svg-icon-container { border: 2px solid #254f90; height: 53px; display: flex; justify-content: center; align-items: center; }
+.design-system-card.no-header .design-system-card-content .icons .example .svg-icon-container { border: 2px solid #254F90; min-height: 64px; padding: 16px 0; display: flex; justify-content: center; align-items: center; }
 
 .design-system-card.no-header .design-system-card-content .icons .empty { border: none; }
 
@@ -5901,6 +5899,18 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card.no-header .design-system-card-content .icons p { font-size: 1rem; margin: 0; padding: 0 0 8px 0; }
 
 .design-system-card.no-header .design-system-card-content .icons span { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
+
+.design-system-card.no-header .design-system-card-content .large-icons .icons { display: flex; flex-direction: column; justify-content: flex-end; width: 33.33%; padding: 0px 12px 0px 12px; }
+
+@media (max-width: 1200px) { .design-system-card.no-header .design-system-card-content .large-icons .icons { width: 33.33%; } }
+
+@media (max-width: 768px) { .design-system-card.no-header .design-system-card-content .large-icons .icons { width: 50%; } }
+
+@media (max-width: 657px) { .design-system-card.no-header .design-system-card-content .large-icons .icons { width: 100%; } }
+
+@media (max-width: 577px) { .design-system-card.no-header .design-system-card-content .large-icons .icons { width: 50%; } }
+
+@media (max-width: 421px) { .design-system-card.no-header .design-system-card-content .large-icons .icons { width: 100%; } }
 
 .design-system-card.no-header .design-system-card-links { background: #ffffff; }
 

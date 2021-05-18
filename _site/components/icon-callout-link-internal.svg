@@ -364,12 +364,12 @@
                     <div class="design-system-card no-header">
                         <div class="design-system-card-content">
                             <div class="desktop">
-                                <div class="boxes-wrapper icon-wrapper large-icons">
+                                <div class="boxes-wrapper icon-wrapper">
                                     <div class="icons">
-	<p><span>Internal link</span></p>
+	<p><span>Facebook</span></p>
 	<button class="example" tabindex="0">
 		<div class="svg-icon-container">
-			<img src="../assets/icon-calloutlink-internal.svg" alt="Internal link" />
+			<img src="../assets/BGAIcon-facebook.svg" alt="Facebook" />
 		</div>
 		<div class="copy-icon-code copy-code-text">
 			Copy code
@@ -385,10 +385,10 @@
 
 
                                     <div class="icons">
-	<p><span>External link</span></p>
+	<p><span>Twitter</span></p>
 	<button class="example" tabindex="0">
 		<div class="svg-icon-container">
-			<img src="../assets/icon-calloutlink-external.svg" alt="External link" />
+			<img src="../assets/BGAIcon-twitter.svg" alt="Twitter" />
 		</div>
 		<div class="copy-icon-code copy-code-text">
 			Copy code
@@ -404,10 +404,10 @@
 
 
                                     <div class="icons">
-	<p><span>Subscribe link</span></p>
+	<p><span>LinkedIn</span></p>
 	<button class="example" tabindex="0">
 		<div class="svg-icon-container">
-			<img src="../assets/icon-calloutlink-subscribe.svg" alt="Subscribe link" />
+			<img src="../assets/BGAIcon-linkedIn.svg" alt="LinkedIn" />
 		</div>
 		<div class="copy-icon-code copy-code-text">
 			Copy code
