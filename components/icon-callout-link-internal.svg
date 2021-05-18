@@ -131,10 +131,10 @@ longdesc: Highlight a single link within the page content.
                     <div class="design-system-card no-header">
                         <div class="design-system-card-content">
                             <div class="desktop">
-                                <div class="boxes-wrapper icon-wrapper large-icons">
-                                    {% include icon-card.html src="icon-calloutlink-internal" title="Internal link" %}
-                                    {% include icon-card.html src="icon-calloutlink-external" title="External link" %}
-                                    {% include icon-card.html src="icon-calloutlink-subscribe" title="Subscribe link" %}
+                                <div class="boxes-wrapper icon-wrapper">
+                                    {% include icon-card.html src="BGAIcon-facebook" title="Facebook" %}
+                                    {% include icon-card.html src="BGAIcon-twitter" title="Twitter" %}
+                                    {% include icon-card.html src="BGAIcon-linkedIn" title="LinkedIn" %}
                                 </div>
                             </div>
                         </div>
