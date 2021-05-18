@@ -153,7 +153,9 @@
 			}
 
 			.example {
-				display: table;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
 				margin: 0 auto;
 
 				&.radio-example {
@@ -168,6 +170,8 @@
 
 				&.align-example-left {
 					margin: 0;
+                    
+                    justify-content: flex-start;
 				}
 
 				.tertiary-link {
@@ -251,8 +255,7 @@
 	.design-system-card-header {
 		background: $white;
 		padding: 32px 24px 16px;
-		//border-top: solid 4px $blue-primary;
-
+        
 		h1,
 		h2,
 		h3,
@@ -2460,7 +2463,10 @@
 	}
 
 	.inline-pathway {
-		.description {
+		width: 100%;
+        flex: 1 0 100%;
+        
+        .description {
 			padding-bottom: 16px;
 			color: $blue-primary;
 			text-decoration: underline;
@@ -2469,7 +2475,6 @@
 
 		.inline-container {
 			height: auto;
-			max-width: 620px;
 			border-top: none;
 			background: none;
 			padding: 24px;
@@ -6085,13 +6090,17 @@
 					border-top: 60px solid $red-negative-lightest;
 				}
 			}
-
+            
+            .icon-set-heading {
+                padding: 16px 0 16px 12px;
+            }
 			.icons {
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-end;
 				width: 25%;
-				padding: 32px 12px 0px 12px;
+				padding: 0px 12px 0px 12px;
+                
 
 				@media (max-width: 1200px) {
 					width: 33.33%;
@@ -6112,7 +6121,6 @@
 				@media (max-width: 421px) {
 					width: 100%;
 				}
-
 				.example {
 					text-align: center;
 					display: flex;
@@ -6150,6 +6158,7 @@
 
 						.svg-icon-container {
 							border-color: $blue-primary;
+                            
 						}
 
 						.copy-icon-code {
@@ -6174,6 +6183,7 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
+                        background: $grey-lightest;
 					}
 				}
 
@@ -6188,7 +6198,7 @@
 				p {
 					font-size: 1rem;
 					margin: 0;
-					padding: 0 0 8px 0;
+					padding: 16px 0 4px 0;
 				}
 
 				span {
@@ -7768,19 +7778,6 @@ a.header {
 
 /* Tables in page content */
 .body-copy {
-	h3.icon-set-heading {
-		padding: 16px 0 0 12px;
-	}
-
-	/*.example {
-
-		h1,
-		h2,
-		h3 {
-			padding: 0;
-		}
-	}*/
-
 	.media-player a {
 		transition: none;
 		color: unset;
