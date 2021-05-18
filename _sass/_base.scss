@@ -45,9 +45,6 @@ h1, h2, h3, h4, h5 {
         margin: 0;
     }
 }
-.body-copy-headline h2 {
-    //padding-top: 0;
-}
 
 .body-copy .body-copy-content p.small {
     font-size: .8rem;
@@ -70,6 +67,34 @@ h1, h2, h3, h4, h5 {
 }
 .vertical-list {
     margin-bottom: 32px;
+}
+
+.download-group {
+    .download-group-heading {
+        @include font-format($font-family, $font-semibold, normal);
+    }
+    a {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        
+        &:hover {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            text-decoration: underline;
+        
+        }
+        &.ase {
+            span {
+                color: $darkpurple-dark;
+                @include font-format($font-family, $font-semibold, normal);
+            }
+            svg {
+                fill: $darkpurple-dark;
+            }
+        }
+    }
 }
 
 .c-wrapper .body-copy ul {

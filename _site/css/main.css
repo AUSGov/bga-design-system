@@ -3715,6 +3715,16 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .vertical-list { margin-bottom: 32px; }
 
+.download-group .download-group-heading { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
+.download-group a { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+.download-group a:hover { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; text-decoration: underline; }
+
+.download-group a.ase span { color: #5B43D0; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
+.download-group a.ase svg { fill: #5B43D0; }
+
 .c-wrapper .body-copy ul { padding: 0 0 0 32px; margin: 0; }
 
 .c-wrapper .body-copy ul li { padding: 0 0 16px 16px; margin: 0; }
@@ -5778,11 +5788,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card.no-header .design-system-card-content .colours.teal-primary { border-top: 60px solid #218080; }
 
-.design-system-card.no-header .design-system-card-content .colours.teal-tint1 { border-top: 60px solid #59A0A0; }
+.design-system-card.no-header .design-system-card-content .colours.teal-tint1 { border-top: 60px solid #119191; }
 
-.design-system-card.no-header .design-system-card-content .colours.teal-tint2 { border-top: 60px solid #C7DFDF; }
+.design-system-card.no-header .design-system-card-content .colours.teal-tint2 { border-top: 60px solid #CFEBEB; }
 
-.design-system-card.no-header .design-system-card-content .colours.teal-tint3 { border-top: 60px solid #DEECEC; }
+.design-system-card.no-header .design-system-card-content .colours.teal-tint3 { border-top: 60px solid #E1F2F2; }
 
 .design-system-card.no-header .design-system-card-content .colours.blue-primary { border-top: 60px solid #2F70BF; }
 
