@@ -49,6 +49,11 @@ h1, h2, h3, h4, h5 {
 .body-copy .body-copy-content p.small {
     font-size: .8rem;
 }
+.main-section .anchor-section {
+    h2.no-top-padding {
+        padding: 0 0 32px 0;
+    }
+}
 
 .c-wrapper .row {
     max-width: 1200px;

@@ -3705,6 +3705,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .body-copy .body-copy-content p.small { font-size: .8rem; }
 
+.main-section .anchor-section h2.no-top-padding { padding: 0 0 32px 0; }
+
 .c-wrapper .row { max-width: 1200px; }
 
 @media (max-width: 1200px) { .c-wrapper .row { max-width: 1150px; } }
@@ -6182,15 +6184,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary { border-top-color: #218080; }
 
-.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-85 { border-top-color: #429393; }
+.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-85 { border-top-color: #119191; }
 
-.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-70 { border-top-color: #64a6a6; }
+.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-70 { border-top-color: #41A7A7; }
 
-.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-55 { border-top-color: #85b9b9; }
+.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-55 { border-top-color: #70BDBD; }
 
-.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-40 { border-top-color: #a6cccc; }
+.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-40 { border-top-color: #A0D3D3; }
 
-.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-25 { border-top-color: #c8dfdf; }
+.infographic-examples-wrapper .colours-wrapper .info-colours.teal-primary-25 { border-top-color: #CFE9E9; }
 
 .infographic-examples-wrapper .colours-wrapper .info-colours.teal-secondary-50 { border-top-color: #d2d6dc; }
 
@@ -6252,7 +6254,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .infographic-examples-wrapper .colours-wrapper .info-colours.extended-green { border-top-color: #239546; }
 
-.infographic-examples-wrapper .colours-wrapper .info-colours.extended-teal { border-top-color: #59a09f; }
+.infographic-examples-wrapper .colours-wrapper .info-colours.extended-teal { border-top-color: #41A7A7; }
 
 .infographic-examples-wrapper .colours-wrapper .info-colours.extended-purple { border-top-color: #745fd7; }
 
