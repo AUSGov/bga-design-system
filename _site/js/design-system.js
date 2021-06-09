@@ -2,6 +2,13 @@
 $(document).ready(function () {
 
 
+	$("[role=tab], [role=button], [role=link]").keypress(function (event) {
+		var keycode = (event.keyCode ? event.keyCode : event.which);
+		if (keycode == '13') {
+			this.click();
+		}
+	});
+
 
 	/*----------- General page issues ----------- */
 
@@ -571,11 +578,15 @@ $(document).ready(function () {
 			$(this).removeClass('all-open');
 			$(this).children('h5').text('Open all');
 			$('.accordion-item-tile').removeClass('open');
+			$('.accordion-item-tile').attr('aria-expanded', 'false');
+			$('.accordion-item-tile').attr('title', 'Expand');
 			$('.accordion-item-content').removeClass('visible');
 		} else {
 			$(this).addClass('all-open');
 			$(this).children('h5').text('Close all');
 			$('.accordion-item-tile').addClass('open');
+			$('.accordion-item-tile').attr('aria-expanded', 'true');
+			$('.accordion-item-tile').attr('title', 'Collapse');
 			$('.accordion-item-content').addClass('visible');
 		}
 	});
@@ -584,6 +595,14 @@ $(document).ready(function () {
 		// Toggle classes to show / hide accordion content
 		$(this).toggleClass('open');
 		$(this).next('.accordion-item-content').toggleClass('visible');
+		if ($(this).hasClass('open')) {
+			$(this).attr('aria-expanded', 'true');
+			$(this).attr('title', 'Collapse');
+		} else {
+
+						$(this).attr('aria-expanded', 'false');
+			$(this).attr('title', 'Expand');
+		}
 
 		// Check if all items are OPEN OR CLOSED and change the text and arrow of the accordion button accordingly.
 		var open_items = [],
@@ -617,7 +636,7 @@ $(document).ready(function () {
 	$('.guide-accordion-tile').on('click', function () {
 		$(this).parent().toggleClass('active');
 		if ($(this).hasClass('active')) {
-						$('.accordion-group-toggle-content').addClass('all-open');
+			$('.accordion-group-toggle-content').addClass('all-open');
 			$('.accordion-group-toggle-content').children('h5').text('Close all');
 
 		} else {

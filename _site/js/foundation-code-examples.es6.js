@@ -958,7 +958,7 @@ ul li {
 ul li svg {
  position: absolute;
  left: 0px;
- top: 10px;
+ top: 7px;
 }
 
 ul ul li:before {

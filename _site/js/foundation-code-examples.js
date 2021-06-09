@@ -206,7 +206,7 @@ $(document).ready(function () {
   $(".list-code .html-code code pre").text(listHtml);
 
   //css
-  var listCss = "\n<h5>List</h5>\n<code>\n<pre>\n/* List */\nul {\n padding: 0 0 0 16px;\n margin: 0;\n line-height: 1.78;\n list-style: none;\n font-family: \"Open Sans\", sans-serif;\n}\nul li {\n padding-bottom: 16px;\n margin: 0;\n line-height: 28px;\n letter-spacing: 0;\n position: relative;\n padding-left: 32px;\n}\n.content > *:last-child li:last-of-type {\n padding-bottom: 0px;\n}\nul li svg {\n position: absolute;\n left: 0px;\n top: 10px;\n}\n\nul ul li:before {\n content: \"¯\" !important;\n height: 100%;\n padding-right: 21px;\n font-weight: 600;\n color: #666;\n vertical-align: -20%;\n}\n\nul ul li {\n padding-left: 18px;\n}\n\n@media (max-width: 576px) {\n ul li {\n   line-height: 24px;\n   letter-spacing: 0.2px;\n }\n}\n</pre>\n</code>\n";
+  var listCss = "\n<h5>List</h5>\n<code>\n<pre>\n/* List */\nul {\n padding: 0 0 0 16px;\n margin: 0;\n line-height: 1.78;\n list-style: none;\n font-family: \"Open Sans\", sans-serif;\n}\nul li {\n padding-bottom: 16px;\n margin: 0;\n line-height: 28px;\n letter-spacing: 0;\n position: relative;\n padding-left: 32px;\n}\n.content > *:last-child li:last-of-type {\n padding-bottom: 0px;\n}\nul li svg {\n position: absolute;\n left: 0px;\n top: 7px;\n}\n\nul ul li:before {\n content: \"¯\" !important;\n height: 100%;\n padding-right: 21px;\n font-weight: 600;\n color: #666;\n vertical-align: -20%;\n}\n\nul ul li {\n padding-left: 18px;\n}\n\n@media (max-width: 576px) {\n ul li {\n   line-height: 24px;\n   letter-spacing: 0.2px;\n }\n}\n</pre>\n</code>\n";
   $(".list-code .css-code").html(listCss);
 
   //Header intro
