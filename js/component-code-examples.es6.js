@@ -2732,72 +2732,71 @@ $(".callout-link-code .css-code").html(calloutLinkCss);
   const accordionHtml = 
 `
 <div class="accordion">
-   <div class=" accordion-group">
-      <div class="accordion-group-toggle">
-         <!-- Toggle 'all-open' class with js when clicked-->  
-         <div tabindex="0" class="accordion-group-toggle-content">     
-            <!-- Toggle 'open/close' text with js when button is clicked--> 
-            <h5 class="title">Open all</h5>            
-            <div class="arrow-icon">
-               <svg width="16" height="16">
-                  <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-               </svg>
-            </div>
+   <div class="accordion-group-toggle" aria-controls="accordion-group-1">
+      <!-- Toggle 'all-open' class and change title text with js when clicked-->           
+      <div tabindex="0" class="accordion-group-toggle-content" title="Expand all">
+         <!-- Toggle 'open/close' text with js when button is clicked-->             
+         <h5 class="title">Open all</h5>
+         <div class="arrow-icon">
+            <svg width="16" height="16">
+               <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+            </svg>
          </div>
+         <div class="sr-only">Toggle all accordions in the accordion group</div>
       </div>
-      <div>
-         <!-- Toggle 'open' class with js when clicked -->  
-         <div class="accordion-item open">           
-            <div class="accordion-item-tile" tabindex="0">
-               <div class="accordion-item-tile-content">
-                  <h5 class="title">Accordion item 1 title</h5>
-                  <button tabindex="-1" class="icon-container">
-                     <div class="arrow-icon ">
-                        <svg width="16" height="16">
-                           <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                        </svg>
-                     </div>
-                  </button>
+   </div>
+   <div id="accordion-group-1" role="tablist">
+      <!-- Toggle 'open' class with js when clicked -->           
+      <div class="accordion-item open">
+         <div class="accordion-item-tile" tabindex="0" role="tab" aria-controls="accordion-1-content" aria-expanded="true" title="Collapse">
+            <div class="accordion-item-tile-content">
+               <h5 class="title" id="accordion-1-title">Accordion item 1 title</h5>
+               <div class="icon-container">
+                  <div class="arrow-icon ">
+                     <svg width="16" height="16">
+                        <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                     </svg>
+                  </div>
                </div>
             </div>
-            <!-- Toggle 'visible' class with js to expand--> 
-            <div class="accordion-item-content visible">               
-               <ul>
-                  <li>
-                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                        <circle fill="#c18100" cx="8" cy="8" r="4"/>
-                     </svg>
-                     <p>Accordions can contain lists.</p>
-                  </li>
-                  <li>
-                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                        <circle fill="#c18100" cx="8" cy="8" r="4"/>
-                     </svg>
-                     <p>Complete with links like other body copy.</p>
-                  </li>
-               </ul>
-            </div>
+            <span class="sr-only">Button toggle current accordion</span>
+         </div>
+         <!-- Toggle 'visible' class with js to expand-->             
+         <div class="accordion-item-content visible" aria-labelledby="accordion-1-title" id="accordion-1-content" role="tabpanel">
+            <ul>
+               <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                     <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                  </svg>
+                  Accordions can contain lists.
+               </li>
+               <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                     <circle fill="#c18100" cx="8" cy="8" r="4"/>
+                  </svg>
+                  Complete with links like other body copy.
+               </li>
+            </ul>
          </div>
       </div>
-      <div>
-         <!-- Toggle 'open' class with js when clicked --> 
-         <div class="accordion-item">            
-            <div class="accordion-item-tile" tabindex="0">
-               <div class="accordion-item-tile-content">
-                  <h5 class="title">Accordion item 2 title</h5>
-                  <button tabindex="-1" class="icon-container">
-                     <div class="arrow-icon ">
-                        <svg width="16" height="16">
-                           <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
-                        </svg>
-                     </div>
-                  </button>
+      <!-- Toggle 'open' class with js when clicked -->          
+      <div class="accordion-item">
+         <div class="accordion-item-tile" tabindex="0" role="tab" aria-controls="accordion-2-content" aria-expanded="false" title="Expand">
+            <div class="accordion-item-tile-content">
+               <h5 class="title" id="accordion-2-title">Accordion item 2 title</h5>
+               <div class="icon-container">
+                  <div class="arrow-icon ">
+                     <svg width="16" height="16">
+                        <path fill-rule="evenodd" d="M8 9.028L1.982 3 0 4.986 8 13l8-8.014L14.018 3z"></path>
+                     </svg>
+                  </div>
                </div>
             </div>
-            <!-- Toggle 'visible' class with js to expand--> 
-            <div class="accordion-item-content">               
-               <p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
-            </div>
+            <span class="sr-only">Button toggle current accordion</span>
+         </div>
+         <!-- Toggle 'visible' class with js to expand-->             
+         <div class="accordion-item-content" aria-labelledby="accordion-2-title" id="accordion-2-content" role="tabpanel">
+            <p>Accordions can be used to hide less important text on the page. The user can choose to see it only if they are interested in it.</p>
          </div>
       </div>
    </div>
@@ -2980,9 +2979,9 @@ const accordionCss =
   top: 6px;
   left: 0px;
 }
-.accordion ul li p {
+.accordion ul li {
   display: block;
-  padding-left: 16px;
+  padding-left: 32px;
   padding-bottom: 0px;
 }
 </pre>
@@ -3002,6 +3001,23 @@ const accordionCss =
 .accordion-item-tile .arrow-icon svg {
   fill: #333;
   transition: transform 0.3s;
+}
+</pre>
+</code>
+
+<h5>Accessibility</h5>
+<code>
+<pre>
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 </pre>
 </code>
