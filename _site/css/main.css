@@ -5556,7 +5556,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .mobile-example .progress-indicator .progress, .design-system-card .mobile-example .progress-indicator .progress-bar, .design-system-card .mobile-media-query .progress-indicator .progress, .design-system-card .mobile-media-query .progress-indicator .progress-bar { height: 3px; }
 
-.design-system-card .notification.notification-information .notification-wrapper { background: #E5EDF7; border-top: 4px solid #b3c1d7; }
+.design-system-card .notification.notification-information .notification-wrapper { background: #E5EDF7; border-top: 4px solid #B3C2D8; }
 
 .design-system-card .notification.notification-confirmation .notification-wrapper { background: #E8F4E8; border-top: 4px solid #A6D5A6; }
 

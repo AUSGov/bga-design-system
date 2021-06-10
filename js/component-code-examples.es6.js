@@ -5939,7 +5939,7 @@ const informationNotificationCss =
 /* Containers */
 .information-notification {
   background: #e5edf7;
-  border-top: 4px solid #b3c1d7;
+  border-top: 4px solid #b3c2d8;
   color: #333333;
 }
 .information-notification-content {
