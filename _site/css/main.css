@@ -7004,6 +7004,28 @@ a.header strong { font-weight: 600; }
 
 .design-system-card.component.page-pattern .example-wrapper .example.one-zero-one-page-container #spot-09 { top: 88%; left: 27.5%; }
 
+.design-system-card.component.page-pattern .example-wrapper .example.customer-stories-landing-container #spot-01 { top: 16.4%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-stories-landing-container #spot-02 { top: 22%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-stories-landing-container #spot-03 { top: 31.2%; left: 6.5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-stories-landing-container #spot-04 { top: 45%; left: 6.5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-stories-landing-container #spot-05 { top: 49%; left: 6.5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-story-container #spot-01 { top: 12.6%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-story-container #spot-02 { top: 17.1%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-story-container #spot-03 { top: 23.8%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-story-container #spot-04 { top: 57.6%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-story-container #spot-05 { top: 75.9%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.customer-story-container #spot-06 { top: 84%; left: 16%; }
+
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.mobile-example { display: block; }
 
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.desktop-example { display: none; }
