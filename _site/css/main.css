@@ -7026,6 +7026,34 @@ a.header strong { font-weight: 600; }
 
 .design-system-card.component.page-pattern .example-wrapper .example.customer-story-container #spot-06 { top: 84%; left: 16%; }
 
+.design-system-card.component.page-pattern .example-wrapper .example.grant-recipients-container #spot-01 { top: 17.5%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.grant-recipients-container #spot-02 { top: 24%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.grant-recipients-container #spot-03 { top: 33.3%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.grant-recipients-container #spot-04 { top: 39.6%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-01 { top: 12.6%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-02 { top: 14%; left: 5%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-03 { top: 18%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-04 { top: 25%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-05 { top: 34%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-06 { top: 44%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-07 { top: 54%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-08 { top: 64%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-09 { top: 74%; left: 16%; }
+
+.design-system-card.component.page-pattern .example-wrapper .example.external-grant-landing-container #spot-10 { top: 84%; left: 16%; }
+
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.mobile-example { display: block; }
 
 .design-system-card.component.page-pattern .example-wrapper.mobile-example img.desktop-example { display: none; }
