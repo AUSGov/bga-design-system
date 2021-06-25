@@ -3769,6 +3769,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 #components-illo .cls-13 { clip-path: url(#clip-path-5); }
 
+.hero-pathway-list-content-wrapper { margin-bottom: 32px; }
+
 .navbar .navigation-item-button { padding-bottom: 16px; padding-top: 16px; }
 
 .navbar a { color: white; font-weight: 600; text-decoration: none; }
