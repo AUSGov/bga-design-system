@@ -1,11 +1,11 @@
 ---
 layout: content
-title: Standard checklist pattern
+title: Lightweight checklist pattern
 breadcrumb1: Page patterns
 url1: topic-page-patterns.html
 breadcrumb2:
 url2:
-longdesc: A checklist pattern for presenting an end to end journey in logical steps.
+longdesc: A lightweight checklist pattern for presenting simple end to end journeys.
 
 ---
 <div class="main-section">
@@ -47,77 +47,65 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
             </div>
             <div class="body-copy-content">
                 
-<p>The standard checklist pattern consists of a list of numbered items and a 'save progress' feature. The items open to reveal sub-items with checkboxes allowing users to track their progress through the list.</p>
+                <p>The lightweight checklist pattern consists of a list of numbered items. The items open to reveal content allowing users to progress through the list in a measured way. Unlike the <a href={{ "../page-patterns/checklist.html" | relative_url }} >standard checklist pattern</a> the lightweight checklist does not have checkboxes and users do not tick off items as they progress though them.</p>
+                
+                
                 
                 <div class="design-system-card component page-pattern extra-wide">
-                    
-                     <div class="responsive-toggle-container">
-                                <p class="toggle-name">Design view: <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider"></span>
-                                        <span class="switch-text-mobile"></span>
-                                        <span class="switch-text-desktop"></span>
-                                    </label></p>
-
-                                <div class="mobile-only">
-                                    <h5>Mobile design</h5>
-                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
-                                </div>
-
-                            </div>
+                
                     
                     <div class="design-system-card-content">
 
                         <div class="example-wrapper white-back">
                             <div class="">
-                                <div class="example checklist-container">   
+                                <div class="example lightweight-checklist-container">   
                                    
-                                   <img class="responsive-img-no-margin desktop-example" src={{ "assets/page-pattern-checklist-desktop.png" | relative_url }} />
+                                   <img class="responsive-img-no-margin desktop-example" src={{ "assets/page-pattern-lightweight-checklist.png" | relative_url }} />
 
-                                   <img class="responsive-img-no-margin mobile-example" src={{ "assets/page-pattern-checklist-mobile.png" | relative_url }} />
 
                                     <div class="spots">
                                         <div class="spot" id="spot-01">
                                             <div class="spot-subwrapper">
                                             <a>1</a>
-                                            <p>Header - page title</p>
+                                            <p>Heading (page title)</p>
                                             </div>
                                         </div>
                                         
                                         <div class="spot" id="spot-02" >
                                             <div class="spot-subwrapper">
                                             <a >2</a>
-                                            <p>Header - supporting text</p>
+                                            <p>Long description (supporting text)t</p>
                                             </div>
                                         </div>
                                         
                                         <div class="spot" id="spot-03">
                                             <div class="spot-subwrapper">
                                             <a>3</a>
-                                            <p>Numbered checklist item</p>
+                                            <p>Numbered checklist item - open</p>
                                             </div>
                                         </div>
                                         
                                         <div class="spot" id="spot-04" >
                                             <div class="spot-subwrapper">
                                             <a>4</a>
-                                            <p>&#39;Tips&#39; sub-item</p>
+                                            <p>Feature box</p>
                                             </div>
                                         </div>
                                         
-                                        <div class="spot" id="spot-05" >
+                                         <div class="spot" id="spot-05" >
                                             <div class="spot-subwrapper">
                                             <a>5</a>
-                                            <p>&#39;Must do&#39; sub-item</p>
+                                            <p>Inline pathway</p>
                                             </div>
                                         </div>
                                         
-                                        <div class="spot" id="spot-06">
+                                         <div class="spot" id="spot-06" >
                                             <div class="spot-subwrapper">
                                             <a>6</a>
-                                            <p>Save progress feature</p>
+                                            <p>Numbered checklist item - closed</p>
                                             </div>
                                         </div>
+   
                                         
                                     </div>
                          
@@ -158,7 +146,7 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                                         
                                         <div class="rules-accordion-item-tile-inner">
                                             
-                                            <h5 class=""><span>1</span>Header - page title</h5>
+                                            <h5 class=""><span>1</span>Heading (page title)</h5>
                                             
                                             <div class="chevron">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -189,7 +177,7 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                                     <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
                                         <div class="rules-accordion-item-tile-inner">
                                             
-                                            <h5 class=""><span>2</span>Header - supporting text</h5>
+                                            <h5 class=""><span>2</span>Long description (supporting text)</h5>
                                             
                                             <div class="chevron">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -221,7 +209,7 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                                     <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
                                         <div class="rules-accordion-item-tile-inner">
                                             
-                                            <h5 class=""><span>3</span>Numbered checklist item</h5>
+                                            <h5 class=""><span>3</span>Numbered checklist item - open</h5>
                                             
                                             <div class="chevron">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -249,7 +237,7 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                                     <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
                                         <div class="rules-accordion-item-tile-inner">
                                             
-                                            <h5 class=""><span>4</span> &#39;Tips&#39; sub&#45;item</h5>
+                                            <h5 class=""><span>4</span> Feature box</h5>
                                             
                                             <div class="chevron">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -263,11 +251,36 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                                         </div>
                                         <div class="rules-accordion-item-content">
                                             <div class="body-copy" aria-label="accordion content">
-                                                <p>Recommended content that users should consider.</p>
+                                                <p>Feature boxes highlight certain information in the context of the checklist item.</p>  
+                                            </div>
+ 
+                                        </div> 
+                                    </div>
+                                    </div>
+                                 
+                                <!-- Item 5 -->
+                                <div id="rule-5" class="rules-accordion-item">
+                                    <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
+                                        <div class="rules-accordion-item-tile-inner">
+                                            
+                                            <h5 class=""><span>5</span>Inline pathway</h5>
+                                            
+                                            <div class="chevron">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
+                                                    <g transform="translate(16 10) rotate(180)">
+                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+
+                                         
+                                        </div>
+                                        <div class="rules-accordion-item-content">
+                                            <div class="body-copy" aria-label="accordion content">
+                                                <p>The inline pathway provides a way for internal and external links to stand out when the user needs to complete an important, but optional task.</p>  
+                                                <p>An inline pathway component can list one or more links. It is used within the context of written content if it is a medium value step in a process.</p>
                                                 <ul>
-                                                    <li>These sub&#45;items are not checkable.</li>
-                                                    <li>Actions are not legally required.</li>
-                                                    
+                                                    <li>See the <a href={{ "../components/inline-pathway.html" | relative_url }}>inline pathway component</a> for further rules.</li>
                                                 </ul>
                                             </div>
  
@@ -276,43 +289,12 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                                     </div>
                                  
                                     
-                                <!-- Item 5 -->  
-                                <div id="rule-5" class="rules-accordion-item">
-                                    <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
-                                        <div class="rules-accordion-item-tile-inner">
-                                            
-                                            <h5 class=""><span>5</span> &#39;Must do&#39; sub&#45;item</h5>
-                                            
-                                            <div class="chevron">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
-                                                    <g transform="translate(16 10) rotate(180)">
-                                                        <path d="M8,3.972,1.982,10,0,8.014,8,0l8,8.014L14.018,10Z" fill="#333" />
-                                                    </g>
-                                                </svg>
-                                            </div>
-
-                                         
-                                        </div>
-                                        <div class="rules-accordion-item-content">
-                                            <div class="body-copy" aria-label="accordion content">
-                                                <p>A direct, short title focused on the main action the user will complete on the page. </p>
-                                                <ul>
-                                                    <li>These sub&#45;items are checkable, users can mark them as done.</li>
-                                                    <li>Actions are legally required.</li>
-                                                </ul>
-                                            </div>
- 
-                                        </div> 
-                                    </div>
-                                </div>
-                                    
-                                    
                                 <!-- Item 6 -->
                                 <div id="rule-6" class="rules-accordion-item">
                                     <div class="rules-accordion-item-tile" role="tab" aria-expanded="false" tabindex="0">
                                         <div class="rules-accordion-item-tile-inner">
                                             
-                                            <h5 class=""><span>6</span>Save progress feature</h5>
+                                            <h5 class=""><span>6</span> Numbered checklist item - closed</h5>
                                             
                                             <div class="chevron">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10">
@@ -326,17 +308,14 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                                         </div>
                                         <div class="rules-accordion-item-content">
                                             <div class="body-copy" aria-label="accordion content">
-                                                <p>Provides users with the ability to save a link to the checklist.</p>
-                                                <ul>
-                                                    <li>Title and description in this box should stay the same across checklists</li>
-                                                </ul>
+                                                <p>Item titles should be short, action oriented statements that make it clear at a high-level what the user needs to do. Items are closed until the user choses to open them.</p>
                                             </div>
  
                                         </div> 
                                     </div>
-                                </div>
-
-
+                                    </div>
+                                 
+      
 
                             </div>
                         </div>
@@ -363,246 +342,150 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
 
 <div class="anchor-section" name="checklist-specific-components"><a href="" id="checklist-specific-components"></a>
 
-                <div class="body-copy">
-                    <div>
-                        
-                            <h2>Checklist specific components</h2>
-                   
-                        <hr />
-                    </div>
-                    <div class="body-copy-content">
+        <div class="body-copy">
+            <div>
+                    <h2>Checklist specific components</h2>
 
-                         
-                
-                <h3>Checklist items</h3>
-                <div class="design-system-card component extra-wide">
-                    
-                     <div class="responsive-toggle-container">
-                                <p class="toggle-name">Design view: <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider"></span>
-                                        <span class="switch-text-mobile"></span>
-                                        <span class="switch-text-desktop"></span>
-                                    </label></p>
+                <hr />
+            </div>
+            <div class="body-copy-content">
 
-                                <div class="mobile-only">
-                                    <h5>Mobile design</h5>
-                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
-                                </div>
 
-                            </div>
-                    
-                    <div class="design-system-card-content">
 
-                        <div class="example-wrapper white-back">
-                            <div class="checklist">
-                                <div class="example full-width checklist-container">   
-                                   
-                                <div id="checklist-example" class="checklist-wrapper new">
-                        
-                         
-                        <div class="checklist-line"></div>
-                         
-                         
-                         <!-- ITEM 1 -->
-                         <div class="checklist-item">
-                        
-                            
-                            <div class="checklist-item-title">
-                                <h2><span>1</span> Item 1 descriptive title</h2>
-                            </div>
-                            
-                            <div class="checklist-sub-item-wrapper step-minimised">
+        <h3>Checklist items</h3>
+        <div class="design-system-card component extra-wide">
 
-                            <div class="checklist-sub-item tip">
-                                
-                                <div class="checklist-sub-item-title">
-                                    <h3><span></span>Tip - Lorem ipsum dolor sit amet</h3>
-                                    
-                                    </div>
-                                <div class="content-wrapper">
-                                <div class="checklist-item-content">
-                                    
-                                    <p>Nullam id dignissim sapien. Integer efficitur feugiat neque eu porta. Pellentesque ac nisi purus. Aenean eget ipsum dapibus, consequat arcu a, consequat quam. Aenean vel felis risus. Sed pulvinar lectus erat. Mauris magna orci, aliquam ac iaculis ac, egestas et metus.</p>
-                                </div>
-                               
-                                </div>
-                            </div>
-                            
-                            <div class="checklist-sub-item must-do">
-                                
-                                <div class="checklist-sub-item-title">
-                                    <h3>Donec vestibulum lectus at pretium congue.</h3>
-                                    <div class="checklist-item-tag required">Must do</div>
-                                    
-                                </div>
-                                
-                                <div class="content-wrapper">
-                                <div class="checklist-item-content">
-                                    
-                                    <p>Curabitur pellentesque ante ligula. Aenean in scelerisque ipsum, nec finibus justo. Morbi dignissim in nisl non bibendum. Vestibulum mattis et lorem eget semper. In a quam mollis, ornare risus nec, tincidunt odio. Morbi eget nibh id magna vestibulum faucibus. Praesent eu lacus quam:</p>
-                                    <ul>
-                                        <li>full-time or part-time employee</li>  
-                                        <li>fixed-term employee (non-ongoing)</li>
-                                        <li>casual employee</li>  
-                                    </ul>
-                                    <p><a href="" class="external">Find out more about the different types of employee</a></p>
-                                </div>
-                                <div class="checklist-item-checkbox">
-                                    <input type="checkbox">
-                                    <label>Done</label><br>
-                                </div>
-                                </div>
-                            </div>
-                            
-                        
-                            </div>
+             <div class="responsive-toggle-container">
+                        <p class="toggle-name">Design view: <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                                <span class="switch-text-mobile"></span>
+                                <span class="switch-text-desktop"></span>
+                            </label></p>
 
-                            <hr class="checklist-item-divider"/> 
+                        <div class="mobile-only">
+                            <h5>Mobile design</h5>
+                            <p>Desktop designs can be viewed on screens wider than 650px.</p>
                         </div>
 
-                        
-                         <!-- ITEM 2 -->
-                         <div class="checklist-item">
-                            
-                            <div class="checklist-item-title">
-                                <h2><span>2</span> Item 2 title</h2>
-                            </div>
-                             
-                            <div class="checklist-sub-item-wrapper step-minimised">
-                            
-                            <div class="checklist-sub-item must-do">
-                                
-                                <div class="checklist-sub-item-title">
-                                    <h3>Quisque quis urna varius </h3> <div class="checklist-item-tag required">Must do</div>
-                                    
-                                    </div>
-                                <div class="content-wrapper">
-                                <div class="checklist-item-content">
-                                   
-                                    <p>Fusce augue felis, sagittis quis lacus non, convallis volutpat velit. Vestibulum faucibus diam sit amet eleifend vestibulum. Cras ultricies quis arcu et fermentum. Proin eget sodales sapien. Vivamus tincidunt ligula condimentum enim egestas molestie. Fusce at venenatis risus. Use the <a href="">Find my award tool</a> to check: </p>
-                                    <ul>
-                                        <li>pay</li>
-                                        <li>hours of work </li>
-                                        <li>rosters </li>
-                                        <li>breaks </li>
-                                    </ul>
-                                    <p>You can also use the <a href="">Pay Calculator</a> to work out what you&rsquo;ll need to pay your new employee under the relevant award (including any penalty rates).  </p>
-                                    
-                                </div>
-                                <div class="checklist-item-checkbox">
-                                    <input type="checkbox">
-                                    <label>Done</label><br>
-                                </div>
-                            </div>
-                                </div>
-                            
-                            <div class="checklist-sub-item must-do">
-                                
-                                <div class="checklist-sub-item-title">
-                                    <h3>Understand aliquam quis lorem volutpat hendrerit.</h3><div class="checklist-item-tag required">Must do</div>
-                                    
-                                    </div>
-                                <div class="content-wrapper">
-                                <div class="checklist-item-content">
-                                   
-                                    <p>Proin laoreet pulvinar vulputate. Integer ultricies massa a congue ullamcorper. You will also need to have <a href="">worker’s compensation insurance</a> for your employee. </p>
-                                    <p>If you want to learn more, check our <a href="">Managing and developing staff</a> topic. </p>
-                                </div>
-                                <div class="checklist-item-checkbox">
-                                    <input type="checkbox">
-                                    <label>Done</label><br>
-                                </div>
-                                
-                               
-                            </div>
-                                </div>
-                                
-                            
-                            
-                            </div>
-                             
-                            <hr class="checklist-item-divider"/> 
-                        </div>
-                         
                     </div>
+
+            <div class="design-system-card-content">
+
+                <div class="example-wrapper white-back">
+                    <div class="checklist lightweight">
+                        <div class="example full-width checklist-container">   
+
+                        <div id="checklist-example" class="checklist-wrapper lightweight ">
+
+
+                <div class="checklist-line"></div>
+
+
+                 <!-- ITEM 1 -->
+                 <div class="checklist-item">
+
+
+                    <div class="checklist-item-title">
+                        <h2><span>1</span> Item 1 descriptive title</h2>
+                    </div>
+
+                    <div class="checklist-sub-item-wrapper step-minimised">
+
+                    <div class="checklist-sub-item">
+                                
+                                <div class="content-wrapper">
+                                <div class="checklist-item-content">
+ 
+                                    <p>The process of applying for a grant can vary between each one. However, for most grants you’ll need to: </p>
+                                    <ul>
+                                        <li>meet the grant eligibility </li>
+                                        <li>invest time to write your application </li>
+                                        <li>report on how you'll spend funding. </li>
+                                    </ul>
+                                    <p>It’s important that you understand how we assess a grant application. For some grants you’ll just need to answer some simple questions. Other grants will be competitive and we award them based on the merit of an application. </p>
+                                    <p>You should also understand the submission process. By learning about the online grant application system, you’ll be able to plan your time better. You should allow enough time to: </p>
+                                    <ul>
+                                        <li>collect the required evidence </li>
+                                        <li>complete your application </li>
+                                        <li>review everything </li>
+                                        <li>submit your application. </li>
+                                    </ul>
               
+                                    <div class="feature-box">
+                                        <div class="feature-box-title">
+                                            <div class="feature-icon"> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                                                    <g id="Group_7610" data-name="Group 7610" transform="translate(-3981.769 -458)">
+                                                        <circle id="Ellipse_17" data-name="Ellipse 17" cx="28" cy="28" r="28" transform="translate(3981.769 458)" fill="#e1aa21" />
+                                                        <g id="Layer_1" data-name="Layer 1" transform="translate(3998.443 470.146)">
+                                                            <path id="Path_3937" data-name="Path 3937" d="M16.741,3a11.263,11.263,0,0,0-2.348.235A11.724,11.724,0,0,0,8.926,23.492a3.261,3.261,0,0,1,1.107,2.465v3.874a3.364,3.364,0,0,0,3.354,3.354h.47a3.319,3.319,0,0,0,5.769,0h.47a3.364,3.364,0,0,0,3.354-3.354V25.957a3.252,3.252,0,0,1,1.073-2.448A11.726,11.726,0,0,0,16.741,3Zm3.354,26.831H13.387V28.154h6.708Zm0-3.354H13.387V24.8h6.708Zm2.2-5.467c-.151.134-.268.3-.4.436H18.208V17.381L21.092,14.5a.633.633,0,0,0,0-.889l-1.186-1.186a.65.65,0,0,0-.892,0l-2.264,2.266L14.468,12.4a.651.651,0,0,0-.89,0l-1.186,1.187a.63.63,0,0,0,0,.889l2.881,2.881v4.085h-3.7a5.171,5.171,0,0,0-.4-.453,8.38,8.38,0,1,1,13.952-6.255A8.338,8.338,0,0,1,22.291,21.01Z" transform="translate(-4.997 -3)" fill="#fff" />
+                                                        </g>
+                                                    </g>
+                                                </svg> </div>
+                                            <h3>Competitive grants have limited funding</h3>
+                                        </div>
+                                        <p>Not all applications will be successful. You’ll need to write a compelling application if you’re to get funding. </p> 
+                                    </div>
                                     
-                                    
+                                    </div>
+                                
+                                     <div class="checklist-item-checkbox">
+                                     <div class="close-item" tabindex="0">
+
+                                         <btn><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                 <path id="Close" d="M10,12,2,20,0,18l8-8L0,2,2,0l8,8,8-8,2,2-8,8,8,8-2,2Z" fill="#254F90" />
+                                             </svg>
+                                             <span>Close</span>
+                                         </btn>
+
+                                     </div>
+
+                                
                                 </div>
-                            </div>
-
-                        </div>
-
-                         {% include code-dropdown.html componentName="checklist-items" %}
-
-                    </div>
-
-                </div>
-                
-                 <h3>Save progress feature</h3>
-                <div class="design-system-card component extra-wide">
-                    
-                     <div class="responsive-toggle-container">
-                                <p class="toggle-name">Design view: <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider"></span>
-                                        <span class="switch-text-mobile"></span>
-                                        <span class="switch-text-desktop"></span>
-                                    </label></p>
-
-                                <div class="mobile-only">
-                                    <h5>Mobile design</h5>
-                                    <p>Desktop designs can be viewed on screens wider than 650px.</p>
-                                </div>
-
-                            </div>
-                    
-                    <div class="design-system-card-content">
-
-                        <div class="example-wrapper white-back">
-                            <div class="checklist">
-                                <div class="example checklist-container">   
-                                   
-                                <div id="checklist-example" class="checklist-wrapper new">
-                         
-
+                            </div>  
+                            
                         
-                        <div class="email-box-container">
-                            <div class="email-intro">
-                                <h3>Save your progress</h3>
-                                <p>Save your checklist and get a link to it – you’ll be able to continue on from where you were.</p>
-                            </div>
-
-                            <div id="email-btn-wrapper" class="email-btn-wrapper-2">
-                                <btn class="email-btn"><span>Save progress</span></btn>
-                            </div>
-                        </div>
-       
                     </div>
-                      
-                                 
-                                    
-                                    
-                                </div>
-                            </div>
+
+                    
+                </div>
+                     <hr class="checklist-item-divider"/> 
+
+
+                 <!-- ITEM 2 -->
+                 <div class="checklist-item">
+
+                    <div class="checklist-item-title">
+                        <h2><span>2</span> Item 2 title</h2>
+                    </div>
+
+                    <div class="checklist-sub-item-wrapper step-minimised">
+
+                    
+
+                    </div>
+
+                    <hr class="checklist-item-divider"/> 
+                </div>
+
+            </div>
+
+
 
                         </div>
-
-						{% include code-dropdown.html componentName="checklist-save-progress" %}
-
                     </div>
 
                 </div>
 
+                 {% include code-dropdown.html componentName="checklist-items" %}
 
-                      
+            </div>
 
+        </div>
+        </div>
 
-                    </div>
-
-
-                </div>
+        </div>
 
 </div>
   
@@ -623,16 +506,17 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                     <h3>Purpose</h3>
                     
 
-                    <p>A checklist is used for an end to end process that includes legal steps. This pattern is helpful for someone who needs to complete tasks in a specific order and should include task/action based content only.</p>
+                    <p>The checklist pattern presents the user with an end to end journey in logical steps and provides links to content to help them complete each step.</p>
+                    
+                    <p>The main difference between the lightweight and standard checklist patterns is the amount of content each contains. The lightweight pattern should be used for simpler journeys or a series of tips. It does not allow for nested items within each main item.</p>
                     
                    
                     <h3>General rules:</h3>
                     <ul>
-                        <li>Should only be used where there is a logical order to complete a larger journey.</li>
+                        <li>Should only be used where there is a logical order to complete a journey.</li>
                         <li>Provides numbered steps that presents a specific start and end point.</li>
-                        <li>Provides links within content to other websites to complete each step.</li>
                         <li>Can include online and offline actions.</li>
-                        <li>Key content is legally required (‘Must do’) steps.</li>
+                        <li>When you are educating the user about a specific stage in an end to end journey (use the tutorial pattern).</li>
                         </ul>
 
                     
@@ -640,8 +524,6 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                     
                     <ul>
                         <li>When the user only needs to read guidance and not take an action (use Guide pattern instead).</li>
-                        
-                        <li>When you are educating the user about a specific stage in an end to end journey (use the tutorial pattern).</li>
                     </ul>
 
 
@@ -671,10 +553,10 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
             <div class="adobe-link vertical-list ">
 
                 <div>
-                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/515568e1-a93a-498a-ab73-7832034abc81/specs/">
+                    <a class="action-card-anchor" target="blank" href="https://xd.adobe.com/spec/5d0b533a-2924-4fc3-4417-b26a6309bf1e-2b3a/screen/a0002683-2ab9-4352-89fa-a8a6ff0ea7bc/specs/">
                             <div class="action-card-button">
                                 <div class="action-card-content">
-                                    <p class="vertical-list-fileName">View checklist design and assets in Adobe XD.</p>
+                                    <p class="vertical-list-fileName">View the lightweight checklist design and assets in Adobe XD.</p>
                                     <div class="action-card-info">
                                         <div class="BgaIcon  circleIcon-inner"><svg viewBox="0 0 16 16"><path d="M14 3.414L7.707 9.707 6.293 8.293 12.586 2H10V0h6v6h-2V3.414zM14 14V9h2v7H0V0h7v2H2v12h12z" fill="#4267b2"></path></svg></div>
                                         <div class="site-name"><span>ADOBE XD</span></div>
@@ -687,7 +569,7 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                         
             <div class="example-link vertical-list ">
 
-                <div>
+                <!--<div>
                     <a class="action-card-anchor" target="blank" href="https://business.gov.au/people/hiring/hiring-employees">
                             <div class="action-card-button">
                                 <div class="action-card-content">
@@ -699,7 +581,7 @@ longdesc: A checklist pattern for presenting an end to end journey in logical st
                                 </div>
                             </div>
                         </a>
-                </div>
+                </div>-->
             </div>
 
 

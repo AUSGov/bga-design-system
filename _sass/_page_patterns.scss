@@ -106,6 +106,39 @@
 						left: 69%;
 					}
 				}
+                
+                // Checklist
+				&.lightweight-checklist-container {
+					#spot-01 {
+						top: 13.6%;
+                        left: 4.5%;
+					}
+
+					#spot-02 {
+						top: 18.5%;
+						left: 4.5%;
+					}
+
+					#spot-03 {
+						top: 28.3%;
+                        left: 4.5%
+					}
+
+					#spot-04 {
+						top: 38%;
+                        left: 13%;
+					}
+
+					#spot-05 {
+						top: 54.8%;
+						left: 13%;
+					}
+
+					#spot-06 {
+				        top: 88.2%;
+                        left: 4.5%;
+					}
+				}
 
 				// Topic page
 				&.topic-page-container {
