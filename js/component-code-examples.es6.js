@@ -9076,7 +9076,7 @@ $(".global-header-code .css-code").html(globalHeaderCss);
 	
 //======================================================= PAGE PATTERN COMPONENTS =============================================================================
 	
-	//CHECKLIST
+//CHECKLIST
 //Checklist items
 
 //html
@@ -9891,6 +9891,701 @@ const checklistSaveProgressCss =
 `
 $(".checklist-save-progress-code .css-code").html(checklistSaveProgressCss);
 
+// LIGHTWEIGHT CHECKLIST
+//CHECKLIST
+//Checklist items
+
+//html
+const lightweightChecklistHtml =
+`
+<div class="checklist-wrapper">
+<div class="checklist-line"></div>
+
+<!-- ITEM 1 -->
+<div class="checklist-item open">
+
+<div class="checklist-item-title">
+<h2><span>1</span> Item 1 descriptive title</h2>
+</div>
+
+<div class="checklist-sub-item-wrapper step-minimised">
+
+<div class="checklist-sub-item">
+
+<div class="content-wrapper">
+    <div class="checklist-item-content">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet enim at lectus feugiat dapibus. Morbi vel mollis eros. Pellentesque at dictum libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet turpis augue. </p>
+
+        <div class="feature-box">
+            <div class="feature-box-title">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+                        <g id="Group_7610" data-name="Group 7610" transform="translate(-3981.769 -458)">
+                            <circle id="Ellipse_17" data-name="Ellipse 17" cx="28" cy="28" r="28" transform="translate(3981.769 458)" fill="#e1aa21" />
+                            <g id="Layer_1" data-name="Layer 1" transform="translate(3998.443 470.146)">
+                                <path id="Path_3937" data-name="Path 3937" d="M16.741,3a11.263,11.263,0,0,0-2.348.235A11.724,11.724,0,0,0,8.926,23.492a3.261,3.261,0,0,1,1.107,2.465v3.874a3.364,3.364,0,0,0,3.354,3.354h.47a3.319,3.319,0,0,0,5.769,0h.47a3.364,3.364,0,0,0,3.354-3.354V25.957a3.252,3.252,0,0,1,1.073-2.448A11.726,11.726,0,0,0,16.741,3Zm3.354,26.831H13.387V28.154h6.708Zm0-3.354H13.387V24.8h6.708Zm2.2-5.467c-.151.134-.268.3-.4.436H18.208V17.381L21.092,14.5a.633.633,0,0,0,0-.889l-1.186-1.186a.65.65,0,0,0-.892,0l-2.264,2.266L14.468,12.4a.651.651,0,0,0-.89,0l-1.186,1.187a.63.63,0,0,0,0,.889l2.881,2.881v4.085h-3.7a5.171,5.171,0,0,0-.4-.453,8.38,8.38,0,1,1,13.952-6.255A8.338,8.338,0,0,1,22.291,21.01Z" transform="translate(-4.997 -3)" fill="#fff" />
+                            </g>
+                        </g>
+                    </svg> </div>
+                <h3>Competitive grants have limited funding</h3>
+            </div>
+            <p>Not all applications will be successful. You’ll need to write a compelling application if you’re to get funding. </p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet enim at lectus feugiat dapibus. Morbi vel mollis eros. Pellentesque at dictum libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet turpis augue. </p>
+
+        <div class="inline-pathway-group">
+            <a class="inline-pathway-card" href="">
+                <div class="inline-pathway-card-content">
+                    <p class="description">Learn more about the Australia Government's current initiatives.</p>
+                    <div class="link-container">
+                        <div class="link-icon"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                <defs>
+                                    <clipPath id="clip-path">
+                                        <path id="Path_1491" data-name="Path 1491" d="M38-40.586l-6.293,6.293-1.414-1.414L36.586-42H34v-2h6v6H38ZM38-30v-5h2v7H24V-44h7v2H26v12Z" fill="#254f90" clip-rule="evenodd" />
+                                    </clipPath>
+                                    <clipPath id="clip-path-2">
+                                        <path id="Path_1490" data-name="Path 1490" d="M24-28H40V-44H24Z" fill="#254f90" />
+                                    </clipPath>
+                                </defs>
+                                <g id="Group_1533" data-name="Group 1533" transform="translate(-24 44)" clip-path="url(#clip-path)">
+                                    <g id="Group_1532" data-name="Group 1532" clip-path="url(#clip-path-2)">
+                                        <path id="Path_1489" data-name="Path 1489" d="M19-49H45v26H19Z" fill="#254f90" />
+                                    </g>
+                                </g>
+                            </svg> </div>
+                        <p class="link-text">DEPARTMENT OF THE PRIME MINISTER AND CABINET</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="inline-pathway-card" href="">
+                <div class="inline-pathway-card-content">
+                    <p class="description">Learn more about the Australia Government's current initiatives.</p>
+                    <div class="link-container">
+                        <div class="link-icon"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                                <defs>
+                                    <clipPath id="clip-path">
+                                        <path id="Path_1491" data-name="Path 1491" d="M38-40.586l-6.293,6.293-1.414-1.414L36.586-42H34v-2h6v6H38ZM38-30v-5h2v7H24V-44h7v2H26v12Z" fill="#254f90" clip-rule="evenodd" />
+                                    </clipPath>
+                                    <clipPath id="clip-path-2">
+                                        <path id="Path_1490" data-name="Path 1490" d="M24-28H40V-44H24Z" fill="#254f90" />
+                                    </clipPath>
+                                </defs>
+                                <g id="Group_1533" data-name="Group 1533" transform="translate(-24 44)" clip-path="url(#clip-path)">
+                                    <g id="Group_1532" data-name="Group 1532" clip-path="url(#clip-path-2)">
+                                        <path id="Path_1489" data-name="Path 1489" d="M19-49H45v26H19Z" fill="#254f90" />
+                                    </g>
+                                </g>
+                            </svg> </div>
+                        <p class="link-text">DEPARTMENT OF THE PRIME MINISTER AND CABINET</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <p>Morbi vel mollis eros. Pellentesque at dictum libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet turpis augue. </p>
+
+        <div class="inline-pathway-group">
+            <a class="inline-pathway-card" href="">
+                <div class="inline-pathway-card-content">
+                    <p class="description">Sample grant agreement PDF</p>
+                    <div class="link-container">
+
+                        <div class="link-icon"><svg viewBox="0 0 16 16">
+                                <path d="M9 8l2.354-2.354 1.414 1.415-4.707 4.707L3.354 7.06l1.414-1.415L7 7.88V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+                            </svg></div><span class="link-text">pdf·0.09 MB </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="checklist-item-checkbox">
+        <div class="close-item" tabindex="0">
+
+            <btn><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path id="Close" d="M10,12,2,20,0,18l8-8L0,2,2,0l8,8,8-8,2,2-8,8,8,8-2,2Z" fill="#254F90" />
+                </svg>
+                <p>Close</p>
+            </btn>
+
+        </div>
+
+
+    </div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<hr class="checklist-item-divider" />
+
+
+<!-- ITEM 2 -->
+<div class="checklist-item">
+
+<div class="checklist-item-title">
+<h2><span>2</span> Item 2 title</h2>
+</div>
+
+<div class="checklist-sub-item-wrapper step-minimised">
+
+<div class="checklist-sub-item">
+
+<div class="content-wrapper">
+    <div class="checklist-item-content">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet enim at lectus feugiat dapibus. Morbi vel mollis eros. Pellentesque at dictum libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet turpis augue. </p>
+        <p>Morbi vel mollis eros. Pellentesque at dictum libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet turpis augue. </p>
+
+
+    </div>
+
+    <div class="checklist-item-checkbox">
+        <div class="close-item" tabindex="0">
+
+            <btn><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path id="Close" d="M10,12,2,20,0,18l8-8L0,2,2,0l8,8,8-8,2,2-8,8,8,8-2,2Z" fill="#254F90" />
+                </svg>
+                <p>Close</p>
+            </btn>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+</div>
+
+</div>
+<div class="line-end"></div>
+
+</div>
+<hr class="checklist-item-divider" />
+
+</div>
+`
+
+$(".lightweight-checklist-code .html-code code pre").text(lightweightChecklistHtml);
+
+//css
+const lightweightChecklistCss =
+` 
+<h5>Container</h5>
+<code>
+<pre>
+.checklist-wrapper {
+    position: relative;
+    padding-top: 0;
+    margin-bottom: 32px;
+    max-width: 800px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.checklist-item {
+    position: relative;
+}
+.checklist-sub-item-wrapper {
+    display: none;
+    margin-left: 48px;
+}
+
+.content-wrapper {
+    padding-right: 0 !important;
+}
+
+.checklist-sub-item {
+    position: relative;
+    margin-left: 16px;
+}
+</pre>
+</code>
+
+<h5>Checklist item title</h5>
+<code>
+<pre>
+.checklist-item-title {
+    background: #ffffff;
+    position: relative;
+    padding: 24px 68px 24px 24px;
+    margin-left: 64px;
+    cursor: pointer;
+}
+
+.checklist-item-title h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+
+.checklist-item-title svg {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.checklist-item .checklist-item-title:hover svg {
+    background: #EBEBEB;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+
+.checklist-item.open .checklist-item-title svg,
+.checklist-item.open .checklist-item-title:hover svg {
+    background: #FFFFFF;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+.checklist-item .checklist-item-title:hover h2,
+.checklist-item .checklist-item-title:focus h2 {
+    text-decoration: underline;
+}
+.checklist-item.open .checklist-item-title {
+    background: #E5EDF7;
+    border: none;
+}
+
+.checklist-item.open .checklist-item-title:hover {
+    background: #E5EDF7;
+    background-size: 36px 36px;
+}
+
+.checklist-item.open .checklist-item-title:hover h2 {
+    text-decoration: underline;
+}
+
+.checklist-item.open .checklist-item-title:active {
+    background: #E5EDF7;
+    background-size: 36px 36px;
+}
+
+.checklist-item.open .checklist-sub-item-wrapper {
+    display: block;
+}
+</pre>
+</code>
+
+<h5>Checklist item content</h5>
+<code>
+<pre>
+.checklist-item-content {
+    background: #E5EDF7;
+    padding: 16px 24px 32px 24px;
+    position: relative;
+    display: block;
+}
+
+.checklist-item-content p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0 0 32px 0;
+}
+
+.checklist-item-content h3 {
+    padding-right: 120px;
+}
+
+.checklist-item-content ul {
+    margin-left: 16px;
+}
+
+checklist-item-content a {
+    color: #254F90;
+    box-shadow: none;
+    border-bottom: 2px solid #748FB8;
+}
+
+.checklist-item-content a:hover {
+    text-decoration: none;
+    box-shadow: #D8D8D8 0px -20px 0px 0px inset;
+}
+
+.checklist-item-content a:active {
+    color: #000000;
+}
+
+.feature-box {
+    height: auto;
+    border-top: none;
+    background: none;
+    padding: 32px 120px 32px 152px;
+    border-top: 4px solid #E1AA21;
+    background: #FFF7DF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+    line-height: 1.78;
+    text-align: left;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+/* Remove bottom padding from last element in the component*/
+.feature-box > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.feature-box > *:last-child li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.feature-box-title {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.feature-box h3 {
+    margin: 8px 0 0 0;
+    padding: 0;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 32px;
+}
+
+.feature-box p {
+    line-height: 32px;
+    font-size: 16px;
+    padding: 0 0 32px 0;
+    margin: 0;
+    letter-spacing: 0.0125rem;
+    color: #333;
+    display: inline-block;
+}
+
+.feature-box ul {
+    padding: 0 0 0 16px;
+    margin: 0;
+    line-height: 1.78;
+    list-style: none;
+}
+
+.feature-box ul li {
+    padding: 0 0 16px 32px;
+    margin: 0;
+    line-height: 32px;
+    position: relative;
+}
+
+.feature-box ul li svg {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.feature-box .feature-icon {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    height: 88px;
+}
+
+.feature-box .feature-icon svg {
+    width: 88px;
+    height: 88px;
+}
+
+.feature-box {
+    padding: 32px;
+}
+
+.feature-box h3 {
+    margin: 8px 0 0 16px;
+    font-size: 21px;
+    line-height: 1.33;
+}
+
+.feature-box .feature-icon {
+    position: relative;
+    height: 56px;
+    top: auto;
+    left: auto;
+}
+
+.feature-box .feature-icon svg {
+    width: 56px;
+    height: 56px;
+}
+
+.inline-pathway-group .inline-pathway-card:last-of-type {
+    margin-bottom: 32px;
+}
+
+.checklist-item-content .inline-pathway-card {
+    display: block;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.4s, 0.4s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    background: #F6F9FC;
+    padding: 24px;
+    border-top: 4px solid #b3c2d8;
+    border-bottom: none;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    color: #333333;
+}
+
+.checklist-item-content .inline-pathway-card:hover {
+    background: #ffffff;
+    box-shadow: none;
+}
+
+.inline-pathway-card:hover .inline-pathway-card-content,
+.inline-pathway-card:focus .inline-pathway-card-content {
+    transform: translateX(1rem);
+}
+
+.inline-pathway-card .link-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inline-pathway-card .description {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: #254F90;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.inline-pathway-card:hover .description,
+.inline-pathway-card:focus .description {
+    text-decoration: underline;
+}
+
+.inline-pathway-card .link-text {
+    letter-spacing: 0;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 0 0 8px;
+    color: #333333;
+}
+
+.inline-pathway-card:hover .link-text,
+.inline-pathway-card:focus .link-text {
+    text-decoration: none;
+}
+
+.inline-pathway-card .link-container .link-icon {
+    height: 16px;
+    width: 16px;
+    position: relative;
+}
+
+.inline-pathway-card .link-container .link-icon svg {
+    fill: #254f90;
+}
+
+.checklist-item-content > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.checklist-item-content > *:last-child li:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.checklist-item-content > *:last-child .inline-pathway-card:last-of-type {
+    margin-bottom: 0;
+}
+</pre>
+</code>
+
+<h5>Close item</h5>
+<code>
+<pre>
+.checklist-item-checkbox {
+    padding: 24px;
+    background: #bac8db;
+    line-height: 1 !important;
+}
+
+.close-item {
+    height: 20px;
+}
+
+.close-item btn {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.close-item btn:hover {
+    cursor: pointer;
+}
+
+.close-item svg {
+    margin-right: 8px;
+}
+
+.close-item p {
+    margin: 0;
+    padding: 0;
+}
+</pre>
+</code>
+
+<h5>Numbered steps and line</h5>
+<code>
+<pre>
+.checklist-line {
+    height: 93%;
+    width: 3px;
+    background: #C7C7C7;
+    display: block;
+    z-index: 0;
+    position: absolute;
+    margin: 48px 0 0 24px;
+}
+
+.checklist-item.open:last-of-type .checklist-item-title:before {
+    height: 100%;
+}
+
+.checklist-item .checklist-item-title h2 span {
+    position: absolute;
+    top: 20px;
+    left: -64px;
+    border-radius: 50%;
+    border: 3px solid #C7C7C7;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 38px;
+    z-index: 100;
+    background: #ffffff;
+}
+
+.checklist-item.open .checklist-item-title h2 span {
+    background: #254F90;
+    border: 3px solid #254F90;
+    color: #ffffff;
+}
+
+.line-end {
+    height: 100%;
+    width: 5px;
+    background: #ffffff;
+    position: absolute;
+    z-index: 10;
+    top: 48px;
+    left: 22px;
+}
+
+.checklist-item-divider {
+    border-top: 2px solid #C7C7C7;
+    width: calc(100% - 96px);
+    margin: 16px 0 16px 80px;
+    padding: 0;
+}
+</pre>
+</code>
+
+<h5>Media queries</h5>
+<code>
+<pre>
+@media (max-width: 576px) {
+    .checklist-line {
+        height: 93%;
+        width: 2px;
+        margin: 48px 0 0 34px;
+    }
+
+    .checklist-item-divider {
+        margin: 8px 0 8px 80px;
+    }
+
+    .checklist-item-title {
+        padding: 16px 52px 16px 16px;
+    }
+
+    .checklist-item-title h2 {
+        font-size: 20px;
+    }
+
+    .checklist-item .checklist-item-title h2 span,
+    .checklist-item.open .checklist-item-title h2 span {
+        height: 30px !important;
+        width: 30px !important;
+        top: 20px;
+        left: -48px;
+        line-height: 1.9rem;
+    }
+
+    .checklist-item-title svg {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+
+    .checklist-item-content {
+        padding: 16px;
+    }
+
+    .checklist-item-content .inline-pathway-card {
+        padding: 16px;
+    }
+
+    .feature-box {
+        padding: 24px;
+    }
+
+    .feature-box .feature-icon {
+        display: none;
+    }
+
+    .feature-box .feature-icon svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .feature-box h3 {
+        margin: 4px 0 0 0;
+        line-height: 1.25;
+        font-size: 21px;
+    }
+
+    .inline-pathway-card .link-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .inline-pathway-card .link-container .link-icon {
+        margin-top: 6px;
+    }
+}
+</pre>
+</code>
+`
+$(".lightweight-checklist-code .css-code").html(lightweightChecklistCss);
+
+    
+    
 //GUIDES
 //GUIDE MINI-LIST
 

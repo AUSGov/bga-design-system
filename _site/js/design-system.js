@@ -828,11 +828,13 @@ $(document).ready(function () {
     
     
     
+    
     /*----------- COMPONENT EXAMPLE: Lightweight checklist ----------- */
-    /*------------------- Open & close checklist items -------------------*/
+    
+    /*------------------- Open & close lightweight checklist items -------------------*/
     $(".lightweight .checklist-sub-item-title").on("click", function () {
 
-		$(this).next('.checklist-sub-item').slideToggle(400);
+        $(this).next('.checklist-sub-item:after').slideToggle(400);
 
 		if ($(this).closest('.checklist-sub-item').hasClass('open')) {
 			$(this).closest('.checklist-sub-item').removeClass('open');
@@ -841,26 +843,6 @@ $(document).ready(function () {
 		}
 
 	});
-    
-    /*------------------- Close checklist step button -------------------*/
-    /*$('.lightweight .checklist-close-step').on('click', function(){
-        $(this).parents('.checklist-sub-item-wrapper').hide();
-        $(this).parents('.checklist-item').removeClass('open');
-    });*/
-    
-    
-    /*------------------- Open & close sub-checklist items -------------------*/
-     /*$(".lightweight .checklist-sub-item-title").on("click", function () {
-
-        $(this).next('.content-wrapper').slideToggle(600);
-         
-        if ($(this).closest('.checklist-sub-item').hasClass('open')) {
-            $(this).closest('.checklist-sub-item').removeClass('open');
-        } else {
-            $(this).closest('.checklist-sub-item').addClass('open');
-        }
-         
-     });*/
     
      /*------------------- Close functionality -------------------*/ 
     $('.lightweight .close-item btn').on('click', function () {
@@ -881,29 +863,7 @@ $(document).ready(function () {
             content.slideUp(1000);
         }, 400);
     });
-    
-    // Expand all
-    /*$(".checklist-expand-all").on("click", function (){
 
-    if($(this).hasClass('open')) {
-        $(this).removeClass('open');
-        $('.checklist-sub-item-wrapper').slideUp(400);
-        $(".checklist-item").removeClass('open');
-
-        $(this).find('h5').text('Open all');
-
-    } else { 
-        $(this).addClass('open');
-        $('.checklist-sub-item-wrapper').slideDown(400);
-        $(".checklist-item").addClass('open');
-
-        $(this).find('h5').text('Close all');
-    }
-        
-    });*/
-    
-    
-    
     
     
 
