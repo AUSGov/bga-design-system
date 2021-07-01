@@ -759,7 +759,7 @@ $(document).ready(function () {
 	});
 
 
-	/*----------- COMPONENT EXAMPLE: Checklist ----------- */
+	/*----------- COMPONENT EXAMPLE: Standard checklist ----------- */
 	/*------------------- Open & close checklist items -------------------*/
 	$(".checklist-item-title").on("click", function () {
 		$(this).next('.checklist-sub-item-wrapper').slideToggle(400);
@@ -801,8 +801,6 @@ $(document).ready(function () {
 		}
 
 	});
-
-
 	/*------------------- Checkbox functionality -------------------*/
 	$('.checklist-item-checkbox').on('click', function () {
 		if ($(this).parents('.checklist-sub-item.must-do').hasClass('done')) {
@@ -827,7 +825,47 @@ $(document).ready(function () {
 
 		});
 	});
+    
+    
+    
+    
+    /*----------- COMPONENT EXAMPLE: Lightweight checklist ----------- */
+    
+    /*------------------- Open & close lightweight checklist items -------------------*/
+    $(".lightweight .checklist-sub-item-title").on("click", function () {
 
+        $(this).next('.checklist-sub-item:after').slideToggle(400);
+
+		if ($(this).closest('.checklist-sub-item').hasClass('open')) {
+			$(this).closest('.checklist-sub-item').removeClass('open');
+		} else {
+			$(this).closest('.checklist-sub-item').addClass('open');
+		}
+
+	});
+    
+     /*------------------- Close functionality -------------------*/ 
+    $('.lightweight .close-item btn').on('click', function () {
+
+        // Scroll and close
+        var parent_item = $(this).parents('.checklist-item');
+
+        parent_item.removeClass('open');
+        var parent_position = parent_item.position();
+        $("html").animate({
+                scrollTop: $(parent_item).offset().top
+            },
+            400 //speed
+        );
+
+        var content = $(this).parents('.checklist-sub-item-wrapper');
+        setTimeout(function () {
+            content.slideUp(1000);
+        }, 400);
+    });
+
+    
+    
 
 	/*----------- COMPONENT EXAMPLE: Hidden disclaimer ----------- */
 	$('.disclaimer-title-wrapper').on('click', function () {
