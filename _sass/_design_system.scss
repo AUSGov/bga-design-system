@@ -815,9 +815,8 @@
 			}
 
 			input {
-				height: 52px;
 				width: 100%;
-				padding: 10px;
+				padding: 12px 15px;
 
 				&:focus {
 					outline: none;
@@ -932,9 +931,8 @@
 
 			.text-box-with-units {
 				span {
-					height: 52px;
 					width: auto;
-					padding: 10px 15px;
+					padding: 12px 15px;
 					color: $grey-darker;
 					@include font-format($font-family, $font-regular, normal);
 					border: solid 1px $darkblue-mid;
@@ -989,13 +987,12 @@
 
 			.radio-item {
 				border: solid 1px $darkblue-mid;
-				min-height: 52px;
 				width: 100%;
 				max-width: 350px;
-				padding: 10px 15px;
+				padding: 12px 15px;
 				line-height: 0;
 				display: block;
-				margin-bottom: 16px;
+				margin-bottom: 8px;
 
 				&:last-of-type {
 					margin-bottom: 0;
@@ -1035,7 +1032,9 @@
 			.checkbox-item {
 				line-height: 28px;
 				display: block;
-				margin-bottom: 16px;
+				margin-bottom: 4px;
+                padding: 8px 15px;
+                background: #ffffff;
 
 				&:last-of-type {
 					margin-bottom: 0;
@@ -1044,7 +1043,6 @@
 				input[type="checkbox"] {
 					opacity: 0;
 					width: 0;
-					height: 28px;
 
 					&:checked + label:before {
 						background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important;
@@ -1280,7 +1278,7 @@
 						border-radius: 0;
 						width: 288px;
 						display: inline-block;
-						position: absolute;
+						height: 52px;
 						top: 0;
 						left: 0;
 						box-shadow: none;
@@ -1296,7 +1294,7 @@
 						position: absolute;
 						top: 0;
 						right: 0;
-						background: url(../assets/BGAIcon-calendar-blue-mid.svg) no-repeat center center;
+						background: $white url(../assets/BGAIcon-calendar-blue-mid.svg) no-repeat center center;
 
 						&:hover {
 							background: url(../assets/BGAIcon-calendar-blue.svg) no-repeat center center;
@@ -1501,11 +1499,10 @@
 						border-top-left-radius: 0px;
 						border-bottom-left-radius: 0px;
 						box-shadow: none;
-						height: 52px;
 						display: block;
 						border: solid 1px $darkblue-mid;
 						margin: 0 0 0 -6px;
-						padding: 10px 24px 10px 48px;
+						padding: 12px 24px 12px 48px;
 						text-align: center;
 						color: $white;
 						@include font-format($font-family, $font-semibold, normal);
@@ -1584,7 +1581,7 @@
 				select,
 				.checkbox-item input + label:before,
 				.combo-button {
-					border: solid 1px $darkblue-mid;
+					border: solid 1px $black-light;
 				}
 
 				.error-message {
@@ -1686,27 +1683,59 @@
 			&[data-state="error-state"] {
 
 				input,
-				#form-text-area,
-				.text-box-with-units span,
-				select,
-				.checkbox-item input + label:before,
-				.combo-button {
-					outline: none;
-					border: solid 3px $red-negative-dark !important;
+				.hwt-container,
+				.text-box-with-units,
+				select {
+				    outline-width: 6px;
+                    outline-color: #F5B5B5;
+                    outline-style: solid;
+                    border-radius: 0px;
+                    border: #D2201E solid 1px;
 				}
+                #form-text-area {
+                    border: none;
+                }
 
 				.text-box-with-units input {
-					border-left: 0px !important;
-					border-right: 0px !important;
+					border: none !important;
+                    outline: none;
 				}
-
+                .text-box-with-units span:first-of-type {
+                    border: none;
+                    border-right: #D2201E solid 1px;
+                }
+                .text-box-with-units span:last-of-type {
+                    border: none;
+                    border-left: #D2201E solid 1px;
+                }
+                
+                .checkbox-group {
+                    outline-width: 6px;
+                    outline-color: #F5B5B5;
+                    outline-style: solid;
+                    background: #F5B5B5;
+                }
+                .checkbox-item {
+                    border-radius: 0px;
+                    border: #D2201E solid 1px;
+                }
+                
+                .form-combo-box-input-container {
+                    outline-width: 6px;
+                    outline-color: #F5B5B5;
+                    outline-style: solid;
+                    background: #F5B5B5;
+                    
+                    input {
+                        border-radius: 0px;
+                        border: #D2201E solid 1px;
+                    }
+                }
 				&.text-box-button-combo-example .combo-button-wrapper #primary-combo,
 				&.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
-					border: solid 3px $red-negative-dark;
+					border: solid 1px $red-negative-dark;
 					background-color: $blue-primary-mid;
 					color: $white;
-					border-left: 0px;
-					margin-left: -5px;
 				}
 
 				&.text-box-button-combo-example .combo-button-wrapper #secondary-combo {
@@ -1717,7 +1746,7 @@
 					display: block;
 					color: $red-negative-dark;
 					margin: 0;
-					padding: 16px 0 0 0;
+					padding: 14px 0 0 0;
 
 					&.error-hidden {
 						display: none;
@@ -1735,13 +1764,13 @@
 				#datepicker {
 					.input-group {
 						.input-group-addon {
-							border: solid 3px $red-negative-dark;
+							border: solid 1px $red-negative-dark;
 							border-left: none;
 						}
 					}
 
 					.datepicker {
-						border: solid 3px $red-negative-dark;
+						border: solid 1px $red-negative-dark;
 						border-top: none;
 					}
 				}
@@ -1836,7 +1865,11 @@
 
 				&[data-state="error-state"] {
 					outline: none;
-					border: solid 3px $red-negative-dark;
+                    outline-width: 6px;
+                    outline-color: #F5B5B5;
+                    outline-style: solid;
+                    border-radius: 0px;
+                    border: #D2201E solid 1px;
 				}
 
 				&[data-state="disabled-state"] {
@@ -1865,7 +1898,11 @@
 
 				&[data-state="error-state"] {
 					input + label:before {
-						border: solid 3px $red-negative-dark;
+				        outline-width: 6px;
+                        outline-color: #F5B5B5;
+                        outline-style: solid;
+                        border-radius: 0px;
+                        border: #D2201E solid 1px;
 						background: $white;
 					}
 				}

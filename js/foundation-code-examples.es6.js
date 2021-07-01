@@ -1100,81 +1100,76 @@ $(".text-box-code .html-code code pre").text(textBoxHtml);
 //css
 const textBoxCss =
 `
-<h5>Container</h5>
 <code>
 <pre>
 /* Container */
 .form-field-container {
- font-family: "Open Sans", sans-serif;
- font-weight: 400;
- font-style: normal;
- font-size: 16px;
- width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 100%;
 }
-</pre>
-</code>
 
-<h5>Label</h5>
-<code>
-<pre>
 /* Label */
 .form-field-container .field-label {
- width: 100%;
- display: block;
- font-size: 16px;
- padding: 0 0 16px 0;
- margin: 0;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 0 0 16px 0;
+    margin: 0;
 }
-</pre>
-</code>
 
-<h5>Field</h5>
-<code>
-<pre>
 /* Field */
 .form-field-container .form-field {
- border: solid 1px #495c74;
- font-family: "Open Sans", sans-serif;
- font-weight: 400;
- font-style: normal;
- font-size: 16px;
- width: 100%;
- padding: 10px;
- box-sizing: border-box;
- margin-bottom: 8px;
+    border: solid 1px #333333;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
 }
-.form-field-container .form-text-input {
- height: 52px;
-}
-.form-field-container .form-field:focus {
- outline: none;
- border: solid 3px #254f90;
-}
-.form-field-container.validation-error .form-field {
- border: solid 3px #d2201e;
-}
-.form-field-container.validation-error .form-field:focus {
- border: solid 3px #254f90;
-}
-.form-field-container .form-field:disabled {
- outline: none;
- border: solid 1px #e2e2e2;
- background-color: #f5f5f5;
- color: #8e8e8e;
-}
-</pre>
-</code>
 
-<h5>Error message</h5>
-<code>
-<pre>
+.form-field-container .form-text-input {
+    padding: 12px 15px;
+}
+
+.form-field-container .form-field:focus {
+    outline: none;
+    border: solid 3px #254f90;
+}
+
+.form-field-container.validation-error .form-field {
+    outline-width: 6px;
+    outline-color: #F5B5B5;
+    outline-style: solid;
+    border-radius: 0px;
+    border: #D2201E solid 1px;
+}
+
+.form-field-container.validation-error .form-field:focus {
+    border: solid 3px #254f90;
+}
+
+.form-field-container .form-field:disabled {
+    outline: none;
+    border: solid 1px #e2e2e2;
+    background-color: #f5f5f5;
+    color: #8e8e8e;
+}
+
 /* Error message */
 .form-field-container .form-validation-message {
- color: #d2201e;
- display: none;
+    color: #d2201e;
+    display: none;
+    margin-top: 10px;
 }
+
 .form-field-container.validation-error .form-validation-message {
- display: block;
+    display: block;
 }
 </pre>
 </code>
