@@ -1228,7 +1228,7 @@ const textAreaCss =
 <pre>
 /* Field */
 .form-field-container .form-field {
- border: solid 1px #495c74;
+ border: solid 1px #333333;
  font-family: "Open Sans", sans-serif;
  font-weight: 400;
  font-style: normal;
@@ -1248,7 +1248,11 @@ const textAreaCss =
  border: solid 3px #254f90;
 }
 .form-field-container.validation-error .form-field {
- border: solid 3px #d2201e;
+ outline-width: 6px;
+ outline-color: #F5B5B5;
+ outline-style: solid;
+ border-radius: 0px;
+ border: #D2201E solid 1px;
 }
 .form-field-container.validation-error .form-field:focus {
  border: solid 3px #254f90;
@@ -1288,6 +1292,7 @@ const textAreaCss =
 }
 .form-field-container.validation-error .form-validation-message {
  display: block;
+ margin-top: 8px;
 }
 .form-field-container.validation-error .textarea-char-count {
   display: none;
@@ -1318,153 +1323,137 @@ $(".units-text-box-code .html-code code pre").text(unitsTextBoxHtml);
 //css
 const unitsTextBoxCss =
 `
-<h5>Container</h5>
 <code>
 <pre>
 /* Container */
 .form-field-container {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  width: fit-content;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: fit-content;
 }
-.form-field-container .input-container {
-  display: flex;
-  margin-bottom: 8px;
-}
-</pre>
-</code>
 
-<h5>Label</h5>
-<code>
-<pre>
+.form-field-container .input-container {
+    display: flex;
+    margin-bottom: 8px;
+}
+
 /* Label */
 .form-field-container .field-label {
-  width: 100%;
-  display: block;
-  font-size: 16px;
-  padding: 0 0 16px 0;
-  margin: 0;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 0 0 16px 0;
+    margin: 0;
 }
-</pre>
-</code>
 
-<h5>Field</h5>
-<code>
-<pre>
 /* Field */
 .form-field-container .form-field {
-  border: solid 1px #495c74;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  min-width: 200px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-.form-field-container .form-text-input {
-  height: 52px;
+    border: solid 1px #333333;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    min-width: 200px;
+    padding: 12px 15px;
+    box-sizing: border-box;
 }
 
 .form-field-container .input-container.units-input-container .form-field {
-  border-left: none;
-  border-right: none;
-  direction: rtl;
+    border-left: none;
+    border-right: none;
+    direction: rtl;
 }
+
 .form-field-container .form-field:focus {
-  outline: none;
-  border: solid 3px #254f90;
+    outline: none;
+    border: solid 3px #254f90;
 }
+
 .form-field-container.validation-error .form-field {
-  border: solid 3px #d2201e;
+    border: solid 3px #d2201e;
 }
+
 .form-field-container.validation-error .form-field:focus {
-  border: solid 3px #254f90;
+    border: solid 3px #254f90;
 }
+
 .form-field-container .form-field:disabled {
-  outline: none;
-  border: solid 1px #e2e2e2;
-  background-color: #f5f5f5;
-  color: #8e8e8e;
+    outline: none;
+    border: solid 1px #e2e2e2;
+    background-color: #f5f5f5;
+    color: #8e8e8e;
 }
+
 .form-field-container .input-container.units-input-container:before,
 .form-field-container .input-container.units-input-container:after {
-  height: 52px;
-  width: auto;
-  padding: 10px 15px;
-  color: #666666;
-  border: solid 1px #495c74;
-  display: inline-block;
-  background: #f5f5f5;
-  vertical-align: middle;
-  box-sizing: border-box;
-  line-height: 1.7;
+    height: 52px;
+    width: auto;
+    padding: 10px 15px;
+    color: #666666;
+    border: solid 1px #495c74;
+    display: inline-block;
+    background: #f5f5f5;
+    vertical-align: middle;
+    box-sizing: border-box;
+    line-height: 1.7;
 }
+
 .form-field-container .input-container.units-input-container:before {
-  content: "$AUD";
+    content: "$AUD";
 }
+
 .form-field-container .input-container.units-input-container:after {
-  content: ".00";
+    content: ".00";
 }
-.form-field-container
-  .input-container.units-input-container.input-focused
-  .form-field,
-.form-field-container
-  .input-container.units-input-container.input-focused:before,
-.form-field-container
-  .input-container.units-input-container.input-focused:after {
-  border: 3px solid #254f90;
+
+.form-field-container .input-container.units-input-container.input-focused .form-field,
+.form-field-container .input-container.units-input-container.input-focused:before,
+.form-field-container .input-container.units-input-container.input-focused:after {
+    border: 3px solid #254f90;
 }
-.form-field-container
-  .input-container.units-input-container.input-error
-  .form-field,
+
+.form-field-container.validation-error .input-container {
+    outline-width: 6px;
+    outline-color: #F5B5B5;
+    outline-style: solid;  
+}
+.form-field-container .input-container.units-input-container.input-error .form-field,
 .form-field-container .input-container.units-input-container.input-error:before,
 .form-field-container .input-container.units-input-container.input-error:after {
-  border: 3px solid #d2201e;
+    border-radius: 0px;
+    border: #D2201E solid 1px;
 }
-.form-field-container
-  .input-container.units-input-container.input-disabled
-  .form-field,
-.form-field-container
-  .input-container.units-input-container.input-disabled:before,
-.form-field-container
-  .input-container.units-input-container.input-disabled:after {
-  background-color: #f5f5f5;
-  color: #8e8e8e;
-  border: solid 1px #e2e2e2;
-}
-.form-field-container .input-container.units-input-container .form-field:focus,
-.form-field-container.validation-error
-  .input-container.units-input-container
-  .form-field,
-.form-field-container .form-field:disabled,
-.form-field-container
-  .input-container.units-input-container.input-focused
-  .form-field,
-.form-field-container
-  .input-container.units-input-container.input-error
-  .form-field,
-.form-field-container
-  .input-container.units-input-container.input-disabled
-  .form-field {
-  border-left: none;
-  border-right: none;
-}
-</pre>
-</code>
 
-<h5>Error message</h5>
-<code>
-<pre>
+.form-field-container .input-container.units-input-container.input-disabled .form-field,
+.form-field-container .input-container.units-input-container.input-disabled:before,
+.form-field-container .input-container.units-input-container.input-disabled:after {
+    background-color: #f5f5f5;
+    color: #8e8e8e;
+    border: solid 1px #e2e2e2;
+}
+
+.form-field-container .input-container.units-input-container .form-field:focus,
+.form-field-container.validation-error .input-container.units-input-container .form-field,
+.form-field-container .form-field:disabled,
+.form-field-container .input-container.units-input-container.input-focused .form-field,
+.form-field-container .input-container.units-input-container.input-error .form-field,
+.form-field-container .input-container.units-input-container.input-disabled .form-field {
+    border-left: none;
+    border-right: none;
+    margin: 0;
+}
+
 /* Error message */
 .form-field-container .form-validation-message {
-  color: #d2201e;
-  display: none;
+    display: none;
+    color:#D2201E;
+    margin-top: 16px;
 }
+
 .form-field-container.validation-error .form-validation-message {
-  display: block;
+    display: block;
 }
 </pre>
 </code>
@@ -1533,7 +1522,7 @@ const selectDropdownCss =
 <pre>
 /* Field */
 .form-field-container .form-field {
- border: solid 1px #495c74;
+ border: solid 1px #333333;
  font-family: "Open Sans", sans-serif;
  font-weight: 400;
  font-style: normal;
@@ -1561,7 +1550,11 @@ const selectDropdownCss =
  border: solid 3px #254f90;
 }
 .form-field-container.validation-error .form-field {
- border: solid 3px #d2201e;
+ outline-width: 6px;
+ outline-color: #F5B5B5;
+ outline-style: solid;
+ border-radius: 0px;
+ border: #D2201E solid 1px;
 }
 .form-field-container.validation-error .form-field:focus {
  border: solid 3px #254f90;
@@ -1582,6 +1575,7 @@ const selectDropdownCss =
 .form-field-container .form-validation-message {
  color: #d2201e;
  display: none;
+ margin-top: 8px;
 }
 .form-field-container.validation-error .form-validation-message {
  display: block;
@@ -1634,7 +1628,7 @@ const radioButtonsCss =
   width: 100%;
 }
 .form-field-container .radio-button {
-  margin: 0 0 16px 0;
+  margin: 0 0 8px 0;
 } 
 .form-field-container .radio-button:last-of-type {
   margin-bottom: 0;
@@ -1654,7 +1648,7 @@ const radioButtonsCss =
   margin: 0;
 }
 .form-field-container .radio-button .label {
-  padding: 10px 15px;
+  padding: 12px 15px;
 } 
 </pre>
 </code>
@@ -1664,7 +1658,7 @@ const radioButtonsCss =
 <pre>
 /* Field */
 .form-field-container .form-field {
-  border: solid 1px #495c74;
+  border: solid 1px #333333;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1683,7 +1677,11 @@ const radioButtonsCss =
   border: solid 3px #254f90;
 }
 .form-field-container.validation-error .form-field {
-  border: solid 3px #d2201e;
+ outline-width: 6px;
+ outline-color: #F5B5B5;
+ outline-style: solid;
+ border-radius: 0px;
+ border: #D2201E solid 1px;
 }
 .form-field-container .radio-button input:not(:checked):focus + label,
 .form-field-container .radio-button input:checked:focus + label {
@@ -1751,6 +1749,7 @@ const radioButtonsCss =
 .form-field-container .form-validation-message {
   color: #d2201e;
   display: none;
+  margin-top: 16px;
 }
 .form-field-container.validation-error .form-validation-message {
   display: block;

@@ -4324,7 +4324,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .radio-item:last-of-type { margin-bottom: 0; }
 
-.design-system-card .form-elements .form-example-container .radio-item input[type="radio"] { opacity: 0; width: 0; height: 22px; }
+.design-system-card .form-elements .form-example-container .radio-item input[type="radio"] { opacity: 0; width: 0; }
 
 .design-system-card .form-elements .form-example-container .radio-item label { position: relative; padding: 0 0 0 32px; cursor: pointer; display: inline-block; line-height: 20px; }
 
