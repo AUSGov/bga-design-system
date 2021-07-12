@@ -1128,7 +1128,7 @@ const textBoxCss =
     font-style: normal;
     font-size: 16px;
     width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     box-sizing: border-box;
     margin-bottom: 8px;
 }
@@ -1235,7 +1235,7 @@ const textAreaCss =
  font-size: 16px;
  width: 100%;
  min-height: 250px;
- padding: 10px;
+ padding: 12px 15px;
  box-sizing: border-box;
  margin-bottom: 8px;
 }
@@ -1371,10 +1371,6 @@ const unitsTextBoxCss =
     border: solid 3px #254f90;
 }
 
-.form-field-container.validation-error .form-field {
-    border: solid 3px #d2201e;
-}
-
 .form-field-container.validation-error .form-field:focus {
     border: solid 3px #254f90;
 }
@@ -1388,11 +1384,10 @@ const unitsTextBoxCss =
 
 .form-field-container .input-container.units-input-container:before,
 .form-field-container .input-container.units-input-container:after {
-    height: 52px;
     width: auto;
-    padding: 10px 15px;
+    padding: 12px 15px;
     color: #666666;
-    border: solid 1px #495c74;
+    border: solid 1px #333333;
     display: inline-block;
     background: #f5f5f5;
     vertical-align: middle;
@@ -1528,15 +1523,14 @@ const selectDropdownCss =
  font-style: normal;
  font-size: 16px;
  width: 100%;
- padding: 10px;
+ padding: 12px 15px;
  box-sizing: border-box;
  margin-bottom: 8px;
 }
 .form-field-container .form-select-dropdown {
- height: 52px;
  max-width: 400px;
  min-width: 400px;
- padding: 10px 15px;
+ padding: 12px 15px;
  color: #333333;
  background: #ffffff url(../BGAIcon-chevron-down.svg) no-repeat;
  background-size: 16px 10px;
@@ -1664,7 +1658,7 @@ const radioButtonsCss =
   font-style: normal;
   font-size: 16px;
   width: 100%;
-  padding: 10px;
+  padding: 12px 15px;
   box-sizing: border-box;
   margin-bottom: 8px;
 }
@@ -1855,7 +1849,7 @@ const checkboxCss =
 <pre>
 /* Field */
 .form-field-container .form-field {
-  border: solid 1px #495c74;
+  border: solid 1px #333333;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1912,7 +1906,7 @@ const checkboxCss =
   color: #333;
 }
 .form-field-container .checkbox input:not(:checked) + label:before {
-  border: solid 1px #495c74;
+  border: solid 1px #333333;
 }
 .form-field-container .checkbox input:checked + label:before,
 .form-field-container .checkbox input:not(:checked) + label:before {
@@ -2442,17 +2436,14 @@ const primaryTextButtonFieldCss =
 <pre>
 /* Field */
 .form-field-container .form-field {
-  border: solid 1px #495c74;
+  border: solid 1px #333333;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   min-width: 200px;
-  padding: 10px;
+  padding: 12px 15px;
   box-sizing: border-box;
-}
-.form-field-container .form-text-input {
-  height: 52px;
 }
 .form-field-container .input-container.button-input-container .form-field {
   border-right: none;
@@ -2538,11 +2529,17 @@ const primaryTextButtonFieldCss =
 .form-field-container .input-container.button-input-container.input-focused a {
   border: 3px solid #254f90;
 }
+.form-field-container .input-container.button-input-container.input-error {
+ outline-width: 6px;
+ outline-color: #F5B5B5;
+ outline-style: solid;
+ background: #F5B5B5;
+}
 .form-field-container
   .input-container.button-input-container.input-error
   .form-field,
 .form-field-container .input-container.button-input-container.input-error a {
-  border: 3px solid #d2201e;
+  border: 1px solid #d2201e;
 }
 .form-field-container
   .input-container.button-input-container.input-disabled
@@ -2586,6 +2583,7 @@ const primaryTextButtonFieldCss =
 .form-field-container .form-validation-message {
   color: #d2201e;
   display: none;
+  padding-top: 8px;
 }
 .form-field-container.validation-error .form-validation-message {
   display: block;
@@ -2683,17 +2681,14 @@ const secondaryTextButtonFieldCss =
 <pre>
 /* Field */
 .form-field-container .form-field {
-  border: solid 1px #495c74;
+  border: solid 1px #333333;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   min-width: 200px;
-  padding: 10px;
+  padding: 12px 15px;
   box-sizing: border-box;
-}
-.form-field-container .form-text-input {
-  height: 52px;
 }
 .form-field-container .input-container.button-input-container .form-field {
   border-right: none;
@@ -2703,7 +2698,7 @@ const secondaryTextButtonFieldCss =
   border: solid 3px #254f90;
 }
 .form-field-container.validation-error .form-field {
-  border: solid 3px #d2201e;
+  border: solid 1px #d2201e;
 }
 .form-field-container.validation-error .form-field:focus {
   border: solid 3px #254f90;
@@ -2776,11 +2771,17 @@ const secondaryTextButtonFieldCss =
 .form-field-container .input-container.button-input-container.input-focused a {
   border: 3px solid #254f90;
 }
+.form-field-container .input-container.button-input-container.input-error {
+ outline-width: 6px;
+ outline-color: #F5B5B5;
+ outline-style: solid;
+ background: #F5B5B5;
+}
 .form-field-container
   .input-container.button-input-container.input-error
   .form-field,
 .form-field-container .input-container.button-input-container.input-error a {
-  border: 3px solid #d2201e;
+  border: 1px solid #d2201e;
 }
 .form-field-container
   .input-container.button-input-container.input-disabled
@@ -2824,6 +2825,7 @@ const secondaryTextButtonFieldCss =
 .form-field-container .form-validation-message {
   color: #d2201e;
   display: none;
+  padding-top: 8px;
 }
 .form-field-container.validation-error .form-validation-message {
   display: block;
@@ -2948,25 +2950,27 @@ const textBoxInlineHelpSimpleCss =
 <pre>
 /* Field */
 .form-field-container .form-field {
- border: solid 1px #495c74;
+ border: solid 1px #333333;
  font-family: "Open Sans", sans-serif;
  font-weight: 400;
  font-style: normal;
  font-size: 16px;
  width: 100%;
- padding: 10px;
+ padding: 12px 15px;
  box-sizing: border-box;
  margin-bottom: 8px;
-}
-.form-field-container .form-text-input {
- height: 52px;
 }
 .form-field-container .form-field:focus {
  outline: none;
  border: solid 3px #254f90;
 }
 .form-field-container.validation-error .form-field {
- border: solid 3px #d2201e;
+ border: solid 1px #d2201e;
+ outline-color: #F5B5B5;
+ outline-style: solid;
+ outline-width: 6px;
+ background: #FFFFFF;
+
 }
 .form-field-container.validation-error .form-field:focus {
  border: solid 3px #254f90;
@@ -3109,25 +3113,26 @@ const textBoxInlineHelpComplexCss =
 <pre>
 /* Field */
 .form-field-container .form-field {
-  border: solid 1px #495c74;
+  border: solid 1px #333333;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   width: 100%;
-  padding: 10px;
+  padding: 12px 15px;
   box-sizing: border-box;
   margin-bottom: 8px;
-}
-.form-field-container .form-text-input {
-  height: 52px;
 }
 .form-field-container .form-field:focus {
   outline: none;
   border: solid 3px #254f90;
 }
 .form-field-container.validation-error .form-field {
-  border: solid 3px #d2201e;
+   border: solid 1px #d2201e;
+   outline-color: #F5B5B5;
+   outline-style: solid;
+   outline-width: 6px;
+   background: #FFFFFF;
 }
 .form-field-container.validation-error .form-field:focus {
   border: solid 3px #254f90;
