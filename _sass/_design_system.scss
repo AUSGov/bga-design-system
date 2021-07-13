@@ -1044,13 +1044,18 @@
 					width: 0;
 
 					&:checked + label:before {
-						background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important;
+						//background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important;
 						background-size: 16px 12px !important;
 						background-position: center center !important;
 					}
 
-					&:focus + label:before {
-						border: 3px solid $blue-primary;
+					&:focus + label {
+                        color: $blue-primary;
+						@include font-format($font-family, $font-semibold, normal);
+                        
+                        &:before {
+						  border: 3px solid $blue-primary;
+                        }
 					}
 				}
 
@@ -1877,21 +1882,41 @@
 					background: $grey-lightest;
 					color: $grey-dark;
 				}
+                
+                &:first-of-type {
+                    &[data-state="selected-state"]:first-of-type {
+                        input + label {
+						color: $blue-primary;
+						@include font-format($font-family, $font-semibold, normal);
+
+						&:before {
+							background: url(../assets/radio-selected.svg) no-repeat;
+							background-size: 24px 24px;
+						}
+					}
+                    }
+                }
 			}
 
 			.checkbox-item {
 				&[data-state="default-state"] {
 					input + label:before {
 						border: solid 1px $darkblue-mid;
+                        background: $white !important;
 					}
 				}
 
-				&[data-state="focus-state"] {
-					input + label:before {
-						border: solid 3px $blue-primary;
-						background: url(../assets/Icon-tick-primary-blue.svg) no-repeat;
-						background-size: 16px 12px;
-						background-position: center center;
+				&[data-state="focus-state"], &[data-state="selected-state"] {
+					input + label {
+                        color: $blue-primary;
+						@include font-format($font-family, $font-semibold, normal);
+                        
+                        &:before {
+                            border: solid 3px $blue-primary;
+                            background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important;
+                            background-size: 16px 12px !important;
+                            background-position: center center !important;
+                        }
 					}
 				}
 
@@ -1911,6 +1936,7 @@
 					background-color: $grey-lightest !important;
 					color: $grey-dark !important;
 				}
+               
 			}
 		}
 	}

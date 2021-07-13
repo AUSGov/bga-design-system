@@ -20,7 +20,7 @@ longdesc: Guidelines on form element styles.
 								<li><a href="" aria-label="Text fields">Text fields</a></li>
 								<li><a href="" aria-label="Select option fields">Select option fields</a></li>
 								<li><a href="" aria-label="Form buttons">Form buttons</a></li>
-								<li><a href="" aria-label="Text box button combinations">Text box / button combinations</a></li>
+								<li><a href="" aria-label="Text box button combination">Text box / button combination</a></li>
 								<li><a href="" aria-label="Date field">Date field</a></li>
 								<li><a href="" aria-label="Contextual help">Contextual help</a></li>
 								<li><a href="" aria-label="Examples and assets">Examples and assets</a></li>
@@ -295,6 +295,11 @@ longdesc: Guidelines on form element styles.
 											<input type="radio" checked="checked">
 											<span>Default</span>
 										</label>
+                                        
+                                        <label class="selected-label" data-state="selected-state">
+											<input type="radio">
+											<span>Selected</span>
+										</label>
 
 										<label class="focus-label" data-state="focus-state">
 											<input type="radio">
@@ -361,6 +366,11 @@ longdesc: Guidelines on form element styles.
 										<label class="default-label" data-state="default-state">
 											<input type="radio" checked="checked">
 											<span>Default</span>
+										</label>
+                                        
+                                        <label class="selected-label" data-state="selected-state">
+											<input type="radio">
+											<span>Selected</span>
 										</label>
 
 										<label class="focus-label" data-state="focus-state">
@@ -712,12 +722,12 @@ longdesc: Guidelines on form element styles.
 
 				<!-- Form / button combos -->
 
-				<div class="text-box-button-combinations" name="text-box-button-combinations"><a href="" id="text-box-button-combinations"></a>
+				<div class="text-box-button-combination" name="text-box-button-combination"><a href="" id="text-box-button-combination"></a>
 					<div class="anchor-section-full-width  ">
 						<div class="body-copy">
 							<div>
 
-								<h2>Text box / button combinations</h2>
+								<h2>Text box / button combination</h2>
 
 								<hr />
 							</div>
@@ -789,70 +799,6 @@ longdesc: Guidelines on form element styles.
 
 								</div>
 
-
-								<h3>Text box combined with secondary action button</h3>
-								<div class="design-system-card component">
-									<div class="state-selector">
-										<p class="state-selector-intro">View state: </p>
-										<label class="default-label" data-state="default-state">
-											<input type="radio" checked="checked">
-											<span>Default</span>
-										</label>
-
-										<label class="focus-label" data-state="focus-state">
-											<input type="radio">
-											<span>Focus</span>
-										</label>
-
-										<label class="active-label" data-state="active-state">
-											<input type="radio">
-											<span>Active</span>
-										</label>
-
-										<label class="error-label" data-state="error-state">
-											<input type="radio">
-											<span>Error</span>
-										</label>
-
-
-										<label class="disabled-label" data-state="disabled-state">
-											<input type="radio">
-											<span>Disabled</span>
-										</label>
-									</div>
-									<div class="design-system-card-content">
-
-										<div class="form-elements">
-
-											<div class="example-wrapper white-back">
-
-												<div class="example form-example-container text-box-button-combo-example align-example-left" data-state="default-state">
-
-													<div>
-
-														<!-- Component content -->
-
-														<label for="form-text-box-secondary" class="form-text-box-secondary-label">Text box label</label>
-														<div class="form-combo-box-input-container">
-															<input id="form-text-box-secondary" name="form-text-box-primary" type="text" value="" maxlength="255" placeholder="" class="example-form-element">
-
-															<div class="combo-button-wrapper secondary-button-wrapper">
-																<div><a href="" id="secondary-combo" class="combo-button secondary-combo" aria-label="Secondary button"><span>Find</span></a></div>
-															</div>
-														</div>
-
-														<p class="error-message">Descriptive error message</p>
-													</div>
-
-												</div>
-											</div>
-										</div>
-
-										{% include code-dropdown.html componentName="secondary-text-button-field" %}
-
-									</div>
-
-								</div>
 
 
 							</div>

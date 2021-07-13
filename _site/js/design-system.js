@@ -251,14 +251,19 @@ $(document).ready(function () {
 			} else if (element_state == "error-state") {
 				example_element.find(".radio-item").attr('data-state', element_state);
 				common_ancestor.find(".error-message").addClass('show');
+			} else if (element_state == "selected-state") {
+				example_element.find(".radio-item").attr('data-state', element_state);
+				common_ancestor.find(".error-message").removeClass('show');
 			}
 		}
 
 		if (example_element.hasClass('multiple-select-example')) {
 
 			example_element.attr('data-state', element_state);
-			if (element_state == "focus-state") {
+            
+			if (element_state == "focus-state" || element_state == "selected-state" ) {
 				example_element.find(".checkbox-item").removeAttr('data-state');
+                example_element.find(".checkbox-item").removeAttr('checked');
 				example_element.find(".checkbox-item:first").attr('data-state', element_state);
 				common_ancestor.find(".error-message").removeClass('show');
 			} else {
@@ -296,10 +301,12 @@ $(document).ready(function () {
 
 		if ($(this).parent('.radio-item').attr('data-state') == "focus-state") {
 			$(this).parent('.radio-item').removeAttr('data-state');
+            console.log($(this).parent('.radio-item').attr('data-state'));
 		} else {
 			common_ancestor.find('.radio-item').removeAttr('data-state');
 			$(this).parent('.radio-item').attr('data-state', 'focus-state');
 		}
+        
 		var none_checked = true;
 		$('.radio-example .radio-item').each(function () {
 			if ($(this).attr('data-state') == 'focus-state') {

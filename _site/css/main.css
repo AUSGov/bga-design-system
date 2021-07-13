@@ -4338,7 +4338,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"] { opacity: 0; width: 0; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:checked + label:before { background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important; background-size: 16px 12px !important; background-position: center center !important; }
+.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:checked + label:before { background-size: 16px 12px !important; background-position: center center !important; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:focus + label { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
 .design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:focus + label:before { border: 3px solid #254F90; }
 
@@ -4594,9 +4596,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .radio-item[data-state="disabled-state"] { outline: none; border: solid 1px #E2E2E2; background: #F5F5F5; color: #8E8E8E; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item[data-state="default-state"] input + label:before { border: solid 1px #495C74; }
+.design-system-card .form-elements .form-example-container .radio-item[data-state="selected-state"]:first-of-type:first-of-type input + label { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item[data-state="focus-state"] input + label:before { border: solid 3px #254F90; background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
+.design-system-card .form-elements .form-example-container .radio-item[data-state="selected-state"]:first-of-type:first-of-type input + label:before { background: url(../assets/radio-selected.svg) no-repeat; background-size: 24px 24px; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="default-state"] input + label:before { border: solid 1px #495C74; background: #ffffff !important; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="focus-state"] input + label, .design-system-card .form-elements .form-example-container .checkbox-item[data-state="selected-state"] input + label { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="focus-state"] input + label:before, .design-system-card .form-elements .form-example-container .checkbox-item[data-state="selected-state"] input + label:before { border: solid 3px #254F90; background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important; background-size: 16px 12px !important; background-position: center center !important; }
 
 .design-system-card .form-elements .form-example-container .checkbox-item[data-state="error-state"] input + label:before { outline-width: 6px; outline-color: #F5B5B5; outline-style: solid; border-radius: 0px; border: #D2201E solid 1px; background: #ffffff; }
 

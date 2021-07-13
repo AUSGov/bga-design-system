@@ -1760,6 +1760,7 @@ var checkboxHtml =
 <!-- Toggle "validation-error" class when form is not valid  -->
 <div class="form-field-container"> 
 <label class="field-label">Text box label</label>
+<div class="checkbox-group">
 	<div class="checkbox">
         <!-- Add 'disabled' attribute when field should be disabled -->
 		<input type="checkbox" id="checkbox-example-1" name="checkbox-group"> 
@@ -1796,6 +1797,7 @@ var checkboxHtml =
 					</svg>
 			</label>
 	</div>
+</div>
 	<span class="form-validation-message">Descriptive error message</span>
 </div>
 `
@@ -1820,6 +1822,11 @@ const checkboxCss =
   margin: 0 0 16px 0;
   display: table;
   width: fit-content;
+  line-height: 28px;
+  display: block;
+  margin-bottom: 4px;
+  padding: 8px 15px;
+  background: #ffffff;
 }
 .form-field-container .checkbox:last-of-type {
   margin-bottom: 0;
@@ -1839,7 +1846,7 @@ const checkboxCss =
   margin: 0;
 }
 .checkbox .label {
-  padding: 10px 15px;
+  padding: 12px 15px;
 }
 </pre>
 </code>
@@ -1859,6 +1866,13 @@ const checkboxCss =
   box-sizing: border-box;
   margin-bottom: 8px;
 }
+.form-field-container .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-field-container .checbox-group .checkbox {
+  width: 100%;
+}
 .form-field-container .checkbox .form-field {
   margin: 0;
   border: none;
@@ -1868,12 +1882,20 @@ const checkboxCss =
   outline: none;
   border: solid 3px #254f90;
 }
-.form-field-container.validation-error
-  .checkbox
-  input:not(:checked)
-  + label:before,
+.form-field-container.validation-error .checkbox-group {
+  outline-width: 6px;
+  outline-color: #F5B5B5;
+  outline-style: solid;
+  background: #F5B5B5;
+}
+.form-field-container.validation-error .checkbox {
+  border: 1px solid #d2201e;
+  background: #FFFFFF;
+  width: 100%;
+}
+.form-field-container.validation-error .checkbox input:not(:checked) + label:before,
 .form-field-container.validation-error .checkbox input:checked + label:before {
-  border: solid 3px #d2201e;
+  border: solid 1px #333333;
 }
 .form-field-container.validation-error .form-field:focus {
   border: solid 3px #254f90;
@@ -1937,6 +1959,7 @@ const checkboxCss =
 .form-field-container .form-validation-message {
   color: #d2201e;
   display: none;
+  margin-top: 16px;
 }
 .form-field-container.validation-error .form-validation-message {
   display: block;
