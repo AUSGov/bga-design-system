@@ -993,7 +993,7 @@
 				line-height: 0;
 				display: block;
 				margin-bottom: 8px;
-
+                
 				&:last-of-type {
 					margin-bottom: 0;
 				}
@@ -1026,6 +1026,10 @@
 					background: url(../assets/radio-selected.svg) no-repeat;
 					background-size: 24px 24px;
 				}
+                
+                &.alternate {
+                    border: none;
+                }
 			}
 
 			.checkbox-item {
@@ -1851,7 +1855,6 @@
 				&[data-state="default-state"] {
 					border: solid 1px $darkblue-mid;
 				}
-
 				&[data-state="focus-state"] {
 					outline: none;
 					border: solid 3px $blue-primary;
@@ -1881,6 +1884,10 @@
 					border: solid 1px $grey-headers;
 					background: $grey-lightest;
 					color: $grey-dark;
+                    
+                    label::before {
+                        background-image: url(../assets/radio-disabled.svg);
+                    }
 				}
                 
                 &:first-of-type {
@@ -1894,6 +1901,19 @@
 							background-size: 24px 24px;
 						}
 					}
+                    }
+                }
+                
+                &.alternate {
+                    &[data-state="default-state"] {
+					   border: none;
+				    }   
+                    &[data-state="focus-state"] {
+                        border: none;
+                    }
+                    &[data-state="disabled-state"] {
+                        border: none;
+                        background: $white;
                     }
                 }
 			}

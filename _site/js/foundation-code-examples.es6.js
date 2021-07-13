@@ -1752,6 +1752,176 @@ const radioButtonsCss =
 </code>
 `
 $(".radio-buttons-code .css-code").html(radioButtonsCss);
+    
+    
+    
+//Radio buttons
+//html
+var radioButtons2Html =
+`
+<!-- Toggle "validation-error" class when form is not valid -->
+<div class="form-field-container"> 
+   <label class="field-label">Text box label</label>
+   <div class="radio-button">
+      <!-- Add 'disabled' attribute when field should be disabled -->
+      <input type="radio" id="radio-button-example-1" name="radio-group" checked> 
+      <label for="radio-button-example-1"class="form-field">Apple</label>
+   </div>
+   <div class="radio-button">
+      <!-- Add 'disabled' attribute when field should be disabled -->
+      <input type="radio" id="radio-button-example-2" name="radio-group"> 
+      <label for="radio-button-example-2"class="form-field">Orange</label>
+   </div>
+   <div class="radio-button">
+      <!-- Add 'disabled' attribute when field should be disabled -->
+      <input type="radio" id="radio-button-example-3" name="radio-group"> 
+      <label for="radio-button-example-3"class="form-field">Pear</label>
+   </div>
+   <span class="form-validation-message">Descriptive error message</span>
+</div>
+`
+
+$(".radio-buttons-2-code .html-code code pre").text(radioButtons2Html);
+
+//css
+const radioButtons2Css =
+`
+<code>
+<pre>
+/* Container */
+.form-field-container {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-field-container .radio-button {
+    margin: 0 0 8px 0;
+}
+
+.form-field-container .radio-button:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Label */
+.form-field-container .field-label {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 0 0 16px 0;
+    margin: 0;
+}
+
+.form-field-container .radio-button .label {
+    padding: 12px 15px;
+}
+
+/* Field */
+.form-field-container .form-field {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+.form-field-container .radio-button .form-field {
+    margin: 0;
+    padding-left: 40px;
+}
+
+.form-field-container .form-field:focus {
+    outline: none;
+}
+
+.form-field-container.validation-error .form-field {
+    outline-width: 6px;
+    outline-color: #F5B5B5;
+    outline-style: solid;
+    border-radius: 0px;
+    border: #D2201E solid 1px;
+}
+
+.form-field-container .radio-button input:not(:checked):focus + label:before,
+.form-field-container .radio-button input:checked:focus + label:before {
+    border: 2.5px solid #254f90;
+}
+
+.form-field-container .radio-button input:disabled + label {
+    outline: none;
+    border: solid 1px #e2e2e2;
+    background-color: #f5f5f5;
+    color: #8e8e8e;
+}
+
+.form-field-container .radio-button input:checked,
+.form-field-container .radio-button input:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.form-field-container .radio-button input:checked + label,
+.form-field-container .radio-button input:not(:checked) + label {
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    color: #333;
+}
+
+.form-field-container .radio-button input:not(:checked) + label:before {
+    border: 2.5px solid #aab2c3;
+    font-weight: normal;
+}
+
+.form-field-container .radio-button input:checked + label:before,
+.form-field-container .radio-button input:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-field-container .radio-button input:checked + label:before {
+    content: "⬤";
+    border: 2.5px solid #254f90;
+    font-weight: normal;
+    position: absolute;
+}
+
+.form-field-container .radio-button input:checked + label {
+    color: #254f90;
+    font-weight: 600;
+}
+
+/* Error message */
+.form-field-container .form-validation-message {
+    color: #d2201e;
+    display: none;
+    margin-top: 16px;
+}
+
+.form-field-container.validation-error .form-validation-message {
+    display: block;
+}
+</pre>
+</code>
+`
+$(".radio-buttons-2-code .css-code").html(radioButtons2Css);
+    
+    
 	
 //Checkbox
 //html
