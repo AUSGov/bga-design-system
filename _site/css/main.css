@@ -4274,7 +4274,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .help-wrapper.complex .complex-answer p:last-of-type { padding-bottom: 0; }
 
-.design-system-card .form-elements .form-example-container input { height: 52px; width: 100%; padding: 10px; }
+.design-system-card .form-elements .form-example-container input { width: 100%; padding: 12px 15px; }
 
 .design-system-card .form-elements .form-example-container input:focus { outline: none; border: solid 3px #254F90 !important; background: none !important; }
 
@@ -4306,7 +4306,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .hwt-content mark.hide-mark { display: none !important; }
 
-.design-system-card .form-elements .form-example-container .text-box-with-units span { height: 52px; width: auto; padding: 10px 15px; color: #666666; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; border: solid 1px #495C74; display: inline-block; background: #F5F5F5; vertical-align: middle; }
+.design-system-card .form-elements .form-example-container .text-box-with-units span { width: auto; padding: 12px 15px; color: #666666; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; border: solid 1px #495C74; display: inline-block; background: #F5F5F5; vertical-align: middle; }
 
 .design-system-card .form-elements .form-example-container .text-box-with-units input { width: 80%; max-width: 150px; display: inline-block; text-align: right; border-left: none !important; border-right: none !important; vertical-align: middle; }
 
@@ -4320,11 +4320,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container select::-ms-expand { display: none !important; }
 
-.design-system-card .form-elements .form-example-container .radio-item { border: solid 1px #495C74; min-height: 52px; width: 100%; max-width: 350px; padding: 10px 15px; line-height: 0; display: block; margin-bottom: 16px; }
+.design-system-card .form-elements .form-example-container .radio-item { border: solid 1px #495C74; width: 100%; max-width: 350px; padding: 12px 15px; line-height: 0; display: block; margin-bottom: 8px; }
 
 .design-system-card .form-elements .form-example-container .radio-item:last-of-type { margin-bottom: 0; }
 
-.design-system-card .form-elements .form-example-container .radio-item input[type="radio"] { opacity: 0; width: 0; height: 22px; }
+.design-system-card .form-elements .form-example-container .radio-item input[type="radio"] { opacity: 0; width: 0; }
 
 .design-system-card .form-elements .form-example-container .radio-item label { position: relative; padding: 0 0 0 32px; cursor: pointer; display: inline-block; line-height: 20px; }
 
@@ -4332,13 +4332,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .radio-item input[checked="checked"] + label:before { background: url(../assets/radio-selected.svg) no-repeat; background-size: 24px 24px; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item { line-height: 28px; display: block; margin-bottom: 16px; }
+.design-system-card .form-elements .form-example-container .checkbox-item { line-height: 28px; display: block; margin-bottom: 4px; padding: 8px 15px; background: #ffffff; }
 
 .design-system-card .form-elements .form-example-container .checkbox-item:last-of-type { margin-bottom: 0; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"] { opacity: 0; width: 0; height: 28px; }
+.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"] { opacity: 0; width: 0; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:checked + label:before { background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important; background-size: 16px 12px !important; background-position: center center !important; }
+.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:checked + label:before { background-size: 16px 12px !important; background-position: center center !important; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:focus + label { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
 .design-system-card .form-elements .form-example-container .checkbox-item input[type="checkbox"]:focus + label:before { border: 3px solid #254F90; }
 
@@ -4410,9 +4412,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container #datepicker .input-group { position: relative; display: block; width: 340px; height: 52px; z-index: 2000; }
 
-.design-system-card .form-elements .form-example-container #datepicker .input-group input { border-radius: 0; width: 288px; display: inline-block; position: absolute; top: 0; left: 0; box-shadow: none; background: #ffffff; }
+.design-system-card .form-elements .form-example-container #datepicker .input-group input { border-radius: 0; width: 288px; display: inline-block; height: 52px; top: 0; left: 0; box-shadow: none; background: #ffffff; }
 
-.design-system-card .form-elements .form-example-container #datepicker .input-group .input-group-addon { height: 52px; width: 52px; border: solid 1px #495C74; border-left: none; display: inline-block; position: absolute; top: 0; right: 0; background: url(../assets/BGAIcon-calendar-blue-mid.svg) no-repeat center center; }
+.design-system-card .form-elements .form-example-container #datepicker .input-group .input-group-addon { height: 52px; width: 52px; border: solid 1px #495C74; border-left: none; display: inline-block; position: absolute; top: 0; right: 0; background: #ffffff url(../assets/BGAIcon-calendar-blue-mid.svg) no-repeat center center; }
 
 .design-system-card .form-elements .form-example-container #datepicker .input-group .input-group-addon:hover { background: url(../assets/BGAIcon-calendar-blue.svg) no-repeat center center; border: solid 3px #254F90; }
 
@@ -4472,7 +4474,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper { display: inline-block; vertical-align: middle; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .combo-button { border-radius: 6px; border-top-left-radius: 0px; border-bottom-left-radius: 0px; box-shadow: none; height: 52px; display: block; border: solid 1px #495C74; margin: 0 0 0 -6px; padding: 10px 24px 10px 48px; text-align: center; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .combo-button { border-radius: 6px; border-top-left-radius: 0px; border-bottom-left-radius: 0px; box-shadow: none; display: block; border: solid 1px #495C74; margin: 0 0 0 -6px; padding: 12px 24px 12px 48px; text-align: center; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .combo-button:hover { background: #254F90 no-repeat; }
 
@@ -4496,7 +4498,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 @media (max-width: 400px) { .design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo { background-position: left 12px center; } .design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo:hover, .design-system-card .form-elements .form-example-container.text-box-button-combo-example .combo-button-wrapper .secondary-combo:active { background-position: left 12px center; } }
 
-.design-system-card .form-elements .form-example-container[data-state="default-state"] input, .design-system-card .form-elements .form-example-container[data-state="default-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="default-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="default-state"] select, .design-system-card .form-elements .form-example-container[data-state="default-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="default-state"] .combo-button { border: solid 1px #495C74; }
+.design-system-card .form-elements .form-example-container[data-state="default-state"] input, .design-system-card .form-elements .form-example-container[data-state="default-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="default-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="default-state"] select, .design-system-card .form-elements .form-example-container[data-state="default-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="default-state"] .combo-button { border: solid 1px #333333; }
 
 .design-system-card .form-elements .form-example-container[data-state="default-state"] .error-message { display: none; }
 
@@ -4524,15 +4526,29 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="active-state"] .combo-button-wrapper #secondary-combo { background: #18335C url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
-.design-system-card .form-elements .form-example-container[data-state="error-state"] input, .design-system-card .form-elements .form-example-container[data-state="error-state"] #form-text-area, .design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units span, .design-system-card .form-elements .form-example-container[data-state="error-state"] select, .design-system-card .form-elements .form-example-container[data-state="error-state"] .checkbox-item input + label:before, .design-system-card .form-elements .form-example-container[data-state="error-state"] .combo-button { outline: none; border: solid 3px #D2201E !important; }
+.design-system-card .form-elements .form-example-container[data-state="error-state"] input, .design-system-card .form-elements .form-example-container[data-state="error-state"] .hwt-container, .design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units, .design-system-card .form-elements .form-example-container[data-state="error-state"] select { outline-width: 6px; outline-color: #F5B5B5; outline-style: solid; border-radius: 0px; border: #D2201E solid 1px; }
 
-.design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units input { border-left: 0px !important; border-right: 0px !important; }
+.design-system-card .form-elements .form-example-container[data-state="error-state"] #form-text-area { border: none; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="error-state"] .combo-button-wrapper #primary-combo, .design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="error-state"] .combo-button-wrapper #secondary-combo { border: solid 3px #D2201E; background-color: #4569A0; color: #ffffff; border-left: 0px; margin-left: -5px; }
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units input { border: none !important; outline: none; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units span:first-of-type { border: none; border-right: #D2201E solid 1px; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .text-box-with-units span:last-of-type { border: none; border-left: #D2201E solid 1px; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .checkbox-group { outline-width: 6px; outline-color: #F5B5B5; outline-style: solid; background: #F5B5B5; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .checkbox-item { border-radius: 0px; border: #D2201E solid 1px; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .form-combo-box-input-container { outline-width: 6px; outline-color: #F5B5B5; outline-style: solid; background: #F5B5B5; }
+
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .form-combo-box-input-container input { border-radius: 0px; border: #D2201E solid 1px; }
+
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="error-state"] .combo-button-wrapper #primary-combo, .design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="error-state"] .combo-button-wrapper #secondary-combo { border: solid 1px #D2201E; background-color: #4569A0; color: #ffffff; }
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="error-state"] .combo-button-wrapper #secondary-combo { background-image: url(../assets/Icon-search-white.svg); }
 
-.design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message { display: block; color: #D2201E; margin: 0; padding: 16px 0 0 0; }
+.design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message { display: block; color: #D2201E; margin: 0; padding: 14px 0 0 0; }
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .error-message.error-hidden { display: none; }
 
@@ -4540,9 +4556,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="error-state"] .textarea-char-count.under { display: none; }
 
-.design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .input-group .input-group-addon { border: solid 3px #D2201E; border-left: none; }
+.design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .input-group .input-group-addon { border: solid 1px #D2201E; border-left: none; }
 
-.design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .datepicker { border: solid 3px #D2201E; border-top: none; }
+.design-system-card .form-elements .form-example-container[data-state="error-state"] #datepicker .datepicker { border: solid 1px #D2201E; border-top: none; }
 
 .design-system-card .form-elements .form-example-container[data-state="disabled-state"] .add-field { color: #8E8E8E; }
 
@@ -4576,15 +4592,21 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .radio-item[data-state="focus-state"] input + label:before { background: url(../assets/radio-selected.svg) no-repeat; background-size: 24px 24px; }
 
-.design-system-card .form-elements .form-example-container .radio-item[data-state="error-state"] { outline: none; border: solid 3px #D2201E; }
+.design-system-card .form-elements .form-example-container .radio-item[data-state="error-state"] { outline: none; outline-width: 6px; outline-color: #F5B5B5; outline-style: solid; border-radius: 0px; border: #D2201E solid 1px; }
 
 .design-system-card .form-elements .form-example-container .radio-item[data-state="disabled-state"] { outline: none; border: solid 1px #E2E2E2; background: #F5F5F5; color: #8E8E8E; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item[data-state="default-state"] input + label:before { border: solid 1px #495C74; }
+.design-system-card .form-elements .form-example-container .radio-item[data-state="selected-state"]:first-of-type:first-of-type input + label { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item[data-state="focus-state"] input + label:before { border: solid 3px #254F90; background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
+.design-system-card .form-elements .form-example-container .radio-item[data-state="selected-state"]:first-of-type:first-of-type input + label:before { background: url(../assets/radio-selected.svg) no-repeat; background-size: 24px 24px; }
 
-.design-system-card .form-elements .form-example-container .checkbox-item[data-state="error-state"] input + label:before { border: solid 3px #D2201E; background: #ffffff; }
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="default-state"] input + label:before { border: solid 1px #495C74; background: #ffffff !important; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="focus-state"] input + label, .design-system-card .form-elements .form-example-container .checkbox-item[data-state="selected-state"] input + label { color: #254F90; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="focus-state"] input + label:before, .design-system-card .form-elements .form-example-container .checkbox-item[data-state="selected-state"] input + label:before { border: solid 3px #254F90; background: url(../assets/Icon-tick-primary-blue.svg) no-repeat !important; background-size: 16px 12px !important; background-position: center center !important; }
+
+.design-system-card .form-elements .form-example-container .checkbox-item[data-state="error-state"] input + label:before { outline-width: 6px; outline-color: #F5B5B5; outline-style: solid; border-radius: 0px; border: #D2201E solid 1px; background: #ffffff; }
 
 .design-system-card .form-elements .form-example-container .checkbox-item[data-state="disabled-state"] { border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
 
