@@ -879,12 +879,39 @@ $(document).ready(function () {
 		$(this).next('.hidden-disclaimer-content').slideToggle();
 		$(this).toggleClass('open');
 	});
-
+    
+    
+    /*----------- COMPONENT EXAMPLE: Modal ----------- */
+    $('.modal-example .checkbox-item input').on('click', function(){
+        $(this).next('label').toggleClass('checked');
+    });
+    $(".modal-example .scrollable").on("scroll", function() {
+        /*var n = $("#key-documents-modal .modal-content"), 
+            t = $(this).scrollTop();
+        
+        t + $(this).innerHeight() >= $(this)[0].scrollHeight ? $(n).addClass("bottom-reached") : $(n).removeClass("bottom-reached");
+        t > 10 ? $(n).addClass("scrolling") : $(n).removeClass("scrolling")
+        */
+        var scrollable_container = $(this);
+        console.log(scrollable_container);
+        
+        var scroll_position = $(this).scrollTop();
+        console.log(scroll_position);
+        
+        var scroll_height = $(this).innerHeight();
+        console.log(scroll_height);
+        
+        
+    });
+    
+    
 	/*----------- COMPONENT EXAMPLE: Mini-list ----------- */
 	$('.mini-list .mini-list-item .title-container').on('click', function () {
 		$(this).parent().toggleClass('active');
 	});
 
+    
+    
 	/*----------- SAB Navigation 2 functionality  ----------- */
 
 	// Activate submenu functionality
