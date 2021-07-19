@@ -5439,7 +5439,238 @@
 			top: 16px;
 			right: 2px;
 		}
+        .scroll-wrapper {
+            position: relative;
+            
+            .scroll-separator {
+                width: 100%;
+                height: 8px;
+                min-height: 8px;
+                z-index: 99;
+
+                &.scroll-separator--bottom {
+                    margin-top: -8px;
+                    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, .15) 100%);
+                    display: block;
+                    position: absolute;
+                }
+            }
+            .scrollable {
+                max-height: 300px;
+                overflow-y: scroll;
+                padding-right: .5em;
+
+                &::-webkit-scrollbar {
+                    -webkit-appearance: none;
+                    width: 8px;
+                    height: 8px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #333;
+                    border-radius: 4px;
+                    z-index: 99;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #ebebeb;
+                }
+
+                .download-group {
+                    color: rgb(51, 51, 51);
+                    background-color: rgb(235, 235, 235);
+                    margin-bottom: 4px;
+                    padding: 16px;
+                    display: flex;
+                    align-items: start;
+                    margin-top: 16px;
+                    z-index: 0;
+                }
+
+                .download-status {
+                    padding: 0;
+                    margin: 0 24px 0 0;
+                    display: flex;
+                    align-items: center;
+                    min-width: 133px;
+
+                    span {
+                        font-size: .75rem;
+                        white-space: nowrap;
+                    }
+
+                    svg {
+                        margin: 0 8px 0 0;
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+
+                .download-group-heading {
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    padding: 0 0 8px;
+                    line-height: 1.33;
+                    letter-spacing: normal;
+                    color: #333;
+                }
+
+                .download-item {
+                    padding-left: 0;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    padding-right: 24px;
+                    text-decoration: underline;
+
+                    a {
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+
+                        .download-icon {
+                            height: 1rem;
+                            width: 1rem;
+                        }
+
+                        span {
+                            font-weight: normal;
+                            text-transform: none;
+                            font-size: .85rem;
+                            text-decoration: underline;
+                            color: #254f90;
+                        }
+                    }
+                }
+            }
+
+            &.scrolling {
+                .scroll-separator {
+                     &.scroll-separator--top {
+                        margin-bottom: -8px;
+                        background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, .15) 100%);
+                        display: block;
+                        position: absolute;
+                    }  
+                }
+            }
+            &.scroll-done {
+                .scroll-separator {
+                     &.scroll-separator--top {
+                        margin-bottom: -8px;
+                        background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, .15) 100%);
+                        display: block;
+                        position: absolute;
+                    }
+                    &.scroll-separator--bottom {
+                        background: none;
+                    }
+                }
+            }
+        }
+        
+        .checkbox-item {
+            line-height: 28px;
+            display: flex;
+            width: 100%;
+            margin: 32px 0;
+            
+            input[type=checkbox] {
+                opacity: 0;
+                height: 28px;
+                width: 28px;
+                position: absolute;
+                outline: none;
+                border: solid 1px #254f90;
+                display: inline-block;
+                vertical-align: middle;
+                font-family: "Open Sans",sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                padding: 10px 16px;
+                
+            }
+            label {
+                position: relative;
+                padding: 0 0 0 42px;
+                cursor: pointer;
+                display: inline-block;
+                
+                &:before {
+                    height: 28px;
+                    width: 28px;
+                    content: " ";
+                    border: solid 1px #495c74;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: #fff !important;
+                }
+                &.checked {
+                    &:before {
+                        border: solid 3px #254f90;
+                        background: url(../assets/Icon-tick-primary-blue.svg) no-repeat;
+                        background-size: 16px 12px;
+                        background-position: center center;
+                    }
+                }
+            }
+        }
+        .modal-button-container {
+            .theme-button {
+                display: inline-flex;
+                border-radius: .375rem;
+                border: solid .125rem $blue-active;
+                background-color: #4569a0;
+                color: #fff;
+                transition: box-shadow .4s ease,transform .4s ease;
+                text-decoration: none !important;
+                width: auto;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                @include font-format($font-family, $font-semibold, normal);
+                height: auto !important;
+                padding: 16px 32px;
+                min-height: auto !important;
+                line-height: 1.3rem;
+            }
+        }
 	}
+    .mobile-example .modal-example,
+    .mobile-media-query .modal-example {
+        .modal-example-content {
+            padding: 32px 16px 16px;    
+        }
+        .scroll-wrapper {
+            .scrollable {
+                .download-group {
+                    display: block;
+                }
+                .download-status {
+                    span {
+                        margin-bottom: 8px;
+                    }
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                .download-item {
+                    a {
+                        .download-icon {
+                            display: none;
+                        }
+                    }
+                    span {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        .checkbox-item {
+            margin-bottom: 16px;
+        }
+    } 
 
 	/* Mini-list */
 	.mini-list {
@@ -5605,7 +5836,6 @@
 			}
 		}
 	}
-
 	.mobile-example {
 		.mini-list {
 			.mini-list-item {
@@ -5630,7 +5860,6 @@
 			}
 		}
 	}
-
 	@media (max-width: 640px) {
 		.mini-list {
 			.mini-list-item {

@@ -5630,6 +5630,70 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .modal-example .modal-close { margin-top: 6px; background: url(../assets/BGAIcon-close.svg) no-repeat; background-size: 20px 20px; height: 40px; min-width: 40px; width: 40px; position: absolute; top: 16px; right: 2px; }
 
+.design-system-card .modal-example .scroll-wrapper { position: relative; }
+
+.design-system-card .modal-example .scroll-wrapper .scroll-separator { width: 100%; height: 8px; min-height: 8px; z-index: 99; }
+
+.design-system-card .modal-example .scroll-wrapper .scroll-separator.scroll-separator--bottom { margin-top: -8px; background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%); display: block; position: absolute; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable { max-height: 300px; overflow-y: scroll; padding-right: .5em; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable::-webkit-scrollbar { -webkit-appearance: none; width: 8px; height: 8px; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable::-webkit-scrollbar-thumb { background-color: #333; border-radius: 4px; z-index: 99; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable::-webkit-scrollbar-track { background: #ebebeb; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-group { color: #333333; background-color: #ebebeb; margin-bottom: 4px; padding: 16px; display: flex; align-items: start; margin-top: 16px; z-index: 0; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-status { padding: 0; margin: 0 24px 0 0; display: flex; align-items: center; min-width: 133px; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-status span { font-size: .75rem; white-space: nowrap; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-status svg { margin: 0 8px 0 0; width: 32px; height: 32px; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-group-heading { margin: 0; font-weight: 600; font-size: 1rem; padding: 0 0 8px; line-height: 1.33; letter-spacing: normal; color: #333; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-item { padding-left: 0; position: relative; display: flex; align-items: center; padding-right: 24px; text-decoration: underline; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-item a { text-decoration: none; display: flex; align-items: center; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-item a .download-icon { height: 1rem; width: 1rem; }
+
+.design-system-card .modal-example .scroll-wrapper .scrollable .download-item a span { font-weight: normal; text-transform: none; font-size: .85rem; text-decoration: underline; color: #254f90; }
+
+.design-system-card .modal-example .scroll-wrapper.scrolling .scroll-separator.scroll-separator--top { margin-bottom: -8px; background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%); display: block; position: absolute; }
+
+.design-system-card .modal-example .scroll-wrapper.scroll-done .scroll-separator.scroll-separator--top { margin-bottom: -8px; background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%); display: block; position: absolute; }
+
+.design-system-card .modal-example .scroll-wrapper.scroll-done .scroll-separator.scroll-separator--bottom { background: none; }
+
+.design-system-card .modal-example .checkbox-item { line-height: 28px; display: flex; width: 100%; margin: 32px 0; }
+
+.design-system-card .modal-example .checkbox-item input[type=checkbox] { opacity: 0; height: 28px; width: 28px; position: absolute; outline: none; border: solid 1px #254f90; display: inline-block; vertical-align: middle; font-family: "Open Sans",sans-serif; font-weight: 400; font-style: normal; padding: 10px 16px; }
+
+.design-system-card .modal-example .checkbox-item label { position: relative; padding: 0 0 0 42px; cursor: pointer; display: inline-block; }
+
+.design-system-card .modal-example .checkbox-item label:before { height: 28px; width: 28px; content: " "; border: solid 1px #495c74; position: absolute; top: 0; left: 0; background-color: #fff !important; }
+
+.design-system-card .modal-example .checkbox-item label.checked:before { border: solid 3px #254f90; background: url(../assets/Icon-tick-primary-blue.svg) no-repeat; background-size: 16px 12px; background-position: center center; }
+
+.design-system-card .modal-example .modal-button-container .theme-button { display: inline-flex; border-radius: .375rem; border: solid 0.125rem #18335C; background-color: #4569a0; color: #fff; transition: box-shadow .4s ease,transform .4s ease; text-decoration: none !important; width: auto; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; height: auto !important; padding: 16px 32px; min-height: auto !important; line-height: 1.3rem; }
+
+.design-system-card .mobile-example .modal-example .modal-example-content, .design-system-card .mobile-media-query .modal-example .modal-example-content { padding: 32px 16px 16px; }
+
+.design-system-card .mobile-example .modal-example .scroll-wrapper .scrollable .download-group, .design-system-card .mobile-media-query .modal-example .scroll-wrapper .scrollable .download-group { display: block; }
+
+.design-system-card .mobile-example .modal-example .scroll-wrapper .scrollable .download-status span, .design-system-card .mobile-media-query .modal-example .scroll-wrapper .scrollable .download-status span { margin-bottom: 8px; }
+
+.design-system-card .mobile-example .modal-example .scroll-wrapper .scrollable .download-status svg, .design-system-card .mobile-media-query .modal-example .scroll-wrapper .scrollable .download-status svg { width: 24px; height: 24px; }
+
+.design-system-card .mobile-example .modal-example .scroll-wrapper .scrollable .download-item a .download-icon, .design-system-card .mobile-media-query .modal-example .scroll-wrapper .scrollable .download-item a .download-icon { display: none; }
+
+.design-system-card .mobile-example .modal-example .scroll-wrapper .scrollable .download-item span, .design-system-card .mobile-media-query .modal-example .scroll-wrapper .scrollable .download-item span { margin-left: 0; }
+
+.design-system-card .mobile-example .modal-example .checkbox-item, .design-system-card .mobile-media-query .modal-example .checkbox-item { margin-bottom: 16px; }
+
 .design-system-card .mini-list { width: 100%; height: auto; }
 
 .design-system-card .mini-list.mini-list-yellow { max-width: 768px; }

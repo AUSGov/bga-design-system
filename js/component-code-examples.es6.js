@@ -6320,7 +6320,7 @@ const warningNotificationCss =
 `
 $(".warning-notification-code .css-code").html(warningNotificationCss);
 
-//MODAL
+//STANDARD MODAL
 
 //html
 const modalHtml =
@@ -6412,6 +6412,369 @@ const modalCss =
 </code>
 `
 $(".modal-code .css-code").html(modalCss);
+    
+    
+//STANDARD MODAL
+
+//html
+const downloadModalHtml =
+`
+<div class="modal-example">
+    <h4>Modal title</h4>
+    <!-- Use JavaScript to add classes "scrolling" and "scroll-done" to the scroll-wrapper container. -->
+    <div class="scroll-wrapper"><span class="scroll-separator scroll-separator--top"></span>
+        <div class="scrollable">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dictum ante, eu viverra elit. Integer sit amet turpis nec lacus vestibulum faucibus. </p>
+            <div class="download-group ">
+                <div class="download-status"> <span class="status-icon dl-yes hidden"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <circle cx="16" cy="16" r="16" fill="#219520"></circle>
+                            <polygon points="22.09 10 13.25 18.84 9.9 15.48 8 17.41 13.25 22.66 24 11.9 22.09 10" fill="#fff"></polygon>
+                        </svg> Downloaded</span> <span class="status-icon dl-no"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <circle cx="16" cy="16" r="16" fill="#e1aa21"></circle>
+                            <path d="M17.94,23.46A1.61,1.61,0,0,1,16.28,25h0a1.55,1.55,0,1,1,1.65-1.54Z" fill="#fff"></path>
+                            <path d="M18.55,9.05a2.22,2.22,0,0,0-.5-1.19,2.25,2.25,0,0,0-3.51,0A2.17,2.17,0,0,0,14,9.05a2.28,2.28,0,0,0,0,.37L15,19.48a1.23,1.23,0,0,0,.38.77,1.41,1.41,0,0,0,1.82.07,1.23,1.23,0,0,0,.46-.84l.94-10.06A2.28,2.28,0,0,0,18.55,9.05Z" fill="#fff"></path>
+                        </svg>Not downloaded</span> </div>
+                <div>
+                    <h4 class="download-group-heading">Grant opportunity guidelines</h4>
+                    <div class="row">
+                        <div class="download-item"> <a href="">
+                                <div class="BgaIcon  download-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16 16">
+                                        <path d="M9 8c1.7141528-1.71415279 1.8217102-1.82171024 2.3535534-2.35355339l1.4142136 1.41421356L8.06066017 11.767767 3.35355339 7.06066017l1.41421356-1.41421356L7 7.87867966V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+                                    </svg> </div><span>Download pdf · 0.62 MB</span>
+                            </a> </div>
+                        <div class="download-item"> <a href="">
+                                <div class="BgaIcon  download-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16 16">
+                                        <path d="M9 8c1.7141528-1.71415279 1.8217102-1.82171024 2.3535534-2.35355339l1.4142136 1.41421356L8.06066017 11.767767 3.35355339 7.06066017l1.41421356-1.41421356L7 7.87867966V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+                                    </svg> </div><span>Download docx · 0.21 MB</span>
+                            </a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-group ">
+                <div class="download-status"> <span class="status-icon dl-yes hidden"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <circle data-name="Ellipse 24" cx="16" cy="16" r="16" fill="#219520"></circle>
+                            <polygon points="22.09 10 13.25 18.84 9.9 15.48 8 17.41 13.25 22.66 24 11.9 22.09 10" fill="#fff"></polygon>
+                        </svg> Downloaded</span> <span class="status-icon dl-no"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <circle cx="16" cy="16" r="16" fill="#e1aa21"></circle>
+                            <path d="M17.94,23.46A1.61,1.61,0,0,1,16.28,25h0a1.55,1.55,0,1,1,1.65-1.54Z" fill="#fff"></path>
+                            <path d="M18.55,9.05a2.22,2.22,0,0,0-.5-1.19,2.25,2.25,0,0,0-3.51,0A2.17,2.17,0,0,0,14,9.05a2.28,2.28,0,0,0,0,.37L15,19.48a1.23,1.23,0,0,0,.38.77,1.41,1.41,0,0,0,1.82.07,1.23,1.23,0,0,0,.46-.84l.94-10.06A2.28,2.28,0,0,0,18.55,9.05Z" fill="#fff"></path>
+                        </svg>Not downloaded</span> </div>
+                <div>
+                    <h4 class="download-group-heading">Sample application form</h4>
+                    <div class="row">
+                        <div class="download-item"> <a href="">
+                                <div class="BgaIcon  download-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16 16">
+                                        <path d="M9 8c1.7141528-1.71415279 1.8217102-1.82171024 2.3535534-2.35355339l1.4142136 1.41421356L8.06066017 11.767767 3.35355339 7.06066017l1.41421356-1.41421356L7 7.87867966V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+                                    </svg> </div><span>Download pdf · 0.57 MB</span>
+                            </a> </div>
+                        <div class="download-item"> <a href="">
+                                <div class="BgaIcon  download-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16 16">
+                                        <path d="M9 8c1.7141528-1.71415279 1.8217102-1.82171024 2.3535534-2.35355339l1.4142136 1.41421356L8.06066017 11.767767 3.35355339 7.06066017l1.41421356-1.41421356L7 7.87867966V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+                                    </svg> </div><span>Download docx · 0.18 MB</span>
+                            </a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-group ">
+                <div class="download-status"> <span class="status-icon dl-yes"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16" cy="16" r="16" fill="#219520"></circle>
+                            <polygon points="22.09 10 13.25 18.84 9.9 15.48 8 17.41 13.25 22.66 24 11.9 22.09 10" fill="#fff"></polygon>
+                        </svg> Downloaded</span> <span class="status-icon dl-no hidden"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <circle cx="16" cy="16" r="16" fill="#e1aa21"></circle>
+                            <path d="M17.94,23.46A1.61,1.61,0,0,1,16.28,25h0a1.55,1.55,0,1,1,1.65-1.54Z" fill="#fff"></path>
+                            <path d="M18.55,9.05a2.22,2.22,0,0,0-.5-1.19,2.25,2.25,0,0,0-3.51,0A2.17,2.17,0,0,0,14,9.05a2.28,2.28,0,0,0,0,.37L15,19.48a1.23,1.23,0,0,0,.38.77,1.41,1.41,0,0,0,1.82.07,1.23,1.23,0,0,0,.46-.84l.94-10.06A2.28,2.28,0,0,0,18.55,9.05Z" fill="#fff"></path>
+                        </svg>Not downloaded</span> </div>
+                <div>
+                    <h4 class="download-group-heading">Sample application form</h4>
+                    <div class="row">
+                        <div class="download-item"> <a href="">
+                                <div class="BgaIcon  download-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16 16">
+                                        <path d="M9 8c1.7141528-1.71415279 1.8217102-1.82171024 2.3535534-2.35355339l1.4142136 1.41421356L8.06066017 11.767767 3.35355339 7.06066017l1.41421356-1.41421356L7 7.87867966V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+                                    </svg> </div><span>Download pdf · 0.57 MB</span>
+                            </a> </div>
+                        <div class="download-item"> <a href="">
+                                <div class="BgaIcon  download-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16 16">
+                                        <path d="M9 8c1.7141528-1.71415279 1.8217102-1.82171024 2.3535534-2.35355339l1.4142136 1.41421356L8.06066017 11.767767 3.35355339 7.06066017l1.41421356-1.41421356L7 7.87867966V0h2v8zm5 6V9h2v7H0V9h2v5h12z"></path>
+                                    </svg> </div><span>Download docx · 0.18 MB</span>
+                            </a> </div>
+                    </div>
+                </div>
+            </div>
+        </div><span class="scroll-separator scroll-separator--bottom"></span>
+    </div>
+    <div class="checkbox-item"><input id="hidemodal-checkbox" name="hidemodal-checkbox" type="checkbox" aria-label="Don't show me this list again." class="example-form-element"><label for="hidemodal-checkbox" class="checkbox-label">Don't show me this list again.</label></div>
+    <div class="modal-button-container"><a class="theme-button theme-button-primary theme-button-small btn btn-secondary tool-navigation" href="" id="key-documents-modal-continue-button"><span>Continue to application</span></a></div>
+    <div class="modal-close">
+    <svg id="Icon_close" data-name="Icon / close" xmlns="http://www.w3.org/2000/svg" width="21.119" height="21.119" viewBox="0 0 21.119 21.119">
+        <path id="Close" d="M10.559,12.671,2.111,21.119,0,19.007l8.448-8.448L0,2.111,2.111,0l8.448,8.448L19.007,0l2.111,2.111-8.448,8.448,8.448,8.448-2.111,2.111Z" fill="#4569a0" />
+    </svg>
+    </div>
+</div>
+`
+
+$(".downloadModal-code .html-code code pre").text(downloadModalHtml);
+
+//css
+const downloadModalCss =
+`
+<code>
+<pre>
+/* Containers */
+.modal-example {
+    padding: 32px;
+    border-radius: 0;
+    background: #ffffff;
+    border-top: 4px solid #4569A0;
+    position: relative;
+    margin: 32px auto;
+    max-width: 700px;
+}
+.modal-example .modal-close svg {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+}
+.modal-example .scroll-wrapper {
+    position: relative;
+}
+.modal-example .scroll-wrapper .scrollable {
+    max-height: 300px;
+    overflow-y: scroll;
+    padding-right: .5em;
+}
+.modal-example .scrollable::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+    height: 8px;
+}
+.modal-example .scrollable::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
+    z-index: 99;
+}
+.modal-example .scrollable::-webkit-scrollbar-track {
+    background: #ebebeb;
+}
+.modal-example .scroll-wrapper .scroll-separator {
+    width: 100%;
+    height: 8px;
+    min-height: 8px;
+    z-index: 99;
+}
+.modal-example .scroll-wrapper.scrolling .scroll-separator.scroll-separator--top {
+    margin-bottom: -8px;
+    background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%);
+    display: block;
+    position: absolute;
+}
+.modal-example .scroll-wrapper.scroll-done .scroll-separator.scroll-separator--top {
+    margin-bottom: -8px;
+    background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%);
+    display: block;
+    position: absolute;
+}
+.modal-example .scroll-wrapper .scroll-separator.scroll-separator--bottom {
+    margin-top: -8px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%);
+    display: block;
+    position: absolute;
+}
+.modal-example .scroll-wrapper.scroll-done .scroll-separator.scroll-separator--bottom {
+    background: none;
+}
+
+/* Scroll content */
+.modal-example h4 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 16px 0;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.56;
+}
+.modal-example p {
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 0.0125rem;
+    line-height: 1.78;
+    text-align: left;
+}
+.modal-example .scrollable .download-group {
+    color: #333333;
+    background-color: #ebebeb;
+    margin-bottom: 4px;
+    padding: 16px;
+    display: flex;
+    align-items: start;
+    margin-top: 16px;
+    z-index: 0;
+}
+.modal-example .scrollable .download-status {
+    padding: 0;
+    margin: 0 24px 0 0;
+    display: flex;
+    align-items: center;
+    min-width: 133px;
+}
+.modal-example .scrollable .download-status span {
+    font-size: .75rem;
+    white-space: nowrap;
+    font-family: "Open Sans", sans-serif;
+    height: 32px;
+    letter-spacing: 0.0125rem;
+    line-height: 1.78;
+    text-align: left;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.modal-example .scrollable .download-status svg {
+    margin: 0 8px 0 0;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.modal-example .scrollable .download-status .status-icon.hidden {
+    display: none;
+}
+.modal-example .scrollable .download-status .status-icon {
+    letter-spacing: 0.0125rem;
+    line-height: 1.78;
+    text-align: left;
+    font-family: Open Sans, sans-serif;
+}
+.modal-example .scrollable .download-group-heading {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0 0 8px;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #333;
+}
+.modal-example .scrollable .download-item {
+    padding-left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    text-decoration: underline;
+}
+.modal-example .scrollable .download-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.modal-example .scrollable .download-item a .download-icon {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    fill: #254f90;
+    line-height: 0;
+    position: relative;
+    right: 0;
+}
+.modal-example .scrollable .download-item a span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    text-transform: none;
+    font-size: .85rem;
+    text-decoration: underline;
+    color: #254f90;
+    line-height: 2;
+    margin-left: 0.5rem;
+}
+
+/* Checkbox item */
+.modal-example .checkbox-item {
+    line-height: 28px;
+    display: flex;
+    width: 100%;
+    margin: 32px 0;
+}
+.modal-example .checkbox-item input[type=checkbox] {
+    opacity: 0;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    outline: none;
+    border: solid 1px #254f90;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 16px;
+}
+.modal-example .checkbox-item label {
+    position: relative;
+    padding: 0 0 0 42px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Open Sans",sans-serif;
+}
+.modal-example .checkbox-item label:before {
+    height: 28px;
+    width: 28px;
+    content: " ";
+    border: solid 1px #495c74;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff !important;
+}
+
+/* Button */
+.modal-example .modal-button-container .theme-button {
+    display: inline-flex;
+    border-radius: .375rem;
+    border: solid 0.125rem #18335C;
+    background-color: #4569a0;
+    color: #fff;
+    transition: box-shadow .4s ease,transform .4s ease;
+    text-decoration: none !important;
+    width: auto;
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 8px 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    height: auto !important;
+    padding: 16px 32px;
+    min-height: auto !important;
+    line-height: 1.3rem;
+}
+
+/* Media queries */
+@media(max-width: 575px) {
+    .modal-example {
+        padding: 32px 16px 16px;
+    }
+    .modal-example .scroll-wrapper .scrollable .download-group {
+        display: block;
+    }
+    .modal-example .scroll-wrapper .scrollable .download-status span {
+        margin-bottom: 8px;
+    }
+    .modal-example .scroll-wrapper .scrollable .download-status svg {
+        width: 24px;
+        height: 24px;
+    }
+    .modal-example .scroll-wrapper .scrollable .download-item a .download-icon {
+        display: none;
+    }
+    .modal-example .scroll-wrapper .scrollable .download-item span {
+        margin-left: 0;
+    }
+}
+</pre>
+</code>
+`
+$(".downloadModal-code .css-code").html(downloadModalCss);
+    
+    
 
 //UTILITIES
 
