@@ -5636,8 +5636,6 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .modal-example .scroll-wrapper .scroll-separator.scroll-separator--bottom { margin-top: -8px; background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%); display: block; position: absolute; }
 
-.design-system-card .modal-example .scroll-wrapper .scroll-separator.scroll-separator--top { margin-bottom: -8px; background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%); display: block; position: absolute; }
-
 .design-system-card .modal-example .scroll-wrapper .scrollable { max-height: 300px; overflow-y: scroll; padding-right: .5em; }
 
 .design-system-card .modal-example .scroll-wrapper .scrollable::-webkit-scrollbar { -webkit-appearance: none; width: 8px; height: 8px; }
@@ -5663,6 +5661,12 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .modal-example .scroll-wrapper .scrollable .download-item a .download-icon { height: 1rem; width: 1rem; }
 
 .design-system-card .modal-example .scroll-wrapper .scrollable .download-item a span { font-weight: normal; text-transform: none; font-size: .85rem; text-decoration: underline; color: #254f90; }
+
+.design-system-card .modal-example .scroll-wrapper.scrolling .scroll-separator.scroll-separator--top { margin-bottom: -8px; background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%); display: block; position: absolute; }
+
+.design-system-card .modal-example .scroll-wrapper.scroll-done .scroll-separator.scroll-separator--top { margin-bottom: -8px; background: linear-gradient(0deg, transparent 0%, rgba(0, 0, 0, 0.15) 100%); display: block; position: absolute; }
+
+.design-system-card .modal-example .scroll-wrapper.scroll-done .scroll-separator.scroll-separator--bottom { background: none; }
 
 .design-system-card .modal-example .checkbox-item { line-height: 28px; display: flex; width: 100%; margin: 32px 0; }
 

@@ -886,20 +886,22 @@ $(document).ready(function () {
         $(this).next('label').toggleClass('checked');
     });
     $(".modal-example .scrollable").on("scroll", function() {
-        /*var n = $("#key-documents-modal .modal-content"), 
-            t = $(this).scrollTop();
-        
-        t + $(this).innerHeight() >= $(this)[0].scrollHeight ? $(n).addClass("bottom-reached") : $(n).removeClass("bottom-reached");
-        t > 10 ? $(n).addClass("scrolling") : $(n).removeClass("scrolling")
-        */
-        var scrollable_container = $(this);
-        console.log(scrollable_container);
-        
-        var scroll_position = $(this).scrollTop();
-        console.log(scroll_position);
-        
-        var scroll_height = $(this).innerHeight();
-        console.log(scroll_height);
+            
+        var scroll_wrapper = $(this).parents('.scroll-wrapper'),
+            scroll_position = $(this).scrollTop(),
+            scroll_height = $(this)[0].scrollHeight,
+            container_height = $(this).innerHeight(),
+            scroll_done = scroll_height - container_height;
+
+        if (scroll_position === 0) {
+            scroll_wrapper.removeClass('scrolling');
+        } else if (scroll_position === scroll_done) {
+            scroll_wrapper.addClass("scroll-done");
+            scroll_wrapper.removeClass('scrolling');
+        } else {
+            scroll_wrapper.removeClass("scroll-done");
+            scroll_wrapper.addClass('scrolling');
+        }
         
         
     });
