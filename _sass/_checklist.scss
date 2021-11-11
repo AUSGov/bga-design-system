@@ -246,6 +246,10 @@
                             color: $black;
                         }
                     }
+                    p:last-of-type {
+                        padding-bottom: 0;
+                    }
+
 
                     .checklist-item-tag {
                         position: absolute;
@@ -262,8 +266,7 @@
                         }
 
                         &.required {
-                            background: $blue-primary;
-                            color: $white;
+                            display: none
                         }
                     }
                     
@@ -424,8 +427,7 @@
                             }
 
                             &.required {
-                                background: $blue-primary;
-                                color: $white;
+                                display: none;
                             }
                         }
 
@@ -631,8 +633,13 @@
             .checklist-item {
                 .checklist-item-title {
 
-                    background-position: right 24px center;
-                    padding: 24px 56px 24px 16px;
+                    background-position: right 24px center !important;
+                    padding: 24px 54px 24px 16px;
+                    
+                    &:hover, 
+                    &:active {
+                        background-position: right 15px center !important;
+                    }
 
                     h2 {
                         font-size: 20px;
@@ -655,8 +662,13 @@
                             top: 18px;
                         }
                         .checklist-sub-item-title {
-                            padding: 16px 64px 16px 24px;
-                            background-position: right 24px center;
+                            padding: 16px 64px 16px 16px !important;
+                            background-position: right 24px center !important;
+                            
+                            &:hover, 
+                            &:active {
+                                background-position: right 15px center !important;
+                            }
                             
                             h3 {
                                 font-size: 18px; 
@@ -676,15 +688,23 @@
                             }
                         }
                         .checklist-item-checkbox {
-                            padding: 8px 24px;
-                            
+                            padding: 8px 16px;
+                            background-position: left 16px center;
+
                             label {
                                 margin-left: 6px;
                             }
                         }
+                        &.done {
+                            .checklist-item-checkbox {
+                                .checklist-item-checkbox {
+                                    background-position: left 16px center;
+                                }
+                            }
+                        }
                         
                         .checklist-item-content {
-                            padding: 40px 24px 24px 24px;
+                            padding: 16px;
                         }
                         &.open { 
                             .checklist-sub-item-title {
@@ -701,15 +721,19 @@
                                     padding-left: 34px;
 
                                     span {
-                                        left: 24px;
+                                        height: 22px;
+                                        width: 16px;
+                                        background-size: 16px 22px;
+                                        left: 16px;
+                                        top: 18px;
                                     }
-                                }
+                                }   
                             }
                             .checklist-item-content {
                                 padding: 8px 24px 24px 24px;
                             }
                         }
-                
+                        
                     }
                 }
                 
@@ -1137,7 +1161,7 @@
                
             .checklist-item-title {
                 background-position: right 24px center;
-                padding: 24px 56px 24px 16px;
+                padding: 24px 64px 24px 16px;
                 margin-left: 40px;
 
                 h2 {
@@ -1174,7 +1198,7 @@
                         top: 18px;
                     }
                     .checklist-sub-item-title {
-                        padding: 16px 64px 16px 24px;
+                        padding: 16px 64px 16px 16px !important;
                         background-position: right 24px center;
                         
                         &:hover, 
@@ -1201,15 +1225,24 @@
                         }
                     }
                     .checklist-item-checkbox {
-                        padding: 8px 24px;
+                        padding: 8px 16px;
+                        background-position: left 16px center;
 
                         label {
                             margin-left: 6px;
                         }
                     }
+                    &.done {
+                        .checklist-item-checkbox {
+                            .checklist-item-checkbox {
+                                background-position: left 16px center;
+                            }
+                        }
+                    }
+
 
                     .checklist-item-content {
-                        padding: 40px 24px 24px 24px;
+                        padding: 16px;
                     }
                     &.open { 
                         .checklist-sub-item-title {
@@ -1235,7 +1268,7 @@
                                     height: 22px;
                                     width: 16px;
                                     background-size: 16px 22px;
-                                    left: 24px;
+                                    left: 16px;
                                     top: 18px;
                                 }
                             }
@@ -1264,7 +1297,7 @@
                     top: 26px;
                 }
                 .checklist-sub-item-title {
-                    padding-left: 24px !important;
+                    padding-left: 16px;
                 }
                 .checklist-item-content {
                     padding: 16px 24px 24px 24px;
