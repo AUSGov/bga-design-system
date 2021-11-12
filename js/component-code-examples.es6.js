@@ -9445,244 +9445,186 @@ $(".global-header-code .css-code").html(globalHeaderCss);
 //html
 const checklistItemsHtml =
 `
-<div class="checklist">
-   <div class="checklist-line"></div>
-   <!-- ITEM 1 -->
-   <!-- Toggle 'open' class with js to open checklist item  and toggle 'item-done' class when all checkboxes in the item are done --> 
-   <div class="checklist-item open">
-      <div class="checklist-item-title">
-         <h2>
-            <span>
-               <div class="checklist-item-number">1</div>
-               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 12" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
-               </svg>
-            </span>
-            Item 1 descriptive title
-         </h2>
-         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
-            <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
-               <g id="Group_4574" data-name="Group 4574">
-                  <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb"/>
-                  <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90"/>
-               </g>
-            </g>
-         </svg>
-      </div>
-      <div class="checklist-sub-items-container">
-         <div class="checklist-sub-item tip">
-            <div class="checklist-sub-item-title">
-               <svg xmlns="http://www.w3.org/2000/svg" class="tip-icon" width="24" height="32" viewBox="0 0 24 32">
-                  <g id="Layer_1" data-name="Layer 1" transform="translate(-4.997 -3)">
-                     <path id="Path_3937" data-name="Path 3937" d="M17,3a11.707,11.707,0,0,0-2.4.236,11.847,11.847,0,0,0-9.392,9.3,11.668,11.668,0,0,0,3.8,11.048,3.251,3.251,0,0,1,1.131,2.476v3.891a3.408,3.408,0,0,0,3.428,3.368h.48a3.422,3.422,0,0,0,5.9,0h.48a3.408,3.408,0,0,0,3.428-3.368V26.057a3.241,3.241,0,0,1,1.1-2.459A11.629,11.629,0,0,0,29,14.789,11.886,11.886,0,0,0,17,3Zm3.428,26.947H13.572V28.263h6.856Zm0-3.368H13.572V24.895h6.856Zm2.245-5.491c-.154.135-.274.3-.411.438H18.5V17.444l2.948-2.9a.628.628,0,0,0,0-.893l-1.212-1.191a.673.673,0,0,0-.912,0L17.01,14.739l-2.333-2.294a.674.674,0,0,0-.91,0l-1.212,1.192a.625.625,0,0,0,0,.893L15.5,17.424v4.1H11.721a5.225,5.225,0,0,0-.411-.455,8.409,8.409,0,0,1-2.725-7.916,8.529,8.529,0,0,1,6.667-6.619A8.783,8.783,0,0,1,17,6.368a8.5,8.5,0,0,1,8.569,8.421A8.312,8.312,0,0,1,22.673,21.088Z" transform="translate(0 0)" fill="#748fb8"/>
-                  </g>
-               </svg>
-               <h3>Tip - Lorem ipsum dolor sit amet</h3>
-               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
-                  <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
-                     <g id="Group_4574" data-name="Group 4574">
-                        <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb"/>
-                        <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90"/>
-                     </g>
-                  </g>
-               </svg>
-            </div>
-            <div class="checklist-sub-item-content-container">
-               <div class="checklist-sub-item-content">
-                  <p>Nullam id dignissim sapien. Integer efficitur feugiat neque eu porta. Pellentesque ac nisi purus. Aenean eget ipsum dapibus, consequat arcu a, consequat quam. Aenean vel felis risus. Sed pulvinar lectus erat. Mauris magna orci, aliquam ac iaculis ac, egestas et metus.</p>
-               </div>
-            </div>
-         </div>
-         <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
-         <div class="checklist-sub-item">
-            <div class="checklist-sub-item-title">
-               <h3>
-                  <span>
-                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 12" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
-                     </svg>
-                  </span>
-                  Donec vestibulum lectus at pretium congue.
-                  <div class="checklist-item-tag">Must do</div>
-               </h3>
-               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
-                  <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
-                     <g id="Group_4574" data-name="Group 4574">
-                        <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb"/>
-                        <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90"/>
-                     </g>
-                  </g>
-               </svg>
-            </div>
-            <div class="checklist-sub-item-content-container">
-               <div class="checklist-sub-item-content">
-                  <p>Curabitur pellentesque ante ligula. Aenean in scelerisque ipsum, nec finibus justo. Morbi dignissim in nisl non bibendum. Vestibulum mattis et lorem eget semper. In a quam mollis, ornare risus nec, tincidunt odio. Morbi eget nibh id magna vestibulum faucibus. Praesent eu lacus quam:</p>
-                  <ul>
-                     <li>full-time or part-time employee</li>
-                     <li>fixed-term employee (non-ongoing)</li>
-                     <li>casual employee</li>
-                  </ul>
-                  <p><a href="" class="external">Find out more about the different types of employee</a></p>
-               </div>
-               <div class="checklist-item-checkbox">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                     <g id="Group_4445" data-name="Group 4445" transform="translate(-228 -1080)">
-                        <g id="Rectangle_433" data-name="Rectangle 433" transform="translate(228 1080)" fill="#fff" stroke="#297e28" stroke-width="2">
-                           <rect width="28" height="28" stroke="none"/>
-                           <rect x="1" y="1" width="26" height="26" fill="none"/>
-                        </g>
-                        <g id="Icon_tick" data-name="Icon / tick" transform="translate(234 1088)">
-                           <path id="Tick" d="M0,7.429,1.9,5.494,5.255,8.855,14.115,0l1.918,1.906L5.255,12.684Z" fill="#297e28"/>
-                        </g>
-                     </g>
-                  </svg>
-                  <input type="checkbox">
-                  <label>Done</label>
-               </div>
-            </div>
-         </div>
-      </div>
-      <hr class="checklist-item-divider">
-   </div>
-   <!-- ITEM 2 -->
-   <!-- Toggle 'open' class with js to open checklist item  and toggle 'item-done' class when all checkboxes in the item are checked --> 
-   <div class="checklist-item open item-done">
-      <div class="checklist-item-title">
-         <h2>
-            <span>
-               <div class="checklist-item-number">2</div>
-               <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="16px" viewBox="0 0 16 12" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
-               </svg>
-            </span>
-            Item 2 title
-         </h2>
-         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
-            <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
-               <g id="Group_4574" data-name="Group 4574">
-                  <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb"/>
-                  <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90"/>
-               </g>
-            </g>
-         </svg>
-      </div>
-      <div class="checklist-sub-items-container">
-         <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
-         <div class="checklist-sub-item open done">
-            <div class="checklist-sub-item-title">
-               <h3>
-                  <span>
-                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 12" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
-                     </svg>
-                  </span>
-                  Quisque quis urna varius 
-                  <div class="checklist-item-tag">Must do</div>
-               </h3>
-               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
-                  <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
-                     <g id="Group_4574" data-name="Group 4574">
-                        <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb"/>
-                        <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90"/>
-                     </g>
-                  </g>
-               </svg>
-            </div>
-            <div class="checklist-sub-item-content-container">
-               <div class="checklist-sub-item-content">
-                  <p>Fusce augue felis, sagittis quis lacus non, convallis volutpat velit. Vestibulum faucibus diam sit amet eleifend vestibulum. Cras ultricies quis arcu et fermentum. Proin eget sodales sapien. Vivamus tincidunt ligula condimentum enim egestas molestie. Fusce at venenatis risus. Use the <a href="">Find my award tool</a> to check: </p>
-                  <ul>
-                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                           <circle fill="#c18100" cx="8" cy="8" r="4"/>
-                        </svg>
-                        pay
-                     </li>
-                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                           <circle fill="#c18100" cx="8" cy="8" r="4"/>
-                        </svg>
-                        hours of work
-                     </li>
-                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                           <circle fill="#c18100" cx="8" cy="8" r="4"/>
-                        </svg>
-                        rosters
-                     </li>
-                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                           <circle fill="#c18100" cx="8" cy="8" r="4"/>
-                        </svg>
-                        breaks
-                     </li>
-                  </ul>
-                  <p>You can also use the <a href="">Pay Calculator</a> to work out what you’ll need to pay your new employee under the relevant award (including any penalty rates).  </p>
-               </div>
-               <div class="checklist-item-checkbox">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                     <g id="Group_4445" data-name="Group 4445" transform="translate(-228 -1080)">
-                        <g id="Rectangle_433" data-name="Rectangle 433" transform="translate(228 1080)" fill="#fff" stroke="#297e28" stroke-width="2">
-                           <rect width="28" height="28" stroke="none"/>
-                           <rect x="1" y="1" width="26" height="26" fill="none"/>
-                        </g>
-                        <g id="Icon_tick" data-name="Icon / tick" transform="translate(234 1088)">
-                           <path id="Tick" d="M0,7.429,1.9,5.494,5.255,8.855,14.115,0l1.918,1.906L5.255,12.684Z" fill="#297e28"/>
-                        </g>
-                     </g>
-                  </svg>
-                  <input type="checkbox">
-                  <label>Done</label>
-               </div>
-            </div>
-         </div>
-         <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked --> 
-         <div class="checklist-sub-item open done">
-            <div class="checklist-sub-item-title">
-               <h3>
-                  <span>
-                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 12" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white"/>
-                     </svg>
-                  </span>
-                  Understand aliquam quis lorem volutpat hendrerit.
-                  <div class="checklist-item-tag">Must do</div>
-               </h3>
-               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
-                  <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
-                     <g id="Group_4574" data-name="Group 4574">
-                        <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb"/>
-                        <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90"/>
-                     </g>
-                  </g>
-               </svg>
-            </div>
-            <div class="checklist-sub-item-content-container">
-               <div class="checklist-sub-item-content">
-                  <p>Proin laoreet pulvinar vulputate. Integer ultricies massa a congue ullamcorper. You will also need to have <a href="">worker’s compensation insurance</a> for your employee. </p>
-                  <p>If you want to learn more, check our <a href="">Managing and developing staff</a> topic. </p>
-               </div>
-               <div class="checklist-item-checkbox">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-                     <g id="Group_4445" data-name="Group 4445" transform="translate(-228 -1080)">
-                        <g id="Rectangle_433" data-name="Rectangle 433" transform="translate(228 1080)" fill="#fff" stroke="#297e28" stroke-width="2">
-                           <rect width="28" height="28" stroke="none"/>
-                           <rect x="1" y="1" width="26" height="26" fill="none"/>
-                        </g>
-                        <g id="Icon_tick" data-name="Icon / tick" transform="translate(234 1088)">
-                           <path id="Tick" d="M0,7.429,1.9,5.494,5.255,8.855,14.115,0l1.918,1.906L5.255,12.684Z" fill="#297e28"/>
-                        </g>
-                     </g>
-                  </svg>
-                  <input type="checkbox">
-                  <label>Done</label>
-               </div>
-            </div>
-         </div>
-      </div>
-      <hr class="checklist-item-divider">
-   </div>
-</div>
+ <div class="checklist">
+                    <div class="checklist-line"></div> <!-- ITEM 1 -->
+                    <!-- Toggle 'open' class with js to open checklist item  and toggle 'item-done' class when all checkboxes in the item are done -->
+                    <div class="checklist-item open">
+                        <div class="checklist-item-title">
+                            <h2> <span>
+                                    <div class="checklist-item-number">1</div> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 12" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white" />
+                                    </svg>
+                                </span> Item 1 descriptive title </h2> <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                                <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
+                                    <g id="Group_4574" data-name="Group 4574">
+                                        <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb" />
+                                        <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="checklist-sub-items-container">
+                            <div class="checklist-sub-item tip">
+                                <div class="checklist-sub-item-title"> <svg xmlns="http://www.w3.org/2000/svg" class="tip-icon" width="24" height="32" viewBox="0 0 24 32">
+                                        <g id="Layer_1" data-name="Layer 1" transform="translate(-4.997 -3)">
+                                            <path id="Path_3937" data-name="Path 3937" d="M17,3a11.707,11.707,0,0,0-2.4.236,11.847,11.847,0,0,0-9.392,9.3,11.668,11.668,0,0,0,3.8,11.048,3.251,3.251,0,0,1,1.131,2.476v3.891a3.408,3.408,0,0,0,3.428,3.368h.48a3.422,3.422,0,0,0,5.9,0h.48a3.408,3.408,0,0,0,3.428-3.368V26.057a3.241,3.241,0,0,1,1.1-2.459A11.629,11.629,0,0,0,29,14.789,11.886,11.886,0,0,0,17,3Zm3.428,26.947H13.572V28.263h6.856Zm0-3.368H13.572V24.895h6.856Zm2.245-5.491c-.154.135-.274.3-.411.438H18.5V17.444l2.948-2.9a.628.628,0,0,0,0-.893l-1.212-1.191a.673.673,0,0,0-.912,0L17.01,14.739l-2.333-2.294a.674.674,0,0,0-.91,0l-1.212,1.192a.625.625,0,0,0,0,.893L15.5,17.424v4.1H11.721a5.225,5.225,0,0,0-.411-.455,8.409,8.409,0,0,1-2.725-7.916,8.529,8.529,0,0,1,6.667-6.619A8.783,8.783,0,0,1,17,6.368a8.5,8.5,0,0,1,8.569,8.421A8.312,8.312,0,0,1,22.673,21.088Z" transform="translate(0 0)" fill="#748fb8" />
+                                        </g>
+                                    </svg>
+                                    <h3>Tip - Lorem ipsum dolor sit amet</h3> <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                                        <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
+                                            <g id="Group_4574" data-name="Group 4574">
+                                                <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb" />
+                                                <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="checklist-sub-item-content-container">
+                                    <div class="checklist-sub-item-content">
+                                        <p>Nullam id dignissim sapien. Integer efficitur feugiat neque eu porta. Pellentesque ac nisi purus. Aenean eget ipsum dapibus, consequat arcu a, consequat quam. Aenean vel felis risus. Sed pulvinar lectus erat. Mauris magna orci, aliquam ac iaculis ac, egestas et metus.</p>
+                                    </div>
+                                </div>
+                            </div> <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked -->
+                            <div class="checklist-sub-item">
+                                <div class="checklist-sub-item-title">
+                                    <h3> <span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white" />
+                                            </svg> </span> Donec vestibulum lectus at pretium congue. 
+                                    </h3> <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                                        <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
+                                            <g id="Group_4574" data-name="Group 4574">
+                                                <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb" />
+                                                <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="checklist-sub-item-content-container">
+                                    <div class="checklist-sub-item-content">
+                                        <p>Curabitur pellentesque ante ligula. Aenean in scelerisque ipsum, nec finibus justo. Morbi dignissim in nisl non bibendum. Vestibulum mattis et lorem eget semper. In a quam mollis, ornare risus nec, tincidunt odio. Morbi eget nibh id magna vestibulum faucibus. Praesent eu lacus quam:</p>
+                                        <ul>
+                                            <li>full-time or part-time employee</li>
+                                            <li>fixed-term employee (non-ongoing)</li>
+                                            <li>casual employee</li>
+                                        </ul>
+                                        <p><a href="" class="external">Find out more about the different types of employee</a></p>
+                                    </div>
+                                    <div class="checklist-item-checkbox"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                            <g id="Group_4445" data-name="Group 4445" transform="translate(-228 -1080)">
+                                                <g id="Rectangle_433" data-name="Rectangle 433" transform="translate(228 1080)" fill="#fff" stroke="#297e28" stroke-width="2">
+                                                    <rect width="28" height="28" stroke="none" />
+                                                    <rect x="1" y="1" width="26" height="26" fill="none" />
+                                                </g>
+                                                <g id="Icon_tick" data-name="Icon / tick" transform="translate(234 1088)">
+                                                    <path id="Tick" d="M0,7.429,1.9,5.494,5.255,8.855,14.115,0l1.918,1.906L5.255,12.684Z" fill="#297e28" />
+                                                </g>
+                                            </g>
+                                        </svg> <input type="checkbox"> <label>Done</label> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="checklist-item-divider">
+                    </div> <!-- ITEM 2 -->
+                    <!-- Toggle 'open' class with js to open checklist item  and toggle 'item-done' class when all checkboxes in the item are checked -->
+                    <div class="checklist-item open item-done">
+                        <div class="checklist-item-title">
+                            <h2> <span>
+                                    <div class="checklist-item-number">2</div> <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="16px" viewBox="0 0 16 12" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white" />
+                                    </svg>
+                                </span> Item 2 title </h2> <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                                <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
+                                    <g id="Group_4574" data-name="Group 4574">
+                                        <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb" />
+                                        <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="checklist-sub-items-container">
+                            <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked -->
+                            <div class="checklist-sub-item open done">
+                                <div class="checklist-sub-item-title">
+                                    <h3> <span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white" />
+                                            </svg> </span> Quisque quis urna varius 
+                                    </h3> <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                                        <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
+                                            <g id="Group_4574" data-name="Group 4574">
+                                                <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb" />
+                                                <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="checklist-sub-item-content-container">
+                                    <div class="checklist-sub-item-content">
+                                        <p>Fusce augue felis, sagittis quis lacus non, convallis volutpat velit. Vestibulum faucibus diam sit amet eleifend vestibulum. Cras ultricies quis arcu et fermentum. Proin eget sodales sapien. Vivamus tincidunt ligula condimentum enim egestas molestie. Fusce at venenatis risus. Use the <a href="">Find my award tool</a> to check: </p>
+                                        <ul>
+                                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                                                    <circle fill="#c18100" cx="8" cy="8" r="4" />
+                                                </svg> pay </li>
+                                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                                                    <circle fill="#c18100" cx="8" cy="8" r="4" />
+                                                </svg> hours of work </li>
+                                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                                                    <circle fill="#c18100" cx="8" cy="8" r="4" />
+                                                </svg> rosters </li>
+                                            <li> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                                                    <circle fill="#c18100" cx="8" cy="8" r="4" />
+                                                </svg> breaks </li>
+                                        </ul>
+                                        <p>You can also use the <a href="">Pay Calculator</a> to work out what you’ll need to pay your new employee under the relevant award (including any penalty rates). </p>
+                                    </div>
+                                    <div class="checklist-item-checkbox"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                            <g id="Group_4445" data-name="Group 4445" transform="translate(-228 -1080)">
+                                                <g id="Rectangle_433" data-name="Rectangle 433" transform="translate(228 1080)" fill="#fff" stroke="#297e28" stroke-width="2">
+                                                    <rect width="28" height="28" stroke="none" />
+                                                    <rect x="1" y="1" width="26" height="26" fill="none" />
+                                                </g>
+                                                <g id="Icon_tick" data-name="Icon / tick" transform="translate(234 1088)">
+                                                    <path id="Tick" d="M0,7.429,1.9,5.494,5.255,8.855,14.115,0l1.918,1.906L5.255,12.684Z" fill="#297e28" />
+                                                </g>
+                                            </g>
+                                        </svg> <input type="checkbox"> <label>Done</label> </div>
+                                </div>
+                            </div> <!-- Toggle 'open' class with js to open checklist sub-item  and toggle 'done' class when the sub-item checkbox is checked -->
+                            <div class="checklist-sub-item open done">
+                                <div class="checklist-sub-item-title">
+                                    <h3> <span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 7.07187L2.50765 5.33422L5.51983 8.35328L13.4776 0.400024L15.2 2.11155L5.51976 11.7918L0.799988 7.07187Z" fill="white" />
+                                            </svg> </span> Understand aliquam quis lorem volutpat hendrerit. 
+                                    </h3> <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                                        <g id="Group_4580" data-name="Group 4580" transform="translate(-1631 -2443)">
+                                            <g id="Group_4574" data-name="Group 4574">
+                                                <path id="Path_3980" class="icon-circle" data-name="Path 3980" d="M19,0A19,19,0,1,1,0,19,19,19,0,0,1,19,0Z" transform="translate(1631 2443)" fill="#ebebeb" />
+                                                <path id="Chevron_Down" data-name="Chevron / Down" d="M7.535,10,0,17.522,2.482,20,12.5,10,2.482,0,0,2.478Z" transform="translate(1660 2456) rotate(90)" fill="#254f90" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="checklist-sub-item-content-container">
+                                    <div class="checklist-sub-item-content">
+                                        <p>Proin laoreet pulvinar vulputate. Integer ultricies massa a congue ullamcorper. You will also need to have <a href="">worker’s compensation insurance</a> for your employee. </p>
+                                        <p>If you want to learn more, check our <a href="">Managing and developing staff</a> topic. </p>
+                                    </div>
+                                    <div class="checklist-item-checkbox"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                            <g id="Group_4445" data-name="Group 4445" transform="translate(-228 -1080)">
+                                                <g id="Rectangle_433" data-name="Rectangle 433" transform="translate(228 1080)" fill="#fff" stroke="#297e28" stroke-width="2">
+                                                    <rect width="28" height="28" stroke="none" />
+                                                    <rect x="1" y="1" width="26" height="26" fill="none" />
+                                                </g>
+                                                <g id="Icon_tick" data-name="Icon / tick" transform="translate(234 1088)">
+                                                    <path id="Tick" d="M0,7.429,1.9,5.494,5.255,8.855,14.115,0l1.918,1.906L5.255,12.684Z" fill="#297e28" />
+                                                </g>
+                                            </g>
+                                        </svg> <input type="checkbox"> <label>Done</label> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="checklist-item-divider">
+                    </div>
+                </div>
 `
 
 $(".checklist-items-code .html-code code pre").text(checklistItemsHtml);
@@ -9864,23 +9806,6 @@ const checklistItemsCss =
   width: 100%;
   margin: 0;
   font-weight: 600;
-}
-.checklist-item-tag {
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-  border: solid 2px #254f90;
-  background: #254f90;
-  color: #ffffff;
-  border-radius: 20px;
-  padding: 0 10px;
-  height: 28px;
-  margin-left: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 53px;
-  white-space: nowrap;
-  z-index: 1;
 }
 .checklist-sub-item-content {
   background: #e5edf7;
@@ -10068,16 +9993,33 @@ checkbox.checked {
 <pre>
 /* Media queries */
 @media (max-width: 767px) {
-  .checklist-sub-item-title {
-    padding: 16px 24px;
-  }
-  .checklist-item-title {
-    padding: 32px 24px 24px 32px;
-  }
-  .checklist-sub-item-content {
-    padding: 40px 24px 24px 24px;
-  }
+    .checklist-sub-item-title {
+        padding: 16px 16px;
+    }
+    .checklist-item-title h2 span {
+        position: absolute;
+        top: 16px;
+        height: 22px;
+        width: 16px;
+    }
+    .checklist-sub-item.tip .tip-icon {
+        min-width: 16px;
+        min-height: 2px;
+        margin-left: 0;
+    }
+
+    .checklist-item-title {
+        padding: 32px 16px 24px 32px;
+    }
+
+    .checklist-sub-item-content {
+        padding: 16px;
+    }
+    .checklist-item-checkbox {
+        padding: 16px;
+    }
 }
+
 @media (max-width: 575px) {
   .checklist-sub-item-title h3 {
     flex-direction: column;
