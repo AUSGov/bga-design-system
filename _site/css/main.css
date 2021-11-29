@@ -4017,7 +4017,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .input-daterange .input-group-addon { width: auto; min-width: 16px; padding: 4px 5px; line-height: 1.42857143; border-width: 1px 0; margin-left: -5px; margin-right: -5px; }
 
 /*# sourceMappingURL=bootstrap-datepicker3.css.map */
-/* Design system styles */
+/* DESIGN SYSTEM STYLES */
 .design-system-card { border: 1px solid #D8D8D8; padding: 0; margin-bottom: 32px; width: auto; /* Mini-list */ /* Pros and cons */ /* Guide Page Header */ /* Guide accordion */ /* open all accordions button */ }
 
 .design-system-card.extra-wide { max-width: 1000px; }
