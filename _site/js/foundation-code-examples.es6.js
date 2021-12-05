@@ -88,24 +88,6 @@ $(document).ready(function () {
 </pre>
 </code>
 
-<h5>Light button</h5>
-<code>
-<pre>
-/* Light button */
-.primary-button.primary-button-light {
-  border-color: #254f90;
-  background-color: #ffffff;
-  color: #254f90;
-}
-.primary-button.primary-button-light:hover,
-.primary-button.primary-button-light:focus {
-  border-color: #ffffff;
-  background-color: #254f90;
-  color: #ffffff;
-}
-</pre>
-</code>
-
 <h5>Icon</h5>
 <code>
 <pre>
@@ -119,16 +101,6 @@ $(document).ready(function () {
   height: 16px;
 }
 .primary-button .svg-container svg {
-  fill: #fff;
-}
-.primary-button.primary-button-light .svg-container svg {
-  fill: #254f90;
-}
-.primary-button.primary-button-light:hover .svg-container svg,
-.primary-button.primary-button-light:focus .svg-container svg {
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   fill: #fff;
 }
 </pre>
@@ -224,23 +196,6 @@ const secondaryButtonCss =
 </pre>
 </code>
 
-<h5>Dark button</h5>
-<code>
-<pre>
-/* Dark button */
-.secondary-button.secondary-button-dark {
-  border-color: #ffffff;
-  background-color: #4569a0;
-  color: #ffffff;
-}
-.secondary-button.secondary-button-dark:hover,
-.secondary-button.secondary-button-dark:focus {
-  background-color: #254f90;
-  color: #ffffff;
-}
-</pre>
-</code>
-
 <h5>Icon</h5>
 <code>
 <pre>
@@ -254,10 +209,7 @@ const secondaryButtonCss =
   height: 16px;
 }
 .secondary-button .svg-container svg {
-  fill: #254f90;
-}
-.secondary-button.secondary-button-dark .svg-container svg {
-  fill: #fff;
+  fill: #4569a0;
 }
 .secondary-button:hover .svg-container svg,
 .secondary-button:focus .svg-container svg {
