@@ -5404,7 +5404,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .secondary-button .cta-button .svg-container { display: flex; align-items: center; justify-content: center; margin-left: 6px; height: 16px; width: 16px; }
 
-.design-system-card .buttons-links .secondary-button .cta-button .svg-container svg { min-width: 16px; fill: #254f90; }
+.design-system-card .buttons-links .secondary-button .cta-button .svg-container svg { min-width: 16px; fill: #4569A0; }
 
 .design-system-card .buttons-links .secondary-dark-button .secondary-container { display: flex; align-items: center; justify-content: center; }
 
