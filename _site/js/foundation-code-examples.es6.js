@@ -54,9 +54,6 @@ $(document).ready(function () {
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
   box-shadow: rgb(0 0 0 / 10%) 0 2px 4px 0;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -66,23 +63,24 @@ $(document).ready(function () {
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
-.primary-button:hover,
 .primary-button:focus {
+  cursor: pointer;
+  background: #0F1A3E;
+  border: 2px solid #0F1A3E;
+  box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
+  outline: none;
+}
+.primary-button:hover {
   cursor: pointer;
   border: 2px solid #18335c;
   background: #254f90;
   box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
   outline: none;
 }
-.primary-button:hover {
-  transform: translateY(-3px);
-}
 .primary-button:active {
-  background-color: #18335c;
-  border: solid 2px #18335c;
-  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  background: #0F1A3E;
+  border: 2px solid #0F1A3E;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-  transform: translate(0, -2px);
   color: #ffffff;
 }
 </pre>
@@ -102,6 +100,19 @@ $(document).ready(function () {
 }
 .primary-button .svg-container svg {
   fill: #fff;
+}
+</pre>
+</code>
+
+<h5>Media queries</h5>
+<code>
+<pre>
+@media(max-width: 576px) {
+  .primary-button {
+    font-size: 14px;
+    padding: 8px 24px;
+    line-height: 28px;
+  }
 }
 </pre>
 </code>
@@ -162,9 +173,6 @@ const secondaryButtonCss =
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -182,15 +190,10 @@ const secondaryButtonCss =
   outline: none;
   color: #ffffff;
 }
-.secondary-button:hover {
-  transform: translateY(-3px);
-}
 .secondary-button:active {
   background-color: #18335c;
   border: solid 2px #18335c;
-  transition: box-shadow 0.1s ease, transform 0.1s ease;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-  transform: translate(0, -2px);
   color: #ffffff;
 }
 </pre>
@@ -213,10 +216,20 @@ const secondaryButtonCss =
 }
 .secondary-button:hover .svg-container svg,
 .secondary-button:focus .svg-container svg {
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   fill: #fff;
+}
+</pre>
+</code>
+
+<h5>Media queries</h5>
+<code>
+<pre>
+@media(max-width: 576px) {
+  .secondary-button {
+    font-size: 14px;
+    padding: 8px 24px;
+    line-height: 28px;
+  }
 }
 </pre>
 </code>
@@ -284,20 +297,12 @@ const tertiaryButtonCss =
  text-align: left;
  text-decoration: none;
  width: fit-content;
- transition-property: transform, -webkit-transform;
- transition-duration: 0.4s, 0.4s;
- transition-timing-function: ease, ease;
- transition-delay: 0s, 0s;
 }
 .tertiary-button:hover,
 .tertiary-button:focus,
 .tertiary-button:active {
  cursor: pointer;
  outline: none;
-}
-.tertiary-button:hover,
-.tertiary-button:active {
- transform: translateY(-3px);
 }
 </pre>
 </code>
@@ -325,7 +330,6 @@ const tertiaryButtonCss =
  left: 0;
  top: 0;
  margin: auto 0;
- transform: translateX(-8px);
 }
 .tertiary-button:focus .icon-container .circle-icon,
 .tertiary-button:hover .icon-container .circle-icon {
@@ -2132,9 +2136,6 @@ $(".primary-form-button-code .html-code code pre").text(primaryFormButtonHtml);
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
   box-shadow: rgb(0 0 0 / 10%) 0 2px 4px 0;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2144,23 +2145,25 @@ $(".primary-form-button-code .html-code code pre").text(primaryFormButtonHtml);
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
-.primary-button:hover,
 .primary-button:focus {
+  cursor: pointer;
+  background: #0F1A3E;
+  border: 2px solid #0F1A3E;
+  box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
+  outline: none;
+}
+.primary-button:hover {
   cursor: pointer;
   border: 2px solid #18335c;
   background: #254f90;
   box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
   outline: none;
 }
-.primary-button:hover {
-  transform: translateY(-3px);
-}
 .primary-button:active {
-  background-color: #18335c;
-  border: solid 2px #18335c;
-  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  cursor: pointer;
+  background: #0F1A3E;
+  border: 2px solid #0F1A3E;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-  transform: translate(0, -2px);
   color: #ffffff;
 }
 .primary-button.disabled,
@@ -2194,6 +2197,18 @@ $(".primary-form-button-code .html-code code pre").text(primaryFormButtonHtml);
 }
 </pre>
 </code>
+<h5>Media queries</h5>
+<code>
+<pre>
+@media(max-width: 576px) {
+  .primary-button {
+    font-size: 14px;
+    padding: 8px 24px;
+    line-height: 28px;
+  }
+}
+</pre>
+</code>
 `
    $(".primary-form-button-code .css-code").html(primaryFormButtonCss);
 	
@@ -2223,9 +2238,6 @@ const secondaryFormButtonCss =
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2243,15 +2255,10 @@ const secondaryFormButtonCss =
   outline: none;
   color: #ffffff;
 }
-.secondary-button:hover {
-  transform: translateY(-3px);
-}
 .secondary-button:active {
   background-color: #18335c;
   border: solid 2px #18335c;
-  transition: box-shadow 0.1s ease, transform 0.1s ease;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-  transform: translate(0, -2px);
   color: #ffffff;
 }
 .secondary-button.disabled,
@@ -2305,10 +2312,19 @@ const secondaryFormButtonCss =
 }
 .secondary-button:hover .svg-container svg,
 .secondary-button:focus .svg-container svg {
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   fill: #fff;
+}
+</pre>
+</code>
+<h5>Media queries</h5>
+<code>
+<pre>
+@media(max-width: 576px) {
+  .secondary-button {
+    font-size: 14px;
+    padding: 8px 24px;
+    line-height: 28px;
+  }
 }
 </pre>
 </code>
@@ -2354,9 +2370,6 @@ const buttonGroupCss =
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
   box-shadow: rgb(0 0 0 / 10%) 0 2px 4px 0;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   display: inline-block;
   border: solid 2px #254f90;
   background-color: #4569a0;
@@ -2364,24 +2377,26 @@ const buttonGroupCss =
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
-.primary-button:hover,
 .primary-button:focus {
+  cursor: pointer;
+  background: #0F1A3E;
+  border: 2px solid #0F1A3E;
+  box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
+  outline: none;
+}
+.primary-button:hover {
   cursor: pointer;
   border: 2px solid #18335c;
   background: #254f90;
   box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
   outline: none;
 }
-.primary-button:hover {
-  transform: translateY(-3px);
-}
 .primary-button:active {
-  background-color: #18335c !important;
-  border: solid 2px #18335c !important;
-  transition: box-shadow 0.1s ease, transform 0.1s ease !important;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2) !important;
-  transform: translate(0, -2px) !important;
-  color: #ffffff !important;
+  cursor: pointer;
+  background: #0F1A3E;
+  border: 2px solid #0F1A3E;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 </pre>
 </code>
@@ -2411,6 +2426,18 @@ const buttonGroupCss =
 .tertiary-link:visited {
   color: #a42079;
   border-bottom-color: #dfb1d0;
+}
+</pre>
+</code>
+<h5>Media queries</h5>
+<code>
+<pre>
+@media(max-width: 576px) {
+  .primary-button {
+    font-size: 14px;
+    padding: 8px 24px;
+    line-height: 28px;
+  }
 }
 </pre>
 </code>
@@ -2619,9 +2646,6 @@ const primaryTextButtonFieldCss =
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
   box-shadow: rgb(0 0 0 / 10%) 0 2px 4px 0;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2632,25 +2656,31 @@ const primaryTextButtonFieldCss =
   text-decoration: none;
 }
 .primary-button:hover,
-.primary-button:focus,
-.form-field-container
-  .input-container.button-input-container.input-focused
-  .primary-button {
+.form-field-container .input-container.button-input-container.input-focused .primary-button {
   cursor: pointer;
   border: 2px solid #18335c;
   background: #254f90;
   box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
   outline: none;
 }
+.primary-button:focus {
+  cursor: pointer;
+  background: #0F1A3E;
+  border: 2px solid #18335c;
+  box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
+  outline: none;
+}
 .primary-button:hover {
-  transform: translateY(-3px);
+  cursor: pointer;  
+  background: #254f90;
+  box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
+  border: 2px solid #18335c;
+  outline: none;
 }
 .primary-button:active {
-  background-color: #18335c !important;
-  border: solid 2px #18335c !important;
-  transition: box-shadow 0.1s ease, transform 0.1s ease !important;
+  background-color: #0F1A3E !important;
+  border: solid 2px #0F1A3E !important;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2) !important;
-  transform: translate(0, -2px) !important;
   color: #ffffff !important;
 }
 .form-field-container .input-container.button-input-container a {
@@ -2863,9 +2893,6 @@ const secondaryTextButtonFieldCss =
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2884,15 +2911,10 @@ const secondaryTextButtonFieldCss =
   outline: none;
   color: #ffffff;
 }
-.secondary-button:hover {
-  transform: translateY(-3px);
-}
 .secondary-button:active {
   background-color: #18335c !important;
   border: solid 2px #18335c !important;
-  transition: box-shadow 0.1s ease, transform 0.1s ease !important;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2) !important;
-  transform: translate(0, -2px) !important;
   color: #ffffff !important;
 }
 .form-field-container .input-container.button-input-container a {

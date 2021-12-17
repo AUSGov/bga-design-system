@@ -1085,15 +1085,7 @@
 			.button-wrapper {
 				width: auto;
 				display: inline-block;
-				transition-property: transform, -webkit-transform;
-				transition-duration: 0.4s, 0.4s;
-				transition-timing-function: ease, ease;
-				transition-delay: 0s, 0s;
 				margin-top: 8px;
-
-				&:hover {
-					transform: translateY(-0.1875rem);
-				}
 
 				.cta-button {
 					box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
@@ -1107,22 +1099,26 @@
 					color: $white;
 					@include font-format($font-family, $font-semibold, normal);
 
-					&:hover,
-					&:active {
-						box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                    &:focus {
+                        background: $blue-focus 0% 0% no-repeat;
+                        border: solid 2px $blue-focus;
+                    }
+                    &:active {
+						background: $blue-focus 0% 0% no-repeat;
+                        border: solid 2px $blue-focus;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+						border-radius: 6px;
+						opacity: 1;
+					}
+                   
+					&:hover {
+						background: $blue-primary 0% 0% no-repeat;
+						border: 2px solid $blue-active;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 						border-radius: 6px;
 						opacity: 1;
 					}
 
-					&:hover {
-						background: $blue-primary 0% 0% no-repeat;
-						border: 2px solid $blue-active;
-					}
-
-					&:active {
-						background: $blue-active 0% 0% no-repeat;
-						border: 2px solid $blue-active;
-					}
 				}
 
 				.secondary-button {
@@ -1181,9 +1177,20 @@
 						left: 0;
 					}
 				}
+                
+                &[data-state="focus-state"] {
+                    
+                    .cta-button {
+						box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+						color: $white;
+						border-radius: 6px;
+						opacity: 1;
+						background: $blue-focus 0% 0% no-repeat;
+						border: 2px solid $blue-focus;
+					}
+                }
 
 				&[data-state="hover-state"] {
-					transform: translateY(-0.1875rem);
 
 					.cta-button {
 						box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
@@ -1192,10 +1199,6 @@
 						color: $white;
 						background: $blue-primary 0% 0% no-repeat;
 						border: 2px solid $blue-active;
-					}
-
-					&.tertiary-button-wrapper {
-						transform: translateY(0px);
 					}
 
 					.add-field {
@@ -1209,15 +1212,14 @@
 				}
 
 				&[data-state="active-state"] {
-					transform: translateY(-0.1875rem);
 
 					.cta-button {
 						box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 						color: $white;
 						border-radius: 6px;
 						opacity: 1;
-						background: $blue-active 0% 0% no-repeat;
-						border: 2px solid $blue-active;
+						background: $blue-focus 0% 0% no-repeat;
+						border: 2px solid $blue-focus;
 					}
 
 					.tertiary-link {
@@ -1227,7 +1229,6 @@
 					}
 
 					&.tertiary-button-wrapper {
-						transform: translateY(0px);
 
 						.tertiary-link {
 							color: $blue-active;
@@ -1621,7 +1622,7 @@
 				}
 
 				&.text-box-button-combo-example .combo-button-wrapper #primary-combo {
-					background: $blue-primary url(../assets/Icon-plus-white.svg) no-repeat;
+					background: $blue-focus url(../assets/Icon-plus-white.svg) no-repeat;
 					background-position: left 24px center;
 					color: $white;
 					border: solid 3px $blue-primary;
@@ -1670,7 +1671,7 @@
 				}
 
 				&.text-box-button-combo-example .combo-button-wrapper #primary-combo {
-					background: $blue-active url(../assets/Icon-plus-white.svg) no-repeat;
+					background: $blue-focus url(../assets/Icon-plus-white.svg) no-repeat;
 					background-position: left 24px center;
 					color: $white;
 					border: solid 3px $blue-primary;
@@ -1958,6 +1959,23 @@
 				}
                
 			}
+            
+            @media(max-width: 576px) {
+                .button-wrapper {
+                    .cta-button {
+                        font-size: 14px;
+                        padding: 8px 24px;
+                        line-height: 28px;
+                    }
+                }
+                &.text-box-button-combo-example {
+                    .combo-button-wrapper {
+                        .combo-button {
+                            
+                        }
+                    }
+                }
+            }
 		}
 	}
 
@@ -2034,6 +2052,11 @@
 			&:focus,
 			&:hover {
 				border: solid 0.125rem $white !important;
+                -webkit-transform: none; /* Safari and Chrome */
+                   -moz-transform: none; /* Firefox */
+                    -ms-transform: none; /* IE 9 */
+                     -o-transform: none; /* Opera */
+                        transform: none;
 			}
 		}
 
@@ -2092,8 +2115,6 @@
 					}
 
 					&:focus {
-						//border: solid $red-negative-dark 2px;
-						// border: none;
 						background: $grey-lightest;
 						color: $blue-active;
 					}
@@ -2212,7 +2233,6 @@
 						background: $blue-primary url(../assets/Icon-DF-plus-white.svg) no-repeat;
 						background-position: center left 16px;
 						box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important;
-						transform: translateY(-0.25rem);
 						border-color: $white;
 					}
 				}
@@ -2222,7 +2242,6 @@
 					background-color: $blue-primary;
 					border: 0.125rem solid #18335c !important;
 					box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important;
-					transform: translateY(-0.25rem);
 					color: $white;
 					border: solid 0.125rem $white !important;
 				}
@@ -2234,7 +2253,6 @@
 						background: $blue-active url(../assets/Icon-DF-plus-white.svg) no-repeat;
 						background-position: center left 16px;
 						box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2);
-						transform: translateY(-0.125rem);
 						border-color: $white;
 					}
 				}
@@ -2243,7 +2261,6 @@
 					background-color: $blue-active !important;
 					color: $white;
 					border-color: $white;
-					transform: translateY(-0.125rem);
 					box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2);
 				}
 			}
@@ -2259,6 +2276,14 @@
 				}
 			}
 		}
+        
+        @media(max-width: 576px) {
+            button#supportPathwaySearchButton {
+                font-size: 14px;
+                padding: 8px 24px;
+                line-height: 28px;
+            }
+        }
 	}
 
 	.hero-illustration {
@@ -2956,7 +2981,6 @@
 
 	.feature-box {
 		.feature-box-container {
-			//background: #FFF8E0;
 			background: #fff0c1;
 			padding: 32px;
 			border-top: 4px solid $yellow-secondary-mid;
@@ -3092,15 +3116,7 @@
 		.cta-button-wrapper {
 			width: auto;
 			display: inline-block;
-			transition-property: transform, -webkit-transform;
-			transition-duration: 0.4s, 0.4s;
-			transition-timing-function: ease, ease;
-			transition-delay: 0s, 0s;
 			margin-top: 4px;
-
-			&:hover {
-				transform: translateY(-0.1875rem);
-			}
 		}
 
 		.cta-button {
@@ -3110,12 +3126,19 @@
 			border-radius: 6px;
 			opacity: 1;
 			padding: 8px 32px;
+            height: 48px;
+            display: block;
 			text-align: center;
 			letter-spacing: 0;
 			color: $white;
 			@include font-format($font-family, $font-semibold, normal);
 
-			&:hover {
+            &:focus {
+                background: $blue-focus 0% 0% no-repeat padding-box;
+                border: 2px solid $blue-focus;
+            }
+            
+            &:hover {
 				background: $blue-primary 0% 0% no-repeat padding-box;
 				box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 				border: 2px solid $blue-active;
@@ -3124,8 +3147,9 @@
 			}
 
 			&:active {
-				background: $blue-active 0% 0% no-repeat padding-box;
+				background: $blue-focus 0% 0% no-repeat padding-box;
 				box-shadow: 0px 3px 6px #0000004d;
+                border: 2px solid $blue-focus;
 				border-radius: 6px;
 				opacity: 1;
 			}
@@ -3291,6 +3315,11 @@
 		.cta-container {
 			padding: 24px;
 		}
+        .cta-button {
+            padding: 8px 24px;
+            font-size: 14px;
+            line-height: 28px;
+        }
 	}
 
 	.mobile-example .advisor-profile,
@@ -4503,17 +4532,9 @@
 		}
 
 		.button-wrapper {
-			transition-property: transform, -webkit-transform;
-			transition-duration: 0.4s, 0.4s;
-			transition-timing-function: ease, ease;
-			transition-delay: 0s, 0s;
 			width: auto;
 			display: block;
 			margin: 0 auto;
-
-			&:hover {
-				transform: translateY(-0.1875rem);
-			}
 		}
 
 		.link-wrapper {
@@ -4580,19 +4601,21 @@
 						fill: #fff;
 					}
 				}
-
-				&:hover,
-				&:focus {
+                &:focus {
+                    background: $blue-focus 0% 0% no-repeat padding-box;
+					box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+					border: 2px solid $blue-focus;
+                }
+				&:hover {
 					background: $blue-primary 0% 0% no-repeat padding-box;
 					box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
 					border: 2px solid $blue-active;
-
-					&:active {
-						background: $blue-active 0% 0% no-repeat padding-box;
-						box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-						border: 2px solid $blue-active;
-					}
 				}
+                &:active {
+                    background: $blue-focus 0% 0% no-repeat padding-box;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+                    border: 2px solid $blue-focus;
+                }
 			}
 		}
 
@@ -4842,10 +4865,6 @@
 				transition-property: box-shadow, -webkit-box-shadow;
 				transition-timing-function: ease, ease;
 
-				// &:visited {
-				//   color: $purple-dark;
-				//   border-color: $purple-light;
-				// }
 				&:focus {
 					border: 0.0625rem dotted $blue-primary;
 					border-bottom: rgb(116, 143, 184) solid 2px;
@@ -5006,8 +5025,8 @@
 				}
 
 				.primary-button .cta-button {
-					background: #254f90 0% 0% no-repeat padding-box;
-					border: solid 2px $blue-active;
+					background: $blue-focus 0% 0% no-repeat padding-box;
+					border: solid 2px $blue-focus;
 				}
 
 				.primary-dark-button .cta-button {
@@ -5065,10 +5084,7 @@
 			}
 
 			&[data-state="hover-state"] {
-				.button-wrapper {
-					transform: translateY(-0.1875rem);
-				}
-
+				
 				.primary-button .cta-button {
 					background: $blue-primary 0% 0% no-repeat padding-box;
 					box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
@@ -5155,10 +5171,6 @@
 					}
 				}
 
-				.button-wrapper {
-					transform: translateY(-0.1875rem);
-				}
-
 				.tertiary-link {
 					span {
 						color: $black;
@@ -5166,14 +5178,14 @@
 				}
 
 				.primary-button .cta-button {
-					background: $blue-active 0% 0% no-repeat padding-box;
+					background: $blue-focus 0% 0% no-repeat padding-box;
 					box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
-					border-color: $blue-active;
+					border-color: $blue-focus;
 				}
 
 				.primary-dark-button .cta-button {
-					background: $blue-active 0% 0% no-repeat padding-box;
-					border-color: $blue-active;
+					background: $blue-focus 0% 0% no-repeat padding-box;
+					border-color: $blue-focus;
 					color: $white;
 
 					.svg-container {
@@ -5184,7 +5196,7 @@
 				}
 
 				.secondary-button .cta-button {
-					background: $blue-active 0% 0% no-repeat padding-box;
+					background: $blue-focus 0% 0% no-repeat padding-box;
 					color: $white;
 					border-color: $blue-active;
 
@@ -5267,6 +5279,14 @@
 				}
 			}
 		}
+        
+        @media(max-width: 576px) {
+            .cta-button {
+                font-size: 14px;
+                padding: 8px 24px;
+                line-height: 28px;
+            }
+        }
 	}
 
 	.progress-indicator {

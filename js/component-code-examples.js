@@ -1865,10 +1865,6 @@ const standardCallToActionCss=`
 .call-to-action .button-wrapper {
   width: auto;
   display: inline-block;
-  transition-property: transform, -webkit-transform;
-  transition-duration: 0.4s, 0.4s;
-  transition-timing-function: ease, ease;
-  transition-delay: 0s, 0s;
   margin-top: 4px;
 }
 .call-to-action .button {
@@ -1876,6 +1872,8 @@ const standardCallToActionCss=`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
   border: 2px solid #254f90;
   border-radius: 6px;
+  height: 48px;
+  display: block;
   opacity: 1;
   padding: 8px 32px;
   text-align: center;
@@ -1884,8 +1882,11 @@ const standardCallToActionCss=`
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
-  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
   text-decoration: none !important;
+}
+.call-to-action .button:focus {
+  border: 2px solid #0F1A3E;
+  background: #0F1A3E 0% 0% no-repeat padding-box;
 }
 .call-to-action .button:hover {
   background: #254f90 0% 0% no-repeat padding-box;
@@ -1893,9 +1894,6 @@ const standardCallToActionCss=`
   border: 2px solid #18335c;
   border-radius: 6px;
   opacity: 1;
-}
-.call-to-action .button-wrapper:hover {
-  transform: translateY(-0.1875rem);
 }
 </pre>
 </code>
@@ -1907,6 +1905,11 @@ const standardCallToActionCss=`
 @media (max-width: 576px) {
   .call-to-action {
     padding: 24px;
+  }
+  .call-to-action .button {
+    font-size: 14px;
+    padding: 8px 24px;
+    line-height: 28px;
   }
 }
 </pre>

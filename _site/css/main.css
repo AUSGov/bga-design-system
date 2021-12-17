@@ -4350,17 +4350,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .checkbox-item label:before { height: 28px; width: 28px; content: " "; border: solid 1px #495C74; position: absolute; top: 0; left: 0; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; margin-top: 8px; }
-
-.design-system-card .form-elements .form-example-container .button-wrapper:hover { transform: translateY(-0.1875rem); }
+.design-system-card .form-elements .form-example-container .button-wrapper { width: auto; display: inline-block; margin-top: 8px; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper .cta-button { box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; background: #4569A0 0% 0% no-repeat; border: 2px solid #254F90; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover, .design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; }
+.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:focus { background: #0F1A3E 0% 0% no-repeat; border: solid 2px #0F1A3E; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover { background: #254F90 0% 0% no-repeat; border: 2px solid #18335C; }
+.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { background: #0F1A3E 0% 0% no-repeat; border: solid 2px #0F1A3E; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:active { background: #18335C 0% 0% no-repeat; border: 2px solid #18335C; }
+.design-system-card .form-elements .form-example-container .button-wrapper .cta-button:hover { background: #254F90 0% 0% no-repeat; border: 2px solid #18335C; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper .secondary-button { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; background: #ffffff 0% 0% no-repeat padding-box; border: 2px solid #4569A0; color: #4569A0; }
 
@@ -4378,23 +4376,17 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .button-wrapper .add-field:before { background: url(../assets/Icon-add-circle-mid-blue.svg) no-repeat; content: " "; height: 32px; width: 32px; display: block; position: absolute; top: calc(50% - 16px); left: 0; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] { transform: translateY(-0.1875rem); }
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="focus-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; color: #ffffff; border-radius: 6px; opacity: 1; background: #0F1A3E 0% 0% no-repeat; border: 2px solid #0F1A3E; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-radius: 6px; opacity: 1; color: #ffffff; background: #254F90 0% 0% no-repeat; border: 2px solid #18335C; }
-
-.design-system-card .form-elements .form-example-container .button-wrapper.tertiary-button-wrapper[data-state="hover-state"] { transform: translateY(0px); }
 
 .design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] .add-field { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper[data-state="hover-state"] .add-field:before { background: url(../assets/Icon-add-circle-blue.svg) no-repeat; }
 
-.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] { transform: translateY(-0.1875rem); }
-
-.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; color: #ffffff; border-radius: 6px; opacity: 1; background: #18335C 0% 0% no-repeat; border: 2px solid #18335C; }
+.design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] .cta-button { box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; color: #ffffff; border-radius: 6px; opacity: 1; background: #0F1A3E 0% 0% no-repeat; border: 2px solid #0F1A3E; }
 
 .design-system-card .form-elements .form-example-container .button-wrapper[data-state="active-state"] .tertiary-link span { color: black; }
-
-.design-system-card .form-elements .form-example-container .button-wrapper.tertiary-button-wrapper[data-state="active-state"] { transform: translateY(0px); }
 
 .design-system-card .form-elements .form-example-container .button-wrapper.tertiary-button-wrapper[data-state="active-state"] .tertiary-link { color: #18335C; }
 
@@ -4510,7 +4502,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="focus-state"] .text-box-with-units input { border-right: 0 !important; border-left: 0 !important; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="focus-state"] .combo-button-wrapper #primary-combo { background: #254F90 url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="focus-state"] .combo-button-wrapper #primary-combo { background: #0F1A3E url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="focus-state"] .combo-button-wrapper #secondary-combo { background: #254F90 url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
@@ -4524,7 +4516,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container[data-state="active-state"] input, .design-system-card .form-elements .form-example-container[data-state="active-state"] .combo-button { outline: none; border: solid 3px #254F90; }
 
-.design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="active-state"] .combo-button-wrapper #primary-combo { background: #18335C url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
+.design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="active-state"] .combo-button-wrapper #primary-combo { background: #0F1A3E url(../assets/Icon-plus-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
 .design-system-card .form-elements .form-example-container.text-box-button-combo-example[data-state="active-state"] .combo-button-wrapper #secondary-combo { background: #18335C url(../assets/Icon-search-white.svg) no-repeat; background-position: left 24px center; color: #ffffff; border: solid 3px #254F90; border-left: 0px; margin-left: -5px; }
 
@@ -4620,6 +4612,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .form-elements .form-example-container .checkbox-item[data-state="disabled-state"] { border: solid 1px #E2E2E2 !important; background-color: #F5F5F5 !important; color: #8E8E8E !important; }
 
+@media (max-width: 576px) { .design-system-card .form-elements .form-example-container .button-wrapper .cta-button { font-size: 14px; padding: 8px 24px; line-height: 28px; } }
+
 .design-system-card .dynamic-form-elements h1, .design-system-card .dynamic-form-elements h2, .design-system-card .dynamic-form-elements h3, .design-system-card .dynamic-form-elements h4, .design-system-card .dynamic-form-elements p, .design-system-card .dynamic-form-elements label, .design-system-card .dynamic-form-elements a { color: #ffffff; }
 
 .design-system-card .dynamic-form-elements .dynamic-hide { display: none; }
@@ -4642,7 +4636,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .dynamic-form-elements button#supportPathwaySearchButton { border: solid 0.125rem #254F90; }
 
-.design-system-card .dynamic-form-elements button#supportPathwaySearchButton:focus, .design-system-card .dynamic-form-elements button#supportPathwaySearchButton:hover { border: solid 0.125rem #ffffff !important; }
+.design-system-card .dynamic-form-elements button#supportPathwaySearchButton:focus, .design-system-card .dynamic-form-elements button#supportPathwaySearchButton:hover { border: solid 0.125rem #ffffff !important; -webkit-transform: none; /* Safari and Chrome */ -moz-transform: none; /* Firefox */ -ms-transform: none; /* IE 9 */ -o-transform: none; /* Opera */ transform: none; }
 
 .design-system-card .dynamic-form-elements .multi-select-group { margin-top: 16px; }
 
@@ -4702,15 +4696,17 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .dynamic-form-elements .dynamic-example[data-state="error-state"] .question-wrapper .validation-message { display: block; color: #D2201E; margin-top: 8px; padding: 0; font-size: 16px; font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; }
 
-.design-system-card .dynamic-form-elements .dynamic-example[data-state="hover-state"] .multi-select-group button { background: #254F90 url(../assets/Icon-DF-plus-white.svg) no-repeat; background-position: center left 16px; box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important; transform: translateY(-0.25rem); border-color: #ffffff; }
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="hover-state"] .multi-select-group button { background: #254F90 url(../assets/Icon-DF-plus-white.svg) no-repeat; background-position: center left 16px; box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important; border-color: #ffffff; }
 
-.design-system-card .dynamic-form-elements .dynamic-example[data-state="hover-state"] button#supportPathwaySearchButton { border: solid 0.125rem #ffffff !important; background-color: #254F90; border: 0.125rem solid #18335c !important; box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important; transform: translateY(-0.25rem); color: #ffffff; border: solid 0.125rem #ffffff !important; }
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="hover-state"] button#supportPathwaySearchButton { border: solid 0.125rem #ffffff !important; background-color: #254F90; border: 0.125rem solid #18335c !important; box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3) !important; color: #ffffff; border: solid 0.125rem #ffffff !important; }
 
-.design-system-card .dynamic-form-elements .dynamic-example[data-state="active-state"] .multi-select-group button { background: #18335C url(../assets/Icon-DF-plus-white.svg) no-repeat; background-position: center left 16px; box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2); transform: translateY(-0.125rem); border-color: #ffffff; }
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="active-state"] .multi-select-group button { background: #18335C url(../assets/Icon-DF-plus-white.svg) no-repeat; background-position: center left 16px; box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2); border-color: #ffffff; }
 
-.design-system-card .dynamic-form-elements .dynamic-example[data-state="active-state"] button#supportPathwaySearchButton { background-color: #18335C !important; color: #ffffff; border-color: #ffffff; transform: translateY(-0.125rem); box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2); }
+.design-system-card .dynamic-form-elements .dynamic-example[data-state="active-state"] button#supportPathwaySearchButton { background-color: #18335C !important; color: #ffffff; border-color: #ffffff; box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2); }
 
 .design-system-card .dynamic-form-elements .dynamic-example[data-state="selected-state"] .multi-select-group button { background: #ffffff url(../assets/Icon-DF-tick-blue.svg) no-repeat; background-position: center left 16px; color: #000000; border-color: #ffffff; }
+
+@media (max-width: 576px) { .design-system-card .dynamic-form-elements button#supportPathwaySearchButton { font-size: 14px; padding: 8px 24px; line-height: 28px; } }
 
 .design-system-card .hero-illustration .hero-illustration-container img { margin: 0 auto; display: block; max-width: 100%; }
 
@@ -4954,15 +4950,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .call-to-action .cta-container .call-out-content-detail ul:last-child li:last-of-type, .design-system-card .callout .cta-container .call-out-content-detail ul:last-child li:last-of-type, .design-system-card .advisor-profile .cta-container .call-out-content-detail ul:last-child li:last-of-type { padding-bottom: 0; }
 
-.design-system-card .call-to-action .cta-button-wrapper, .design-system-card .callout .cta-button-wrapper, .design-system-card .advisor-profile .cta-button-wrapper { width: auto; display: inline-block; transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; margin-top: 4px; }
+.design-system-card .call-to-action .cta-button-wrapper, .design-system-card .callout .cta-button-wrapper, .design-system-card .advisor-profile .cta-button-wrapper { width: auto; display: inline-block; margin-top: 4px; }
 
-.design-system-card .call-to-action .cta-button-wrapper:hover, .design-system-card .callout .cta-button-wrapper:hover, .design-system-card .advisor-profile .cta-button-wrapper:hover { transform: translateY(-0.1875rem); }
+.design-system-card .call-to-action .cta-button, .design-system-card .callout .cta-button, .design-system-card .advisor-profile .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; height: 48px; display: block; text-align: center; letter-spacing: 0; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
 
-.design-system-card .call-to-action .cta-button, .design-system-card .callout .cta-button, .design-system-card .advisor-profile .cta-button { background: #4569A0 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px; border: 2px solid #254F90; border-radius: 6px; opacity: 1; padding: 8px 32px; text-align: center; letter-spacing: 0; color: #ffffff; font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; }
+.design-system-card .call-to-action .cta-button:focus, .design-system-card .callout .cta-button:focus, .design-system-card .advisor-profile .cta-button:focus { background: #0F1A3E 0% 0% no-repeat padding-box; border: 2px solid #0F1A3E; }
 
 .design-system-card .call-to-action .cta-button:hover, .design-system-card .callout .cta-button:hover, .design-system-card .advisor-profile .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; border-radius: 6px; opacity: 1; }
 
-.design-system-card .call-to-action .cta-button:active, .design-system-card .callout .cta-button:active, .design-system-card .advisor-profile .cta-button:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004d; border-radius: 6px; opacity: 1; }
+.design-system-card .call-to-action .cta-button:active, .design-system-card .callout .cta-button:active, .design-system-card .advisor-profile .cta-button:active { background: #0F1A3E 0% 0% no-repeat padding-box; box-shadow: 0px 3px 6px #0000004d; border: 2px solid #0F1A3E; border-radius: 6px; opacity: 1; }
 
 .design-system-card .call-to-action .contact-card-content .contact-line-content-description, .design-system-card .callout .contact-card-content .contact-line-content-description, .design-system-card .advisor-profile .contact-card-content .contact-line-content-description { padding-bottom: 16px; }
 
@@ -5001,6 +4997,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .mobile-example .call-to-action h2, .design-system-card .mobile-media-query .call-to-action h2 { font-size: 24px; line-height: 32px; }
 
 .design-system-card .mobile-example .call-to-action .cta-container, .design-system-card .mobile-media-query .call-to-action .cta-container { padding: 24px; }
+
+.design-system-card .mobile-example .call-to-action .cta-button, .design-system-card .mobile-media-query .call-to-action .cta-button { padding: 8px 24px; font-size: 14px; line-height: 28px; }
 
 .design-system-card .mobile-example .advisor-profile h2, .design-system-card .mobile-media-query .advisor-profile h2 { font-size: 24px; line-height: 32px; }
 
@@ -5342,9 +5340,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links h4 { padding-bottom: 16px; }
 
-.design-system-card .buttons-links .button-wrapper { transition-property: transform, -webkit-transform; transition-duration: 0.4s, 0.4s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; width: auto; display: block; margin: 0 auto; }
-
-.design-system-card .buttons-links .button-wrapper:hover { transform: translateY(-0.1875rem); }
+.design-system-card .buttons-links .button-wrapper { width: auto; display: block; margin: 0 auto; }
 
 .design-system-card .buttons-links .link-wrapper { margin-top: 8px; width: auto; display: inline-block; }
 
@@ -5366,9 +5362,11 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .primary-button .cta-button .svg-container svg { min-width: 16px; fill: #fff; }
 
-.design-system-card .buttons-links .primary-button .cta-button:hover, .design-system-card .buttons-links .primary-button .cta-button:focus { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
+.design-system-card .buttons-links .primary-button .cta-button:focus { background: #0F1A3E 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #0F1A3E; }
 
-.design-system-card .buttons-links .primary-button .cta-button:hover:active, .design-system-card .buttons-links .primary-button .cta-button:focus:active { background: #18335C 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
+.design-system-card .buttons-links .primary-button .cta-button:hover { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #18335C; }
+
+.design-system-card .buttons-links .primary-button .cta-button:active { background: #0F1A3E 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: 2px solid #0F1A3E; }
 
 .design-system-card .buttons-links .primary-dark-button .primary-container { display: flex; align-items: center; justify-content: center; }
 
@@ -5488,7 +5486,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .button-example[data-state="focus-state"] .tertiary-link span { border: 1px dotted #254f90; outline: none; }
 
-.design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-button .cta-button { background: #254f90 0% 0% no-repeat padding-box; border: solid 2px #18335C; }
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-button .cta-button { background: #0F1A3E 0% 0% no-repeat padding-box; border: solid 2px #0F1A3E; }
 
 .design-system-card .buttons-links .button-example[data-state="focus-state"] .primary-dark-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; border: solid 2px #ffffff; color: #ffffff; }
 
@@ -5507,8 +5505,6 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .buttons-links .button-example[data-state="focus-state"] .link .link-text { border: 0.0625rem dotted #254F90; outline: none; }
 
 .design-system-card .buttons-links .button-example[data-state="focus-state"] .link-dark .link-text { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
-
-.design-system-card .buttons-links .button-example[data-state="hover-state"] .button-wrapper { transform: translateY(-0.1875rem); }
 
 .design-system-card .buttons-links .button-example[data-state="hover-state"] .primary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: solid 2px #18335C; }
 
@@ -5540,17 +5536,15 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .button-example[data-state="active-state"] .add-field:before { background: url(../assets/Icon-add-circle-blue-active.svg) no-repeat; }
 
-.design-system-card .buttons-links .button-example[data-state="active-state"] .button-wrapper { transform: translateY(-0.1875rem); }
-
 .design-system-card .buttons-links .button-example[data-state="active-state"] .tertiary-link span { color: #000000; }
 
-.design-system-card .buttons-links .button-example[data-state="active-state"] .primary-button .cta-button { background: #18335C 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-color: #18335C; }
+.design-system-card .buttons-links .button-example[data-state="active-state"] .primary-button .cta-button { background: #0F1A3E 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border-color: #0F1A3E; }
 
-.design-system-card .buttons-links .button-example[data-state="active-state"] .primary-dark-button .cta-button { background: #18335C 0% 0% no-repeat padding-box; border-color: #18335C; color: #ffffff; }
+.design-system-card .buttons-links .button-example[data-state="active-state"] .primary-dark-button .cta-button { background: #0F1A3E 0% 0% no-repeat padding-box; border-color: #0F1A3E; color: #ffffff; }
 
 .design-system-card .buttons-links .button-example[data-state="active-state"] .primary-dark-button .cta-button .svg-container svg { fill: #fff; }
 
-.design-system-card .buttons-links .button-example[data-state="active-state"] .secondary-button .cta-button { background: #18335C 0% 0% no-repeat padding-box; color: #ffffff; border-color: #18335C; }
+.design-system-card .buttons-links .button-example[data-state="active-state"] .secondary-button .cta-button { background: #0F1A3E 0% 0% no-repeat padding-box; color: #ffffff; border-color: #18335C; }
 
 .design-system-card .buttons-links .button-example[data-state="active-state"] .secondary-button .cta-button .svg-container svg { fill: #fff; }
 
@@ -5579,6 +5573,8 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 .design-system-card .buttons-links .button-example[data-state="disabled-state"] .add-field { color: #8E8E8E; }
 
 .design-system-card .buttons-links .button-example[data-state="disabled-state"] .add-field:before { background: url(../assets/Icon-add-circle-grey.svg) no-repeat; }
+
+@media (max-width: 576px) { .design-system-card .buttons-links .cta-button { font-size: 14px; padding: 8px 24px; line-height: 28px; } }
 
 .design-system-card .progress-indicator .progress-percentage { font-family: "Open Sans", sans-serif; font-weight: 400; font-style: normal; font-size: 14px; line-height: normal; color: #666666; margin-bottom: 16px; }
 
