@@ -438,21 +438,24 @@ const linkTextCss =
  color: #a42079;
  border-bottom-color: #dfb1d0;
 }
+.link-text:focus {
+ border: 2px solid #2F70BF;
+ border-radius: 3px;
+ background-color:#E5EDF7;
+ box-shadow: none;
+ outline: none;
+}
 .link-text:hover {
  background-color: transparent;
  border-bottom: none;
  box-shadow: #ddeeff 0px -20px 0px 0px inset;
  text-decoration: none;
 }
-.link-text:focus {
- border: 1px dotted #254f90;
- border-bottom: #748fb8 solid 2px;
- outline: none;
-}
 .link-text:active {
- color: #000000;
- border-bottom: #748fb8 solid 2px;
+ color: #333333;
+ background-color: #E5EDF7;
  box-shadow: none;
+ border: none;
 }
 </pre>
 </code>
@@ -469,14 +472,27 @@ const linkTextCss =
  color: #ffffff;
  border-bottom: #ffffff solid 2px;
 }
-.link-text.link-text-light:hover,
 .link-text.link-text-light:focus {
- box-shadow: inset 0 -20px 0 #96b7df;
- border-bottom: none;
- color: #254f90;
+ border: 2px solid #96B7DF;
+ border-radius: 3px;
+ box-shadow: none;
+ outline: none;
+ background: #96B7DF;
+ color: #333333;
+}
+.link-text.link-text-light:hover {
+ box-shadow: none;
+ border: none;
+ color: #333333;
+ background: #96B7DF;  
+ border-radius: none;
 }
 .link-text.link-text-light:active {
- color: #000000;
+ color: #333333;
+ background: #96B7DF;
+ box-shadow: none;
+ border: none;
+ border-radius: none;
 }
 </pre>
 </code>
@@ -571,25 +587,26 @@ const paginationCss =
 }
 .pagination a.active {
  color: #000000;
- background: #e5edf7;
+ background: #B3C2D8;
  padding: 0 6px;
  border-radius: 2px;
 }
 .pagination a:focus {
- border: 1px dotted #748fb8;
+ background-color: #254F90;
+ color: #ffffff;
+ border-radius: 2px;
  outline: none;
 }
 .pagination a:hover {
- background-color: #e5edf7;
+ background-color: #4569A0;
+ color: #ffffff;
  border-radius: 2px;
  padding: 0 6px;
 }
 .pagination a:active {
  color: #000;
- background: #b3c2d8;
- border: 1px dotted transparent;
+ background: #B3C2D8;
  border-radius: 2px;
- border: 1px dotted #748fb8;
 }
 .pagination a:active .svg-container svg path {
  fill: #000;

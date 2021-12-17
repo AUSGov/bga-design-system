@@ -5436,19 +5436,19 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .link .link-text { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; background-color: transparent; border: none; border-bottom: #748FB8 solid 2px; box-shadow: none; cursor: pointer; display: inline; font-family: "Open Sans", sans-serif; font-size: 16px; font-weight: 600; height: auto; letter-spacing: 0.2px; line-height: 28.48px; text-decoration: none; transition-delay: 0s, 0s; transition-duration: 0.25s, 0.25s; transition-property: box-shadow, -webkit-box-shadow; transition-timing-function: ease, ease; }
 
-.design-system-card .buttons-links .link .link-text:focus { border: 0.0625rem dotted #254F90; border-bottom: #748fb8 solid 2px; outline: none; }
+.design-system-card .buttons-links .link .link-text:focus { border: 2px solid #2F70BF; border-radius: 3px; background-color: #E5EDF7; box-shadow: none; outline: none; }
 
-.design-system-card .buttons-links .link .link-text:hover { background-color: transparent; border: none; box-shadow: #ddeeff 0px -20px 0px 0px inset; text-decoration: none; }
+.design-system-card .buttons-links .link .link-text:hover { background-color: transparent; border: none; border-radius: 0; box-shadow: #ddeeff 0px -20px 0px 0px inset; text-decoration: none; }
 
-.design-system-card .buttons-links .link .link-text:active { color: #000000; border-bottom: #748fb8 solid 2px; box-shadow: none; }
+.design-system-card .buttons-links .link .link-text:active { color: #000000; background-color: #E5EDF7; box-shadow: none; border: none; }
 
 .design-system-card .buttons-links .link-dark .link-text { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #ffffff; border-bottom: #ffffff solid 2px; box-shadow: none; }
 
-.design-system-card .buttons-links .link-dark .link-text:focus { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
+.design-system-card .buttons-links .link-dark .link-text:focus { border: 2px solid #96B7DF; border-radius: 3px; box-shadow: none; outline: none; background: #96B7DF; color: #333333; }
 
-.design-system-card .buttons-links .link-dark .link-text:hover { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
+.design-system-card .buttons-links .link-dark .link-text:hover { box-shadow: none; border: none; color: #333333; background: #96B7DF; border-radius: none; }
 
-.design-system-card .buttons-links .link-dark .link-text:active { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #000000; }
+.design-system-card .buttons-links .link-dark .link-text:active { color: #333333; background: #96B7DF; box-shadow: none; border: none; border-radius: none; }
 
 .design-system-card .buttons-links .pagination .pagination-container { padding-top: 8px; }
 
@@ -5456,25 +5456,43 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .pagination a { font-family: "Open Sans", sans-serif; font-weight: 600; font-style: normal; color: #254F90; box-shadow: none; padding: 0 6px; margin: 0 10px; }
 
-.design-system-card .buttons-links .pagination a.current { color: #000000; background: #E5EDF7; border-radius: 2px; }
+.design-system-card .buttons-links .pagination a.current { color: #000000; background: #B3C2D8; border-radius: 2px; }
 
-.design-system-card .buttons-links .pagination a:hover { background-color: #E5EDF7; border-radius: 2px; }
+.design-system-card .buttons-links .pagination a:focus { background-color: #254F90; color: #ffffff; border-radius: 2px; }
+
+.design-system-card .buttons-links .pagination a:hover { background-color: #4569A0; border-radius: 2px; color: #ffffff; }
 
 .design-system-card .buttons-links .pagination a:active { color: #000000; background: #B3C2D8; border-radius: 2px; }
 
 .design-system-card .buttons-links .pagination a.first { background-image: url(../assets/BGAIcon-chevrondouble-left.svg); background-repeat: no-repeat; background-size: 12px 12px; background-position: left 6px center; padding: 0 6px 0 24px; }
 
+.design-system-card .buttons-links .pagination a.first:focus { background-image: url(../assets/BGAIcon-chevrondouble-left-white.svg); }
+
+.design-system-card .buttons-links .pagination a.first:hover { background-image: url(../assets/BGAIcon-chevrondouble-left-white.svg); }
+
 .design-system-card .buttons-links .pagination a.first:active { background-image: url(../assets/BGAIcon-chevrondouble-left-black.svg); }
 
 .design-system-card .buttons-links .pagination a.previous { background-image: url(../assets/BGAIcon-chevron-left.svg); background-repeat: no-repeat; background-size: 8px 12px; background-position: left 6px center; padding: 0 6px 0 20px; }
+
+.design-system-card .buttons-links .pagination a.previous:focus { background-image: url(../assets/BGAIcon-chevron-left-white.svg); }
+
+.design-system-card .buttons-links .pagination a.previous:hover { background-image: url(../assets/BGAIcon-chevron-left-white.svg); }
 
 .design-system-card .buttons-links .pagination a.previous:active { background-image: url(../assets/BGAIcon-chevron-left-black.svg); }
 
 .design-system-card .buttons-links .pagination a.next { background-image: url(../assets/BGAIcon-chevron-right.svg); background-repeat: no-repeat; background-size: 8px 12px; background-position: right 6px center; padding: 0 20px 0 6px; }
 
+.design-system-card .buttons-links .pagination a.next:focus { background-image: url(../assets/BGAIcon-chevron-right-white.svg); }
+
+.design-system-card .buttons-links .pagination a.next:hover { background-image: url(../assets/BGAIcon-chevron-right-white.svg); }
+
 .design-system-card .buttons-links .pagination a.next:active { background-image: url(../assets/BGAIcon-chevron-right-black.svg); }
 
 .design-system-card .buttons-links .pagination a.last { background-image: url(../assets/BGAIcon-chevrondouble-right.svg); background-repeat: no-repeat; background-size: 12px 12px; background-position: right 6px center; padding: 0 24px 0 6px; }
+
+.design-system-card .buttons-links .pagination a.last:focus { background-image: url(../assets/BGAIcon-chevrondouble-right-white.svg); }
+
+.design-system-card .buttons-links .pagination a.last:hover { background-image: url(../assets/BGAIcon-chevrondouble-right-white.svg); }
 
 .design-system-card .buttons-links .pagination a.last:active { background-image: url(../assets/BGAIcon-chevrondouble-right-black.svg); }
 
@@ -5502,9 +5520,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .button-example[data-state="focus-state"] .tertiary-dark-button .cta-button { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
 
-.design-system-card .buttons-links .button-example[data-state="focus-state"] .link .link-text { border: 0.0625rem dotted #254F90; outline: none; }
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .link .link-text { color: #254F90; border: 2px solid #2F70BF; border-radius: 3px; background-color: #E5EDF7; box-shadow: none; outline: none; }
 
-.design-system-card .buttons-links .button-example[data-state="focus-state"] .link-dark .link-text { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
+.design-system-card .buttons-links .button-example[data-state="focus-state"] .link-dark .link-text { color: #333333; border: 2px solid #96B7DF; border-radius: 3px; background-color: #96B7DF; box-shadow: none; outline: none; }
 
 .design-system-card .buttons-links .button-example[data-state="hover-state"] .primary-button .cta-button { background: #254F90 0% 0% no-repeat padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px; border: solid 2px #18335C; }
 
@@ -5524,7 +5542,7 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .button-example[data-state="hover-state"] .link .link-text { background-color: transparent; border: none; box-shadow: #ddeeff 0px -20px 0px 0px inset; text-decoration: none; }
 
-.design-system-card .buttons-links .button-example[data-state="hover-state"] .link-dark .link-text { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #254F90; }
+.design-system-card .buttons-links .button-example[data-state="hover-state"] .link-dark .link-text { box-shadow: none; background: #96B7DF; border: none; color: #333333; }
 
 .design-system-card .buttons-links .button-example[data-state="hover-state"] .pagination a { background-color: #E5EDF7; border-radius: 2px; }
 
@@ -5554,9 +5572,9 @@ h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: 600; fon
 
 .design-system-card .buttons-links .button-example[data-state="active-state"] .tertiary-dark-button .cta-button { background: url(../assets/Icon-arrow-circle-right-white.svg) no-repeat left 0px center; height: 32px; padding-left: 40px; }
 
-.design-system-card .buttons-links .button-example[data-state="active-state"] .link .link-text { color: #000000; border-bottom: #748fb8 solid 2px; box-shadow: none; }
+.design-system-card .buttons-links .button-example[data-state="active-state"] .link .link-text { color: #000000; border-bottom: none; box-shadow: none; background-color: #E5EDF7; }
 
-.design-system-card .buttons-links .button-example[data-state="active-state"] .link-dark .link-text { box-shadow: inset 0 -20px 0 #96B7DF; border: none; color: #000000; }
+.design-system-card .buttons-links .button-example[data-state="active-state"] .link-dark .link-text { box-shadow: none; border: none; color: #333333; background-color: #96B7DF; }
 
 .design-system-card .buttons-links .button-example[data-state="active-state"] .pagination a { color: #000000; background-color: #B3C2D8; border-radius: 2px; }
 
