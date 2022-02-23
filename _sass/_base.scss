@@ -1,5 +1,50 @@
 /* GLOBAL */
 
+.container-fluid.alert {
+    background: $yellow-secondary-light;
+    border-radius: 0;
+    margin-bottom: 0;
+    
+    .alert {
+        margin: 0;
+        padding: 16px 16px;
+        display: flex;
+    }
+    
+    svg {
+        margin-right: 24px;
+    }
+    p {
+        font-size: 18px;
+        margin: 0 0 8px 0;
+        padding: 0;
+        
+        strong {
+            font-weight: 700;
+        }
+    }
+    a {
+        font-weight: 600;
+        color: $black;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .alert {
+            padding: 0 16px;
+        }
+        svg {
+            display: none;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
 .page-header {
     padding: 48px 0;
 
